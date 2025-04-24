@@ -63,25 +63,25 @@
 ### 2.1.3. Solução (sprints 1 a 5)
 
 
-&nbsp;&nbsp;&nbsp; A solução se baseia em uma parceria com a Bayer, que apresenta uma ferramenta chamada Climate FieldView, Um mecanismo de software e hardware para coletar informações de máquinas agrícolas e monitorar a saúde dos campos, mas que apresenta problemas com relação a sua instalação e manuseio por meio dos PTDs(Promotores Técnicos Digitais)..
+&nbsp;&nbsp;&nbsp; A solução baseia-se em uma parceria com a Bayer, que oferece uma ferramenta chamada Climate FieldView — um sistema de software e hardware utilizado para coletar dados de máquinas agrícolas e monitorar a saúde das lavouras. No entanto, essa ferramenta apresenta dificuldades em sua instalação e manuseio por parte dos PTDs (Promotores Técnicos Digitais), uma vez que esses profissionais nem sempre possuem a capacitação técnica necessária para realizar um trabalho eficiente e satisfatório.
 
 
 ### Problema a ser resolvido: <br>
 &nbsp;&nbsp;&nbsp; Devido a alta rotatividade dos PTDs, os responsáveis pela instalação do Climate FieldView, eles acabam sendo direcionados para atuar a instalação sem a devida capacidade técnica e, consequentemente, acarretam na insatisfação dos clientes que adquiriram o produto e sobrecarrega o atendimento remoto já que o presencial não está sendo efetivo.
 
 ### Dados disponíveis:
-&nbsp;&nbsp;&nbsp; Não se aplica
+&nbsp;&nbsp;&nbsp; Não se aplica devido à falta de informações concretas e dados estatísticos sobre o tema, tendo sido fornecidas apenas as complicações mencionadas pelo cliente. 
 
 ### Solução proposta: <br>
-&nbsp;&nbsp;&nbsp; Para solucionar o problema exposto, foi desenvolvida uma plataforma para capacitação dos PTDs com módulos de conteúdos relacionados às diferentes áreas de aprendizado para uma boa execução do papel do PTD. O desenvolvimento dos PTDs é validado por meio de um sistema de ranking para avaliar quem está melhor colocado, e também uma página  própria para que os administradores tenham ciência de como está o progresso dos usuários.
+&nbsp;&nbsp;&nbsp; Para resolver o problema, foi criada uma plataforma de capacitação com módulos voltados ao uso do Climate FieldView pelos PTDs. Um sistema de ranking avalia o desempenho dos usuários, enquanto uma página administrativa permite aos gestores acompanhar o progresso individual e coletivo, garantindo maior eficiência no aprendizado e na atuação técnica.
      
 ### Forma de utilização  da solução: <br>
 
-&nbsp;&nbsp;&nbsp; A plataforma consta com uma aba de módulos sobre temas que devem ser estudados para que o PTD aprenda sobre a plataforma que ele instalará. Os módulos contam com aulas explicativas e um teste final com pontos para validação do conhecimento e uma maneira de demonstrar como está o nível de conhecimento. Para avaliar os aspectos nos quais o PTD deve ter mais atenção, a plataforma consta com um teste inicial com os módulos que a mesma oferece.
+&nbsp;&nbsp;&nbsp;A plataforma possui módulos com aulas e testes para capacitar o PTD no uso do Climate FieldView. Um teste inicial identifica pontos de atenção, e há um sistema de pesquisa rápida para dúvidas urgentes. O progresso é validado com pontuação, permitindo que o administrador acompanhe o nível de conhecimento de cada usuário.
 
 ### Benefícios esperados: <br>
 
-&nbsp;&nbsp;&nbsp; Com a plataforma em funcionamento e tenho executado todos os estudos proposto espera-se que os PTDs estejam aptos para irem para o trabalho em campo com as requeridas habilidades para fazer um trabalho efetivo e satisfazer o cliente sem a necessidade de sobrecarregar outras áreas relacionadas a Climate FieldView e desperdiçar tempo que poderia estar sendo efetivo.
+&nbsp;&nbsp;&nbsp; Com a plataforma em funcionamento e os estudos concluídos, espera-se que os PTDs estejam aptos para atuar em campo com as habilidades necessárias, entregando um serviço eficaz e satisfatório, sem sobrecarregar outras áreas ligadas ao Climate FieldView, como o atendimento remoto, ou desperdiçar tempo que poderia ser utilizado de forma mais produtiva.
 
 ### Critério de sucesso e como será avaliado: <br>
 
