@@ -50,9 +50,46 @@
 
 ### 2.1.1. Modelo de 5 Forças de Porter (sprint 1)
 
-*Preencha com até 400 palavras*
+&emsp; O modelo de 5 forças de Porter é uma ferramenta de análisa para avaliar a competitividade no setor de negócios que a empresa atua. Sob o ponto de vista da Bayer Crop Science, montou-se o seguinte modelo:
 
-*Posicione aqui o modelo de 5 Forças de Porter para sustentar o contexto da indústria.*
+<p align="center">
+<sup>Figura 1: 5 Forças de Porter aplicadas à empresa Bayer Crop Science.</sup> <br>
+    <img src="/assets/assetsGdd/cincoForcasPorter.png"> <br>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</p>
+
+#### **Rivalidade entre concorrentes**
+
+&emsp; Em relação à concorrência no mercado agrícola, os rivais da Bayer Crop Science podem ser divididos entre o ramo de sementes, proteção de cultivos e soluções digitais.
+
+&emsp; No que diz respeito à área de sementes, a rivalidade entre os concorrentes é alta, uma vez que há grandes companhias atuando nesse ramo. A exemplo disso, pode-se citar empresas como: DowDuPont Inc. (França), Syngenta AG (Suíça), Groupe Limagrain (França), e KWS SAAT SE (Alemanha). 
+[https://www.marketresearchfuture.com/reports/seeds-market-7252]
+
+&emsp; No que se refere ao mercado de proteção de cultivos, a rivalidade entre concorrentes também é alta, já que existem diversas empresas grandes disputando nessa área. Dentre as principais empresas, cita-se: Syngenta Crop Protection (Suíça), BASF (Alemanha), Corteva (Estados Unidos), e outros.
+[https://news.agropages.com/News/NewsDetail---51737.htm]
+
+&emsp; Com relação ao ramo de soluções digitais na agricultura, a rivalidade entre concorrentes é alta, visto que é um mercado dominado por big techs. Exemplificando, essa área é dominada pelas empresas AGCO Corporation (EUA), Deere & Company (EUA), IBM Corporation (EUA) e Microsoft (EUA).
+[https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=2893753364&hsa_cam=20298941735&hsa_grp=151951244833&hsa_ad=663291708226&hsa_src=g&hsa_tgt=dsa-2088470572780&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1]
+
+
+#### **Poder de barganha dos compradores**
+
+&emsp; O poder de barganha dos clientes é baixo, visto que os produtos oferecidos pela Bayer Crop Science oferecem funcionalidades e tecnologias exclusivas que reduzem a sensibilidade dos clientes ao preço. Assim, os fatores técnicos e as exclusividades que a empresa oferece são decisivos para motivar a compra dos consumidores.
+
+#### **Poder de barganha dos fornecedores**
+
+&emsp; O poder de barganha dos fornecedores é alto, devido a necessidade que a empresa possui por serviços especializados de outras companhias. Acerca disso, no ramo de sementes, como exemplo há o Agroeste (Brasil), Dekalb (EUA); na proteção de cultivos, existem a Curbix (Índia), Sivanto (Brasil) e outros; além disso, nas soluções digitais, pode-se citar o The Climate Corporation (EUA) com a plataforma agrícola Climate FieldView. 
+[https://www.agro.bayer.com.br/]
+
+#### **Ameaça de produtos substitutos**
+
+&emsp; A ameaça de produtos substitutos é média, levando em conta o perfil diversificado dos produtores rurais. Embora uma grande quantidade de produtores rurais optem por serviços já usados cotidianamente, percebe-se que atualmente há uma crescente adoção de soluções digitais e novas tecnologias nos campos agrícolas. Dessa forma, percebe-se a mudança de perfil dos consumidores, aceitando o emprego de novos produtos em suas propriedades.
+[https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html]
+
+#### **Ameaça de novos entrantes**
+&emsp; A ameaça de novos entrantes é baixa, tendo em vista que o mercado agrícola já é bem consolidado com empresas de grande relevância internacional. Sob esse contexto, o ramo agrícola é de alta competitividade no nível mundial, na qual empresas como a própria Bayer Crop Science, Corteva, Phos Agro, AGCO, Sime Darby Plantation e outras companhias disputam um lugar de destaque. Por conseguinte, apesar do crescimento constante, a mercado agrícola é de difícil acesso de novos entrantes em todas as áreas de atuação do agronegócio.
+[https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/]
+
 
 ### 2.1.2. Análise SWOT da Instituição Parceira (sprint 1)
 
