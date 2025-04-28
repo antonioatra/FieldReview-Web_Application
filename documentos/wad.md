@@ -73,7 +73,7 @@
 &nbsp;&nbsp;&nbsp; Não se aplica devido à falta de informações concretas e dados estatísticos sobre o tema, tendo sido fornecidas apenas as complicações mencionadas pelo cliente. 
 
 ### Solução proposta: <br>
-&nbsp;&nbsp;&nbsp; Para resolver o problema, foi criada uma plataforma de capacitação com módulos voltados ao uso do Climate FieldView pelos PTDs. Um sistema de ranking avalia o desempenho dos usuários, enquanto uma página administrativa permite aos gestores acompanhar o progresso individual e coletivo, garantindo maior eficiência no aprendizado e na atuação técnica.
+&nbsp;&nbsp;&nbsp; Para resolver o problema, foi criada uma plataforma de capacitação com módulos voltados ao uso do Climate FieldView pelos PTDs. Um sistema de ranking avalia o desempenho dos usuários, enquanto uma página administrativa permite aos gestores acompanharem o progresso individual e coletivo, garantindo maior eficiência no aprendizado e na atuação técnica.
      
 ### Forma de utilização  da solução: <br>
 
