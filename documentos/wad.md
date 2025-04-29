@@ -46,9 +46,10 @@
 
 # <a name="c2"></a>2. Visão Geral da Aplicação Web (sprint 1)
 
-
+&emsp; Na seção a seguir será apresentada a visão geral do projeto, englobando o escopo do projeto, persona e user stories para levantar informações acerca dos negócios e UX da solução.
 
 ## 2.1. Escopo do Projeto (sprints 1 e 4)
+&emsp; No que diz respeito ao escopo do projeto, realizou-se uma análise aprofundada da empresa e da aplicação web, resultando: modelo de 5 forças de Porter, análise SWOT, solução, value proposition canvas e matriz de riscos.
 
 ### 2.1.1. Modelo de 5 Forças de Porter (sprint 1)
 
