@@ -77,9 +77,45 @@
 
 ### 2.1.5. Matriz de Riscos do Projeto (sprint 1)
 
-*Sem limite de palavras – usar template do curso*
+&emsp;&emsp;&emsp;&emsp;A matriz de riscos é uma ferramenta essencial para identificar, avaliar e priorizar ameaças que podem impactar o projeto. A avaliação qualitativa de riscos utiliza uma matriz que integra frequência (probabilidade de ocorrência) e severidade (impacto econômico). Os riscos de alta severidade e frequência requerem atenção imediata, enquanto os de menor impacto podem ser monitorados com menor urgência. Essa priorização permite a distribuição eficaz de recursos para ações preventivas e corretivas, garantindo a continuidade do projeto.
 
-*Registre na matriz os riscos identificados no projeto.*
+
+<div align="center">
+Matriz de Risco do projeto.
+</div>
+<img src="../assets/matrizDeRisco.png">
+<br>
+
+<div align="center">
+Fonte: Próprios Autores (2025)
+</div>
+<br>
+
+&emsp;&emsp;&emsp;&emsp;Para explicar os termos colocados na imagem acima, faremos uma tabela de ameaça e de oportunidade descrevendo cada tópico, com a categoria que ela se encontra, a probabilidade de acontecer e o impacto que esse risco pode ocasionar no projeto.
+
+# 1. Ameaças
+
+| Risco                                                   | Categoria                     | Descrição                                                                                      | Probabilidade | Impacto    |
+|----------------------------------------------------------|-------------------------------|--------------------------------------------------------------------------------------------------|---------------|------------|
+| Falta de conhecimento em análise de dados               | Pessoas (falta de conhecimento) | A equipe não possui muita experiência nessa área, podendo atrasar prazos ou até analisar errado os dados.      | 90            | Alto       |
+| Conteúdo raso e de difícil entendimento nas trilhas     | Produto            | A falta de uma implementação dos conteúdos nas trilhas de uma forma clara e intuitiva podem dificultar a função do site, no caso é o aprendizado fácil e rápido.          | 50            | Moderado   |
+| Falta de conhecimento na área de back end               | Pessoas (falta de conhecimento) | Habilidades limitadas em back end podem atrasar a construção de funcionalidades críticas e a progressão do  trabalho.      | 30            | Moderado   |
+| Análise da empresa (Bayer CropScience)                  | Pesquisa           | Análise bem feita do parceiro sem nenhum impeditivo ou dificuldade.   | 10            | Muito Baixo|
+| Desentendimento entre a equipe                          | Relacionamento / Relação        | Conflitos interpessoais podem gerar impacto na produtividade e na continuidade do projeto.      | 10            | Baixo      |
+
+# 2. Oportunidades
+
+| Oportunidade                                | Categoria               | Descrição                                                                                         | Probabilidade | Impacto    |
+|---------------------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------|---------------|------------|
+| Conhecer uma grande empresa internacional   | Rede de contatos        | Contato com a Bayer proporciona networking relevante e aprendizado sobre o mercado internacional, além de entender como é trabalhar para uma empresa grande pela primeira vez. | 90            | Alto       |
+| Alto engajamento com o projeto              | Pessoas  | A equipe está motivada, o que fortalece o comprometimento e a dedicação ao projeto, aumentando a produtividade e a disposição para passar por dificuldades ou aprender e aplicar o que o projeto precisar.               | 90            | Muito Alto |
+| Aprender novas tecnologias                  | Educacional / Técnico   | O projeto permite o contato com ferramentas e linguagens ainda não dominadas pelos membros, ampliando o conhecimento em áreas nas quais todos irão trabalhar futuramente e nos transformando em profissionais mais completos.       | 70            | Muito Alto |
+| Ganho financeiro através da venda da ideia  | Financeira / Negócios   | A solução proposta pode gerar lucro no futuro caso seja viabilizada comercialmente.               | 70            | Alto       |
+| Facilidade no aprendizado                   | Pessoas / Educacional   | A equipe tem boa capacidade de assimilação, o que faz com que a falta de conhecimento prévio, mesmo atrasando um pouco o andamento, não seja um impeditivo para a preparação de um ótimo projeto.  | 30            | Alto       |
+| Conhecer um profissional agrícola           | Rede de contatos        | A interação com especialistas do campo traz aprendizado e feedback técnico valioso, ampliando o conhecimento e tornando-nos profissionais mais versáteis.             | 50            | Moderado   |
+
+
+
 
 ## 2.2. Personas (sprint 1)
 
