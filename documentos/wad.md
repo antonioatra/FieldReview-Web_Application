@@ -93,15 +93,16 @@ Fonte: Próprios Autores (2025)
 
 &emsp;&emsp;&emsp;&emsp;Para explicar os termos colocados na imagem acima, faremos uma tabela de ameaça e de oportunidade descrevendo cada tópico, com a categoria que ela se encontra, a probabilidade de acontecer e o impacto que esse risco pode ocasionar no projeto.
 
-# 1. Ameaças
+| Risco                                                   | Categoria                          | Descrição                                                                                                                                     | Probabilidade | Impacto     |
+|----------------------------------------------------------|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------|
+| Falta de conhecimento em análise de dados               | Pessoas (falta de conhecimento)    | A equipe não possui muita experiência nessa área, podendo atrasar prazos ou até analisar errado os dados.                                   | 90            | Alto        |
+| Conteúdo raso e de difícil entendimento nas trilhas     | Produto                            | A falta de uma implementação dos conteúdos nas trilhas de uma forma clara e intuitiva pode dificultar a função do site: aprendizado rápido. | 50            | Moderado    |
+| Plataforma não funcionar sem rede de internet           | Técnico / Infraestrutura           | A dependência de conexão com a internet pode inviabilizar o uso da solução em regiões remotas ou com sinal instável.                        | 50            | Muito Alto  |
+| PDTs não conseguirem utilizar a plataforma de maneira intuitiva | Produto / Usabilidade             | A complexidade da interface ou navegação pode impedir que os PDTs usem a plataforma corretamente, afetando a experiência e resultados.       | 30            | Alto        |
+| Falta de conhecimento na área de back end               | Pessoas (falta de conhecimento)    | Habilidades limitadas em back end podem atrasar a construção de funcionalidades críticas e a progressão do trabalho.                        | 30            | Moderado    |
+| Análise da empresa (Bayer CropScience)                  | Pesquisa                           | Análise bem feita do parceiro sem nenhum impeditivo ou dificuldade.                                                                         | 10            | Muito Baixo |
+| Desentendimento entre a equipe                          | Relacionamento / Relação           | Conflitos interpessoais podem gerar impacto na produtividade e na continuidade do projeto.                                                   | 10            | Baixo       |
 
-| Risco                                                   | Categoria                     | Descrição                                                                                      | Probabilidade | Impacto    |
-|----------------------------------------------------------|-------------------------------|--------------------------------------------------------------------------------------------------|---------------|------------|
-| Falta de conhecimento em análise de dados               | Pessoas (falta de conhecimento) | A equipe não possui muita experiência nessa área, podendo atrasar prazos ou até analisar errado os dados.      | 90            | Alto       |
-| Conteúdo raso e de difícil entendimento nas trilhas     | Produto            | A falta de uma implementação dos conteúdos nas trilhas de uma forma clara e intuitiva podem dificultar a função do site, no caso é o aprendizado fácil e rápido.          | 50            | Moderado   |
-| Falta de conhecimento na área de back end               | Pessoas (falta de conhecimento) | Habilidades limitadas em back end podem atrasar a construção de funcionalidades críticas e a progressão do  trabalho.      | 30            | Moderado   |
-| Análise da empresa (Bayer CropScience)                  | Pesquisa           | Análise bem feita do parceiro sem nenhum impeditivo ou dificuldade.   | 10            | Muito Baixo|
-| Desentendimento entre a equipe                          | Relacionamento / Relação        | Conflitos interpessoais podem gerar impacto na produtividade e na continuidade do projeto.      | 10            | Baixo      |
 
 # 2. Oportunidades
 
