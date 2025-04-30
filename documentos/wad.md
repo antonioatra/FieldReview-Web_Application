@@ -78,7 +78,7 @@ Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um pe
 
 Portanto, é importante descrever o conceito geral de cada tópico, mostrar a relação entre eles e como eles se afetam direta ou indiretamente. Portanto, os tópicos subsequentes abordarão elementos inerentes ao Value Proposition Canvas da solução proposta para o projeto atual, iniciando pelo perfil do cliente. Além disso, a Figura 3 mostra esses elementos visualmente:
 
-![CanvasProspostaDeValor](https://github.com/user-attachments/assets/824cd9d9-3e3f-40d5-95b7-24f5adbc3a0c)
+<img src="../assets/CanvasProspostaDeValor.png">
 
 PERFIL DO CLIENTE
 Tarefas do Cliente
