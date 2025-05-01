@@ -72,17 +72,17 @@
 
 ### 2.1.4. Value Proposition Canvas (sprint 1): 
 Canvas de Proposta de Valor — Solução para Capacitação de Promotores
-Segundo Pereira (2024), o modelo de negócio criado por Alexander Osterwalder, Yves Pigneur e Alan Smith denominado “Value Proposition Canvas” é uma ferramenta desenhada para garantir que o produto atenda às necessidades dos clientes, traga-lhes benefícios e resolva seus problemas, estruturando como o serviço agrega valor a eles. Para isso, a ferramenta utiliza duas seções do Business Model Canvas, a saber: “Segmentos de Clientes” e “Propostas de Valor”.
+Segundo Pereira<sup>[10]</sup>., o modelo de negócio criado por Alexander Osterwalder, Yves Pigneur e Alan Smith denominado “Value Proposition Canvas” é uma ferramenta desenhada para garantir que o produto atenda às necessidades dos clientes, traga-lhes benefícios e resolva seus problemas, estruturando como o serviço agrega valor a eles. Para isso, a ferramenta utiliza duas seções do Business Model Canvas, a saber: “Segmentos de Clientes” e “Propostas de Valor”.
 
-Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um perfil apresentado pelo cliente mostrando suas tarefas, suas dores e seus ganhos. O lado esquerdo inclui a proposta de valor que deve ser entregue ao cliente, abrangendo produtos e serviços, criadores de benefícios e analgésicos (este é o mapa de valor) (Pereira, 2024).
+Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um perfil apresentado pelo cliente mostrando suas tarefas, suas dores e seus ganhos. O lado esquerdo inclui a proposta de valor que deve ser entregue ao cliente, abrangendo produtos e serviços, criadores de benefícios e analgésicos (este é o mapa de valor)<sup>[10]</sup>.
 
 Portanto, é importante descrever o conceito geral de cada tópico, mostrar a relação entre eles e como eles se afetam direta ou indiretamente. Portanto, os tópicos subsequentes abordarão elementos inerentes ao Value Proposition Canvas da solução proposta para o projeto atual, iniciando pelo perfil do cliente. Além disso, a Figura 3 mostra esses elementos visualmente:
 
 <img src="../assets/CanvasProspostaDeValor.png">
 
-PERFIL DO CLIENTE
-Tarefas do Cliente
-Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, auxiliando no entendimento de como é possível agir perante a problemática em questão (Pereira, 2024). No contexto da capacitação de promotores, o cliente realiza as seguintes tarefas:
+### Tarefas do Cliente
+
+Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, auxiliando no entendimento de como é possível agir perante a problemática em questão<sup>[10]</sup>.. No contexto da capacitação de promotores, o cliente realiza as seguintes tarefas:
 
 **Utilizar o site de “Ajuda Rápida” do Climate FIELDVIEW:** O PTD(Promotor Técnico Digital) depende de um site que não foca em ensinar adequadamente ele sobre o uso do Climate FieldView.
 
@@ -93,8 +93,9 @@ Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes d
 **Depender dos feedbacks dos usuários do Climate FIELDVIEW sobre os promotores:** para que o Consultor de Sucesso do Cliente tenha ciência da capacitação e desempenho do PDT, ele necessita da avaliação do cliente, no caso o fazendeiro que contrata desse serviço. 
 
 
-Ganhos
-No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Esta parte foca naquilo que o cliente almeja alcançar no escopo em questão, devendo cada ganho ser viabilizado por um criador de ganho correspondente (Pereira, 2024). Assim, foram identificados os seguintes ganhos:
+### Ganhos
+
+No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Esta parte foca naquilo que o cliente almeja alcançar no escopo em questão, devendo cada ganho ser viabilizado por um criador de ganho correspondente<sup>[10]</sup>.. Assim, foram identificados os seguintes ganhos:
 Aprimorar competências específicas: com uma análise feita pelo Consultor de Sucesso do Cliente, ele pode mandar ao PTD especifico uma trilha que ele pode se preocupar mais. 
 
 
@@ -112,8 +113,9 @@ Aprimorar competências específicas: com uma análise feita pelo Consultor de S
 
 **Acompanhar de forma precisa o aprendizado e o engajamento dos promotores:** parte feita para o Consultor de Sucesso do Cliente saber como ando o aprendizado dos Promotores.
 
-Dores
-No segmento de dores, há a definição daquilo com que o cliente sofre em decorrência da falta de uma solução efetiva ao seu problema (Pereira, 2024). As dores identificadas foram:
+### Dores
+
+No segmento de dores, há a definição daquilo com que o cliente sofre em decorrência da falta de uma solução efetiva ao seu problema<sup>[10]</sup>.. As dores identificadas foram:
 **Não há nenhuma plataforma de capacitação adequada e ágil:** não tem uma plataforma que torne os Promotores capacitados ou possa os ajudar rápido e efetivamente.
 
 
@@ -128,12 +130,16 @@ No segmento de dores, há a definição daquilo com que o cliente sofre em decor
 
 **Sem incentivo para aprendizado:** não há nada que traga vontade de aprender ao promotor, além de se tornar mais capacitado.
 
+<br/>
+<br/>
+<br/>
 
 
-MAPA DE VALOR
 A partir da identificação do perfil do cliente, é necessário mapear o melhor caminho pelo qual suas necessidades serão atendidas. Assim, explicitam-se os criadores de ganho, aliviadores de dor e os produtos e serviços propostos.
-Produtos e Serviços
-No segmento de produtos e serviços, há a identificação daquilo que deve ser entregue ao cliente, por meio de funcionalidades definidas e claras (Pereira, 2024). No presente contexto, propõe-se:
+
+### Produtos e Serviços
+
+No segmento de produtos e serviços, há a identificação daquilo que deve ser entregue ao cliente, por meio de funcionalidades definidas e claras <sup>[10]</sup>. No presente contexto, propõe-se:
 Plataforma web com trilhas de aprendizado voltadas aos promotores, com foco na melhoria de sua capacitação em campo: trazer uma solução web, de fácil acesso.
 
 
@@ -146,8 +152,9 @@ Plataforma web com trilhas de aprendizado voltadas aos promotores, com foco na m
 **Espaço dedicado às trilhas, com acesso intuitivo e ágil:** trazer trilhas de fácil entendimento e intuitivas para os promotores poderem seguir e aprender.
 
 
-Criadores de Ganhos
-Os criadores de ganhos identificam o que será implementado para gerar satisfação ao cliente, estando conectados diretamente aos ganhos elencados no perfil do cliente (Pereira, 2024). Assim, temos:
+### Criadores de Ganhos
+
+Os criadores de ganhos identificam o que será implementado para gerar satisfação ao cliente, estando conectados diretamente aos ganhos elencados no perfil do cliente <sup>[10]</sup>. Assim, temos:
 Trilhas de capacitação para os promotores, com recursos visuais e auditivos, visando aprimorar suas habilidades e a qualidade do seu trabalho: trilhas com métodos de ensino diversos para auxiliar os PDT’s a serem capacitados e elevar sua qualidade de atendimento.
 
 
@@ -160,8 +167,9 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 **Área dedicada à consulta de tópicos específicos, de acordo com o interesse momentâneo do promotor:** área destinada a trazer um guia mais prático para caso haja maior necessidade quando os Promotores já estiverem atuando em campo.
 
 
-Aliviadores de Dor
-Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas (Pereira, 2024). Nesse sentido, definem-se:
+### Aliviadores de Dor
+
+Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas<sup>[10]</sup>. Nesse sentido, definem-se:
 Plataforma web estruturada em trilhas e módulos de aprendizado, projetada para apoiar a capacitação do promotor com agilidade e eficiência: plataforma intuitiva e de fácil acesso para os Promotores possam acessar e aprender com métodos diferentes.
 
 
@@ -346,6 +354,8 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 *Relacione também quaisquer outras ideias que o grupo tenha para melhorias futuras*
 
 # <a name="c8"></a>8. Referências (sprints 1 a 5)
+
+10. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
 
 _Incluir as principais referências de seu projeto, para que seu parceiro possa consultar caso ele se interessar em aprofundar. Um exemplo de referência de livro e de site:_<br>
 
