@@ -57,7 +57,6 @@
 
 &emsp; A Bayer CropScience é líder no agronegócio por seu ecossistema completo e forte presença no mercado, com destaque para o FieldView, solução digital que a diferencia da concorrência. No entanto, seu foco em grandes produtores pode limitar seu alcance entre pequenos agricultores. A empresa enfrenta ameaças como questões ambientais e processos legais, que afetam sua reputação. Por outro lado, há oportunidades na expansão de soluções sustentáveis, como o projeto PRO Carbono, e parcerias com universidades, fortalecendo sua inovação e presença no setor frente a concorrentes com tecnologias emergentes.
 
-
 <img src="../assets/analiseSWOT.png">
 
 ### 2.1.3. Solução (sprints 1 a 5)
@@ -120,7 +119,11 @@ Fonte: Próprios Autores (2025)
 
 ## 2.2. Personas (sprint 1)
 
-*Posicione aqui suas Personas em forma de texto markdown com imagens, ou como imagem de template preenchido. Atualize esta seção ao longo do módulo se necessário.*
+&emsp; As personas mapeadas para o projeto representam os perfis centrais dos usuários que interagem diretamente com a solução proposta. As personas foram desenvolvidas com base nas necessidades do parceiro Bayer Crop Science e visam orientar decisões de design, funcionalidades e usabilidade da aplicação.
+<p align="center"> <img src="../assets/personasptd.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+<p align="center"> <img src="../assets/personasconsultor.png"> 
+<br> <sub>Fonte: autoral (2025) </sub> </p>
 
 ## 2.3. User Stories (sprints 1 a 5)
 
