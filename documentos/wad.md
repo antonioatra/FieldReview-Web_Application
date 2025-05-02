@@ -281,6 +281,112 @@ Fonte: Próprios Autores (2025)
 
 ## 2.3. User Stories (sprints 1 a 5)
 
+Identificação | US01
+--- | ---
+Persona | Promotor Técnico DIgital
+User Story | Como PTD, quero possuir a habilidade de realizar uma busca rápida sobre as informações para que eu consiga otimizar a resolução das minhas dúvidas.
+Critério de aceite 1 | Dado que a barra de pesquisa esteja acessível, <br>E o usuário deseje procurar por um tópico específico, <br>Quando ele digitar e confirmar a pesquisa, <br>Então o conteúdo correspondente ao tópico deve ser apresentado a ele.
+Critério de aceite 2 | Dado que a barra de pesquisa esteja acessível,<br>E o usuário deseje procurar por um tópico,<br>Quando ele digitar uma palavra-chave sem saber o nome exato da trilha,<br>Então a barra de pesquisa deve apresentar sugestões de trilhas relacionadas
+Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e a capacidade da plataforma<br>- A User Story é valiosa porque o PTD pode sanar as suas dúvidas de forma rápida, economizando tempo e satisfazendo o cliente.<br>- A User Story é estimável porque oferece informações sobre os elementos necessários para a implementação da busca rápida, como a barra de busca, a apresentação de resultados, e os filtros de pesquisa.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de busca rápida.<br>- A User Story é testável porque os critérios 
+
+Identificação | US02
+--- | ---
+Persona | Promotor Técnico Digital
+User Story | Como PTD, quero ter acesso a uma plataforma didática onde eu possa aprofundar tecnicamente meus conhecimentos para que eu possa exercer uma boa atividade em campo.
+Critério de aceite 1 | Dado que a plataforma seja acessada,<br>E o usuário deseje realizar um estudo técnico,<br>Então ele deve conseguir encontrar trilhas e conteúdos relevantes para sua capacitação como Promotor Técnico Digital..
+Critério de aceite 2 | Dado que o Promotor Técnico Digital esteja com dificuldade técnica,<br>E deseje realizar um estudo sobre o tema,<br>Então ele deve conseguir acessar uma plataforma amigável e didática com conteúdos que o auxiliem na resolução da dificuldade.
+Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e a capacidade da plataforma<br>- A User Story é valiosa porque o PTD pode usar a plataforma para se capacitar, o que impacta diretamente na qualidade dos atendimentos e na satisfação do cliente.<br>- A User Story é estimável porque é possível estimar o esforço do desenvolvimento com base na entrega das trilhas, na organização dos conteúdos e, consequentemente na usabilidade da plataforma.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de visualização e acesso às trilhas.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão a funcionalidade do acesso às trilhas e a sua objetividade.
+
+Identificação | USXX (troque XX por numeração ordenada das User Stories)
+--- | ---
+Persona | nome da Persona
+User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
+Critério de aceite 1 | CR1: descrever cenário + testes de aceite
+Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Critério de aceite ... | CR...
+Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+
+Identificação | USXX (troque XX por numeração ordenada das User Stories)
+--- | ---
+Persona | nome da Persona
+User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
+Critério de aceite 1 | CR1: descrever cenário + testes de aceite
+Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Critério de aceite ... | CR...
+Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+
+Identificação | USXX (troque XX por numeração ordenada das User Stories)
+--- | ---
+Persona | nome da Persona
+User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
+Critério de aceite 1 | CR1: descrever cenário + testes de aceite
+Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Critério de aceite ... | CR...
+Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+
+Identificação | USXX (troque XX por numeração ordenada das User Stories)
+--- | ---
+Persona | nome da Persona
+User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
+Critério de aceite 1 | CR1: descrever cenário + testes de aceite
+Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Critério de aceite ... | CR...
+Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+
+Identificação | USXX (troque XX por numeração ordenada das User Stories)
+--- | ---
+Persona | nome da Persona
+User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
+Critério de aceite 1 | CR1: descrever cenário + testes de aceite
+Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Critério de aceite ... | CR...
+Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+
+Identificação | USXX (troque XX por numeração ordenada das User Stories)
+--- | ---
+Persona | nome da Persona
+User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
+Critério de aceite 1 | CR1: descrever cenário + testes de aceite
+Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Critério de aceite ... | CR...
+Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+
+Identificação | USXX (troque XX por numeração ordenada das User Stories)
+--- | ---
+Persona | nome da Persona
+User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
+Critério de aceite 1 | CR1: descrever cenário + testes de aceite
+Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Critério de aceite ... | CR...
+Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+
+Identificação | USXX (troque XX por numeração ordenada das User Stories)
+--- | ---
+Persona | nome da Persona
+User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
+Critério de aceite 1 | CR1: descrever cenário + testes de aceite
+Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Critério de aceite ... | CR...
+Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+
+Identificação | USXX (troque XX por numeração ordenada das User Stories)
+--- | ---
+Persona | nome da Persona
+User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
+Critério de aceite 1 | CR1: descrever cenário + testes de aceite
+Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Critério de aceite ... | CR...
+Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+
+Identificação | USXX (troque XX por numeração ordenada das User Stories)
+--- | ---
+Persona | nome da Persona
+User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
+Critério de aceite 1 | CR1: descrever cenário + testes de aceite
+Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Critério de aceite ... | CR...
+Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+
 *Posicione aqui a lista de User Stories levantadas para o projeto. Siga o template de User Stories e utilize a mesma referência USXX no roadmap de seu quadro Kanban. Indique todas as User Stories mapeadas, mesmo aquelas que não forem implementadas ao longo do projeto. Não se esqueça de explicar o INVEST das 5 User Stories prioritárias*
 
 *ATUALIZE ESTA SEÇÃO SEMPRE QUE ALGUMA DEMANDA MUDAR EM SEU PROJETO*
