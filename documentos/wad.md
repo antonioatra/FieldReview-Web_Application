@@ -1,4 +1,4 @@
-<img src="../assets/logointeli.png">
+<img src="../assets/assetsWAD/logointeli.png">
 
 
 # WAD - Web Application Document - Módulo 2 - Inteli
@@ -56,7 +56,7 @@
 
 <p align="center">
 <sup>Figura 1: 5 Forças de Porter aplicadas à empresa Bayer Crop Science.</sup> <br>
-    <img src="/assets/assetsGdd/cincoForcasPorter.png"> <br>
+    <img src="../assets/assetsWAD/cincoForcasPorter.png"> <br>
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
@@ -90,7 +90,7 @@
 
 &emsp; A Bayer CropScience é líder no agronegócio por seu ecossistema completo e forte presença no mercado, com destaque para o FieldView, solução digital que a diferencia da concorrência. No entanto, seu foco em grandes produtores pode limitar seu alcance entre pequenos agricultores. A empresa enfrenta ameaças como questões ambientais e processos legais, que afetam sua reputação. Por outro lado, há oportunidades na expansão de soluções sustentáveis, como o projeto PRO Carbono, e parcerias com universidades, fortalecendo sua inovação e presença no setor frente a concorrentes com tecnologias emergentes.
 
-<img src="../assets/analiseSWOT.png">
+<img src="../assets/assetsWAD/analiseSWOT.png">
 
 ### 2.1.3. Solução (sprints 1 a 5)
 
@@ -128,7 +128,7 @@ Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um pe
 
 Portanto, é importante descrever o conceito geral de cada tópico, mostrar a relação entre eles e como eles se afetam direta ou indiretamente. Portanto, os tópicos subsequentes abordarão elementos inerentes ao Value Proposition Canvas da solução proposta para o projeto atual, iniciando pelo perfil do cliente. Além disso, a Figura 3 mostra esses elementos visualmente:
 
-<img src="../assets/CanvasProspostaDeValor.png">
+<img src="../assets/assetsWAD/CanvasProspostaDeValor.png">
 
 ### Tarefas do Cliente
 
@@ -236,7 +236,7 @@ Plataforma web estruturada em trilhas e módulos de aprendizado, projetada para 
 <div align="center">
 Matriz de Risco do projeto.
 </div>
-<img src="../assets/matrizDeRisco.png">
+<img src="../assets/assetsWAD/matrizDeRisco.png">
 <br>
 
 <div align="center">
@@ -274,9 +274,9 @@ Fonte: Próprios Autores (2025)
 ## 2.2. Personas (sprint 1)
 
 &emsp; As personas mapeadas para o projeto representam os perfis centrais dos usuários que interagem diretamente com a solução proposta. As personas foram desenvolvidas com base nas necessidades do parceiro Bayer Crop Science e visam orientar decisões de design, funcionalidades e usabilidade da aplicação.
-<p align="center"> <img src="../assets/personasptd.png">
+<p align="center"> <img src="../assets/assetsWAD/personasptd.png">
 <br> <sub>Fonte: autoral (2025)</sub> </p>
-<p align="center"> <img src="../assets/personasconsultor.png"> 
+<p align="center"> <img src="../assets/assetsWAD/personasconsultor.png"> 
 <br> <sub>Fonte: autoral (2025) </sub> </p>
 
 ## 2.3. User Stories (sprints 1 a 5)
