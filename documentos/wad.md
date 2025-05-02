@@ -5,10 +5,16 @@
 
 **_Os trechos em itálico servem apenas como guia para o preenchimento da seção. Por esse motivo, não devem fazer parte da documentação final_**
 
-## Nome do Grupo
+## Testotech
 
-#### Nomes dos integrantes do grupo
-
+#### Nome dos integrantes do grupo:
+- <a href="https://github.com/antonioatra">Antônio Augusto Tavares Ribeiro André</a>
+- <a href="https://github.com/diegofsiilva">Diego Figueiredo Silva</a>
+- <a href="https://github.com/EduardoJesusTavaresSantAnna">Eduardo Jesus Tavares Sant'anna</a> 
+- <a href="https://github.com/obielwb">Gabriel Willian Bartmanovicz</a> 
+- <a href="https://github.com/Leandro-Filho">Leandro Precaro Barankiewicz Filho</a>
+- <a href="https://github.com/Messias-Olivindo">Messias Fernandes de Olivindo</a>
+- <a href="https://github.com/thuliobacco">Thúlio Sallum Bacco Filho</a> 
 
 
 ## Sumário
@@ -32,7 +38,6 @@
 [Anexos](#c9)
 
 <br>
-
 
 # <a name="c1"></a>1. Introdução (sprints 1 a 5)
 
