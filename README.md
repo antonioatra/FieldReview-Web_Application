@@ -4,28 +4,28 @@
 <a href= "https://www.inteli.edu.br/"><img src="/assets/inteli.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do projeto
+# FieldReview
 
-## Nome do grupo
+## Testotech
 
 ## :student: Integrantes: 
-- <a href="https://www.linkedin.com/">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/">Nome do integrante 5</a>
-- <a href="https://www.linkedin.com/">Nome do integrante 6</a> 
-- <a href="https://www.linkedin.com/">Nome do integrante 7</a>
+- <a href="https://github.com/antonioatra">Antônio Augusto Tavares Ribeiro André</a>
+- <a href="https://github.com/diegofsiilva">Diego Figueiredo Silva</a>
+- <a href="https://github.com/EduardoJesusTavaresSantAnna">Eduardo Jesus Tavares Sant'anna</a> 
+- <a href="https://github.com/obielwb">Gabriel Willian Bartmanovicz</a> 
+- <a href="https://github.com/Leandro-Filho">Leandro Precaro Barankiewicz Filho</a>
+- <a href="https://github.com/Messias-Olivindo">Messias Fernandes de Olivindo</a>
+- <a href="https://github.com/thuliobacco">Thúlio Sallum Bacco Filho</a> 
+
 
 ## :teacher: Professores:
 ### Orientador(a) 
-- <a href="https://www.linkedin.com/">Nome do professor 1</a>
+- <a href="https://www.linkedin.com/in/marcelo-gon%C3%A7alves-phd-a550652/">Marcelo Gonçalves</a>
 ### Instrutores
-- <a href="https://www.linkedin.com/">Nome do professor 2</a>
-- <a href="https://www.linkedin.com/">Nome do professor 3</a> 
-- <a href="https://www.linkedin.com/">Nome do professor 4</a> 
-- <a href="https://www.linkedin.com/">Nome do professor 5</a>
-- <a href="https://www.linkedin.com/">Nome do professor 6</a>
+- <a href="https://www.linkedin.com/in/cristiano-benites-ph-d-687647a8/">Cristiano Benites</a>
+- <a href="https://www.linkedin.com/in/pedroteberga/">Pedro Teberga</a> 
+- <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a> 
+
 
 ## 📝 Descrição
 
@@ -81,7 +81,7 @@ npm start
     * 
 * 0.2.0 - XX/XX/2024
     * 
-* 0.1.0 - XX/XX/2024
+* 0.1.0 - 30/04/2025 - Levantamento inicial do projeto, com entendimento do negócio, definição dos objetivos e escopo da primeira versão da Aplicação Web.
     *
 
 ## 📋 Licença/License
