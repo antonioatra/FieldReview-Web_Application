@@ -281,10 +281,12 @@ Fonte: Próprios Autores (2025)
 
 ## 2.3. User Stories (sprints 1 a 5)
 
+&emsp; As User Stories são um elemento essencial para o planejamento de um projeto, pois elas norteam o grupo a realizar suas tarefas com base em uma das personas desenvolvidas pelo grupo. Assim, projetou-se as seguintes personas de acordo com os quadros abaixo:
+
 Identificação | US01
 --- | ---
 Persona | Promotor Técnico DIgital
-User Story | Como PTD, quero possuir a habilidade de realizar uma busca rápida sobre as informações para que eu consiga otimizar a resolução das minhas dúvidas.
+User Story | "Como PTD, quero possuir a habilidade de realizar uma busca rápida sobre as informações para que eu consiga otimizar a resolução das minhas dúvidas."
 Critério de aceite 1 | Dado que a barra de pesquisa esteja acessível, <br>E o usuário deseje procurar por um tópico específico, <br>Quando ele digitar e confirmar a pesquisa, <br>Então o conteúdo correspondente ao tópico deve ser apresentado a ele.
 Critério de aceite 2 | Dado que a barra de pesquisa esteja acessível,<br>E o usuário deseje procurar por um tópico,<br>Quando ele digitar uma palavra-chave sem saber o nome exato da trilha,<br>Então a barra de pesquisa deve apresentar sugestões de trilhas relacionadas
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e a capacidade da plataforma<br>- A User Story é valiosa porque o PTD pode sanar as suas dúvidas de forma rápida, economizando tempo e satisfazendo o cliente.<br>- A User Story é estimável porque oferece informações sobre os elementos necessários para a implementação da busca rápida, como a barra de busca, a apresentação de resultados, e os filtros de pesquisa.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de busca rápida.<br>- A User Story é testável porque os critérios 
@@ -292,98 +294,84 @@ Critérios INVEST | - A User Story é independente porque pode ser desenvolvida 
 Identificação | US02
 --- | ---
 Persona | Promotor Técnico Digital
-User Story | Como PTD, quero ter acesso a uma plataforma didática onde eu possa aprofundar tecnicamente meus conhecimentos para que eu possa exercer uma boa atividade em campo.
+User Story | "Como PTD, quero ter acesso a uma plataforma didática onde eu possa aprofundar tecnicamente meus conhecimentos para que eu possa exercer uma boa atividade em campo."
 Critério de aceite 1 | Dado que a plataforma seja acessada,<br>E o usuário deseje realizar um estudo técnico,<br>Então ele deve conseguir encontrar trilhas e conteúdos relevantes para sua capacitação como Promotor Técnico Digital..
 Critério de aceite 2 | Dado que o Promotor Técnico Digital esteja com dificuldade técnica,<br>E deseje realizar um estudo sobre o tema,<br>Então ele deve conseguir acessar uma plataforma amigável e didática com conteúdos que o auxiliem na resolução da dificuldade.
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e a capacidade da plataforma<br>- A User Story é valiosa porque o PTD pode usar a plataforma para se capacitar, o que impacta diretamente na qualidade dos atendimentos e na satisfação do cliente.<br>- A User Story é estimável porque é possível estimar o esforço do desenvolvimento com base na entrega das trilhas, na organização dos conteúdos e, consequentemente na usabilidade da plataforma.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de visualização e acesso às trilhas.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão a funcionalidade do acesso às trilhas e a sua objetividade.
 
-Identificação | USXX (troque XX por numeração ordenada das User Stories)
+Identificação | US03
 --- | ---
-Persona | nome da Persona
-User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
-Critério de aceite 1 | CR1: descrever cenário + testes de aceite
-Critério de aceite 2 | CR2: descrever cenário + testes de aceite
-Critério de aceite ... | CR...
-Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+Persona | Consultor Digital
+User Story | "Como Consultor, quero ter a possibilidade de atribuir trilhas para o meu time de PTDs desenvolver uma habilidade específica."
+Critério de aceite 1 | Dado que o consultor acesse a plataforma com a função de administrador,<br>Quando ele navegar para a seção de usuários,<br>Então ele deve conseguir visualizar as informações de cada PTD individualmente, incluindo suas trilhas associadas.
+Critério de aceite 2 | Dado que o consultor acesse a plataforma com a função de administrador,<br>Quando ele selecionar um PTD específico,<br>Então ele deve conseguir direcionar trilhas individualmente para esse PTD.
+Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e os objetivos do consultor.<br>- A User Story é valiosa porque o consultor pode atribuir trilhas de maneira individual a cada PTD, o que eleva a performance individual e a capacitação da equipe.<br>- A User Story é estimável porque oferece as informações necessárias para validação da funcionalidade e pode ser facilmente avaliada de acordo com o resultado dos PTDs.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de atribuição manual de trilhas.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão a funcionalidade de atribuição de trilhas.
 
-Identificação | USXX (troque XX por numeração ordenada das User Stories)
+Identificação | US04
 --- | ---
-Persona | nome da Persona
-User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
-Critério de aceite 1 | CR1: descrever cenário + testes de aceite
-Critério de aceite 2 | CR2: descrever cenário + testes de aceite
-Critério de aceite ... | CR...
-Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+Persona | Promotor Técnico Digital
+User Story | "Como PTD quero ter a possibilidade de me cadastrar na plataforma para conseguir acessar os conteúdos disponíveis."
+Critério de aceite 1 | Dado que o PTD tenha um cadastro válido,<br>Quando ele acessar a plataforma e inserir suas credenciais,<br>Então ele deve conseguir realizar o login e visualizar os conteúdos disponíveis
+Critério de aceite 2 | Dado que o PTD tenha um cadastro ativo,<br>Quando ele realizar o login,<br>Então ele deve conseguir acessar seu perfil pessoal na plataforma.
+Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e as necessidades do promotor técnico digital.<br>- A User Story é valiosa porque o PTD possuirá um cadastro único para acessar os conteúdos e ter a sua conta registrada.<br>- A User Story é estimável porque o desenvolvimento dessa funcionalidade é facilmente estipulado com base na aplicação em outras plataformas.<br>- A User Story é pequena porque foca somente na funcionalidade de cadastro e login do usuário PTD.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão como funcionará o processo de cadastro e login.
 
-Identificação | USXX (troque XX por numeração ordenada das User Stories)
+Identificação | US05
 --- | ---
-Persona | nome da Persona
-User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
-Critério de aceite 1 | CR1: descrever cenário + testes de aceite
-Critério de aceite 2 | CR2: descrever cenário + testes de aceite
-Critério de aceite ... | CR...
-Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+Persona | Promotor Técnico Digital
+User Story | "Como PTD quero revisar meus conhecimentos sobre a plataforma periodicamente para não ter dúvidas sobre o produto posteriormente "
+Critério de aceite 1 | Dado que o PTD já tenha realizado estudos na plataforma,<br>E deseje continuar consolidando esse conhecimento,<br>Quando ele acessar novamente o conteúdo,<br>Então a plataforma deve apresentar recursos de revisão para trilhas concluídas  
+Critério de aceite 2 | Dado que o PTD já tenha realizado estudos na plataforma,<br>E deseje focar nos tópicos com maior dificuldade,<br>Quando ele acessar novamente a plataforma,<br>Então a plataforma deve destacar os conteúdos em que o PTD teve pior desempenho.
+Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e as vontades do promotor técnico digital.<br>- A User Story é valiosa porque o PTD possuirá a opção de consolidar os seus conhecimentos, além de corrigir os seus erros anteriores.<br>- A User Story é estimável porque o desenvolvimento dessa funcionalidade pode ser estipulada de acordo com as tecnologias que serão utilizadas durante o processo.<br>- A User Story é pequena porque foca somente na funcionalidade de revisar os tópicos já concluídos pelo PTD.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão como funcionará a revisão dos usuários.
 
-Identificação | USXX (troque XX por numeração ordenada das User Stories)
---- | ---
-Persona | nome da Persona
-User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
-Critério de aceite 1 | CR1: descrever cenário + testes de aceite
-Critério de aceite 2 | CR2: descrever cenário + testes de aceite
-Critério de aceite ... | CR...
-Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
 
-Identificação | USXX (troque XX por numeração ordenada das User Stories)
+Identificação | US06
 --- | ---
-Persona | nome da Persona
-User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
-Critério de aceite 1 | CR1: descrever cenário + testes de aceite
-Critério de aceite 2 | CR2: descrever cenário + testes de aceite
-Critério de aceite ... | CR...
-Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+Persona | Promotor Técnico Digital
+User Story | "Como consultor, quero garantir que meu time de PTDs recém contratados estejam aptos para exercer uma boa atividade de auxílio em campo para melhorar a satisfação dos clientes."
+Critério de aceite 1 | Dado que o PTD comece a atuar na área<br>E entre na plataforma de ensino<br>Quando entrar na empresa,<br>Então realizará uma trilha de conhecimento básico
+Critério de aceite 2 | Dado que o PTD novato atenda um chamado<br>E não saiba resolver algum problema<br>Quando estiver com o cliente<br>Então utilize a plataforma de ensino 
 
-Identificação | USXX (troque XX por numeração ordenada das User Stories)
+Identificação | US07
 --- | ---
-Persona | nome da Persona
-User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
-Critério de aceite 1 | CR1: descrever cenário + testes de aceite
-Critério de aceite 2 | CR2: descrever cenário + testes de aceite
-Critério de aceite ... | CR...
-Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+Persona | Consultor Digital
+User Story | " Como consultor, quero ter a possibilidade de analisar separadamente o desempenho de cada um dos PTDs para que eu possa estar ciente do seu desenvolvimento individual."
+Critério de aceite 1 | Dado que a plataforma seja acessada por uma conta admin<br>E entre na página de análise individual de algum colega de equipe<br>Quando quiser consultar as métricas desse parceiro<br>Então aparecerá uma série de dados acerca do avanço dos estudos do PTD
+Critério de aceite 2 | Dado que a plataforma seja acessada por uma conta admin<br>E entre na página de análise individual de alguém do time<br>Quando for consultar as trilhas com mais erros do colega de equipe<br>Então aparecerá as questões e trilhas que o PTD teve o menor aproveitamento
 
-Identificação | USXX (troque XX por numeração ordenada das User Stories)
+Identificação | US08
 --- | ---
-Persona | nome da Persona
-User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
-Critério de aceite 1 | CR1: descrever cenário + testes de aceite
-Critério de aceite 2 | CR2: descrever cenário + testes de aceite
-Critério de aceite ... | CR...
-Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+Persona | Promotor Técnico Digital
+User Story | "Como PTD, quero ter a possibilidade de receber uma pontuação de acordo com o meu desempenho nas trilhas para que eu possa me avaliar em relação aos outros"
+Critério de aceite 1 | Dado que a plataforma seja acessada por uma conta comum<br>E seja realizada algum exercício sobre a plataforma<br>Quando for finalizada uma trilha de conhecimento<br>Então o usuário receberá pontos caso acerte a pergunta
+Critério de aceite 2 |Dado que a plataforma seja acessada por uma conta comum<br>E a página de perfil seja aberta<br>Quando o usuário quiser ver suas informações<br>Então aparecerá a pontuação atual do PTD
 
-Identificação | USXX (troque XX por numeração ordenada das User Stories)
+Identificação | US09
 --- | ---
 Persona | nome da Persona
-User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
-Critério de aceite 1 | CR1: descrever cenário + testes de aceite
-Critério de aceite 2 | CR2: descrever cenário + testes de aceite
-Critério de aceite ... | CR...
-Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+User Story | "Como consultor, quero saber quais pessoas do meu time estão mais engajadas em aprender sobre a plataforma para que eu possa incentivá-las no seu progresso."
+Critério de aceite 1 | Dado o acesso ao site com uma conta admin<br>E a página principal seja aberta<br>Quando o consultor que quiser ver o desempenho geral de seus colegas<br>Então um ranking será mostrado com todos os usuários da plataforma
+Critério de aceite 2 | Dado que a plataforma seja acessada utilizando uma conta admin<br>E a página inicial seja acessada<br>Quando o consultor queira saber em qual posição está seu colega de time<br>Então aparecerá em qual posição está o PTD junto a sua pontuação
 
-Identificação | USXX (troque XX por numeração ordenada das User Stories)
+Identificação | US10
 --- | ---
-Persona | nome da Persona
-User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
-Critério de aceite 1 | CR1: descrever cenário + testes de aceite
-Critério de aceite 2 | CR2: descrever cenário + testes de aceite
-Critério de aceite ... | CR...
-Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
+Persona | Promotor Técnico Digital
+User Story | "Como PTD, quero que a plataforma me avise sobre as trilhas direcionadas pelo consultor a mim, além das atualizações dos conteúdos, para que eu possa me manter informado."
+Critério de aceite 1 | Dado a plataforma seja acessada por uma conta comum<br>E a página inicial seja acessada<br>Quando o usuário quiser saber se possui alguma atualização ou atribuição de alguma trilha<br>Então o botão de notificação estará com alguma indicação visual
+Critério de aceite 2 | Dado a plataforma seja acessada por uma conta comum<br>E a aba de notificações seja acessada<br>Quando o usuário quiser rever as atualizações do produto FieldView ou alguma trilha atribuída a ele<br>Então aparecerá todas as notificações que o usuário recebeu nos últimos dias
 
-Identificação | USXX (troque XX por numeração ordenada das User Stories)
+Identificação | US11
 --- | ---
-Persona | nome da Persona
-User Story | "como (papel/perfil), posso (ação/meta), para (benefício/razão)"
-Critério de aceite 1 | CR1: descrever cenário + testes de aceite
-Critério de aceite 2 | CR2: descrever cenário + testes de aceite
+Persona | Promotor Técnico Digital
+User Story | "Como PTD, quero que a plataforma me disponibilize certificados de conclusão das trilhas para que eu possa comprovar meu conhecimento"
+Critério de aceite 1 | Dado a plataforma seja acessada por uma conta comum<br>E alguma trilha seja completa<br>Quando terminar de consumir o material didático e realizar as avaliações<br>Então uma mensagem de parabéns aparecerá junto a um botão para baixar um certificado da trilha
+Critério de aceite 2 | Dado a plataforma seja acessada por uma conta comum<br>E a aba de certificados seja acessada<br>Quando o usuário quiser rever o seu certificado<br>Então aparecerá quais trilhas foram completas junto a um botão para baixar o certificado
+
+Identificação | US12
+--- | ---
+Persona | Consultor Digital
+User Story | "Como consultor quero poder adicionar novas trilhas na plataforma para que eu possa complementar o acervo de conhecimento do site"
+Critério de aceite 1 | Dado que a plataforma seja acessada por uma conta admin<br>E haja a necessidade de adicionar uma nova trilha de conhecimento<br>Quando ocorrer alguma atualização no FieldView<br>Então o consultor poderá upar os materiais didáticos acerca das novas funcionalidades no produto
+Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<br>E haja a necessidade de adicionar uma nova trilha de conhecimento<br>Quando ocorrer algum problema com o produto que não haja nenhuma trilha sobre esse tópico<br>Então o consultor poderá upar os materiais didáticos acerca das novas funcionalidades no produto
 Critério de aceite ... | CR...
 Critérios INVEST | *(Por que é Independente? Por que é Negociável? Por que é Valorosa? Por que é Estimável? Por que é Pequena? Por que é Testável?)*
 
