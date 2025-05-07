@@ -89,167 +89,150 @@
 &emsp; A ameaça de produtos substitutos é média, levando em conta o perfil diversificado dos produtores rurais. Embora uma grande quantidade de produtores rurais optem por serviços já usados cotidianamente, percebe-se que atualmente há uma crescente adoção de soluções digitais e novas tecnologias nos campos agrícolas. Dessa forma, percebe-se a mudança de perfil dos consumidores, aceitando o emprego de novos produtos em suas propriedades <sup>[1]</sup>.
 
 #### **Ameaça de novos entrantes**
+
 &emsp; A ameaça de novos entrantes é baixa, tendo em vista que o mercado agrícola já é bem consolidado com empresas de grande relevância internacional. Sob esse contexto, o ramo agrícola é de alta competitividade no nível mundial, na qual empresas como a própria Bayer Crop Science, Corteva, Phos Agro, AGCO, Sime Darby Plantation e outras companhias disputam um lugar de destaque. Por conseguinte, apesar do crescimento constante, o mercado agrícola é de difícil acesso para novos entrantes em todas as áreas de atuação do agronegócio <sup>[6]</sup>.
 
 ### 2.1.2. Análise SWOT da Instituição Parceira (sprint 1)
 
 &emsp; A Bayer CropScience é líder no agronegócio por seu ecossistema completo e forte presença no mercado, com destaque para o FieldView, solução digital que a diferencia da concorrência. No entanto, seu foco em grandes produtores pode limitar seu alcance entre pequenos agricultores. A empresa enfrenta ameaças como questões ambientais e processos legais, que afetam sua reputação. Por outro lado, há oportunidades na expansão de soluções sustentáveis, como o projeto PRO Carbono, e parcerias com universidades, fortalecendo sua inovação e presença no setor frente a concorrentes com tecnologias emergentes.
 
+<p align = 'center'>
+<sup>Figura 2: Análise SWOT da Bayer Crop Science.</sup>
 <img src="../assets/assetsWAD/analiseSWOT.png">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</p>
 
 ### 2.1.3. Solução (sprints 1 a 5)
 
-
 &emsp; A solução baseia-se em uma parceria com a Bayer, que oferece uma ferramenta chamada Climate FieldView — um sistema de software e hardware utilizado para coletar dados de máquinas agrícolas e monitorar a saúde das lavouras. No entanto, essa ferramenta apresenta dificuldades em sua instalação e manuseio por parte dos PTDs (Promotores Técnicos Digitais), uma vez que esses profissionais nem sempre possuem a capacitação técnica necessária para realizar um trabalho eficiente e satisfatório.
 
-
-### Problema a ser resolvido: <br>
+#### Problema a ser resolvido: <br>
 &emsp; Devido a alta rotatividade dos PTDs, os responsáveis pela instalação do Climate FieldView, eles acabam sendo direcionados para atuar a instalação sem a devida capacidade técnica e, consequentemente, acarretam na insatisfação dos clientes que adquiriram o produto e sobrecarrega o atendimento remoto já que o presencial não está sendo efetivo.
 
-### Dados disponíveis:
+#### Dados disponíveis:
 &emsp; Não se aplica devido à falta de informações concretas e dados estatísticos sobre o tema, tendo sido fornecidas apenas as complicações mencionadas pelo cliente. 
 
-### Solução proposta: <br>
+#### Solução proposta: <br>
 &emsp; Para resolver o problema, foi criada uma plataforma de capacitação com módulos voltados ao uso do Climate FieldView pelos PTDs. Um sistema de ranking avalia o desempenho dos usuários, enquanto uma página administrativa permite aos gestores acompanharem o progresso individual e coletivo, garantindo maior eficiência no aprendizado e na atuação técnica.
      
-### Forma de utilização  da solução: <br>
+#### Forma de utilização  da solução: <br>
 
 &emsp;A plataforma possui módulos com aulas e testes para capacitar o PTD no uso do Climate FieldView. Um teste inicial identifica pontos de atenção, e há um sistema de pesquisa rápida para dúvidas urgentes. O progresso é validado com pontuação, permitindo que o administrador acompanhe o nível de conhecimento de cada usuário.
 
-### Benefícios esperados: <br>
+#### Benefícios esperados: <br>
 
 &emsp; Com a plataforma em funcionamento e os estudos concluídos, espera-se que os PTDs estejam aptos para atuar em campo com as habilidades necessárias, entregando um serviço eficaz e satisfatório, sem sobrecarregar outras áreas ligadas ao Climate FieldView, como o atendimento remoto, ou desperdiçar tempo que poderia ser utilizado de forma mais produtiva.
 
-### Critério de sucesso e como será avaliado: <br>
+#### Critério de sucesso e como será avaliado: <br>
 
 &emsp; Com a efetiva atuação da plataforma espera-se que os PTDs estejam preparados para a sua área de atuação e execução de suas atividades de maneira direta e ágil. Como critério de avaliação será possível perceber uma diminuição na sobrecarga do atendimento remoto e uma melhor avaliação dos clientes sobre a atuação dos PTDs.
 
-
 ### 2.1.4. Value Proposition Canvas (sprint 1): 
-Canvas de Proposta de Valor — Solução para Capacitação de Promotores
-Segundo Pereira<sup>[10]</sup>., o modelo de negócio criado por Alexander Osterwalder, Yves Pigneur e Alan Smith denominado “Value Proposition Canvas” é uma ferramenta desenhada para garantir que o produto atenda às necessidades dos clientes, traga-lhes benefícios e resolva seus problemas, estruturando como o serviço agrega valor a eles. Para isso, a ferramenta utiliza duas seções do Business Model Canvas, a saber: “Segmentos de Clientes” e “Propostas de Valor”.
 
-Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um perfil apresentado pelo cliente mostrando suas tarefas, suas dores e seus ganhos. O lado esquerdo inclui a proposta de valor que deve ser entregue ao cliente, abrangendo produtos e serviços, criadores de benefícios e analgésicos (este é o mapa de valor)<sup>[10]</sup>.
+&emsp; Segundo Pereira<sup>[10]</sup>, o modelo de negócio criado por Alexander Osterwalder, Yves Pigneur e Alan Smith denominado “Value Proposition Canvas” é uma ferramenta desenhada para garantir que o produto atenda às necessidades dos clientes, traga-lhes benefícios e resolva seus problemas, estruturando como o serviço agrega valor a eles. Para isso, a ferramenta utiliza duas seções do Business Model Canvas, a saber: “Segmentos de Clientes” e “Propostas de Valor”.
 
-Portanto, é importante descrever o conceito geral de cada tópico, mostrar a relação entre eles e como eles se afetam direta ou indiretamente. Portanto, os tópicos subsequentes abordarão elementos inerentes ao Value Proposition Canvas da solução proposta para o projeto atual, iniciando pelo perfil do cliente. Além disso, a Figura 3 mostra esses elementos visualmente:
+&emsp; Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um perfil apresentado pelo cliente mostrando suas tarefas, suas dores e seus ganhos. O lado esquerdo inclui a proposta de valor que deve ser entregue ao cliente, abrangendo produtos e serviços, criadores de benefícios e analgésicos (este é o mapa de valor)<sup>[10]</sup>.
 
+&emsp; Portanto, é importante descrever o conceito geral de cada tópico, mostrar a relação entre eles e como eles se afetam direta ou indiretamente. Portanto, os tópicos subsequentes abordarão elementos inerentes ao Value Proposition Canvas da solução proposta para o projeto atual, iniciando pelo perfil do cliente. Além disso, a Figura 3 mostra esses elementos visualmente:
+
+<p align = 'center'>
+<sup>Figura 3: Canvas proposta de valor do projeto FieldView.</sup>
 <img src="../assets/assetsWAD/CanvasProspostaDeValor.png">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</p>
 
-### Tarefas do Cliente
+#### Tarefas do Cliente
 
-Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, auxiliando no entendimento de como é possível agir perante a problemática em questão<sup>[10]</sup>.. No contexto da capacitação de promotores, o cliente realiza as seguintes tarefas:
+&emsp; Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, auxiliando no entendimento de como é possível agir perante a problemática em questão<sup>[10]</sup>.. No contexto da capacitação de promotores, o cliente realiza as seguintes tarefas:
 
-**Utilizar o site de “Ajuda Rápida” do Climate FIELDVIEW:** O PTD(Promotor Técnico Digital) depende de um site que não foca em ensinar adequadamente ele sobre o uso do Climate FieldView.
+- **Utilizar o site de “Ajuda Rápida” do Climate FIELDVIEW:** O PTD(Promotor Técnico Digital) depende de um site que não foca em ensinar adequadamente ele sobre o uso do Climate FieldView.
 
+- **Contactar alguém de dentro da Climate FIELDVIEW para buscar suporte:** Quando não consegue receber a ajuda do site de “Ajuda Rápida”, é exigido que ele solicite contato com assistência da própria Climate FieldView, de forma que se torna um trabalho mais demorado e insatisfatório para o cliente, que seria o fazendeiro.
 
-**Contactar alguém de dentro da Climate FIELDVIEW para buscar suporte:** Quando não consegue receber a ajuda do site de “Ajuda Rápida”, é exigido que ele solicite contato com assistência da própria Climate FieldView, de forma que se torna um trabalho mais demorado e insatisfatório para o cliente, que seria o fazendeiro.
+- **Depender dos feedbacks dos usuários do Climate FIELDVIEW sobre os promotores:** para que o Consultor de Sucesso do Cliente tenha ciência da capacitação e desempenho do PDT, ele necessita da avaliação do cliente, no caso o fazendeiro que contrata desse serviço. 
 
+#### Ganhos
 
-**Depender dos feedbacks dos usuários do Climate FIELDVIEW sobre os promotores:** para que o Consultor de Sucesso do Cliente tenha ciência da capacitação e desempenho do PDT, ele necessita da avaliação do cliente, no caso o fazendeiro que contrata desse serviço. 
+&emsp; No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Esta parte foca naquilo que o cliente almeja alcançar no escopo em questão, devendo cada ganho ser viabilizado por um criador de ganho correspondente<sup>[10]</sup>. Assim, foram identificados os seguintes ganhos:
 
+- **Aprimorar competências específicas:** com uma análise feita pelo Consultor de Sucesso do Cliente, ele pode mandar ao PTD especifico uma trilha que ele pode se preocupar mais. 
 
-### Ganhos
+- **Elevar a excelência no atendimento ao cliente:** suprir a insatisfação dos clientes quanto ao atendimento do PTD’s.
 
-No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Esta parte foca naquilo que o cliente almeja alcançar no escopo em questão, devendo cada ganho ser viabilizado por um criador de ganho correspondente<sup>[10]</sup>.. Assim, foram identificados os seguintes ganhos:
-Aprimorar competências específicas: com uma análise feita pelo Consultor de Sucesso do Cliente, ele pode mandar ao PTD especifico uma trilha que ele pode se preocupar mais. 
-
-
-**Elevar a excelência no atendimento ao cliente:** suprir a insatisfação dos clientes quanto ao atendimento do PTD’s.
-
-
-**Eliminar a dependência de canais de comunicação ineficazes:** evitar o uso de canais de comunicações como WhatsApp, estabelecendo um meio de comunicação oficial e seguro.
+- **Eliminar a dependência de canais de comunicação ineficazes:** evitar o uso de canais de comunicações como WhatsApp, estabelecendo um meio de comunicação oficial e seguro.
 
 
-**Melhorar as capacidades técnicas exigidas dos promotores:** trazer trilhas intuitivamente, que ensinem e capacitem os PDT’s a fazerem seu trabalho eficientemente.
+- **Melhorar as capacidades técnicas exigidas dos promotores:** trazer trilhas intuitivamente, que ensinem e capacitem os PDT’s a fazerem seu trabalho eficientemente.
 
 
-**Ter auxílio rápido e fácil:** fazer uma plataforma que tenha auxílios rápidos para os PTD’s em caso de dúvidas durante o trabalho. 
+- **Ter auxílio rápido e fácil:** fazer uma plataforma que tenha auxílios rápidos para os PTD’s em caso de dúvidas durante o trabalho. 
 
 
-**Acompanhar de forma precisa o aprendizado e o engajamento dos promotores:** parte feita para o Consultor de Sucesso do Cliente saber como ando o aprendizado dos Promotores.
+- **Acompanhar de forma precisa o aprendizado e o engajamento dos promotores:** parte feita para o Consultor de Sucesso do Cliente saber como ando o aprendizado dos Promotores.
 
-### Dores
+#### Dores
 
-No segmento de dores, há a definição daquilo com que o cliente sofre em decorrência da falta de uma solução efetiva ao seu problema<sup>[10]</sup>.. As dores identificadas foram:
-**Não há nenhuma plataforma de capacitação adequada e ágil:** não tem uma plataforma que torne os Promotores capacitados ou possa os ajudar rápido e efetivamente.
+&emsp; No segmento de dores, há a definição daquilo com que o cliente sofre em decorrência da falta de uma solução efetiva ao seu problema<sup>[10]</sup>.. As dores identificadas foram:
 
+- **Não há nenhuma plataforma de capacitação adequada e ágil:** não tem uma plataforma que torne os Promotores capacitados ou possa os ajudar rápido e efetivamente.
 
-**Ausência de um sistema de monitoramento da capacitação dos promotores:** o Consultor não sabe o nível de capacitação dos Promotores, enviados a campo.
+- **Ausência de um sistema de monitoramento da capacitação dos promotores:** o Consultor não sabe o nível de capacitação dos Promotores, enviados a campo.
 
+- **Grandes diferenças de níveis de conhecimento entre promotores:** os Promotores mais velhos tem maior nível quanto ao quesito técnico que os mais novos.
 
-**Grandes diferenças de níveis de conhecimento entre promotores:** os Promotores mais velhos tem maior nível quanto ao quesito técnico que os mais novos.
+- **Falta de um guia prático de instruções sobre as ferramentas:** os guias atuais não apresentam serem intuitivos e nem rápido de se entender.
 
+- **Sem incentivo para aprendizado:** não há nada que traga vontade de aprender ao promotor, além de se tornar mais capacitado.
 
-**Falta de um guia prático de instruções sobre as ferramentas:** os guias atuais não apresentam serem intuitivos e nem rápido de se entender.
+&emsp; A partir da identificação do perfil do cliente, é necessário mapear o melhor caminho pelo qual suas necessidades serão atendidas. Assim, explicitam-se os criadores de ganho, aliviadores de dor e os produtos e serviços propostos.
 
+#### Produtos e Serviços
 
-**Sem incentivo para aprendizado:** não há nada que traga vontade de aprender ao promotor, além de se tornar mais capacitado.
-
-<br/>
-<br/>
-<br/>
-
-
-A partir da identificação do perfil do cliente, é necessário mapear o melhor caminho pelo qual suas necessidades serão atendidas. Assim, explicitam-se os criadores de ganho, aliviadores de dor e os produtos e serviços propostos.
-
-### Produtos e Serviços
-
-No segmento de produtos e serviços, há a identificação daquilo que deve ser entregue ao cliente, por meio de funcionalidades definidas e claras <sup>[10]</sup>. No presente contexto, propõe-se:
+&emsp; No segmento de produtos e serviços, há a identificação daquilo que deve ser entregue ao cliente, por meio de funcionalidades definidas e claras <sup>[10]</sup>. No presente contexto, propõe-se:
 Plataforma web com trilhas de aprendizado voltadas aos promotores, com foco na melhoria de sua capacitação em campo: trazer uma solução web, de fácil acesso.
 
+- **Sistema com acessos distintos para o Consultor de Sucesso do Cliente e para os promotores, facilitando a avaliação dos promotores pelo consultor:** trazer uma área destinada ao consultor, para saber sobre os promotores, e outra para os promotores com suas trilhas a serem feitas.
 
-**Sistema com acessos distintos para o Consultor de Sucesso do Cliente e para os promotores, facilitando a avaliação dos promotores pelo consultor:** trazer uma área destinada ao consultor, para saber sobre os promotores, e outra para os promotores com suas trilhas a serem feitas.
+- **Sistema de classificação por pontos em provas de cada trilha realizada:** Sistema de pontuação conquistada por meio de provas sobre as trilhas para dedicação maior pelos promotores.
 
+- **Espaço dedicado às trilhas, com acesso intuitivo e ágil:** trazer trilhas de fácil entendimento e intuitivas para os promotores poderem seguir e aprender.
 
-**Sistema de classificação por pontos em provas de cada trilha realizada:** Sistema de pontuação conquistada por meio de provas sobre as trilhas para dedicação maior pelos promotores.
+#### Criadores de Ganhos
 
-
-**Espaço dedicado às trilhas, com acesso intuitivo e ágil:** trazer trilhas de fácil entendimento e intuitivas para os promotores poderem seguir e aprender.
-
-
-### Criadores de Ganhos
-
-Os criadores de ganhos identificam o que será implementado para gerar satisfação ao cliente, estando conectados diretamente aos ganhos elencados no perfil do cliente <sup>[10]</sup>. Assim, temos:
+&emsp; Os criadores de ganhos identificam o que será implementado para gerar satisfação ao cliente, estando conectados diretamente aos ganhos elencados no perfil do cliente <sup>[10]</sup>. Assim, temos:
 Trilhas de capacitação para os promotores, com recursos visuais e auditivos, visando aprimorar suas habilidades e a qualidade do seu trabalho: trilhas com métodos de ensino diversos para auxiliar os PDT’s a serem capacitados e elevar sua qualidade de atendimento.
 
+- **Permitir que o Consultor possa indicar trilhas específicas ao promotor, caso necessário:** permitir que os Consultores possam indicar trilhas a serem feitas para melhorar especificamente algumas capacitações dos Promotores, trazendo um meio de comunicação entre ambos.
 
-**Permitir que o Consultor possa indicar trilhas específicas ao promotor, caso necessário:** permitir que os Consultores possam indicar trilhas a serem feitas para melhorar especificamente algumas capacitações dos Promotores, trazendo um meio de comunicação entre ambos.
+- **Plataforma de monitoramento dos promotores, permitindo avaliar seu nível de engajamento e progresso no aprendizado:** permitir aos Consultores supervisionar como anda os Promotores e suas trilhas, se estão cumprindo adequadamente.
 
+- **Área dedicada à consulta de tópicos específicos, de acordo com o interesse momentâneo do promotor:** área destinada a trazer um guia mais prático para caso haja maior necessidade quando os Promotores já estiverem atuando em campo.
 
-**Plataforma de monitoramento dos promotores, permitindo avaliar seu nível de engajamento e progresso no aprendizado:** permitir aos Consultores supervisionar como anda os Promotores e suas trilhas, se estão cumprindo adequadamente.
+#### Aliviadores de Dor
 
+&emsp; Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas<sup>[10]</sup>. Nesse sentido, definem-se:
 
-**Área dedicada à consulta de tópicos específicos, de acordo com o interesse momentâneo do promotor:** área destinada a trazer um guia mais prático para caso haja maior necessidade quando os Promotores já estiverem atuando em campo.
+- **Plataforma web estruturada em trilhas e módulos de aprendizado, projetada para apoiar a capacitação do promotor com agilidade e eficiência:** plataforma intuitiva e de fácil acesso para os Promotores possam acessar e aprender com métodos diferentes.
 
+- **Sistema para acompanhar e avaliar o nível de conhecimento adquirido pelos promotores:** apresentando um sistema de pontos para trazer maior competitividade entre os promotores junto de um incentivo para fazerem as trilhas e aprenderem.
 
-### Aliviadores de Dor
-
-Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas<sup>[10]</sup>. Nesse sentido, definem-se:
-Plataforma web estruturada em trilhas e módulos de aprendizado, projetada para apoiar a capacitação do promotor com agilidade e eficiência: plataforma intuitiva e de fácil acesso para os Promotores possam acessar e aprender com métodos diferentes.
-
-
-**Sistema para acompanhar e avaliar o nível de conhecimento adquirido pelos promotores:** apresentando um sistema de pontos para trazer maior competitividade entre os promotores junto de um incentivo para fazerem as trilhas e aprenderem.
-
-
-**Recomendações de trilhas personalizadas, definidas com a orientação do consultor:** o Consultor poder indicar aos Promotores que achar justo, trilhas que possam ser déficits ou sejam mais requisitadas que outras mais normais.
+- **Recomendações de trilhas personalizadas, definidas com a orientação do consultor:** o Consultor poder indicar aos Promotores que achar justo, trilhas que possam ser déficits ou sejam mais requisitadas que outras mais normais.
 
 ### 2.1.5. Matriz de Riscos do Projeto (sprint 1)
 
-&emsp;&emsp;&emsp;&emsp;A matriz de riscos é uma ferramenta essencial para identificar, avaliar e priorizar ameaças que podem impactar o projeto. A avaliação qualitativa de riscos utiliza uma matriz que integra frequência (probabilidade de ocorrência) e severidade (impacto econômico). Os riscos de alta severidade e frequência requerem atenção imediata, enquanto os de menor impacto podem ser monitorados com menor urgência. Essa priorização permite a distribuição eficaz de recursos para ações preventivas e corretivas, garantindo a continuidade do projeto.
+&emsp; A matriz de riscos é uma ferramenta essencial para identificar, avaliar e priorizar ameaças que podem impactar o projeto. A avaliação qualitativa de riscos utiliza uma matriz que integra frequência (probabilidade de ocorrência) e severidade (impacto econômico). Os riscos de alta severidade e frequência requerem atenção imediata, enquanto os de menor impacto podem ser monitorados com menor urgência. Essa priorização permite a distribuição eficaz de recursos para ações preventivas e corretivas, garantindo a continuidade do projeto.
 
-
-<div align="center">
-Matriz de Risco do projeto.
-</div>
+<p align = 'center'>
+<sup>Figura 4: Matriz de riscos e oportunidades do projeto.</sup>
 <img src="../assets/assetsWAD/matrizDeRisco.png">
-<br>
+<sub>Fonte: Material produzido pelos próprios autores (2025)</sub>
+</p>
 
-<div align="center">
-Fonte: Próprios Autores (2025)
-</div>
-<br>
+&emsp; Para explicar os termos colocados na imagem acima, faremos um quadro de ameaças e de oportunidades descrevendo cada tópico, com a categoria que ela se encontra, a probabilidade de acontecer e o impacto que esse risco pode ocasionar no projeto.
 
-&emsp;&emsp;&emsp;&emsp;Para explicar os termos colocados na imagem acima, faremos uma tabela de ameaça e de oportunidade descrevendo cada tópico, com a categoria que ela se encontra, a probabilidade de acontecer e o impacto que esse risco pode ocasionar no projeto.
+<p align = 'center'>
+<sup>Quadro 1: Descrição dos riscos do projeto.</sup>
+</p>
 
 | Risco                                                   | Categoria                          | Descrição                                                                                                                                     | Probabilidade | Impacto     |
 |----------------------------------------------------------|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------|
@@ -260,9 +243,16 @@ Fonte: Próprios Autores (2025)
 | Falta de conhecimento na área de back end               | Pessoas (falta de conhecimento)    | Habilidades limitadas em back end podem atrasar a construção de funcionalidades críticas e a progressão do trabalho.                        | 30            | Moderado    |
 | Análise da empresa (Bayer CropScience)                  | Pesquisa                           | Análise bem feita do parceiro sem nenhum impeditivo ou dificuldade.                                                                         | 10            | Muito Baixo |
 | Desentendimento entre a equipe                          | Relacionamento / Relação           | Conflitos interpessoais podem gerar impacto na produtividade e na continuidade do projeto.                                                   | 10            | Baixo       |
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
 
 
-# 2. Oportunidades
+-  2. Oportunidades
+
+<p align = 'center'>
+<sup>Quadro 2: Descrição das oportunidades do projeto.</sup>
+</p>
 
 | Oportunidade                                | Categoria               | Descrição                                                                                         | Probabilidade | Impacto    |
 |---------------------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------|---------------|------------|
@@ -273,20 +263,34 @@ Fonte: Próprios Autores (2025)
 | Facilidade no aprendizado                   | Pessoas / Educacional   | A equipe tem boa capacidade de assimilação, o que faz com que a falta de conhecimento prévio, mesmo atrasando um pouco o andamento, não seja um impeditivo para a preparação de um ótimo projeto.  | 30            | Alto       |
 | Conhecer um profissional agrícola           | Rede de contatos        | A interação com especialistas do campo traz aprendizado e feedback técnico valioso, ampliando o conhecimento e tornando-nos profissionais mais versáteis.             | 50            | Moderado   |
 
-
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
 
 
 ## 2.2. Personas (sprint 1)
 
 &emsp; As personas mapeadas para o projeto representam os perfis centrais dos usuários que interagem diretamente com a solução proposta. As personas foram desenvolvidas com base nas necessidades do parceiro Bayer Crop Science e visam orientar decisões de design, funcionalidades e usabilidade da aplicação.
+
+<p align = 'center'>
+<sup>Figura 4: Representação da persona PTD Jorge Faria.</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/personasptd.png">
-<br> <sub>Fonte: autoral (2025)</sub> </p>
+<br> <sub>Fonte: Material produzido pelos próprios autores (2025).</sub> </p>
+
+<p align = 'center'>
+<sup>Figura 5: Representação da persona Consultor Odair Jamar.</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/personasconsultor.png"> 
-<br> <sub>Fonte: autoral (2025) </sub> </p>
+<br> <sub>Fonte:  Material produzido pelos próprios autores (2025).</sub> </p>
 
 ## 2.3. User Stories (sprints 1 a 5)
 
 &emsp; As User Stories são um elemento essencial para o planejamento de um projeto, pois elas norteiam o grupo a realizar suas tarefas com base em uma das personas desenvolvidas pelo grupo. Assim, projetou-se as seguintes personas de acordo com os quadros abaixo:
+
+<p align = 'center'>
+<sup>Quadro 3: Informações da user story 01.</sup>
+</p>
 
 Identificação | US01
 --- | ---
@@ -296,6 +300,14 @@ Critério de aceite 1 | Dado que a barra de pesquisa esteja acessível, <br>E o 
 Critério de aceite 2 | Dado que a barra de pesquisa esteja acessível,<br>E o usuário deseje procurar por um tópico,<br>Quando ele digitar uma palavra-chave sem saber o nome exato da trilha,<br>Então a barra de pesquisa deve apresentar sugestões de trilhas relacionadas
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e a capacidade da plataforma<br>- A User Story é valiosa porque o PTD pode sanar as suas dúvidas de forma rápida, economizando tempo e satisfazendo o cliente.<br>- A User Story é estimável porque oferece informações sobre os elementos necessários para a implementação da busca rápida, como a barra de busca, a apresentação de resultados, e os filtros de pesquisa.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de busca rápida.<br>- A User Story é testável porque os critérios 
 
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 4: Informações da user story 02.</sup>
+</p>
+
 Identificação | US02
 --- | ---
 Persona | Promotor Técnico Digital
@@ -303,6 +315,14 @@ User Story | "Como PTD, quero ter acesso a uma plataforma didática onde eu poss
 Critério de aceite 1 | Dado que a plataforma seja acessada,<br>E o usuário deseje realizar um estudo técnico,<br>Então ele deve conseguir encontrar trilhas e conteúdos relevantes para sua capacitação como Promotor Técnico Digital..
 Critério de aceite 2 | Dado que o Promotor Técnico Digital esteja com dificuldade técnica,<br>E deseje realizar um estudo sobre o tema,<br>Então ele deve conseguir acessar uma plataforma amigável e didática com conteúdos que o auxiliem na resolução da dificuldade.
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e a capacidade da plataforma<br>- A User Story é valiosa porque o PTD pode usar a plataforma para se capacitar, o que impacta diretamente na qualidade dos atendimentos e na satisfação do cliente.<br>- A User Story é estimável porque é possível estimar o esforço do desenvolvimento com base na entrega das trilhas, na organização dos conteúdos e, consequentemente na usabilidade da plataforma.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de visualização e acesso às trilhas.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão a funcionalidade do acesso às trilhas e a sua objetividade.
+
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 5: Informações da user story 03.</sup>
+</p>
 
 Identificação | US03
 --- | ---
@@ -312,6 +332,14 @@ Critério de aceite 1 | Dado que o consultor acesse a plataforma com a função 
 Critério de aceite 2 | Dado que o consultor acesse a plataforma com a função de administrador,<br>Quando ele selecionar um PTD específico,<br>Então ele deve conseguir direcionar trilhas individualmente para esse PTD.
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e os objetivos do consultor.<br>- A User Story é valiosa porque o consultor pode atribuir trilhas de maneira individual a cada PTD, o que eleva a performance individual e a capacitação da equipe.<br>- A User Story é estimável porque oferece as informações necessárias para validação da funcionalidade e pode ser facilmente avaliada de acordo com o resultado dos PTDs.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de atribuição manual de trilhas.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão a funcionalidade de atribuição de trilhas.
 
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 6: Informações da user story 04.</sup>
+</p>
+
 Identificação | US04
 --- | ---
 Persona | Promotor Técnico Digital
@@ -319,6 +347,14 @@ User Story | "Como PTD quero ter a possibilidade de me cadastrar na plataforma p
 Critério de aceite 1 | Dado que o PTD tenha um cadastro válido,<br>Quando ele acessar a plataforma e inserir suas credenciais,<br>Então ele deve conseguir realizar o login e visualizar os conteúdos disponíveis
 Critério de aceite 2 | Dado que o PTD tenha um cadastro ativo,<br>Quando ele realizar o login,<br>Então ele deve conseguir acessar seu perfil pessoal na plataforma.
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e as necessidades do promotor técnico digital.<br>- A User Story é valiosa porque o PTD possuirá um cadastro único para acessar os conteúdos e ter a sua conta registrada.<br>- A User Story é estimável porque o desenvolvimento dessa funcionalidade é facilmente estipulado com base na aplicação em outras plataformas.<br>- A User Story é pequena porque foca somente na funcionalidade de cadastro e login do usuário PTD.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão como funcionará o processo de cadastro e login.
+
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 7: Informações da user story 05.</sup>
+</p>
 
 Identificação | US05
 --- | ---
@@ -328,6 +364,13 @@ Critério de aceite 1 | Dado que o PTD já tenha realizado estudos na plataforma
 Critério de aceite 2 | Dado que o PTD já tenha realizado estudos na plataforma,<br>E deseje focar nos tópicos com maior dificuldade,<br>Quando ele acessar novamente a plataforma,<br>Então a plataforma deve destacar os conteúdos em que o PTD teve pior desempenho.
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e as vontades do promotor técnico digital.<br>- A User Story é valiosa porque o PTD possuirá a opção de consolidar os seus conhecimentos, além de corrigir os seus erros anteriores.<br>- A User Story é estimável porque o desenvolvimento dessa funcionalidade pode ser estipulada de acordo com as tecnologias que serão utilizadas durante o processo.<br>- A User Story é pequena porque foca somente na funcionalidade de revisar os tópicos já concluídos pelo PTD.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão como funcionará a revisão dos usuários.
 
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 8: Informações da user story 06.</sup>
+</p>
 
 Identificação | US06
 --- | ---
@@ -336,12 +379,28 @@ User Story | "Como consultor, quero garantir que meu time de PTDs recém contrat
 Critério de aceite 1 | Dado que o PTD comece a atuar na área<br>E entre na plataforma de ensino<br>Quando entrar na empresa,<br>Então realizará uma trilha de conhecimento básico
 Critério de aceite 2 | Dado que o PTD novato atenda um chamado<br>E não saiba resolver algum problema<br>Quando estiver com o cliente<br>Então utilize a plataforma de ensino 
 
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 9: Informações da user story 07.</sup>
+</p>
+
 Identificação | US07
 --- | ---
 Persona | Consultor Digital
 User Story | " Como consultor, quero ter a possibilidade de analisar separadamente o desempenho de cada um dos PTDs para que eu possa estar ciente do seu desenvolvimento individual."
 Critério de aceite 1 | Dado que a plataforma seja acessada por uma conta admin<br>E entre na página de análise individual de algum colega de equipe<br>Quando quiser consultar as métricas desse parceiro<br>Então aparecerá uma série de dados acerca do avanço dos estudos do PTD
 Critério de aceite 2 | Dado que a plataforma seja acessada por uma conta admin<br>E entre na página de análise individual de alguém do time<br>Quando for consultar as trilhas com mais erros do colega de equipe<br>Então aparecerá as questões e trilhas que o PTD teve o menor aproveitamento
+
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 10: Informações da user story 08.</sup>
+</p>
 
 Identificação | US08
 --- | ---
@@ -350,12 +409,28 @@ User Story | "Como PTD, quero ter a possibilidade de receber uma pontuação de 
 Critério de aceite 1 | Dado que a plataforma seja acessada por uma conta comum<br>E seja realizada algum exercício sobre a plataforma<br>Quando for finalizada uma trilha de conhecimento<br>Então o usuário receberá pontos caso acerte a pergunta
 Critério de aceite 2 |Dado que a plataforma seja acessada por uma conta comum<br>E a página de perfil seja aberta<br>Quando o usuário quiser ver suas informações<br>Então aparecerá a pontuação atual do PTD
 
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 11: Informações da user story 09.</sup>
+</p>
+
 Identificação | US09
 --- | ---
 Persona | nome da Persona
 User Story | "Como consultor, quero saber quais pessoas do meu time estão mais engajadas em aprender sobre a plataforma para que eu possa incentivá-las no seu progresso."
 Critério de aceite 1 | Dado o acesso ao site com uma conta admin<br>E a página principal seja aberta<br>Quando o consultor que quiser ver o desempenho geral de seus colegas<br>Então um ranking será mostrado com todos os usuários da plataforma
 Critério de aceite 2 | Dado que a plataforma seja acessada utilizando uma conta admin<br>E a página inicial seja acessada<br>Quando o consultor queira saber em qual posição está seu colega de time<br>Então aparecerá em qual posição está o PTD junto a sua pontuação
+
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 12: Informações da user story 10.</sup>
+</p>
 
 Identificação | US10
 --- | ---
@@ -364,6 +439,14 @@ User Story | "Como PTD, quero que a plataforma me avise sobre as trilhas direcio
 Critério de aceite 1 | Dado a plataforma seja acessada por uma conta comum<br>E a página inicial seja acessada<br>Quando o usuário quiser saber se possui alguma atualização ou atribuição de alguma trilha<br>Então o botão de notificação estará com alguma indicação visual
 Critério de aceite 2 | Dado a plataforma seja acessada por uma conta comum<br>E a aba de notificações seja acessada<br>Quando o usuário quiser rever as atualizações do produto FieldView ou alguma trilha atribuída a ele<br>Então aparecerá todas as notificações que o usuário recebeu nos últimos dias
 
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 13: Informações da user story 11.</sup>
+</p>
+
 Identificação | US11
 --- | ---
 Persona | Promotor Técnico Digital
@@ -371,12 +454,24 @@ User Story | "Como PTD, quero que a plataforma me disponibilize certificados de 
 Critério de aceite 1 | Dado a plataforma seja acessada por uma conta comum<br>E alguma trilha seja completa<br>Quando terminar de consumir o material didático e realizar as avaliações<br>Então uma mensagem de parabéns aparecerá junto a um botão para baixar um certificado da trilha
 Critério de aceite 2 | Dado a plataforma seja acessada por uma conta comum<br>E a aba de certificados seja acessada<br>Quando o usuário quiser rever o seu certificado<br>Então aparecerá quais trilhas foram completas junto a um botão para baixar o certificado
 
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 14: Informações da user story 12.</sup>
+</p>
+
 Identificação | US12
 --- | ---
 Persona | Consultor Digital
 User Story | "Como consultor quero poder adicionar novas trilhas na plataforma para que eu possa complementar o acervo de conhecimento do site"
 Critério de aceite 1 | Dado que a plataforma seja acessada por uma conta admin<br>E haja a necessidade de adicionar uma nova trilha de conhecimento<br>Quando ocorrer alguma atualização no FieldView<br>Então o consultor poderá upar os materiais didáticos acerca das novas funcionalidades no produto
 Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<br>E haja a necessidade de adicionar uma nova trilha de conhecimento<br>Quando ocorrer algum problema com o produto que não haja nenhuma trilha sobre esse tópico<br>Então o consultor poderá upar os materiais didáticos acerca das novas funcionalidades no produto
+
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
 
 # <a name="c3"></a>3. Projeto da Aplicação Web (sprints 1 a 4)
 
