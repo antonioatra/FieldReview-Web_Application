@@ -414,8 +414,21 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 
 ### 3.5.1. Modelo relacional (sprints 2 e 4)
 
-*posicione aqui os diagramas de modelos relacionais do seu banco de dados, apresentando todos os esquemas de tabelas e suas relações. Utilize texto para complementar suas explicações, se necessário* 
+&emsp;&emsp; A seguir, apresenta-se o Diagrama de Entidade e Relacionamento (DER), que é o modelo lógico derivado da MER (Modelagem Entidade e Relacionamento), com a explicação de todas as entidades e seus respectivos relacionamentos. Este diagrama servirá como base para implementação do banco de dados do site.
 
+&emsp;&emsp; Para fins de organização, será apresentado todas as entidades primeiro e depois seus relacionamentos.
+
+## Entidades.
+
+<p align="center"> <img src="../assets/assetsWAD/usuario_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp;&emsp; A imagem a seguir é referente à entidade Usuário, cujos seus atributos são: **ID**, gerado automaticamente após sua criação e servirá para sua identificação principalmente dentro do banco de dados, **Nome** fornecido pelo usuário durante o cadastro, **Email** para contato e para receber notificações, **senha**, também definida pelo usuário, **cargo**, será responsável por diferenciar PTDs (quem fará as trilhas, por exemplo) e Administradores (quem recomenda usuários a fazerem trilhas, por exemplo), **pontuação**, representa a pontuação obtida pelo PTD após responder a pergunta corretamente de qualquer módulo (este atributo será null para Administradores, já que ele não faz as trilhas), **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+
+<p align="center"> <img src="../assets/assetsWAD/usuario-trilha_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp;&emsp; A imagem a seguir é referente à entidade Usuário-Trilha. Ela é criada porque a relação entre **usuário** e **trilha** é N:N, isso quer dizer que vários usuários podem receber várias trilhas
 ### 3.5.2. Consultas SQL e lógica proposicional (sprint 2)
 
 *posicione aqui uma lista de consultas SQL compostas, realizadas pelo back-end da aplicação web, com sua respectiva lógica proposicional, descrita conforme template abaixo. Lembre-se que para usar LaTeX em markdown, basta você colocar as expressões entre $ ou $$*
