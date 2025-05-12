@@ -114,7 +114,7 @@
      
 ### Forma de utilização  da solução: <br>
 
-&emsp;A plataforma possui módulos com aulas e testes para capacitar o PTD no uso do Climate FieldView. Um teste inicial identifica pontos de atenção, e há um sistema de pesquisa rápida para dúvidas urgentes. O progresso é validado com pontuação, permitindo que o administrador acompanhe o nível de conhecimento de cada usuário.
+&emsp; A plataforma possui módulos com aulas e testes para capacitar o PTD no uso do Climate FieldView. Um teste inicial identifica pontos de atenção, e há um sistema de pesquisa rápida para dúvidas urgentes. O progresso é validado com pontuação, permitindo que o administrador acompanhe o nível de conhecimento de cada usuário.
 
 ### Benefícios esperados: <br>
 
@@ -386,7 +386,80 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 
 ## 3.2. Wireframes (sprint 2)
 
-*Posicione aqui as imagens do wireframe construído para sua solução e, opcionalmente, o link para acesso (mantenha o link sempre público para visualização)*
+&emsp; O wireframe é uma representação esquemática inicial de uma interface de usuário, geralmente elaborada com baixa fidelidade. Seu objetivo principal é auxiliar na definição da estrutura e na disposição dos elementos visuais e informacionais da interface, sem, contudo, abordar em profundidade as funcionalidades ou aspectos estéticos do sistema. Essa ferramenta é amplamente utilizada nas etapas iniciais do design de interfaces, por permitir uma visualização clara da hierarquia da informação e da navegação pretendida, facilitando a comunicação entre designers, desenvolvedores e demais *stakeholders*.
+
+<p align="center"> <img src="../assets/assetsWAD/telaLogin.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; A primeira tela do wireframe representa a tela inicial da plataforma, onde o usuário pode realizar o seu login com e-mail e senha.
+
+ **Funcionalidades do Usuário Comum**
+
+<p align="center"> <img src="../assets/assetsWAD/telaUsuárioPadrao.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Após realizar o login, a plataforma irá redirecionar para a tela correspondente à função do usuário: comum ou administrador. Na tela inicial do usuário, é possível observar o ranking geral e a sua posição, além de notificações sobre atualizações, trilhas já concluídas e trilhas disponíveis.
+
+&emsp; Na interface inicial destinada ao usuário comum, são disponibilizadas as seguintes informações:
+
+* Visualização do ranking geral dos usuários, incluindo a posição atual do usuário logado;  
+* Notificações referentes a atualizações e eventos relevantes na plataforma;  
+* Listagem das trilhas de aprendizagem já concluídas;  
+* Exibição das trilhas disponíveis para realização;  
+* Barra de pesquisa para busca de conteúdos.
+
+<p align="center"> <img src="../assets/assetsWAD/telaTrilhas.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Na listagem de trilhas exibida na página inicial, ao selecionar a trilha de interesse, o usuário é redirecionado para a interface específica da trilha escolhida. Nessa tela, são apresentados os módulos que a compõem, cada um contendo:
+
+* Material de estudo relacionado ao tema do módulo;  
+* Uma pergunta destinada à validação do conhecimento adquirido pelo usuário.
+
+<p align="center"> <img src="../assets/assetsWAD/telaPesquisa.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Na tela inicial do usuário, encontra-se também uma barra de pesquisa. Ao ser acionada, ela redireciona o usuário para uma nova tela, onde é possível realizar buscas por temas de interesse e localizar os conteúdos correspondentes disponíveis na plataforma.
+
+---
+
+ **Funcionalidades do Administrador**
+
+&emsp; Após realizar o login na função de administrador, a tela inicial exibe funcionalidades distintas em comparação à tela do usuário. Uma das principais diferenças é a presença de abas que permitem navegar entre as opções de 'Usuários' e 'Trilhas'.
+
+<p align="center"> <img src="../assets/assetsWAD/telaAdminTrilha.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Na aba de 'Trilhas', o administrador pode visualizar todas as trilhas existentes e tem a opção de excluí-las, editá-las ou até mesmo criar novas trilhas.
+
+<p align="center"> <img src="../assets/assetsWAD/telaEdicaoTrilhas.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Caso o administrador opte por editar ou criar uma nova trilha, é exibida uma tela contendo as informações da trilha selecionada, com a possibilidade de adicionar ou modificar os módulos existentes.
+
+<p align="center"> <img src="../assets/assetsWAD/telaModulos.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Se a opção escolhida for a de adicionar módulos, o administrador será direcionado para uma tela de edição dos módulos, onde poderá alterar o conteúdo dos módulos e incluir uma pergunta de validação para os usuários.
+
+<p align="center"> <img src="../assets/assetsWAD/telaAdminUsuários.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Na aba de 'Usuários', o administrador tem acesso a uma tabela que exibe o ranking dos usuários, com a possibilidade de visualizar estatísticas individuais. Essas estatísticas incluem as trilhas já concluídas, a pontuação no ranking e a opção de recomendar trilhas que ainda não foram realizadas.
+
+<p align="center"> <img src="../assets/assetsWAD/telaPrazoTrilha.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Ao selecionar a opção de recomendar trilhas, é exibida uma nova aba na interface, onde o administrador poderá definir um prazo para a conclusão da trilha recomendada.
+
+<p align="center"> <img src="../assets/assetsWAD/FieldReviewWireframe.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Representação de como ocorrerá o fluxo entre as telas dentro da aplicação. O wireframe é extremamente importante para a etapa inicial do desenvolvimento do projeto.
+
+
+
+
 
 ## 3.3. Guia de estilos (sprint 3)
 
