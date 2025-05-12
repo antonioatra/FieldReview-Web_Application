@@ -428,7 +428,7 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 <p align="center"> <img src="../assets/assetsWAD/usuario-trilha_modelo_relacional.png">
 <br> <sub>Fonte: Autoral (2025)</sub> </p>
 
-&emsp;&emsp; A imagem acima é a tabela intermedoiária Usuario-Trilha. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso ops IDs da entidade Usuario e Trilha), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N. Outra função dessa tabela é poder guardar informação que se relacionam (exemplo: tabela de Aluno-Curso, poderia ser guardado o atributo aprovado ou nota, já que eles são atributos que se relacionam com as duas entidades).  
+&emsp;&emsp; A imagem acima é a tabela intermediária Usuario-Trilha. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso ops IDs da entidade Usuario e Trilha), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N. Outra função dessa tabela é poder guardar informação que se relacionam (exemplo: tabela de Aluno-Curso, poderia ser guardado o atributo aprovado ou nota, já que eles são atributos que se relacionam com as duas entidades).  
 
 
 <p align="center"> <img src="../assets/assetsWAD/usuario-certificado_modelo_relacional.png">
@@ -454,23 +454,23 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 <p align="center"> <img src="../assets/assetsWAD/modulo_modelo_relacional.png">
 <br> <sub>Fonte: Autoral (2025)</sub> </p>
 
-&emsp;&emsp; A imagem acima é referente a tabela da entidade Trilha, cujos seus atributos são: **ID próprio**, **ID_Trilha**, será responsável por fazer a relação de dependência de tal módulo a alguma triljha, ou seja, inserindo o módulo a uma trilha, **Título**, o nome da trilha referente, **Conteúdo**, será responsável por guardar informações de vídeos, textos, PDFs, tudo referente ao contúdo que deve ser ensinado neste módulo, **Está completa**, sua única função será verificar se a pergunta que do módulo foi respondida, retornando como completa ou não, **Ordem**, para que os módulos fiquem organizados dentro da trilha, esse atributo será responsável por colocar na ordem, preferida pelo Administrador, os módulos. Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+&emsp;&emsp; A imagem acima é referente a tabela da entidade Módulo, cujos seus atributos são: **ID próprio**, **ID_Trilha**, será responsável por fazer a relação de dependência de tal módulo a alguma trilha, ou seja, inserindo o módulo a uma trilha, **Título**, o nome da trilha referente, **Conteúdo**, será responsável por guardar informações de vídeos, textos, PDFs, tudo referente ao contúdo que deve ser ensinado neste módulo, **Está completa**, sua única função será verificar se a pergunta que do módulo foi respondida, retornando como completa ou não, **Ordem**, para que os módulos fiquem organizados dentro da trilha, esse atributo será responsável por colocar na ordem, preferida pelo Administrador, os módulos. Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 <p align="center"> <img src="../assets/assetsWAD/perguntas_modelo_relacional.png">
 <br> <sub>Fonte: Autoral (2025)</sub> </p>
 
-&emsp;&emsp; A imagem acima é referente a tabela da entidade Trilha, cujos seus atributos são: **ID próprio**, **Enunciado**, ao invés dde ter o nome de título, aqui será a pergunta referente ao conteúdo ao módulo, **ID_Módulos**, será responsável por fazer a relação de dependência de tal Pergunta com tal Módulo, ou seja, fixando uma pergunta com apenas um módulo. Por último **Pontos**, referente os pontos ganhos ao responder corretamente o Enunciado.
+&emsp;&emsp; A imagem acima é referente a tabela da entidade Perguntas, cujos seus atributos são: **ID próprio**, **Enunciado**, ao invés dde ter o nome de título, aqui será a pergunta referente ao conteúdo ao módulo, **ID_Módulos**, será responsável por fazer a relação de dependência de tal Pergunta com tal Módulo, ou seja, fixando uma pergunta com apenas um módulo. Por último **Pontos**, referente os pontos ganhos ao responder corretamente o Enunciado.
 
 <p align="center"> <img src="../assets/assetsWAD/opção_modelo_relacional.png">
 <br> <sub>Fonte: Autoral (2025)</sub> </p>
 
-&emsp;&emsp; A imagem acima é referente a tabela da entidade Trilha, cujos seus atributos são: **ID próprio**, **Texto**, será o que estará escrito como potêncial resposta para sua pergunta referente, **ID_Perguntas**, será responsável por fazer a relação de dependência de tal Opção com tal Pergunta. Para finalizar, **Eh_Correta**, será o atributo que fará com que tal opção seja a correta, normalmente com seu valor TRUE.
+&emsp;&emsp; A imagem acima é referente a tabela da entidade Opções, cujos seus atributos são: **ID próprio**, **Texto**, será o que estará escrito como potêncial resposta para sua pergunta referente, **ID_Perguntas**, será responsável por fazer a relação de dependência de tal Opção com tal Pergunta. Para finalizar, **Eh_Correta**, será o atributo que fará com que tal opção seja a correta, normalmente com seu valor TRUE.
 
 
 <p align="center"> <img src="../assets/assetsWAD/notificacao_modelo_relacional.png">
 <br> <sub>Fonte: Autoral (2025)</sub> </p>
 
-&emsp;&emsp; A imagem acima é referente a tabela da entidade Trilha, cujos seus atributos são: **ID próprio**, **Título**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação caregará, Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+&emsp;&emsp; A imagem acima é referente a tabela da entidade Notificação, cujos seus atributos são: **ID próprio**, **Título**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação caregará, Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 ## Relacionamentos das Entidades.
 &emsp;&emsp;&emsp;&emsp; Como dito, agora será explicado cada relação das entidades do Digrama ER. 
