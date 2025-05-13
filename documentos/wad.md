@@ -395,7 +395,7 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 
  **Funcionalidades do Usuário Comum**
 
-<p align="center"> <img src="../assets/assetsWAD/telaUsuárioPadrao.png">
+<p align="center"> <img src="../assets/assetsWAD/telaUsuarioPadrao.png">
 <br> <sub>Fonte: autoral (2025)</sub> </p>
 
 &emsp; Após realizar o login, a plataforma irá redirecionar para a tela correspondente à função do usuário: comum ou administrador. Na tela inicial do usuário, é possível observar o ranking geral e a sua posição, além de notificações sobre atualizações, trilhas já concluídas e trilhas disponíveis.
@@ -442,7 +442,7 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 
 &emsp; Se a opção escolhida for a de adicionar módulos, o administrador será direcionado para uma tela de edição dos módulos, onde poderá alterar o conteúdo dos módulos e incluir uma pergunta de validação para os usuários.
 
-<p align="center"> <img src="../assets/assetsWAD/telaAdminUsuários.png">
+<p align="center"> <img src="../assets/assetsWAD/telaAdminUsuarios.png">
 <br> <sub>Fonte: autoral (2025)</sub> </p>
 
 &emsp; Na aba de 'Usuários', o administrador tem acesso a uma tabela que exibe o ranking dos usuários, com a possibilidade de visualizar estatísticas individuais. Essas estatísticas incluem as trilhas já concluídas, a pontuação no ranking e a opção de recomendar trilhas que ainda não foram realizadas.
