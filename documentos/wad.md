@@ -414,7 +414,123 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 
 ### 3.5.1. Modelo relacional (sprints 2 e 4)
 
-*posicione aqui os diagramas de modelos relacionais do seu banco de dados, apresentando todos os esquemas de tabelas e suas relações. Utilize texto para complementar suas explicações, se necessário* 
+&emsp; A seguir, apresenta-se o Diagrama de Entidade e Relacionamento (DER), que é o modelo lógico derivado da MER (Modelagem Entidade e Relacionamento), com a explicação de todas as entidades e seus respectivos relacionamentos. Este diagrama servirá como base para implementação do banco de dados do site.
+
+&emsp; Para fins de organização, será apresentado todas as entidades primeiro e depois seus relacionamentos.
+
+#### Entidades.
+
+<p align="center"> <img src="../assets/assetsWAD/usuario_modelo_relacional.png">
+<br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
+
+&emsp;A imagem acima refere-se à entidade **usuario**, cujos atributos são: **id**, gerado automaticamente após sua criação e que servirá para sua identificação, principalmente dentro do banco de dados; **nome**, fornecido pelo usuário durante o cadastro; **email**, utilizado para contato e para o recebimento de notificações; **senha**, também definida pelo usuário; **cargo**, responsável por diferenciar PTDs (quem fará as trilhas) e Administradores (quem recomenda usuários a fazerem trilhas); **pontuacao**, que representa a pontuação obtida pelo PTD após responder corretamente a uma pergunta de qualquer módulo (este atributo será null para Administradores, já que eles não fazem as trilhas); **created_at**, gerado quando a entidade Usuário é criada; e **updated_at**, responsável por registrar quando o usuário é atualizado.
+
+<p align="center"> <img src="../assets/assetsWAD/usuario-trilha_modelo_relacional.png">
+<br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
+
+&emsp;&emsp; A imagem acima é a tabela intermediária **usuario-trilha**. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso os IDs da entidade **usuario** e **trilha**), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N.  
+
+
+<p align="center"> <img src="../assets/assetsWAD/usuario-certificado_modelo_relacional.png">
+<br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
+
+ &emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-certificado** também é criada porque a relação Usuário e Certificado é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Certificados).
+
+<p align="center"> <img src="../assets/assetsWAD/usuario-notificacao_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-notificacao** também é criada porque a relação Usuário e Notificação é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Notificação).
+
+<p align="center"> <img src="../assets/assetsWAD/certificado_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp; A imagem acima é referente a tabela da entidade **certificado**, cujos atributos são: **ID próprio**; **titulo**, é o nome dado ao certificado; **descricao**, é a explicação do certificado, com detalhes e skills adquiridos por completar tal trilha; **imagem** guarda a representação visual do certificado; e por fim o **id_trilha**, esse atributo existe porque o certificado é o documento adquirido após completar com êxito alguma trilha, assim, o entidade certificado tem relação de dependência com a entidade trilha.
+
+<p align="center"> <img src="../assets/assetsWAD/trilha_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp; A imagem acima é referente a tabela da entidade **trilha**, cujos atributos são: **ID próprio**; **titulo**, o nome da trilha referente; **prazo**, determinado pelo Administrador, cuja sua função é determinar um tempo para a conclusão de todos os módulos dentro desssa trilha; **created_at** gerado quando a entidade usuário é criada; e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+
+<p align="center"> <img src="../assets/assetsWAD/modulo_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp; A imagem acima é referente a tabela da entidade **modulo**, cujos atributos são: **ID próprio**; **id_trilha**, será responsável por fazer a relação de dependência de tal módulo a alguma trilha, ou seja, inserindo o módulo a uma trilha; **titulo**, o nome da trilha referente; **conteudo**, será responsável por guardar informações de vídeos, textos, PDFs, tudo referente ao conteúdo que deve ser ensinado nesse módulo; **esta_completo**, sua única função será verificar se a pergunta foi respondida, retornando como módulo completo ou não; **ordem**, para que os módulos fiquem organizados dentro da trilha; **created_at** é gerado quando o atributo usuário é criado; e o **updated_at** é responsável por registrar quando o usuário é atualizado.
+
+<p align="center"> <img src="../assets/assetsWAD/perguntas_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp; A imagem acima é referente à tabela da entidade **perguntas**, cujos atributos são: **ID próprio**; **enunciado**, é a pergunta referente ao conteúdo do módulo; **id_modulos**, será responsável por fazer a relação de dependência da pergunta com o módulo correspondente; e **pontos**, refere-se aos pontos ganhos ao responder corretamente o enunciado.
+
+<p align="center"> <img src="../assets/assetsWAD/opção_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp; A imagem acima é referente à tabela da entidade **opcoes**, cujos atributos são: **ID próprio**; **texto**, é o que estará escrito como potencial resposta para a pergunta correspondente; **id_perguntas**, será responsável por fazer a relação de dependência das opções com a pergunta correspondente; e **eh_correta**identifica se a alternativa é a resposta certa ou não.
+
+
+<p align="center"> <img src="../assets/assetsWAD/notificacao_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp;&emsp; A imagem acima é referente à tabela da entidade Notificação, cujos seus atributos são: **ID próprio**, **Título**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação caregará, Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+
+#### Relacionamento entre as Entidades
+
+**1. usuário ↔ usuário_trilha**
+
+- Tipo: 1:N (um usuário pode estar em várias trilhas)
+
+- Tabela intermediária: usuario_trilha
+
+- Motivo: Representa a inscrição de usuários em diferentes trilhas. Resolve a relação N:N entre usuários e trilhas, armazenando quais trilhas cada usuário está participando.
+
+**2. usuário ↔ usuario_notificacao**
+
+- Tipo: 1:N (um usuário pode receber várias notificações)
+
+- Tabela intermediária: usuario_notificacao
+
+- Motivo: Controla quais notificações foram enviadas para cada usuário, com dados adicionais como se a notificação foi lida e a data de recebimento.
+
+**3. usuário ↔ usuario_certificado**
+
+- Tipo: 1:N (um usuário pode ter vários certificados)
+
+- Tabela intermediária: usuario_certificado
+
+- Motivo: Associa usuários aos certificados que receberam, possibilitando o histórico de conquistas individuais.
+
+**4. certificado ↔ trilha**
+
+- Tipo: 1:1 (cada certificado pertence a uma única trilha)
+
+- Relacionamento: pertence
+
+- Motivo: Cada trilha pode gerar apenas um certificado, e esse vínculo direto é representado por uma relação 1:1.
+
+**5. trilha ↔ módulo**
+
+- Tipo: 1:N (uma trilha possui vários módulos)
+
+- Relacionamento: contém
+
+- Motivo: Uma trilha é estruturada por múltiplos módulos sequenciais, que representam o conteúdo a ser estudado ou realizado.
+
+**6. módulo ↔ pergunta**
+
+- Tipo: 1:N (um módulo pode ter várias perguntas)
+
+- Relacionamento: contém
+
+- Motivo: Cada módulo pode incluir múltiplas perguntas relacionadas ao seu conteúdo, permitindo avaliações por etapa.
+
+**7. pergunta ↔ opções**
+
+- Tipo: 1:N (uma pergunta tem várias opções)
+
+- Relacionamento: contém
+
+- Motivo: Permite a construção de perguntas de múltipla escolha, onde cada pergunta oferece diversas alternativas de resposta.
+
+---
 
 ### 3.5.2. Consultas SQL e lógica proposicional (sprint 2)
 
