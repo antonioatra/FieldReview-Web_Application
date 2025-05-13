@@ -457,6 +457,9 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 
 &emsp; Representação de como ocorrerá o fluxo entre as telas dentro da aplicação. O wireframe é extremamente importante para a etapa inicial do desenvolvimento do projeto.
 
+Segue o link do local onde foi desenvolvido o wireframe para melhor visualização:<br>
+ https://whimsical.com/fieldreview-home-FCLJQWvMrHGbsAYkEbDkzE
+
 
 
 
