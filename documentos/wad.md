@@ -418,14 +418,610 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 
 ### 3.5.2. Consultas SQL e lógica proposicional (sprint 2)
 
-*posicione aqui uma lista de consultas SQL compostas, realizadas pelo back-end da aplicação web, com sua respectiva lógica proposicional, descrita conforme template abaixo. Lembre-se que para usar LaTeX em markdown, basta você colocar as expressões entre $ ou $$*
+&emsp;&emsp; Nesta seção, será feita as consultas SQL, que são os códigos responsáveis por selecionar (SELECT), adicionar novos atributos (INSERT), atualizar algum dado dentro de uma entidade (UPDATE) e deletar alguma entidade ou certo cadastro por exemplo (DELETE). Nessa tabela, terá o código consulta (expressão SQL), a explicação lógica do que o código fará (proposição lógica) e a tabela verdade, responsável por explicar a lógica da busca do código SQL, mostrandoa as possíveis combinações e resultados que ela pode trazer.
+ 
+## Consultas e Tabelas Verdade.
+
+&emsp;&emsp;
+#1 | ---
+--- | ---
+**Expressão SQL** |  UPDATE usuario_trilha ut SET status = 'perdeu_prazo' WHERE ut.prazo < CURRENT_DATE AND NOT status = 'completo';
+**Proposições lógicas** | $A$: O prazo é menor que 'CURRENT_DATE'(ut.prazo < CURRENT_DATE);<br> $B$: Status da trilha não está 'completo' (status  = 'completo');
+**Expressão lógica proposicional** | $A \land \lnot B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$\lnot B$</th> <th>$A \land \lnot B$ </th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td></tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>F</td></tbody> </table>
+
+
+#2 | ---
+--- | ---
+**Expressão SQL** | SELECT * FROM opcoes o WHERE o.id_pergunta = $ID_PERGUNTA AND eh_correta = true;
+**Proposições lógicas** | $A$: A opção pertence à pergunta com o ID '$ID_PERGUNTA' (o.id_pergunta = $ID_PERGUNTA)<br> $B$: A opção está correta (eh_correta = true)
+**Expressão lógica proposicional** | $A \land B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$A \land B$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+
+#3 | ---
+--- | ---
+**Expressão SQL** | DELETE FROM usuario_trilha ut WHERE ut.id_usuario = $ID_USUARIO AND ut.id_trilha = $ID_TRILHA
+**Proposições lógicas** | $A$: O usuário pertence ao ID '$ID_USUARIO'(ut.id_usuario = $ID_USUARIO)<br> $B$: A trilha pertence ao ID '$ID_TRILHA'(ut.id_trilha = $ID_TRILHA)
+**Expressão lógica proposicional** | $A \land B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$A \land B$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+## 3.6. WebAPI e endpoints (sprints 3 e 4)
+
+*Utilize um link para outra página de documentação contendo a descrição completa de cada endpoint. Ou descreva aqui cada endpoint criado para seu sistema.* 
+
+*Cada endpoint deve conter endereço, método (GET, POST, PUT, PATCH, DELETE), header, body e formatos de response*
+
+# <a name="c4"></a>4. Desenvolvimento da Aplicação Web
+
+## 4.1. Primeira versão da aplicação web (sprint 3)
+
+*Descreva e ilustre aqui o desenvolvimento da sua primeira versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+## 4.2. Segunda versão da aplicação web (sprint 4)
+
+*Descreva e ilustre aqui o desenvolvimento da sua segunda versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+## 4.3. Versão final da aplicação web (sprint 5)
+
+*Descreva e ilustre aqui o desenvolvimento da última versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+# <a name="c5"></a>5. Testes
+
+## 5.1. Relatório de testes de integração de endpoints automatizados (sprint 4)
+
+*Liste e descreva os testes unitários dos endpoints criados, automatizados e planejados para sua solução. Posicione aqui também o relatório de cobertura de testes Jest se houver (através de link ou transcrito para estrutura markdown)*
+
+## 5.2. Testes de usabilidade (sprint 5)
+
+*Posicione aqui as tabelas com enunciados de tarefas, etapas e resultados de testes de usabilidade. Ou utilize um link para seu relatório de testes (mantenha o link sempre público para visualização)*
+
+# <a name="c6"></a>6. Estudo de Mercado e Plano de Marketing (sprint 4)
+
+## 6.1 Resumo Executivo
+
+*Preencher com até 300 palavras, sem necessidade de fonte*
+
+*Apresente de forma clara e objetiva os principais destaques do projeto: oportunidades de mercado, diferenciais competitivos da aplicação web e os objetivos estratégicos pretendidos.*
+
+## 6.2 Análise de Mercado
+
+*a) Visão Geral do Setor (até 250 palavras)*
+*Contextualize o setor no qual a aplicação está inserida, considerando aspectos econômicos, tecnológicos e regulatórios. Utilize fontes confiáveis.*
+
+*b) Tamanho e Crescimento do Mercado (até 250 palavras)*
+*Apresente dados quantitativos sobre o tamanho atual e projeções de crescimento do mercado. Utilize fontes confiáveis.*
+
+*c) Tendências de Mercado (até 300 palavras)*
+*Identifique e analise tendências relevantes (tecnológicas, comportamentais e mercadológicas) que influenciam o setor. Utilize fontes confiáveis.*
+
+## 6.3 Análise da Concorrência
+
+*a) Principais Concorrentes (até 250 palavras)*
+*Liste os concorrentes diretos e indiretos, destacando suas principais características e posicionamento no mercado.*
+
+*b) Vantagens Competitivas da Aplicação Web (até 250 palavras)*
+*Descreva os diferenciais da sua aplicação em relação aos concorrentes, sem necessidade de citação de fontes.*
+
+
+## 6.4 Público-Alvo
+
+*a) Segmentação de Mercado (até 250 palavras)*
+Descreva os principais segmentos de mercado a serem atendidos pela aplicação. Utilize bases de dados e fontes confiáveis.*
+
+*b) Perfil do Público-Alvo (até 250 palavras)*
+*Caracterize o público-alvo com dados demográficos, psicográficos e comportamentais, incluindo necessidades específicas. Utilize fontes obrigatórias.*
+
+
+## 6.5 Posicionamento
+
+*a) Proposta de Valor Única (até 250 palavras)*
+*Defina de maneira clara o que torna a sua aplicação única e valiosa para o mercado.*
+
+*b) Estratégia de Diferenciação (até 250 palavras)*
+*Explique como sua aplicação se destacará da concorrência, evidenciando a lógica por trás do posicionamento.*
+
+## 6.6 Estratégia de Marketing 
+
+*a) Produto/Serviço (até 200 palavras)*
+*Descreva as funcionalidades, benefícios e diferenciais da aplicação*
+
+*6.2 Preço (até 200 palavras)*
+*Explique o modelo de precificação adotado e justifique com base nas análises anteriores.*
+
+*6.3 Praça (Distribuição) (até 200 palavras)*
+*Apresente os canais digitais utilizados para distribuir e entregar a aplicação ao público.*
+
+*6.4 Promoção (até 200 palavras)*
+*Descreva as estratégias digitais planejadas, como SEO, redes sociais, marketing de conteúdo e campanhas pagas.*
+
+# <a name="c7"></a>7. Conclusões e trabalhos futuros (sprint 5)
+
+*Escreva de que formas a solução da aplicação web atingiu os objetivos descritos na seção 2 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral.*
+
+*Relacione os pontos de melhorias evidenciados nos testes com planos de ações para serem implementadas. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para ações futuras*
+
+*Relacione também quaisquer outras ideias que o grupo tenha para melhorias futuras*
+
+# <a name="c8"></a>8. Referências (sprints 1 a 5)
+
+
+1. AGROLINK. Perfil dos produtores rurais no Brasil: mais jovens e conectados. 2023. Disponível em: https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html. Acesso em: 29 abr. 2025.
+
+2. AGROPAGES. Top 20 global agrochemical companies in 2023 unveiled. 2024. Disponível em: https://news.agropages.com/News/NewsDetail---51737.htm. Acesso em: 29 abr. 2025.
+
+3. BAYER. Agro Bayer Brasil. 2025. Disponível em: https://www.agro.bayer.com.br/. Acesso em: 29 abr. 2025
+
+4. BAYER CROP SCIENCE. Climate FieldView™. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/climate-fieldview. Acesso em: 29 abr. 2025.
+
+5. BAYER CROP SCIENCE. Impulso Bayer: o programa. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/impulso-bayer/o-programa. Acesso em: 29 abr. 2025.
+
+6. INTELIGÊNCIA FINANCEIRA. Empresas do agronegócio: as maiores companhias agrícolas do mundo. 2024. Disponível em: https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/. Acesso em: 29 abr. 2025.
+
+7. MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia [recurso eletrônico]. 1. ed. Rio de Janeiro: Alta Books, 2019. Disponível em: https://integrada.minhabiblioteca.com.br. Acesso em: 29 abr. 2025.
+
+8. MARKET RESEARCH FUTURE. Digital agriculture market research report—global forecast 2030. 2023. Disponível em: https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695. Acesso em: 29 abr. 2025.
+
+9. MARKET RESEARCH FUTURE. Seeds market research report. [S.l.]: Market Research Future, 2023. Disponível em: https://www.marketresearchfuture.com/reports/seeds-market-7252. Acesso em: 28 abr. 2025.
+
+10. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
+
+
+# <a name="c9"></a>Anexos
+
+*Inclua aqui quaisquer complementos para seu projeto, como diagramas, imagens, tabelas etc. Organize em sub-tópicos utilizando headings menores (use ## ou ### para isso)*
+ rateled e ETADPU()  edaditnme a m
+
 
 *Template de SQL + lógica proposicional*
 #1 | ---
 --- | ---
-**Expressão SQL** | SELECT * FROM suppliers WHERE (state = 'California' AND supplier_id <> 900) OR (supplier_id = 100); 
-**Proposições lógicas** | $A$: O estado é 'California' (state = 'California') <br> $B$: O ID do fornecedor não é 900 (supplier_id ≠ 900) <br> $C$: O ID do fornecedor é 100 (supplier_id = 100)
-**Expressão lógica proposicional** | $(A \land B) \lor C$
+**Expressão SQL** |  UPDATE usuario_trilha ut SET status = 'perdeu_prazo' WHERE ut.prazo < CURRENT_DATE AND NOT status = 'completo';
+**Proposições lógicas** | $A$: O prazo é menor que 'CURRENT_DATE'(ut.prazo < CURRENT_DATE);<br> $B$: Status da trilha não está 'completo' (status  = 'completo');
+**Expressão lógica proposicional** | $A \land \lnot B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$(A \land B)$</th> <th>$(A \land B)</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+#2 | ---
+--- | ---
+**Expressão SQL** | SELECT * FROM opcoes o WHERE o.id_pergunta = $ID_PERGUNTA AND eh_correta = true;
+
+**Proposições lógicas** | $A$: <br> $B$: 
+**Expressão lógica proposicional** | $A \land \lnot B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$C$</th> <th>$(A \land B)$</th> <th>$(A \land B) \lor C$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+*Dica: edite a tabela verdade fora do markdown, para ter melhor controle*
+
+## 3.6. WebAPI e endpoints (sprints 3 e 4)
+
+*Utilize um link para outra página de documentação contendo a descrição completa de cada endpoint. Ou descreva aqui cada endpoint criado para seu sistema.* 
+
+*Cada endpoint deve conter endereço, método (GET, POST, PUT, PATCH, DELETE), header, body e formatos de response*
+
+# <a name="c4"></a>4. Desenvolvimento da Aplicação Web
+
+## 4.1. Primeira versão da aplicação web (sprint 3)
+
+*Descreva e ilustre aqui o desenvolvimento da sua primeira versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+## 4.2. Segunda versão da aplicação web (sprint 4)
+
+*Descreva e ilustre aqui o desenvolvimento da sua segunda versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+## 4.3. Versão final da aplicação web (sprint 5)
+
+*Descreva e ilustre aqui o desenvolvimento da última versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+# <a name="c5"></a>5. Testes
+
+## 5.1. Relatório de testes de integração de endpoints automatizados (sprint 4)
+
+*Liste e descreva os testes unitários dos endpoints criados, automatizados e planejados para sua solução. Posicione aqui também o relatório de cobertura de testes Jest se houver (através de link ou transcrito para estrutura markdown)*
+
+## 5.2. Testes de usabilidade (sprint 5)
+
+*Posicione aqui as tabelas com enunciados de tarefas, etapas e resultados de testes de usabilidade. Ou utilize um link para seu relatório de testes (mantenha o link sempre público para visualização)*
+
+# <a name="c6"></a>6. Estudo de Mercado e Plano de Marketing (sprint 4)
+
+## 6.1 Resumo Executivo
+
+*Preencher com até 300 palavras, sem necessidade de fonte*
+
+*Apresente de forma clara e objetiva os principais destaques do projeto: oportunidades de mercado, diferenciais competitivos da aplicação web e os objetivos estratégicos pretendidos.*
+
+## 6.2 Análise de Mercado
+
+*a) Visão Geral do Setor (até 250 palavras)*
+*Contextualize o setor no qual a aplicação está inserida, considerando aspectos econômicos, tecnológicos e regulatórios. Utilize fontes confiáveis.*
+
+*b) Tamanho e Crescimento do Mercado (até 250 palavras)*
+*Apresente dados quantitativos sobre o tamanho atual e projeções de crescimento do mercado. Utilize fontes confiáveis.*
+
+*c) Tendências de Mercado (até 300 palavras)*
+*Identifique e analise tendências relevantes (tecnológicas, comportamentais e mercadológicas) que influenciam o setor. Utilize fontes confiáveis.*
+
+## 6.3 Análise da Concorrência
+
+*a) Principais Concorrentes (até 250 palavras)*
+*Liste os concorrentes diretos e indiretos, destacando suas principais características e posicionamento no mercado.*
+
+*b) Vantagens Competitivas da Aplicação Web (até 250 palavras)*
+*Descreva os diferenciais da sua aplicação em relação aos concorrentes, sem necessidade de citação de fontes.*
+
+
+## 6.4 Público-Alvo
+
+*a) Segmentação de Mercado (até 250 palavras)*
+Descreva os principais segmentos de mercado a serem atendidos pela aplicação. Utilize bases de dados e fontes confiáveis.*
+
+*b) Perfil do Público-Alvo (até 250 palavras)*
+*Caracterize o público-alvo com dados demográficos, psicográficos e comportamentais, incluindo necessidades específicas. Utilize fontes obrigatórias.*
+
+
+## 6.5 Posicionamento
+
+*a) Proposta de Valor Única (até 250 palavras)*
+*Defina de maneira clara o que torna a sua aplicação única e valiosa para o mercado.*
+
+*b) Estratégia de Diferenciação (até 250 palavras)*
+*Explique como sua aplicação se destacará da concorrência, evidenciando a lógica por trás do posicionamento.*
+
+## 6.6 Estratégia de Marketing 
+
+*a) Produto/Serviço (até 200 palavras)*
+*Descreva as funcionalidades, benefícios e diferenciais da aplicação*
+
+*6.2 Preço (até 200 palavras)*
+*Explique o modelo de precificação adotado e justifique com base nas análises anteriores.*
+
+*6.3 Praça (Distribuição) (até 200 palavras)*
+*Apresente os canais digitais utilizados para distribuir e entregar a aplicação ao público.*
+
+*6.4 Promoção (até 200 palavras)*
+*Descreva as estratégias digitais planejadas, como SEO, redes sociais, marketing de conteúdo e campanhas pagas.*
+
+# <a name="c7"></a>7. Conclusões e trabalhos futuros (sprint 5)
+
+*Escreva de que formas a solução da aplicação web atingiu os objetivos descritos na seção 2 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral.*
+
+*Relacione os pontos de melhorias evidenciados nos testes com planos de ações para serem implementadas. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para ações futuras*
+
+*Relacione também quaisquer outras ideias que o grupo tenha para melhorias futuras*
+
+# <a name="c8"></a>8. Referências (sprints 1 a 5)
+
+
+1. AGROLINK. Perfil dos produtores rurais no Brasil: mais jovens e conectados. 2023. Disponível em: https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html. Acesso em: 29 abr. 2025.
+
+2. AGROPAGES. Top 20 global agrochemical companies in 2023 unveiled. 2024. Disponível em: https://news.agropages.com/News/NewsDetail---51737.htm. Acesso em: 29 abr. 2025.
+
+3. BAYER. Agro Bayer Brasil. 2025. Disponível em: https://www.agro.bayer.com.br/. Acesso em: 29 abr. 2025
+
+4. BAYER CROP SCIENCE. Climate FieldView™. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/climate-fieldview. Acesso em: 29 abr. 2025.
+
+5. BAYER CROP SCIENCE. Impulso Bayer: o programa. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/impulso-bayer/o-programa. Acesso em: 29 abr. 2025.
+
+6. INTELIGÊNCIA FINANCEIRA. Empresas do agronegócio: as maiores companhias agrícolas do mundo. 2024. Disponível em: https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/. Acesso em: 29 abr. 2025.
+
+7. MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia [recurso eletrônico]. 1. ed. Rio de Janeiro: Alta Books, 2019. Disponível em: https://integrada.minhabiblioteca.com.br. Acesso em: 29 abr. 2025.
+
+8. MARKET RESEARCH FUTURE. Digital agriculture market research report—global forecast 2030. 2023. Disponível em: https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695. Acesso em: 29 abr. 2025.
+
+9. MARKET RESEARCH FUTURE. Seeds market research report. [S.l.]: Market Research Future, 2023. Disponível em: https://www.marketresearchfuture.com/reports/seeds-market-7252. Acesso em: 28 abr. 2025.
+
+10. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
+
+
+# <a name="c9"></a>Anexos
+
+*Inclua aqui quaisquer complementos para seu projeto, como diagramas, imagens, tabelas etc. Organize em sub-tópicos utilizando headings menores (use ## ou ### para isso)*
+ rateled e ETADPU()  edaditnme a m
+
+
+*Template de SQL + lógica proposicional*
+#1 | ---
+--- | ---
+**Expressão SQL** |  UPDATE usuario_trilha ut SET status = 'perdeu_prazo' WHERE ut.prazo < CURRENT_DATE AND NOT status = 'completo';
+**Proposições lógicas** | $A$: O prazo é menor que 'CURRENT_DATE'(ut.prazo < CURRENT_DATE);<br> $B$: Status da trilha não está 'completo' (status  = 'completo');
+**Expressão lógica proposicional** | $A \land \lnot B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$(A \land B)$</th> <th>$(A \land B)</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+#2 | ---
+--- | ---
+**Expressão SQL** | SELECT * FROM opcoes o WHERE o.id_pergunta = $ID_PERGUNTA AND eh_correta = true;
+
+**Proposições lógicas** | $A$: <br> $B$: 
+**Expressão lógica proposicional** | $A \land \lnot B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$C$</th> <th>$(A \land B)$</th> <th>$(A \land B) \lor C$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+*Dica: edite a tabela verdade fora do markdown, para ter melhor controle*
+
+## 3.6. WebAPI e endpoints (sprints 3 e 4)
+
+*Utilize um link para outra página de documentação contendo a descrição completa de cada endpoint. Ou descreva aqui cada endpoint criado para seu sistema.* 
+
+*Cada endpoint deve conter endereço, método (GET, POST, PUT, PATCH, DELETE), header, body e formatos de response*
+
+# <a name="c4"></a>4. Desenvolvimento da Aplicação Web
+
+## 4.1. Primeira versão da aplicação web (sprint 3)
+
+*Descreva e ilustre aqui o desenvolvimento da sua primeira versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+## 4.2. Segunda versão da aplicação web (sprint 4)
+
+*Descreva e ilustre aqui o desenvolvimento da sua segunda versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+## 4.3. Versão final da aplicação web (sprint 5)
+
+*Descreva e ilustre aqui o desenvolvimento da última versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+# <a name="c5"></a>5. Testes
+
+## 5.1. Relatório de testes de integração de endpoints automatizados (sprint 4)
+
+*Liste e descreva os testes unitários dos endpoints criados, automatizados e planejados para sua solução. Posicione aqui também o relatório de cobertura de testes Jest se houver (através de link ou transcrito para estrutura markdown)*
+
+## 5.2. Testes de usabilidade (sprint 5)
+
+*Posicione aqui as tabelas com enunciados de tarefas, etapas e resultados de testes de usabilidade. Ou utilize um link para seu relatório de testes (mantenha o link sempre público para visualização)*
+
+# <a name="c6"></a>6. Estudo de Mercado e Plano de Marketing (sprint 4)
+
+## 6.1 Resumo Executivo
+
+*Preencher com até 300 palavras, sem necessidade de fonte*
+
+*Apresente de forma clara e objetiva os principais destaques do projeto: oportunidades de mercado, diferenciais competitivos da aplicação web e os objetivos estratégicos pretendidos.*
+
+## 6.2 Análise de Mercado
+
+*a) Visão Geral do Setor (até 250 palavras)*
+*Contextualize o setor no qual a aplicação está inserida, considerando aspectos econômicos, tecnológicos e regulatórios. Utilize fontes confiáveis.*
+
+*b) Tamanho e Crescimento do Mercado (até 250 palavras)*
+*Apresente dados quantitativos sobre o tamanho atual e projeções de crescimento do mercado. Utilize fontes confiáveis.*
+
+*c) Tendências de Mercado (até 300 palavras)*
+*Identifique e analise tendências relevantes (tecnológicas, comportamentais e mercadológicas) que influenciam o setor. Utilize fontes confiáveis.*
+
+## 6.3 Análise da Concorrência
+
+*a) Principais Concorrentes (até 250 palavras)*
+*Liste os concorrentes diretos e indiretos, destacando suas principais características e posicionamento no mercado.*
+
+*b) Vantagens Competitivas da Aplicação Web (até 250 palavras)*
+*Descreva os diferenciais da sua aplicação em relação aos concorrentes, sem necessidade de citação de fontes.*
+
+
+## 6.4 Público-Alvo
+
+*a) Segmentação de Mercado (até 250 palavras)*
+Descreva os principais segmentos de mercado a serem atendidos pela aplicação. Utilize bases de dados e fontes confiáveis.*
+
+*b) Perfil do Público-Alvo (até 250 palavras)*
+*Caracterize o público-alvo com dados demográficos, psicográficos e comportamentais, incluindo necessidades específicas. Utilize fontes obrigatórias.*
+
+
+## 6.5 Posicionamento
+
+*a) Proposta de Valor Única (até 250 palavras)*
+*Defina de maneira clara o que torna a sua aplicação única e valiosa para o mercado.*
+
+*b) Estratégia de Diferenciação (até 250 palavras)*
+*Explique como sua aplicação se destacará da concorrência, evidenciando a lógica por trás do posicionamento.*
+
+## 6.6 Estratégia de Marketing 
+
+*a) Produto/Serviço (até 200 palavras)*
+*Descreva as funcionalidades, benefícios e diferenciais da aplicação*
+
+*6.2 Preço (até 200 palavras)*
+*Explique o modelo de precificação adotado e justifique com base nas análises anteriores.*
+
+*6.3 Praça (Distribuição) (até 200 palavras)*
+*Apresente os canais digitais utilizados para distribuir e entregar a aplicação ao público.*
+
+*6.4 Promoção (até 200 palavras)*
+*Descreva as estratégias digitais planejadas, como SEO, redes sociais, marketing de conteúdo e campanhas pagas.*
+
+# <a name="c7"></a>7. Conclusões e trabalhos futuros (sprint 5)
+
+*Escreva de que formas a solução da aplicação web atingiu os objetivos descritos na seção 2 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral.*
+
+*Relacione os pontos de melhorias evidenciados nos testes com planos de ações para serem implementadas. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para ações futuras*
+
+*Relacione também quaisquer outras ideias que o grupo tenha para melhorias futuras*
+
+# <a name="c8"></a>8. Referências (sprints 1 a 5)
+
+
+1. AGROLINK. Perfil dos produtores rurais no Brasil: mais jovens e conectados. 2023. Disponível em: https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html. Acesso em: 29 abr. 2025.
+
+2. AGROPAGES. Top 20 global agrochemical companies in 2023 unveiled. 2024. Disponível em: https://news.agropages.com/News/NewsDetail---51737.htm. Acesso em: 29 abr. 2025.
+
+3. BAYER. Agro Bayer Brasil. 2025. Disponível em: https://www.agro.bayer.com.br/. Acesso em: 29 abr. 2025
+
+4. BAYER CROP SCIENCE. Climate FieldView™. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/climate-fieldview. Acesso em: 29 abr. 2025.
+
+5. BAYER CROP SCIENCE. Impulso Bayer: o programa. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/impulso-bayer/o-programa. Acesso em: 29 abr. 2025.
+
+6. INTELIGÊNCIA FINANCEIRA. Empresas do agronegócio: as maiores companhias agrícolas do mundo. 2024. Disponível em: https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/. Acesso em: 29 abr. 2025.
+
+7. MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia [recurso eletrônico]. 1. ed. Rio de Janeiro: Alta Books, 2019. Disponível em: https://integrada.minhabiblioteca.com.br. Acesso em: 29 abr. 2025.
+
+8. MARKET RESEARCH FUTURE. Digital agriculture market research report—global forecast 2030. 2023. Disponível em: https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695. Acesso em: 29 abr. 2025.
+
+9. MARKET RESEARCH FUTURE. Seeds market research report. [S.l.]: Market Research Future, 2023. Disponível em: https://www.marketresearchfuture.com/reports/seeds-market-7252. Acesso em: 28 abr. 2025.
+
+10. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
+
+
+# <a name="c9"></a>Anexos
+
+*Inclua aqui quaisquer complementos para seu projeto, como diagramas, imagens, tabelas etc. Organize em sub-tópicos utilizando headings menores (use ## ou ### para isso)*
+ rateled e ETADPU()  edaditnme a m
+
+
+*Template de SQL + lógica proposicional*
+#1 | ---
+--- | ---
+**Expressão SQL** |  UPDATE usuario_trilha ut SET status = 'perdeu_prazo' WHERE ut.prazo < CURRENT_DATE AND NOT status = 'completo';
+**Proposições lógicas** | $A$: O prazo é menor que 'CURRENT_DATE'(ut.prazo < CURRENT_DATE);<br> $B$: Status da trilha não está 'completo' (status  = 'completo');
+**Expressão lógica proposicional** | $A \land \lnot B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$(A \land B)$</th> <th>$(A \land B)</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+#2 | ---
+--- | ---
+**Expressão SQL** | SELECT * FROM opcoes o WHERE o.id_pergunta = $ID_PERGUNTA AND eh_correta = true;
+
+**Proposições lógicas** | $A$: <br> $B$: 
+**Expressão lógica proposicional** | $A \land \lnot B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$C$</th> <th>$(A \land B)$</th> <th>$(A \land B) \lor C$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+*Dica: edite a tabela verdade fora do markdown, para ter melhor controle*
+
+## 3.6. WebAPI e endpoints (sprints 3 e 4)
+
+*Utilize um link para outra página de documentação contendo a descrição completa de cada endpoint. Ou descreva aqui cada endpoint criado para seu sistema.* 
+
+*Cada endpoint deve conter endereço, método (GET, POST, PUT, PATCH, DELETE), header, body e formatos de response*
+
+# <a name="c4"></a>4. Desenvolvimento da Aplicação Web
+
+## 4.1. Primeira versão da aplicação web (sprint 3)
+
+*Descreva e ilustre aqui o desenvolvimento da sua primeira versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+## 4.2. Segunda versão da aplicação web (sprint 4)
+
+*Descreva e ilustre aqui o desenvolvimento da sua segunda versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+## 4.3. Versão final da aplicação web (sprint 5)
+
+*Descreva e ilustre aqui o desenvolvimento da última versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+
+# <a name="c5"></a>5. Testes
+
+## 5.1. Relatório de testes de integração de endpoints automatizados (sprint 4)
+
+*Liste e descreva os testes unitários dos endpoints criados, automatizados e planejados para sua solução. Posicione aqui também o relatório de cobertura de testes Jest se houver (através de link ou transcrito para estrutura markdown)*
+
+## 5.2. Testes de usabilidade (sprint 5)
+
+*Posicione aqui as tabelas com enunciados de tarefas, etapas e resultados de testes de usabilidade. Ou utilize um link para seu relatório de testes (mantenha o link sempre público para visualização)*
+
+# <a name="c6"></a>6. Estudo de Mercado e Plano de Marketing (sprint 4)
+
+## 6.1 Resumo Executivo
+
+*Preencher com até 300 palavras, sem necessidade de fonte*
+
+*Apresente de forma clara e objetiva os principais destaques do projeto: oportunidades de mercado, diferenciais competitivos da aplicação web e os objetivos estratégicos pretendidos.*
+
+## 6.2 Análise de Mercado
+
+*a) Visão Geral do Setor (até 250 palavras)*
+*Contextualize o setor no qual a aplicação está inserida, considerando aspectos econômicos, tecnológicos e regulatórios. Utilize fontes confiáveis.*
+
+*b) Tamanho e Crescimento do Mercado (até 250 palavras)*
+*Apresente dados quantitativos sobre o tamanho atual e projeções de crescimento do mercado. Utilize fontes confiáveis.*
+
+*c) Tendências de Mercado (até 300 palavras)*
+*Identifique e analise tendências relevantes (tecnológicas, comportamentais e mercadológicas) que influenciam o setor. Utilize fontes confiáveis.*
+
+## 6.3 Análise da Concorrência
+
+*a) Principais Concorrentes (até 250 palavras)*
+*Liste os concorrentes diretos e indiretos, destacando suas principais características e posicionamento no mercado.*
+
+*b) Vantagens Competitivas da Aplicação Web (até 250 palavras)*
+*Descreva os diferenciais da sua aplicação em relação aos concorrentes, sem necessidade de citação de fontes.*
+
+
+## 6.4 Público-Alvo
+
+*a) Segmentação de Mercado (até 250 palavras)*
+Descreva os principais segmentos de mercado a serem atendidos pela aplicação. Utilize bases de dados e fontes confiáveis.*
+
+*b) Perfil do Público-Alvo (até 250 palavras)*
+*Caracterize o público-alvo com dados demográficos, psicográficos e comportamentais, incluindo necessidades específicas. Utilize fontes obrigatórias.*
+
+
+## 6.5 Posicionamento
+
+*a) Proposta de Valor Única (até 250 palavras)*
+*Defina de maneira clara o que torna a sua aplicação única e valiosa para o mercado.*
+
+*b) Estratégia de Diferenciação (até 250 palavras)*
+*Explique como sua aplicação se destacará da concorrência, evidenciando a lógica por trás do posicionamento.*
+
+## 6.6 Estratégia de Marketing 
+
+*a) Produto/Serviço (até 200 palavras)*
+*Descreva as funcionalidades, benefícios e diferenciais da aplicação*
+
+*6.2 Preço (até 200 palavras)*
+*Explique o modelo de precificação adotado e justifique com base nas análises anteriores.*
+
+*6.3 Praça (Distribuição) (até 200 palavras)*
+*Apresente os canais digitais utilizados para distribuir e entregar a aplicação ao público.*
+
+*6.4 Promoção (até 200 palavras)*
+*Descreva as estratégias digitais planejadas, como SEO, redes sociais, marketing de conteúdo e campanhas pagas.*
+
+# <a name="c7"></a>7. Conclusões e trabalhos futuros (sprint 5)
+
+*Escreva de que formas a solução da aplicação web atingiu os objetivos descritos na seção 2 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral.*
+
+*Relacione os pontos de melhorias evidenciados nos testes com planos de ações para serem implementadas. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para ações futuras*
+
+*Relacione também quaisquer outras ideias que o grupo tenha para melhorias futuras*
+
+# <a name="c8"></a>8. Referências (sprints 1 a 5)
+
+
+1. AGROLINK. Perfil dos produtores rurais no Brasil: mais jovens e conectados. 2023. Disponível em: https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html. Acesso em: 29 abr. 2025.
+
+2. AGROPAGES. Top 20 global agrochemical companies in 2023 unveiled. 2024. Disponível em: https://news.agropages.com/News/NewsDetail---51737.htm. Acesso em: 29 abr. 2025.
+
+3. BAYER. Agro Bayer Brasil. 2025. Disponível em: https://www.agro.bayer.com.br/. Acesso em: 29 abr. 2025
+
+4. BAYER CROP SCIENCE. Climate FieldView™. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/climate-fieldview. Acesso em: 29 abr. 2025.
+
+5. BAYER CROP SCIENCE. Impulso Bayer: o programa. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/impulso-bayer/o-programa. Acesso em: 29 abr. 2025.
+
+6. INTELIGÊNCIA FINANCEIRA. Empresas do agronegócio: as maiores companhias agrícolas do mundo. 2024. Disponível em: https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/. Acesso em: 29 abr. 2025.
+
+7. MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia [recurso eletrônico]. 1. ed. Rio de Janeiro: Alta Books, 2019. Disponível em: https://integrada.minhabiblioteca.com.br. Acesso em: 29 abr. 2025.
+
+8. MARKET RESEARCH FUTURE. Digital agriculture market research report—global forecast 2030. 2023. Disponível em: https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695. Acesso em: 29 abr. 2025.
+
+9. MARKET RESEARCH FUTURE. Seeds market research report. [S.l.]: Market Research Future, 2023. Disponível em: https://www.marketresearchfuture.com/reports/seeds-market-7252. Acesso em: 28 abr. 2025.
+
+10. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
+
+
+# <a name="c9"></a>Anexos
+
+*Inclua aqui quaisquer complementos para seu projeto, como diagramas, imagens, tabelas etc. Organize em sub-tópicos utilizando headings menores (use ## ou ### para isso)*
+ rateled e ETADPU()  edaditnme a m
+
+
+*Template de SQL + lógica proposicional*
+#1 | ---
+--- | ---
+**Expressão SQL** |  UPDATE usuario_trilha ut SET status = 'perdeu_prazo' WHERE ut.prazo < CURRENT_DATE AND NOT status = 'completo';
+**Proposições lógicas** | $A$: O prazo é menor que 'CURRENT_DATE'(ut.prazo < CURRENT_DATE);<br> $B$: Status da trilha não está 'completo' (status  = 'completo');
+**Expressão lógica proposicional** | $A \land \lnot B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$(A \land B)$</th> <th>$(A \land B)</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+#2 | ---
+--- | ---
+**Expressão SQL** | SELECT * FROM opcoes o WHERE o.id_pergunta = $ID_PERGUNTA AND eh_correta = true;
+
+**Proposições lógicas** | $A$: <br> $B$: 
+**Expressão lógica proposicional** | $A \land \lnot B$
 **Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$C$</th> <th>$(A \land B)$</th> <th>$(A \land B) \lor C$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
 
 *Dica: edite a tabela verdade fora do markdown, para ter melhor controle*
