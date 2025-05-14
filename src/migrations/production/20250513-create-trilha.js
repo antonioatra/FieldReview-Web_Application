@@ -2,13 +2,9 @@ const pool = require('../../config/database');
 
 async function migrate () {
   const query = `
-    CREATE TABLE IF NOT EXISTS Modulo (
+    CREATE TABLE IF NOT EXISTS Trilha (
       id SERIAL PRIMARY KEY,
-      id_trilha VARCHAR(100),
-      titulo TEXT,
-      conteudo TEXT,
-      esta_completo BOOLEAN,
-      ordem INTEGER,
+      titulo VARCHAR(255) NOT NULL,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
@@ -16,9 +12,9 @@ async function migrate () {
 
   try {
     await pool.query(query);
-    console.log('Tabela "Modulo" criada com sucesso.');
+    console.log('Tabela "Trilha" criada com sucesso.');
   } catch (err) {
-    console.error('Erro ao criar tabela Modulo:', err.message);
+    console.error('Erro ao criar tabela Trilha:', err.message);
   } finally {
     pool.end();
     console.log('Conexão com o banco encerrada.');
