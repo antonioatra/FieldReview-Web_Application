@@ -428,7 +428,7 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 <p align="center"> <img src="../assets/assetsWAD/usuario-trilha_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
 
-&emsp;&emsp; A imagem acima é a tabela intermediária **usuario-trilha**. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso os IDs da entidade **usuario** e **trilha**), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N.  
+&emsp;&emsp; A imagem acima é a tabela intermediária **usuario-trilha**. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso os IDs da entidade **usuario** e **trilha**), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N. Lém disso, temos atributos que relacionam as duas entidades, que são o **status**, que mostrará qual estágio de conclusão ela está, além do atributo **prazo** que mostrará para um certo Usuário qual prazo ele tem para fazer. 
 
 
 <p align="center"> <img src="../assets/assetsWAD/usuario-certificado_modelo_relacional.png">
@@ -440,6 +440,11 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 <br> <sub>Fonte: Autoral (2025)</sub> </p>
 
 &emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-notificacao** também é criada porque a relação Usuário e Notificação é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Notificação).
+
+<p align="center"> <img src="../assets/assetsWAD/usuario-modulo_modelo_relacional .png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-modulo** também é criada porque a relação Usuário e Módulo é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Módulo), além do atributo **esta_completo** que será resposável por mostrar se o módulo foi completado pelo usuário.
 
 <p align="center"> <img src="../assets/assetsWAD/certificado_modelo_relacional.png">
 <br> <sub>Fonte: Autoral (2025)</sub> </p>
@@ -473,6 +478,9 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 &emsp;&emsp; A imagem acima é referente à tabela da entidade Notificação, cujos seus atributos são: **ID próprio**, **Título**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação caregará, Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 #### Relacionamento entre as Entidades
+
+<p align="center"> <img src="../assets/assetsWAD/diagrama_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
 
 **1. usuário ↔ usuário_trilha**
 
@@ -529,6 +537,14 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 - Relacionamento: contém
 
 - Motivo: Permite a construção de perguntas de múltipla escolha, onde cada pergunta oferece diversas alternativas de resposta.
+
+**8. usuário ↔ usuario-módulo**
+
+- Tipo: 1:N (Usuário com vários módulos)
+
+- Tabela intermediária: usuário-modulo
+
+- Motivo: Associa usuário com módulo para que cada módulo tenha o status dela associada ao ID de um certo usuário. Assim, cada pessoa tem seus módulos e seus próprios status.
 
 ---
 
