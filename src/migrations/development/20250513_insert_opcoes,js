@@ -1,0 +1,21 @@
+// migrations/migrate.js
+const pool = require('../../config/database');
+
+async function migrate() {
+  const query = `
+    INSERT INTO opcoes(id_pergunta, texto, eh_correta)
+    VALUES 
+        ( , 'texto da opção 1', true);
+  `;
+
+  try {
+    await pool.query(query);
+    console.log('Informações na tabela "opcoes" inserida com sucesso.');
+  } catch (err) {
+    console.error('Erro ao inserir na tabela:', err.message);
+  } finally {
+    pool.end();
+  }
+}
+
+migrate();
