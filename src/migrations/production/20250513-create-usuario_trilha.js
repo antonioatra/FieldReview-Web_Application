@@ -4,8 +4,8 @@ async function migrate () {
   const query = `
     CREATE TABLE IF NOT EXISTS usuario_trilha (
       id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-      id_usuario VARCHAR(100) REFERENCES usuario(id),
-      id_trilha VARCHAR(100) REFERENCES trilha(id),
+      id_usuario UUID,
+      id_trilha UUID,
       status VARCHAR(50),
       prazo DATE,
       FOREIGN KEY (id_usuario) REFERENCES usuario(id) ON DELETE CASCADE,
