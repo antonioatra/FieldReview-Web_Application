@@ -114,7 +114,7 @@
      
 ### Forma de utilização  da solução: <br>
 
-&emsp;A plataforma possui módulos com aulas e testes para capacitar o PTD no uso do Climate FieldView. Um teste inicial identifica pontos de atenção, e há um sistema de pesquisa rápida para dúvidas urgentes. O progresso é validado com pontuação, permitindo que o administrador acompanhe o nível de conhecimento de cada usuário.
+&emsp; A plataforma possui módulos com aulas e testes para capacitar o PTD no uso do Climate FieldView. Um teste inicial identifica pontos de atenção, e há um sistema de pesquisa rápida para dúvidas urgentes. O progresso é validado com pontuação, permitindo que o administrador acompanhe o nível de conhecimento de cada usuário.
 
 ### Benefícios esperados: <br>
 
@@ -386,7 +386,68 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 
 ## 3.2. Wireframes (sprint 2)
 
-*Posicione aqui as imagens do wireframe construído para sua solução e, opcionalmente, o link para acesso (mantenha o link sempre público para visualização)*
+&emsp; O wireframe é uma representação esquemática inicial de uma interface de usuário, geralmente elaborada com baixa fidelidade. Seu objetivo principal é auxiliar na definição da estrutura e na disposição dos elementos visuais e informacionais da interface, sem, contudo, abordar em profundidade as funcionalidades ou aspectos estéticos do sistema. Essa ferramenta é amplamente utilizada nas etapas iniciais do design de interfaces, por permitir uma visualização clara da hierarquia da informação e da navegação pretendida, facilitando a comunicação entre designers, desenvolvedores e demais *stakeholders*.
+
+
+ **Funcionalidades do Usuário Comum** <br>
+
+#### Tela inicial do Usuário padrão
+
+<p align="center"> <img src="../assets/assetsWAD/telaUsuarioPadrao.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+<p align="center"> <img src="../assets/assetsWAD/mobileUsuarioPadrao.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Após realizar o login, a plataforma irá redirecionar para a tela correspondente à função do usuário: comum ou administrador. Na tela inicial do usuário, é possível observar o ranking geral e a sua posição, além de notificações sobre atualizações, trilhas já concluídas e trilhas disponíveis.
+
+&emsp; Na interface inicial destinada ao usuário comum, são disponibilizadas as seguintes informações:
+
+* Visualização do ranking geral dos usuários, incluindo a posição atual do usuário logado;  
+* Notificações referentes a atualizações e eventos relevantes na plataforma;  
+* Listagem das trilhas de aprendizagem já concluídas;  
+* Exibição das trilhas disponíveis para realização;  
+* Barra de pesquisa para busca de conteúdos.
+
+#### Tela das trilhas
+
+<p align="center"> <img src="../assets/assetsWAD/telaTrilhas.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+<p align="center"> <img src="../assets/assetsWAD/mobileTrilhas.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Na listagem de trilhas exibida na página inicial, ao selecionar a trilha de interesse, o usuário é redirecionado para a interface específica da trilha escolhida. Nessa tela, são apresentados os módulos que a compõem, cada um contendo:
+
+* Material de estudo relacionado ao tema do módulo;  
+* Uma pergunta destinada à validação do conhecimento adquirido pelo usuário.
+
+
+---
+
+ **Funcionalidades do Administrador**
+
+&emsp; Após realizar o login na função de administrador, a tela inicial exibe funcionalidades distintas em comparação à tela do usuário. Uma das principais diferenças é a presença de abas que permitem navegar entre as opções de 'Usuários' e 'Trilhas'.
+
+#### Tela inicial do Administrador
+
+<p align="center"> <img src="../assets/assetsWAD/telaAdminUsuarios.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+<p align="center"> <img src="../assets/assetsWAD/mobileAdminUsuarios.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Na aba de 'Usuários', o administrador tem acesso a uma tabela que exibe o ranking dos usuários, com a possibilidade de visualizar estatísticas individuais. Essas estatísticas incluem as trilhas já concluídas, a pontuação no ranking e a opção de recomendar trilhas que ainda não foram realizadas.
+
+<p align="center"> <img src="../assets/assetsWAD/FieldReviewWireframe.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Representação de como ocorrerá o fluxo entre as telas dentro da aplicação. O wireframe é extremamente importante para a etapa inicial do desenvolvimento do projeto.
+
+Segue o link do local onde foi desenvolvido o wireframe para visualização de todas as telas da aplicação:<br>
+ https://whimsical.com/fieldreview-home-FCLJQWvMrHGbsAYkEbDkzE
+
+
+
+
 
 ## 3.3. Guia de estilos (sprint 3)
 
