@@ -3,7 +3,7 @@ const pool = require('../../config/database');
 async function migrate () {
   const query = `
     CREATE TABLE IF NOT EXISTS usuario_modulo (
-      id SERIAL PRIMARY KEY,
+      id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
       id_usuario VARCHAR(100) REFERENCES usuario(id),
       id_modulo VARCHAR(100) REFERENCES modulo(id),
       esta_completo BOOLEAN
