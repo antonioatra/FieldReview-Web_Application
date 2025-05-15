@@ -2,10 +2,12 @@ const pool = require('../../config/database');
 
 async function migrate () {
   const query = `
-    CREATE TABLE IF NOT EXISTS Usuario_certificado (
+    CREATE TABLE IF NOT EXISTS usuario_certificado (
       id SERIAL PRIMARY KEY,
-      id_usuario VARCHAR(100) REFERENCES Usuario(id),
-      id_certificado VARCHAR(100) REFERENCES Certificado(id),
+      id_usuario VARCHAR(100),
+      id_certificado VARCHAR(100),
+      FOREIGN KEY (id_usuario) REFERENCES usuario(id) ON DELETE CASCADE,
+      FOREIGN KEY (id_certificado) REFERENCES certificado(id) ON DELETE CASCADE
     );
   `;
 

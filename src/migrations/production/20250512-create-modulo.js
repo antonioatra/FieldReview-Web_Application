@@ -2,7 +2,7 @@ const pool = require('../../config/database');
 
 async function migrate () {
   const query = `
-    CREATE TABLE IF NOT EXISTS Modulo (
+    CREATE TABLE IF NOT EXISTS modulo (
       id SERIAL PRIMARY KEY,
       id_trilha VARCHAR(100),
       titulo TEXT,
@@ -10,7 +10,8 @@ async function migrate () {
       esta_completo BOOLEAN,
       ordem INTEGER,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (id_trilha) REFERENCES trilha(id) ON DELETE CASCADE
     );
   `;
 

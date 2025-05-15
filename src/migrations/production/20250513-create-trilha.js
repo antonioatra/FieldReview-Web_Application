@@ -2,7 +2,7 @@ const pool = require('../../config/database');
 
 async function migrate () {
   const query = `
-    CREATE TABLE IF NOT EXISTS Trilha (
+    CREATE TABLE IF NOT EXISTS trilha (
       id SERIAL PRIMARY KEY,
       titulo VARCHAR(255) NOT NULL,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
