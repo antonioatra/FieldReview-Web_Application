@@ -1,5 +1,5 @@
 // migrations/migrate.js
-const pool = require('../../database');
+const pool = require('../../config/database');
 
 async function migrate() {
   const query = `
