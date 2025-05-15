@@ -5,7 +5,7 @@ async function migrate() {
   const query = `
     INSERT INTO pergunta(id_modulo, enunciado, pontos)
     VALUES 
-        (, 'enunciado da pergunta 1', 20);
+        ('4c8afa79-f48c-46fc-890b-fad52e1e169b', 'enunciado da pergunta 1', 20);
   `;
 
   try {

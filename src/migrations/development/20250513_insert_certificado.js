@@ -5,7 +5,7 @@ async function migrate() {
   const query = `
     INSERT INTO certificado(titulo, imagem, id_trilha)
     VALUES 
-        ('titulo certificado 1', bytea('src/assets/teste.png'), );
+        ('titulo certificado 1', bytea('assets/assetsWAD/inteli.png'), );
   `;
 
   try {
