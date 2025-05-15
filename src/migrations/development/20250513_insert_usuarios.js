@@ -5,7 +5,7 @@ async function migrate() {
   const query = `
     INSERT INTO usuarios(email, senha)
     VALUES 
-        ('teste123@gmail.com', 'senha123');
+        ('John Doe', 'teste123@gmail.com', 'senha123', 'admin');
   `;
 
   try {

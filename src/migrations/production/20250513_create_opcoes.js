@@ -5,9 +5,10 @@ async function migrate() {
   const query = `
     CREATE TABLE IF NOT EXISTS opcoes (
         id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-        id_pergunta INTEGER REFERENCES pergunta(id),
+        id_pergunta INTEGER,
         texto TEXT NOT NULL,
-        eh_correta BOOLEAN
+        eh_correta BOOLEAN, 
+        FOREIGN KEY (id_pergunta) REFERENCES pergunta(id) ON DELETE CASCADE
     );
   `;
 

@@ -7,7 +7,7 @@ async function migrate() {
       id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
       titulo VARCHAR(80) NOT NULL,
       imagem BYTEA NOT NULL,
-      id_trilha INTEGER REFERENCES trilha(id)
+      id_trilha INTEGER REFERENCES trilha(id) ON DELETE CASCADE,
     );
   `;
 
