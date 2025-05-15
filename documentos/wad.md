@@ -418,9 +418,11 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 
 ### 3.5.2. Consultas SQL e lógica proposicional (sprint 2)
 
-&emsp;&emsp; Nesta seção, será feita as consultas SQL, que são os códigos responsáveis por selecionar (SELECT), adicionar novos atributos (INSERT), atualizar algum dado dentro de uma entidade (UPDATE) e deletar alguma entidade ou certo cadastro por exemplo (DELETE). Nessa tabela, terá o código consulta (expressão SQL), a explicação lógica do que o código fará (proposição lógica) e a tabela verdade, responsável por explicar a lógica da busca do código SQL, mostrandoa as possíveis combinações e resultados que ela pode trazer.
- 
-## Consultas e Tabelas Verdade.
+&emsp; Nesta seção, apresentamos uma lista de consultas SQL compostas, implementadas no back-end da aplicação web, acompanhadas de sua lógica proposicional. Cada consulta inclui a expressão SQL, a proposição lógica correspondente e a tabela verdade que ilustra as combinações possíveis e os resultados esperados.
+
+
+#### Consultas e Tabelas Verdade.
+
 
 &emsp;&emsp;
 #1 | ---
@@ -430,21 +432,27 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 **Expressão lógica proposicional** | $A \land \lnot B$
 **Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$\lnot B$</th> <th>$A \land \lnot B$ </th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td></tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>F</td></tbody> </table>
 
+Contexto de aplicação da consulta 1: Cada trilha dentro da plataforma possui um prazo para ser concluída. Caso o usuário não conclua a trilha atribuída a ele dentro do prazo, o status da trilha é atualizado para 'perdeu_prazo'. Essa consulta é executada periodicamente para garantir que as trilhas com prazos expirados sejam atualizadas corretamente.
+
 
 #2 | ---
 --- | ---
 **Expressão SQL** | SELECT * FROM opcoes o WHERE o.id_pergunta = $ID_PERGUNTA AND eh_correta = true;
-**Proposições lógicas** | $A$: A opção pertence à pergunta com o ID '$ID_PERGUNTA' (o.id_pergunta = $ID_PERGUNTA)<br> $B$: A opção está correta (eh_correta = true)
+**Proposições lógicas** | $A$: A opção pertence à pergunta com o ID '$ID\_PERGUNTA' (o.i_pergunta = $ID\_PERGUNTA)<br> $B$: A opção está correta (eh_correta = true)
 **Expressão lógica proposicional** | $A \land B$
 **Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$A \land B$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
 
+
+Contexto de aplicação da consulta 2: Ao final de cada módulo de aprendizado, o usuário deve responder a uma perguntaa para avaliar seu conhecimento. Essa consulta é utilizada para verificar dentre as opções disponíveis qual é a correta, permitindo que o sistema valide a resposta do usuário e calcule sua pontuação.
 
 #3 | ---
 --- | ---
-**Expressão SQL** | DELETE FROM usuario_trilha ut WHERE ut.id_usuario = $ID_USUARIO AND ut.id_trilha = $ID_TRILHA
-**Proposições lógicas** | $A$: O usuário pertence ao ID '$ID_USUARIO'(ut.id_usuario = $ID_USUARIO)<br> $B$: A trilha pertence ao ID '$ID_TRILHA'(ut.id_trilha = $ID_TRILHA)
+**Expressão SQL** | DELETE FROM usuario_trilha ut WHERE ut.id_usuario = $ID\_USUARIO AND  ut.id\_trilha = $ID\_TRILHA
+**Proposições lógicas** | $A$: O usuário pertence ao ID '$ID\_USUARIO'(ut.id\_usuario = $ID\_USUARIO)<br> $B$: A trilha pertence ao ID '$ID\_TRILHA'(ut.id\_trilha = $ID\_TRILHA)
 **Expressão lógica proposicional** | $A \land B$
 **Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$A \land B$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua conta ou não deseja mais participar de uma trilha específica, essa consulta é utilizada para remover o registro do usuário na trilha. Isso garante que o banco de dados permaneça atualizado e livre de informações desnecessárias.
 
 ## 3.6. WebAPI e endpoints (sprints 3 e 4)
 
