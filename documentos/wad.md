@@ -611,18 +611,41 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 ### 3.5.2. Consultas SQL e lógica proposicional (sprint 2)
 
-*posicione aqui uma lista de consultas SQL compostas, realizadas pelo back-end da aplicação web, com sua respectiva lógica proposicional, descrita conforme template abaixo. Lembre-se que para usar LaTeX em markdown, basta você colocar as expressões entre $ ou $$*
+&emsp; Nesta seção, apresentamos uma lista de consultas SQL compostas, implementadas no back-end da aplicação web, acompanhadas de sua lógica proposicional. Cada consulta inclui a expressão SQL, a proposição lógica correspondente e a tabela verdade que ilustra as combinações possíveis e os resultados esperados.
 
-*Template de SQL + lógica proposicional*
+
+#### Consultas e Tabelas Verdade.
+
+
+&emsp;&emsp;
 #1 | ---
 --- | ---
-**Expressão SQL** | SELECT * FROM suppliers WHERE (state = 'California' AND supplier_id <> 900) OR (supplier_id = 100); 
-**Proposições lógicas** | $A$: O estado é 'California' (state = 'California') <br> $B$: O ID do fornecedor não é 900 (supplier_id ≠ 900) <br> $C$: O ID do fornecedor é 100 (supplier_id = 100)
-**Expressão lógica proposicional** | $(A \land B) \lor C$
-**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$C$</th> <th>$(A \land B)$</th> <th>$(A \land B) \lor C$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+**Expressão SQL** |  UPDATE usuario_trilha ut SET status = 'perdeu_prazo' WHERE ut.prazo < CURRENT_DATE AND NOT status = 'completo';
+**Proposições lógicas** | $A$: O prazo é menor que 'CURRENT_DATE'(ut.prazo < CURRENT_DATE);<br> $B$: Status da trilha não está 'completo' (status  = 'completo');
+**Expressão lógica proposicional** | $A \land \lnot B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$\lnot B$</th> <th>$A \land \lnot B$ </th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td></tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>F</td></tbody> </table>
 
-*Dica: edite a tabela verdade fora do markdown, para ter melhor controle*
+Contexto de aplicação da consulta 1: Cada trilha dentro da plataforma possui um prazo para ser concluída. Caso o usuário não conclua a trilha atribuída a ele dentro do prazo, o status da trilha é atualizado para 'perdeu_prazo'. Essa consulta é executada periodicamente para garantir que as trilhas com prazos expirados sejam atualizadas corretamente.
 
+
+#2 | ---
+--- | ---
+**Expressão SQL** | SELECT * FROM opcoes o WHERE o.id_pergunta = $ID_PERGUNTA AND eh_correta = true;
+**Proposições lógicas** | $A$: A opção pertence à pergunta com o ID '$ID\_PERGUNTA' (o.i_pergunta = $ID\_PERGUNTA)<br> $B$: A opção está correta (eh_correta = true)
+**Expressão lógica proposicional** | $A \land B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$A \land B$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+
+Contexto de aplicação da consulta 2: Ao final de cada módulo de aprendizado, o usuário deve responder a uma pergunta para avaliar seu conhecimento. Essa consulta é utilizada para verificar dentre as opções disponíveis qual é a correta, permitindo que o sistema valide a resposta do usuário e calcule sua pontuação.
+
+#3 | ---
+--- | ---
+**Expressão SQL** | DELETE FROM usuario_trilha ut WHERE ut.id_usuario = $ID\_USUARIO AND  ut.id\_trilha = $ID\_TRILHA
+**Proposições lógicas** | $A$: O usuário pertence ao ID '$ID\_USUARIO'(ut.id\_usuario = $ID\_USUARIO)<br> $B$: A trilha pertence ao ID '$ID\_TRILHA'(ut.id\_trilha = $ID\_TRILHA)
+**Expressão lógica proposicional** | $A \land B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$A \land B$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua conta ou não deseja mais participar de uma trilha específica, essa consulta é utilizada para remover o registro do usuário na trilha. Isso garante que o banco de dados permaneça atualizado e livre de informações desnecessárias.
 ## 3.6. WebAPI e endpoints (sprints 3 e 4)
 
 *Utilize um link para outra página de documentação contendo a descrição completa de cada endpoint. Ou descreva aqui cada endpoint criado para seu sistema.* 
