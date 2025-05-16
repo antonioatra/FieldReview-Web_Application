@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "migrate": "node src/migrations/production/20250512-create-modulo.js"
+    "migrate-production": "node src/migrations/production/index.js",
+    "migrate-development": "node src/migrations/development/index.js"
   },
   "repository": {
     "type": "git",

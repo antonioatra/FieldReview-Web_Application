@@ -1,6 +1,6 @@
 const pool = require('../../config/database');
 
-async function migrate () {
+module.exports = async () => {
   const query = `
     CREATE TABLE IF NOT EXISTS trilha (
       id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -15,10 +15,6 @@ async function migrate () {
     console.log('Tabela "Trilha" criada com sucesso.');
   } catch (err) {
     console.error('Erro ao criar tabela Trilha:', err.message);
-  } finally {
-    pool.end();
-    console.log('Conexão com o banco encerrada.');
+    throw err;
   }
 };
-
-migrate();

@@ -1,6 +1,6 @@
 const pool = require('../../config/database');
 
-async function migrate () {
+module.exports = async () => {
   const query = `
     CREATE TABLE IF NOT EXISTS usuario_trilha (
       id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -8,7 +8,7 @@ async function migrate () {
       id_trilha UUID,
       status VARCHAR(50),
       prazo DATE,
-      FOREIGN KEY (id_usuario) REFERENCES usuario(id) ON DELETE CASCADE,
+      FOREIGN KEY (id_usuario) REFERENCES usuarios(id) ON DELETE CASCADE,
       FOREIGN KEY (id_trilha) REFERENCES trilha(id) ON DELETE CASCADE
     );
   `;
@@ -18,10 +18,6 @@ async function migrate () {
     console.log('Tabela "Usuario_trilha" criada com sucesso.');
   } catch (err) {
     console.error('Erro ao criar tabela Usuario_trilha:', err.message);
-  } finally {
-    pool.end();
-    console.log('Conexão com o banco encerrada.');
+    throw err;
   }
 };
-
-migrate();

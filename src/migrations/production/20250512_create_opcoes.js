@@ -1,7 +1,6 @@
-// migrations/migrate.js
 const pool = require('../../config/database');
 
-async function migrate() {
+module.exports = async () => {
   const query = `
     CREATE TABLE IF NOT EXISTS opcoes (
         id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -17,9 +16,6 @@ async function migrate() {
     console.log('Tabela "opcoes" criada com sucesso.');
   } catch (err) {
     console.error('Erro ao criar a tabela:', err.message);
-  } finally {
-    pool.end();
+    throw err;
   }
-}
-
-migrate();
+};
