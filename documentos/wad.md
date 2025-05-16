@@ -297,7 +297,9 @@ Identificação | US01
 Persona | Promotor Técnico DIgital
 User Story | "Como PTD, quero possuir a habilidade de realizar uma busca rápida sobre as informações para que eu consiga otimizar a resolução das minhas dúvidas."
 Critério de aceite 1 | Dado que a barra de pesquisa esteja acessível, <br>E o usuário deseje procurar por um tópico específico, <br>Quando ele digitar e confirmar a pesquisa, <br>Então o conteúdo correspondente ao tópico deve ser apresentado a ele.
+Teste de aceite 1 | Buscar por uma informação utilizando palavras-chave <br>Aceitou = Os conteúdos com as palavras-chave aparecem <br>Recusou = Nenhum conteúdo aparece ao usuário e uma mensagem de erro é mostrada.
 Critério de aceite 2 | Dado que a barra de pesquisa esteja acessível,<br>E o usuário deseje procurar por um tópico,<br>Quando ele digitar uma palavra-chave sem saber o nome exato da trilha,<br>Então a barra de pesquisa deve apresentar sugestões de trilhas relacionadas
+Teste de aceite 2 | Buscar por uma informação utilizando palavras-chave que podem apresentar algum erro gramatical <br>Aceitou = Aparece a palavra com maior semelhança com a digitada e mostra o conteúdo correspondente <br>Recusou = Nenhuma palavra correspondente é identificada e nenhum conteúdo é retornado
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e a capacidade da plataforma<br>- A User Story é valiosa porque o PTD pode sanar as suas dúvidas de forma rápida, economizando tempo e satisfazendo o cliente.<br>- A User Story é estimável porque oferece informações sobre os elementos necessários para a implementação da busca rápida, como a barra de busca, a apresentação de resultados, e os filtros de pesquisa.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de busca rápida.<br>- A User Story é testável porque os critérios 
 
 <p align = 'center'>
@@ -312,8 +314,10 @@ Identificação | US02
 --- | ---
 Persona | Promotor Técnico Digital
 User Story | "Como PTD, quero ter acesso a uma plataforma didática onde eu possa aprofundar tecnicamente meus conhecimentos para que eu possa exercer uma boa atividade em campo."
-Critério de aceite 1 | Dado que a plataforma seja acessada,<br>E o usuário deseje realizar um estudo técnico,<br>Então ele deve conseguir encontrar trilhas e conteúdos relevantes para sua capacitação como Promotor Técnico Digital..
+Critério de aceite 1 | Dado que a plataforma seja acessada,<br>E o usuário deseje realizar um estudo técnico,<br>Então ele deve conseguir encontrar trilhas e conteúdos relevantes para sua capacitação como Promotor Técnico Digital.
+Teste de aceite 1 | Acessar uma trilha de conhecimento<br> Aceitou = Aparece os módulos presentes na trilha. <br>Recusou = Nenhum módulo é apresentado. 
 Critério de aceite 2 | Dado que o Promotor Técnico Digital esteja com dificuldade técnica,<br>E deseje realizar um estudo sobre o tema,<br>Então ele deve conseguir acessar uma plataforma amigável e didática com conteúdos que o auxiliem na resolução da dificuldade.
+Teste de aceite 2 | Consumir o conteúdo presente em um módulo dentro da trilha <br>Aceitou = Aparece o conteúdo ao clicar em um módulo <br>Recusou = Não aparece nenhum conteúdo no módulo.
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e a capacidade da plataforma<br>- A User Story é valiosa porque o PTD pode usar a plataforma para se capacitar, o que impacta diretamente na qualidade dos atendimentos e na satisfação do cliente.<br>- A User Story é estimável porque é possível estimar o esforço do desenvolvimento com base na entrega das trilhas, na organização dos conteúdos e, consequentemente na usabilidade da plataforma.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de visualização e acesso às trilhas.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão a funcionalidade do acesso às trilhas e a sua objetividade.
 
 <p align = 'center'>
@@ -329,7 +333,9 @@ Identificação | US03
 Persona | Consultor Digital
 User Story | "Como Consultor, quero ter a possibilidade de atribuir trilhas para o meu time de PTDs desenvolver uma habilidade específica."
 Critério de aceite 1 | Dado que o consultor acesse a plataforma com a função de administrador,<br>Quando ele navegar para a seção de usuários,<br>Então ele deve conseguir visualizar as informações de cada PTD individualmente, incluindo suas trilhas associadas.
+Teste de aceite | Acessar o desempenho individual dos PTDs. <br>Aceitou = Aparece as informações acerca do progresso das trilhas e posição que o PTD se encontra. <br>Recusou = Os dados dos PTDs não aparecem para o consultor.
 Critério de aceite 2 | Dado que o consultor acesse a plataforma com a função de administrador,<br>Quando ele selecionar um PTD específico,<br>Então ele deve conseguir direcionar trilhas individualmente para esse PTD.
+Teste de aceite 2 | Atribuir trilhas ao PTD quando logado como administrador. <br>Aceitou = Ao entrar como administrador e apertar no botão de atribuir trilhas, na página de usuários, aparece uma tela para adicionar o prazo e então o PTD será notificado. <br>Recusou = Após apertar no botão de atribuir trilhas não aparece a tela de definir um prazo, ou após definir o prazo não aparece nenhuma notificação ao usuário.
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e os objetivos do consultor.<br>- A User Story é valiosa porque o consultor pode atribuir trilhas de maneira individual a cada PTD, o que eleva a performance individual e a capacitação da equipe.<br>- A User Story é estimável porque oferece as informações necessárias para validação da funcionalidade e pode ser facilmente avaliada de acordo com o resultado dos PTDs.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de atribuição manual de trilhas.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão a funcionalidade de atribuição de trilhas.
 
 <p align = 'center'>
@@ -345,7 +351,9 @@ Identificação | US04
 Persona | Promotor Técnico Digital
 User Story | "Como PTD quero ter a possibilidade de me cadastrar na plataforma para conseguir acessar os conteúdos disponíveis."
 Critério de aceite 1 | Dado que o PTD tenha um cadastro válido,<br>Quando ele acessar a plataforma e inserir suas credenciais,<br>Então ele deve conseguir realizar o login e visualizar os conteúdos disponíveis
+Teste de aceite 1 | Acessar a plataforma como PTD pela primeira vez após ser cadastrado pelo administrador. <br>Aceitou = Usuário consegue entrar na plataforma acessando as informações cadastradas pelo administrador. <br>Recusou = Usuário não consegue entrar na plataforma com as informações cadastradas pelo administrado.
 Critério de aceite 2 | Dado que o PTD tenha um cadastro ativo,<br>Quando ele realizar o login,<br>Então ele deve conseguir acessar seu perfil pessoal na plataforma.
+Teste de aceite 2 | Acessar o perfil na plataforma. <br>Aceitou = Usuário aperta no botão de perfil e consegue ver suas informações. <br>Recusou = Ao apertar no perfil não aparece nada ao usuário em relação a suas informações.
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e as necessidades do promotor técnico digital.<br>- A User Story é valiosa porque o PTD possuirá um cadastro único para acessar os conteúdos e ter a sua conta registrada.<br>- A User Story é estimável porque o desenvolvimento dessa funcionalidade é facilmente estipulado com base na aplicação em outras plataformas.<br>- A User Story é pequena porque foca somente na funcionalidade de cadastro e login do usuário PTD.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão como funcionará o processo de cadastro e login.
 
 <p align = 'center'>
@@ -361,7 +369,9 @@ Identificação | US05
 Persona | Promotor Técnico Digital
 User Story | "Como PTD quero revisar meus conhecimentos sobre a plataforma periodicamente para não ter dúvidas sobre o produto posteriormente "
 Critério de aceite 1 | Dado que o PTD já tenha realizado estudos na plataforma,<br>E deseje continuar consolidando esse conhecimento,<br>Quando ele acessar novamente o conteúdo,<br>Então a plataforma deve apresentar recursos de revisão para trilhas concluídas  
+Teste de aceite | Acessar uma trilha para revisar. <br>Aceitou = Acessa uma trilha já concluída e poder reler os materiais disponíveis e refazer as questões presentes no módulo. <br>Recusou = Ao acessar uma trilha já concluída o usuário não consegue acessar o conteúdo ou refazer as perguntas.
 Critério de aceite 2 | Dado que o PTD já tenha realizado estudos na plataforma,<br>E deseje focar nos tópicos com maior dificuldade,<br>Quando ele acessar novamente a plataforma,<br>Então a plataforma deve destacar os conteúdos em que o PTD teve pior desempenho.
+Teste de aceite 2 | Acessar uma trilha não concluída com 100% de aproveitamento. <br>Aceitou = Ao acessar uma trilha concluída, o usuário poderá ver em qual módulo não conseguiu acertar a questão devido ao destaque que essa seção possui. <br>Recusar = Ao acessar uma trilha concluída o usuário não consegue saber em qual módulo ele errou alguma questão por não apresentar nenhum destaque.
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e as vontades do promotor técnico digital.<br>- A User Story é valiosa porque o PTD possuirá a opção de consolidar os seus conhecimentos, além de corrigir os seus erros anteriores.<br>- A User Story é estimável porque o desenvolvimento dessa funcionalidade pode ser estipulada de acordo com as tecnologias que serão utilizadas durante o processo.<br>- A User Story é pequena porque foca somente na funcionalidade de revisar os tópicos já concluídos pelo PTD.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão como funcionará a revisão dos usuários.
 
 <p align = 'center'>
@@ -377,7 +387,9 @@ Identificação | US06
 Persona | Promotor Técnico Digital
 User Story | "Como consultor, quero garantir que meu time de PTDs recém contratados estejam aptos para exercer uma boa atividade de auxílio em campo para melhorar a satisfação dos clientes."
 Critério de aceite 1 | Dado que o PTD comece a atuar na área<br>E entre na plataforma de ensino<br>Quando entrar na empresa,<br>Então realizará uma trilha de conhecimento básico
-Critério de aceite 2 | Dado que o PTD novato atenda um chamado<br>E não saiba resolver algum problema<br>Quando estiver com o cliente<br>Então utilize a plataforma de ensino 
+Teste de aceite 1 | Possuir uma trilha introdutória.<br>Aceitou = Ao usuário PTD entrar na plataforma pela primeira vez, aparece uma trilha para ele concluir e então continuar os seus estudos em outras áreas.<br>Recusou = Não aparece nenhuma trilha introdutória ao PTD ao entrar pela primeira vez no site.
+Critério de aceite 2 | Dado que o PTD novato atenda um chamado<br>E não saiba resolver algum problema<br>Quando estiver com o cliente<br>Então utilize a plataforma de ensino
+Teste de aceite 2 | Acessar a plataforma para sanar uma dúvida. <br>Aceitou = Ao apertar na barra de pesquisa e digitar as palavras-chave, aparecem os resultados correspondentes. <br>Recusou = Ao apertar na barra de pesquisa e digitar as palavras-chave, não aparecem os resultados correspondentes junto a uma mensagem de erro.
 
 <p align = 'center'>
 <sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
@@ -392,7 +404,9 @@ Identificação | US07
 Persona | Consultor Digital
 User Story | " Como consultor, quero ter a possibilidade de analisar separadamente o desempenho de cada um dos PTDs para que eu possa estar ciente do seu desenvolvimento individual."
 Critério de aceite 1 | Dado que a plataforma seja acessada por uma conta admin<br>E entre na página de análise individual de algum colega de equipe<br>Quando quiser consultar as métricas desse parceiro<br>Então aparecerá uma série de dados acerca do avanço dos estudos do PTD
+Teste de aceite 1 | Acessar o desempenho individual de um PTD. <br>Aceitou = Ao selecionar um usuário da plataforma, o administrador acessa os dados relacionados ao progresso do PTD. <br>Recusou = Ao selecionar um usuário da plataforma, na conta de administrador, não aparece nenhuma informação do PTD.
 Critério de aceite 2 | Dado que a plataforma seja acessada por uma conta admin<br>E entre na página de análise individual de alguém do time<br>Quando for consultar as trilhas com mais erros do colega de equipe<br>Então aparecerá as questões e trilhas que o PTD teve o menor aproveitamento
+Teste de aceite 2 | Acessar o desempenho do PTD em um trilha específica. <br>Aceitou = Ao selecionar um usuário aparecerá as trilhas com a porcentagem de aproveitamento na trilha especificada. <br>Recusou = Ao selecionar um usuário não aparece nenhuma informação acerca do aproveitamento em uma determinada trilha.
 
 <p align = 'center'>
 <sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
@@ -407,7 +421,10 @@ Identificação | US08
 Persona | Promotor Técnico Digital
 User Story | "Como PTD, quero ter a possibilidade de receber uma pontuação de acordo com o meu desempenho nas trilhas para que eu possa me avaliar em relação aos outros"
 Critério de aceite 1 | Dado que a plataforma seja acessada por uma conta comum<br>E seja realizada algum exercício sobre a plataforma<br>Quando for finalizada uma trilha de conhecimento<br>Então o usuário receberá pontos caso acerte a pergunta
+Teste de aceite 1 | Atribuir pontos aos usuários que acertarem as perguntas ao final do módulo. <br>Aceitou = Ao submeter a opção correta, o usuário ganha pontos. <br>Recusou = Ao submeter a opção correta, o usuário não ganha pontos e aparece uma mensagem de erro.
 Critério de aceite 2 |Dado que a plataforma seja acessada por uma conta comum<br>E a página de perfil seja aberta<br>Quando o usuário quiser ver suas informações<br>Então aparecerá a pontuação atual do PTD
+Teste de aceite 2  | Visualizar a pontuação do usuário
+Aceitou = Aparece a pontuação do usuário PTD ao acessar seu perfil na plataforma. <br>Recusou = Não aparece nenhuma informação sobre a pontuação do usuário PTD na plataforma.
 
 <p align = 'center'>
 <sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
@@ -421,8 +438,10 @@ Identificação | US09
 --- | ---
 Persona | nome da Persona
 User Story | "Como consultor, quero saber quais pessoas do meu time estão mais engajadas em aprender sobre a plataforma para que eu possa incentivá-las no seu progresso."
-Critério de aceite 1 | Dado o acesso ao site com uma conta admin<br>E a página principal seja aberta<br>Quando o consultor que quiser ver o desempenho geral de seus colegas<br>Então um ranking será mostrado com todos os usuários da plataforma
-Critério de aceite 2 | Dado que a plataforma seja acessada utilizando uma conta admin<br>E a página inicial seja acessada<br>Quando o consultor queira saber em qual posição está seu colega de time<br>Então aparecerá em qual posição está o PTD junto a sua pontuação
+Critério de aceite 1 | Dado o acesso ao site com uma conta admin<br>E a página principal seja aberta<br>Quando o consultor que quiser ver o desempenho geral de seus colegas<br>Então um ranking será mostrado com todos os usuários da plataforma.
+Teste de aceite 1 | Aparecer o ranking dos usuários ao administrador. <br>Aceitou = Ao acessar o site, aparece o top 5 de usuários no site com a opção de ver o ranking completo. <br>Recusou = Ao acessar o site, não aparece o top 5 de usuários.
+Critério de aceite 2 | Dado que a plataforma seja acessada utilizando uma conta admin<br>E a página inicial seja acessada<br>Quando o consultor queira saber em qual posição está seu colega de time<br>Então aparecerá em qual posição está o PTD junto a sua pontuação.
+Teste de aceite 2 | Acessar a posição de um usuário em específico. <br>Aceitou = Ao acessar as informações de um PTD aparece em que posição ele ocupa no ranking. <br>Recusou = Ao acessar as informações de um PTD não aparece a posição dele e uma mensagem de erro é notificada.
 
 <p align = 'center'>
 <sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
@@ -437,7 +456,9 @@ Identificação | US10
 Persona | Promotor Técnico Digital
 User Story | "Como PTD, quero que a plataforma me avise sobre as trilhas direcionadas pelo consultor a mim, além das atualizações dos conteúdos, para que eu possa me manter informado."
 Critério de aceite 1 | Dado a plataforma seja acessada por uma conta comum<br>E a página inicial seja acessada<br>Quando o usuário quiser saber se possui alguma atualização ou atribuição de alguma trilha<br>Então o botão de notificação estará com alguma indicação visual
+Teste de aceite 1 | Acessar as notificações da plataforma. <br>Aceitou = Uma seção de notificações apresentará as últimas atualizações destinadas ao usuário. <br>Recusou = A seção de notificações não mostra nada ou não atualiza as suas informações com uma mensagem de erro aparecendo.
 Critério de aceite 2 | Dado a plataforma seja acessada por uma conta comum<br>E a aba de notificações seja acessada<br>Quando o usuário quiser rever as atualizações do produto FieldView ou alguma trilha atribuída a ele<br>Então aparecerá todas as notificações que o usuário recebeu nos últimos dias
+Teste de aceite 2 | Acessar as últimas notificações do site. <nr>Aceitou = Aparece primeiro as notificações mais recentes no site. <br>Recusou = Não aparece as notificações mais recentes no início da seção
 
 <p align = 'center'>
 <sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
@@ -452,7 +473,9 @@ Identificação | US11
 Persona | Promotor Técnico Digital
 User Story | "Como PTD, quero que a plataforma me disponibilize certificados de conclusão das trilhas para que eu possa comprovar meu conhecimento"
 Critério de aceite 1 | Dado a plataforma seja acessada por uma conta comum<br>E alguma trilha seja completa<br>Quando terminar de consumir o material didático e realizar as avaliações<br>Então uma mensagem de parabéns aparecerá junto a um botão para baixar um certificado da trilha
-Critério de aceite 2 | Dado a plataforma seja acessada por uma conta comum<br>E a aba de certificados seja acessada<br>Quando o usuário quiser rever o seu certificado<br>Então aparecerá quais trilhas foram completas junto a um botão para baixar o certificado
+Teste de aceite 1 | Adquirir o certificado. <br>Aceitou = Ao completar uma trilha, uma mensagem de parabéns com um botão para o usuário baixar o certificado. <br>Recusou = Ao completar uma trilha, nenhuma parabenização ou certificado não aparece e uma mensagem de erro é apresentada. 
+Critério de aceite 2 | Dado a plataforma seja acessada por uma conta comum<br>E a aba de certificados seja acessada<br>Quando o usuário quiser rever o seu certificado<br>Então aparecerá quais trilhas foram completas junto a um botão para baixar o certificado.
+Teste de aceite 2 | Acessar os certificados adquiridos. <br>Aceitou = Ao acessar o perfil será possível visualizar quais certificado foram adquiridos pelo PTD. <br>Recusou = Ao acessar o perfil, nenhum certificado é disponibilizado e uma mensagem de erro aparece.
 
 <p align = 'center'>
 <sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
@@ -466,8 +489,26 @@ Identificação | US12
 --- | ---
 Persona | Consultor Digital
 User Story | "Como consultor quero poder adicionar novas trilhas na plataforma para que eu possa complementar o acervo de conhecimento do site"
-Critério de aceite 1 | Dado que a plataforma seja acessada por uma conta admin<br>E haja a necessidade de adicionar uma nova trilha de conhecimento<br>Quando ocorrer alguma atualização no FieldView<br>Então o consultor poderá upar os materiais didáticos acerca das novas funcionalidades no produto
-Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<br>E haja a necessidade de adicionar uma nova trilha de conhecimento<br>Quando ocorrer algum problema com o produto que não haja nenhuma trilha sobre esse tópico<br>Então o consultor poderá upar os materiais didáticos acerca das novas funcionalidades no produto
+Critério de aceite 1 | Dado que a plataforma seja acessada por uma conta admin<br>E haja a necessidade de adicionar uma nova trilha de conhecimento<br>Quando ocorrer alguma atualização no FieldView<br>Então o consultor poderá upar os materiais didáticos acerca das novas funcionalidades no produto.
+Teste de aceite 1 | Adicionar uma nova trilha. <br>Aceitou = Ao apertar um botão de adicionar nova trilha, aparece uma tela para colocar todo conteúdo relacionado aos módulos. <br>Recusou = Ao apertar um botão de adicionar uma nova trilha, uma tela de erro aparece.
+Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<br>E haja a necessidade de adicionar uma nova trilha de conhecimento<br>Quando ocorrer algum problema com o produto que não haja nenhuma trilha sobre esse tópico<br>Então o consultor poderá upar os materiais didáticos acerca das novas funcionalidades no produto.
+Teste de aceite 2 | Adicionar uma nova trilha. <br>Aceitou = Ao apertar um botão de adicionar nova trilha, aparece uma tela para colocar todo conteúdo relacionado aos módulos. <br>Recusou = Ao apertar um botão de adicionar uma nova trilha, uma tela de erro aparece.
+
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
+
+<p align = 'center'>
+<sup>Quadro 15: Informações da user story 13.</sup>
+</p>
+
+Identificação | US13
+--- | ---
+User Story | "Como desenvolvedor eu quero entender completamente a área de negócios do projeto, para entregar um ótimo MVP"
+Critério de aceite 1 | Dado que a solução seja entendida pelos desenvolvedores<br>E seja iniciado o desenvolvimento do projeto<br>Quando não haja brechas no entendimento do produto<br>Então o grupo poderá trabalhar corretamente
+Teste de aceite 1 | Entender o projeto. <br>Aceitou = Todos os integrantes do grupo saberem desenvolver o trabalho seguindo a mesma linha de pensamento. <br>Recusou = Algum membro não desenvolver o projeto da maneira que foi discutida entre o grupo.
+Critério de aceite 2 | Dado que a solução seja entendida pelos desenvolvedores<br>E seja iniciado a documentação do projeto<br>Quando não haja brechas no entendimento do produto<br>Então o grupo poderá documentar o projeto corretamente.
+Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do grupo saberem documentar o trabalho seguindo a mesma linha de pensamento. <br>Recusou = Algum membro não documentar o projeto da maneira que foi discutida entre o grupo.
 
 <p align = 'center'>
 <sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
