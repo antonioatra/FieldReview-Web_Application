@@ -225,7 +225,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 <p align = 'center'>
 <sup>Figura 4: Matriz de riscos e oportunidades do projeto.</sup>
 <img src="../assets/assetsWAD/matrizDeRisco.png">
-<sub>Fonte: Material produzido pelos próprios autores (2025)</sub>
+<sub>Fonte: Material produzido pelos autores (2025)</sub>
 </p>
 
 &emsp; Para explicar os termos colocados na imagem acima, faremos um quadro de ameaças e de oportunidades descrevendo cada tópico, com a categoria que ela se encontra, a probabilidade de acontecer e o impacto que esse risco pode ocasionar no projeto.
@@ -244,7 +244,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 | Análise da empresa (Bayer CropScience)                  | Pesquisa                           | Análise bem feita do parceiro sem nenhum impeditivo ou dificuldade.                                                                         | 10            | Muito Baixo |
 | Desentendimento entre a equipe                          | Relacionamento / Relação           | Conflitos interpessoais podem gerar impacto na produtividade e na continuidade do projeto.                                                   | 10            | Baixo       |
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 
@@ -264,7 +264,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 | Conhecer um profissional agrícola           | Rede de contatos        | A interação com especialistas do campo traz aprendizado e feedback técnico valioso, ampliando o conhecimento e tornando-nos profissionais mais versáteis.             | 50            | Moderado   |
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 
@@ -276,13 +276,13 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 <sup>Figura 4: Representação da persona PTD Jorge Faria.</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/personasptd.png">
-<br> <sub>Fonte: Material produzido pelos próprios autores (2025).</sub> </p>
+<br> <sub>Fonte: Material produzido pelos autores (2025).</sub> </p>
 
 <p align = 'center'>
 <sup>Figura 5: Representação da persona Consultor Odair Jamar.</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/personasconsultor.png"> 
-<br> <sub>Fonte:  Material produzido pelos próprios autores (2025).</sub> </p>
+<br> <sub>Fonte:  Material produzido pelos autores (2025).</sub> </p>
 
 ## 2.3. User Stories (sprints 1 a 5)
 
@@ -303,7 +303,7 @@ Teste de aceite 2 | Buscar por uma informação utilizando palavras-chave que po
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e a capacidade da plataforma<br>- A User Story é valiosa porque o PTD pode sanar as suas dúvidas de forma rápida, economizando tempo e satisfazendo o cliente.<br>- A User Story é estimável porque oferece informações sobre os elementos necessários para a implementação da busca rápida, como a barra de busca, a apresentação de resultados, e os filtros de pesquisa.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de busca rápida.<br>- A User Story é testável porque os critérios 
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -321,7 +321,7 @@ Teste de aceite 2 | Consumir o conteúdo presente em um módulo dentro da trilha
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e a capacidade da plataforma<br>- A User Story é valiosa porque o PTD pode usar a plataforma para se capacitar, o que impacta diretamente na qualidade dos atendimentos e na satisfação do cliente.<br>- A User Story é estimável porque é possível estimar o esforço do desenvolvimento com base na entrega das trilhas, na organização dos conteúdos e, consequentemente na usabilidade da plataforma.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de visualização e acesso às trilhas.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão a funcionalidade do acesso às trilhas e a sua objetividade.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -339,7 +339,7 @@ Teste de aceite 2 | Atribuir trilhas ao PTD quando logado como administrador. <b
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e os objetivos do consultor.<br>- A User Story é valiosa porque o consultor pode atribuir trilhas de maneira individual a cada PTD, o que eleva a performance individual e a capacitação da equipe.<br>- A User Story é estimável porque oferece as informações necessárias para validação da funcionalidade e pode ser facilmente avaliada de acordo com o resultado dos PTDs.<br>- A User Story é pequena porque não envolve uma gama de funcionalidades, mas foca apenas no processo de atribuição manual de trilhas.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão a funcionalidade de atribuição de trilhas.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -357,7 +357,7 @@ Teste de aceite 2 | Acessar o perfil na plataforma. <br>Aceitou = Usuário apert
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e as necessidades do promotor técnico digital.<br>- A User Story é valiosa porque o PTD possuirá um cadastro único para acessar os conteúdos e ter a sua conta registrada.<br>- A User Story é estimável porque o desenvolvimento dessa funcionalidade é facilmente estipulado com base na aplicação em outras plataformas.<br>- A User Story é pequena porque foca somente na funcionalidade de cadastro e login do usuário PTD.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão como funcionará o processo de cadastro e login.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -375,7 +375,7 @@ Teste de aceite 2 | Acessar uma trilha não concluída com 100% de aproveitament
 Critérios INVEST | - A User Story é independente porque pode ser desenvolvida e entregue separadamente de outras histórias.<br>- A User Story é negociável porque pode ser alterada de acordo com as necessidades do cliente e as vontades do promotor técnico digital.<br>- A User Story é valiosa porque o PTD possuirá a opção de consolidar os seus conhecimentos, além de corrigir os seus erros anteriores.<br>- A User Story é estimável porque o desenvolvimento dessa funcionalidade pode ser estipulada de acordo com as tecnologias que serão utilizadas durante o processo.<br>- A User Story é pequena porque foca somente na funcionalidade de revisar os tópicos já concluídos pelo PTD.<br>- A User Story é testável porque os critérios de aceite ilustram situações claras que definirão como funcionará a revisão dos usuários.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -392,7 +392,7 @@ Critério de aceite 2 | Dado que o PTD novato atenda um chamado<br>E não saiba 
 Teste de aceite 2 | Acessar a plataforma para sanar uma dúvida. <br>Aceitou = Ao apertar na barra de pesquisa e digitar as palavras-chave, aparecem os resultados correspondentes. <br>Recusou = Ao apertar na barra de pesquisa e digitar as palavras-chave, não aparecem os resultados correspondentes junto a uma mensagem de erro.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -409,7 +409,7 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por uma conta admin<
 Teste de aceite 2 | Acessar o desempenho do PTD em um trilha específica. <br>Aceitou = Ao selecionar um usuário aparecerá as trilhas com a porcentagem de aproveitamento na trilha especificada. <br>Recusou = Ao selecionar um usuário não aparece nenhuma informação acerca do aproveitamento em uma determinada trilha.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -427,7 +427,7 @@ Teste de aceite 2  | Visualizar a pontuação do usuário
 Aceitou = Aparece a pontuação do usuário PTD ao acessar seu perfil na plataforma. <br>Recusou = Não aparece nenhuma informação sobre a pontuação do usuário PTD na plataforma.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -444,7 +444,7 @@ Critério de aceite 2 | Dado que a plataforma seja acessada utilizando uma conta
 Teste de aceite 2 | Acessar a posição de um usuário em específico. <br>Aceitou = Ao acessar as informações de um PTD aparece em que posição ele ocupa no ranking. <br>Recusou = Ao acessar as informações de um PTD não aparece a posição dele e uma mensagem de erro é notificada.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -461,7 +461,7 @@ Critério de aceite 2 | Dado a plataforma seja acessada por uma conta comum<br>E
 Teste de aceite 2 | Acessar as últimas notificações do site. <nr>Aceitou = Aparece primeiro as notificações mais recentes no site. <br>Recusou = Não aparece as notificações mais recentes no início da seção
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -478,7 +478,7 @@ Critério de aceite 2 | Dado a plataforma seja acessada por uma conta comum<br>E
 Teste de aceite 2 | Acessar os certificados adquiridos. <br>Aceitou = Ao acessar o perfil será possível visualizar quais certificado foram adquiridos pelo PTD. <br>Recusou = Ao acessar o perfil, nenhum certificado é disponibilizado e uma mensagem de erro aparece.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -495,7 +495,7 @@ Critério de aceite 2 | Dado que a plataforma seja acessada por um conta admin<b
 Teste de aceite 2 | Adicionar uma nova trilha. <br>Aceitou = Ao apertar um botão de adicionar nova trilha, aparece uma tela para colocar todo conteúdo relacionado aos módulos. <br>Recusou = Ao apertar um botão de adicionar uma nova trilha, uma tela de erro aparece.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 <p align = 'center'>
@@ -511,7 +511,7 @@ Critério de aceite 2 | Dado que a solução seja entendida pelos desenvolvedore
 Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do grupo saberem documentar o trabalho seguindo a mesma linha de pensamento. <br>Recusou = Algum membro não documentar o projeto da maneira que foi discutida entre o grupo.
 
 <p align = 'center'>
-<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 # <a name="c3"></a>3. Projeto da Aplicação Web (sprints 1 a 4)
@@ -529,10 +529,18 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 
 #### Tela inicial do Usuário padrão
 
-<p align="center"> <img src="../assets/assetsWAD/telaUsuarioPadrao.png">
-<br> <sub>Fonte: autoral (2025)</sub> </p>
-<p align="center"> <img src="../assets/assetsWAD/mobileUsuarioPadrao.png">
-<br> <sub>Fonte: autoral (2025)</sub> </p>
+<p align = "center"><sup>Figura 6: Tela desktop inicial do Promotor Técnico Digital</sup>
+</p>
+<p align="center">
+<img src="../assets/assetsWAD/telaUsuarioPadrao.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+<p align = "center">
+<sup>Figura 7: Tela mobile inicial do Promotor Técnico Digital</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/mobileUsuarioPadrao.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Após realizar o login, a plataforma irá redirecionar para a tela correspondente à função do usuário: comum ou administrador. Na tela inicial do usuário, é possível observar o ranking geral e a sua posição, além de notificações sobre atualizações, trilhas já concluídas e trilhas disponíveis.
 
@@ -546,10 +554,20 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 
 #### Tela das trilhas
 
-<p align="center"> <img src="../assets/assetsWAD/telaTrilhas.png">
-<br> <sub>Fonte: autoral (2025)</sub> </p>
-<p align="center"> <img src="../assets/assetsWAD/mobileTrilhas.png">
-<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+<p align = "center">
+<sup>Figura 8: Tela desktop das trilhas do Promotor Técnico Digital</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/telaTrilhas.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+<p align = "center">
+<sup>Figura 9: Tela mobile das trilhas do Promotor Técnico Digital</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/mobileTrilhas.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Na listagem de trilhas exibida na página inicial, ao selecionar a trilha de interesse, o usuário é redirecionado para a interface específica da trilha escolhida. Nessa tela, são apresentados os módulos que a compõem, cada um contendo:
 
@@ -565,16 +583,30 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 
 #### Tela inicial do Administrador
 
-<p align="center"> <img src="../assets/assetsWAD/telaAdminUsuarios.png">
-<br> <sub>Fonte: autoral (2025)</sub> </p>
+<p align = "center">
+<sup>Figura 10: Tela desktop inicial do Administrador</sup>
+</p>
+<p align = "center">
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/telaAdminUsuarios.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-<p align="center"> <img src="../assets/assetsWAD/mobileAdminUsuarios.png">
-<br> <sub>Fonte: autoral (2025)</sub> </p>
+<p align = "center">
+<sup>Figura 11: Tela mobile inicial do Administrador</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/mobileAdminUsuarios.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Na aba de 'Usuários', o administrador tem acesso a uma tabela que exibe o ranking dos usuários, com a possibilidade de visualizar estatísticas individuais. Essas estatísticas incluem as trilhas já concluídas, a pontuação no ranking e a opção de recomendar trilhas que ainda não foram realizadas.
 
-<p align="center"> <img src="../assets/assetsWAD/FieldReviewWireframe.png">
-<br> <sub>Fonte: autoral (2025)</sub> </p>
+<p align = "center">
+<sup>Figura 12: Fluxo de navagação entre as telas da plataforma web</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/FieldReviewWireframe.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Representação de como ocorrerá o fluxo entre as telas dentro da aplicação. O wireframe é extremamente importante para a etapa inicial do desenvolvimento do projeto.
 
@@ -617,67 +649,102 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 #### Entidades.
 
-<p align="center"> <img src="../assets/assetsWAD/usuario_modelo_relacional.png">
+<p align = "center">
+<sub>Figura 13: Entidade Usuário</sub>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/usuario_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
 
 &emsp;A imagem acima refere-se à entidade **usuario**, cujos atributos são: **id**, gerado automaticamente após sua criação e que servirá para sua identificação, principalmente dentro do banco de dados; **nome**, fornecido pelo usuário durante o cadastro; **email**, utilizado para contato e para o recebimento de notificações; **senha**, também definida pelo usuário; **cargo**, responsável por diferenciar PTDs (quem fará as trilhas) e Administradores (quem recomenda usuários a fazerem trilhas); **pontuacao**, que representa a pontuação obtida pelo PTD após responder corretamente a uma pergunta de qualquer módulo (este atributo será null para Administradores, já que eles não fazem as trilhas); **created_at**, gerado quando a entidade Usuário é criada; e **updated_at**, responsável por registrar quando o usuário é atualizado.
 
+<p align = "center">
+<sup>Figura 14: Entidade usuario-trilha</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-trilha_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
 
 &emsp;&emsp; A imagem acima é a tabela intermediária **usuario-trilha**. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso os IDs da entidade **usuario** e **trilha**), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N. Lém disso, temos atributos que relacionam as duas entidades, que são o **status**, que mostrará qual estágio de conclusão ela está, além do atributo **prazo** que mostrará para um certo Usuário qual prazo ele tem para fazer. 
 
-
+<p align="center">
+<sup>Figura 15: Entidade usuario-certificado</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-certificado_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
 
  &emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-certificado** também é criada porque a relação Usuário e Certificado é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Certificados).
 
+<p align = "center">
+<sup>Figura 16: Entidade usuario-notificacao</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-notificacao_modelo_relacional.png">
-<br> <sub>Fonte: Autoral (2025)</sub> </p>
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-notificacao** também é criada porque a relação Usuário e Notificação é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Notificação).
 
+<p align = "center">
+<sup>Figura 17: Entidade usuario-modulo</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-modulo_modelo_relacional .png">
-<br> <sub>Fonte: Autoral (2025)</sub> </p>
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-modulo** também é criada porque a relação Usuário e Módulo é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Módulo), além do atributo **esta_completo** que será resposável por mostrar se o módulo foi completado pelo usuário.
 
+<p align = "center">
+<sup>Figura 18: Entidade certificado</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/certificado_modelo_relacional.png">
-<br> <sub>Fonte: Autoral (2025)</sub> </p>
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; A imagem acima é referente a tabela da entidade **certificado**, cujos atributos são: **ID próprio**; **titulo**, é o nome dado ao certificado; **descricao**, é a explicação do certificado, com detalhes e skills adquiridos por completar tal trilha; **imagem** guarda a representação visual do certificado; e por fim o **id_trilha**, esse atributo existe porque o certificado é o documento adquirido após completar com êxito alguma trilha, assim, o entidade certificado tem relação de dependência com a entidade trilha.
 
+<p align = "center">
+<sup>Figura 19: Entidade trilha</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/trilha_modelo_relacional.png">
-<br> <sub>Fonte: Autoral (2025)</sub> </p>
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; A imagem acima é referente a tabela da entidade **trilha**, cujos atributos são: **ID próprio**; **titulo**, o nome da trilha referente; **prazo**, determinado pelo Administrador, cuja sua função é determinar um tempo para a conclusão de todos os módulos dentro desssa trilha; **created_at** gerado quando a entidade usuário é criada; e o **updated_at**, responsável por registrar quando o usuário é atualizado.
 
+<p align = "center">
+<sup>Figura 20: Entidade modulo</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/modulo_modelo_relacional.png">
-<br> <sub>Fonte: Autoral (2025)</sub> </p>
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; A imagem acima é referente a tabela da entidade **modulo**, cujos atributos são: **ID próprio**; **id_trilha**, será responsável por fazer a relação de dependência de tal módulo a alguma trilha, ou seja, inserindo o módulo a uma trilha; **titulo**, o nome da trilha referente; **conteudo**, será responsável por guardar informações de vídeos, textos, PDFs, tudo referente ao conteúdo que deve ser ensinado nesse módulo; **esta_completo**, sua única função será verificar se a pergunta foi respondida, retornando como módulo completo ou não; **ordem**, para que os módulos fiquem organizados dentro da trilha; **created_at** é gerado quando o atributo usuário é criado; e o **updated_at** é responsável por registrar quando o usuário é atualizado.
 
+<p align = "center">
+<sup>Figura 21: Entidade pergunta</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/perguntas_modelo_relacional.png">
-<br> <sub>Fonte: Autoral (2025)</sub> </p>
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; A imagem acima é referente à tabela da entidade **perguntas**, cujos atributos são: **ID próprio**; **enunciado**, é a pergunta referente ao conteúdo do módulo; **id_modulos**, será responsável por fazer a relação de dependência da pergunta com o módulo correspondente; e **pontos**, refere-se aos pontos ganhos ao responder corretamente o enunciado.
 
+<p align = "center">
+<sup>Figura 22: Entidade opcoes</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/opção_modelo_relacional.png">
-<br> <sub>Fonte: Autoral (2025)</sub> </p>
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; A imagem acima é referente à tabela da entidade **opcoes**, cujos atributos são: **ID próprio**; **texto**, é o que estará escrito como potencial resposta para a pergunta correspondente; **id_perguntas**, será responsável por fazer a relação de dependência das opções com a pergunta correspondente; e **eh_correta**identifica se a alternativa é a resposta certa ou não.
 
-
+<p align = "center">
+<sup>Figura 23: Entidade notificacao</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/notificacao_modelo_relacional.png">
-<br> <sub>Fonte: Autoral (2025)</sub> </p>
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp;&emsp; A imagem acima é referente à tabela da entidade Notificação, cujos seus atributos são: **ID próprio**, **Título**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação caregará, Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 #### Relacionamento entre as Entidades
 
+<p align = "center">
+<sup>Figura 24: Modelo Entidade-Reçacionamento da aplicação web</sup>
+</p>
 <p align="center"> <img src="../assets/assetsWAD/diagrama_modelo_relacional.png">
-<br> <sub>Fonte: Autoral (2025)</sub> </p>
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 **1. usuário ↔ usuário_trilha**
 
@@ -752,17 +819,25 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 #### Consultas e Tabelas Verdade.
 
+<p align = 'center'>
+<sup>Quadro 16: Atualização do prazo para completar a trilha.</sup>
+</p>
 
-&emsp;&emsp;
 #1 | ---
 --- | ---
 **Expressão SQL** |  UPDATE usuario_trilha ut SET status = 'perdeu_prazo' WHERE ut.prazo < CURRENT_DATE AND NOT status = 'completo';
 **Proposições lógicas** | $A$: O prazo é menor que 'CURRENT_DATE'(ut.prazo < CURRENT_DATE);<br> $B$: Status da trilha não está 'completo' (status  = 'completo');
 **Expressão lógica proposicional** | $A \land \lnot B$
 **Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$\lnot B$</th> <th>$A \land \lnot B$ </th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td></tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>F</td></tbody> </table>
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</p>
 
 Contexto de aplicação da consulta 1: Cada trilha dentro da plataforma possui um prazo para ser concluída. Caso o usuário não conclua a trilha atribuída a ele dentro do prazo, o status da trilha é atualizado para 'perdeu_prazo'. Essa consulta é executada periodicamente para garantir que as trilhas com prazos expirados sejam atualizadas corretamente.
 
+<p align = 'center'>
+<sup>Quadro 17: Verificar a resposta correta.</sup>
+</p>
 
 #2 | ---
 --- | ---
@@ -770,9 +845,15 @@ Contexto de aplicação da consulta 1: Cada trilha dentro da plataforma possui u
 **Proposições lógicas** | $A$: A opção pertence à pergunta com o ID '$ID\_PERGUNTA' (o.i_pergunta = $ID\_PERGUNTA)<br> $B$: A opção está correta (eh_correta = true)
 **Expressão lógica proposicional** | $A \land B$
 **Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$A \land B$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
-
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</p>
 
 Contexto de aplicação da consulta 2: Ao final de cada módulo de aprendizado, o usuário deve responder a uma pergunta para avaliar seu conhecimento. Essa consulta é utilizada para verificar dentre as opções disponíveis qual é a correta, permitindo que o sistema valide a resposta do usuário e calcule sua pontuação.
+
+<p align = 'center'>
+<sup>Quadro 18: Apagar um usuário.</sup>
+</p>
 
 #3 | ---
 --- | ---
@@ -780,6 +861,9 @@ Contexto de aplicação da consulta 2: Ao final de cada módulo de aprendizado, 
 **Proposições lógicas** | $A$: O usuário pertence ao ID '$ID\_USUARIO'(ut.id\_usuario = $ID\_USUARIO)<br> $B$: A trilha pertence ao ID '$ID\_TRILHA'(ut.id\_trilha = $ID\_TRILHA)
 **Expressão lógica proposicional** | $A \land B$
 **Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$A \land B$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+<p align = 'center'>
+<sub>Fonte: Material produzido pelos próprios autores (2025).</sub>
+</p>
 
 Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua conta ou não deseja mais participar de uma trilha específica, essa consulta é utilizada para remover o registro do usuário na trilha. Isso garante que o banco de dados permaneça atualizado e livre de informações desnecessárias.
 ## 3.6. WebAPI e endpoints (sprints 3 e 4)
