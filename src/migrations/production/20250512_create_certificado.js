@@ -1,0 +1,20 @@
+const pool = require('../../config/database');
+
+module.exports = async () => {
+  const query = `
+    CREATE TABLE IF NOT EXISTS certificado (
+      id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+      titulo VARCHAR(80) NOT NULL,
+      imagem BYTEA NOT NULL,
+      id_trilha UUID REFERENCES trilha(id) ON DELETE CASCADE
+    );
+  `;
+
+  try {
+    await pool.query(query);
+    console.log('Tabela "certificado" criada com sucesso.');
+  } catch (err) {
+    console.error('Erro ao criar a tabela:', err.message);
+    throw err;
+  }
+};
