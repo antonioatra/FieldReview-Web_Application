@@ -117,7 +117,7 @@
      
 #### Forma de utilização  da solução: <br>
 
-&emsp;A plataforma possui módulos com aulas e testes para capacitar o PTD no uso do Climate FieldView. Um teste inicial identifica pontos de atenção, e há um sistema de pesquisa rápida para dúvidas urgentes. O progresso é validado com pontuação, permitindo que o administrador acompanhe o nível de conhecimento de cada usuário.
+&emsp; A plataforma possui módulos com aulas e testes para capacitar o PTD no uso do Climate FieldView. Um teste inicial identifica pontos de atenção, e há um sistema de pesquisa rápida para dúvidas urgentes. O progresso é validado com pontuação, permitindo que o administrador acompanhe o nível de conhecimento de cada usuário.
 
 #### Benefícios esperados: <br>
 
@@ -522,7 +522,68 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 
 ## 3.2. Wireframes (sprint 2)
 
-*Posicione aqui as imagens do wireframe construído para sua solução e, opcionalmente, o link para acesso (mantenha o link sempre público para visualização)*
+&emsp; O wireframe é uma representação esquemática inicial de uma interface de usuário, geralmente elaborada com baixa fidelidade. Seu objetivo principal é auxiliar na definição da estrutura e na disposição dos elementos visuais e informacionais da interface, sem, contudo, abordar em profundidade as funcionalidades ou aspectos estéticos do sistema. Essa ferramenta é amplamente utilizada nas etapas iniciais do design de interfaces, por permitir uma visualização clara da hierarquia da informação e da navegação pretendida, facilitando a comunicação entre designers, desenvolvedores e demais *stakeholders*.
+
+
+ **Funcionalidades do Usuário Comum** <br>
+
+#### Tela inicial do Usuário padrão
+
+<p align="center"> <img src="../assets/assetsWAD/telaUsuarioPadrao.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+<p align="center"> <img src="../assets/assetsWAD/mobileUsuarioPadrao.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Após realizar o login, a plataforma irá redirecionar para a tela correspondente à função do usuário: comum ou administrador. Na tela inicial do usuário, é possível observar o ranking geral e a sua posição, além de notificações sobre atualizações, trilhas já concluídas e trilhas disponíveis.
+
+&emsp; Na interface inicial destinada ao usuário comum, são disponibilizadas as seguintes informações:
+
+* Visualização do ranking geral dos usuários, incluindo a posição atual do usuário logado;  
+* Notificações referentes a atualizações e eventos relevantes na plataforma;  
+* Listagem das trilhas de aprendizagem já concluídas;  
+* Exibição das trilhas disponíveis para realização;  
+* Barra de pesquisa para busca de conteúdos.
+
+#### Tela das trilhas
+
+<p align="center"> <img src="../assets/assetsWAD/telaTrilhas.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+<p align="center"> <img src="../assets/assetsWAD/mobileTrilhas.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Na listagem de trilhas exibida na página inicial, ao selecionar a trilha de interesse, o usuário é redirecionado para a interface específica da trilha escolhida. Nessa tela, são apresentados os módulos que a compõem, cada um contendo:
+
+* Material de estudo relacionado ao tema do módulo;  
+* Uma pergunta destinada à validação do conhecimento adquirido pelo usuário.
+
+
+---
+
+ **Funcionalidades do Administrador**
+
+&emsp; Após realizar o login na função de administrador, a tela inicial exibe funcionalidades distintas em comparação à tela do usuário. Uma das principais diferenças é a presença de abas que permitem navegar entre as opções de 'Usuários' e 'Trilhas'.
+
+#### Tela inicial do Administrador
+
+<p align="center"> <img src="../assets/assetsWAD/telaAdminUsuarios.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+<p align="center"> <img src="../assets/assetsWAD/mobileAdminUsuarios.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Na aba de 'Usuários', o administrador tem acesso a uma tabela que exibe o ranking dos usuários, com a possibilidade de visualizar estatísticas individuais. Essas estatísticas incluem as trilhas já concluídas, a pontuação no ranking e a opção de recomendar trilhas que ainda não foram realizadas.
+
+<p align="center"> <img src="../assets/assetsWAD/FieldReviewWireframe.png">
+<br> <sub>Fonte: autoral (2025)</sub> </p>
+
+&emsp; Representação de como ocorrerá o fluxo entre as telas dentro da aplicação. O wireframe é extremamente importante para a etapa inicial do desenvolvimento do projeto.
+
+Segue o link do local onde foi desenvolvido o wireframe para visualização de todas as telas da aplicação:<br>
+ https://whimsical.com/fieldreview-home-FCLJQWvMrHGbsAYkEbDkzE
+
+
+
+
 
 ## 3.3. Guia de estilos (sprint 3)
 
@@ -550,22 +611,177 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 
 ### 3.5.1. Modelo relacional (sprints 2 e 4)
 
-*posicione aqui os diagramas de modelos relacionais do seu banco de dados, apresentando todos os esquemas de tabelas e suas relações. Utilize texto para complementar suas explicações, se necessário* 
+&emsp; A seguir, apresenta-se o Diagrama de Entidade e Relacionamento (DER), que é o modelo lógico derivado da MER (Modelagem Entidade e Relacionamento), com a explicação de todas as entidades e seus respectivos relacionamentos. Este diagrama servirá como base para implementação do banco de dados do site.
+
+&emsp; Para fins de organização, será apresentado todas as entidades primeiro e depois seus relacionamentos.
+
+#### Entidades.
+
+<p align="center"> <img src="../assets/assetsWAD/usuario_modelo_relacional.png">
+<br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
+
+&emsp;A imagem acima refere-se à entidade **usuario**, cujos atributos são: **id**, gerado automaticamente após sua criação e que servirá para sua identificação, principalmente dentro do banco de dados; **nome**, fornecido pelo usuário durante o cadastro; **email**, utilizado para contato e para o recebimento de notificações; **senha**, também definida pelo usuário; **cargo**, responsável por diferenciar PTDs (quem fará as trilhas) e Administradores (quem recomenda usuários a fazerem trilhas); **pontuacao**, que representa a pontuação obtida pelo PTD após responder corretamente a uma pergunta de qualquer módulo (este atributo será null para Administradores, já que eles não fazem as trilhas); **created_at**, gerado quando a entidade Usuário é criada; e **updated_at**, responsável por registrar quando o usuário é atualizado.
+
+<p align="center"> <img src="../assets/assetsWAD/usuario-trilha_modelo_relacional.png">
+<br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
+
+&emsp;&emsp; A imagem acima é a tabela intermediária **usuario-trilha**. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso os IDs da entidade **usuario** e **trilha**), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N. Lém disso, temos atributos que relacionam as duas entidades, que são o **status**, que mostrará qual estágio de conclusão ela está, além do atributo **prazo** que mostrará para um certo Usuário qual prazo ele tem para fazer. 
+
+
+<p align="center"> <img src="../assets/assetsWAD/usuario-certificado_modelo_relacional.png">
+<br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
+
+ &emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-certificado** também é criada porque a relação Usuário e Certificado é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Certificados).
+
+<p align="center"> <img src="../assets/assetsWAD/usuario-notificacao_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-notificacao** também é criada porque a relação Usuário e Notificação é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Notificação).
+
+<p align="center"> <img src="../assets/assetsWAD/usuario-modulo_modelo_relacional .png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-modulo** também é criada porque a relação Usuário e Módulo é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Módulo), além do atributo **esta_completo** que será resposável por mostrar se o módulo foi completado pelo usuário.
+
+<p align="center"> <img src="../assets/assetsWAD/certificado_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp; A imagem acima é referente a tabela da entidade **certificado**, cujos atributos são: **ID próprio**; **titulo**, é o nome dado ao certificado; **descricao**, é a explicação do certificado, com detalhes e skills adquiridos por completar tal trilha; **imagem** guarda a representação visual do certificado; e por fim o **id_trilha**, esse atributo existe porque o certificado é o documento adquirido após completar com êxito alguma trilha, assim, o entidade certificado tem relação de dependência com a entidade trilha.
+
+<p align="center"> <img src="../assets/assetsWAD/trilha_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp; A imagem acima é referente a tabela da entidade **trilha**, cujos atributos são: **ID próprio**; **titulo**, o nome da trilha referente; **prazo**, determinado pelo Administrador, cuja sua função é determinar um tempo para a conclusão de todos os módulos dentro desssa trilha; **created_at** gerado quando a entidade usuário é criada; e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+
+<p align="center"> <img src="../assets/assetsWAD/modulo_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp; A imagem acima é referente a tabela da entidade **modulo**, cujos atributos são: **ID próprio**; **id_trilha**, será responsável por fazer a relação de dependência de tal módulo a alguma trilha, ou seja, inserindo o módulo a uma trilha; **titulo**, o nome da trilha referente; **conteudo**, será responsável por guardar informações de vídeos, textos, PDFs, tudo referente ao conteúdo que deve ser ensinado nesse módulo; **esta_completo**, sua única função será verificar se a pergunta foi respondida, retornando como módulo completo ou não; **ordem**, para que os módulos fiquem organizados dentro da trilha; **created_at** é gerado quando o atributo usuário é criado; e o **updated_at** é responsável por registrar quando o usuário é atualizado.
+
+<p align="center"> <img src="../assets/assetsWAD/perguntas_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp; A imagem acima é referente à tabela da entidade **perguntas**, cujos atributos são: **ID próprio**; **enunciado**, é a pergunta referente ao conteúdo do módulo; **id_modulos**, será responsável por fazer a relação de dependência da pergunta com o módulo correspondente; e **pontos**, refere-se aos pontos ganhos ao responder corretamente o enunciado.
+
+<p align="center"> <img src="../assets/assetsWAD/opção_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp; A imagem acima é referente à tabela da entidade **opcoes**, cujos atributos são: **ID próprio**; **texto**, é o que estará escrito como potencial resposta para a pergunta correspondente; **id_perguntas**, será responsável por fazer a relação de dependência das opções com a pergunta correspondente; e **eh_correta**identifica se a alternativa é a resposta certa ou não.
+
+
+<p align="center"> <img src="../assets/assetsWAD/notificacao_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+&emsp;&emsp; A imagem acima é referente à tabela da entidade Notificação, cujos seus atributos são: **ID próprio**, **Título**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação caregará, Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+
+#### Relacionamento entre as Entidades
+
+<p align="center"> <img src="../assets/assetsWAD/diagrama_modelo_relacional.png">
+<br> <sub>Fonte: Autoral (2025)</sub> </p>
+
+**1. usuário ↔ usuário_trilha**
+
+- Tipo: 1:N (um usuário pode estar em várias trilhas)
+
+- Tabela intermediária: usuario_trilha
+
+- Motivo: Representa a inscrição de usuários em diferentes trilhas. Resolve a relação N:N entre usuários e trilhas, armazenando quais trilhas cada usuário está participando.
+
+**2. usuário ↔ usuario_notificacao**
+
+- Tipo: 1:N (um usuário pode receber várias notificações)
+
+- Tabela intermediária: usuario_notificacao
+
+- Motivo: Controla quais notificações foram enviadas para cada usuário, com dados adicionais como se a notificação foi lida e a data de recebimento.
+
+**3. usuário ↔ usuario_certificado**
+
+- Tipo: 1:N (um usuário pode ter vários certificados)
+
+- Tabela intermediária: usuario_certificado
+
+- Motivo: Associa usuários aos certificados que receberam, possibilitando o histórico de conquistas individuais.
+
+**4. certificado ↔ trilha**
+
+- Tipo: 1:1 (cada certificado pertence a uma única trilha)
+
+- Relacionamento: pertence
+
+- Motivo: Cada trilha pode gerar apenas um certificado, e esse vínculo direto é representado por uma relação 1:1.
+
+**5. trilha ↔ módulo**
+
+- Tipo: 1:N (uma trilha possui vários módulos)
+
+- Relacionamento: contém
+
+- Motivo: Uma trilha é estruturada por múltiplos módulos sequenciais, que representam o conteúdo a ser estudado ou realizado.
+
+**6. módulo ↔ pergunta**
+
+- Tipo: 1:N (um módulo pode ter várias perguntas)
+
+- Relacionamento: contém
+
+- Motivo: Cada módulo pode incluir múltiplas perguntas relacionadas ao seu conteúdo, permitindo avaliações por etapa.
+
+**7. pergunta ↔ opções**
+
+- Tipo: 1:N (uma pergunta tem várias opções)
+
+- Relacionamento: contém
+
+- Motivo: Permite a construção de perguntas de múltipla escolha, onde cada pergunta oferece diversas alternativas de resposta.
+
+**8. usuário ↔ usuario-módulo**
+
+- Tipo: 1:N (Usuário com vários módulos)
+
+- Tabela intermediária: usuário-modulo
+
+- Motivo: Associa usuário com módulo para que cada módulo tenha o status dela associada ao ID de um certo usuário. Assim, cada pessoa tem seus módulos e seus próprios status.
+
+---
 
 ### 3.5.2. Consultas SQL e lógica proposicional (sprint 2)
 
-*posicione aqui uma lista de consultas SQL compostas, realizadas pelo back-end da aplicação web, com sua respectiva lógica proposicional, descrita conforme template abaixo. Lembre-se que para usar LaTeX em markdown, basta você colocar as expressões entre $ ou $$*
+&emsp; Nesta seção, apresentamos uma lista de consultas SQL compostas, implementadas no back-end da aplicação web, acompanhadas de sua lógica proposicional. Cada consulta inclui a expressão SQL, a proposição lógica correspondente e a tabela verdade que ilustra as combinações possíveis e os resultados esperados.
 
-*Template de SQL + lógica proposicional*
+
+#### Consultas e Tabelas Verdade.
+
+
+&emsp;&emsp;
 #1 | ---
 --- | ---
-**Expressão SQL** | SELECT * FROM suppliers WHERE (state = 'California' AND supplier_id <> 900) OR (supplier_id = 100); 
-**Proposições lógicas** | $A$: O estado é 'California' (state = 'California') <br> $B$: O ID do fornecedor não é 900 (supplier_id ≠ 900) <br> $C$: O ID do fornecedor é 100 (supplier_id = 100)
-**Expressão lógica proposicional** | $(A \land B) \lor C$
-**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$C$</th> <th>$(A \land B)$</th> <th>$(A \land B) \lor C$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>F</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+**Expressão SQL** |  UPDATE usuario_trilha ut SET status = 'perdeu_prazo' WHERE ut.prazo < CURRENT_DATE AND NOT status = 'completo';
+**Proposições lógicas** | $A$: O prazo é menor que 'CURRENT_DATE'(ut.prazo < CURRENT_DATE);<br> $B$: Status da trilha não está 'completo' (status  = 'completo');
+**Expressão lógica proposicional** | $A \land \lnot B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$\lnot B$</th> <th>$A \land \lnot B$ </th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>V</td> <td>F</td></tr> <tr> <td>F</td> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>V</td> <td>V</td> </tr> <tr> <td>V</td> <td>V</td> <td>F</td> <td>F</td></tbody> </table>
 
-*Dica: edite a tabela verdade fora do markdown, para ter melhor controle*
+Contexto de aplicação da consulta 1: Cada trilha dentro da plataforma possui um prazo para ser concluída. Caso o usuário não conclua a trilha atribuída a ele dentro do prazo, o status da trilha é atualizado para 'perdeu_prazo'. Essa consulta é executada periodicamente para garantir que as trilhas com prazos expirados sejam atualizadas corretamente.
 
+
+#2 | ---
+--- | ---
+**Expressão SQL** | SELECT * FROM opcoes o WHERE o.id_pergunta = $ID_PERGUNTA AND eh_correta = true;
+**Proposições lógicas** | $A$: A opção pertence à pergunta com o ID '$ID\_PERGUNTA' (o.i_pergunta = $ID\_PERGUNTA)<br> $B$: A opção está correta (eh_correta = true)
+**Expressão lógica proposicional** | $A \land B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$A \land B$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+
+Contexto de aplicação da consulta 2: Ao final de cada módulo de aprendizado, o usuário deve responder a uma pergunta para avaliar seu conhecimento. Essa consulta é utilizada para verificar dentre as opções disponíveis qual é a correta, permitindo que o sistema valide a resposta do usuário e calcule sua pontuação.
+
+#3 | ---
+--- | ---
+**Expressão SQL** | DELETE FROM usuario_trilha ut WHERE ut.id_usuario = $ID\_USUARIO AND  ut.id\_trilha = $ID\_TRILHA
+**Proposições lógicas** | $A$: O usuário pertence ao ID '$ID\_USUARIO'(ut.id\_usuario = $ID\_USUARIO)<br> $B$: A trilha pertence ao ID '$ID\_TRILHA'(ut.id\_trilha = $ID\_TRILHA)
+**Expressão lógica proposicional** | $A \land B$
+**Tabela Verdade** | <table> <thead> <tr> <th>$A$</th> <th>$B$</th> <th>$A \land B$</th> </tr> </thead> <tbody> <tr> <td>F</td> <td>F</td> <td>F</td> </tr> <tr> <td>F</td> <td>V</td> <td>F</td> </tr> <tr> <td>V</td> <td>F</td> <td>F</td> </tr> <tr> <td>V</td> <td>V</td> <td>V</td> </tr> </tbody> </table>
+
+Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua conta ou não deseja mais participar de uma trilha específica, essa consulta é utilizada para remover o registro do usuário na trilha. Isso garante que o banco de dados permaneça atualizado e livre de informações desnecessárias.
 ## 3.6. WebAPI e endpoints (sprints 3 e 4)
 
 *Utilize um link para outra página de documentação contendo a descrição completa de cada endpoint. Ou descreva aqui cada endpoint criado para seu sistema.* 

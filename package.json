@@ -1,0 +1,20 @@
+{
+  "name": "fieldreview",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"> <a href= \"https://www.inteli.edu.br/\"><img src=\"/assets/assetsWAD/inteli.png\" alt=\"Inteli - Instituto de Tecnologia e Liderança\" border=\"0\"></a> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inteli-College/2025-1B-T15-IN02-G03.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inteli-College/2025-1B-T15-IN02-G03/issues"
+  },
+  "homepage": "https://github.com/Inteli-College/2025-1B-T15-IN02-G03#readme"
+}
