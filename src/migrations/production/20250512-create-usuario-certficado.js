@@ -6,7 +6,7 @@ async function migrate () {
       id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
       id_usuario UUID,
       id_certificado UUID,
-      FOREIGN KEY (id_usuario) REFERENCES usuario(id) ON DELETE CASCADE,
+      FOREIGN KEY (id_usuario) REFERENCES usuarios(id) ON DELETE CASCADE,
       FOREIGN KEY (id_certificado) REFERENCES certificado(id) ON DELETE CASCADE
     );
   `;
