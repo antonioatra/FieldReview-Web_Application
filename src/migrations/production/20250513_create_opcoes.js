@@ -5,7 +5,7 @@ async function migrate() {
   const query = `
     CREATE TABLE IF NOT EXISTS opcoes (
         id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-        id_pergunta INTEGER,
+        id_pergunta UUID,
         texto TEXT NOT NULL,
         eh_correta BOOLEAN, 
         FOREIGN KEY (id_pergunta) REFERENCES pergunta(id) ON DELETE CASCADE
