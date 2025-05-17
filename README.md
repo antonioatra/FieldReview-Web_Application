@@ -79,7 +79,7 @@ npm start
     * 
 * 0.3.0 - XX/XX/2024
     * 
-* 0.2.0 - XX/XX/2024
+* 0.2.0 - 16/05/2025 - Desenvolvimento do Modelo Entidade-Relacionamento do banco de dados e realização dos wireframes da aplicação Web
     * 
 * 0.1.0 - 30/04/2025 - Levantamento inicial do projeto, com entendimento do negócio, definição dos objetivos e escopo da primeira versão da Aplicação Web.
     *
