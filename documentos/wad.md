@@ -680,7 +680,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <p align="center"> <img src="../assets/assetsWAD/usuario-notificacao_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-notificacao** também é criada porque a relação Usuário e Notificação é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Notificação).
+&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-notificacao** também é criada porque a relação Usuário e Notificação é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Notificação).
 
 <p align = "center">
 <sup>Figura 17: Entidade usuario-modulo</sup>
@@ -688,7 +688,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <p align="center"> <img src="../assets/assetsWAD/usuario-modulo_modelo_relacional .png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-modulo** também é criada porque a relação Usuário e Módulo é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Módulo), além do atributo **esta_completo** que será resposável por mostrar se o módulo foi completado pelo usuário.
+&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-modulo** também é criada porque a relação Usuário e Módulo é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Módulo), além do atributo **esta_completo** que será resposável por mostrar se o módulo foi completado pelo usuário.
 
 <p align = "center">
 <sup>Figura 18: Entidade certificado</sup>
@@ -728,7 +728,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <p align="center"> <img src="../assets/assetsWAD/opção_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A imagem acima é referente à tabela da entidade **opcoes**, cujos atributos são: **ID próprio**; **texto**, é o que estará escrito como potencial resposta para a pergunta correspondente; **id_perguntas**, será responsável por fazer a relação de dependência das opções com a pergunta correspondente; e **eh_correta**identifica se a alternativa é a resposta certa ou não.
+&emsp; A imagem acima é referente à tabela da entidade **opcoes**, cujos atributos são: **ID próprio**; **texto**, é o que estará escrito como potencial resposta para a pergunta correspondente; **id_perguntas**, será responsável por fazer a relação de dependência das opções com a pergunta correspondente; e **eh_correta** identifica se a alternativa é a resposta certa ou não.
 
 <p align = "center">
 <sup>Figura 23: Entidade notificacao</sup>
@@ -736,12 +736,20 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <p align="center"> <img src="../assets/assetsWAD/notificacao_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp;&emsp; A imagem acima é referente à tabela da entidade Notificação, cujos seus atributos são: **ID próprio**, **Título**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação caregará, Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+&emsp; A imagem acima é referente à tabela da entidade Notificação, cujos seus atributos são: **ID próprio**, **titulo**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação carregará. Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+
+<p align = "center">
+<sup>Figura 24: Entidade help</sup>
+</p>
+<p align="center"> <img src="../assets/assetsWAD/Help_modelo_relacional.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+&emsp; A imagem acima é referente à tabela da entidade help, cujos atributos são: **ID próprio**, **titulo** que representa a pergunta do FAQ, e o **conteudo** que indica a resposta para a pergunta.
 
 #### Relacionamento entre as Entidades
 
 <p align = "center">
-<sup>Figura 24: Modelo Entidade-Reçacionamento da aplicação web</sup>
+<sup>Figura 25: Modelo Entidade-Reçacionamento da aplicação web</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/diagrama_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -809,6 +817,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 - Tabela intermediária: usuário-modulo
 
 - Motivo: Associa usuário com módulo para que cada módulo tenha o status dela associada ao ID de um certo usuário. Assim, cada pessoa tem seus módulos e seus próprios status.
+
 
 ---
 
