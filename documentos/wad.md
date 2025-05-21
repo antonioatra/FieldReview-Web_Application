@@ -744,7 +744,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <p align="center"> <img src="../assets/assetsWAD/Help_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A imagem acima é referente à tabela da entidade help, cujos atributos são: **ID próprio**, **titulo** que representa a pergunta do FAQ, e o **conteudo** que indica a resposta para a pergunta.
+&emsp; A imagem acima é referente à tabela da entidade help, cujos atributos são: **ID próprio**, **titulo** que representa a pergunta do FAQ, e o **conteudo** que indica a resposta para a pergunta. Por fim, **created_at** e **updated_at** indicam quando que a entidade é criada e atualizada, respectivamente.
 
 #### Relacionamento entre as Entidades
 
