@@ -631,9 +631,35 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 ### 3.3.3 Iconografia e imagens 
 
-*(esta subseção é opcional, caso não existam ícones e imagens, apague esta subseção)*
+ &emsp; A iconografia e as imagens são componentes fundamentais no design de uma aplicação web, contribuindo para a experiência do usuário e a identidade visual do site melhorando seu aspecto visual e tornando-o mais convidativo e agradável de usar.
 
-*posicione aqui imagens e textos contendo exemplos padronizados de ícones e imagens, com seus respectivos atributos de aplicação, utilizadas na solução*
+**Iconografia**
+
+  &emsp; O uso de ícones padronizados na construção da identidade visual de uma plataforma é essencial para garantir consistência e facilitar a compreensão por parte dos usuários. Eles desempenham um papel importante na usabilidade, auxiliando na navegação e na interação com a interface do sistema.
+
+  &emsp; O [Hero Icons](https://heroicons.com/) oferece uma ampla biblioteca de ícones gratuitos, compatíveis com qualquer página web. Além disso, a plataforma assegura a otimização e compatibilidade dos elementos, permitindo que o foco do desenvolvimento permaneça no conteúdo e no estilo do projeto. Por isso, optamos por integrar os ícones do Hero Icons em nosso projeto. Todos os ícones estão disponíveis nos formatos SVG e JSX.
+
+  &emsp; Abaixo, apresentamos os ícones selecionados até o momento pela equipe de desenvolvimento. Para manter a padronização visual, todos foram escolhidos na versão "Solid".
+
+<p align = "center">
+<sup>Figura 13: Iconografia do Projeto</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/iconografia.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+
+**Logo**
+
+ &emsp; Além dos elementos mencionados no tópico anterior, é importante destacar o papel central que o logo da aplicação FieldReview desempenha em toda a plataforma. Desenvolvida com base nas cores primárias da Bayer (azul e verde) e elementos gráficos que remetem a logo do Climate FieldView, ele não apenas reflete visualmente o nome do projeto, mas também incorpora sua essência e propósito dentro do ecossistema de soluções Bayer/Climate FieldView. A presença consistente do logo ao longo da plataforma reforçará a identidade visual da marca, tornando-o instantaneamente reconhecível e associado com os valores e objetivos do FieldReview.
+
+<p align = "center">
+<sup>Figura 14: Logo do Projeto</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/fieldreview-logo.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
 
 ## 3.4 Protótipo de alta fidelidade (sprint 3)
 
@@ -650,7 +676,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 #### Entidades.
 
 <p align = "center">
-<sub>Figura 13: Entidade Usuário</sub>
+<sub>Figura 15: Entidade Usuário</sub>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/usuario_modelo_relacional.png">
@@ -659,7 +685,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 &emsp;A imagem acima refere-se à entidade **usuario**, cujos atributos são: **id**, gerado automaticamente após sua criação e que servirá para sua identificação, principalmente dentro do banco de dados; **nome**, fornecido pelo usuário durante o cadastro; **email**, utilizado para contato e para o recebimento de notificações; **senha**, também definida pelo usuário; **cargo**, responsável por diferenciar PTDs (quem fará as trilhas) e Administradores (quem recomenda usuários a fazerem trilhas); **pontuacao**, que representa a pontuação obtida pelo PTD após responder corretamente a uma pergunta de qualquer módulo (este atributo será null para Administradores, já que eles não fazem as trilhas); **created_at**, gerado quando a entidade Usuário é criada; e **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
-<sup>Figura 14: Entidade usuario-trilha</sup>
+<sup>Figura 16: Entidade usuario-trilha</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-trilha_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
@@ -667,7 +693,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 &emsp;&emsp; A imagem acima é a tabela intermediária **usuario-trilha**. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso os IDs da entidade **usuario** e **trilha**), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N. Lém disso, temos atributos que relacionam as duas entidades, que são o **status**, que mostrará qual estágio de conclusão ela está, além do atributo **prazo** que mostrará para um certo Usuário qual prazo ele tem para fazer. 
 
 <p align="center">
-<sup>Figura 15: Entidade usuario-certificado</sup>
+<sup>Figura 17: Entidade usuario-certificado</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-certificado_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
@@ -675,7 +701,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
  &emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-certificado** também é criada porque a relação Usuário e Certificado é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Certificados).
 
 <p align = "center">
-<sup>Figura 16: Entidade usuario-notificacao</sup>
+<sup>Figura 18: Entidade usuario-notificacao</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-notificacao_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -683,7 +709,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 &emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-notificacao** também é criada porque a relação Usuário e Notificação é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Notificação).
 
 <p align = "center">
-<sup>Figura 17: Entidade usuario-modulo</sup>
+<sup>Figura 19: Entidade usuario-modulo</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-modulo_modelo_relacional .png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -691,7 +717,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 &emsp;&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-modulo** também é criada porque a relação Usuário e Módulo é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Módulo), além do atributo **esta_completo** que será resposável por mostrar se o módulo foi completado pelo usuário.
 
 <p align = "center">
-<sup>Figura 18: Entidade certificado</sup>
+<sup>Figura 20: Entidade certificado</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/certificado_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -699,7 +725,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 &emsp; A imagem acima é referente a tabela da entidade **certificado**, cujos atributos são: **ID próprio**; **titulo**, é o nome dado ao certificado; **descricao**, é a explicação do certificado, com detalhes e skills adquiridos por completar tal trilha; **imagem** guarda a representação visual do certificado; e por fim o **id_trilha**, esse atributo existe porque o certificado é o documento adquirido após completar com êxito alguma trilha, assim, o entidade certificado tem relação de dependência com a entidade trilha.
 
 <p align = "center">
-<sup>Figura 19: Entidade trilha</sup>
+<sup>Figura 21: Entidade trilha</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/trilha_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -707,7 +733,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 &emsp; A imagem acima é referente a tabela da entidade **trilha**, cujos atributos são: **ID próprio**; **titulo**, o nome da trilha referente; **prazo**, determinado pelo Administrador, cuja sua função é determinar um tempo para a conclusão de todos os módulos dentro desssa trilha; **created_at** gerado quando a entidade usuário é criada; e o **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
-<sup>Figura 20: Entidade modulo</sup>
+<sup>Figura 22: Entidade modulo</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/modulo_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -715,7 +741,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 &emsp; A imagem acima é referente a tabela da entidade **modulo**, cujos atributos são: **ID próprio**; **id_trilha**, será responsável por fazer a relação de dependência de tal módulo a alguma trilha, ou seja, inserindo o módulo a uma trilha; **titulo**, o nome da trilha referente; **conteudo**, será responsável por guardar informações de vídeos, textos, PDFs, tudo referente ao conteúdo que deve ser ensinado nesse módulo; **esta_completo**, sua única função será verificar se a pergunta foi respondida, retornando como módulo completo ou não; **ordem**, para que os módulos fiquem organizados dentro da trilha; **created_at** é gerado quando o atributo usuário é criado; e o **updated_at** é responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
-<sup>Figura 21: Entidade pergunta</sup>
+<sup>Figura 23: Entidade pergunta</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/perguntas_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -723,7 +749,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 &emsp; A imagem acima é referente à tabela da entidade **perguntas**, cujos atributos são: **ID próprio**; **enunciado**, é a pergunta referente ao conteúdo do módulo; **id_modulos**, será responsável por fazer a relação de dependência da pergunta com o módulo correspondente; e **pontos**, refere-se aos pontos ganhos ao responder corretamente o enunciado.
 
 <p align = "center">
-<sup>Figura 22: Entidade opcoes</sup>
+<sup>Figura 24: Entidade opcoes</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/opção_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -731,7 +757,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 &emsp; A imagem acima é referente à tabela da entidade **opcoes**, cujos atributos são: **ID próprio**; **texto**, é o que estará escrito como potencial resposta para a pergunta correspondente; **id_perguntas**, será responsável por fazer a relação de dependência das opções com a pergunta correspondente; e **eh_correta**identifica se a alternativa é a resposta certa ou não.
 
 <p align = "center">
-<sup>Figura 23: Entidade notificacao</sup>
+<sup>Figura 25: Entidade notificacao</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/notificacao_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -741,7 +767,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 #### Relacionamento entre as Entidades
 
 <p align = "center">
-<sup>Figura 24: Modelo Entidade-Reçacionamento da aplicação web</sup>
+<sup>Figura 26: Modelo Entidade-Reçacionamento da aplicação web</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/diagrama_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
