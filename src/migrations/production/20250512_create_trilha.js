@@ -3,7 +3,7 @@ const pool = require('../../config/database');
 module.exports = async () => {
   const query = `
     CREATE TABLE IF NOT EXISTS trilha (
-      id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+      id UUID DEFAULT gen_random_uuid() PRIMARY KEY,n
       titulo VARCHAR(255) NOT NULL,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
