@@ -605,7 +605,7 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 <sup>Figura 12: Fluxo de navagação entre as telas da plataforma web</sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/FieldReview Home.png">
+<img src="../assets/assetsWAD/FieldReviewFull.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Representação de como ocorrerá o fluxo entre as telas dentro da aplicação. O wireframe é extremamente importante para a etapa inicial do desenvolvimento do projeto.
