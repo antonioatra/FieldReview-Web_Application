@@ -629,7 +629,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 *Apresente aqui a tipografia da solução, com famílias de fontes e suas respectivas funções*
 
-&emsp; A tipografia da aplicação Web é baseada no guia de marca da empresa Bayer, na qual a fonte Helvetica é amplamente utilizada na produção de suas soluções tecnológicas e de seu material online. Dessa forma, projetou-se o seguinte Guia de Estilos da Tipografia do FieldReview:
+&emsp; A tipografia da aplicação Web é baseada no guia de marca da empresa Bayer, na qual a fonte Helvetica, amplamente utilizada pela Bayer em suas soluções tecnológicas e materiais online, foi adotada para garantir identidade visual e consistência. Dessa forma, projetou-se o seguinte Guia de Estilos da Tipografia do FieldReview:
 
 <div align="center">
 <sup>Figura: Guia de Estilos de Tipografia do Field Review</sup>
