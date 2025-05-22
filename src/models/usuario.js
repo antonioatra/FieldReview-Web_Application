@@ -22,9 +22,9 @@ async findById(id) {
     return result.rows[0];
 },
 
-async update(data) {
+async update(id, data) {
     const query = "UPDATE usuarios SET nome = $1, email = $2, senha = $3 WHERE id = $4";
-    const values = [data.nome, data.email, data.senha, data.id]
+    const values = [data.nome, data.email, data.senha, id]
 
     return pool.query(query, values);
 },
