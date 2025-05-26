@@ -17,3 +17,7 @@ exports.store = async (req, res) => {
 
     res.redirect("/notificacoesModels");
 };
+exports.show = async (req, res) => {
+    const notificacoes = await Notificacao.findAll();
+    res.json(notificacoes);
+};
