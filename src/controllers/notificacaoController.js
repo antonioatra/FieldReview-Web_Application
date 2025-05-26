@@ -21,3 +21,11 @@ exports.show = async (req, res) => {
     const notificacoes = await Notificacao.findAll();
     res.json(notificacoes);
 };
+exports.showById = async (req, res) => {
+    const { id } = req.params;
+    const notificacao = await Notificacao.findById(id);
+
+    // Pega os usuários relacionados
+    const usuarios = await UsuarioNotificacao.findUsuariosByNotificacao(id);
+    res.json({ ...notificacao, usuarios });
+};
