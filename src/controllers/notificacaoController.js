@@ -29,3 +29,8 @@ exports.showById = async (req, res) => {
     const usuarios = await UsuarioNotificacao.findUsuariosByNotificacao(id);
     res.json({ ...notificacao, usuarios });
 };
+exports.update = async (req, res) => {
+    const { id } = req.params;
+    await Notificacao.update(id, req.body);
+    res.redirect("/notificacoes");
+};
