@@ -34,3 +34,12 @@ exports.update = async (req, res) => {
     await Notificacao.update(id, req.body);
     res.redirect("/notificacoes");
 };
+exports.destroy = async (req, res) => {
+    const { id } = req.params;
+
+    // Remove vínculos antes de apagar a notificação
+    await UsuarioNotificacao.deleteByNotificacao(id);
+    await Notificacao.delete(id);
+
+    res.redirect("/notificacoes");
+};
