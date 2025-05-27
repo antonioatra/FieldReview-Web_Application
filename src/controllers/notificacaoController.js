@@ -1,4 +1,4 @@
-const Notificacao = require("../models/notificacaoModels");
+const Notificacao = require("../models/notificacao");
 const UsuarioNotificacao = require("../models/usuarioNotificacao");
 
 exports.store = async (req, res) => {
@@ -15,7 +15,7 @@ exports.store = async (req, res) => {
         }
     }
 
-    res.redirect("/notificacoesModels");
+    res.redirect("/notificacao");
 };
 exports.show = async (req, res) => {
     const notificacoes = await Notificacao.findAll();
@@ -32,7 +32,7 @@ exports.showById = async (req, res) => {
 exports.update = async (req, res) => {
     const { id } = req.params;
     await Notificacao.update(id, req.body);
-    res.redirect("/notificacoes");
+    res.redirect("/notificacao");
 };
 exports.destroy = async (req, res) => {
     const { id } = req.params;
@@ -41,5 +41,5 @@ exports.destroy = async (req, res) => {
     await UsuarioNotificacao.deleteByNotificacao(id);
     await Notificacao.delete(id);
 
-    res.redirect("/notificacoes");
+    res.redirect("/notificacao");
 };
