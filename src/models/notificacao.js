@@ -29,7 +29,7 @@ module.exports = {
 
   async findById(id) { 
     const [rows] = await db.query(
-      "SELECT * FROM notificacao WHERE id = ?",
+      "SELECT * FROM notificacao WHERE id = $1",
       [id]
     );
     return rows[0];
@@ -40,27 +40,27 @@ module.exports = {
       `SELECT u.* 
        FROM usuario u
        JOIN usuario_notificacao un ON u.id = un.id_usuario
-       WHERE un.id_notificacao = ?`,
+       WHERE un.id_notificacao = $1`,
       [id_notificacao]
     );
     return rows;
   },
 
   async update(data) {
-    const { titulo, descricao, update_at } = data;
+    const { titulo, descricao, update_at, id } = data;
     return db.query(
-      "UPDATE notificacao SET titulo = ?, descricao = ?, update_at = CURRENT_TIMESTAMP, WHERE id = ?",
-      [titulo, descricao, update_at]
+      "UPDATE notificacao SET titulo = $1, descricao = $2, update_at = CURRENT_TIMESTAMP, WHERE id = $4",
+      [titulo, descricao, update_at, id]
     );
   },
 
   async delete(id) {
-    return db.query("DELETE FROM notificacao WHERE id = ?", [id]);
+    return db.query("DELETE FROM notificacao WHERE id = $1", [id]);
   },
 
   async deleteVinculos(id_notificacao) {
     return db.query(
-      "DELETE FROM usuario_notificacao WHERE id_notificacao = ?",
+      "DELETE FROM usuario_notificacao WHERE id_notificacao = $1",
       [id_notificacao]
     );
   }
