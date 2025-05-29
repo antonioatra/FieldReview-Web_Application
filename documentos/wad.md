@@ -911,7 +911,7 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 - Body (quando aplicável)
 - Respostas (com exemplos)
 
-&emsp;&emsp; Segue os link com todos os endpoints descritos: [Documentação de Endpoints - Google Docs] (https://docs.google.com/document/d/1GKKAGnBhnnPkqGBmn1DYgFpXwi4G1vxEQ2JT9f222qg/edit?usp=sharing).
+&emsp;&emsp; Segue os link com todos os endpoints descritos: https://docs.google.com/document/d/1GKKAGnBhnnPkqGBmn1DYgFpXwi4G1vxEQ2JT9f222qg/edit?usp=sharing
 
 # <a name="c4"></a>4. Desenvolvimento da Aplicação Web
 
