@@ -905,9 +905,13 @@ Contexto de aplicação da consulta 2: Ao final de cada módulo de aprendizado, 
 Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua conta ou não deseja mais participar de uma trilha específica, essa consulta é utilizada para remover o registro do usuário na trilha. Isso garante que o banco de dados permaneça atualizado e livre de informações desnecessárias.
 ## 3.6. WebAPI e endpoints (sprints 3 e 4)
 
-*Utilize um link para outra página de documentação contendo a descrição completa de cada endpoint. Ou descreva aqui cada endpoint criado para seu sistema.* 
+&emsp;&emsp; Nesta seção, será destinada a mostrar todas as possíveis rotas de API juntamente com os endpoints, mostrando os seguintes pontos:
+- Endereço e método (GET, POST, PUT, PATCH, DELETE)
+- Headers
+- Body (quando aplicável)
+- Respostas (com exemplos)
 
-*Cada endpoint deve conter endereço, método (GET, POST, PUT, PATCH, DELETE), header, body e formatos de response*
+&emsp;&emsp; Segue os link com todos os endpoints descritos: https://docs.google.com/document/d/1GKKAGnBhnnPkqGBmn1DYgFpXwi4G1vxEQ2JT9f222qg/edit?usp=sharing
 
 # <a name="c4"></a>4. Desenvolvimento da Aplicação Web
 
