@@ -1,34 +1,41 @@
-const Pergunta = require("../models/pergunta");
+const Question = require("../models/pergunta");
+const Option = require ("../models/")
 
 exports.store = async(req, res) => {  //chama o model que tem a função de criar perguntas
-    await Pergunta.create(req.body);
+    const {text, opcoes} = req.body;
+    const question = await Question.create(texto);
 
-    res.redirect("/pergunta"); // redireciona para a rota pergunta
+     if(!question) {
+        return res.status(500).json({error: "Erro ao criar pergunta"});
+     }
+     const options = await Option.
+
+    res.redirect("/question"); // redireciona para a rota Question
 };
 
-exports.showById = async(req, res) => { // chama o model para apresentar perguntas de acordo com o id
+exports.showById = async(req, res) => { // chama o model para apresentar Questions de acordo com o id
     const {id} = req.params; // chama o id como parâmetro
-    const pergunta = await Pergunta.findById(id); 
+    const question = await Question.findById(id); 
 
-    res.json(pergunta); // redireciona a pergunta com o respectivo id
+    res.json(question); // redireciona a Question com o respectivo id
 };
 
 exports.showByModuloId = async(req, res) => {
-    const pergunta = await Pergunta.findByModuloId(req.body);
-    res.json(pergunta);
+    const question = await Question.findByModuloId(req.body);
+    res.json(question);
 };
 
-exports.update = async(req, res) => { // chama o model que atualiza as perguntas
+exports.update = async(req, res) => { // chama o model que atualiza as Questions
     const {id} = req.params;
-    const pergunta = await Pergunta.update(id, req.body);
+    const question = await Question.update(id, req.body);
 
-    res.json(pergunta);
+    res.json(question);
 };
 
-exports.destroy = async(req, res) => { // chama o model que deleta as perguntas
+exports.destroy = async(req, res) => { // chama o model que deleta as Questions
     const {id} = req.params;
-    const pergunta = await Pergunta.delete(id);
+    const question = await Question.delete(id);
 
-    res.json(pergunta);
+    res.json(question);
 };
 
