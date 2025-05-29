@@ -1,67 +1,67 @@
 // models/notificacao.js
-const db = require("../database");
+const pool = require("../config/database");
 
 module.exports = {
+
   async create(data) {
-    const { titulo, descricao, created_at } = data;
 
-    const [result] = await db.query(
-      "INSERT INTO notificacao (titulo, descricao, created_at) VALUES ($1, $2, created_at = CURRRENT_TIMESTAMP)",
-      [titulo, descricao, created_at]
-    );
+    const query = "INSERT INTO notificacao (titulo, descricao, created_at) VALUES ($1, $2, created_at = CURRENT_TIMESTAMP)";
+    const values=[data.titulo, data.descricao, data.created_at];
 
-    return { id: result.insertId, titulo, descricao };
+    return pool.query(query, values)
+
   },
 
-  async addUsuarios(notificacaoId, usuarios) {
-    const values = usuarios.map((id_usuario) => [id_usuario, notificacaoId]);
+  async addUsers(data) {
+    const query = "INSERT INTO usuario_notificacao (id_usuario, id_notificacao) VALUES($1, $2)";
+    const values = [data.id_usuario, data.id_notificacao];
 
-    return db.query(
-      "INSERT INTO usuario_notificacao (id_usuario, id_notificacao) VALUES ?",
-      [values]
-    );
+    return pool.query(query, values);
+
   },
 
-  async findAll() {
-    const [rows] = await db.query("SELECT * FROM notificacao");
-    return rows;
+  async findAll(id) {
+    const query = "SELECT * FROM notificacao";
+    const values = [id];
+
+    return pool.query(query, values);
   },
 
   async findById(id) { 
-    const [rows] = await db.query(
-      "SELECT * FROM notificacao WHERE id = $1",
-      [id]
-    );
-    return rows[0];
+    const query = "SELECT * FROM notificacao WHERE id = $1";
+    const values = [id];
+
+    return pool.query(query, values)
+  
   },
 
-  async findUser(id_notificacao) { //
-    const [rows] = await db.query(
-      `SELECT u.* 
-       FROM usuario u
-       JOIN usuario_notificacao un ON u.id = un.id_usuario
-       WHERE un.id_notificacao = $1`,
-      [id_notificacao]
-    );
-    return rows;
+  async findUser(id_not) {
+    const query = "SELECT u.* FROM usuario u JOIN usuario_notificacao un ON u.id = un.id_usuario WHERE un.id_notificacao = $1";
+    const values=[id_not];
+
+    return pool.query(query, values);
+    
   },
 
   async update(data) {
-    const { titulo, descricao, update_at, id } = data;
-    return db.query(
-      "UPDATE notificacao SET titulo = $1, descricao = $2, update_at = CURRENT_TIMESTAMP, WHERE id = $4",
-      [titulo, descricao, update_at, id]
-    );
+    const query = "UPDATE notificacao SET titulo = $1, descricao = $2, update_at = CURRENT_TIMESTAMP, WHERE id = $4";
+    const values = [data.titulo, data.descricao, data.update_at, data.id]
+
+    return pool.require(query, values);
+    
   },
 
   async delete(id) {
-    return db.query("DELETE FROM notificacao WHERE id = $1", [id]);
+    const query = "DELETE FROM notificacao WHERE id = $1";
+    const values = [id]
+
+    return pool.query(query, values);
   },
 
-  async deleteVinculos(id_notificacao) {
-    return db.query(
-      "DELETE FROM usuario_notificacao WHERE id_notificacao = $1",
-      [id_notificacao]
-    );
+  async deleteUserNotificationRelationship(id) {
+    const query = "DELETE FROM usuario_notificacao WHERE id_notificacao = $1";
+    const values=[id_notificacao];
+
+    return pool.query(query, values);
   }
 };
