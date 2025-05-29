@@ -665,6 +665,143 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 *posicione aqui algumas imagens demonstrativas de seu protótipo de alta fidelidade e o link para acesso ao protótipo completo (mantenha o link sempre público para visualização)*
 
+&emsp; Para preparar a implementação do frontend da aplicação Web, realizou-se o seguinte protótipo de alta fidelidade:
+
+<div align="center">
+<sup>Figura : Fluxo do protótipo de alta fidelidade.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/prototipoAltaFidelidade.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+&emsp; Para a realização do protótipo de alta fidelidade, utilizou-se o guia de estilos para guiar a elaboração das telas da plataforma. Além disso, realizou-se a divisão do fluxo do site em um caminho para o promotor técnico digital (PTD) e outra para o administrador.
+
+&emsp; A primeira tela do site consiste no login e cadastro na plataforma, realizada de acordo com a US04 para suprir a necessidade do PTD entrar na plataforma para acessar o conteúdo. Assim, essa primeira tela ficou da seguinte maneira:
+
+<div align="center">
+<sup>Figura : Tela de login da aplicação.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/login.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+&emsp; É importante lembrar que essa tela é comum tanto para os PTDs quanto para os administradores. A partir dessa tela, de acordo com o cadastro do usuário, o fluxo é segmentado em um específico para os promotores e outra para o administrador, da seguinte maneira:
+
+- **Promotor Técnico Digital**
+
+&emsp; As telas direcionadas aos promotores estão relacionadas com as user stories importantes: US01, US02 e US05, relacionadas à busca rápida para sanar dúvidas, o acesso a conteúdos das trilhas e o ato de revisar as trilhas depois. Dessa forma a apresentação das páginas será disposta em: tela inicial, tela de trilhas e a tela de pesquisa.
+
+&emsp; A tela inicial compreende as principais informações da aplicação, apresentando o ranking dos usuários, as notificações, as trilhas que o usuários está realizando e as trilhas que estão disponíveis, de acordo com a figura abaixo:
+
+<div align="center">
+<sup>Figura : Tela inicial do usuário promotor.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/inicialPTD.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+&emsp; Em relação a tela de trilhas, essa interface apresentará a disposição dos módulos na trilha, o vídeo e texto explicativo junto com a pergunta para validar o aprendizado. Além disso, é importante destacar que essa tela está relacionada a user story US02 com o acesso aos materiais disponíveis na plataforma. Dessa maneira, a tela está disposta da seguinte forma:
+
+<div align="center">
+<sup>Figura : Página de trilhas do PTD.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/trilhaPTD.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+&emsp; No que diz respeito a tela de pesquisa, ela apresenta dois resultados de acordo com o texto inserido, uma área para os elementos de ajuda rápida da plataforma e outra parte para os resultado de acordo com as trilhas do site. Vale ressaltar que essa tela está relacionada à user story US01 com os resultados da busca ráída feita pelo promotor. Assim, a tela foi prototipada da seguinte maneira: 
+
+<div align="center">
+<sup>Figura : Tela de pesquisa do PTD.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/pesquisaPTD.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+
+&emsp; Desse modo, as telas apresentadas foram prototipadas para resolver as necessidades do promotor a serem implementadas na solução Web.
+
+- **Administrador**
+
+&emsp; As telas direcionadas ao administrador da plataforma estão relacionadas diretamente a user story US03 de acordo com a vontade do consultor de atribuir trilhas aos seus colegas de equipe visando a capacitação técnica do time. Dessa maneira, as telas desse fluxo são: tela de trilhas, tela de alteração de uma trilha, tela de alteração de um módulo, tela de usuários e tela de atribuir uma tela ao usuário.
+
+&emsp; A tela de trilhas compreende as ações relacionadas a observar as trilhas disponíveis na plataforma e a possibilidade adicionar uma nova trilha, de acordo com a figura abaixo:
+
+<div align="center">
+<sup>Figura : Página de trilhas do administrador.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/trilhaAdm.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+&emsp; Em relação à tela de alteração das trilhas, nesse campo o usuário pode alterar o título do conteúdo e apagar, atualizar ou criar um novo módulo, além de cancelar suas alterações ou salvá-las, assim apresentado na figura abaixo:
+
+<div align="center">
+<sup>Figura : Fluxo do protótipo de alta fidelidade.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/editarTrilhaAdm.png">
+</div>
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2025).</sup>
+</div>
+
+&emsp; Sobre a tela de editar o módulo, nela o usuário pode alterar o conteúdo e as perguntas do material selecionado, assim como é apresentado na imagem abaixo:
+
+<div align="center">
+<sup>Figura : Página de editar módulos do administrador.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/editarModuloAdm.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+&emsp; No que diz respeito a tela de usuários, nela aparece todos os usuários cadastrados na plataforma, com a possibilidade do administrador poder ver progresso e atribuir trilhas ao usuário selecionado, assim como é apresentado na figura abaixo:
+
+<div align="center">
+<sup>Figura : Tela de usuários do administrador.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/usuariosAdm.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+&emsp; Sobre a tela de atribuir um trilha ao usuários, nela o administrador define uma data para o PTD completar o contepudo que ele considerou importante para o promotor realizar, de acordo com o protótipo abaixo: 
+
+<div align="center">
+<sup>Figura : Fluxo do protótipo de alta fidelidade.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/atribuirTrilhaAdm.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+&emsp; Portanto, esse fluxo específico do administrador foi realizado para suprir as necessidades do consultor para gerenciar sua equipe de maneira mais eficiente e criar material de qualidade para os usuários.
+
 ## 3.5. Modelagem do banco de dados (sprints 2 e 4)
 
 ### 3.5.1. Modelo relacional (sprints 2 e 4)
