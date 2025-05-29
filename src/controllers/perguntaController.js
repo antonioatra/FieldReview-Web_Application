@@ -2,13 +2,7 @@ const Question = require("../models/pergunta");
 const Option = require ("../models/")
 
 exports.store = async(req, res) => {  //chama o model que tem a função de criar perguntas
-    const {text, opcoes} = req.body;
-    const question = await Question.create(texto);
-
-     if(!question) {
-        return res.status(500).json({error: "Erro ao criar pergunta"});
-     }
-     const options = await Option.
+     await Question.create(req.body);
 
     res.redirect("/question"); // redireciona para a rota Question
 };
