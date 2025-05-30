@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - FieldView</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      /* Custom styles for circular progress (Tailwind doesn't have this by default) */
+      .progress-circle {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: conic-gradient(#4da8da 0% 0%, #e5e7eb 0% 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .progress-circle::before {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: white;
+        border-radius: 50%;
+      }
+      .progress-circle span {
+        position: relative;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #4da8da;
+      }
+    </style>
+  </head>
+  <body class="font-sans">
+    <%- include('./partials/header.ejs') %>
+
+    <main class="p-6">
+      <section class="mb-6">
+        <h2 class="text-3xl font-bold text-blue-900">Bem-Vindo!</h2>
+      </section>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <div class="bg-white p-6 rounded-lg border-2 border-black/10">
+          <h3 class="text-xl font-bold text-blue-900 mb-4">Ranking</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center space-x-2">
+              <span class="text-yellow-500 text-2xl">👑</span>
+              <span class="bg-blue-900 text-white px-4 py-2 rounded-md">1. João Silva</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-gray-500">2.</span>
+              <span class="text-blue-900">Lucas Pereira</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-gray-500">3.</span>
+              <span class="text-blue-900">Gabriel Ferreira</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-gray-500">4.</span>
+              <span class="text-blue-900">Mateus Souza</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-gray-500">N.</span>
+              <span class="text-gray-500">Lorem ipsum</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg border-2 border-black/10 md:col-span-2">
+          <h3 class="text-xl font-bold text-blue-900 mb-4">Notificação</h3>
+          <ul class="space-y-4">
+            <li>
+              <strong class="text-blue-900">Novo trilha disponível!</strong>
+              <p class="text-gray-600">
+                Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+            </li>
+            <li>
+              <strong class="text-blue-900">Nova trilha atribuída a você!</strong>
+              <p class="text-gray-600">
+                Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+            </li>
+            <li>
+              <strong class="text-blue-900">Atenção para a trilha 1!</strong>
+              <p class="text-gray-600">
+                Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="mb-6">
+        <h3 class="text-2xl font-bold text-blue-900 mb-4">Suas Trilhas</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <% for (let i = 0; i < 4; i++) { %> <%- include('./partials/trail/card.ejs') -%> <% } %>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="text-2xl font-bold text-blue-900 mb-4">Trilhas Disponíveis</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <% for (let i = 0; i < 4; i++) { %> <%- include('./partials/trail/card.ejs') -%> <% } %>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

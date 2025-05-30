@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "migrate-production": "node src/migrations/production/index.js",
-    "migrate-development": "node src/migrations/development/index.js"
+    "migrate-development": "node src/migrations/development/index.js",
+    "start": "nodemon src/server.js "
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,9 @@
   "homepage": "https://github.com/Inteli-College/2025-1B-T15-IN02-G03#readme",
   "dependencies": {
     "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
     "pg": "^8.16.0"
   }
 }
