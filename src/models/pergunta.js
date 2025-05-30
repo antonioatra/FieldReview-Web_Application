@@ -4,7 +4,7 @@ const pool = require("../config/database");
 module.exports ={
     async create(data) { // cria a função para adicionar novas perguntas
         const query = "INSERT INTO pergunta (id_modulo, enunciado, pontos) VALUES($1, $2, $3)";
-        const values = [data.id_modulo, data.enunciado, data.pontos];
+        const values = [data.moduleId, data.statement, data.points];
 
         return pool.query(query, values); // retorna o que foi definido
     },
@@ -18,14 +18,14 @@ module.exports ={
 
     async findByModuloId (data) { // retorna perguntas de acordo com o módulo que a pergunta está contida
         const query = "SELECT * FROM pergunta  WHERE id_modulo = $1";
-        const values = [data.id_modulo];
+        const values = [data.moduleId];
 
         return pool.query(query, values);
     },
 
     async update(id, data) { // atualiza pergunta
         const query = "UPDATE pergunta SET enunciado = $1, pontos = $2 WHERE id = $3";
-        const values = [data.enunciado, data.pontos, id];
+        const values = [data.statement, data.points, id];
 
         return pool.query(query, values);
     },
