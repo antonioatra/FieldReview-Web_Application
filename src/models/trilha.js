@@ -18,8 +18,8 @@ module.exports = { //Cria as funções do model
     },
 
     async create(data) { // Função que cria todas as trilhas
-        const query = "INSERT INTO trilha (titulo, created_at) VALUES ($1, $2)";
-        const values = [data.titulo, data.created_at || null];
+        const query = "INSERT INTO trilha (titulo) VALUES ($1)";
+        const values = [data.titulo];
         return pool.query(query, values);
     },
 
@@ -28,11 +28,4 @@ module.exports = { //Cria as funções do model
         const result = await pool.query(query, [id]);
         return result.rows[0];
     },
-
-
-
-
-
-
-
 }
