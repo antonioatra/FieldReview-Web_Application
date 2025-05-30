@@ -733,6 +733,89 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 *Apresente aqui a tipografia da solução, com famílias de fontes e suas respectivas funções*
 
+&emsp; A tipografia da aplicação Web é baseada no guia de marca da empresa Bayer, na qual a fonte Helvetica, amplamente utilizada pela Bayer em suas soluções tecnológicas e materiais online, foi adotada para garantir identidade visual e consistência.
+
+&emsp; Com a adaptação da plataforma para desktop e dispotivos móveis, realizou-se um guia para a versão de computador e outro para celular. Dessa maneira, o guia tipográfico ficou da seguinte forma:
+
+- **Guia de estilos tipográfico para o computador:**
+
+<div align="center">
+<sup>Figura: Guia de estilos tipográfico do Field Review</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/tipografiaFieldReviewDesktop.png">
+</div>
+<div align = "center">
+<sub>Fonte: Material produzido pelos autores (2025)</sub>
+</div>
+
+- **Guia de estilos tipográfico para celulares:**
+
+<div align="center">
+<sup>Figura: Guia de estilos tipográficos mobile do Field Review</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/tipografiaFieldReviewMobile.png">
+</div>
+<div align = "center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+&emsp; Em relação a divisão dos tipos de fontes e suas respectivas aplicações, é possível dividí-los da seguinte maneira:
+
+- Título 1: É o tipo utilizado nos principais títulos do site, com o tamanho de 48px ou 3 rem no desktop e 30px ou 1.875 no mobile, e peso bold.
+
+- Título 2: É o tipo utilizado nos títulos secundários da plataforma, com o tamanho de 36px ou 2.25 rem no desktop e 24px ou 1.5 rem no mobile, e peso bold.
+
+- Título 3: É o tipo utilizado nos títulos terciários da aplicação, com o tamanho de 30px ou 1.875 rem no desktop e 20px ou 1.25 rem no mobile, e peso bold.
+
+- Título sem destaque: É o tipo utilizado para títulos informativos sem hierarquia visual, com o tamanho de 36px ou 2.25 rem no desktop e 20px ou 1.25 rem no mobile, e peso regular.
+
+- Subtítulo dos cards: Mesmo uso do subtítulo geral, mas aplicado dentro de componentes como cartões, com o tamanho de 18px ou 1.125 rem no desktop ou 16 px ou 1 rem no mobile, e peso bold.
+
+- Subtítulo: É o tipo utilizado como apoio aos títulos, destacando informações relevantes com o tamanho de 24px ou 1.25 rem no desktop e 16px ou 1 rem no mobile, e peso bold.
+
+- Descrição pequena: É o tipo utilizado para descrições do rodapé, com o tamanho de 12px ou 0.75 rem no desktop e 6px ou 0.375 rem no mobile, e peso regular.
+
+- Botão: É o tipo utilizado nos textos de botões interativos da plataforma, com o tamanho de 18px ou 1.125 rem no desktop ou 16px ou 1 rem no mobile, e peso regular.
+
+- Texto normal 1: É o tipo utilizado para textos secundários ou de menor destaque, como descrições, com o tamanho de 20px ou 1.25 rem no desktop e 16px ou 1 rem no mobile, e peso regular.
+
+- Texto normal 2: É o tipo utilizado para textos secundários ou de menor destaque, como descrições, com o tamanho de 18px ou 1.125 rem no desktop e 0.875 no mobile, e peso regular.
+
+- Texto normal 3: É o tipo utilizado para o corpo principal do conteúdo, com o tamanho de 16px ou 1 rem no desktop e não há esse tipo no mobile, e peso regular.
+
+- Link: É o tipo utilizado para links importantes dentro da aplicação, com o tamanho de 18px ou 1.125 rem no desktop e 14px ou 1.125 rem no mobile, e peso bold.
+
+- Link do rodapé: É o tipo utilizado no rodapé da aplicação, com o tamanho de 16px ou 1 rem no desktop e 12px ou 0.8 rem , e peso bold.
+
+&emsp; Para facilitar a visualização da tipografia do projeto, elaborou-se o seguinte quadro com o estilo, tamanho, peso e estilo da fonte e seu respectivo uso:
+
+<div align = "center">
+<sup>Quadro : Quadro de estilo tipográfico desktop do Field Review.</sup>
+</div>
+
+| Estilo               | Tamanho Desktop (px/rem) | Tamanho Mobile (px/rem) | Peso da fonte | Estilo da fonte | Uso                                                                 |
+|----------------------|---------------------------|---------------------------|----------------|------------------|----------------------------------------------------------------------|
+| Título 1             | 48px / 3rem               | 30px / 1.875rem           | Bold           | Normal           | Título principal do site                                             |
+| Título 2             | 36px / 2.25rem            | 24px / 1.5rem             | Bold           | Normal           | Títulos secundários da plataforma                                   |
+| Título 3             | 30px / 1.875rem           | 20px / 1.25rem            | Bold           | Normal           | Títulos terciários da aplicação                                     |
+| Título sem destaque  | 36px / 2.25rem            | 20px / 1.25rem            | Regular        | Normal           | Títulos informativos sem hierarquia visual                          |
+| Subtítulo dos cards  | 18px / 1.125rem           | 16px / 1rem               | Bold           | Normal           | Subtítulos dentro de componentes como cartões                       |
+| Subtítulo            | 24px / 1.5rem             | 16px / 1rem               | Bold           | Normal           | Suporte aos títulos com informações de destaque                     |
+| Descrição pequena    | 12px / 0.75rem            | 6px / 0.375rem            | Regular        | Normal           | Descrições do rodapé                                                |
+| Botão                | 18px / 1.125rem           | 16px / 1rem               | Regular        | Normal           | Texto utilizado em botões interativos                               |
+| Texto normal 1       | 20px / 1.25rem            | 16px / 1rem               | Regular        | Normal           | Texto secundário ou descrições breves                               |
+| Texto normal 2       | 18px / 1.125rem           | 14px / 0.875rem           | Regular        | Normal           | Texto secundário com menos destaque                                 |
+| Texto normal 3       | 16px / 1rem               | —                         | Regular        | Normal           | Corpo principal do conteúdo                                         |
+| Link                 | 18px / 1.125rem           | 14px / 1.125rem           | Bold           | Normal           | Links importantes da interface                                      |
+| Link do rodapé       | 16px / 1rem               | 12px / 0.8rem             | Bold           | Normal           | Links de menor destaque, localizados no rodapé da aplicação         |
+
+
+<div align = "center">
+<p>Fonte: Material produzido pelos autores (2025).</p>
+</div>
+
 ### 3.3.3 Iconografia e imagens 
 
  &emsp; A iconografia e as imagens são componentes fundamentais no design de uma aplicação web, contribuindo para a experiência do usuário e a identidade visual do site melhorando seu aspecto visual e tornando-o mais convidativo e agradável de usar.
