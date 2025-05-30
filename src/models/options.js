@@ -2,7 +2,7 @@ const pool = require("../config/database");
 
 module.exports ={ // Cria as funções do model
     async create(data) { // Função que cria a opção
-        const query = "INSERT INTO opcoes (texto, eh_correta) VALUES($1, $2)";
+        const query = "INSERT INTO opcoes (texto, eh_correta) VALUES($1, $2) RETURNING *";
         const values = [data.text, data.isCorrect];
 
         return pool.query(query, values);
