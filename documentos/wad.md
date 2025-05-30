@@ -671,7 +671,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 - Subtítulo: É o tipo utilizado como apoio aos títulos, destacando informações relevantes com o tamanho de 24px ou 1.25 rem no desktop e 16px ou 1 rem no mobile, e peso bold.
 
-- Descrição pequena: É o tipo utilizado para descrições do pé, com o tamanho de 12px ou 0.75 rem no desktop e 6px ou 0.375 rem no mobile, e peso regular.
+- Descrição pequena: É o tipo utilizado para descrições do rodapé, com o tamanho de 12px ou 0.75 rem no desktop e 6px ou 0.375 rem no mobile, e peso regular.
 
 - Botão: É o tipo utilizado nos textos de botões interativos da plataforma, com o tamanho de 18px ou 1.125 rem no desktop ou 16px ou 1 rem no mobile, e peso regular.
 
