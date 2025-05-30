@@ -2,8 +2,8 @@ const Certificate = require("../models/certificate") // Chama o model da entidad
 
 exports.store = async(req, res) => { // Chama a função que cria os certificados
     try {
-    const certificate = await Certificate.create(req.body); // Criando os certificados
-    res.json(certificate); // Redirecionando para a url dos certificados
+        const certificate = await Certificate.create(req.body); // Criando os certificados
+        res.status(201).json(certificate); // Retorna a entidade criada
     } catch (err) {
         res.status(500).json({error: "Erro ao criar certificado"}); // Responde com mensagem de erro caso um ocorra
     }
