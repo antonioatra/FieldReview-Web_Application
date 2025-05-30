@@ -10,7 +10,7 @@ exports.show =  async(req, res) => {
 };
 exports.update = async(req,res) => {
     const { id } = req.params;
-    await Help(...req.body, id)
+    await Help.update(req.body, req.params.id);
     res.resdirect("/help")
 };
 exports.destroy = async(req, res) => {

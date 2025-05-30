@@ -1,6 +1,6 @@
 const pool = require("../config/database");
 
-help.exports = {
+module.exports = {
     async create(data){
         const query = "INSERT INTO help(titulo, conteudo, created_at) VALUES($1, $2)";
         const values = [data.title, data.content];
@@ -10,9 +10,8 @@ help.exports = {
 
     async select(data){
         const query = "SELECT * FROM help";
-        const values = [data];
-
-        return pool.query(query, values);
+        
+        return pool.query(query);
     },
 
     async update(data, id ){
