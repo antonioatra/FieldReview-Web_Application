@@ -1,7 +1,7 @@
-const Question = require("../models/pergunta");
-const Option = require ("../models/opcoes")
+const Question = require("../models/question");
+const Option = require ("../models/options")
 
-exports.store = async(req, res) => {  //chama o model que tem a função de criar perguntas
+exports.store = async(req, res) => {  //Chama o model que tem a função de criar perguntas
     try {
     const {moduleId, statement, points, options} = req.body;
 
@@ -17,9 +17,12 @@ exports.store = async(req, res) => {  //chama o model que tem a função de cria
         })
     });
 
-    await Promise.all(promises);
+    const optionsCreated = await Promise.all(promises);
 
-    res.json(question); // redireciona para a rota Question
+    res.json({
+        question: question,
+        options: optionsCreated
+    }); // retorna a perguna e suas opções
     } catch (err) {
         res.status(500).json({error: "Erro ao criar pergunta"});
     }
