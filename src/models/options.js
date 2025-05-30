@@ -22,9 +22,9 @@ module.exports ={ // Cria as funções do model
         return pool.query(query, values);
     },
 
-    async update(id) { // Função que atualiza opção
-        const query = "UPDATE opcoes SET texto = $1, eh_correta = $2";
-        const values = [data.text, data.isCorrect];
+    async update(id, data) { // Função que atualiza opção
+        const query = "UPDATE opcoes SET texto = $1, eh_correta = $2, updated_at = CURRENT_TIMESTAMP WHERE id = $3";
+        const values = [data.text, data.isCorrect, id];
 
         return pool.query(query, values);
     }
