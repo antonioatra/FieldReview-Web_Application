@@ -691,6 +691,13 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </div>
 
+<p align = "center">
+<sup>Figura: Tela mobile de login</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/loginMobile.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
 &emsp; É importante lembrar que essa tela é comum tanto para os PTDs quanto para os administradores. A partir dessa tela, de acordo com o cadastro do usuário, o fluxo é segmentado em um específico para os promotores e outra para o administrador, da seguinte maneira:
 
 - **Promotor Técnico Digital**
@@ -709,6 +716,13 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </div>
 
+<p align = "center">
+<sup>Figura: Tela mobile inicial do Promotor Técnico Digital</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/homePTD.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
 &emsp; Em relação a tela de trilhas, essa interface apresentará a disposição dos módulos na trilha, o vídeo e texto explicativo junto com a pergunta para validar o aprendizado. Além disso, é importante destacar que essa tela está relacionada a user story US02 com o acesso aos materiais disponíveis na plataforma. Dessa maneira, a tela está disposta da seguinte forma:
 
 <div align="center">
@@ -721,6 +735,13 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </div>
 
+<p align = "center">
+<sup>Figura: Tela mobile de trilhas do PTD</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/trilhaPTDMobile.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
 &emsp; No que diz respeito a tela de pesquisa, ela apresenta dois resultados de acordo com o texto inserido, uma área para os elementos de ajuda rápida da plataforma e outra parte para os resultados de acordo com as trilhas do site. Vale ressaltar que essa tela está relacionada à user story US01 com os resultados da busca rápida feita pelo promotor. Assim, a tela foi prototipada da seguinte maneira: 
 
 <div align="center">
@@ -732,6 +753,13 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <div align="center">
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </div>
+
+<p align = "center">
+<sup>Figura: Tela mobile de pesquisas do PTD</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/pesquisaPTDMobile.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 
 &emsp; Desse modo, as telas apresentadas foram prototipadas para resolver as necessidades do promotor a serem implementadas na solução Web.
@@ -752,10 +780,18 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </div>
 
+<p align = "center">
+<sup>Figura: Tela mobile de trilhas do administrador.<sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/trilhaADM.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+
 &emsp; Em relação à tela de alteração das trilhas, nesse campo o usuário pode alterar o título do conteúdo e apagar, atualizar ou criar um novo módulo, além de cancelar suas alterações ou salvá-las, assim apresentado na figura abaixo:
 
 <div align="center">
-<sup>Figura : Fluxo do protótipo de alta fidelidade.</sup>
+<sup>Figura : Página de editar trilha do administrador.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/editarTrilhaAdm.png">
@@ -763,6 +799,13 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <div align="center">
 <sup>Fonte: Material produzido pelos autores (2025).</sup>
 </div>
+
+<p align = "center">
+<sup>Figura: Tela mobile de editar trilha do administrador.<sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/editorTrilhaADM.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Sobre a tela de editar o módulo, nela o usuário pode alterar o conteúdo e as perguntas do material selecionado, assim como é apresentado na imagem abaixo:
 
@@ -776,6 +819,13 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </div>
 
+<p align = "center">
+<sup>Figura: Tela mobile de editar módulos do administrador.<sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/editorTrilha.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
 &emsp; No que diz respeito a tela de usuários, nela aparece todos os usuários cadastrados na plataforma, com a possibilidade do administrador poder ver progresso e atribuir trilhas ao usuário selecionado, assim como é apresentado na figura abaixo:
 
 <div align="center">
@@ -788,11 +838,18 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </div>
 
+<p align = "center">
+<sup>Figura: Tela mobile de usuários do administrador.<sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/usuarioADM.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
 &emsp; Sobre a tela de atribuir uma
 trilha ao usuários, nela o administrador define uma data para o PTD completar o conteúdo que ele considerou importante para o promotor realizar, de acordo com o protótipo abaixo: 
 
 <div align="center">
-<sup>Figura : Fluxo do protótipo de alta fidelidade.</sup>
+<sup>Figura : Página de confirmação de tempo.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/atribuirTrilhaAdm.png">
@@ -800,6 +857,13 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 <div align="center">
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </div>
+
+<p align = "center">
+<sup>Figura: Tela mobile de confirmação de tempo.<sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/dataADM.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Portanto, esse fluxo específico do administrador foi realizado para suprir as necessidades do consultor para gerenciar sua equipe de maneira mais eficiente e criar material de qualidade para os usuários.
 
