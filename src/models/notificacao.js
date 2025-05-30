@@ -5,8 +5,8 @@ module.exports = {
 
   async create(data) {
 
-    const query = "INSERT INTO notificacao (titulo, descricao, created_at) VALUES ($1, $2, created_at = CURRENT_TIMESTAMP)";
-    const values=[data.titulo, data.descricao, data.created_at];
+    const query = "INSERT INTO notificacao (titulo, descricao, created_at) VALUES ($1, $2, CURRENT_TIMESTAMP)";
+    const values=[data.titulo, data.descricao];
 
     return pool.query(query, values)
 
@@ -20,9 +20,8 @@ module.exports = {
 
   },
 
-  async findAll(id) {
+  async findAll() {
     const query = "SELECT * FROM notificacao";
-    const values = [id];
 
     return pool.query(query, values);
   },
@@ -44,7 +43,7 @@ module.exports = {
   },
 
   async update(data) {
-    const query = "UPDATE notificacao SET titulo = $1, descricao = $2, update_at = CURRENT_TIMESTAMP, WHERE id = $4";
+    const query = "UPDATE notificacao SET titulo = $1, descricao = $2, update_at = CURRENT_TIMESTAMP WHERE id = $4";
     const values = [data.titulo, data.descricao, data.update_at, data.id]
 
     return pool.query(query, values);
@@ -58,7 +57,7 @@ module.exports = {
     return pool.query(query, values);
   },
 
-  async deleteUserNotificationRelationship(id) {
+  async deleteUserNotificationRelationship(id_notificacao) {
     const query = "DELETE FROM usuario_notificacao WHERE id_notificacao = $1";
     const values=[id_notificacao];
 
