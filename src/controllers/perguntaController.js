@@ -2,14 +2,15 @@ const Question = require("../models/pergunta");
 const Option = require ("../models/opcoes")
 
 exports.store = async(req, res) => {  //chama o model que tem a função de criar perguntas
+    try {
     const {moduleId, statement, points, options} = req.body;
 
     const question = await Question.create(moduleId, statement, points);
     if(!question){
-        res.status(500).json({error: "Erro ao criar pergunta"})
+         return res.status(500).json({error: "Erro ao criar pergunta"}) // Verifica se a pergunta foi criada
     }
-    const promises = options.map(option => {
-        return Opcao.create({
+    const promises = options.map(option => { // Espera as opções serem criadas
+        return Option.create({
             questionId: question.id,
             text: option.text,
             isCorrect: option.isCorrect
@@ -19,31 +20,54 @@ exports.store = async(req, res) => {  //chama o model que tem a função de cria
     await Promise.all(promises);
 
     res.redirect("/question"); // redireciona para a rota Question
+    } catch (err) {
+        res.status(500).json({error: "Erro ao criar pergunta"});
+    }
 };
 
 exports.showById = async(req, res) => { // chama o model para apresentar Questions de acordo com o id
+    try {
     const {id} = req.params; // chama o id como parâmetro
     const question = await Question.findById(id); 
 
     res.json(question); // redireciona a Question com o respectivo id
+    } catch (err) {
+        res.status(500).json({error: "Erro ao retornar a pergunta"})
+    }
 };
 
 exports.showByModuloId = async(req, res) => {
-    const question = await Question.findByModuloId(req.body);
+    try {
+    const {moduleId} = req.body;
+    const question = await Question.findByModuloId(moduleId);
+    if(!question) {
+        return res.status(404).json({message: "Esse módulo não contém perguntas"})
+    }
     res.json(question);
+    } catch (err) {
+        res.status(500).json({error: "Erro ao retornar a pergunta"})
+    }
 };
 
 exports.update = async(req, res) => { // chama o model que atualiza as Questions
+    try {
     const {id} = req.params;
     const question = await Question.update(id, req.body);
 
     res.json(question);
+    } catch (err) {
+        res.status(500).json({error: "Erro ao atualizar a pergunta"})
+    }
 };
 
 exports.destroy = async(req, res) => { // chama o model que deleta as Questions
+    try {
     const {id} = req.params;
     const question = await Question.delete(id);
 
     res.json(question);
+    } catch (err) {
+        res.status(500).json({error: "Erro ao excluir a pergunta"})
+    }
 };
 
