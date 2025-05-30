@@ -47,7 +47,7 @@ module.exports = {
     const query = "UPDATE notificacao SET titulo = $1, descricao = $2, update_at = CURRENT_TIMESTAMP, WHERE id = $4";
     const values = [data.titulo, data.descricao, data.update_at, data.id]
 
-    return pool.require(query, values);
+    return pool.query(query, values);
     
   },
 

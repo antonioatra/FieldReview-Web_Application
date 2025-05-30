@@ -1,45 +1,49 @@
-const Notificacao = require("../models/notificacao");
-const UsuarioNotificacao = require("../models/usuarioNotificacao");
+const Notification = require("../models/notification");
+const UserNotification = require("../models/userNotification");
 
 exports.store = async (req, res) => {
-    const { titulo, descricao, usuarios } = req.body;
+    const { title, description, users } = req.body;
 
-    const notificacao = await Notificacao.create({ titulo, descricao });
+    const notification = await Notification.create({ title, description });
 
-    if (usuarios && usuarios.length > 0) {
-        for (const id_usuario of usuarios) {
-            await UsuarioNotificacao.create({
-                id_usuario,
-                id_notificacao: notificacao.id
+    if (users && users.length > 0) {
+        for (const user_id of users) {
+            await UserNotification.create({
+                user_id,
+                notification_id: notification.id
             });
         }
     }
 
-    res.redirect("/notificacao");
+    res.redirect("/notification");
 };
+
 exports.show = async (req, res) => {
-    const notificacoes = await Notificacao.findAll();
-    res.json(notificacoes);
+    const notifications = await Notification.findAll();
+    res.json(notifications);
 };
+
 exports.showById = async (req, res) => {
     const { id } = req.params;
-    const notificacao = await Notificacao.findById(id);
+    const notification = await Notification.findById(id);
 
-    // Pega os usuários relacionados
-    const usuarios = await UsuarioNotificacao.findUsuariosByNotificacao(id);
-    res.json({ ...notificacao, usuarios });
+    // Get related users
+    const users = await UserNotification.findUsersByNotification(id);
+    res.json({ ...notification, users });
 };
+
 exports.update = async (req, res) => {
     const { id } = req.params;
-    await Notificacao.update(id, req.body);
-    res.redirect("/notificacao");
+    await Notification.update(id, req.body);
+    res.redirect("/notification");
 };
+
 exports.destroy = async (req, res) => {
     const { id } = req.params;
 
-    // Remove vínculos antes de apagar a notificação
-    await UsuarioNotificacao.deleteByNotificacao(id);
-    await Notificacao.delete(id);
+    // Remove links before deleting the notification
+    await UserNotification.deleteByNotification(id);
+    await Notification.delete(id);
 
-    res.redirect("/notificacao");
+    res.redirect("/notification");
 };
