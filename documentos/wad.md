@@ -625,6 +625,17 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 *Apresente aqui a paleta de cores, com seus códigos de aplicação e suas respectivas funções*
 
+<p align = "center">
+<sup>Figura: Guia de Cores</sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/guiaCores.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> 
+
+Um guia de cores é um documento que define um conjunto padronizado de cores a serem usadas em uma interface digital, com o objetivo de garantir consistência visual, usabilidade e identidade da marca.
+
+No guia apresentado, as cores são organizadas por grupo cromático (como azul, verde, rosa, etc.), tonalidade (clara, média ou escura) e uso sugerido (como links, botões, textos ou fundos). Cada cor tem um código hexadecimal específico, o que facilita sua aplicação no desenvolvimento web. Além disso, o guia indica como utilizar cada cor de forma funcional — por exemplo, azul claro para links, verde brilhante para indicadores positivos, e preto para textos.
+
 ### 3.3.2 Tipografia
 
 *Apresente aqui a tipografia da solução, com famílias de fontes e suas respectivas funções*
