@@ -10,8 +10,8 @@
       /* Custom styles for circular progress (Tailwind doesn't have this by default) */
       .progress-circle {
         position: relative;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         background: conic-gradient(#4da8da 0% 0%, #e5e7eb 0% 100%);
         display: flex;
@@ -21,29 +21,29 @@
       .progress-circle::before {
         content: '';
         position: absolute;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         background: white;
         border-radius: 50%;
       }
       .progress-circle span {
         position: relative;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: bold;
         color: #4da8da;
       }
     </style>
   </head>
-  <body class="bg-gray-100 font-sans">
+  <body class="font-sans">
     <%- include('./partials/header.ejs') %>
 
     <main class="p-6">
       <section class="mb-6">
-        <h2 class="text-3xl font-bold text-blue-900">Bem-Vindo, Usuário!</h2>
+        <h2 class="text-3xl font-bold text-blue-900">Bem-Vindo!</h2>
       </section>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="bg-white p-6 rounded-lg border-2 border-black/10">
           <h3 class="text-xl font-bold text-blue-900 mb-4">Ranking</h3>
           <ul class="space-y-2">
             <li class="flex items-center space-x-2">
@@ -69,7 +69,7 @@
           </ul>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md md:col-span-2">
+        <div class="bg-white p-6 rounded-lg border-2 border-black/10 md:col-span-2">
           <h3 class="text-xl font-bold text-blue-900 mb-4">Notificação</h3>
           <ul class="space-y-4">
             <li>
