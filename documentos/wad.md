@@ -663,8 +663,6 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 ## 3.4 Protótipo de alta fidelidade (sprint 3)
 
-*posicione aqui algumas imagens demonstrativas de seu protótipo de alta fidelidade e o link para acesso ao protótipo completo (mantenha o link sempre público para visualização)*
-
 &emsp; Para preparar a implementação do frontend da aplicação Web, realizou-se o seguinte protótipo de alta fidelidade:
 
 <div align="center">
@@ -676,6 +674,8 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <div align="center">
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </div>
+
+[Link para visualização do figma](https://www.figma.com/design/CuM5byc293r9RMdnMkYXcJ/FieldReview?node-id=0-1&t=YpupKULCgRfJxEH8-1) 
 
 &emsp; Para a realização do protótipo de alta fidelidade, utilizou-se o guia de estilos para guiar a elaboração das telas da plataforma. Além disso, realizou-se a divisão do fluxo do site em um caminho para o promotor técnico digital (PTD) e outra para o administrador.
 
@@ -698,11 +698,11 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/loginMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; É importante lembrar que essa tela é comum tanto para os PTDs quanto para os administradores. A partir dessa tela, de acordo com o cadastro do usuário, o fluxo é segmentado em um específico para os promotores e outra para o administrador, da seguinte maneira:
+&emsp; É importante lembrar que essa tela é comum tanto para os PTDs quanto para os administradores. A partir dessa tela, de acordo com o cadastro do usuário, o fluxo é segmentado em um específico para os promotores e outro para o administrador, da seguinte maneira:
 
 - **Promotor Técnico Digital**
 
-&emsp; As telas direcionadas aos promotores estão relacionadas com as user stories importantes: US01, US02 e US05, relacionadas à busca rápida para sanar dúvidas, o acesso a conteúdos das trilhas e o ato de revisar as trilhas depois. Dessa forma a apresentação das páginas será disposta em: tela inicial, tela de trilhas e a tela de pesquisa.
+&emsp; As telas direcionadas aos promotores estão relacionadas com as user stories essenciais: US01, US02 e US05, relacionadas à busca rápida para sanar dúvidas, o acesso a conteúdos das trilhas e o ato de revisar as trilhas depois. Dessa forma a apresentação das páginas será disposta em: tela inicial, tela de trilhas e a tela de pesquisa.
 
 &emsp; A tela inicial compreende as principais informações da aplicação, apresentando o ranking dos usuários, as notificações, as trilhas que os usuários estão realizando e as trilhas que estão disponíveis, de acordo com a figura abaixo:
 
@@ -723,7 +723,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/homePTD.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Em relação a tela de trilhas, essa interface apresentará a disposição dos módulos na trilha, o vídeo e texto explicativo junto com a pergunta para validar o aprendizado. Além disso, é importante destacar que essa tela está relacionada a user story US02 com o acesso aos materiais disponíveis na plataforma. Dessa maneira, a tela está disposta da seguinte forma:
+&emsp; Em relação à tela de trilhas, essa interface apresentará a disposição dos módulos na trilha, o vídeo e texto explicativo junto com a pergunta para validar o aprendizado. Além disso, é importante destacar que essa tela está relacionada a user story US02 com o acesso aos materiais disponíveis na plataforma. Dessa maneira, a tela está disposta da seguinte forma:
 
 <div align="center">
 <sup>Figura : Página de trilhas do PTD.</sup>
@@ -742,7 +742,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/trilhaPTDMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; No que diz respeito a tela de pesquisa, ela apresenta dois resultados de acordo com o texto inserido, uma área para os elementos de ajuda rápida da plataforma e outra parte para os resultados de acordo com as trilhas do site. Vale ressaltar que essa tela está relacionada à user story US01 com os resultados da busca rápida feita pelo promotor. Assim, a tela foi prototipada da seguinte maneira: 
+&emsp; No que diz respeito à tela de pesquisa, ela apresenta dois resultados de acordo com o texto inserido, uma área para os elementos de ajuda rápida da plataforma e outra parte para os resultados de acordo com as trilhas do site. Vale ressaltar que essa tela está relacionada à user story US01 com os resultados da busca rápida feita pelo promotor. Assim, a tela foi prototipada da seguinte maneira: 
 
 <div align="center">
 <sup>Figura : Tela de pesquisa do PTD.</sup>
@@ -762,13 +762,13 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 
-&emsp; Desse modo, as telas apresentadas foram prototipadas para resolver as necessidades do promotor a serem implementadas na solução Web.
+&emsp; Desse modo, as telas apresentadas foram prototipadas para resolverem as necessidades do promotor de com uma interface web assertiva com as suas necessidades.
 
 - **Administrador**
 
-&emsp; As telas direcionadas ao administrador da plataforma estão relacionadas diretamente a user story US03 de acordo com a vontade do consultor de atribuir trilhas aos seus colegas de equipe visando a capacitação técnica do time. Dessa maneira, as telas desse fluxo são: tela de trilhas, tela de alteração de uma trilha, tela de alteração de um módulo, tela de usuários e tela de atribuir uma trilha ao usuário.
+&emsp; As telas direcionadas ao administrador da plataforma estão relacionadas diretamente à user story US03 de acordo com a vontade do consultor de atribuir trilhas aos seus colegas de equipe visando a capacitação técnica do time. Dessa maneira, as telas desse fluxo são: tela de trilhas, tela de alteração de uma trilha, tela de alteração de um módulo, tela de usuários e tela de atribuir uma trilha ao usuário.
 
-&emsp; A tela de trilhas compreende as ações relacionadas a observar as trilhas disponíveis na plataforma e a possibilidade adicionar uma nova trilha, de acordo com a figura abaixo:
+&emsp; A tela de trilhas compreende as ações relacionadas a observar as trilhas disponíveis na plataforma e a possibilidade de adicionar uma nova trilha, de acordo com a figura abaixo:
 
 <div align="center">
 <sup>Figura : Página de trilhas do administrador.</sup>
@@ -788,7 +788,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 
-&emsp; Em relação à tela de alteração das trilhas, nesse campo o usuário pode alterar o título do conteúdo e apagar, atualizar ou criar um novo módulo, além de cancelar suas alterações ou salvá-las, assim apresentado na figura abaixo:
+&emsp; Em relação à tela de alteração das trilhas, nesse campo o usuário pode alterar o título do conteúdo e apagar ou atualizar ou criar um novo módulo, além de cancelar suas alterações ou salvá-las, assim representado na figura abaixo:
 
 <div align="center">
 <sup>Figura : Página de editar trilha do administrador.</sup>
@@ -826,7 +826,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/editorTrilha.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; No que diz respeito a tela de usuários, nela aparece todos os usuários cadastrados na plataforma, com a possibilidade do administrador poder ver progresso e atribuir trilhas ao usuário selecionado, assim como é apresentado na figura abaixo:
+&emsp; No que diz respeito à tela de usuários, nela aparece todos os usuários cadastrados na plataforma, com a possibilidade do administrador poder ver progresso e atribuir trilhas ao usuário selecionado, assim como é apresentado na figura abaixo:
 
 <div align="center">
 <sup>Figura : Tela de usuários do administrador.</sup>
