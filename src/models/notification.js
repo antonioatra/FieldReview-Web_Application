@@ -5,7 +5,7 @@ module.exports = {
 
   async create(data) {
 
-    const query = "INSERT INTO notificacao (titulo, descricao, created_at) VALUES ($1, $2, CURRENT_TIMESTAMP) RETURNING *";
+    const query = "INSERT INTO notificacao (titulo, descricao) VALUES ($1, $2) RETURNING *";
     const values=[data.titulo, data.descricao];
 
     return pool.query(query, values)
@@ -43,7 +43,7 @@ module.exports = {
   },
 
   async update(data) {
-    const query = "UPDATE notificacao SET titulo = $1, descricao = $2, update_at = CURRENT_TIMESTAMP WHERE id = $4";
+    const query = "UPDATE notificacao SET titulo = $1, descricao = $2, update_at = CURRENT_TIMESTAMP WHERE id = $3";
     const values = [data.titulo, data.descricao, data.id]
 
     return pool.query(query, values);
