@@ -520,6 +520,110 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 
 *Posicione aqui o diagrama de arquitetura da sua solução de aplicação web. Atualize sempre que necessário*
 
+&emsp; A arquitetura de uma aplicação web consiste em uma representação gráfica de como os vários componentes da solução interagem entre si (HASH, 2025). Essa representação é importante para visualizar como funciona o relacionamento entre cliente e servidor, e como essas operações são executadas por outras partes da plataforma web. Dessa maneira, é importante projetar o modo como ocorrerá essas interações para então inicar a construção da solução Web.
+
+&emsp; Com base nessa perspectiva, a arquitetura Model-View-Controller (MVC) foi aplicada à plataforma, na qual cada parte dessa organização é responsável por uma tarefa distinta. Essa arquitetura foi criada em 1979 pelo cientista da computação norueguês Trygve Reenskaug, com a proposta de separar o projeto em camadas para reduzir as dependências entre elas (COODESH). Assim, os elementos dessa organização são separados em:
+
+- Model (Modelo): Realiza a manipulação das informações no banco de dados, fazendo parte do backend da aplicação.
+
+- View (Visualização): Responsável pela interação com o usuário, fazendo parte do frontend da plataforma.
+
+- Controller (Controlador): Faz a intermediação entre as duas camadas, levando requisições e respostas entre elas, fazendo parte do backend do projeto.
+
+&emsp; Dessa maneira, realizou-se o seguinte diagrama da arquitetura MVC do Field Review no draw.io:
+
+<div align="center">
+<sup>
+Figura : Arquitetura da plataforma Field Review no draw.io.
+</sup>
+</div>
+
+<div align="center">
+<img src="../assets/assetsWAD/arquiteturaFieldReviewDraw.png"/>
+</div>
+
+<div align="center">
+<sub>
+Fonte: Material produzido pelos autores (2025).<br>
+</sub>
+</div>
+
+[Clique aqui para melhor visualização](https://drive.google.com/file/d/1bAWjgLLZlXq5cCn7E9oCHs4irSq8bSpP/view?usp=sharing)
+
+&emsp; Além disso, realizou-se esse diagrama utilizando o mermaid.js:
+
+<div align="center">
+<sup>
+Figura : Arquitetura da plataforma Field Review no mermaid.io.
+</sup>
+</div>
+
+<div align="center">
+<img src="../assets/assetsWAD/arquiteturaFieldReviewMermaid.png"/>
+</div>
+
+<div align="center">
+<sub>
+Fonte: Material produzido pelos autores (2025).<br>
+</sub>
+</div>
+
+[Clique aqui para melhor visualização](https://www.mermaidchart.com/raw/7c0065d3-4be8-42f4-aaed-b6566dc10b2e?theme=light&version=v0.1&format=svg)
+
+- ***Descrição das camadas***
+
+Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura MVC:
+
+ *Models*
+
+&emsp; Essa parte representa as entidades que realizam as operações com o banco de dados (PostgreSQL), são eles:
+
+- **usuario:** gerenciamento dos dados de usuários da plataforma.
+- **trilha:** armazenamento das trilhas de aprendizagem disponíveis.
+- **modulo:** módulos de aprendizado vinculados às trilhas.
+- **pergunta:** questões de avaliação associadas aos módulos.
+- **opcoes:** alternativas de resposta vinculadas às perguntas.
+- **certificado:** dados sobre certificados gerados.
+- **notificacao:** notificações enviadas aos usuários.
+- **help:** conteúdo de ajuda rápida para navegação na plataforma.
+
+ *Controllers*
+
+&emsp; Os elementos responsáveis por fazer a comunicação do frontend com a manipulação do banco de dados são:
+
+- **usuarioController:** gerencia criação, visualização, edição e exclusão de usuários.
+- **trilhaController:** controla as operações relativas às trilhas.
+- **moduloController:** executa as ações de CRUD nos módulos de aprendizado.
+- **notificacaoController:** gerencia notificações dentro da plataforma.
+- **certificadoController:** gerencia certificados dos usuários.
+- **perguntaController:** gerencia as questões associadas aos módulos.
+- **opcoesController:** controla as alternativas de resposta.
+- **helpController:** gerencia o conteúdo de ajuda rápida.
+
+ *Views*
+
+&emsp; Os elementos de visualização da plataforma são os seguintes:
+
+- **login**: tela de login na plataforma.
+- **home**: tela inicial da aplicação.
+- **search**: a tela de pesquisa na plataforma.
+- **partials**: os elementos comuns em diversas telas como o header e o footer.
+- **trails**: as trilhas e os seus respectivos conteúdos.
+- **users**: a tela de gerenciamento dos usuários disponível aos administradores da plataforma.
+
+
+ *Tecnologias*
+
+&emsp; Em relação às tecnologias utilizadas na aplicação Web, foram aplicadas as seguintes ferramentas: 
+- **HTML**: marcação semântica da plataforma. 
+- **Tailwind CSS**: estilização das páginas.
+- **JavaScript**: frontend da aplicação. 
+- **Node.js + Express**: desenvolvimento da API e lógica backend, com organização em middlewares e rotas.
+- **PostgreSQL**: sistema de gerenciamento de banco de dados relacional.
+
+
+&emsp; Portanto, é notável como a utilização de uma arquitetura em uma aplicação organiza e distribui as tarefas de uma plataforma de maneira eficiente e que permita a continuidade do desenvolvimento por outros colaboradores.
+
 ## 3.2. Wireframes (sprint 2)
 
 &emsp; O wireframe é uma representação esquemática inicial de uma interface de usuário, geralmente elaborada com baixa fidelidade. Seu objetivo principal é auxiliar na definição da estrutura e na disposição dos elementos visuais e informacionais da interface, sem, contudo, abordar em profundidade as funcionalidades ou aspectos estéticos do sistema. Essa ferramenta é amplamente utilizada nas etapas iniciais do design de interfaces, por permitir uma visualização clara da hierarquia da informação e da navegação pretendida, facilitando a comunicação entre designers, desenvolvedores e demais *stakeholders*.
@@ -1155,15 +1259,19 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 5. BAYER CROP SCIENCE. Impulso Bayer: o programa. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/impulso-bayer/o-programa. Acesso em: 29 abr. 2025.
 
-6. INTELIGÊNCIA FINANCEIRA. Empresas do agronegócio: as maiores companhias agrícolas do mundo. 2024. Disponível em: https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/. Acesso em: 29 abr. 2025.
+6. COODESH. O que é arquitetura MVC? Coodesh, 2025. Disponível em: https://coodesh.com/blog/dicionario/o-que-e-arquitetura-mvc/. Acesso em: 30 maio 2025.
 
-7. MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia [recurso eletrônico]. 1. ed. Rio de Janeiro: Alta Books, 2019. Disponível em: https://integrada.minhabiblioteca.com.br. Acesso em: 29 abr. 2025.
+7. HARSH, Kumar. O que é Arquitetura de Aplicativos Web? Quebrando um aplicativo da Web. Kinsta, 17 jan. 2025. Disponível em: https://kinsta.com/pt/blog/arquitetura-aplicativos-web/. Acesso em: 30 maio 2025.
 
-8. MARKET RESEARCH FUTURE. Digital agriculture market research report—global forecast 2030. 2023. Disponível em: https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695. Acesso em: 29 abr. 2025.
+8. INTELIGÊNCIA FINANCEIRA. Empresas do agronegócio: as maiores companhias agrícolas do mundo. 2024. Disponível em: https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/. Acesso em: 29 abr. 2025.
 
-9. MARKET RESEARCH FUTURE. Seeds market research report. [S.l.]: Market Research Future, 2023. Disponível em: https://www.marketresearchfuture.com/reports/seeds-market-7252. Acesso em: 28 abr. 2025.
+9. MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia [recurso eletrônico]. 1. ed. Rio de Janeiro: Alta Books, 2019. Disponível em: https://integrada.minhabiblioteca.com.br. Acesso em: 29 abr. 2025.
 
-10. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
+10. MARKET RESEARCH FUTURE. Digital agriculture market research report—global forecast 2030. 2023. Disponível em: https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695. Acesso em: 29 abr. 2025.
+
+11. MARKET RESEARCH FUTURE. Seeds market research report. [S.l.]: Market Research Future, 2023. Disponível em: https://www.marketresearchfuture.com/reports/seeds-market-7252. Acesso em: 28 abr. 2025.
+
+12. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
 
 
 # <a name="c9"></a>Anexos
