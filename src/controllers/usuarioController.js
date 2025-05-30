@@ -1,32 +1,32 @@
-const Usuario = require("../models/usuario");
+const Users = require("../models/usuario"); // Chama o model
 
-exports.store = async(req, res) => {
-    await Usuario.create(req.body);
+exports.store = async(req, res) => { // Chama a função que cria usuários
+    await Users.create(req.body);
     res.redirect("/user");
 };
 
 exports.show = async(req, res) => {
-    const usuarios = await Usuario.findAll();
-    res.json(usuarios);
+    const users = await Users.findAll();
+    res.json(users);
 };
 
 exports.showById = async(req, res) => {
     const { id } = req.params;
-    const usuario = await Usuario.findById(id);
+    const users = await Users.findById(id);
    
-    res.json(usuario);
+    res.json(users);
 };
 
 exports.update = async(req, res) => {
     const { id } = req.params;
-    await Usuario.update(id, req.body);
+    await Users.update(id, req.body);
 
     res.redirect("/user");
 };
 
 exports.destroy = async(req, res) => {
     const { id } = req.params;
-    await Usuario.delete(id);
+    await Users.delete(id);
 
     res.redirect("/user");
-}
+};
