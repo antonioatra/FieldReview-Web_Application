@@ -623,8 +623,6 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 ### 3.3.1 Cores
 
-*Apresente aqui a paleta de cores, com seus códigos de aplicação e suas respectivas funções*
-
 <p align = "center">
 <sup>Figura: Guia de Cores</sup>
 </p>
