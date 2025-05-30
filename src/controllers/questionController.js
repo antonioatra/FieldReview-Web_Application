@@ -19,7 +19,7 @@ exports.store = async(req, res) => {  //chama o model que tem a função de cria
 
     await Promise.all(promises);
 
-    res.redirect("/question"); // redireciona para a rota Question
+    res.json(question); // redireciona para a rota Question
     } catch (err) {
         res.status(500).json({error: "Erro ao criar pergunta"});
     }
@@ -36,7 +36,7 @@ exports.showById = async(req, res) => { // chama o model para apresentar Questio
     }
 };
 
-exports.showByModuloId = async(req, res) => {
+exports.showByModuleId = async(req, res) => {
     try {
     const {moduleId} = req.body;
     const question = await Question.findByModuloId(moduleId);
