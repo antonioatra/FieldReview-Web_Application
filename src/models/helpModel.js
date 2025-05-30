@@ -2,7 +2,7 @@ const pool = require("../config/database");
 
 module.exports = {
     async create(data){
-        const query = "INSERT INTO help(titulo, conteudo, created_at) VALUES($1, $2)";
+        const query = "INSERT INTO help(titulo, conteudo, created_at) VALUES($1, $2) RETURNING * ";
         const values = [data.title, data.content];
 
         return pool.query(query, values);
