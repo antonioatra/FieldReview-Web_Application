@@ -1,4 +1,5 @@
 const Trail = require("../models/trilha"); // Pega o model da entidade trilha
+const User = require("../models/usuario");
 
 exports.store = async (req,res) => { // Chama a função que cria trilhas
     await Trail.create(req.body); // Espera que ela seja criada
@@ -27,3 +28,21 @@ exports.showAll = async (req, res) => { // Chama a função que mostra todas as 
     const trail = await Trail.findAll();
     res.json(trail);
 };
+
+exports.assingTrail = async(req, res) => { // Chama a função de atribuir trilhas aos usuários
+    const {trailId, userId, status, deadline} = req.body;
+    const user = await User.findById(userId);
+    if(!user) // Avalia se o usuários existe
+    {
+        res.status(500).json({error: "Usuário não encontrado"});
+    }
+    
+    const trail = await Trail.findById(trailId);
+    if(!trail) // Avalia se a trilha existe
+    {
+        res.status.json({error: "Trilha não encontrada"})
+    }
+    
+    await Trail.assignToUser(trailId, userId, status, prazo);
+    res.status(200).json({message: "Trilha atribuída com sucesso"}); //Retorna o status de ok
+}
