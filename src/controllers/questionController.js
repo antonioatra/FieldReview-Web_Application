@@ -19,7 +19,7 @@ exports.store = async(req, res) => {  //Chama o model que tem a função de cria
 
     const optionsCreated = await Promise.all(promises);
 
-    res.json({
+    res.status(201).json({
         question: question,
         options: optionsCreated
     }); // retorna a perguna e suas opções
