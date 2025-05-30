@@ -2,7 +2,7 @@ const pool = require("../config/database");
 
 module.exports = {
     async create(data) {
-        const query = "INSERT INTO certificado (titulo, imagem, id_trilha) VALUES ($1, $2, $3)";
+        const query = "INSERT INTO certificado (titulo, imagem, id_trilha) VALUES ($1, $2, $3) RETURNING *";
         const values = [data.title, data.image, data.trailId];
 
         return pool.query(query, values);
