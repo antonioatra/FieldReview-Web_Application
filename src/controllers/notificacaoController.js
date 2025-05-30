@@ -8,10 +8,12 @@ exports.store = async (req, res) => {
 
     if (users && users.length > 0) {
         for (const user_id of users) {
-            await UserNotification.create({
-                user_id,
-                notification_id: notification.id
-            });
+            if (user_id) {  // Pra garantir que user_id é válido antes de criar a notificação
+                await UserNotification.create({
+                    user_id,
+                    notification_id: notification.id
+                });
+            }
         }
     }
 
@@ -28,7 +30,7 @@ exports.showById = async (req, res) => {
     const notification = await Notification.findById(id);
 
     // Get related users
-    const users = await UserNotification.findUsersByNotification(id);
+    const users = await UserNotification.findUser(id);
     res.json({ ...notification, users });
 };
 
@@ -41,7 +43,6 @@ exports.update = async (req, res) => {
 exports.destroy = async (req, res) => {
     const { id } = req.params;
 
-    // Remove links before deleting the notification
     await UserNotification.deleteByNotification(id);
     await Notification.delete(id);
 
