@@ -36,12 +36,21 @@
       </defs>
     </svg>
   </a>
-  <input type="text" placeholder="Pesquisar..." class="p-2 rounded-md bg-white text-black w-md" />
+  <form action="/search" method="GET">
+    <input 
+      type="text" 
+      name="q" 
+      placeholder="Pesquisar..." 
+      class="p-2 rounded-md bg-white text-black w-md" 
+    />
+  </form>
   <div class="flex items-center space-x-10">
-    <div class="flex items-center gap-2">
-      <a href="#" class="text-white">?</a>
-      <a href="#" class="text-white">Help</a>
-    </div>
+    <a class="flex items-center gap-2" href="/help">
+      <div class="flex gap-4">
+        <p class="text-white">?</a>
+        <p class="text-white">Help</a>
+      </div>
+    </a>
     <div class="w-8 h-8 bg-gray-300 rounded-full"></div>
   </div>
 </header>
