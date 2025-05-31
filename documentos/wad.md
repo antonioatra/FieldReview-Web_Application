@@ -1370,23 +1370,7 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 4.1. Primeira versão da aplicação web (sprint 3)
 
-&emsp; A primeira versão da aplicação web representa um marco inicial no processo de construção do sistema, concentrando-se na estruturação das funcionalidades básicas, priorizando a organização do código e a implementação das rotas da WebAPI. Essa etapa tem como objetivo garantir que a base técnica esteja sólida para permitir o crescimento futuro da aplicação de forma segura, escalável e eficiente.
-
-&emsp; Nesta fase, o foco esteve na criação do back-end da aplicação utilizando o framework Express com Node.js, estruturado dentro do padrão MVC. Foram desenvolvidos diversos endpoints conforme especificado na documentação da WebAPI (ver seção 3.6), os quais já se encontram operacionais. As rotas criadas contemplam operações essenciais como GET, POST, PUT e DELETE, proporcionando uma API RESTful funcional.
-<p align="center"> <img src="../assets/assetsWAD/codigoRotas.jpeg">
-<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
-
-&emsp; Além disso, foi iniciado o desenvolvimento do front-end da aplicação com uma abordagem rudimentar, utilizando exclusivamente HTML, Tailwind CSS e JavaScript. Essa interface ainda está em estágio inicial, mas já apresenta a estrutura necessária para integrar as funcionalidades do sistema à experiência do usuário. Segue um exemplo da tela inicial e da tela de trilhas:
-<p align="center"> <img src="../assets/assetsWAD/telaInicialSR.jpeg">
-<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
-<p align="center"> <img src="../assets/assetsWAD/telaTrilhasSR.jpeg">
-<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
-
-&emsp;Uma das dificuldades encontradas foi agrupar adequadamente cada entidade dos models no seu domínio do controller apropriado, por haver diversas tabelas de relacionamento, foi necessário tirar dúvidas com os professores e monitores sobre a melhor forma de organizar a estrutura do projeto.
-
-&emsp; Apesar de a conexão com banco de dados ainda não estar confirmada para esta entrega, a arquitetura do projeto já se encontra preparada para sua integração futura. O código está organizado de forma a facilitar essa conexão, assim como eventuais implementações de autenticação, validação e persistência de dados.
-
-&emsp; A evolução desta versão envolverá a validação da comunicação entre front-end e back-end, a consolidação da integração com o banco de dados e a melhoria progressiva da interface de usuário, tornando-a mais interativa e visualmente consistente com a identidade do projeto.
+*Descreva e ilustre aqui o desenvolvimento da sua primeira versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
 
 ## 4.2. Segunda versão da aplicação web (sprint 4)
 
