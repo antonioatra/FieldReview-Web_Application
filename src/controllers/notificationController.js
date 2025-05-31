@@ -1,27 +1,36 @@
 const Notification = require("../models/notification");
 const UserNotification = require("../models/userNotification");
 
-exports.store = async (req, res) => {
-    try {
-        const { title, description, users } = req.body;
+const Notificacao = require('../models/notificacao');
+const Usuario = require('../models/usuario');
 
-        const notification = await Notification.create({ title, description });
- 
-        if (users && users.length > 0) {
-            for (const user_id of users) {
-                if (user_id) { // Garante que user_id é válido antes de criar a notificação
-                    await UserNotification.create({
-                        user_id,
-                        notification_id: notification.id
-                    });
-                }
-            }
-        }
-        res.status(201).json({ message: 'Notificação criada com sucesso', notification });
-    } catch (err) {
-        res.status(500).json({ error: 'Erro ao criar notificação' });
+exports.store = async (req, res) => {
+  try {
+    const { title, description, userId } = req.body;
+    const result = await Notificacao.create({ titulo: title, descricao: description });
+    const notification = result.rows[0];
+    let users = [];
+
+    if (userId) {
+      const userResult = await Usuario.findById(userId);
+      const user = userResult.rows[0];
+      if (!user) {
+        return res.status(404).json({ error: 'User not found.' });
+      }
+      users = [user];
+    } else { const allUsers = await Usuario.findAll();
+             users = allUsers.rows;
     }
+
+    for (const user of users) {
+      await Notificacao.addUsers({ id_usuario: user.id, id_notificacao: notification.id });
+    }
+    return res.status(201).json({ message: 'Notification created successfully.', notification });
+  } catch (err) {
+    res.status(500).json({ error: 'Internal server error.' });
+  }
 };
+
 
 exports.show = async (req, res) => {
     try {
