@@ -957,6 +957,28 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/pesquisaPTDMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
+&smsp; A tela de ajuda tem como objetivo oferecer suporte rápido ao usuário por meio de uma seção de perguntas frequentes. Nela, são apresentados cards com dúvidas comuns, como "O que é o Climate FieldView", acompanhadas de respostas objetivas e fáceis de ler.
+
+<div align="center">
+<sup>Figura : Tela de help do PTD.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/tela de help PTD.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
+<div align="center">
+<sup>Figura : Tela mobile de help do PTD.</sup>
+</div>
+<div align="center">
+<img src="../assets/assetsWAD/helpPTD.png">
+</div>
+<div align="center">
+<sub>Fonte: Material produzido pelos autores (2025).</sub>
+</div>
+
 
 &emsp; Desse modo, as telas apresentadas foram prototipadas para resolverem as necessidades do promotor de com uma interface web assertiva com as suas necessidades.
 
@@ -1060,6 +1082,39 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 <p align="center"> 
 <img src="../assets/assetsWAD/dataADM.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+&emsp; A tela de administração do help permite ao administrador gerenciar as informações exibidas na seção de perguntas frequentes da plataforma. Nessa interface, é possível adicionar novos tópicos de ajuda, além de editar ou remover conteúdos já existentes.
+
+<p align = "center">
+<sup>Figura: Tela de help administrador.<sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/help adm.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+<p align = "center">
+<sup>Figura: Tela mobile de help administrador.<sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/helpADM.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+&emsp; A tela de edição do help permite ao administrador criar ou modificar cards de perguntas frequentes, inserindo título e conteúdo de forma rápida. 
+
+<p align = "center">
+<sup>Figura: Tela de edição do help administrador.<sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/adicionar help adm.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+<p align = "center">
+<sup>Figura: Tela mobile de edição do help administrador.<sup>
+</p>
+<p align="center"> 
+<img src="../assets/assetsWAD/editarHelp.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
 
 &emsp; Portanto, esse fluxo específico do administrador foi realizado para suprir as necessidades do consultor para gerenciar sua equipe de maneira mais eficiente e criar material de qualidade para os usuários.
 
