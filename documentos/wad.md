@@ -1410,9 +1410,28 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 6.1 Resumo Executivo
 
-*Preencher com até 300 palavras, sem necessidade de fonte*
+&emsp; O FieldReview foi desenvolvido para enfrentar um desafio recorrente entre os Promotores Técnicos Digitais (PTDs): a falta de familiaridade com a plataforma Climate FieldView, essencial para suas atividades em campo. Essa lacuna de conhecimento impacta diretamente na qualidade do serviço prestado e na eficiência das operações.<br>
+&emsp; O projeto encontra uma oportunidade sólida no mercado agro brasileiro, que emprega milhões de pessoas e se mantém como um dos pilares da economia nacional. Em 2024, o setor alcançou R$ 164 bilhões em exportações, representando cerca de 50% das exportações totais do país. Esse cenário reforça a importância de soluções que melhorem a performance e capacitação dos profissionais que atuam diretamente no campo.<br>
+&emsp; O diferencial competitivo do FieldReview está em sua proposta direcionada ao desenvolvimento técnico e prático dos PTDs, algo pouco explorado por outras soluções. Ao invés de apenas entregar uma ferramenta operacional, a aplicação foca na formação contínua dos usuários, permitindo uma atuação mais segura e eficiente com a plataforma FieldView.<br>
+&emsp; Entre os objetivos estratégicos do projeto, destacam-se:
+Melhorar o domínio dos PTDs sobre o uso do FieldView;
 
-*Apresente de forma clara e objetiva os principais destaques do projeto: oportunidades de mercado, diferenciais competitivos da aplicação web e os objetivos estratégicos pretendidos.*
+
+#### Aumentar a produtividade e a qualidade do atendimento em campo;
+
+
+#### Reduzir erros causados por desconhecimento técnico;
+
+
+#### Elevar a satisfação dos clientes atendidos;
+
+
+#### Contribuir para o fortalecimento da imagem da empresa no setor.
+
+
+&emsp; Com essa abordagem, o FieldReview visa não apenas resolver um problema técnico, mas também gerar valor real para os profissionais, as empresas e o agronegócio como um todo.
+
+
 
 ## 6.2 Análise de Mercado
 
