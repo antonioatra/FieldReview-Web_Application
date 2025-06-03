@@ -1506,6 +1506,17 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 12. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
 
+Legislação — Ministério da Agricultura e Pecuária. Lei de N° 14.785, de 27 de dezembro de 2023.
+Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao
+
+Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 
+Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/
+
+Tecnologia no agronegócio: conheça 7 inovações tecnológicas 
+Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro
+
+Panorama do Agro 
+Disponivel em: https://www.cnabrasil.org.br/cna/panorama-do-agro
 
 # <a name="c9"></a>Anexos
 
