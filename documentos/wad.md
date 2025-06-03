@@ -1453,8 +1453,25 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 ## 6.6 Estratégia de Marketing 
 
-*a) Produto/Serviço (até 200 palavras)*
-*Descreva as funcionalidades, benefícios e diferenciais da aplicação*
+&emsp; A estratégia de marketing é um plano voltado para o desenvolvimento e posicionamento de produtos ou serviços no mercado. Ela se baseia em quatro pilares fundamentais, conhecidos como os 4 Ps do marketing: Produto, Preço, Praça (distribuição) e Promoção.<br>
+&emsp; Essa estratégia é essencial para o sucesso de um produto, pois permite identificar oportunidades de inovação e diferenciação, atendendo às necessidades reais do cliente. Ao considerar aspectos como funcionalidade, valor percebido, canais de acesso e formas de divulgação, a estratégia de marketing contribui diretamente para garantir que o produto seja útil, relevante e competitivo no mercado.
+
+### Produto
+&emsp; O FieldReview é uma plataforma web voltada para a capacitação dos Promotores Técnicos Digitais (PTDs) no uso da ferramenta Climate FieldView, essencial para sua atuação em campo. A aplicação oferece conteúdos estruturados que ajudam os profissionais a aprofundarem seus conhecimentos e a solucionarem dúvidas de forma rápida e eficiente.
+
+&emsp; Entre as principais funcionalidades, destacam-se:
+
+- Acesso a materiais de estudo e conteúdos organizados por temas;
+
+- Sistema de perguntas frequentes (FAQ) com busca inteligente por tópicos;
+
+- Ranking de desempenho, que estimula a aprendizagem contínua e saudável competitividade entre os usuários;
+
+- Interface intuitiva e responsiva, facilitando o uso em diferentes dispositivos.
+
+&emsp; Como benefícios, o FieldReview contribui para uma atuação mais segura e eficiente dos PTDs, reduz erros operacionais e melhora o atendimento ao cliente. A plataforma também promove o desenvolvimento técnico contínuo, agregando valor ao trabalho do profissional.
+
+&emsp; Seu principal diferencial competitivo é o foco direto na capacitação prática e contextualizada dos usuários, algo ainda pouco explorado no setor. Além disso, a combinação de conteúdos interativos, ranking e usabilidade otimizada torna o FieldReview uma solução eficaz e alinhada às necessidades do campo.
 
 *6.2 Preço (até 200 palavras)*
 *Explique o modelo de precificação adotado e justifique com base nas análises anteriores.*
