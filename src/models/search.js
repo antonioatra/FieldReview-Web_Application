@@ -3,8 +3,8 @@ const pool = require('../config/database');
 module.exports = {
   async helpTextualSearch(searchTerm) {
     const query = `
-        SELECT * FROM help
-        WHERE to_tsvector('portuguese', titulo || ' ' || conteudo) @@ plainto_tsquery('portuguese', $1)
+      SELECT * FROM help
+      WHERE to_tsvector('portuguese', titulo || ' ' || conteudo) @@ plainto_tsquery('portuguese', $1)
     `;
     const values = [searchTerm];
 
@@ -17,12 +17,10 @@ module.exports = {
     }
   },
 
-  async moduloTextualSearch(searchTerm) {
+  async moduleTextualSearch(searchTerm) {
     const query = `
-        SELECT m.* 
-        FROM modulo m
-        JOIN trilha t ON m.id_trilha = t.id
-        WHERE to_tsvector('portuguese', t.titulo) @@ plainto_tsquery('portuguese', $1)
+      SELECT * FROM modulo
+      WHERE to_tsvector('portuguese', titulo || ' ' || conteudo) @@ plainto_tsquery('portuguese', $1)
     `;
     const values = [searchTerm];
 
