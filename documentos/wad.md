@@ -1422,9 +1422,11 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 *b) Tamanho e Crescimento do Mercado (até 250 palavras)*
 *Apresente dados quantitativos sobre o tamanho atual e projeções de crescimento do mercado. Utilize fontes confiáveis.*
 
-O setor agrícola está em profunda transformação, impulsionado por inovações tecnológicas, mudanças no perfil dos profissionais rurais e demandas mercadológicas mais exigentes. A digitalização no campo — especialmente por meio da conectividade, sensores, drones e plataformas de análise de dados — tem o potencial de aumentar a produtividade agrícola global em até 9%, além de agregar até US$ 500 bilhões ao PIB mundial até 2030 (McKinsey & Company, 2020).
+### Tendências do Mercado
 
-No Brasil, essas transformações são ainda mais significativas, dada a relevância estratégica do agronegócio. A Embrapa destaca que o futuro da agricultura brasileira dependerá da adoção intensiva de tecnologias digitais e da formação contínua de profissionais. Há um movimento crescente de renovação geracional no campo, com maior abertura dos agentes de produção para inovações e novos modelos de aprendizado, como o ensino modular, remoto e autônomo.
+&emsp; O setor agrícola está em profunda transformação, impulsionado por inovações tecnológicas, mudanças no perfil dos profissionais rurais e demandas mercadológicas mais exigentes. A digitalização no campo — especialmente por meio da conectividade, sensores, drones e plataformas de análise de dados — tem o potencial de aumentar a produtividade agrícola global em até 9%, além de agregar até US$ 500 bilhões ao PIB mundial até 2030 (McKinsey & Company, 2020).
+
+&emsp; No Brasil, essas transformações são ainda mais significativas, dada a relevância estratégica do agronegócio. A Embrapa destaca que o futuro da agricultura brasileira dependerá da adoção intensiva de tecnologias digitais e da formação contínua de profissionais. Há um movimento crescente de renovação geracional no campo, com maior abertura dos agentes de produção para inovações e novos modelos de aprendizado, como o ensino modular, remoto e autônomo.
 
 No cenário internacional, a FAO ressalta a importância de tornar os sistemas agroalimentares mais resilientes frente a choques como crises climáticas, pandemias e instabilidades econômicas. Isso envolve não só a adoção de práticas sustentáveis e rastreáveis, mas também a capacitação constante dos profissionais para implementar tais práticas com eficácia.
 
