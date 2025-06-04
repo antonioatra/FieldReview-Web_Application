@@ -1427,8 +1427,19 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 6.3 Análise da Concorrência
 
-*a) Principais Concorrentes (até 250 palavras)*
-*Liste os concorrentes diretos e indiretos, destacando suas principais características e posicionamento no mercado.*
+&emsp; <strong> Concorrentes diretos </strong> são plataformas que oferecem serviços semelhantes, voltados ao monitoramento de lavouras, análise de dados agronômicos e suporte à tomada de decisão no campo. Destacam-se:
+<ul> 
+    <li> <p> <strong> John Deere Operations Center: </strong> Foco em conectividade de máquinas agrícolas, mapeamento e gestão operacional. </p> </li>
+    <li> <p> <strong>  Granular (corteva): </strong> integra dados agronômicos com gestão financeira para aumentar a eficiência e a rentabilidade da fazenda. </p> </li>
+</ul>
+
+&emsp; <strong> Concorrentes indiretos </strong> são soluções que, embora não ofereçam o mesmo conjunto de funcionalidades, atendem às mesmas necessidades do produtor rural por meio de outros enfoques. Exemplos:
+<ul> 
+    <li> <p> <strong> Solinftec: </strong> Foco em automoção e sensores para melhorar a eficiência operacional em tempo real. </p> </li>
+    <li> <p> <strong>  Agrosmart: </strong> Utiliza dados climáticos e de solo para apoiar decisões sustentáveis e agrícolas. </p> </li>
+    <li> <p> <strong>  Strider (Syngenta): </strong> Especializada em monitoramento de pragas e doenças via aplicativo móvel. </p> </li>
+</ul>
+
 
 *b) Vantagens Competitivas da Aplicação Web (até 250 palavras)*
 *Descreva os diferenciais da sua aplicação em relação aos concorrentes, sem necessidade de citação de fontes.*
