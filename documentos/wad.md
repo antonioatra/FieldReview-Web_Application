@@ -1459,9 +1459,11 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 *6.2 Preço (até 200 palavras)*
 *Explique o modelo de precificação adotado e justifique com base nas análises anteriores.*
 
-*6.3 Praça (Distribuição) (até 200 palavras)*
+*6.3 Praça (Distribuição)*
 
-&emsp; O FieldReview, como uma plataforma digital, seria distribuído por meio do navagador, tanto para Android, IOS (Ipad, iphones, etc), semelhante ao Climate FieldView. Além disso, a Bayer poderia disponibilizá-lo diretamente no site e aplicativo (cropscience.bayer.us ou ClimateFieldView) como forma de conectar os PTDs. Outra meio de comunicação, seria o LinkedIn 
+&emsp; O FieldReview, como aplicação web, é distribuído via navegadores, acessível em dispositivos Android, iOS (iPads, iPhones) e desktops, semelhante ao Climate FieldView™. A Bayer o disponibiliza em seu site oficial (cropscience.bayer.com) e na plataforma Orbia, conectando Promotores Técnicos Digitais (PTDs) a agricultores. O LinkedIn é utilizado para promover a ferramenta, com posts direcionados aos profissionais do agronegócio, destacando benefícios como monitoramento de lavouras. Usando sistemas de CRM, a Bayer envia e-mails segmentados a PTDs, com links diretos para o FieldReview e guias de uso, facilitando a adoção. Eventos como a Agrishow e dias de campo do Bayer Forward Farming promovem a ferramenta com demonstrações práticas e QR codes para acesso via navegador. A integração com o programa Impulso Bayer reforça a distribuição, oferecendo benefícios como pontos para usuários, garantindo alcance e engajamento com agricultores e distribuidores.
+
+
 
 *6.4 Promoção (até 200 palavras)*
 *Descreva as estratégias digitais planejadas, como SEO, redes sociais, marketing de conteúdo e campanhas pagas.*
