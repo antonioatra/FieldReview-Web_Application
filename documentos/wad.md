@@ -1422,7 +1422,7 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 *b) Tamanho e Crescimento do Mercado (até 250 palavras)*
 *Apresente dados quantitativos sobre o tamanho atual e projeções de crescimento do mercado. Utilize fontes confiáveis.*
 
-### Tendências do Mercado
+<h3> Tendências do Mercado </h3>
 
 &emsp; O setor agrícola está em profunda transformação, impulsionado por inovações tecnológicas, mudanças no perfil dos profissionais rurais e demandas mercadológicas mais exigentes. A digitalização no campo — especialmente por meio da conectividade, sensores, drones e plataformas de análise de dados — tem o potencial de aumentar a produtividade agrícola global em até 9%, além de agregar até US$ 500 bilhões ao PIB mundial até 2030 (McKinsey & Company, 2020).
 
