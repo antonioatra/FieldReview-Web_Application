@@ -1460,7 +1460,8 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 *Explique o modelo de precificação adotado e justifique com base nas análises anteriores.*
 
 *6.3 Praça (Distribuição) (até 200 palavras)*
-*Apresente os canais digitais utilizados para distribuir e entregar a aplicação ao público.*
+
+&emsp; O FieldReview, como uma plataforma digital, seria distribuído por meio do navagador, tanto para Android, IOS (Ipad, iphones, etc), semelhante ao Climate FieldView. Além disso, a Bayer poderia disponibilizá-lo diretamente no site e aplicativo (cropscience.bayer.us ou ClimateFieldView) como forma de conectar os PTDs. Outra meio de comunicação, seria o LinkedIn 
 
 *6.4 Promoção (até 200 palavras)*
 *Descreva as estratégias digitais planejadas, como SEO, redes sociais, marketing de conteúdo e campanhas pagas.*
