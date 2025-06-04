@@ -16,10 +16,12 @@ app.use(express.static(path.join(__dirname, 'public'))); // arquivos estáticos 
 const userRoutes = require('./routes/api/user');
 const trailRoutes = require('./routes/api/trail');
 const moduleRoutes = require('./routes/api/module');
+const searchRoutes = require('./routes/api/search');
 
 app.use('/api/user', userRoutes);
 app.use('/api/trail', trailRoutes);
 app.use('/api/module', moduleRoutes);
+app.use('/api/search', searchRoutes);
 
 // Rotas da aplicação FrontEnd
 app.get('/', (req, res) => {
