@@ -1428,8 +1428,14 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 6.2 Análise de Mercado
 
-*a) Visão Geral do Setor (até 250 palavras)*
-*Contextualize o setor no qual a aplicação está inserida, considerando aspectos econômicos, tecnológicos e regulatórios. Utilize fontes confiáveis.*
+<h3> Visão Geral do Mercado</h3>
+
+&emsp;Com o aumento significativo da população, a demanda por alimentos está crescendo drasticamente. No aspecto brasileiro, o agronegócio representou cerca de 1/4 do PIB do país em 2024, com a soma de vendas de bens e serviços gerados chegando a cerca de R$ 2,72 trilhões, sendo 70% de tudo vindo do ramo agrícola, segundo a Confederação da Agricultura e Pecuária do Brasil (CNA). Também é importante citar que o país é o 1° em exportações de milho, soja, açúcar e café no mundo, sendo chamado de "celeiro do mundo", segundo a CNN Brasil. Isso mostra o quão lucrativo e importante é o agro no Brasil.
+
+ &emsp;Além disso, a inserção de tecnologia só vem crescendo. Segundo o Blog FieldView, a implementação de softwares que auxiliam o fazendeiro já é realidade. Um exemplo claro disso é o próprio Climate FieldView. Sua função engloba geração de mapas e relatórios das operações de plantio, pulverização e colheita, acompanhamento do desenvolvimento vegetativo de cada talhão através de imagens de satélite, entre outras funções. A tecnologia engloba também a produção de sementes modificadas, máquinas autônomas controladas à distância, entre outras.
+
+ &emsp;Por ser um mercado voltado a alimentos e problemas em relação a áreas verdes, o agronegócio é afetado com regulações e leis para um maior controle tanto da saúde das pessoas quanto na preservação da natureza. Na legislação brasileira, existe a Lei nº 14.785, de 27 de dezembro de 2023, que fortalece a fiscalização dos agrotóxicos desde sua criação, testes, comercialização e a venda dos mesmos. Leis de preservação também vêm aumentando, já que o crescimento agrícola está diretamente ligado ao desmatamento. A Lei nº 6.938/1981 tem como objetivo aumentar a fiscalização de áreas reservadas, aumentar a preservação e implementar instrumentos para atingir seus objetivos, como o licenciamento ambiental, a fiscalização, a punição de crimes ambientais, entre outros.
+
 
 *b) Tamanho e Crescimento do Mercado (até 250 palavras)*
 *Apresente dados quantitativos sobre o tamanho atual e projeções de crescimento do mercado. Utilize fontes confiáveis.*
@@ -1533,6 +1539,17 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 12. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
 
+Legislação — Ministério da Agricultura e Pecuária. Lei de N° 14.785, de 27 de dezembro de 2023.
+Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao
+
+Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 
+Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/
+
+Tecnologia no agronegócio: conheça 7 inovações tecnológicas 
+Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro
+
+Panorama do Agro 
+Disponivel em: https://www.cnabrasil.org.br/cna/panorama-do-agro
 
 # <a name="c9"></a>Anexos
 
