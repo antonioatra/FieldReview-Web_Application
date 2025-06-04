@@ -1437,8 +1437,14 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
  &emsp;Por ser um mercado voltado a alimentos e problemas em relação a áreas verdes, o agronegócio é afetado com regulações e leis para um maior controle tanto da saúde das pessoas quanto na preservação da natureza. Na legislação brasileira, existe a Lei nº 14.785, de 27 de dezembro de 2023, que fortalece a fiscalização dos agrotóxicos desde sua criação, testes, comercialização e a venda dos mesmos. Leis de preservação também vêm aumentando, já que o crescimento agrícola está diretamente ligado ao desmatamento. A Lei nº 6.938/1981 tem como objetivo aumentar a fiscalização de áreas reservadas, aumentar a preservação e implementar instrumentos para atingir seus objetivos, como o licenciamento ambiental, a fiscalização, a punição de crimes ambientais, entre outros.
 
 
-*b) Tamanho e Crescimento do Mercado (até 250 palavras)*
-*Apresente dados quantitativos sobre o tamanho atual e projeções de crescimento do mercado. Utilize fontes confiáveis.*
+<h3>Tamanho e Crescimento do Mercado </h3>
+
+&emsp;O mercado do agronegócio brasileiro é um dos maiores do mundo e segue em constante expansão. Segundo o IPEA (Instituto de Pesquisa Econômica Aplicada), em 2023 o Brasil obteve um superávit acumulado de US$ 148,58 bilhões, representando um crescimento de 4,9% em relação a 2022. Esses números mostram a força do setor e sua importância para a economia nacional.
+
+&emsp;De acordo com a revista Exame, entre 2000 e 2020, a produção de soja no Brasil aumentou 300%, passando de 40 milhões para 120 milhões de toneladas — um indicativo claro do crescimento contínuo do setor agrícola.
+
+&emsp;Além disso, segundo projeções da EMBRAPA e da OCDE-FAO Agricultural Outlook 2023–2032, a expectativa é que o Brasil continue sendo um dos principais exportadores mundiais de alimentos, com a produção agrícola crescendo cerca de 2,5% ao ano até 2032, impulsionada pelo aumento da demanda global por alimentos e biocombustíveis.
+
 
 *c) Tendências de Mercado (até 300 palavras)*
 *Identifique e analise tendências relevantes (tecnológicas, comportamentais e mercadológicas) que influenciam o setor. Utilize fontes confiáveis.*
