@@ -1430,11 +1430,13 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 <h3> Visão Geral do Mercado</h3>
 
-&emsp;Com o aumento significativo da população, a demanda por alimentos está crescendo drasticamente. No aspecto brasileiro, o agronegócio representou cerca de 1/4 do PIB do país em 2024, com a soma de vendas de bens e serviços gerados chegando a cerca de R$ 2,72 trilhões, sendo 70% de tudo vindo do ramo agrícola, segundo a Confederação da Agricultura e Pecuária do Brasil (CNA). Também é importante citar que o país é o 1° em exportações de milho, soja, açúcar e café no mundo, sendo chamado de "celeiro do mundo", segundo a CNN Brasil. Isso mostra o quão lucrativo e importante é o agro no Brasil.
+&emsp;Com o aumento significativo da população, a demanda por alimentos está crescendo drasticamente. No aspecto brasileiro, o agronegócio representou cerca de 1/4 do PIB do país em 2024, somado à venda de bens e serviços gerados chegando a cerca de R$ 2,72 trilhões, sendo 70% provenientes do ramo agrícola, segundo a Confederação da Agricultura e Pecuária do Brasil (CNA)<sup>[]</sup>. Ademais, o país é importante na exportação de produtos agrícolas, sendo chamado de "celeiro do mundo", segundo a CNN Brasil<sup>[]</sup>.
 
- &emsp;Além disso, a inserção de tecnologia só vem crescendo. Segundo o Blog FieldView, a implementação de softwares que auxiliam o fazendeiro já é realidade. Um exemplo claro disso é o próprio Climate FieldView. Sua função engloba geração de mapas e relatórios das operações de plantio, pulverização e colheita, acompanhamento do desenvolvimento vegetativo de cada talhão através de imagens de satélite, entre outras funções. A tecnologia engloba também a produção de sementes modificadas, máquinas autônomas controladas à distância, entre outras.
+&emsp;Além disso, a inserção de tecnologia só vem crescendo. Segundo o Blog FieldView<sup>[]</sup>, já existem soluções tecnológicas eficientes para o campo, como Climate FieldView, um sistema de monitoramento inteligente. Além disso, existem tecnologias para a produção de sementes modificadas, máquinas autônomas controladas à distância, entre outras.
 
- &emsp;Por ser um mercado voltado a alimentos e problemas em relação a áreas verdes, o agronegócio é afetado com regulações e leis para um maior controle tanto da saúde das pessoas quanto na preservação da natureza. Na legislação brasileira, existe a Lei nº 14.785, de 27 de dezembro de 2023, que fortalece a fiscalização dos agrotóxicos desde sua criação, testes, comercialização e a venda dos mesmos. Leis de preservação também vêm aumentando, já que o crescimento agrícola está diretamente ligado ao desmatamento. A Lei nº 6.938/1981 tem como objetivo aumentar a fiscalização de áreas reservadas, aumentar a preservação e implementar instrumentos para atingir seus objetivos, como o licenciamento ambiental, a fiscalização, a punição de crimes ambientais, entre outros.
+&emsp;Por ser um mercado voltado a alimentos e problemas com áreas florestais, o agronegócio é afetado com regulações para um controle tanto da saúde das pessoas quanto na preservação da natureza. Na legislação brasileira, existe a Lei nº 14.785, de 27 de dezembro de 2023, que fortalece a fiscalização dos agrotóxicos desde sua criação, testes, comercialização e a venda dos mesmos<sup>[]</sup>. Leis de preservação também vêm aumentando, já que o crescimento agrícola está diretamente ligado ao desmatamento. A Lei nº 6.938/1981 tem como objetivo aumentar a fiscalização de áreas reservadas, aumentar a preservação e implementar instrumentos para atingir seus objetivos<sup>[]</sup>.
+
+<!--Trocar os <sup>[]</sup> pelo link na referência de cada um-->
 
 
 <h3>Tamanho e Crescimento do Mercado </h3>
@@ -1547,17 +1549,15 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 12. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
 
-Legislação — Ministério da Agricultura e Pecuária. Lei de N° 14.785, de 27 de dezembro de 2023.
-Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao
+BRASIL. Ministério da Agricultura e Pecuária. Lei nº 14.785, de 27 de dezembro de 2023. Dispõe sobre o controle e a fiscalização de agrotóxicos e afins. Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao. Acesso em: 4 jun. 2025.
 
-Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 
-Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/
+BRASIL. Lei nº 6.938, de 31 de agosto de 1981. Dispõe sobre a Política Nacional do Meio Ambiente, seus fins e mecanismos de formulação e aplicação, e dá outras providências. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l6938compilada.htm. Acesso em: 4 jun. 2025.
 
-Tecnologia no agronegócio: conheça 7 inovações tecnológicas 
-Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro
+CNN Brasil. Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 4 mar. 2024. Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/. Acesso em: 4 jun. 2025.
 
-Panorama do Agro 
-Disponivel em: https://www.cnabrasil.org.br/cna/panorama-do-agro
+EQUIPE FIELDVIEW™. Tecnologia no agronegócio: conheça 7 inovações tecnológicas. 5 nov. 2021. Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro. Acesso em: 4 jun. 2025.
+
+CONFEDERAÇÃO DA AGRICULTURA E PECUÁRIA DO BRASIL (CNA). Panorama do Agro. Brasília: CNA, 2025. Disponível em: https://www.cnabrasil.org.br/cna/panorama-do-agro. Acesso em: 4 jun. 2025.
 
 # <a name="c9"></a>Anexos
 
