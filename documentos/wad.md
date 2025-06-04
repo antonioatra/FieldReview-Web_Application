@@ -1495,8 +1495,10 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 &emsp; Seu principal diferencial competitivo é o foco direto na capacitação prática e contextualizada dos usuários, algo ainda pouco explorado no setor. Além disso, a combinação de conteúdos interativos, ranking e usabilidade otimizada torna o FieldReview uma solução eficaz e alinhada às necessidades do campo.
 
-*6.2 Preço (até 200 palavras)*
-*Explique o modelo de precificação adotado e justifique com base nas análises anteriores.*
+### Preço
+&emsp; A estratégia de precificação adotada neste projeto é do tipo valorização por conteúdo e impacto, com foco em acessibilidade e escala. Considerando o público-alvo — agentes de campo (PTDs) vinculados à Bayer ou parceiros no setor agrícola — opta-se por um modelo de acesso gratuito para os usuários finais, sendo o custo integralmente subsidiado pela empresa ou parceiros institucionais. Essa abordagem reforça o compromisso da marca com o desenvolvimento técnico do setor e a democratização do conhecimento.
+
+&emsp; A decisão se justifica pelas tendências observadas nas análises anteriores. Como mostram relatórios da Embrapa e FAO, há demanda crescente por capacitação contínua e acessível, sobretudo no meio rural, onde limitações logísticas e financeiras ainda representam barreiras ao aprendizado formal. Além disso, segundo a McKinsey, investimentos em educação e tecnologia no campo geram aumento de produtividade e valor agregado à cadeia agrícola — o que justifica o investimento estratégico da Bayer nesse projeto, com retorno indireto em eficiência, sustentabilidade e posicionamento de marca.
 
 *6.3 Praça (Distribuição) (até 200 palavras)*
 *Apresente os canais digitais utilizados para distribuir e entregar a aplicação ao público.*
