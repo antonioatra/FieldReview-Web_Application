@@ -1450,9 +1450,11 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 *b) Vantagens Competitivas da Aplicação Web*
 
-&emsp; O FieldReview destaca-se como uma solução exclusiva e estratégica dentro do ecossistema Bayer, oferecendo uma experiência de capacitação focada nos Promotores Técnicos Digitais (PTDs) e consultores que operam com o Climate FieldView. Com trilhas modulares de aprendizagem adaptadas às necessidades de cada PTD, recursos de gamificação, certificações e um sistema de busca rápida para dúvidas operacionais, a plataforma promove engajamento real e aplicação prática do conhecimento. O painel de consultores, os permite monitorar e ajustar o progresso técnico da equipe, elevando o padrão de suporte agronômico prestado ao agricultor.
+&emsp; O FieldReview destaca-se como uma solução exclusiva e estratégica dentro do ecossistema Bayer, oferecendo uma experiência de capacitação focada nos Promotores Técnicos Digitais (PTDs) e consultores que operam com o Climate FieldView. Com trilhas modulares de aprendizagem adaptadas às necessidades de cada PTD, recursos de gamificação, certificações e um sistema de busca rápida para dúvidas operacionais, a plataforma promove engajamento real e aplicação prática do conhecimento. O painel de consultores, os permitem monitorar e ajustar o progresso técnico da equipe, elevando o padrão de suporte agronômico prestado ao agricultor.
 
+&emsp; A plataforma diferencia-se das aplicações comuns devido ao seu desenvolvimento exclusivo para a aprendizagem dos Promotores Técnicos Digitais. Dentre as funcionalidades específicas, destacam-se as trilhas de conhecimento, que evoluem dos conteúdos mais básicos até as funções mais recentes adicionadas ao Climate FieldView. Também há notificações para informar o usuário sobre novas trilhas atribuídas pelo seu líder de equipe. Além disso, o processo de avaliação por etapas visa melhorar a experiência dos promotores em meio à sua rotina corrida, evitando que percam muito tempo com provas extensas.
 
+&emsp; Em relação à equipe de liderança e aos produtores de conteúdo da Bayer, a aplicação se mostra relevante por suas funcionalidades administrativas. Entre os diferenciais voltados a esses profissionais, destacam-se as funções de criar, editar e excluir trilhas na plataforma, bem como a possibilidade de atribuir trilhas a funcionários específicos. Ademais, a aplicação permite visualizar dados de usuários específicos e adicionar perguntas frequentes para esclarecer dúvidas gerais dos promotores.
 
 ## 6.4 Público-Alvo
 
