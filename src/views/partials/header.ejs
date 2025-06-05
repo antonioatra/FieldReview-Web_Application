@@ -1,5 +1,5 @@
-<header class="bg-blue-900 text-white p-4 flex justify-between items-center">
-  <a href="/" class="flex items-center w-36 h-12">
+<header class="bg-[#F6F6F6] text-white p-4 flex justify-between items-center">
+  <a href="/" class="flex items-center sm:w-36 w-15 h-12">
     <svg
       width="697"
       height="239"
@@ -36,21 +36,25 @@
       </defs>
     </svg>
   </a>
-  <form action="/search" method="GET">
+  <div class = "flex">
+    <form action="/search" method="GET">
     <input 
       type="text" 
       name="q" 
       placeholder="Pesquisar..." 
-      class="p-2 rounded-md bg-white text-black w-md" 
+      class="p-2 rounded-md bg-white text-black sm:w-96 w-40" 
     />
-  </form>
-  <div class="flex items-center space-x-10">
+    </form>
+    <img src="/assets/lupahelp.svg" class="px-1">
+  </div>
+  
+  <div class="flex items-center sm:space-x-10 space-x-2">
     <a class="flex items-center gap-2" href="/help">
-      <div class="flex gap-4">
-        <p class="text-white">?</a>
-        <p class="text-white">Help</a>
+      <div class="flex gap-1">
+        <p class="mb-1 space-x-2 ml-2"><img src = "/assets/helpHome.svg">
+        <p class="flex text-black text-bold font-sans text-lg mb-2 ml-2">Help</a>
       </div>
     </a>
-    <div class="w-8 h-8 bg-gray-300 rounded-full"></div>
+    <div class="w-8 h-8 mx-3"><img src = "/assets/perfil.svg"></div>
   </div>
 </header>
