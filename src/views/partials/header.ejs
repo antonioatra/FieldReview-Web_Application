@@ -1,11 +1,22 @@
-<header class="bg-[#F6F6F6] text-white p-4 flex justify-between items-center">
-  <a href="/" class="flex items-center sm:w-36 w-15 h-12">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Ptd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<header class="bg-[#F6F6F6] text-white p-4 flex justify-between items-center relative">
+  <a href="/" class="flex items-center sm:w-36 w-20 h-12">
     <svg
       width="697"
       height="239"
       viewBox="0 0 697 239"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      class="h-full w-auto"
     >
       <g clip-path="url(#clip0_282_732)">
         <path
@@ -36,25 +47,143 @@
       </defs>
     </svg>
   </a>
-  <div class = "flex">
-    <form action="/search" method="GET">
-    <input 
-      type="text" 
-      name="q" 
-      placeholder="Pesquisar..." 
-      class="p-2 rounded-md bg-white text-black sm:w-96 w-40" 
-    />
+
+  <div class="flex">
+    <form action="/search" method="GET" class="relative">
+      <input 
+        type="text" 
+        name="q" 
+        placeholder="Pesquisar..." 
+        class="p-2 pr-10 rounded-md bg-white text-black sm:w-96 w-55" 
+      />
+      <img src="/assets/lupaHelp.svg" class="absolute right-3 top-3/4 transform -translate-y-1/2 w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     </form>
-    <img src="/assets/lupahelp.svg" class="px-1">
   </div>
   
-  <div class="flex items-center sm:space-x-10 space-x-2">
-    <a class="flex items-center gap-2" href="/help">
-      <div class="flex gap-1">
-        <p class="mb-1 space-x-2 ml-2"><img src = "/assets/helpHome.svg">
-        <p class="flex text-black text-bold font-sans text-lg mb-2 ml-2">Help</a>
-      </div>
+  <div class="hidden md:flex items-center space-x-6">
+    <a class="flex items-center gap-2 hover:bg-gray-200 p-2 rounded-lg transition-colors" href="/help">
+      <img src="/assets/helpHome.svg">
+      <span class="text-black font-sans text-lg">Help</span>
     </a>
-    <div class="w-8 h-8 mx-3"><img src = "/assets/perfil.svg"></div>
+    
+    <a href="/profile" class="hover:bg-gray-200 p-2 rounded-lg transition-colors">
+      <img src = "/assets/perfil.svg">
+    </a>
+  </div>
+
+  <div class="md:hidden relative">
+    <button 
+      id="mobileMenuButton" 
+      class="p-2 hover:bg-gray-200 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+      aria-label="Menu"
+    >
+      <div class="hamburger-icon">
+        <span class="hamburger-line block w-6 h-0.5 bg-gray-600 transition-all duration-300 ease-in-out"></span>
+        <span class="hamburger-line block w-6 h-0.5 bg-gray-600 mt-1.5 transition-all duration-300 ease-in-out"></span>
+        <span class="hamburger-line block w-6 h-0.5 bg-gray-600 mt-1.5 transition-all duration-300 ease-in-out"></span>
+      </div>
+    </button>
+    
+    <div 
+      id="mobileMenuDropdown" 
+      class="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-200 py-2 z-50 transform opacity-0 scale-95 transition-all duration-200 ease-out invisible"
+    >
+      <div class="absolute -top-2 right-4 w-4 h-4 bg-white border-l border-t border-gray-200 transform rotate-45"></div>
+      <a href="/help" class="flex items-center px-4 py-3 hover:bg-gray-50 transition-colors group">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-blue-200 transition-colors">
+          <img src="/assets/helpHome.svg">
+        </div>
+        <div class="flex-1">
+          <h4 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">Help</h4>
+        </div>
+        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+      
+      <hr class="my-1 border-gray-100">
+      
+      <a href="/profile" class="flex items-center px-4 py-3 hover:bg-gray-50 transition-colors group">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-green-200 transition-colors">
+          <img src="/assets/perfil.svg">
+        </div>
+        <div class="flex-1">
+          <h4 class="font-semibold text-gray-800 group-hover:text-green-600 transition-colors">Perfil</h4>
+        </div>
+        <svg class="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+      
+      <hr class="my-1 border-gray-100">
+      
+    </div>
   </div>
 </header>
+
+
+<script>
+const mobileMenuButton = document.getElementById('mobileMenuButton');
+const mobileMenuDropdown = document.getElementById('mobileMenuDropdown');
+const hamburgerLines = document.querySelectorAll('.hamburger-line');
+
+let isMenuOpen = false;
+
+mobileMenuButton.addEventListener('click', function(e) {
+  e.stopPropagation();
+  toggleMobileMenu();
+});
+
+document.addEventListener('click', function(e) {
+  if (!mobileMenuButton.contains(e.target) && !mobileMenuDropdown.contains(e.target)) {
+    closeMobileMenu();
+  }
+});
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth >= 768) { 
+    closeMobileMenu();
+  }
+});
+
+function toggleMobileMenu() {
+  isMenuOpen = !isMenuOpen;
+  
+  if (isMenuOpen) {
+    openMobileMenu();
+  } else {
+    closeMobileMenu();
+  }
+}
+
+function openMobileMenu() {
+  isMenuOpen = true;
+  
+  mobileMenuDropdown.classList.remove('invisible', 'opacity-0', 'scale-95');
+  mobileMenuDropdown.classList.add('visible', 'opacity-100', 'scale-100');
+  
+  hamburgerLines[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+  hamburgerLines[1].style.opacity = '0';
+  hamburgerLines[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+}
+
+function closeMobileMenu() {
+  isMenuOpen = false;
+
+  mobileMenuDropdown.classList.add('invisible', 'opacity-0', 'scale-95');
+  mobileMenuDropdown.classList.remove('visible', 'opacity-100', 'scale-100');
+  
+  hamburgerLines[0].style.transform = 'none';
+  hamburgerLines[1].style.opacity = '1';
+  hamburgerLines[2].style.transform = 'none';
+}
+
+mobileMenuDropdown.addEventListener('click', function(e) {
+  if (e.target.tagName === 'A' || e.target.closest('a')) {
+    closeMobileMenu();
+  }
+});
+</script>
+
+</body>
+</html>
