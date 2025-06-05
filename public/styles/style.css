@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url('/fonts/Helvetica.woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url('/fonts/Helvetica-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-helvetica {
+    font-family: "Helvetica", sans-serif;
+}

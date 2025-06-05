@@ -10,7 +10,7 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true })); // para forms
-app.use(express.static(path.join(__dirname, 'public'))); // arquivos estáticos (css, js, imagens)
+app.use(express.static(path.join(__dirname, '../public'))); // arquivos estáticos (css, js, imagens)
 
 // Importando rotas da API
 const userRoutes = require('./routes/api/user');
