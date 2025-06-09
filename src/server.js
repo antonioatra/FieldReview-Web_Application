@@ -50,7 +50,7 @@ app.get('/search', (req, res) => {
 
 app.get('/trail/:id', (req, res) => {
   const trailId = req.params.id;
-  res.render('trail', {
+  res.render('user/trail', {
     id: trailId,
     title: 'Título da Trilha',
     description:
