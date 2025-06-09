@@ -38,18 +38,23 @@ app.get('/register', (req, res) => {
 });
 
 app.get('/search', async (req, res) => {
-  const searchTerm = req.query.searchTerm || ''; // Extract searchTerm from URL query
+  const searchTerm = req.query.searchTerm; // Extract searchTerm from URL query
   let helpResults = [];
   let trailResults = [];
   let error = null;
 
+  if (!searchTerm) {
+    // Se nenhum termo for passado, voltar para a página inicial
+    return res.redirect('/');
+  }
+
   try {
     // Fetch help results
     const response = await axios.get('http://localhost:3000/api/search', {
-      searchTerm: searchTerm,
+      data: {
+        searchTerm: searchTerm,
+      },
     });
-    console.log(`Buscando resultados para o termo: ${searchTerm}`);
-    console.log('Resultados recebidos:', response.data);
 
     helpResults = response.data.help;
     trailResults = response.data.modules;
