@@ -1427,6 +1427,10 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 6.3 Análise da Concorrência
 
+&emsp; Compreender quem são os concorrentes diretos e indiretos da solução proposta é essencial para o sucesso do projeto. Essa análise fornece uma visão estratégica do mercado, permitindo identificar lacunas, oportunidades de diferenciação e possíveis ameaças à adoção da aplicação.
+
+*a) Principais Concorrentes*
+
 &emsp; <strong> Concorrentes diretos </strong> são plataformas que oferecem serviços semelhantes, voltados ao monitoramento de lavouras, análise de dados agronômicos e suporte à tomada de decisão no campo. Destacam-se:
 <ul> 
     <li> <p> <strong> John Deere Operations Center: </strong> Foco em conectividade de máquinas agrícolas, mapeamento e gestão operacional. </p> </li>
