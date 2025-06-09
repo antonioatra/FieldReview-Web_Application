@@ -10,13 +10,13 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-white">
     <%- include('./partials/header.ejs') %>
 
-    <main class="p-6 min-h-screen">
+    <main class="p-6 min-h-screen md:mx-20">
       <section class="mb-6">
-        <h2 class="text-3xl font-bold text-blue-900">
-          Pesquisa: <%= searchTerm || 'Nenhum termo' %>
+        <h2 class="text-3xl text-black">
+          Resultados da sua pesquisa: <%= searchTerm || 'Nenhum termo' %>
         </h2>
       </section>
 
