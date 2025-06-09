@@ -10,16 +10,17 @@
     <%- include('./partials/header.ejs') %>
 
     <main class="p-6 min-h-screen">
+      <br>
       <section class="mb-6">
-        <h2 class="text-3xl font-bold text-blue-900">Help - Perguntas Frequentes</h2>
+        <h2 class="text-4xl font-regular text-black">Help - Perguntas Frequentes</h2>
       </section>
-
-      <div class="flex flex-col gap-10">
+      
+      <div class="flex flex-col gap-10 pb-2 m-15">
         <% if (results && results.length > 0) { %>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <% results.forEach(result => { %>
-          <div class="bg-black/2 p-6 rounded-lg border-1 border-black/10">
-            <h3 class="text-xl font-bold text-blue-900 mb-2"><%= result.title %></h3>
+          <div class="bg-black/2 p-6 rounded-2xl border-1 border-black/10">
+            <h3 class="text-xl font-bold text-sky-900 mb-2"><%= result.title %></h3>
             <p><%= result.description %></p>
           </div>
           <% }) %>
