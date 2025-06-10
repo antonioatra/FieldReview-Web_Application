@@ -731,7 +731,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura: Guia de Cores</sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/guiaCores.png">
+<img src="../assets/assetsWAD/guiaCores.jpg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> 
 
 &emsp; Um guia de cores é um documento que define um conjunto padronizado de cores a serem usadas em uma interface digital, com o objetivo de garantir consistência visual, usabilidade e identidade da marca.
@@ -963,7 +963,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura : Tela de help do PTD.</sup>
 </div>
 <div align="center">
-<img src="../assets/assetsWAD/tela de help PTD.png">
+<img src="../assets/assetsWAD/helpPTD.png">
 </div>
 <div align="center">
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
@@ -973,7 +973,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura : Tela mobile de help do PTD.</sup>
 </div>
 <div align="center">
-<img src="../assets/assetsWAD/helpPTD.png">
+<img src="../assets/assetsWAD/helpPTDmobile.png">
 </div>
 <div align="center">
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
@@ -992,7 +992,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura : Página de trilhas do administrador.</sup>
 </div>
 <div align="center">
-<img src="../assets/assetsWAD/trilhaAdm.png">
+<img src="../assets/assetsWAD/admtrilha.png">
 </div>
 <div align="center">
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
@@ -1002,7 +1002,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura: Tela mobile de trilhas do administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/trilhaADM.png">
+<img src="../assets/assetsWAD/trilhaADMmobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 
@@ -1022,7 +1022,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura: Tela mobile de editar trilha do administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/editorTrilhaADM.png">
+<img src="../assets/assetsWAD/editorTrilhaAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Sobre a tela de editar o módulo, nela o usuário pode alterar o conteúdo e as perguntas do material selecionado, assim como é apresentado na imagem abaixo:
@@ -1041,7 +1041,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura: Tela mobile de editar módulos do administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/editorTrilha.png">
+<img src="../assets/assetsWAD/editarModuloAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; No que diz respeito à tela de usuários, nela aparece todos os usuários cadastrados na plataforma, com a possibilidade do administrador poder ver progresso e atribuir trilhas ao usuário selecionado, assim como é apresentado na figura abaixo:
@@ -1060,7 +1060,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura: Tela mobile de usuários do administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/usuarioADM.png">
+<img src="../assets/assetsWAD/usuarioAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Sobre a tela de atribuir uma
@@ -1089,14 +1089,14 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 <sup>Figura: Tela de help administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/help adm.png">
+<img src="../assets/assetsWAD/admHelp.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 <p align = "center">
 <sup>Figura: Tela mobile de help administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/helpADM.png">
+<img src="../assets/assetsWAD/admHelpMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; A tela de edição do help permite ao administrador criar ou modificar cards de perguntas frequentes, inserindo título e conteúdo de forma rápida. 
@@ -1105,14 +1105,14 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 <sup>Figura: Tela de edição do help administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/adicionar help adm.png">
+<img src="../assets/assetsWAD/adicionarHelp.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 <p align = "center">
 <sup>Figura: Tela mobile de edição do help administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/editarHelp.png">
+<img src="../assets/assetsWAD/adicionarHelpMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 
