@@ -1410,17 +1410,43 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 6.1 Resumo Executivo
 
-*Preencher com até 300 palavras, sem necessidade de fonte*
+&emsp; O FieldReview foi desenvolvido para enfrentar um desafio recorrente entre os Promotores Técnicos Digitais (PTDs): a falta de familiaridade com a plataforma Climate FieldView, essencial para suas atividades em campo. Essa lacuna de conhecimento impacta diretamente na qualidade do serviço prestado e na eficiência das operações.<br>
+&emsp; O projeto encontra uma oportunidade sólida no mercado agro brasileiro, que emprega milhões de pessoas e se mantém como um dos pilares da economia nacional. Em 2024, o setor alcançou R$ 164 bilhões em exportações, representando cerca de 50% das exportações totais do país. Esse cenário reforça a importância de soluções que melhorem a performance e capacitação dos profissionais que atuam diretamente no campo.<br>
+&emsp; O diferencial competitivo do FieldReview está em sua proposta direcionada ao desenvolvimento técnico e prático dos PTDs, algo pouco explorado por outras soluções. Ao invés de apenas entregar uma ferramenta operacional, a aplicação foca na formação contínua dos usuários, permitindo uma atuação mais segura e eficiente com a plataforma FieldView.
 
-*Apresente de forma clara e objetiva os principais destaques do projeto: oportunidades de mercado, diferenciais competitivos da aplicação web e os objetivos estratégicos pretendidos.*
+&emsp; Entre os objetivos estratégicos do projeto, destacam-se:
+
+- Melhorar o domínio dos PTDs sobre o uso do FieldView;
+- Aumentar a produtividade e a qualidade do atendimento em campo;
+- Reduzir erros causados por desconhecimento técnico;
+- Elevar a satisfação dos clientes atendidos;
+- Contribuir para o fortalecimento da imagem da empresa no setor.
+  
+&emsp; Com essa abordagem, o FieldReview visa não apenas resolver um problema técnico, mas também gerar valor real para os profissionais, as empresas e o agronegócio como um todo.
+
+
 
 ## 6.2 Análise de Mercado
 
-*a) Visão Geral do Setor (até 250 palavras)*
-*Contextualize o setor no qual a aplicação está inserida, considerando aspectos econômicos, tecnológicos e regulatórios. Utilize fontes confiáveis.*
+<h3> Visão Geral do Mercado</h3>
 
-*b) Tamanho e Crescimento do Mercado (até 250 palavras)*
-*Apresente dados quantitativos sobre o tamanho atual e projeções de crescimento do mercado. Utilize fontes confiáveis.*
+&emsp;Com o aumento significativo da população, a demanda por alimentos está crescendo drasticamente. No aspecto brasileiro, o agronegócio representou cerca de 1/4 do PIB do país em 2024, somado à venda de bens e serviços gerados chegando a cerca de R$ 2,72 trilhões, sendo 70% provenientes do ramo agrícola, segundo a Confederação da Agricultura e Pecuária do Brasil (CNA)<sup>[]</sup>. Ademais, o país é importante na exportação de produtos agrícolas, sendo chamado de "celeiro do mundo", segundo a CNN Brasil<sup>[]</sup>.
+
+&emsp;Além disso, a inserção de tecnologia só vem crescendo. Segundo o Blog FieldView<sup>[]</sup>, já existem soluções tecnológicas eficientes para o campo, como Climate FieldView, um sistema de monitoramento inteligente. Além disso, existem tecnologias para a produção de sementes modificadas, máquinas autônomas controladas à distância, entre outras.
+
+&emsp;Por ser um mercado voltado a alimentos e problemas com áreas florestais, o agronegócio é afetado com regulações para um controle tanto da saúde das pessoas quanto na preservação da natureza. Na legislação brasileira, existe a Lei nº 14.785, de 27 de dezembro de 2023, que fortalece a fiscalização dos agrotóxicos desde sua criação, testes, comercialização e a venda dos mesmos<sup>[]</sup>. Leis de preservação também vêm aumentando, já que o crescimento agrícola está diretamente ligado ao desmatamento. A Lei nº 6.938/1981 tem como objetivo aumentar a fiscalização de áreas reservadas, aumentar a preservação e implementar instrumentos para atingir seus objetivos<sup>[]</sup>.
+
+<!--Trocar os <sup>[]</sup> pelo link na referência de cada um-->
+
+
+<h3>Tamanho e Crescimento do Mercado </h3>
+
+&emsp;O mercado do agronegócio brasileiro é um dos maiores do mundo e segue em constante expansão. Segundo o IPEA (Instituto de Pesquisa Econômica Aplicada), em 2023 o Brasil obteve um superávit acumulado de US$ 148,58 bilhões, representando um crescimento de 4,9% em relação a 2022. Esses números mostram a força do setor e sua importância para a economia nacional.
+
+&emsp;De acordo com a revista Exame, entre 2000 e 2020, a produção de soja no Brasil aumentou 300%, passando de 40 milhões para 120 milhões de toneladas — um indicativo claro do crescimento contínuo do setor agrícola.
+
+&emsp;Além disso, segundo projeções da EMBRAPA e da OCDE-FAO Agricultural Outlook 2023–2032, a expectativa é que o Brasil continue sendo um dos principais exportadores mundiais de alimentos, com a produção agrícola crescendo cerca de 2,5% ao ano até 2032, impulsionada pelo aumento da demanda global por alimentos e biocombustíveis.
+
 
 <h3> Tendências do Mercado </h3>
 
@@ -1438,9 +1464,13 @@ Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizag
 *a) Principais Concorrentes (até 250 palavras)*
 *Liste os concorrentes diretos e indiretos, destacando suas principais características e posicionamento no mercado.*
 
-*b) Vantagens Competitivas da Aplicação Web (até 250 palavras)*
-*Descreva os diferenciais da sua aplicação em relação aos concorrentes, sem necessidade de citação de fontes.*
+*b) Vantagens Competitivas da Aplicação Web*
 
+&emsp; O FieldReview destaca-se como uma solução exclusiva e estratégica dentro do ecossistema Bayer, oferecendo uma experiência de capacitação focada nos Promotores Técnicos Digitais (PTDs) e consultores que operam com o Climate FieldView. Com trilhas modulares de aprendizagem adaptadas às necessidades de cada PTD, recursos de gamificação, certificações e um sistema de busca rápida para dúvidas operacionais, a plataforma promove engajamento real e aplicação prática do conhecimento. O painel de consultores, os permitem monitorar e ajustar o progresso técnico da equipe, elevando o padrão de suporte agronômico prestado ao agricultor.
+
+&emsp; A plataforma diferencia-se das aplicações comuns devido ao seu desenvolvimento exclusivo para a aprendizagem dos Promotores Técnicos Digitais. Dentre as funcionalidades específicas, destacam-se as trilhas de conhecimento, que evoluem dos conteúdos mais básicos até as funções mais recentes adicionadas ao Climate FieldView. Também há notificações para informar o usuário sobre novas trilhas atribuídas pelo seu líder de equipe. Além disso, o processo de avaliação por etapas visa melhorar a experiência dos promotores em meio à sua rotina corrida, evitando que percam muito tempo com provas extensas.
+
+&emsp; Em relação à equipe de liderança e aos produtores de conteúdo da Bayer, a aplicação se mostra relevante por suas funcionalidades administrativas. Entre os diferenciais voltados a esses profissionais, destacam-se as funções de criar, editar e excluir trilhas na plataforma, bem como a possibilidade de atribuir trilhas a funcionários específicos. Ademais, a aplicação permite visualizar dados de usuários específicos e adicionar perguntas frequentes para esclarecer dúvidas gerais dos promotores.
 
 ## 6.4 Público-Alvo
 
@@ -1453,22 +1483,48 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 ## 6.5 Posicionamento
 
-*a) Proposta de Valor Única (até 250 palavras)*
-*Defina de maneira clara o que torna a sua aplicação única e valiosa para o mercado.*
+*a) Proposta de Valor Única*
 
-*b) Estratégia de Diferenciação (até 250 palavras)*
-*Explique como sua aplicação se destacará da concorrência, evidenciando a lógica por trás do posicionamento.*
+&emsp; O FieldReview oferece uma proposta de valor única ao capacitar Promotores Técnicos Digitais (PTDs) no uso eficiente do Climate FieldView, plataforma líder em agricultura digital. Diferentemente de soluções genéricas de treinamento, o FieldReview é uma ferramenta sob medida que combina trilhas de aprendizado intuitivas, sistema de gamificação com pontuação e certificados, e uma interface de administração robusta para acompanhamento de desempenho. Essa abordagem garante que os PTDs adquiram habilidades técnicas de forma ágil e prática, reduzindo a dependência de suporte remoto e elevando a qualidade do atendimento presencial aos agricultores. A funcionalidade de busca rápida permite resolver dúvidas em tempo real, enquanto o sistema de ranking e certificados incentiva o engajamento contínuo. Para os consultores, a plataforma oferece visibilidade detalhada do progresso da equipe, possibilitando a personalização de trilhas de capacitação. Ao integrar tecnologia educacional com as necessidades específicas do setor agrícola, o FieldReview não apenas melhora a eficiência operacional, mas também fortalece a confiança dos clientes na Bayer, promovendo maior adoção e satisfação com o Climate FieldView. Essa solução única alinha capacitação técnica com inovação, atendendo às demandas de um mercado agrícola cada vez mais digitalizado e competitivo.
+
+
+*b) Estratégia de Diferenciação*
+
+&emsp; A estratégia de diferenciação do FieldReview baseia-se em sua abordagem personalizada e focada nas necessidades específicas dos Promotores Técnicos Digitais (PTDs) e consultores da Bayer Crop Science. Diferentemente de plataformas genéricas de e-learning, o FieldReview é projetado exclusivamente para o ecossistema do Climate FieldView, garantindo relevância contextual e aplicabilidade direta no campo. A combinação de trilhas de aprendizado modulares, gamificação com pontuação e certificados, e uma interface de busca rápida para resolução de dúvidas em tempo real distingue a aplicação de concorrentes que oferecem treinamentos amplos e menos específicos. Além disso, o sistema de administração permite que consultores monitorem e personalizem o aprendizado, ajustando trilhas às deficiências técnicas de cada PTD, o que aumenta a eficiência e a eficácia do treinamento. A identidade visual alinhada à Bayer, utilizando cores e tipografia consistentes, reforça a credibilidade e integração com a marca. A usabilidade otimizada para desktop e mobile assegura acessibilidade em diferentes contextos, incluindo áreas rurais com conectividade limitada. Ao focar na capacitação prática e no acompanhamento detalhado do desempenho, o FieldReview se posiciona como uma ferramenta indispensável para melhorar a qualidade do suporte técnico, reduzir a sobrecarga no atendimento remoto e elevar a satisfação dos agricultores, destacando-se em um mercado onde a precisão e a agilidade no treinamento são cruciais.
+
 
 ## 6.6 Estratégia de Marketing 
 
-*a) Produto/Serviço (até 200 palavras)*
-*Descreva as funcionalidades, benefícios e diferenciais da aplicação*
+&emsp; A estratégia de marketing é um plano voltado para o desenvolvimento e posicionamento de produtos ou serviços no mercado. Ela se baseia em quatro pilares fundamentais, conhecidos como os 4 Ps do marketing: Produto, Preço, Praça (distribuição) e Promoção.<br>
+&emsp; Essa estratégia é essencial para o sucesso de um produto, pois permite identificar oportunidades de inovação e diferenciação, atendendo às necessidades reais do cliente. Ao considerar aspectos como funcionalidade, valor percebido, canais de acesso e formas de divulgação, a estratégia de marketing contribui diretamente para garantir que o produto seja útil, relevante e competitivo no mercado.
 
-*6.2 Preço (até 200 palavras)*
-*Explique o modelo de precificação adotado e justifique com base nas análises anteriores.*
+### Produto
+&emsp; O FieldReview é uma plataforma web voltada para a capacitação dos Promotores Técnicos Digitais (PTDs) no uso da ferramenta Climate FieldView, essencial para sua atuação em campo. A aplicação oferece conteúdos estruturados que ajudam os profissionais a aprofundarem seus conhecimentos e a solucionarem dúvidas de forma rápida e eficiente.
 
-*6.3 Praça (Distribuição) (até 200 palavras)*
-*Apresente os canais digitais utilizados para distribuir e entregar a aplicação ao público.*
+&emsp; Entre as principais funcionalidades, destacam-se:
+
+- Acesso a materiais de estudo e conteúdos organizados por temas;
+
+- Sistema de perguntas frequentes (FAQ) com busca inteligente por tópicos;
+
+- Ranking de desempenho, que estimula a aprendizagem contínua e saudável competitividade entre os usuários;
+
+- Interface intuitiva e responsiva, facilitando o uso em diferentes dispositivos.
+
+&emsp; Como benefícios, o FieldReview contribui para uma atuação mais segura e eficiente dos PTDs, reduz erros operacionais e melhora o atendimento ao cliente. A plataforma também promove o desenvolvimento técnico contínuo, agregando valor ao trabalho do profissional.
+
+&emsp; Seu principal diferencial competitivo é o foco direto na capacitação prática e contextualizada dos usuários, algo ainda pouco explorado no setor. Além disso, a combinação de conteúdos interativos, ranking e usabilidade otimizada torna o FieldReview uma solução eficaz e alinhada às necessidades do campo.
+
+### Preço
+&emsp; A estratégia de precificação adotada neste projeto é do tipo valorização por conteúdo e impacto, com foco em acessibilidade e escala. Considerando o público-alvo — agentes de campo (PTDs) vinculados à Bayer ou parceiros no setor agrícola — opta-se por um modelo de acesso gratuito para os usuários finais, sendo o custo integralmente subsidiado pela empresa ou parceiros institucionais. Essa abordagem reforça o compromisso da marca com o desenvolvimento técnico do setor e a democratização do conhecimento.
+
+&emsp; A decisão se justifica pelas tendências observadas nas análises anteriores. Como mostram relatórios da Embrapa e FAO, há demanda crescente por capacitação contínua e acessível, sobretudo no meio rural, onde limitações logísticas e financeiras ainda representam barreiras ao aprendizado formal. Além disso, segundo a McKinsey, investimentos em educação e tecnologia no campo geram aumento de produtividade e valor agregado à cadeia agrícola — o que justifica o investimento estratégico da Bayer nesse projeto, com retorno indireto em eficiência, sustentabilidade e posicionamento de marca.
+
+*6.3 Praça (Distribuição)*
+
+&emsp; O FieldReview, como aplicação web, será distribuído via navegadores, acessível em dispositivos Android, iOS (iPads, iPhones) e desktops, semelhante ao Climate FieldView™. A Bayer o disponibilizará em seu [site oficial](https://www.agro.bayer.com.br/) e na plataforma Orbia, conectando Promotores Técnicos Digitais (PTDs) a agricultores. O LinkedIn será utilizado para promover a ferramenta, com posts direcionados aos profissionais do agronegócio, destacando benefícios como monitoramento de lavouras. Usando sistemas de CRM, a Bayer enviará e-mails segmentados a PTDs, com links diretos para o FieldReview e guias de uso, facilitando a adoção. Eventos como a Agrishow e dias de campo do Bayer Forward Farming promoveriam a ferramenta com demonstrações práticas e QR codes para acesso via navegador. A integração com o programa Impulso Bayer reforçaria a distribuição, oferecendo benefícios como pontos para usuários testarem, garantindo alcance e engajamento com agricultores e distribuidores.
+
+
 
 *6.4 Promoção (até 200 palavras)*
 *Descreva as estratégias digitais planejadas, como SEO, redes sociais, marketing de conteúdo e campanhas pagas.*
@@ -1514,6 +1570,15 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 15. FAO – Food and Agriculture Organization of the United Nations. The State of Food and Agriculture 2021: making agrifood systems more resilient to shocks and stresses. Rome: FAO, 2021. Disponível em: https://openknowledge.fao.org/handle/20.500.14283/cb4476en.
 
+16. BRASIL. Ministério da Agricultura e Pecuária. Lei nº 14.785, de 27 de dezembro de 2023. Dispõe sobre o controle e a fiscalização de agrotóxicos e afins. Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao. Acesso em: 4 jun. 2025.
+
+17. BRASIL. Lei nº 6.938, de 31 de agosto de 1981. Dispõe sobre a Política Nacional do Meio Ambiente, seus fins e mecanismos de formulação e aplicação, e dá outras providências. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l6938compilada.htm. Acesso em: 4 jun. 2025.
+
+18. CNN Brasil. Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 4 mar. 2024. Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/. Acesso em: 4 jun. 2025.
+
+19. EQUIPE FIELDVIEW™. Tecnologia no agronegócio: conheça 7 inovações tecnológicas. 5 nov. 2021. Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro. Acesso em: 4 jun. 2025.
+
+20. CONFEDERAÇÃO DA AGRICULTURA E PECUÁRIA DO BRASIL (CNA). Panorama do Agro. Brasília: CNA, 2025. Disponível em: https://www.cnabrasil.org.br/cna/panorama-do-agro. Acesso em: 4 jun. 2025.
 
 # <a name="c9"></a>Anexos
 

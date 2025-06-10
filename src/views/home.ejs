@@ -34,61 +34,61 @@
       }
     </style>
   </head>
-  <body class="font-sans">
+  <body class="font-sans overflow-auto">
     <%- include('./partials/header.ejs') %>
 
     <main class="p-6">
       <section class="mb-6">
-        <h2 class="text-3xl font-bold text-blue-900">Bem-Vindo!</h2>
+        <h2 class="text-4xl sm:text-3xl font-bold text-[color:#00B5EF]">
+          Bem-Vindo!
+        </h2>
       </section>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        <div class="bg-white p-6 rounded-lg border-2 border-black/10">
-          <h3 class="text-xl font-bold text-blue-900 mb-4">Ranking</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-6">
+        <div class="bg-white rounded-lg border-2 border-black/10">
+          <h3 class="text-xl font-semibold font-sans text-[color:#FFFFFF] mb-4 bg-[color:#00B5EF] px-1 w-full">Ranking</h3>
           <ul class="space-y-2">
-            <li class="flex items-center space-x-2">
-              <span class="text-yellow-500 text-2xl">👑</span>
-              <span class="bg-blue-900 text-white px-4 py-2 rounded-md">1. João Silva</span>
+            <li class="flex flex-col items-center space-x-2">
+              <span>
+                <img src = "/assets/coroaHomePtd.svg" class = "w-6 h-6">
+              </span>
+              <span class="bg-[color:#00B5EF] text-white px-20 py-3 rounded-m rounded-md">1. João Silva</span>
             </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-gray-500">2.</span>
-              <span class="text-blue-900">Lucas Pereira</span>
+            <li class="flex flex-col items-center space-y-2 py-2">
+              <span class="text-blue-900">2. Lucas Pereira</span>
             </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-gray-500">3.</span>
-              <span class="text-blue-900">Gabriel Ferreira</span>
+            <li class="flex flex-col items-center space-y-2 py-2">
+              <span class="text-blue-900">3. Gabriel Ferreira</span>
             </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-gray-500">4.</span>
-              <span class="text-blue-900">Mateus Souza</span>
+            <li class="flex flex-col items-center space-y-2 py-2">
+              <span class="text-blue-900">4. Mateus Souza</span>
             </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-gray-500">N.</span>
-              <span class="text-gray-500">Lorem ipsum</span>
+            <li class="flex flex-col items-center space-y-2 py-2">
+              <span class="text-gray-500">N. Lorem ipsum</span>
             </li>
           </ul>
         </div>
 
-        <div class="bg-white p-6 rounded-lg border-2 border-black/10 md:col-span-2">
-          <h3 class="text-xl font-bold text-blue-900 mb-4">Notificação</h3>
+        <div class="bg-white rounded-lg border-2 border-black/10 md:col-span-2">
+          <h3 class="text-xl font-semibold font-sans text-[color:#FFFFFF] mb-4 bg-[color:#00B5EF] px-1">Notificação</h3>
           <ul class="space-y-4">
             <li>
-              <strong class="text-blue-900">Novo trilha disponível!</strong>
-              <p class="text-gray-600">
+              <strong class="text-bold px-6">Novo trilha disponível!</strong>
+              <p class="text-gray-600 px-6">
                 Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.
               </p>
             </li>
             <li>
-              <strong class="text-blue-900">Nova trilha atribuída a você!</strong>
-              <p class="text-gray-600">
+              <strong class="text-bold px-6">Nova trilha atribuída a você!</strong>
+              <p class="text-gray-600 px-6">
                 Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.
               </p>
             </li>
             <li>
-              <strong class="text-blue-900">Atenção para a trilha 1!</strong>
-              <p class="text-gray-600">
+              <strong class="text-bold px-6">Atenção para a trilha 1!</strong>
+              <p class="text-gray-600 px-6">
                 Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.
               </p>
@@ -98,20 +98,20 @@
       </div>
 
       <section class="mb-6">
-        <h3 class="text-2xl font-bold text-blue-900 mb-4">Suas Trilhas</h3>
+        <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4">Suas Trilhas</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <% for (let i = 0; i < 4; i++) { %> <%- include('./partials/trail/card.ejs') -%> <% } %>
         </div>
       </section>
 
       <section>
-        <h3 class="text-2xl font-bold text-blue-900 mb-4">Trilhas Disponíveis</h3>
+        <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4">Trilhas Disponíveis</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <% for (let i = 0; i < 4; i++) { %> <%- include('./partials/trail/card.ejs') -%> <% } %>
         </div>
       </section>
     </main>
 
-    <%- include('./partials/footer.ejs') %>
+     <!-- <%- include('./partials/footer.ejs') %>s  -->
   </body>
 </html>

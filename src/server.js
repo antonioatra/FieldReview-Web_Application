@@ -10,16 +10,18 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true })); // para forms
-app.use(express.static(path.join(__dirname, 'public'))); // arquivos estáticos (css, js, imagens)
+app.use(express.static(path.join(__dirname, '../public'))); // arquivos estáticos (css, js, imagens)
 
 // Importando rotas da API
 const userRoutes = require('./routes/api/user');
 const trailRoutes = require('./routes/api/trail');
 const moduleRoutes = require('./routes/api/module');
+const searchRoutes = require('./routes/api/search');
 
 app.use('/api/user', userRoutes);
 app.use('/api/trail', trailRoutes);
 app.use('/api/module', moduleRoutes);
+app.use('/api/search', searchRoutes);
 
 // Rotas da aplicação FrontEnd
 app.get('/', (req, res) => {
@@ -50,7 +52,7 @@ app.get('/search', (req, res) => {
 
 app.get('/trail/:id', (req, res) => {
   const trailId = req.params.id;
-  res.render('trail', {
+  res.render('user/trail', {
     id: trailId,
     title: 'Título da Trilha',
     description:

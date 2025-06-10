@@ -7,6 +7,7 @@ exports.store = async (req, res) => {
     res.status(201).json({ message: 'Titulo Criado com sucesso', trail: result.rows[0] });
   } catch (err) {
     res.status(500).json({ error: 'Erro ao criar trilha' });
+    console.error("Erro encotrado " + err)
   }
 };
 
