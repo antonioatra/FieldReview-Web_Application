@@ -5,32 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FieldReview - Help</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <%- include('./partials/header.ejs') %>
+    <%- include("./partials/header.ejs") %>
 
     <main class="p-6 min-h-screen">
       <br>
-      <section class="mb-6">
-        <h2 class="text-4xl font-regular text-black">Help - Perguntas Frequentes</h2>
+      <section class="">
+        <h2 class="text-2xl md:text-4xl text-center sm:text-left font-regular text-black md:m-15 m:14">Perguntas Frequentes</h2>
       </section>
+      <br>
+
+      <!-- Loading indicator -->
+      <div id="loading" class="text-center py-8">
+        <p class="text-gray-600">Carregando...</p>
+      </div>
+
+      <!-- Error message -->
+      <div id="error" class="text-center py-8 hidden">
+        <p class="text-red-600">Erro ao carregar os dados. Tente novamente mais tarde.</p>
+      </div>
       
-      <div class="flex flex-col gap-10 pb-2 m-15">
-        <% if (results && results.length > 0) { %>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <% results.forEach(result => { %>
-          <div class="bg-black/2 p-6 rounded-2xl border-1 border-black/10">
-            <h3 class="text-xl font-bold text-sky-900 mb-2"><%= result.title %></h3>
-            <p><%= result.description %></p>
-          </div>
-          <% }) %>
-        </div>
-        <% } else { %>
-        <p class="text-gray-600">Nenhum resultado encontrado.</p>
-        <% } %>
+      <!-- bloco com as duvidas -->
+      <div id="results-container" class="flex flex-col gap-10 pb-2 sm:m-15 m:5 itens-center sm:itens-left">
+        <!-- Results will be loaded here -->
       </div>
     </main>
 
-    <%- include('./partials/footer.ejs') %>
+    <%- include("./partials/footer.ejs") %>
+
+    <script>
+      // Função para carregar dados via Axios
+      async function loadHelpData() {
+        const loadingElement = document.getElementById("loading");
+        const errorElement = document.getElementById("error");
+        const resultsContainer = document.getElementById("results-container");
+
+        try {
+          // Mostra loading
+          loadingElement.style.display = "block";
+          errorElement.classList.add("hidden");
+
+          // Faz requisição para a API
+          const response = await axios.get("/api/help");
+          
+          // Esconde loading
+          loadingElement.style.display = "none";
+
+          // Verifica se há dados
+          const helpData = response.data.help || [];
+          
+          if (helpData.length > 0) {
+            // Cria HTML para os resultados
+            const resultsHTML = `
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                ${helpData.map(result => `
+                  <div class="bg-black/2 p-6 rounded-2xl border-1 border-black/10">
+                    <h3 class="text-xl font-bold text-sky-900 mb-2">${result.titulo || 'Título não disponível'}</h3>
+                    <p>${result.conteudo || 'Descrição não disponível'}</p>
+                  </div>
+                `).join('')}
+              </div>
+            `;
+            
+            resultsContainer.innerHTML = resultsHTML;
+          } else {
+            resultsContainer.innerHTML = '<p class="text-gray-600">Nenhum resultado encontrado.</p>';
+          }
+
+        } catch (error) {
+          console.error('Erro ao carregar dados:', error);
+          
+          // Esconde loading e mostra erro
+          loadingElement.style.display = "none";
+          errorElement.classList.remove("hidden");
+          
+          
+      }}
+
+      document.addEventListener('DOMContentLoaded', loadHelpData);
+
+      function reloadHelpData() {
+        loadHelpData();
+      }
+    </script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-
+const axios = require('axios');
 const path = require('path');
 
 const app = express();
@@ -16,10 +16,12 @@ app.use(express.static(path.join(__dirname, 'public'))); // arquivos estáticos 
 const userRoutes = require('./routes/api/user');
 const trailRoutes = require('./routes/api/trail');
 const moduleRoutes = require('./routes/api/module');
+const helpRoutes = require('./routes/api/help');
 
 app.use('/api/user', userRoutes);
 app.use('/api/trail', trailRoutes);
 app.use('/api/module', moduleRoutes);
+app.use('/api/help', helpRoutes);
 
 // Rotas da aplicação FrontEnd
 app.get('/', (req, res) => {
@@ -58,33 +60,20 @@ app.get('/trail/:id', (req, res) => {
   });
 });
 
-app.get('/help', (req, res) => {
-  const mock = [
-    {
-      title: 'Ajuste de produtividade pelo FieldViewTM Cab app - iOS',
-      description:
-        'O ajuste de produtividade pode ser aplicado quando os sensores das máquinas não foram calibrados corretamente 1. Faça o login no seu aplicativo FieldView Cab. 2. Na página principal, clique no ícone Mapa.',
-    },
-    {
-      title: 'Exemplo de Título',
-      description:
-        'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboreis nis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    },
-    {
-      title: 'Exemplo de Título',
-      description:
-        'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboreis nis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    },
-    {
-      title: 'Exemplo de Título',
-      description:
-        'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboreis nis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    },
-  ];
+app.get('/help', async (req, res) => {
+  try {
+    const response = await axios.get('http://localhost:3000/api/help');
 
-  res.render('help', {
-    results: mock,
-  });
+    res.render('help', {
+      results: response.data.help || []
+    });
+  } catch (error) {
+    console.error('Erro ao buscar dados de help:', error);
+    
+    res.render('help', {
+      results: []
+    });
+  }
 });
 
 // Iniciar servidor
@@ -94,3 +83,4 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
