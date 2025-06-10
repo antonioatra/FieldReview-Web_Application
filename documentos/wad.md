@@ -1448,8 +1448,16 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 &emsp;Além disso, segundo projeções da EMBRAPA e da OCDE-FAO Agricultural Outlook 2023–2032, a expectativa é que o Brasil continue sendo um dos principais exportadores mundiais de alimentos, com a produção agrícola crescendo cerca de 2,5% ao ano até 2032, impulsionada pelo aumento da demanda global por alimentos e biocombustíveis.
 
 
-*c) Tendências de Mercado (até 300 palavras)*
-*Identifique e analise tendências relevantes (tecnológicas, comportamentais e mercadológicas) que influenciam o setor. Utilize fontes confiáveis.*
+<h3> Tendências do Mercado </h3>
+
+&emsp; O setor agrícola está em profunda transformação, impulsionado por inovações tecnológicas, mudanças no perfil dos profissionais rurais e demandas mercadológicas mais exigentes. A digitalização no campo — especialmente por meio da conectividade, sensores, drones e plataformas de análise de dados — tem o potencial de aumentar a produtividade agrícola global em até 9%, além de agregar até US$ 500 bilhões ao PIB mundial até 2030 (McKinsey & Company, 2020).
+
+&emsp; No Brasil, essas transformações são ainda mais significativas, dada a relevância estratégica do agronegócio. A Embrapa destaca que o futuro da agricultura brasileira dependerá da adoção intensiva de tecnologias digitais e da formação contínua de profissionais. Há um movimento crescente de renovação geracional no campo, com maior abertura dos agentes de produção para inovações e novos modelos de aprendizado, como o ensino modular, remoto e autônomo.
+
+No cenário internacional, a FAO ressalta a importância de tornar os sistemas agroalimentares mais resilientes frente a choques como crises climáticas, pandemias e instabilidades econômicas. Isso envolve não só a adoção de práticas sustentáveis e rastreáveis, mas também a capacitação constante dos profissionais para implementar tais práticas com eficácia.
+
+Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizagem e módulos se alinha às principais tendências do setor. Ele promove a qualificação de PTDs e agentes de campo de maneira flexível, atualizada e alinhada às exigências globais de produtividade, sustentabilidade e inovação.
+
 
 ## 6.3 Análise da Concorrência
 
@@ -1556,15 +1564,21 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 12. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
 
-BRASIL. Ministério da Agricultura e Pecuária. Lei nº 14.785, de 27 de dezembro de 2023. Dispõe sobre o controle e a fiscalização de agrotóxicos e afins. Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao. Acesso em: 4 jun. 2025.
+13. MCKINSEY & COMPANY. Agriculture’s connected future: How technology can yield new growth. New York, 2020. Disponível em: https://www.mckinsey.com/industries/agriculture/our-insights/agricultures-connected-future-how-technology-can-yield-new-growth. 
 
-BRASIL. Lei nº 6.938, de 31 de agosto de 1981. Dispõe sobre a Política Nacional do Meio Ambiente, seus fins e mecanismos de formulação e aplicação, e dá outras providências. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l6938compilada.htm. Acesso em: 4 jun. 2025.
+14. EMBRAPA – Empresa Brasileira de Pesquisa Agropecuária. Visão 2030: o futuro da agricultura brasileira. Brasília, DF: Embrapa, 2023. Disponível em: https://www.embrapa.br/visao/o-futuro-da-agricultura-brasileira.
 
-CNN Brasil. Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 4 mar. 2024. Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/. Acesso em: 4 jun. 2025.
+15. FAO – Food and Agriculture Organization of the United Nations. The State of Food and Agriculture 2021: making agrifood systems more resilient to shocks and stresses. Rome: FAO, 2021. Disponível em: https://openknowledge.fao.org/handle/20.500.14283/cb4476en.
 
-EQUIPE FIELDVIEW™. Tecnologia no agronegócio: conheça 7 inovações tecnológicas. 5 nov. 2021. Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro. Acesso em: 4 jun. 2025.
+16. BRASIL. Ministério da Agricultura e Pecuária. Lei nº 14.785, de 27 de dezembro de 2023. Dispõe sobre o controle e a fiscalização de agrotóxicos e afins. Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao. Acesso em: 4 jun. 2025.
 
-CONFEDERAÇÃO DA AGRICULTURA E PECUÁRIA DO BRASIL (CNA). Panorama do Agro. Brasília: CNA, 2025. Disponível em: https://www.cnabrasil.org.br/cna/panorama-do-agro. Acesso em: 4 jun. 2025.
+17. BRASIL. Lei nº 6.938, de 31 de agosto de 1981. Dispõe sobre a Política Nacional do Meio Ambiente, seus fins e mecanismos de formulação e aplicação, e dá outras providências. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l6938compilada.htm. Acesso em: 4 jun. 2025.
+
+18. CNN Brasil. Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 4 mar. 2024. Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/. Acesso em: 4 jun. 2025.
+
+19. EQUIPE FIELDVIEW™. Tecnologia no agronegócio: conheça 7 inovações tecnológicas. 5 nov. 2021. Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro. Acesso em: 4 jun. 2025.
+
+20. CONFEDERAÇÃO DA AGRICULTURA E PECUÁRIA DO BRASIL (CNA). Panorama do Agro. Brasília: CNA, 2025. Disponível em: https://www.cnabrasil.org.br/cna/panorama-do-agro. Acesso em: 4 jun. 2025.
 
 # <a name="c9"></a>Anexos
 
