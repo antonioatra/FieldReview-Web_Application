@@ -33,7 +33,6 @@ exports.showById = async (req, res) => {
 };
 
 exports.getCurrentUser = async (req, res) => {
-  console.log('Current User ID:', req.user.id);
   try {
     const user = await Users.findById(req.user.id);
     if (!user) return res.status(404).json({ error: 'Usuário não encontrado.' });

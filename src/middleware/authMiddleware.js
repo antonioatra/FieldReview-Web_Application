@@ -13,7 +13,6 @@ const authMiddleware = (requiredRole = null) => {
     } else {
       // Check cookie
       token = req.cookies.token;
-      console.log('Token from cookie:', token);
     }
 
     if (!token) {
