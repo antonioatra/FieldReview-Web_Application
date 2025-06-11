@@ -16,10 +16,14 @@ app.use(express.static(path.join(__dirname, '../public'))); // arquivos estátic
 const userRoutes = require('./routes/api/user');
 const trailRoutes = require('./routes/api/trail');
 const moduleRoutes = require('./routes/api/module');
+const questionRoutes = require('./routes/api/question');
+const optionRoutes = require('./routes/api/options');
 
 app.use('/api/user', userRoutes);
 app.use('/api/trail', trailRoutes);
 app.use('/api/module', moduleRoutes);
+app.use('/api/question', questionRoutes);
+app.use('/api/option', optionRoutes);
 
 // Rotas da aplicação FrontEnd
 app.get('/', (req, res) => {
@@ -48,10 +52,12 @@ app.get('/search', (req, res) => {
   });
 });
 
-app.get('/trail/:id', (req, res) => {
-  const trailId = req.params.id;
+app.get('/trail/:idTrail/:idModule', (req, res) => {
+  const trailId = req.params.idTrail;
+  const moduleId = req.params.idModule;
   res.render('user/trail', {
-    id: trailId,
+    idTrail: trailId,
+    idModule: moduleId,
     title: 'Título da Trilha',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
