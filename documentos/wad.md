@@ -1541,8 +1541,10 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 
 
-*6.4 Promoção (até 200 palavras)*
-*Descreva as estratégias digitais planejadas, como SEO, redes sociais, marketing de conteúdo e campanhas pagas.*
+### Promoção
+
+&emsp; As estratégias de promoção do FieldReview, aplicação web da Bayer Crop Science, focam em canais digitais para capacitar os Promotores Técnicos Digitais (PTDs). SEO é otimizado no site cropscience.bayer.com, com palavras-chave como “capacitação em agricultura”, “estudo FieldView” e “treinamento FieldView”, atraindo PTDs em busca de aprendizado sobre o Climate FieldView. Marketing de conteúdo inclui vídeos no YouTube, com tutoriais práticos sobre o FieldReview, além de blogs ensinando a utilizá-lo. E-mails via Salesforce CRM entregam guias de capacitação e convites para a utilização da plataforma, onde as demonstrações práticas em vídeo reforçam o aprendizado. A integração com o Impulso Bayer oferece pontos por uso, incentivando adoção. 
+
 
 # <a name="c7"></a>7. Conclusões e trabalhos futuros (sprint 5)
 
