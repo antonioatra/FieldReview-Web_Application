@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/styles/dialog.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!--Modal que será ficará encima da tela de editar trilha-->
+    <dialog class="overflow-y-auto">
+        <div id="moduleModal"
+            class=" overflow-x-hidden hidden max-w-[95%] sm:max-w-[800px] text-base font-helvetica bg-[#FAFAFA] flex flex-col justify-center items-center border border-solid border-black/10 rounded py-4 pb-15 px-4 sm:px-12 border-2 rounded-sm m-4 sm:m-10 gap-y-8  place-content-between">
+
+            <div class="flex justify-start self-start">
+                <textarea class=" text-2xl sm:text-3xl w-full align-top text-left  border-2 border-solid border-black/10 rounded-sm p-1" id="moduleTitle">Título do Módulo</textarea>
+            </div>
+
+            <div class="flex flex-col items-end gap-6 w-full">
+                <div class="flex sm:flex-row flex-col place-content-between w-full h-full gap-4">
+                    <div
+                        class="flex items-start border border-black p-5 bg-white w-full h-80 md:h-screen/2 md:w-100 rounded-sm">
+                        <textarea id="moduleContent" class="flex w-full h-full align-top text-left p-1">Texto do módulo</textarea>
+                    </div>
+
+                    <form
+                        class="flex flex-col gap-4 border border-solid border-black bg-white p-5 w-full sm:w-fit h-screen/2 rounded-sm resize-none ">
+                        <textarea id="questionContent" class="border-2 border-solid border-black/10 rounded-sm p-1 ">Questão</textarea>
+
+                        <div class="flex flex-col gap-2">
+                            <div class="flex gap-4 ">
+                                <input type="radio" class="optionState  w-5">
+                                <textarea class="w-full border-2 border-solid border-black/10 rounded-sm resize-none optionContent p-1 ">Enunciado</textarea>
+                            </div>
+                            <div class="flex gap-4">
+                                <input type="radio" class="optionState w-5">
+                                <textarea class="w-full border-2 border-solid border-black/10 rounded-sm resize-none optionContent p-1 " >Enunciado</textarea>
+                            </div>
+                            <div class="flex gap-4">
+                                <input type="radio" class="optionState w-5">
+                                <textarea class="w-full resize-none  border-2 border-solid border-black/10 rounded-sm optionContent p-1 ">Enunciado</textarea>
+                            </div>
+                            <div class="flex gap-4">
+                                <input type="radio" class="optionState w-5">
+                                <textarea class="w-full resize-none border-2 border-solid border-black/10 rounded-sm  optionContent p-1">Enunciado</textarea>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="w-fit flex flex-col gap-2">
+                    <button type="button" onclick="hideModal()" class="bg-[#D30F4B] rounded-sm p-3">
+                        <img src="/img/cancel.svg">
+                    </button>
+                    <button type="button" onclick="hideModal()"
+                        class="w-full bg-[#66B511] flex justify-center rounded-sm p-3">
+                        <img src="/img/save.svg">
+                    </button>
+                </div>
+
+            </div>
+    </dialog>
+
+    <button type="button" onclick="showModal()">
+        Aperta
+    </button>
+
+    <!--div de informações-->
+    <div id="moduleData" data-idtrail="<%= idTrail %>" <%=idModule ? 'data-idmodule="' + idModule + '"' : '' %>>
+    </div>
+
+    </div>
+
+    <script src="/scripts/admin/module.js"></script>
+
+</body>
+
+</html>

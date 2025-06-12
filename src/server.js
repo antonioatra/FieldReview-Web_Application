@@ -17,11 +17,15 @@ const userRoutes = require('./routes/api/user');
 const trailRoutes = require('./routes/api/trail');
 const moduleRoutes = require('./routes/api/module');
 const searchRoutes = require('./routes/api/search');
+const questionRoutes = require('./routes/api/question');
+const optionRoutes = require('./routes/api/options');
 
 app.use('/api/user', userRoutes);
 app.use('/api/trail', trailRoutes);
 app.use('/api/module', moduleRoutes);
 app.use('/api/search', searchRoutes);
+app.use('/api/question', questionRoutes);
+app.use('/api/option', optionRoutes);
 
 // Rotas da aplicação FrontEnd
 app.get('/', (req, res) => {
@@ -50,12 +54,26 @@ app.get('/search', (req, res) => {
   });
 });
 
-app.get('/trail/:idTrail/editModule', (req, res) => {
+app.get('/trail/:idTrail/:idModule/module', (req, res) => {
   //passar os ids
   const idTrail = req.params.idTrail;
+  const idModule = req.params.idModule;
 
-  res.render('adm/editModule', {
+  res.render('adm/Module', {
     idTrail: idTrail,
+    idModule: idModule
+  })
+
+});
+
+app.get('/trail/:idTrail/module', (req, res) => {
+  //passar os ids
+  const idTrail = req.params.idTrail;
+  const idModule = null;
+
+  res.render('adm/Module', {
+    idTrail: idTrail,
+    idModule: idModule
   })
 
 });
