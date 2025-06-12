@@ -23,6 +23,7 @@ const userRoutes = require('./routes/api/user');
 const authRoutes = require('./routes/api/auth'); // Added auth routes
 const trailRoutes = require('./routes/api/trail');
 const moduleRoutes = require('./routes/api/module');
+const helpRoutes = require('./routes/api/help');
 const searchRoutes = require('./routes/api/search');
 
 // API Routes
@@ -30,6 +31,7 @@ app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/trail', trailRoutes);
 app.use('/api/module', moduleRoutes);
+app.use('/api/help', helpRoutes);
 app.use('/api/search', searchRoutes);
 
 // Rotas da aplicação FrontEnd
@@ -92,34 +94,22 @@ app.get('/trail/:id', (req, res) => {
   });
 });
 
-app.get('/help', (req, res) => {
-  const mock = [
-    {
-      title: 'Exemplo de Título',
-      description:
-        'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboreis nis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off',
-    },
-    {
-      title: 'Exemplo de Título',
-      description:
-        'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboreis nis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off',
-    },
-    {
-      title: 'Exemplo de Título',
-      description:
-        'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboreis nis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off',
-    },
-    {
-      title: 'Exemplo de Título',
-      description:
-        'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboreis nis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off',
-    },
-  ];
+app.get('/help', async (req, res) => {
+  try {
+    const response = await axios.get('http://localhost:3000/api/help');
 
-  res.render('help', {
-    results: mock,
-    user: req.user,
-  });
+    res.render('help', {
+      results: response.data.help || [], 
+      user: req.user,
+    });
+  } catch (error) {
+    console.error('Erro ao buscar dados de help:', error);
+    
+    res.render('help', {
+      results: [], 
+      user: req.user,
+    });
+  }
 });
 
 // Iniciar servidor
@@ -129,3 +119,4 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
