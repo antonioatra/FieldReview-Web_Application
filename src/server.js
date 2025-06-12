@@ -50,6 +50,16 @@ app.get('/search', (req, res) => {
   });
 });
 
+app.get('/trail/:idTrail/editModule', (req, res) => {
+  //passar os ids
+  const idTrail = req.params.idTrail;
+
+  res.render('adm/editModule', {
+    idTrail: idTrail,
+  })
+
+});
+
 app.get('/trail/:id', (req, res) => {
   const trailId = req.params.id;
   res.render('user/trail', {

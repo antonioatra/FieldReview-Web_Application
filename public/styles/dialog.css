@@ -1,0 +1,9 @@
+dialog {
+  display: block;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  background: transparent;
+  padding: 0;
+  z-index: 50;
+}
