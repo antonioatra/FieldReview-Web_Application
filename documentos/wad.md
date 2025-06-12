@@ -731,7 +731,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura: Guia de Cores</sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/guiaCores.png">
+<img src="../assets/assetsWAD/guiaCores.jpg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> 
 
 &emsp; Um guia de cores é um documento que define um conjunto padronizado de cores a serem usadas em uma interface digital, com o objetivo de garantir consistência visual, usabilidade e identidade da marca.
@@ -963,7 +963,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura : Tela de help do PTD.</sup>
 </div>
 <div align="center">
-<img src="../assets/assetsWAD/tela de help PTD.png">
+<img src="../assets/assetsWAD/helpPTD.png">
 </div>
 <div align="center">
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
@@ -973,7 +973,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura : Tela mobile de help do PTD.</sup>
 </div>
 <div align="center">
-<img src="../assets/assetsWAD/helpPTD.png">
+<img src="../assets/assetsWAD/helpPTDmobile.png">
 </div>
 <div align="center">
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
@@ -992,7 +992,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura : Página de trilhas do administrador.</sup>
 </div>
 <div align="center">
-<img src="../assets/assetsWAD/trilhaAdm.png">
+<img src="../assets/assetsWAD/admtrilha.png">
 </div>
 <div align="center">
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
@@ -1002,7 +1002,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura: Tela mobile de trilhas do administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/trilhaADM.png">
+<img src="../assets/assetsWAD/trilhaADMmobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 
@@ -1022,7 +1022,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura: Tela mobile de editar trilha do administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/editorTrilhaADM.png">
+<img src="../assets/assetsWAD/editorTrilhaAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Sobre a tela de editar o módulo, nela o usuário pode alterar o conteúdo e as perguntas do material selecionado, assim como é apresentado na imagem abaixo:
@@ -1041,7 +1041,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura: Tela mobile de editar módulos do administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/editorTrilha.png">
+<img src="../assets/assetsWAD/editarModuloAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; No que diz respeito à tela de usuários, nela aparece todos os usuários cadastrados na plataforma, com a possibilidade do administrador poder ver progresso e atribuir trilhas ao usuário selecionado, assim como é apresentado na figura abaixo:
@@ -1060,7 +1060,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <sup>Figura: Tela mobile de usuários do administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/usuarioADM.png">
+<img src="../assets/assetsWAD/usuarioAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Sobre a tela de atribuir uma
@@ -1089,14 +1089,14 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 <sup>Figura: Tela de help administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/help adm.png">
+<img src="../assets/assetsWAD/admHelp.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 <p align = "center">
 <sup>Figura: Tela mobile de help administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/helpADM.png">
+<img src="../assets/assetsWAD/admHelpMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; A tela de edição do help permite ao administrador criar ou modificar cards de perguntas frequentes, inserindo título e conteúdo de forma rápida. 
@@ -1105,14 +1105,14 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 <sup>Figura: Tela de edição do help administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/adicionar help adm.png">
+<img src="../assets/assetsWAD/adicionarHelp.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 <p align = "center">
 <sup>Figura: Tela mobile de edição do help administrador.<sup>
 </p>
 <p align="center"> 
-<img src="../assets/assetsWAD/editarHelp.png">
+<img src="../assets/assetsWAD/adicionarHelpMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 
@@ -1448,17 +1448,44 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 &emsp;Além disso, segundo projeções da EMBRAPA e da OCDE-FAO Agricultural Outlook 2023–2032, a expectativa é que o Brasil continue sendo um dos principais exportadores mundiais de alimentos, com a produção agrícola crescendo cerca de 2,5% ao ano até 2032, impulsionada pelo aumento da demanda global por alimentos e biocombustíveis.
 
 
-*c) Tendências de Mercado (até 300 palavras)*
-*Identifique e analise tendências relevantes (tecnológicas, comportamentais e mercadológicas) que influenciam o setor. Utilize fontes confiáveis.*
+<h3> Tendências do Mercado </h3>
+
+&emsp; O setor agrícola está em profunda transformação, impulsionado por inovações tecnológicas, mudanças no perfil dos profissionais rurais e demandas mercadológicas mais exigentes. A digitalização no campo — especialmente por meio da conectividade, sensores, drones e plataformas de análise de dados — tem o potencial de aumentar a produtividade agrícola global em até 9%, além de agregar até US$ 500 bilhões ao PIB mundial até 2030 (McKinsey & Company, 2020).
+
+&emsp; No Brasil, essas transformações são ainda mais significativas, dada a relevância estratégica do agronegócio. A Embrapa destaca que o futuro da agricultura brasileira dependerá da adoção intensiva de tecnologias digitais e da formação contínua de profissionais. Há um movimento crescente de renovação geracional no campo, com maior abertura dos agentes de produção para inovações e novos modelos de aprendizado, como o ensino modular, remoto e autônomo.
+
+No cenário internacional, a FAO ressalta a importância de tornar os sistemas agroalimentares mais resilientes frente a choques como crises climáticas, pandemias e instabilidades econômicas. Isso envolve não só a adoção de práticas sustentáveis e rastreáveis, mas também a capacitação constante dos profissionais para implementar tais práticas com eficácia.
+
+Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizagem e módulos se alinha às principais tendências do setor. Ele promove a qualificação de PTDs e agentes de campo de maneira flexível, atualizada e alinhada às exigências globais de produtividade, sustentabilidade e inovação.
+
 
 ## 6.3 Análise da Concorrência
 
-*a) Principais Concorrentes (até 250 palavras)*
-*Liste os concorrentes diretos e indiretos, destacando suas principais características e posicionamento no mercado.*
+&emsp; Compreender quem são os concorrentes diretos e indiretos da solução proposta é essencial para o sucesso do projeto. Essa análise fornece uma visão estratégica do mercado, permitindo identificar lacunas, oportunidades de diferenciação e possíveis ameaças à adoção da aplicação.
 
-*b) Vantagens Competitivas da Aplicação Web (até 250 palavras)*
-*Descreva os diferenciais da sua aplicação em relação aos concorrentes, sem necessidade de citação de fontes.*
+*a) Principais Concorrentes*
 
+&emsp; <strong> Concorrentes diretos </strong> são plataformas que oferecem serviços semelhantes, voltados ao monitoramento de lavouras, análise de dados agronômicos e suporte à tomada de decisão no campo. Destacam-se:
+<ul> 
+    <li> <p> <strong> John Deere Operations Center: </strong> Foco em conectividade de máquinas agrícolas, mapeamento e gestão operacional. </p> </li>
+    <li> <p> <strong>  Granular (corteva): </strong> integra dados agronômicos com gestão financeira para aumentar a eficiência e a rentabilidade da fazenda. </p> </li>
+</ul>
+
+&emsp; <strong> Concorrentes indiretos </strong> são soluções que, embora não ofereçam o mesmo conjunto de funcionalidades, atendem às mesmas necessidades do produtor rural por meio de outros enfoques. Exemplos:
+<ul> 
+    <li> <p> <strong> Solinftec: </strong> Foco em automoção e sensores para melhorar a eficiência operacional em tempo real. </p> </li>
+    <li> <p> <strong>  Agrosmart: </strong> Utiliza dados climáticos e de solo para apoiar decisões sustentáveis e agrícolas. </p> </li>
+    <li> <p> <strong>  Strider (Syngenta): </strong> Especializada em monitoramento de pragas e doenças via aplicativo móvel. </p> </li>
+</ul>
+
+
+*b) Vantagens Competitivas da Aplicação Web*
+
+&emsp; O FieldReview destaca-se como uma solução exclusiva e estratégica dentro do ecossistema Bayer, oferecendo uma experiência de capacitação focada nos Promotores Técnicos Digitais (PTDs) e consultores que operam com o Climate FieldView. Com trilhas modulares de aprendizagem adaptadas às necessidades de cada PTD, recursos de gamificação, certificações e um sistema de busca rápida para dúvidas operacionais, a plataforma promove engajamento real e aplicação prática do conhecimento. O painel de consultores, os permitem monitorar e ajustar o progresso técnico da equipe, elevando o padrão de suporte agronômico prestado ao agricultor.
+
+&emsp; A plataforma diferencia-se das aplicações comuns devido ao seu desenvolvimento exclusivo para a aprendizagem dos Promotores Técnicos Digitais. Dentre as funcionalidades específicas, destacam-se as trilhas de conhecimento, que evoluem dos conteúdos mais básicos até as funções mais recentes adicionadas ao Climate FieldView. Também há notificações para informar o usuário sobre novas trilhas atribuídas pelo seu líder de equipe. Além disso, o processo de avaliação por etapas visa melhorar a experiência dos promotores em meio à sua rotina corrida, evitando que percam muito tempo com provas extensas.
+
+&emsp; Em relação à equipe de liderança e aos produtores de conteúdo da Bayer, a aplicação se mostra relevante por suas funcionalidades administrativas. Entre os diferenciais voltados a esses profissionais, destacam-se as funções de criar, editar e excluir trilhas na plataforma, bem como a possibilidade de atribuir trilhas a funcionários específicos. Ademais, a aplicação permite visualizar dados de usuários específicos e adicionar perguntas frequentes para esclarecer dúvidas gerais dos promotores.
 
 ## 6.4 Público-Alvo
 
@@ -1508,11 +1535,16 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 &emsp; A decisão se justifica pelas tendências observadas nas análises anteriores. Como mostram relatórios da Embrapa e FAO, há demanda crescente por capacitação contínua e acessível, sobretudo no meio rural, onde limitações logísticas e financeiras ainda representam barreiras ao aprendizado formal. Além disso, segundo a McKinsey, investimentos em educação e tecnologia no campo geram aumento de produtividade e valor agregado à cadeia agrícola — o que justifica o investimento estratégico da Bayer nesse projeto, com retorno indireto em eficiência, sustentabilidade e posicionamento de marca.
 
-*6.3 Praça (Distribuição) (até 200 palavras)*
-*Apresente os canais digitais utilizados para distribuir e entregar a aplicação ao público.*
+*6.3 Praça (Distribuição)*
 
-*6.4 Promoção (até 200 palavras)*
-*Descreva as estratégias digitais planejadas, como SEO, redes sociais, marketing de conteúdo e campanhas pagas.*
+&emsp; O FieldReview, como aplicação web, será distribuído via navegadores, acessível em dispositivos Android, iOS (iPads, iPhones) e desktops, semelhante ao Climate FieldView™. A Bayer o disponibilizará em seu [site oficial](https://www.agro.bayer.com.br/) e na plataforma Orbia, conectando Promotores Técnicos Digitais (PTDs) a agricultores. O LinkedIn será utilizado para promover a ferramenta, com posts direcionados aos profissionais do agronegócio, destacando benefícios como monitoramento de lavouras. Usando sistemas de CRM, a Bayer enviará e-mails segmentados a PTDs, com links diretos para o FieldReview e guias de uso, facilitando a adoção. Eventos como a Agrishow e dias de campo do Bayer Forward Farming promoveriam a ferramenta com demonstrações práticas e QR codes para acesso via navegador. A integração com o programa Impulso Bayer reforçaria a distribuição, oferecendo benefícios como pontos para usuários testarem, garantindo alcance e engajamento com agricultores e distribuidores.
+
+
+
+### Promoção
+
+&emsp; As estratégias de promoção do FieldReview, aplicação web da Bayer Crop Science, focam em canais digitais para capacitar os Promotores Técnicos Digitais (PTDs). SEO é otimizado no site cropscience.bayer.com, com palavras-chave como “capacitação em agricultura”, “estudo FieldView” e “treinamento FieldView”, atraindo PTDs em busca de aprendizado sobre o Climate FieldView. Marketing de conteúdo inclui vídeos no YouTube, com tutoriais práticos sobre o FieldReview, além de blogs ensinando a utilizá-lo. E-mails via Salesforce CRM entregam guias de capacitação e convites para a utilização da plataforma, onde as demonstrações práticas em vídeo reforçam o aprendizado. A integração com o Impulso Bayer oferece pontos por uso, incentivando adoção. 
+
 
 # <a name="c7"></a>7. Conclusões e trabalhos futuros (sprint 5)
 
@@ -1549,15 +1581,21 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 12. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
 
-BRASIL. Ministério da Agricultura e Pecuária. Lei nº 14.785, de 27 de dezembro de 2023. Dispõe sobre o controle e a fiscalização de agrotóxicos e afins. Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao. Acesso em: 4 jun. 2025.
+13. MCKINSEY & COMPANY. Agriculture’s connected future: How technology can yield new growth. New York, 2020. Disponível em: https://www.mckinsey.com/industries/agriculture/our-insights/agricultures-connected-future-how-technology-can-yield-new-growth. 
 
-BRASIL. Lei nº 6.938, de 31 de agosto de 1981. Dispõe sobre a Política Nacional do Meio Ambiente, seus fins e mecanismos de formulação e aplicação, e dá outras providências. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l6938compilada.htm. Acesso em: 4 jun. 2025.
+14. EMBRAPA – Empresa Brasileira de Pesquisa Agropecuária. Visão 2030: o futuro da agricultura brasileira. Brasília, DF: Embrapa, 2023. Disponível em: https://www.embrapa.br/visao/o-futuro-da-agricultura-brasileira.
 
-CNN Brasil. Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 4 mar. 2024. Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/. Acesso em: 4 jun. 2025.
+15. FAO – Food and Agriculture Organization of the United Nations. The State of Food and Agriculture 2021: making agrifood systems more resilient to shocks and stresses. Rome: FAO, 2021. Disponível em: https://openknowledge.fao.org/handle/20.500.14283/cb4476en.
 
-EQUIPE FIELDVIEW™. Tecnologia no agronegócio: conheça 7 inovações tecnológicas. 5 nov. 2021. Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro. Acesso em: 4 jun. 2025.
+16. BRASIL. Ministério da Agricultura e Pecuária. Lei nº 14.785, de 27 de dezembro de 2023. Dispõe sobre o controle e a fiscalização de agrotóxicos e afins. Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao. Acesso em: 4 jun. 2025.
 
-CONFEDERAÇÃO DA AGRICULTURA E PECUÁRIA DO BRASIL (CNA). Panorama do Agro. Brasília: CNA, 2025. Disponível em: https://www.cnabrasil.org.br/cna/panorama-do-agro. Acesso em: 4 jun. 2025.
+17. BRASIL. Lei nº 6.938, de 31 de agosto de 1981. Dispõe sobre a Política Nacional do Meio Ambiente, seus fins e mecanismos de formulação e aplicação, e dá outras providências. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l6938compilada.htm. Acesso em: 4 jun. 2025.
+
+18. CNN Brasil. Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 4 mar. 2024. Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/. Acesso em: 4 jun. 2025.
+
+19. EQUIPE FIELDVIEW™. Tecnologia no agronegócio: conheça 7 inovações tecnológicas. 5 nov. 2021. Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro. Acesso em: 4 jun. 2025.
+
+20. CONFEDERAÇÃO DA AGRICULTURA E PECUÁRIA DO BRASIL (CNA). Panorama do Agro. Brasília: CNA, 2025. Disponível em: https://www.cnabrasil.org.br/cna/panorama-do-agro. Acesso em: 4 jun. 2025.
 
 # <a name="c9"></a>Anexos
 
