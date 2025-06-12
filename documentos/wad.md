@@ -1488,14 +1488,27 @@ Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizag
 &emsp; Em relação à equipe de liderança e aos produtores de conteúdo da Bayer, a aplicação se mostra relevante por suas funcionalidades administrativas. Entre os diferenciais voltados a esses profissionais, destacam-se as funções de criar, editar e excluir trilhas na plataforma, bem como a possibilidade de atribuir trilhas a funcionários específicos. Ademais, a aplicação permite visualizar dados de usuários específicos e adicionar perguntas frequentes para esclarecer dúvidas gerais dos promotores.
 
 ## 6.4 Público-Alvo
+<h3>Segmanetação do Mercado</h3>
 
-*a) Segmentação de Mercado (até 250 palavras)*
-Descreva os principais segmentos de mercado a serem atendidos pela aplicação. Utilize bases de dados e fontes confiáveis.*
+&emsp; Nossa aplicação, por ser uma plataforma de capacitação dos PTDs e seus administradores, como o Consultor e Knowledge Transfer, o público-alvo se restringem apenas e exclusivamente aos funcionários da própria Bayer. 
+Em uma pesquisa realizada por meio de um forms e respondido por Promotores Técnicos Digitais, foi possível ver que apenas 40% deles usam os conteúdos passados pela Bayer para o trabalho. Problemas como problema relacionado ao acesso rápido aos conteúdos e a falta de incentivo e fiscalização por parte dos administradores desses funcionários. Além disso, 100% deles tem interesse em usar uma plataforma que facilitaria e melhoraria o aprendizado dos PTDs sobre o Climate FieldView, demonstrando a necessidade dessa unificação e facilidade dos assuntos e estudos.
 
-*b) Perfil do Público-Alvo (até 250 palavras)*
-*Caracterize o público-alvo com dados demográficos, psicográficos e comportamentais, incluindo necessidades específicas. Utilize fontes obrigatórias.*
+&emsp; Logo, a necessidade de algo como a FieldView é claro e atinge bem o público alvo.
+
+Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/spreadsheets/d/1iXCDZVo7FKmxTA6wEqSifEd12covPy1YLEMi_l6O1v0/edit?gid=551591118#gid=551591118]
+
+<h3>Perfil do Público-Alvo</h3>
 
 
+&emsp;O público-alvo da nossa proposta são os Promotores Técnicos Digitais (PTDs) da Bayer, profissionais com atuação em todo o território nacional. No entanto, segundo pesquisa própria aplicada aos colaboradores, a maior concentração desses profissionais encontra-se na região Centro-Oeste, devido à alta densidade de propriedades agrícolas nessa área (IBGE, 2023).
+
+&emsp;Por meio de uma análise de perfis no LinkedIn e dados coletados por formulário, observamos que a maioria dos PTDs possui ensino superior em Agronomia, Engenharia Agronômica ou Engenharia Agrícola, com idade média de 26 anos.
+
+&emsp; Sua rotina de trabalho é intensa: realizam atendimentos majoritariamente presenciais e percorrem, em média, cerca de 100 km por dia entre as propriedades atendidas. Ao ingressar na empresa, participam de cinco dias de capacitação sobre o Climate FieldView, o que se mostrou insuficiente segundo os próprios respondentes da pesquisa.
+
+&emsp;Psicograficamente, os PTDs valorizam empresas com missão, visão e valores bem definidos, bom relacionamento interno e reconhecimento profissional. Esperam de um ambiente de trabalho estabilidade, desenvolvimento contínuo e desafios constantes.
+
+&emsp;Esses dados revelam a necessidade de uma plataforma digital de capacitação contínua, com acesso fácil e conteúdos práticos que otimizem o tempo e a performance no campo.
 ## 6.5 Posicionamento
 
 *a) Proposta de Valor Única*
