@@ -52,66 +52,91 @@
               <span>
                 <img src = "/assets/coroaHomePtd.svg" class = "w-6 h-6">
               </span>
-              <span class="bg-[color:#00B5EF] text-white px-20 py-3 rounded-m rounded-md">1. João Silva</span>
-            </li>
-            <li class="flex flex-col items-center space-y-2 py-2">
-              <span class="text-blue-900">2. Lucas Pereira</span>
-            </li>
-            <li class="flex flex-col items-center space-y-2 py-2">
-              <span class="text-blue-900">3. Gabriel Ferreira</span>
-            </li>
-            <li class="flex flex-col items-center space-y-2 py-2">
-              <span class="text-blue-900">4. Mateus Souza</span>
-            </li>
-            <li class="flex flex-col items-center space-y-2 py-2">
-              <span class="text-gray-500">N. Lorem ipsum</span>
+             <% ranking.slice(0, 4).forEach((user, index) => { %>
+              <% if (index === 0) { %>
+                <li class="flex flex-col items-center space-x-2">
+                  <span class="bg-[color:#00B5EF] text-white px-20 py-3 rounded-md">
+                    <%= index + 1 %>. <%= user.nome %> 
+                  </span>
+                </li>
+              <% } else { %>
+                <li class="flex flex-col items-center space-y-2 py-2">
+                  <span class="text-blue-900">
+                   <%= index + 1 %>. <%= user.nome %> 
+                  </span>
+                </li>
+              <% } %>
+             <% }) %>
+
+                  <li class="flex flex-col items-center space-y-2 py-4">
+                    <span class="text-blue-900">
+                      <% if (userPosition !== -1) { %>
+                        <%= userPosition + 1 %>. <%= ranking[userPosition].nome %>
+                      <% } %>
+                    </span>
+                  </li>
             </li>
           </ul>
         </div>
 
         <div class="bg-white rounded-lg border-2 border-black/10 md:col-span-2">
-          <h3 class="text-xl font-semibold font-sans text-[color:#FFFFFF] mb-4 bg-[color:#00B5EF] px-1">Notificação</h3>
-          <ul class="space-y-4">
-            <li>
-              <strong class="text-bold px-6">Novo trilha disponível!</strong>
-              <p class="text-gray-600 px-6">
-                Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </li>
-            <li>
-              <strong class="text-bold px-6">Nova trilha atribuída a você!</strong>
-              <p class="text-gray-600 px-6">
-                Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </li>
-            <li>
-              <strong class="text-bold px-6">Atenção para a trilha 1!</strong>
-              <p class="text-gray-600 px-6">
-                Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </li>
+          <h3 class="text-xl font-semibold font-sans text-[color:#FFFFFF] mb-4 bg-[color:#00B5EF] px-1 rounded">Notificação</h3>
+          <ul class="space-y-4 px-4">     
+            <% if (notifications.length === 0) { %>
+              <li class="text-gray-600">Nenhuma notificação</li>
+            <% } else {%> 
+              <% notifications.forEach(notification => { %>
+                <li class="flex items-start space-x-4">
+                  <div>
+                    <p class="text-gray-700"><%= notification.titulo %></p>
+                    <span class="text-sm text-gray-500"><%= notification.descricao %></span>
+                  </div>
+                </li>
+              <% }) %> 
+            <% } %> 
           </ul>
         </div>
       </div>
-
-      <section class="mb-6">
+      <section>
         <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4">Suas Trilhas</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <% for (let i = 0; i < 4; i++) { %> <%- include('./partials/trail/card.ejs') -%> <% } %>
+          <% if (userTrails.length === 0) { %>
+            <p class="text-gray-600">Nenhuma trilha foi atribuída para você ainda</p>
+          <% } else { %>
+            <% userTrails.forEach(userTrail => { 
+              const found = trailModules.find(tm => tm.trailId === userTrail.id);
+            %>
+              <%- include('./partials/trail/card', {
+                trail: userTrail,
+                moduleCount: found ? found.moduleCount : 0
+              }) %>
+            <% }) %> 
+        
+            <%} %>
+
+
         </div>
       </section>
-
+      
       <section>
-        <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4">Trilhas Disponíveis</h3>
+        <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4 mt-8">Trilhas Disponíveis</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <% for (let i = 0; i < 4; i++) { %> <%- include('./partials/trail/card.ejs') -%> <% } %>
+          <% availableTrails.forEach(trail => {
+          const isUserTrail = userTrails.some(userTrail => userTrail.id === trail.id);
+            if (!isUserTrail || isUserTrail) {
+              const found = trailModules.find(tm => tm.trailId === trail.id);
+            %>
+            <%- include('./partials/trail/card', {
+            trail: trail,  
+            moduleCount: found ? found.moduleCount : 0
+            }) %>
+          <% } %>     
+          <% }) %> 
+            
         </div>
       </section>
     </main>
 
-     <!-- <%- include('./partials/footer.ejs') %>s  -->
+     <!-- <%- include('./partials/footer.ejs') %>  -->
   </body>
 </html>

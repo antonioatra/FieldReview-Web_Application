@@ -8,5 +8,6 @@ router.get('/:id', TrailController.showById);
 router.patch('/:id', TrailController.update);
 router.delete('/:id', TrailController.destroy);
 router.post('/:id/user/:userId', TrailController.assignTrail);
+router.get('/user/:userId', TrailController.showByUser);
 
 module.exports = router;

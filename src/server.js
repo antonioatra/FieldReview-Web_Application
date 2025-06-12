@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+
 const axios = require('axios');
 
 const path = require('path');
@@ -7,6 +8,7 @@ const cookieParser = require('cookie-parser');
 const authMiddleware = require('./middleware/authMiddleware');
 
 const app = express();
+const axios = require('axios');
 
 // Configuração do Express
 app.use(cookieParser());
@@ -25,6 +27,7 @@ const trailRoutes = require('./routes/api/trail');
 const moduleRoutes = require('./routes/api/module');
 const helpRoutes = require('./routes/api/help');
 const searchRoutes = require('./routes/api/search');
+const notificationRoutes = require('./routes/api/notification');
 
 // API Routes
 app.use('/api/user', userRoutes);
@@ -33,19 +36,80 @@ app.use('/api/trail', trailRoutes);
 app.use('/api/module', moduleRoutes);
 app.use('/api/help', helpRoutes);
 app.use('/api/search', searchRoutes);
+app.use('/api/notification', notificationRoutes);
+
 
 // Rotas da aplicação FrontEnd
-app.get('/', authMiddleware(), (req, res) => {
-  res.render('home');
+app.get('/',  authMiddleware(), async (req, res) => {
+  try {
+    const userId = '32221db5-1bc8-4ec2-8a29-b163a639a82a';
+
+    // Buscar dados das APIs
+    const trailsResponse = await axios.get('http://localhost:3000/api/trail');
+    const userTrailsResponse = await axios.get(`http://localhost:3000/api/trail/user/${userId}`);
+    const usersResponse = await axios.get('http://localhost:3000/api/user');
+    const notificationsResponse = await axios.get(
+      `http://localhost:3000/api/notification/user/${userId}`,
+    );
+
+    const trails = trailsResponse.data;
+    const userTrails = userTrailsResponse.data.trails;
+
+    const userList = usersResponse.data;
+
+    const notifications = notificationsResponse.data;
+
+    // Processar ranking
+    const sortedRank = userList.sort((a, b) => (b.pontuacao || 0) - (a.pontuacao || 0));
+    const userPosition = sortedRank.findIndex((u) => u.id === userId);
+
+    // Buscar módulos para cada trilha
+    const trailModules = await Promise.all(
+      trails.map(async (trail) => {
+        try {
+          const modulesResponse = await axios.get(
+            `http://localhost:3000/api/module/trail/${trail.id}`,
+          );
+          return {
+            trailId: trail.id,
+            moduleCount: modulesResponse.data.length,
+          };
+        } catch (error) {
+          console.error(`Erro ao buscar módulos da trilha ${trail.id}:`, error.message);
+          return {
+            trailId: trail.id,
+            moduleCount: 0,
+          };
+        }
+      }),
+    );
+
+    // Filtrar trilhas disponíveis que nao estao atribuidas ao usuário
+    const availableTrails = trails.filter((trail) => {
+      return !userTrails.some((userTrail) => userTrail.id_trilha === trail.id);
+    });
+
+    res.render('home', {
+      userTrails: userTrails,
+      availableTrails: availableTrails,
+      trailModules: trailModules,
+      ranking: sortedRank,
+      userPosition,
+      notifications,
+    });
+  } catch (error) {
+    res.status(500).json({
+      error: 'Erro interno do servidor',
+      message: error.message,
+    });
+  }
 });
 
-app.get('/login', (req, res) => {
-  res.render('login', { error: null });
-});
-
+// Página de registro
 app.get('/register', (req, res) => {
   res.render('register', { error: null });
 });
+
 
 app.get('/search', async (req, res) => {
   const searchTerm = req.query.searchTerm; // Extract searchTerm from URL query
@@ -83,6 +147,7 @@ app.get('/search', async (req, res) => {
   });
 });
 
+// Página da trilha específica
 app.get('/trail/:id', (req, res) => {
   const trailId = req.params.id;
   res.render('user/trail', {
@@ -93,6 +158,7 @@ app.get('/trail/:id', (req, res) => {
     user: req.user,
   });
 });
+
 
 app.get('/help', async (req, res) => {
   try {
@@ -108,12 +174,13 @@ app.get('/help', async (req, res) => {
     res.render('help', {
       results: [], 
       user: req.user,
+
     });
   }
 });
 
-// Iniciar servidor
 const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
