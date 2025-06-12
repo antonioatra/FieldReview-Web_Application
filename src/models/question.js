@@ -19,7 +19,6 @@ module.exports ={
     async findByModuloId (data) { // retorna perguntas de acordo com o módulo que a pergunta está contida
         const query = "SELECT * FROM pergunta  WHERE id_modulo = $1";
         const values = [data.moduleId];
-
         return pool.query(query, values);
     },
 

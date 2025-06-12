@@ -1,6 +1,6 @@
 const pool = require("../config/database");
 
-module.exports ={ // Cria as funções do model
+module.exports = { // Cria as funções do model
     async create(data) { // Função que cria a opção
         const query = "INSERT INTO opcoes (texto, eh_correta) VALUES($1, $2) RETURNING *";
         const values = [data.text, data.isCorrect];
@@ -27,5 +27,13 @@ module.exports ={ // Cria as funções do model
         const values = [data.text, data.isCorrect, id];
 
         return pool.query(query, values);
+    },
+
+    async findByQuestionId(data) {
+        const query = "SELECT * FROM opcoes WHERE id_pergunta = $1";
+        const values = [data.questionId];
+        console.log("Valor de data: ", data.questionId);
+
+        return pool.query(query, values);
     }
- };
+};

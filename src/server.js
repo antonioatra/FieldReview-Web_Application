@@ -78,10 +78,36 @@ app.get('/trail/:idTrail/module', (req, res) => {
 
 });
 
-app.get('/trail/:id', (req, res) => {
-  const trailId = req.params.id;
+app.get('/trail/:idTrail/:idModule/module', (req, res) => {
+  //passar os ids
+  const idTrail = req.params.idTrail;
+  const idModule = req.params.idModule;
+
+  res.render('adm/Module', {
+    idTrail: idTrail,
+    idModule: idModule
+  })
+
+});
+
+app.get('/trail/:idTrail/module', (req, res) => {
+  //passar os ids
+  const idTrail = req.params.idTrail;
+  const idModule = null;
+
+  res.render('adm/Module', {
+    idTrail: idTrail,
+    idModule: idModule
+  })
+
+});
+
+app.get('/trail/:idTrail/:idModule', (req, res) => {
+  const trailId = req.params.idTrail;
+  const moduleId = req.params.idModule;
   res.render('user/trail', {
-    id: trailId,
+    idTrail: trailId,
+    idModule: moduleId,
     title: 'Título da Trilha',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
