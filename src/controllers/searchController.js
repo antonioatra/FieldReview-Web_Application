@@ -10,6 +10,7 @@ exports.search = async (req, res) => {
       modules: moduleResults,
     });
   } catch (err) {
+    console.error('Error during search:', err);
     res.status(500).json({ error: 'Erro ao buscar pelo termo' });
   }
 };
