@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const app = express();
-const axios = require("axios")
+const axios = require('axios');
 
 // Configuração do EJS
 app.use(express.json());
@@ -45,7 +45,7 @@ app.get('/search', (req, res) => {
 // Página da trilha específica
 app.get('/trail/:id', (req, res) => {
   const trailId = req.params.id;
-  
+
   res.render('trail');
 });
 
@@ -55,30 +55,36 @@ app.get('/help', (req, res) => {
 });
 
 // Dashboard do usuário
-app.get('/:userId', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
-    const userId = req.params.userId;
+    const userId = '32221db5-1bc8-4ec2-8a29-b163a639a82a';
 
     // Buscar dados das APIs
     const trailsResponse = await axios.get('http://localhost:3000/api/trail');
+    const userTrailsResponse = await axios.get(`http://localhost:3000/api/trail/user/${userId}`);
     const usersResponse = await axios.get('http://localhost:3000/api/user');
-    const notificationsResponse = await axios.get('http://localhost:3000/api/notification');
+    const notificationsResponse = await axios.get(
+      `http://localhost:3000/api/notification/user/${userId}`,
+    );
 
     const trails = trailsResponse.data;
-    const userTrails = trailsResponse.data;
+    const userTrails = userTrailsResponse.data.trails;
+
     const userList = usersResponse.data;
+
     const notifications = notificationsResponse.data;
 
     // Processar ranking
-    const rankingOrdenado = userList.sort((a, b) => (b.pontuacao || 0) - (a.pontuacao || 0));
-    const userPosition = rankingOrdenado.findIndex(u => u.id === userId);
+    const sortedRank = userList.sort((a, b) => (b.pontuacao || 0) - (a.pontuacao || 0));
+    const userPosition = sortedRank.findIndex((u) => u.id === userId);
 
-    console.log("antes do trail modules")
     // Buscar módulos para cada trilha
     const trailModules = await Promise.all(
       trails.map(async (trail) => {
         try {
-          const modulesResponse = await axios.get(`http://localhost:3000/api/module/trail/${trail.id}`);
+          const modulesResponse = await axios.get(
+            `http://localhost:3000/api/module/trail/${trail.id}`,
+          );
           return {
             trailId: trail.id,
             moduleCount: modulesResponse.data.length,
@@ -90,25 +96,26 @@ app.get('/:userId', async (req, res) => {
             moduleCount: 0,
           };
         }
-      })
+      }),
     );
-    console.log("depois do trail modules")
-    const availableTrails = trails;
+
+    // Filtrar trilhas disponíveis que nao estao atribuidas ao usuário
+    const availableTrails = trails.filter((trail) => {
+      return !userTrails.some((userTrail) => userTrail.id_trilha === trail.id);
+    });
 
     res.render('home', {
       userTrails: userTrails,
       availableTrails: availableTrails,
       trailModules: trailModules,
-      ranking: rankingOrdenado,
+      ranking: sortedRank,
       userPosition,
-      notifications
+      notifications,
     });
-
   } catch (error) {
-    console.error('Erro geral no dashboard:', error.message);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Erro interno do servidor',
-      message: error.message 
+      message: error.message,
     });
   }
 });
