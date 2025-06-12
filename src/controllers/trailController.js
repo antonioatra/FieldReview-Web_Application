@@ -47,6 +47,7 @@ exports.showAll = async (req, res) => {
     const trail = await Trail.findAll();
     res.json(trail);
   } catch (err) {
+    console.log(err)
     res.status(500).json({ error: 'Erro ao retornar trilhas' });
   }
 };

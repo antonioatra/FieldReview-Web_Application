@@ -1,8 +1,6 @@
 const Notification = require("../models/notification");
-const UserNotification = require("../models/userNotification");
+const UserNotification = require("../models/user");
 
-const Notificacao = require('../models/notificacao');
-const Usuario = require('../models/usuario');
 
 exports.store = async (req, res) => {
   try {

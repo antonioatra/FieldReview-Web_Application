@@ -52,19 +52,29 @@
               <span>
                 <img src = "/assets/coroaHomePtd.svg" class = "w-6 h-6">
               </span>
-              <span class="bg-[color:#00B5EF] text-white px-20 py-3 rounded-m rounded-md">1. João Silva</span>
-            </li>
-            <li class="flex flex-col items-center space-y-2 py-2">
-              <span class="text-blue-900">2. Lucas Pereira</span>
-            </li>
-            <li class="flex flex-col items-center space-y-2 py-2">
-              <span class="text-blue-900">3. Gabriel Ferreira</span>
-            </li>
-            <li class="flex flex-col items-center space-y-2 py-2">
-              <span class="text-blue-900">4. Mateus Souza</span>
-            </li>
-            <li class="flex flex-col items-center space-y-2 py-2">
-              <span class="text-gray-500">N. Lorem ipsum</span>
+             <% ranking.slice(0, 4).forEach((user, index) => { %>
+              <% if (index === 0) { %>
+                <li class="flex flex-col items-center space-x-2">
+                  <span class="bg-[color:#00B5EF] text-white px-20 py-3 rounded-md">
+                    <%= index + 1 %>. <%= user.nome %> 
+                  </span>
+                </li>
+              <% } else { %>
+                <li class="flex flex-col items-center space-y-2 py-2">
+                  <span class="text-blue-900">
+                   <%= index + 1 %>. <%= user.nome %> 
+                  </span>
+                </li>
+              <% } %>
+             <% }) %>
+
+                  <li class="flex flex-col items-center space-y-2 py-4">
+                    <span class="text-blue-900">
+                      <% if (userPosition !== -1) { %>
+                        <%= userPosition + 1 %>. <%= ranking[userPosition].nome %>
+                      <% } %>
+                    </span>
+                  </li>
             </li>
           </ul>
         </div>
@@ -96,22 +106,39 @@
           </ul>
         </div>
       </div>
-
-      <section class="mb-6">
+      <section>
         <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4">Suas Trilhas</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <% for (let i = 0; i < 4; i++) { %> <%- include('./partials/trail/card.ejs') -%> <% } %>
+          <% userTrails.forEach(userTrail => { 
+            const found = trailModules.find(tm => tm.trailId === userTrail.id);
+          %>
+            <%- include('./partials/trail/card', {
+              trail: userTrail,
+              moduleCount: found ? found.moduleCount : 0
+            }) %>
+          <% }) %> 
         </div>
       </section>
-
+      
       <section>
-        <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4">Trilhas Disponíveis</h3>
+        <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4 mt-8">Trilhas Disponíveis</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <% for (let i = 0; i < 4; i++) { %> <%- include('./partials/trail/card.ejs') -%> <% } %>
+          <% availableTrails.forEach(trail => {
+          const isUserTrail = userTrails.some(userTrail => userTrail.id === trail.id);
+            if (!isUserTrail || isUserTrail) {
+              const found = trailModules.find(tm => tm.trailId === trail.id);
+            %>
+            <%- include('./partials/trail/card', {
+            trail: trail,  
+            moduleCount: found ? found.moduleCount : 0
+            }) %>
+          <% } %>     
+          <% }) %> 
+            
         </div>
       </section>
     </main>
 
-     <!-- <%- include('./partials/footer.ejs') %>s  -->
+     <!-- <%- include('./partials/footer.ejs') %>  -->
   </body>
 </html>

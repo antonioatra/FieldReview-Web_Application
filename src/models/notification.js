@@ -23,7 +23,7 @@ module.exports = {
   async findAll() {
     const query = "SELECT * FROM notificacao";
 
-    return pool.query(query, values);
+    return pool.query(query);
   },
 
   async findById(id) { 

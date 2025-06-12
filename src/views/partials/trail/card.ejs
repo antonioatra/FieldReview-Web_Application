@@ -1,16 +1,18 @@
-<a href="/trail/1">
-  <div class="bg-[color:#F6F6F6] text-white rounded-lg m-sm'">
-    <h4 class="text-lg font-bold text-black p-6">Trilha 1: Conceitos Introdutórios do FieldView</h4>
-    <div class="flex justify-between items-center border-t-1 border-black mt-4 py-4">
+<a href="/trail/<%= trail.id %>">
+  <div class="bg-[#F6F6F6] text-white rounded-lg m-sm shadow-md hover:shadow-lg transition">
+    <h4 class="text-lg font-bold text-black p-6"><%= trail.titulo %></h4>
+    
+    <div class="flex justify-between items-center border-t border-black mt-4 py-4">
       <div>
-        <p class="mt-2 text-black text-semibold px-4">3 Módulos</p>
-        <p class="met-2 text-black px-4">Pessoas que completaram: 15</p>
+        <p class="mt-2 text-black font-semibold px-4"><%= moduleCount || 0 %> Módulos</p>
+        <p class="mt-2 text-black px-4">Pessoas que completaram: <%= trail.completedCount || 15 %></p>
       </div>
-     <div class="relative w-20 h-20 rounded-full border-[10px] border-[#6DBA0D] flex items-center justify-center mr-4">
-      <div class="absolute inset-[10px] rounded-full flex items-center justify-center">
-        <span class="text-black text-sm font-semibold">0%</span>
+
+      <div class="relative w-20 h-20 rounded-full border-[10px] border-[#6DBA0D] flex items-center justify-center mr-4">
+        <div class="absolute inset-[10px] bg-white rounded-full flex items-center justify-center">
+          <span class="text-black text-sm font-semibold"><%= trail.progress || 0 %>%</span>
+        </div>
       </div>
-     </div>
     </div>
   </div>
 </a>
