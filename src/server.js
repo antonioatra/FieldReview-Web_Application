@@ -159,6 +159,15 @@ app.get('/search', async (req, res) => {
   });
 });
 
+// Rota para edição de trilha - deve vir ANTES da rota mais genérica
+app.get('/trail/edit/:id', async (req, res) => {
+  const { id } = req.params;
+  const editMode = true;
+  const response = await axios.get(`http://localhost:3000/api/trail/${id}`);
+  const trail = response.data;
+  res.render('trailEdit', { editMode, trail });
+});
+
 // Página da trilha específica
 app.get('/trail/:idTrail/:idModule', async (req, res) => {
   const trailId = req.params.idTrail;
@@ -249,14 +258,6 @@ app.get('/dashboard', authMiddleware(), async (req, res) => {
     availableTrails: availableTrails,
     userTrails: userTrails,
   });
-});
-
-app.get('/trail/edit/:id', async (req, res) => {
-  // Edit existing trail
-  const { id } = req.params;
-  const editMode = true;
-  const trail = await axios.get(`http://localhost:3000/api/trail/${id}`);
-  res.render('trailEdit', { editMode, trail });
 });
 const PORT = process.env.PORT || 3000;
 
