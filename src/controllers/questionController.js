@@ -73,4 +73,3 @@ exports.destroy = async(req, res) => { // chama o model que deleta as Questions
         res.status(500).json({error: "Erro ao excluir a pergunta"})
     }
 };
-

@@ -26,6 +26,8 @@ const moduleRoutes = require('./routes/api/module');
 const helpRoutes = require('./routes/api/help');
 const searchRoutes = require('./routes/api/search');
 const notificationRoutes = require('./routes/api/notification');
+const questionRoutes = require('./routes/api/question');
+const optionRoutes = require('./routes/api/options');
 
 // API Routes
 app.use('/api/user', userRoutes);
@@ -35,6 +37,8 @@ app.use('/api/module', moduleRoutes);
 app.use('/api/help', helpRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/notification', notificationRoutes);
+app.use('/api/question', questionRoutes);
+app.use('/api/option', optionRoutes);
 
 // Rotas da aplicação FrontEnd
 app.get('/', authMiddleware(), async (req, res) => {
