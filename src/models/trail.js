@@ -43,4 +43,15 @@ module.exports = {
     const values = [data.idTrail, data.idUser, data.deadline, data.status];
     return pool.query(query, values);
   },
+
+  async findByUserId(userId) {
+    const query = `
+      SELECT ut.*, t.titulo
+      FROM usuario_trilha ut
+      JOIN trilha t ON ut.id_trilha = t.id
+      WHERE ut.id_usuario = $1
+    `;
+    const result = await pool.query(query, [userId]);
+    return result.rows;
+  },
 };

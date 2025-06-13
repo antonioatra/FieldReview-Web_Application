@@ -25,7 +25,7 @@ exports.showById = async (req, res) => {
 exports.showByTrailId = async (req, res) => {
   try {
     const { id } = req.params;
-    const mod = await Module.findByTrailId({ id_trail: id });
+    const mod = await Module.findByTrailId(id);
     res.json(mod.rows);
   } catch (err) {
     res.status(500).json({ error: 'Erro ao retornar módulos' });

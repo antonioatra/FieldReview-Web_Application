@@ -1461,8 +1461,23 @@ Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizag
 
 ## 6.3 Análise da Concorrência
 
-*a) Principais Concorrentes (até 250 palavras)*
-*Liste os concorrentes diretos e indiretos, destacando suas principais características e posicionamento no mercado.*
+&emsp; Compreender quem são os concorrentes diretos e indiretos da solução proposta é essencial para o sucesso do projeto. Essa análise fornece uma visão estratégica do mercado, permitindo identificar lacunas, oportunidades de diferenciação e possíveis ameaças à adoção da aplicação.
+
+*a) Principais Concorrentes*
+
+&emsp; <strong> Concorrentes diretos </strong> são plataformas que oferecem serviços semelhantes, voltados ao monitoramento de lavouras, análise de dados agronômicos e suporte à tomada de decisão no campo. Destacam-se:
+<ul> 
+    <li> <p> <strong> John Deere Operations Center: </strong> Foco em conectividade de máquinas agrícolas, mapeamento e gestão operacional. </p> </li>
+    <li> <p> <strong>  Granular (corteva): </strong> integra dados agronômicos com gestão financeira para aumentar a eficiência e a rentabilidade da fazenda. </p> </li>
+</ul>
+
+&emsp; <strong> Concorrentes indiretos </strong> são soluções que, embora não ofereçam o mesmo conjunto de funcionalidades, atendem às mesmas necessidades do produtor rural por meio de outros enfoques. Exemplos:
+<ul> 
+    <li> <p> <strong> Solinftec: </strong> Foco em automoção e sensores para melhorar a eficiência operacional em tempo real. </p> </li>
+    <li> <p> <strong>  Agrosmart: </strong> Utiliza dados climáticos e de solo para apoiar decisões sustentáveis e agrícolas. </p> </li>
+    <li> <p> <strong>  Strider (Syngenta): </strong> Especializada em monitoramento de pragas e doenças via aplicativo móvel. </p> </li>
+</ul>
+
 
 *b) Vantagens Competitivas da Aplicação Web*
 
@@ -1526,8 +1541,10 @@ Descreva os principais segmentos de mercado a serem atendidos pela aplicação. 
 
 
 
-*6.4 Promoção (até 200 palavras)*
-*Descreva as estratégias digitais planejadas, como SEO, redes sociais, marketing de conteúdo e campanhas pagas.*
+### Promoção
+
+&emsp; As estratégias de promoção do FieldReview, aplicação web da Bayer Crop Science, focam em canais digitais para capacitar os Promotores Técnicos Digitais (PTDs). SEO é otimizado no site cropscience.bayer.com, com palavras-chave como “capacitação em agricultura”, “estudo FieldView” e “treinamento FieldView”, atraindo PTDs em busca de aprendizado sobre o Climate FieldView. Marketing de conteúdo inclui vídeos no YouTube, com tutoriais práticos sobre o FieldReview, além de blogs ensinando a utilizá-lo. E-mails via Salesforce CRM entregam guias de capacitação e convites para a utilização da plataforma, onde as demonstrações práticas em vídeo reforçam o aprendizado. A integração com o Impulso Bayer oferece pontos por uso, incentivando adoção. 
+
 
 # <a name="c7"></a>7. Conclusões e trabalhos futuros (sprint 5)
 

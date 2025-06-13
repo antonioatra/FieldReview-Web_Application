@@ -7,7 +7,7 @@ exports.store = async (req, res) => {
     res.status(201).json({ message: 'Titulo Criado com sucesso', trail: result.rows[0] });
   } catch (err) {
     res.status(500).json({ error: 'Erro ao criar trilha' });
-    console.error("Erro encotrado " + err)
+    console.error('Erro encotrado ' + err);
   }
 };
 
@@ -47,6 +47,7 @@ exports.showAll = async (req, res) => {
     const trail = await Trail.findAll();
     res.json(trail);
   } catch (err) {
+    console.log(err);
     res.status(500).json({ error: 'Erro ao retornar trilhas' });
   }
 };
@@ -70,5 +71,18 @@ exports.assignTrail = async (req, res) => {
     res.status(201).json({ message: 'Trilha atribuída com sucesso', assignment: result.rows[0] });
   } catch (err) {
     res.status(500).json({ error: 'Erro ao atribuir trilha' });
+  }
+};
+
+exports.showByUser = async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const user = await User.findById(userId);
+    if (!user) return res.status(404).json({ error: 'Usuário não encontrado' });
+
+    const trails = await Trail.findByUserId(userId);
+    res.status(200).json({ message: 'Trilhas do usuário retornadas com sucesso', trails });
+  } catch (err) {
+    res.status(500).json({ error: 'Erro ao retornar trilhas do usuário' });
   }
 };
