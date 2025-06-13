@@ -180,6 +180,7 @@ app.get('/dashboard', authMiddleware(), async (req, res) => {
   let users = [];
   let trails = [];
   let trailModules = [];
+  let userTrails = [];
 
   const tab = req.query.tab || 'usuarios'; // Pega a aba ativa da query string
 
@@ -189,6 +190,11 @@ app.get('/dashboard', authMiddleware(), async (req, res) => {
 
     const trailsResponse = await axios.get('http://localhost:3000/api/trail');
     trails = trailsResponse.data;
+
+    const userTrailsResponse = await axios.get(
+      `http://localhost:3000/api/trail/user/${req.user.id}`,
+    );
+    userTrails = userTrailsResponse.data.trails;
 
     // Buscar módulos para cada trilha
     trailModules = await Promise.all(
@@ -215,11 +221,17 @@ app.get('/dashboard', authMiddleware(), async (req, res) => {
     res.status(500).send('Erro interno do servidor');
   }
 
+  const availableTrails = trails.filter((trail) => {
+    return !userTrails.some((userTrail) => userTrail.id_trilha === trail.id);
+  });
+
   res.render('dashboard', {
     users: users,
     activeTab: tab,
     trails: trails,
     trailModules: trailModules,
+    availableTrails: availableTrails,
+    userTrails: userTrails,
   });
 });
 
