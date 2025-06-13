@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= editMode ? 'Editar' : 'Criar' %> Trilha: <%= trail ? trail.titulo : 'Novo' %></title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-sans">
+    <%- include('./partials/header.ejs') %>
+    <main class="p-6">
+      <section class="mb-4">
+        <div class="flex items-center justify-between px-6 py-4">
+          <h2 class="text-3xl font-bold text-black">
+            <%= editMode ? 'Editar' : 'Criar' %> Trilha: <%= trail ? trail.titulo : 'Novo' %>
+          </h2>
+          <div class="flex gap-2">
+            <button
+              class="flex items-center gap-1 bg-gray-300 text-black px-4 py-2 rounded"
+              onclick="window.location.href='/dashboard'"
+            >
+              <span>✖</span> Cancelar
+            </button>
+            <button
+              id="saveButton"
+              class="flex items-center gap-1 bg-[#6DBA0D] text-white px-4 py-2 rounded"
+            >
+              <span>💾</span> Salvar
+            </button>
+          </div>
+        </div>
+
+        <!-- Linha abaixo -->
+        <hr class="border-t-2 border-blue-900 mx-6" />
+
+        <form id="trailForm" class="px-6 py-4">
+          <div>
+            <label for="titulo" class="block mb-2 text-sm font-medium text-gray-700"
+              >Alterar o título</label
+            >
+            <input
+              type="text"
+              id="titulo"
+              name="titulo"
+              value="<%= trail ? trail.titulo : '' %>"
+              placeholder="Digite o novo título"
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+              required
+            />
+          </div>
+
+          <div class="mt-4">
+            <label class="block mb-2 text-sm font-medium text-gray-700">Alterar os módulos</label>
+            <div
+              id="modulesContainer"
+              class="bg-white border border-gray-300 rounded-md p-4 space-y-2"
+            >
+              <% if (trail && trail.modules) { %> <% trail.modules.forEach(module => { %>
+              <div class="flex items-center justify-between bg-gray-50 border rounded px-4 py-2">
+                <div class="flex items-center gap-2">
+                  <span class="cursor-move">☰</span>
+                  <input type="text" class="text-sm w-48" value="<%= module %>" readonly />
+                </div>
+                <div class="flex items-center gap-2">
+                  <button class="text-black hover:text-red-600" onclick="removeModule(this, event)">
+                    🗑
+                  </button>
+                  <button class="text-black hover:text-blue-600" onclick="editModule(this, event)">
+                    ✎
+                  </button>
+                </div>
+              </div>
+              <% }) %> <% } else { %>
+              <div class="flex items-center justify-between bg-gray-50 border rounded px-4 py-2">
+                <div class="flex items-center gap-2">
+                  <span class="cursor-move">☰</span>
+                  <input type="text" class="text-sm w-48" placeholder="Novo módulo" />
+                </div>
+                <div class="flex items-center gap-2">
+                  <button class="text-black hover:text-red-600" onclick="removeModule(this, event)">
+                    🗑
+                  </button>
+                  <button class="text-black hover:text-blue-600" onclick="editModule(this, event)">
+                    ✎
+                  </button>
+                </div>
+              </div>
+              <% } %>
+            </div>
+
+            <div class="mt-4">
+              <button
+                type="button"
+                id="addModuleButton"
+                class="w-full flex items-center justify-center gap-2 bg-[#6DBA0D] text-white px-4 py-2 rounded"
+              >
+                <span>➕</span> Adicionar
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+
+    <script>
+      const editMode = <%= editMode %>;
+      const trailId = '<%= trail ? trail.id : null %>';
+      const modulesContainer = document.getElementById('modulesContainer');
+      const addModuleButton = document.getElementById('addModuleButton');
+      const saveButton = document.getElementById('saveButton');
+      const trailForm = document.getElementById('trailForm');
+
+      // Add new module
+      addModuleButton.addEventListener('click', () => {
+        const newModule = document.createElement('div');
+        newModule.className = 'flex items-center justify-between bg-gray-50 border rounded px-4 py-2';
+        newModule.innerHTML = `
+          <div class="flex items-center gap-2">
+            <span class="cursor-move">☰</span>
+            <input type="text" class="text-sm w-48" placeholder="Novo módulo" />
+          </div>
+          <div class="flex items-center gap-2">
+            <button class="text-black hover:text-red-600" onclick="removeModule(this, event)">🗑</button>
+            <button class="text-black hover:text-blue-600" onclick="editModule(this, event)">✎</button>
+          </div>
+        `;
+        modulesContainer.appendChild(newModule);
+      });
+
+      // Remove module
+      window.removeModule = (button, event) => {
+        event.preventDefault();
+        button.closest('div').remove();
+      };
+
+      // Edit module (toggle readonly for now, can be enhanced)
+      window.editModule = (button, event) => {
+        event.preventDefault();
+        const input = button.closest('div').querySelector('input');
+        input.readOnly = !input.readOnly;
+        input.focus();
+      };
+
+      // Save form submission
+      saveButton.addEventListener('click', async () => {
+        const titulo = document.getElementById('titulo').value;
+        const modules = Array.from(modulesContainer.querySelectorAll('input')).map(input => input.value).filter(v => v);
+
+        const data = { titulo, modules };
+
+        try {
+          let response;
+          if (editMode && trailId) {
+            response = await fetch(`/api/trail/${trailId}`, {
+              method: 'PATCH',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data),
+            });
+          } else {
+            response = await fetch('/api/trail', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data),
+            });
+          }
+
+          const result = await response.json();
+          if (response.ok) {
+            alert(result.message);
+            window.location.href = '/dashboard';
+          } else {
+            alert(result.error);
+          }
+        } catch (error) {
+          alert('Erro ao salvar trilha');
+          console.error(error);
+        }
+      });
+    </script>
+  </body>
+</html>
