@@ -13,6 +13,7 @@ const migrations = [
   './20250512_create_usuario_notificacao.js', // Depende de usuarios, notificacao
   './20250512_create_usuario_trilha.js', // Depende de usuarios, trilha
   './20250512_create_usuario_modulo.js', // Depende de usuarios, modulo
+  './20250603_create_help.js', // Tabela de ajuda
 ];
 
 async function runMigrations() {

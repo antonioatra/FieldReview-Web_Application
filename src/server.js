@@ -16,12 +16,14 @@ app.use(express.static(path.join(__dirname, '../public'))); // arquivos estátic
 const userRoutes = require('./routes/api/user');
 const trailRoutes = require('./routes/api/trail');
 const moduleRoutes = require('./routes/api/module');
+const searchRoutes = require('./routes/api/search');
 const questionRoutes = require('./routes/api/question');
 const optionRoutes = require('./routes/api/options');
 
 app.use('/api/user', userRoutes);
 app.use('/api/trail', trailRoutes);
 app.use('/api/module', moduleRoutes);
+app.use('/api/search', searchRoutes);
 app.use('/api/question', questionRoutes);
 app.use('/api/option', optionRoutes);
 
