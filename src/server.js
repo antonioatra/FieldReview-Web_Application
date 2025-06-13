@@ -26,6 +26,8 @@ const moduleRoutes = require('./routes/api/module');
 const helpRoutes = require('./routes/api/help');
 const searchRoutes = require('./routes/api/search');
 const notificationRoutes = require('./routes/api/notification');
+const questionRoutes = require('./routes/api/question');
+const optionRoutes = require('./routes/api/options');
 
 // API Routes
 app.use('/api/user', userRoutes);
@@ -35,6 +37,8 @@ app.use('/api/module', moduleRoutes);
 app.use('/api/help', helpRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/notification', notificationRoutes);
+app.use('/api/question', questionRoutes);
+app.use('/api/option', optionRoutes);
 
 // Rotas da aplicação FrontEnd
 app.get('/', authMiddleware(), async (req, res) => {
@@ -67,15 +71,20 @@ app.get('/', authMiddleware(), async (req, res) => {
           const modulesResponse = await axios.get(
             `http://localhost:3000/api/module/trail/${trail.id}`,
           );
+          const data = modulesResponse.data;
+          console.log(data[0].id);
+
           return {
             trailId: trail.id,
             moduleCount: modulesResponse.data.length,
+            firstId: data[0].id
           };
         } catch (error) {
           console.error(`Erro ao buscar módulos da trilha ${trail.id}:`, error.message);
           return {
             trailId: trail.id,
             moduleCount: 0,
+            firstId: null
           };
         }
       }),
@@ -105,6 +114,10 @@ app.get('/', authMiddleware(), async (req, res) => {
 // Página de registro
 app.get('/register', (req, res) => {
   res.render('register', { error: null });
+});
+//Página de login
+app.get('/login', (req, res) => {
+  res.render('login', { error: null });
 });
 
 app.get('/login', (req, res) => {
@@ -147,10 +160,13 @@ app.get('/search', async (req, res) => {
 });
 
 // Página da trilha específica
-app.get('/trail/:id', (req, res) => {
-  const trailId = req.params.id;
+app.get('/trail/:idTrail/:idModule', async (req, res) => {
+  const trailId = req.params.idTrail;
+  const moduleId = req.params.idModule;
+
   res.render('user/trail', {
-    id: trailId,
+    idTrail: trailId,
+    idModule: moduleId,
     title: 'Título da Trilha',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',

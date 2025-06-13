@@ -33,7 +33,7 @@ exports.showById = async(req, res) => { // chama o model para apresentar Questio
     const {id} = req.params; // chama o id como parâmetro
     const question = await Question.findById(id); 
 
-    res.json(question); // redireciona a Question com o respectivo id
+    res.json(question.rows[0]); // redireciona a Question com o respectivo id
     } catch (err) {
         res.status(500).json({error: "Erro ao retornar a pergunta"})
     }
@@ -41,12 +41,12 @@ exports.showById = async(req, res) => { // chama o model para apresentar Questio
 
 exports.showByModuleId = async(req, res) => {
     try {
-    const {moduleId} = req.body;
-    const question = await Question.findByModuloId(moduleId);
+    const id = req.params.id;
+    const question = await Question.findByModuloId({moduleId: id});
     if(!question) {
         return res.status(404).json({message: "Esse módulo não contém perguntas"})
     }
-    res.json(question);
+    res.json(question.rows[0]);
     } catch (err) {
         res.status(500).json({error: "Erro ao retornar a pergunta"})
     }
@@ -73,4 +73,3 @@ exports.destroy = async(req, res) => { // chama o model que deleta as Questions
         res.status(500).json({error: "Erro ao excluir a pergunta"})
     }
 };
-

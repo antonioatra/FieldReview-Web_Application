@@ -12,7 +12,7 @@ exports.store = async (req, res) => {
 
 // Retorna um módulo por ID
 exports.showById = async (req, res) => {
-  try {
+  try { 
     const { id } = req.params;
     const mod = await Module.findById(id);
     res.json(mod.rows[0]);
