@@ -1,8 +1,6 @@
 require('dotenv').config();
 const express = require('express');
 
-const axios = require('axios');
-
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const authMiddleware = require('./middleware/authMiddleware');
@@ -38,18 +36,17 @@ app.use('/api/help', helpRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/notification', notificationRoutes);
 
-
 // Rotas da aplicação FrontEnd
-app.get('/',  authMiddleware(), async (req, res) => {
+app.get('/', authMiddleware(), async (req, res) => {
   try {
-    const userId = '32221db5-1bc8-4ec2-8a29-b163a639a82a';
-
     // Buscar dados das APIs
     const trailsResponse = await axios.get('http://localhost:3000/api/trail');
-    const userTrailsResponse = await axios.get(`http://localhost:3000/api/trail/user/${userId}`);
+    const userTrailsResponse = await axios.get(
+      `http://localhost:3000/api/trail/user/${req.user.id}`,
+    );
     const usersResponse = await axios.get('http://localhost:3000/api/user');
     const notificationsResponse = await axios.get(
-      `http://localhost:3000/api/notification/user/${userId}`,
+      `http://localhost:3000/api/notification/user/${req.user.id}`,
     );
 
     const trails = trailsResponse.data;
@@ -61,7 +58,7 @@ app.get('/',  authMiddleware(), async (req, res) => {
 
     // Processar ranking
     const sortedRank = userList.sort((a, b) => (b.pontuacao || 0) - (a.pontuacao || 0));
-    const userPosition = sortedRank.findIndex((u) => u.id === userId);
+    const userPosition = sortedRank.findIndex((u) => u.id === req.user.id);
 
     // Buscar módulos para cada trilha
     const trailModules = await Promise.all(
@@ -100,7 +97,7 @@ app.get('/',  authMiddleware(), async (req, res) => {
   } catch (error) {
     res.status(500).json({
       error: 'Erro interno do servidor',
-      message: error.message,
+      message: error,
     });
   }
 });
@@ -109,7 +106,6 @@ app.get('/',  authMiddleware(), async (req, res) => {
 app.get('/register', (req, res) => {
   res.render('register', { error: null });
 });
-
 
 app.get('/search', async (req, res) => {
   const searchTerm = req.query.searchTerm; // Extract searchTerm from URL query
@@ -143,7 +139,6 @@ app.get('/search', async (req, res) => {
     searchTerm,
     error,
     user: req.user,
-
   });
 });
 
@@ -159,22 +154,20 @@ app.get('/trail/:id', (req, res) => {
   });
 });
 
-
 app.get('/help', async (req, res) => {
   try {
     const response = await axios.get('http://localhost:3000/api/help');
 
     res.render('help', {
-      results: response.data.help || [], 
+      results: response.data.help || [],
       user: req.user,
     });
   } catch (error) {
     console.error('Erro ao buscar dados de help:', error);
-    
-    res.render('help', {
-      results: [], 
-      user: req.user,
 
+    res.render('help', {
+      results: [],
+      user: req.user,
     });
   }
 });
@@ -186,4 +179,3 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
-

@@ -3,11 +3,11 @@ const router = express.Router();
 const UserController = require('../../controllers/userController');
 const authMiddleware = require('../../middleware/authMiddleware');
 
-router.post('/', authMiddleware('consultor'), UserController.store);
-router.get('/', authMiddleware('consultor'), UserController.show);
-router.get('/me', authMiddleware(), UserController.getCurrentUser);
-router.get('/:id', authMiddleware(), UserController.showById);
-router.patch('/:id', authMiddleware(), UserController.update);
-router.delete('/:id', authMiddleware('consultor'), UserController.destroy);
+router.post('/', UserController.store);
+router.get('/', UserController.show);
+router.get('/me', UserController.getCurrentUser);
+router.get('/:id', UserController.showById);
+router.patch('/:id', UserController.update);
+router.delete('/:id', UserController.destroy);
 
 module.exports = router;
