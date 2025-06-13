@@ -117,13 +117,12 @@
                 const found = trailModules.find(tm => tm.trailId === userTrail.id);
                 %>
 
-                  <%- include('./partials/trail/card', { 
-                    trail: userTrail, 
-                    moduleCount: found ? found.moduleCount : 0, firstId: found.firstId }) %>
-                    %>
-                    <% }) %>
+                <%- include('./partials/trail/card', { trail: userTrail, moduleCount: found ? found.moduleCount : 0,
+                  firstId: found ? found.firstId : null, }) %>
+                  %>
+                  <% }) %>
 
-                      <%} %>
+                    <%} %>
 
 
         </div>
@@ -137,13 +136,10 @@
             if (!isUserTrail || isUserTrail) {
             const found = trailModules.find(tm => tm.trailId === trail.id);
             %>
-            <%- include('./partials/trail/card', {
-            trail: trail,  
-            moduleCount: found ? found.moduleCount : 0, 
-            isAdministrator: false
-            }) %>
-          <% } %>     
-          <% }) %>   
+            <%- include('./partials/trail/card', { trail: trail, moduleCount: found ? found.moduleCount : 0,
+              isAdministrator: false, firstId: found ? found.firstId : null, }) %>
+              <% } %>
+                <% }) %>
         </div>
       </section>
     </main>
