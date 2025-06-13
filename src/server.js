@@ -159,13 +159,25 @@ app.get('/search', async (req, res) => {
   });
 });
 
+// Rota para CRIAR nova trilha (sem ID)
+app.get('/trail/edit', (req, res) => {
+  const editMode = false;
+  const trail = null; // Sem trilha existente
+  res.render('trailEdit', { editMode, trail });
+});
+
 // Rota para edição de trilha - deve vir ANTES da rota mais genérica
 app.get('/trail/edit/:id', async (req, res) => {
   const { id } = req.params;
   const editMode = true;
-  const response = await axios.get(`http://localhost:3000/api/trail/${id}`);
-  const trail = response.data;
-  res.render('trailEdit', { editMode, trail });
+  try {
+    const response = await axios.get(`http://localhost:3000/api/trail/${id}`);
+    const trail = response.data.trail; // Extrair o objeto trail da resposta
+    res.render('trailEdit', { editMode, trail });
+  } catch (error) {
+    console.error('Erro ao buscar trilha:', error);
+    res.status(500).send('Erro ao carregar trilha');
+  }
 });
 
 // Página da trilha específica

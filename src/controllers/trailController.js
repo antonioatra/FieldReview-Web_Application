@@ -14,10 +14,13 @@ exports.store = async (req, res) => {
 exports.update = async (req, res) => {
   try {
     const { id } = req.params;
+    console.log('Updating trail with ID:', id);
+    console.log('Data received:', req.body);
     await Trail.update(id, req.body);
     res.status(200).json({ message: 'Trilha atualizada com sucesso' });
   } catch (err) {
-    res.status(500).json({ error: 'Erro ao atualizar uma trilha' });
+    console.error('Error updating trail:', err);
+    res.status(500).json({ error: 'Erro ao atualizar uma trilha: ' + err.message });
   }
 };
 

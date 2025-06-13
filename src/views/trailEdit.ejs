@@ -105,8 +105,8 @@
 
     <script>
       console.log("aqui")
-      const editMode = <%= editMode %>;
-      const trailId = '<%= trail ? trail.id : null %>';
+      const editMode = <%= JSON.stringify(editMode) %>;
+      const trailId = '<%= trail ? trail.id : "" %>';
       console.log(trailId);
       const modulesContainer = document.getElementById('modulesContainer');
       const addModuleButton = document.getElementById('addModuleButton');
@@ -151,15 +151,22 @@
 
         const data = { titulo, modules };
 
+        // Adicionar logs para debug
+        console.log('Edit Mode:', editMode);
+        console.log('Trail ID:', trailId);
+        console.log('Data to send:', data);
+
         try {
           let response;
-          if (editMode && trailId) {
+          if (editMode && trailId && trailId !== 'null') {
+            console.log('Making PATCH request to:', `/api/trail/${trailId}`);
             response = await fetch(`/api/trail/${trailId}`, {
               method: 'PATCH',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(data),
             });
           } else {
+            console.log('Making POST request to:', '/api/trail');
             response = await fetch('/api/trail', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
@@ -167,16 +174,19 @@
             });
           }
 
+          console.log('Response status:', response.status);
           const result = await response.json();
+          console.log('Response data:', result);
+          
           if (response.ok) {
             alert(result.message);
             window.location.href = '/dashboard';
           } else {
-            alert(result.error);
+            alert(`Erro: ${result.error || result.message || 'Erro desconhecido'}`);
           }
         } catch (error) {
-          alert('Erro ao salvar trilha');
-          console.error(error);
+          console.error('Fetch error:', error);
+          alert('Erro ao salvar trilha: ' + error.message);
         }
       });
     </script>
