@@ -120,6 +120,10 @@ app.get('/login', (req, res) => {
   res.render('login', { error: null });
 });
 
+app.get('/login', (req, res) => {
+  res.render('login', { error: null });
+});
+
 app.get('/search', async (req, res) => {
   const searchTerm = req.query.searchTerm; // Extract searchTerm from URL query
   let helpResults = [];
@@ -188,6 +192,72 @@ app.get('/help', async (req, res) => {
   }
 });
 
+app.get('/dashboard', authMiddleware(), async (req, res) => {
+  let users = [];
+  let trails = [];
+  let trailModules = [];
+  let userTrails = [];
+
+  const tab = req.query.tab || 'usuarios'; // Pega a aba ativa da query string
+
+  try {
+    const response = await axios.get(`http://localhost:3000/api/user`);
+    users = response.data.filter((user) => user.cargo === 'user');
+
+    const trailsResponse = await axios.get('http://localhost:3000/api/trail');
+    trails = trailsResponse.data;
+
+    const userTrailsResponse = await axios.get(
+      `http://localhost:3000/api/trail/user/${req.user.id}`,
+    );
+    userTrails = userTrailsResponse.data.trails;
+
+    // Buscar módulos para cada trilha
+    trailModules = await Promise.all(
+      trails.map(async (trail) => {
+        try {
+          const modulesResponse = await axios.get(
+            `http://localhost:3000/api/module/trail/${trail.id}`,
+          );
+          return {
+            trailId: trail.id,
+            moduleCount: modulesResponse.data.length,
+          };
+        } catch (error) {
+          console.error(`Erro ao buscar módulos da trilha ${trail.id}:`, error.message);
+          return {
+            trailId: trail.id,
+            moduleCount: 0,
+          };
+        }
+      }),
+    );
+  } catch (err) {
+    console.error('Erro ao renderizar dashboard:', err);
+    res.status(500).send('Erro interno do servidor');
+  }
+
+  const availableTrails = trails.filter((trail) => {
+    return !userTrails.some((userTrail) => userTrail.id_trilha === trail.id);
+  });
+
+  res.render('dashboard', {
+    users: users,
+    activeTab: tab,
+    trails: trails,
+    trailModules: trailModules,
+    availableTrails: availableTrails,
+    userTrails: userTrails,
+  });
+});
+
+app.get('/trail/edit/:id', async (req, res) => {
+  // Edit existing trail
+  const { id } = req.params;
+  const editMode = true;
+  const trail = await axios.get(`http://localhost:3000/api/trail/${id}`);
+  res.render('trailEdit', { editMode, trail });
+});
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
