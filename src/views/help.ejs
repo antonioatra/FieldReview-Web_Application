@@ -11,9 +11,13 @@
     <%- include("./partials/header.ejs") %>
 
     <main class="p-6 min-h-screen">
-      <br>
+      <br />
       <section class="">
-        <h2 class="text-2xl md:text-4xl text-center sm:text-left font-regular text-black md:m-15 p-5 sm:p-px">Perguntas Frequentes</h2>
+        <h2
+          class="text-2xl md:text-4xl text-center sm:text-left font-regular text-black md:m-15 p-5 sm:p-px"
+        >
+          Perguntas Frequentes
+        </h2>
       </section>
 
       <!-- Loading indicator -->
@@ -25,9 +29,12 @@
       <div id="error" class="text-center py-8 hidden">
         <p class="text-red-600">Erro ao carregar os dados. Tente novamente mais tarde.</p>
       </div>
-      
+
       <!-- bloco com as duvidas -->
-      <div id="results-container" class="flex flex-col gap-10 pb-2 sm:m-15 m:5 itens-center sm:itens-left">
+      <div
+        id="results-container"
+        class="flex flex-col gap-10 pb-2 sm:m-15 m:5 itens-center sm:itens-left"
+      >
         <!-- Results will be loaded here -->
       </div>
     </main>
@@ -37,56 +44,86 @@
     <script>
       // Função para carregar dados via Axios
       async function loadHelpData() {
-        const loadingElement = document.getElementById("loading");
-        const errorElement = document.getElementById("error");
-        const resultsContainer = document.getElementById("results-container");
+        const loadingElement = document.getElementById('loading');
+        const errorElement = document.getElementById('error');
+        const resultsContainer = document.getElementById('results-container');
 
         try {
           // Mostra loading
-          loadingElement.style.display = "block";
-          errorElement.classList.add("hidden");
+          loadingElement.style.display = 'block';
+          errorElement.classList.add('hidden');
 
           // Faz requisição para a API
-          const response = await axios.get("/api/help");
-          
+          const response = await axios.get('/api/help');
+
           // Esconde loading
-          loadingElement.style.display = "none";
+          loadingElement.style.display = 'none';
 
           // Verifica se há dados
           const helpData = response.data.help || [];
-          
+
           if (helpData.length > 0) {
             // Cria HTML para os resultados
             const resultsHTML = `
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                ${helpData.map(result => `
-                  <div class="bg-black/2 p-6 rounded-2xl border-1 border-black/10">
-                    <h3 class="text-xl font-bold text-sky-900 mb-2">${result.titulo || 'Título não disponível'}</h3>
-                    <p>${result.conteudo || 'Descrição não disponível'}</p>
-                  </div>
-                `).join('')}
+               ${helpData
+                 .map((result, index) => {
+                   const titulo = result.titulo || 'Título não disponível';
+                   const conteudo = result.conteudo || 'Descrição não disponível';
+                   const fileName = `ajuda_${index + 1}.txt`;
+                   const fileContent = `${titulo}\n\n${conteudo}`;
+
+                   return `
+    <div class="bg-black/2 p-6 rounded-2xl border-1 border-black/10">
+      <h3 class="text-xl font-bold text-sky-900 mb-2">${titulo}</h3>
+      <p>${conteudo}</p>
+      <button
+        class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        onclick="downloadCard('${fileName}', \`${fileContent.replace(/`/g, '\\`')}\`)">
+        Baixar
+      </button>
+    </div>
+  `;
+                 })
+                 .join('')}
+
               </div>
             `;
-            
+
             resultsContainer.innerHTML = resultsHTML;
           } else {
-            resultsContainer.innerHTML = '<p class="text-gray-600">Nenhum resultado encontrado.</p>';
+            resultsContainer.innerHTML =
+              '<p class="text-gray-600">Nenhum resultado encontrado.</p>';
           }
-
         } catch (error) {
           console.error('Erro ao carregar dados:', error);
-          
+
           // Esconde loading e mostra erro
-          loadingElement.style.display = "none";
-          errorElement.classList.remove("hidden");
-          
-          
-      }}
+          loadingElement.style.display = 'none';
+          errorElement.classList.remove('hidden');
+        }
+      }
 
       document.addEventListener('DOMContentLoaded', loadHelpData);
 
       function reloadHelpData() {
         loadHelpData();
+      }
+
+      function downloadCard(filename, content) {
+        const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+
+        // Limpeza
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
       }
     </script>
   </body>

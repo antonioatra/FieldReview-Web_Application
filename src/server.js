@@ -107,6 +107,10 @@ app.get('/register', (req, res) => {
   res.render('register', { error: null });
 });
 
+app.get('/login', (req, res) => {
+  res.render('login', { error: null });
+});
+
 app.get('/search', async (req, res) => {
   const searchTerm = req.query.searchTerm; // Extract searchTerm from URL query
   let helpResults = [];
@@ -177,6 +181,8 @@ app.get('/dashboard', authMiddleware(), async (req, res) => {
   let trails = [];
   let trailModules = [];
 
+  const tab = req.query.tab || 'usuarios'; // Pega a aba ativa da query string
+
   try {
     const response = await axios.get(`http://localhost:3000/api/user`);
     users = response.data.filter((user) => user.cargo === 'user');
@@ -211,7 +217,7 @@ app.get('/dashboard', authMiddleware(), async (req, res) => {
 
   res.render('dashboard', {
     users: users,
-    activeTab: 'trilha',
+    activeTab: tab,
     trails: trails,
     trailModules: trailModules,
   });

@@ -128,7 +128,8 @@
             %>
             <%- include('./partials/trail/card', {
             trail: trail,  
-            moduleCount: found ? found.moduleCount : 0
+            moduleCount: found ? found.moduleCount : 0, 
+            isAdministrator: false
             }) %>
           <% } %>     
           <% }) %> 
