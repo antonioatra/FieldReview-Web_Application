@@ -1,70 +1,70 @@
 <% if (!isAdministrator) { %>
-<a href="/trail/<%= trail.id %>">
-  <% } else { %>
-  <a>
-    <% } %>
+  <a href="/trail/<%= trail.id %>/<%= firstId %>">
+    <% } else { %>
+      <a>
+        <% } %>
 
-    <div
-      class="bg-[#F6F6F6] text-white rounded-lg m-sm shadow-md hover:shadow-lg transition relative"
-    >
-      <h4 class="text-lg font-bold text-black p-6"><%= trail.titulo %></h4>
-      <% if (isAdministrator) { %>
-      <div class="flex p-2 flex-col absolute right-2 top-2 gap-2">
-        <button
-          class="text-green-600 hover:text-green-800 mr-2"
-          onclick="editTrail('<%= trail.id %>')"
-        >
-          <img src="/pencil.svg" class="w-5" alt="Editar" />
-        </button>
-        <button class="text-red-600 hover:text-red-800" onclick="deleteTrail('<%= trail.id %>')">
-          <img src="/trash.svg" class="w-5" alt="Apagar" />
-        </button>
-      </div>
-      <% } %>
+          <div class="bg-[#F6F6F6] text-white rounded-lg m-sm shadow-md hover:shadow-lg transition relative">
+            <h4 class="text-lg font-bold text-black p-6">
+              <%= trail.titulo %>
+            </h4>
+            <% if (isAdministrator) { %>
+              <div class="flex p-2 flex-col absolute right-2 top-2 gap-2">
+                <button class="text-green-600 hover:text-green-800 mr-2" onclick="editTrail('<%= trail.id %>')">
+                  <img src="/pencil.svg" class="w-5" alt="Editar" />
+                </button>
+                <button class="text-red-600 hover:text-red-800" onclick="deleteTrail('<%= trail.id %>')">
+                  <img src="/trash.svg" class="w-5" alt="Apagar" />
+                </button>
+              </div>
+              <% } %>
 
-      <div class="flex justify-between items-center border-t border-black mt-4 py-4">
-        <div>
-          <p class="mt-2 text-black font-semibold px-4"><%= moduleCount || 0 %> Módulos</p>
-          <p class="mt-2 text-black px-4">
-            Pessoas que completaram: <%= trail.completedCount || 15 %>
-          </p>
-        </div>
+                <div class="flex justify-between items-center border-t border-black mt-4 py-4">
+                  <div>
+                    <p class="mt-2 text-black font-semibold px-4">
+                      <%= moduleCount || 0 %> Módulos
+                    </p>
+                    <p class="mt-2 text-black px-4">
+                      Pessoas que completaram: <%= trail.completedCount || 15 %>
+                    </p>
+                  </div>
 
-        <div
-          class="relative w-20 h-20 rounded-full border-[10px] border-[#6DBA0D] flex items-center justify-center mr-4"
-        >
-          <div class="absolute inset-[10px] bg-white rounded-full flex items-center justify-center">
-            <span class="text-black text-sm font-semibold"><%= trail.progress || 0 %>%</span>
+                  <div
+                    class="relative w-20 h-20 rounded-full border-[10px] border-[#6DBA0D] flex items-center justify-center mr-4">
+                    <div class="absolute inset-[10px] bg-white rounded-full flex items-center justify-center">
+                      <span class="text-black text-sm font-semibold">
+                        <%= trail.progress || 0 %>%
+                      </span>
+                    </div>
+                  </div>
+                </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </a>
+      </a>
 
-  <script>
-    function editTrail(trailId) {
-      window.location.href = `/trail/edit/${trailId}`;
-    }
-
-    async function deleteTrail(trailId) {
-      if (confirm('Tem certeza que deseja deletar esta trilha?')) {
-        try {
-          const response = await fetch(`/api/trail/${trailId}`, {
-            method: 'DELETE',
-            headers: { 'Content-Type': 'application/json' },
-          });
-          const data = await response.json();
-          if (response.ok) {
-            alert(data.message);
-            location.reload(); // Reload to reflect the deletion
-          } else {
-            alert(data.error);
-          }
-        } catch (error) {
-          alert('Erro ao deletar trilha');
-          console.error(error);
+      <script>
+        function editTrail(trailId) {
+          window.location.href = `/trail/edit/${trailId}`;
         }
-      }
-    }
-  </script>
-</a>
+
+        async function deleteTrail(trailId) {
+          if (confirm('Tem certeza que deseja deletar esta trilha?')) {
+            try {
+              const response = await fetch(`/api/trail/${trailId}`, {
+                method: 'DELETE',
+                headers: { 'Content-Type': 'application/json' },
+              });
+              const data = await response.json();
+              if (response.ok) {
+                alert(data.message);
+                location.reload(); // Reload to reflect the deletion
+              } else {
+                alert(data.error);
+              }
+            } catch (error) {
+              alert('Erro ao deletar trilha');
+              console.error(error);
+            }
+          }
+        }
+      </script>
+  </a>
