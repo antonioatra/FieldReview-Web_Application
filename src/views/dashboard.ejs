@@ -52,7 +52,7 @@
               <% trails.forEach(trail=> { 
                 const found = trailModules.find(tm => tm.trailId === trail.id); %>
                 
-                <%- include('./partials/trail/card', { trail: trail, moduleCount: found ? found.moduleCount : 0, isAdministrator: true }) %>
+                <%- include('./partials/trail/card', { trail: trail, moduleCount: found ? found.moduleCount : 0, isAdministrator: true, firstId: found ? found.firstId : null }) %>
 
                   <% }) %>
 
@@ -92,7 +92,7 @@
                     <div>
                       <h2 class="text-2xl font-bold" id="user-name"></h2>
                       <p class="text-gray-600" id="user-email"></p>
-                      <p class="text-gray-600">Pontuação: <span class="font-semibold" id="user-score"></span></p>
+                      <p class="text-gray-600 hidden">Pontuação: <span class="font-semibold" id="user-score"></span></p>
                     </div>
                     
                   </div>
@@ -104,7 +104,7 @@
                         <a href="#" class="tab-link inline-block p-4 border-b-2 border-blue-500 rounded-t-lg active"
                           onclick="switchTab(event, 'progress-tab')">Progresso</a>
                       </li>
-                      <li class="mr-2">
+                      <li class="mr-2 hidden">
                         <a href="#"
                           class="tab-link inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
                           onclick="switchTab(event, 'trails-tab')">Trilhas</a>
@@ -146,7 +146,8 @@
                           %>
                             <%- include('./partials/trail/card', {
                               trail: userTrail,
-                              moduleCount: found ? found.moduleCount : 0
+                              moduleCount: found ? found.moduleCount : 0, 
+                              firstId: found ? found.firstId : null,
                             }) %>
                           <% }) %> 
                       
@@ -167,7 +168,8 @@
                           <%- include('./partials/trail/card', {
                           trail: trail,  
                           moduleCount: found ? found.moduleCount : 0, 
-                          isAdministrator: false
+                          isAdministrator: false, 
+                          firstId: found ? found.firstId : null
                           }) %>
                         <% } %>     
                         <% }) %> 
