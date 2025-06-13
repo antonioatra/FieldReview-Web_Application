@@ -32,7 +32,6 @@ module.exports = { // Cria as funções do model
     async findByQuestionId(data) {
         const query = "SELECT * FROM opcoes WHERE id_pergunta = $1";
         const values = [data.questionId];
-        console.log("Valor de data: ", data.questionId);
 
         return pool.query(query, values);
     }
