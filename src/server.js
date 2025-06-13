@@ -172,6 +172,58 @@ app.get('/help', async (req, res) => {
   }
 });
 
+app.get('/dashboard', authMiddleware(), async (req, res) => {
+  let users = [];
+  let trails = [];
+  let trailModules = [];
+
+  try {
+    const response = await axios.get(`http://localhost:3000/api/user`);
+    users = response.data.filter((user) => user.cargo === 'user');
+
+    const trailsResponse = await axios.get('http://localhost:3000/api/trail');
+    trails = trailsResponse.data;
+
+    // Buscar módulos para cada trilha
+    trailModules = await Promise.all(
+      trails.map(async (trail) => {
+        try {
+          const modulesResponse = await axios.get(
+            `http://localhost:3000/api/module/trail/${trail.id}`,
+          );
+          return {
+            trailId: trail.id,
+            moduleCount: modulesResponse.data.length,
+          };
+        } catch (error) {
+          console.error(`Erro ao buscar módulos da trilha ${trail.id}:`, error.message);
+          return {
+            trailId: trail.id,
+            moduleCount: 0,
+          };
+        }
+      }),
+    );
+  } catch (err) {
+    console.error('Erro ao renderizar dashboard:', err);
+    res.status(500).send('Erro interno do servidor');
+  }
+
+  res.render('dashboard', {
+    users: users,
+    activeTab: 'trilha',
+    trails: trails,
+    trailModules: trailModules,
+  });
+});
+
+app.get('/trail/edit/:id', async (req, res) => {
+  // Edit existing trail
+  const { id } = req.params;
+  const editMode = true;
+  const trail = await axios.get(`http://localhost:3000/api/trail/${id}`);
+  res.render('trailEdit', { editMode, trail });
+});
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
