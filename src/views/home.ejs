@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - FieldView</title>
-    <!-- Include Tailwind CSS via CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-      /* Custom styles for circular progress (Tailwind doesn't have this by default) */
-      .progress-circle {
-        position: relative;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background: conic-gradient(#4da8da 0% 0%, #e5e7eb 0% 100%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .progress-circle::before {
-        content: '';
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        background: white;
-        border-radius: 50%;
-      }
-      .progress-circle span {
-        position: relative;
-        font-size: 1rem;
-        font-weight: bold;
-        color: #4da8da;
-      }
-    </style>
-  </head>
-  <body class="font-sans overflow-auto">
-    <%- include('./partials/header.ejs') %>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - FieldView</title>
+  <!-- Include Tailwind CSS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    /* Custom styles for circular progress (Tailwind doesn't have this by default) */
+    .progress-circle {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: conic-gradient(#4da8da 0% 0%, #e5e7eb 0% 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .progress-circle::before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: white;
+      border-radius: 50%;
+    }
+
+    .progress-circle span {
+      position: relative;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #4da8da;
+    }
+  </style>
+</head>
+
+<body class="font-sans overflow-auto">
+  <%- include('./partials/header.ejs') %>
 
     <main class="p-6 mb-36">
       <section class="mb-6">
@@ -46,97 +50,103 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-6">
         <div class="bg-white rounded-lg border-2 border-black/10">
-          <h3 class="text-xl font-semibold font-sans text-[color:#FFFFFF] mb-4 bg-[color:#00B5EF] px-1 w-full">Ranking</h3>
+          <h3 class="text-xl font-semibold font-sans text-[color:#FFFFFF] mb-4 bg-[color:#00B5EF] px-1 w-full">Ranking
+          </h3>
           <ul class="space-y-2">
             <li class="flex flex-col items-center space-x-2">
               <span>
-                <img src = "/assets/coroaHomePtd.svg" class = "w-6 h-6">
+                <img src="/assets/coroaHomePtd.svg" class="w-6 h-6">
               </span>
-             <% ranking.slice(0, 4).forEach((user, index) => { %>
-              <% if (index === 0) { %>
-                <li class="flex flex-col items-center space-x-2">
-                  <span class="bg-[color:#00B5EF] text-white px-20 py-3 rounded-md">
-                    <%= index + 1 %>. <%= user.nome %> 
-                  </span>
-                </li>
-              <% } else { %>
-                <li class="flex flex-col items-center space-y-2 py-2">
-                  <span class="text-blue-900">
-                   <%= index + 1 %>. <%= user.nome %> 
-                  </span>
-                </li>
+              <% ranking.slice(0, 4).forEach((user, index)=> { %>
+                <% if (index===0) { %>
+            <li class="flex flex-col items-center space-x-2">
+              <span class="bg-[color:#00B5EF] text-white px-20 py-3 rounded-md">
+                <%= index + 1 %>. <%= user.nome %>
+              </span>
+            </li>
+            <% } else { %>
+              <li class="flex flex-col items-center space-y-2 py-2">
+                <span class="text-blue-900">
+                  <%= index + 1 %>. <%= user.nome %>
+                </span>
+              </li>
               <% } %>
-             <% }) %>
+                <% }) %>
 
                   <li class="flex flex-col items-center space-y-2 py-4">
                     <span class="text-blue-900">
-                      <% if (userPosition !== -1) { %>
+                      <% if (userPosition !==-1) { %>
                         <%= userPosition + 1 %>. <%= ranking[userPosition].nome %>
-                      <% } %>
+                            <% } %>
                     </span>
                   </li>
-            </li>
+                  </li>
           </ul>
         </div>
 
         <div class="bg-white rounded-lg border-2 border-black/10 md:col-span-2">
-          <h3 class="text-xl font-semibold font-sans text-[color:#FFFFFF] mb-4 bg-[color:#00B5EF] px-1 rounded">Notificação</h3>
-          <ul class="space-y-4 px-4">     
-            <% if (notifications.length === 0) { %>
+          <h3 class="text-xl font-semibold font-sans text-[color:#FFFFFF] mb-4 bg-[color:#00B5EF] px-1 rounded">
+            Notificação</h3>
+          <ul class="space-y-4 px-4">
+            <% if (notifications.length===0) { %>
               <li class="text-gray-600">Nenhuma notificação</li>
-            <% } else {%> 
-              <% notifications.forEach(notification => { %>
-                <li class="flex items-start space-x-4">
-                  <div>
-                    <p class="text-gray-700"><%= notification.titulo %></p>
-                    <span class="text-sm text-gray-500"><%= notification.descricao %></span>
-                  </div>
-                </li>
-              <% }) %> 
-            <% } %> 
+              <% } else {%>
+                <% notifications.forEach(notification=> { %>
+                  <li class="flex items-start space-x-4">
+                    <div>
+                      <p class="text-gray-700">
+                        <%= notification.titulo %>
+                      </p>
+                      <span class="text-sm text-gray-500">
+                        <%= notification.descricao %>
+                      </span>
+                    </div>
+                  </li>
+                  <% }) %>
+                    <% } %>
           </ul>
         </div>
       </div>
       <section>
         <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4">Suas Trilhas</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <% if (userTrails.length === 0) { %>
+          <% if (userTrails.length===0) { %>
             <p class="text-gray-600">Nenhuma trilha foi atribuída para você ainda</p>
-          <% } else { %>
-            <% userTrails.forEach(userTrail => { 
-              const found = trailModules.find(tm => tm.trailId === userTrail.id);
-            %>
-              <%- include('./partials/trail/card', {
-                trail: userTrail,
-                moduleCount: found ? found.moduleCount : 0
-              }) %>
-            <% }) %> 
-        
-            <%} %>
+            <% } else { %>
+              <% userTrails.forEach(userTrail=> {
+                const found = trailModules.find(tm => tm.trailId === userTrail.id);
+                %>
+
+                  <%- include('./partials/trail/card', { 
+                    trail: userTrail, 
+                    moduleCount: found ? found.moduleCount : 0, firstId: found.firstId }) %>
+                    %>
+                    <% }) %>
+
+                      <%} %>
 
 
         </div>
       </section>
-      
+
       <section>
         <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4 mt-8">Trilhas Disponíveis</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <% availableTrails.forEach(trail => {
-          const isUserTrail = userTrails.some(userTrail => userTrail.id === trail.id);
+          <% availableTrails.forEach(trail=> {
+            const isUserTrail = userTrails.some(userTrail => userTrail.id === trail.id);
             if (!isUserTrail || isUserTrail) {
-              const found = trailModules.find(tm => tm.trailId === trail.id);
+            const found = trailModules.find(tm => tm.trailId === trail.id);
             %>
-            <%- include('./partials/trail/card', {
-            trail: trail,  
-            moduleCount: found ? found.moduleCount : 0
-            }) %>
-          <% } %>     
-          <% }) %> 
-            
+            <%- include('./partials/trail/card', { trail: trail, moduleCount: found ? found.moduleCount : 0, firstId: found.firstId}) %>
+              <% } %>
+                <% }) %>
+
         </div>
       </section>
     </main>
 
     <%- include('./partials/footer.ejs') %>
-  </body>
+
+</body>
+
 </html>
