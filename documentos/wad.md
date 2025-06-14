@@ -1382,7 +1382,7 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 <p align="center"> <img src="../assets/assetsWAD/telaTrilhasSR.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp;Uma das dificuldades encontradas foi agrupar adequadamente cada entidade dos models no seu domínio do controller apropriado, por haver diversas tabelas de relacionamento, foi necessário tirar dúvidas com os professores e monitores sobre a melhor forma de organizar a estrutura do projeto.
+&emsp; Uma das dificuldades encontradas foi agrupar adequadamente cada entidade dos models no seu domínio do controller apropriado, por haver diversas tabelas de relacionamento, foi necessário tirar dúvidas com os professores e monitores sobre a melhor forma de organizar a estrutura do projeto.
 
 &emsp; Apesar de a conexão com banco de dados ainda não estar confirmada para esta entrega, a arquitetura do projeto já se encontra preparada para sua integração futura. O código está organizado de forma a facilitar essa conexão, assim como eventuais implementações de autenticação, validação e persistência de dados.
 
@@ -1390,7 +1390,13 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 4.2. Segunda versão da aplicação web (sprint 4)
 
-*Descreva e ilustre aqui o desenvolvimento da sua segunda versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+&emsp; A segunda versão da aplicação web representa um avanço essencial para o seguimento do projeto, pois consolida os progressos obtidos nas sprints anteriores e dá continuidade ao ciclo de desenvolvimento iterativo. Nesta etapa, o foco principal foi evoluir pontos que haviam sido definidos como prioritários na sprint anterior, incluindo a validação da comunicação entre front-end e back-end, a consolidação da integração com o banco de dados e o aprimoramento progressivo da interface de usuário, tornando-a mais interativa e alinhada à identidade visual do projeto.
+
+&emsp; Essas entregas são fundamentais para garantir maior robustez ao sistema, melhorar a experiência do usuário e reduzir riscos relacionados à interoperabilidade entre os componentes da aplicação. Além disso, esta versão permite validar as melhorias implementadas e preparar o ambiente para as funcionalidades que serão adicionadas nas próximas sprints.
+
+
+&emsp; As principais dificuldades enfrentadas durante o desenvolvimento da segunda versão envolveram, principalmente, conexão com o banco de dados, a própria integração do front-end com o back-end e período curto de aprendizado e aplicagem do conteúdo estudado no projeto. Como próximos passos, será realizada a otimização de desempenho, versão final da aplicação web, correção de bugs e realização de testes de usuários.
+
 
 ## 4.3. Versão final da aplicação web (sprint 5)
 
@@ -1583,14 +1589,27 @@ Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizag
 &emsp; Em relação à equipe de liderança e aos produtores de conteúdo da Bayer, a aplicação se mostra relevante por suas funcionalidades administrativas. Entre os diferenciais voltados a esses profissionais, destacam-se as funções de criar, editar e excluir trilhas na plataforma, bem como a possibilidade de atribuir trilhas a funcionários específicos. Ademais, a aplicação permite visualizar dados de usuários específicos e adicionar perguntas frequentes para esclarecer dúvidas gerais dos promotores.
 
 ## 6.4 Público-Alvo
+<h3>Segmanetação do Mercado</h3>
 
-*a) Segmentação de Mercado (até 250 palavras)*
-Descreva os principais segmentos de mercado a serem atendidos pela aplicação. Utilize bases de dados e fontes confiáveis.*
+&emsp; Nossa aplicação, por ser uma plataforma de capacitação dos PTDs e seus administradores, como o Consultor e Knowledge Transfer, o público-alvo se restringem apenas e exclusivamente aos funcionários da própria Bayer. 
+Em uma pesquisa realizada por meio de um forms e respondido por Promotores Técnicos Digitais, foi possível ver que apenas 40% deles usam os conteúdos passados pela Bayer para o trabalho. Problemas como problema relacionado ao acesso rápido aos conteúdos e a falta de incentivo e fiscalização por parte dos administradores desses funcionários. Além disso, 100% deles tem interesse em usar uma plataforma que facilitaria e melhoraria o aprendizado dos PTDs sobre o Climate FieldView, demonstrando a necessidade dessa unificação e facilidade dos assuntos e estudos.
 
-*b) Perfil do Público-Alvo (até 250 palavras)*
-*Caracterize o público-alvo com dados demográficos, psicográficos e comportamentais, incluindo necessidades específicas. Utilize fontes obrigatórias.*
+&emsp; Logo, a necessidade de algo como a FieldView é claro e atinge bem o público alvo.
+
+Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/spreadsheets/d/1iXCDZVo7FKmxTA6wEqSifEd12covPy1YLEMi_l6O1v0/edit?gid=551591118#gid=551591118]
+
+<h3>Perfil do Público-Alvo</h3>
 
 
+&emsp;O público-alvo da nossa proposta são os Promotores Técnicos Digitais (PTDs) da Bayer, profissionais com atuação em todo o território nacional. No entanto, segundo pesquisa própria aplicada aos colaboradores, a maior concentração desses profissionais encontra-se na região Centro-Oeste, devido à alta densidade de propriedades agrícolas nessa área (IBGE, 2023).
+
+&emsp;Por meio de uma análise de perfis no LinkedIn e dados coletados por formulário, observamos que a maioria dos PTDs possui ensino superior em Agronomia, Engenharia Agronômica ou Engenharia Agrícola, com idade média de 26 anos.
+
+&emsp; Sua rotina de trabalho é intensa: realizam atendimentos majoritariamente presenciais e percorrem, em média, cerca de 100 km por dia entre as propriedades atendidas. Ao ingressar na empresa, participam de cinco dias de capacitação sobre o Climate FieldView, o que se mostrou insuficiente segundo os próprios respondentes da pesquisa.
+
+&emsp;Psicograficamente, os PTDs valorizam empresas com missão, visão e valores bem definidos, bom relacionamento interno e reconhecimento profissional. Esperam de um ambiente de trabalho estabilidade, desenvolvimento contínuo e desafios constantes.
+
+&emsp;Esses dados revelam a necessidade de uma plataforma digital de capacitação contínua, com acesso fácil e conteúdos práticos que otimizem o tempo e a performance no campo.
 ## 6.5 Posicionamento
 
 *a) Proposta de Valor Única*
