@@ -119,7 +119,9 @@
 
                   <%- include('./partials/trail/card', { 
                     trail: userTrail, 
-                    moduleCount: found ? found.moduleCount : 0, firstId: found.firstId }) %>
+                    moduleCount: found ? found.moduleCount : 0, firstId: found ? found.firstId : null , 
+                    isAdministrator: false,
+                  }) %>
                     %>
                     <% }) %>
 

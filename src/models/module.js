@@ -5,8 +5,9 @@ module.exports = {
 
   async create(data) {
     //Função para criar os módulos
-    const query = 'INSERT INTO modulo(titulo, conteudo, ordem) VALUES($1, $2, $3)';
-    const values = [data.title, data.content, data.order]; // Pega os parâmetros de criação do módulo
+    const query =
+      'INSERT INTO modulo(id_trilha, titulo, conteudo, ordem) VALUES($1, $2, $3, $4) RETURNING *'; // Query para inserir um novo módulo
+    const values = [data.trailId, data.title, data.content, data.order]; // Pega os parâmetros de criação do módulo
 
     return pool.query(query, values); //Retorna a criação do módulo
   },

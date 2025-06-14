@@ -45,14 +45,18 @@ exports.getCurrentUser = async (req, res) => {
 exports.update = async (req, res) => {
   try {
     const { id } = req.params;
-    // Ensure users can only update their own profile unless they're consultor
-    if (req.user.id !== parseInt(id) && req.user.role !== 'consultor') {
-      return res.status(403).json({ error: 'Unauthorized' });
-    }
+
+    // Se o campo nao for passado, manter ele com o valor atual
+    const currentUser = await Users.findById(id);
+    if (!currentUser) return res.status(404).json({ error: 'Usuário não encontrado.' });
+    req.body.name = req.body.name || currentUser.nome;
+    req.body.email = req.body.email || currentUser.email;
+    req.body.role = req.body.role || currentUser.cargo;
+
     const result = await Users.update(id, req.body);
     res.status(200).json({ message: 'Atualizado com Sucesso', user: result.rows[0] });
   } catch (err) {
-    res.status(500).json({ error: 'Erro ao atualizar usuário' });
+    res.status(500).json({ error: 'Erro ao atualizar usuário', details: err.message });
   }
 };
 
