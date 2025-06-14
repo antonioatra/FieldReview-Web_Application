@@ -1382,7 +1382,7 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 <p align="center"> <img src="../assets/assetsWAD/telaTrilhasSR.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp;Uma das dificuldades encontradas foi agrupar adequadamente cada entidade dos models no seu domínio do controller apropriado, por haver diversas tabelas de relacionamento, foi necessário tirar dúvidas com os professores e monitores sobre a melhor forma de organizar a estrutura do projeto.
+&emsp; Uma das dificuldades encontradas foi agrupar adequadamente cada entidade dos models no seu domínio do controller apropriado, por haver diversas tabelas de relacionamento, foi necessário tirar dúvidas com os professores e monitores sobre a melhor forma de organizar a estrutura do projeto.
 
 &emsp; Apesar de a conexão com banco de dados ainda não estar confirmada para esta entrega, a arquitetura do projeto já se encontra preparada para sua integração futura. O código está organizado de forma a facilitar essa conexão, assim como eventuais implementações de autenticação, validação e persistência de dados.
 
@@ -1390,7 +1390,13 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 4.2. Segunda versão da aplicação web (sprint 4)
 
-*Descreva e ilustre aqui o desenvolvimento da sua segunda versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+&emsp; A segunda versão da aplicação web representa um avanço essencial para o seguimento do projeto, pois consolida os progressos obtidos nas sprints anteriores e dá continuidade ao ciclo de desenvolvimento iterativo. Nesta etapa, o foco principal foi evoluir pontos que haviam sido definidos como prioritários na sprint anterior, incluindo a validação da comunicação entre front-end e back-end, a consolidação da integração com o banco de dados e o aprimoramento progressivo da interface de usuário, tornando-a mais interativa e alinhada à identidade visual do projeto.
+
+&emsp; Essas entregas são fundamentais para garantir maior robustez ao sistema, melhorar a experiência do usuário e reduzir riscos relacionados à interoperabilidade entre os componentes da aplicação. Além disso, esta versão permite validar as melhorias implementadas e preparar o ambiente para as funcionalidades que serão adicionadas nas próximas sprints.
+
+
+&emsp; As principais dificuldades enfrentadas durante o desenvolvimento da segunda versão envolveram, principalmente, conexão com o banco de dados, a própria integração do front-end com o back-end e período curto de aprendizado e aplicagem do conteúdo estudado no projeto. Como próximos passos, será realizada a otimização de desempenho, versão final da aplicação web, correção de bugs e realização de testes de usuários.
+
 
 ## 4.3. Versão final da aplicação web (sprint 5)
 
