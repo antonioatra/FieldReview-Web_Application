@@ -1492,6 +1492,11 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 **POST /help - Cria um novo conteúdo de ajuda**
 <p align="center"> <img src="../assets/assetsWAD/api/post-help.png">
 
+
+### Notificação
+**GET /notification - Retorna todas as notificações**
+<p align="center"> <img src="../assets/assetsWAD/api/get-notification.png">
+
 ## 5.2. Testes de usabilidade (sprint 5)
 
 *Posicione aqui as tabelas com enunciados de tarefas, etapas e resultados de testes de usabilidade. Ou utilize um link para seu relatório de testes (mantenha o link sempre público para visualização)*
