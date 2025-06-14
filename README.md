@@ -15,7 +15,7 @@
 - <a href="https://github.com/obielwb">Gabriel Willian Bartmanovicz</a> 
 - <a href="https://github.com/Leandro-Filho">Leandro Precaro Barankiewicz Filho</a>
 - <a href="https://github.com/Messias-Olivindo">Messias Fernandes de Olivindo</a>
-- <a href="https://github.com/thuliobacco">Thúlio Sallum Bacco Filho</a> 
+- <a href="https://github.com/thuliobacco">Thúlio Sallum Bacco Pinto</a> 
 
 
 ## :teacher: Professores:
