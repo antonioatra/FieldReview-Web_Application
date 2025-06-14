@@ -1406,7 +1406,102 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 5.1. Relatório de testes de integração de endpoints automatizados (sprint 4)
 
-*Liste e descreva os testes unitários dos endpoints criados, automatizados e planejados para sua solução. Posicione aqui também o relatório de cobertura de testes Jest se houver (através de link ou transcrito para estrutura markdown)*
+
+&emsp; Nesta seção, apresentamos os testes de integração realizados nos endpoints da aplicação web, utilizando o software Postman para garantir a funcionalidade e a robustez do sistema. Os testes foram projetados para verificar se os endpoints estão respondendo corretamente às requisições e se as operações CRUD (Create, Read, Update, Delete) estão funcionando conforme esperado.
+
+&emsp; Abaixo estão as imagens dos testes realizados, junto com uma breve descrição de cada um:
+
+### Usuário
+
+**GET /user - retorna todos os usuários**
+<p align="center"> <img src="../assets/assetsWAD/api/get-user.png">
+
+**POST /user - Cria um novo usuário**
+<p align="center"> <img src="../assets/assetsWAD/api/post-user.png">
+
+**GET /user/:id - Retorna um usuário específico**
+<p align="center"> <img src="../assets/assetsWAD/api/get-user-by-id.png">
+
+**PATCH /user/:id - Atualiza um usuário específico**
+<p align="center"> <img src="../assets/assetsWAD/api/patch-user.png">
+
+
+**DELETE /user/:id - Deleta um usuário específico**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-user.png">
+
+
+### Trilha
+
+**GET /trial - Retorna todas as trilhas**
+<p align="center"> <img src="../assets/assetsWAD/api/get-trail.png">
+
+**GET /trail/:id - Retorna uma trilha específica**
+<p align="center"> <img src="../assets/assetsWAD/api/get-trail-by-id.png">
+
+**POST /trail - Cria uma nova trilha**
+<p align="center"> <img src="../assets/assetsWAD/api/post-trail.png">
+
+**PATCH /trail/:id - Atualiza uma trilha específica**
+<p align="center"> <img src="../assets/assetsWAD/api/patch-trail.png">
+
+**DELETE /trail/:id - Deleta uma Trilha**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-trail.png">
+
+**POST /trail/:id/user/:id - Atribui uma trilha ao usuário**
+<p align="center"> <img src="../assets/assetsWAD/api/post-trail-user.png">
+
+### Pesquisa 
+
+**GET /search - Pesquisa por conteúdos na plataforma**
+<p align="center"> <img src="../assets/assetsWAD/api/get-search.png">
+
+### Módulo
+
+**POST /module - Cria um novo módulo de uma trilha**
+<p align="center"> <img src="../assets/assetsWAD/api/post-module.png">
+
+**GET /module/:id - Retorna um módulo específico**
+<p align="center"> <img src="../assets/assetsWAD/api/get-module-by-id.png">
+
+**GET /module/trail/:id - Retorna os módulos de uma trilha**
+<p align="center"> <img src="../assets/assetsWAD/api/get-module-trail.png">
+
+**PATCH /module/:id - Atualiza um módulo**
+<p align="center"> <img src="../assets/assetsWAD/api/patch-module.png">
+
+**DELETE /module/:id - Deleta um módulo**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-module.png">
+
+### Pergunta
+**POST /question - Cria uma nova pergunta**
+<p align="center"> <img src="../assets/assetsWAD/api/post-question.png">
+
+**GET /question/:id - Retorna uma pergunta específica**
+<p align="center"> <img src="../assets/assetsWAD/api/get-question-by-id.png">
+
+**GET /question/module/:id - Retorna uma pergunta pelo id do módulo**
+<p align="center"> <img src="../assets/assetsWAD/api/get-question-module.png">
+
+**PATCH /question/:id - Atualiza uma pergunta**
+<p align="center"> <img src="../assets/assetsWAD/api/patch-question.png">
+
+**DELETE /question/:id - Deleta uma pergunta**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-question.png">
+
+### Help 
+**GET /help - Retorna todos os conteúdos de ajuda**
+<p align="center"> <img src="../assets/assetsWAD/api/get-help.png">
+
+**GET /help/:id - Retorna um conteúdo de ajuda específico**
+<p align="center"> <img src="../assets/assetsWAD/api/get-help-by-id.png">
+
+**POST /help - Cria um novo conteúdo de ajuda**
+<p align="center"> <img src="../assets/assetsWAD/api/post-help.png">
+
+
+### Notificação
+**GET /notification - Retorna todas as notificações**
+<p align="center"> <img src="../assets/assetsWAD/api/get-notification.png">
 
 ## 5.2. Testes de usabilidade (sprint 5)
 
