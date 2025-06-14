@@ -1512,10 +1512,28 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 **POST /help - Cria um novo conteúdo de ajuda**
 <p align="center"> <img src="../assets/assetsWAD/api/post-help.png">
 
+**PATCH /help/:id - Atualiza um conteúdo de ajuda**
+<p align="center"> <img src="../assets/assetsWAD/api/patch-help.png">
+
+**DELETE /help/:id - Deleta um conteúdo de ajuda**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-help.png">
+
 
 ### Notificação
 **GET /notification - Retorna todas as notificações**
 <p align="center"> <img src="../assets/assetsWAD/api/get-notification.png">
+
+**GET /notification/:id - Retorna uma notificação específica**
+<p align="center"> <img src="../assets/assetsWAD/api/get-notification-by-id.png">
+
+**POST /notification - Cria uma nova notificação**
+<p align="center"> <img src="../assets/assetsWAD/api/post-notification.png">
+
+**GET /notification/user/:id - Retorna as notificações de um usuário**
+<p align="center"> <img src="../assets/assetsWAD/api/get-notification-user.png">
+
+**DELETE /notification/:id - Deleta uma notificação**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-notification.png">
 
 ## 5.2. Testes de usabilidade (sprint 5)
 
@@ -1603,10 +1621,10 @@ Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizag
 &emsp; Em relação à equipe de liderança e aos produtores de conteúdo da Bayer, a aplicação se mostra relevante por suas funcionalidades administrativas. Entre os diferenciais voltados a esses profissionais, destacam-se as funções de criar, editar e excluir trilhas na plataforma, bem como a possibilidade de atribuir trilhas a funcionários específicos. Ademais, a aplicação permite visualizar dados de usuários específicos e adicionar perguntas frequentes para esclarecer dúvidas gerais dos promotores.
 
 ## 6.4 Público-Alvo
-<h3>Segmanetação do Mercado</h3>
+<h3>Segmentação do Mercado</h3>
 
 &emsp; Nossa aplicação, por ser uma plataforma de capacitação dos PTDs e seus administradores, como o Consultor e Knowledge Transfer, o público-alvo se restringem apenas e exclusivamente aos funcionários da própria Bayer. 
-Em uma pesquisa realizada por meio de um forms e respondido por Promotores Técnicos Digitais, foi possível ver que apenas 40% deles usam os conteúdos passados pela Bayer para o trabalho. Problemas como problema relacionado ao acesso rápido aos conteúdos e a falta de incentivo e fiscalização por parte dos administradores desses funcionários. Além disso, 100% deles tem interesse em usar uma plataforma que facilitaria e melhoraria o aprendizado dos PTDs sobre o Climate FieldView, demonstrando a necessidade dessa unificação e facilidade dos assuntos e estudos.
+Em uma pesquisa realizada por meio de um formulário e respondido por Promotores Técnicos Digitais, foi possível ver que apenas 40% deles usam os conteúdos passados pela Bayer para o trabalho. Problemas como problema relacionado ao acesso rápido aos conteúdos e a falta de incentivo e fiscalização por parte dos administradores desses funcionários. Além disso, 100% deles tem interesse em usar uma plataforma que facilitaria e melhoraria o aprendizado dos PTDs sobre o Climate FieldView, demonstrando a necessidade dessa unificação e facilidade dos assuntos e estudos.
 
 &emsp; Logo, a necessidade de algo como a FieldView é claro e atinge bem o público alvo.
 
