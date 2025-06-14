@@ -27,7 +27,8 @@ module.exports = {
     const query = 'SELECT * FROM notificacao WHERE id = $1';
     const values = [id];
 
-    return pool.query(query, values);
+    const result = await pool.query(query, values);
+    return result.rows[0];
   },
 
   async findByUserId(userId) {
