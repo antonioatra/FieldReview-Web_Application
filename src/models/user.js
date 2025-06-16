@@ -24,7 +24,7 @@ module.exports = {
   async update(id, data) {
     let query = `
       UPDATE usuarios 
-      SET nome = $1, email = $2, cargo = $3, updated_at = CURRENT_TIMESTAMP
+      SET nome = $1, email = $2, cargo = $3, update_at = CURRENT_TIMESTAMP
       WHERE id = $4
       RETURNING *`;
     let values = [data.name, data.email, data.role, id];
@@ -33,7 +33,7 @@ module.exports = {
       const hashedPassword = await bcrypt.hash(data.password, 10);
       query = `
         UPDATE usuarios 
-        SET nome = $1, email = $2, senha = $3, cargo = $4, updated_at = CURRENT_TIMESTAMP
+        SET nome = $1, email = $2, senha = $3, cargo = $4, update_at = CURRENT_TIMESTAMP
         WHERE id = $5
         RETURNING *`;
       values = [data.name, data.email, hashedPassword, data.role, id];

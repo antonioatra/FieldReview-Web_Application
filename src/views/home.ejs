@@ -117,9 +117,13 @@
                 const found = trailModules.find(tm => tm.trailId === userTrail.id);
                 %>
 
-                <%- include('./partials/trail/card', { trail: userTrail, moduleCount: found ? found.moduleCount : 0,
-                  isAdministrator: false, firstId: found ? found.firstId : null }) %>
-                  <% }) %>
+                <%- include('./partials/trail/card', { 
+                  trail: userTrail, 
+                  moduleCount: found ? found.moduleCount : 0, 
+                  firstId: found ? found.firstId : null, 
+                  isAdministrator: false
+                }) %>
+                <% }) %>
 
                     <%} %>
 

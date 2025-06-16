@@ -1382,7 +1382,7 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 <p align="center"> <img src="../assets/assetsWAD/telaTrilhasSR.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp;Uma das dificuldades encontradas foi agrupar adequadamente cada entidade dos models no seu domínio do controller apropriado, por haver diversas tabelas de relacionamento, foi necessário tirar dúvidas com os professores e monitores sobre a melhor forma de organizar a estrutura do projeto.
+&emsp; Uma das dificuldades encontradas foi agrupar adequadamente cada entidade dos models no seu domínio do controller apropriado, por haver diversas tabelas de relacionamento, foi necessário tirar dúvidas com os professores e monitores sobre a melhor forma de organizar a estrutura do projeto.
 
 &emsp; Apesar de a conexão com banco de dados ainda não estar confirmada para esta entrega, a arquitetura do projeto já se encontra preparada para sua integração futura. O código está organizado de forma a facilitar essa conexão, assim como eventuais implementações de autenticação, validação e persistência de dados.
 
@@ -1390,7 +1390,27 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 4.2. Segunda versão da aplicação web (sprint 4)
 
-*Descreva e ilustre aqui o desenvolvimento da sua segunda versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+&emsp; A segunda versão da aplicação web representa um avanço essencial para o seguimento do projeto, pois consolida os progressos obtidos nas sprints anteriores e dá continuidade ao ciclo de desenvolvimento iterativo. Nesta etapa, o foco principal foi evoluir pontos que haviam sido definidos como prioritários na sprint anterior, incluindo a validação da comunicação entre frontend e backend, a consolidação da integração com o banco de dados e o aprimoramento progressivo da interface de usuário, tornando-a mais interativa e alinhada à identidade visual do projeto.
+
+&emsp; Essas entregas são fundamentais para garantir maior robustez ao sistema, melhorar a experiência do usuário e reduzir riscos relacionados à interoperabilidade entre os componentes da aplicação. Além disso, esta versão permite validar as melhorias implementadas e preparar o ambiente para as funcionalidades que serão adicionadas nas próximas sprints.
+
+<p align="center"> <img src="../assets/assetsWAD/telaHomeWEB.jpeg">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+&emsp; Essa é a tela principal (home), como se pode observar, houve uma mudança drástica de cores e do layout em relação à primeira versão.
+
+<p align="center"> <img src="../assets/assetsWAD/telaHelpWEB.jpeg">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+&emsp; Já essa tela é a de help, que apresenta algumas perguntas frequentes.
+
+<p align="center"> <img src="../assets/assetsWAD/telaPerguntaWEB.jpeg">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+&emsp; Essa tela, por sua vez, é a de perguntas rápidas, retornando módulos com base na pesquisa realizada.
+
+&emsp; As principais dificuldades enfrentadas durante o desenvolvimento da segunda versão envolveram, principalmente, conexão com o banco de dados, a própria integração do front-end com o back-end e período curto de aprendizado e aplicagem do conteúdo estudado no projeto. Como próximos passos, será realizada a otimização de desempenho, versão final da aplicação web, correção de bugs e realização de testes de usuários.
+
 
 ## 4.3. Versão final da aplicação web (sprint 5)
 
@@ -1400,7 +1420,120 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 5.1. Relatório de testes de integração de endpoints automatizados (sprint 4)
 
-*Liste e descreva os testes unitários dos endpoints criados, automatizados e planejados para sua solução. Posicione aqui também o relatório de cobertura de testes Jest se houver (através de link ou transcrito para estrutura markdown)*
+
+&emsp; Nesta seção, apresentamos os testes de integração realizados nos endpoints da aplicação web, utilizando o software Postman para garantir a funcionalidade e a robustez do sistema. Os testes foram projetados para verificar se os endpoints estão respondendo corretamente às requisições e se as operações CRUD (Create, Read, Update, Delete) estão funcionando conforme esperado.
+
+&emsp; Abaixo estão as imagens dos testes realizados, junto com uma breve descrição de cada um:
+
+### Usuário
+
+**GET /user - retorna todos os usuários**
+<p align="center"> <img src="../assets/assetsWAD/api/get-user.png">
+
+**POST /user - Cria um novo usuário**
+<p align="center"> <img src="../assets/assetsWAD/api/post-user.png">
+
+**GET /user/:id - Retorna um usuário específico**
+<p align="center"> <img src="../assets/assetsWAD/api/get-user-by-id.png">
+
+**PATCH /user/:id - Atualiza um usuário específico**
+<p align="center"> <img src="../assets/assetsWAD/api/patch-user.png">
+
+
+**DELETE /user/:id - Deleta um usuário específico**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-user.png">
+
+
+### Trilha
+
+**GET /trial - Retorna todas as trilhas**
+<p align="center"> <img src="../assets/assetsWAD/api/get-trail.png">
+
+**GET /trail/:id - Retorna uma trilha específica**
+<p align="center"> <img src="../assets/assetsWAD/api/get-trail-by-id.png">
+
+**POST /trail - Cria uma nova trilha**
+<p align="center"> <img src="../assets/assetsWAD/api/post-trail.png">
+
+**PATCH /trail/:id - Atualiza uma trilha específica**
+<p align="center"> <img src="../assets/assetsWAD/api/patch-trail.png">
+
+**DELETE /trail/:id - Deleta uma Trilha**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-trail.png">
+
+**POST /trail/:id/user/:id - Atribui uma trilha ao usuário**
+<p align="center"> <img src="../assets/assetsWAD/api/post-trail-user.png">
+
+### Pesquisa 
+
+**GET /search - Pesquisa por conteúdos na plataforma**
+<p align="center"> <img src="../assets/assetsWAD/api/get-search.png">
+
+### Módulo
+
+**POST /module - Cria um novo módulo de uma trilha**
+<p align="center"> <img src="../assets/assetsWAD/api/post-module.png">
+
+**GET /module/:id - Retorna um módulo específico**
+<p align="center"> <img src="../assets/assetsWAD/api/get-module-by-id.png">
+
+**GET /module/trail/:id - Retorna os módulos de uma trilha**
+<p align="center"> <img src="../assets/assetsWAD/api/get-module-trail.png">
+
+**PATCH /module/:id - Atualiza um módulo**
+<p align="center"> <img src="../assets/assetsWAD/api/patch-module.png">
+
+**DELETE /module/:id - Deleta um módulo**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-module.png">
+
+### Pergunta
+**POST /question - Cria uma nova pergunta**
+<p align="center"> <img src="../assets/assetsWAD/api/post-question.png">
+
+**GET /question/:id - Retorna uma pergunta específica**
+<p align="center"> <img src="../assets/assetsWAD/api/get-question-by-id.png">
+
+**GET /question/module/:id - Retorna uma pergunta pelo id do módulo**
+<p align="center"> <img src="../assets/assetsWAD/api/get-question-module.png">
+
+**PATCH /question/:id - Atualiza uma pergunta**
+<p align="center"> <img src="../assets/assetsWAD/api/patch-question.png">
+
+**DELETE /question/:id - Deleta uma pergunta**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-question.png">
+
+### Help 
+**GET /help - Retorna todos os conteúdos de ajuda**
+<p align="center"> <img src="../assets/assetsWAD/api/get-help.png">
+
+**GET /help/:id - Retorna um conteúdo de ajuda específico**
+<p align="center"> <img src="../assets/assetsWAD/api/get-help-by-id.png">
+
+**POST /help - Cria um novo conteúdo de ajuda**
+<p align="center"> <img src="../assets/assetsWAD/api/post-help.png">
+
+**PATCH /help/:id - Atualiza um conteúdo de ajuda**
+<p align="center"> <img src="../assets/assetsWAD/api/patch-help.png">
+
+**DELETE /help/:id - Deleta um conteúdo de ajuda**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-help.png">
+
+
+### Notificação
+**GET /notification - Retorna todas as notificações**
+<p align="center"> <img src="../assets/assetsWAD/api/get-notification.png">
+
+**GET /notification/:id - Retorna uma notificação específica**
+<p align="center"> <img src="../assets/assetsWAD/api/get-notification-by-id.png">
+
+**POST /notification - Cria uma nova notificação**
+<p align="center"> <img src="../assets/assetsWAD/api/post-notification.png">
+
+**GET /notification/user/:id - Retorna as notificações de um usuário**
+<p align="center"> <img src="../assets/assetsWAD/api/get-notification-user.png">
+
+**DELETE /notification/:id - Deleta uma notificação**
+<p align="center"> <img src="../assets/assetsWAD/api/delete-notification.png">
 
 ## 5.2. Testes de usabilidade (sprint 5)
 
@@ -1488,10 +1621,10 @@ Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizag
 &emsp; Em relação à equipe de liderança e aos produtores de conteúdo da Bayer, a aplicação se mostra relevante por suas funcionalidades administrativas. Entre os diferenciais voltados a esses profissionais, destacam-se as funções de criar, editar e excluir trilhas na plataforma, bem como a possibilidade de atribuir trilhas a funcionários específicos. Ademais, a aplicação permite visualizar dados de usuários específicos e adicionar perguntas frequentes para esclarecer dúvidas gerais dos promotores.
 
 ## 6.4 Público-Alvo
-<h3>Segmanetação do Mercado</h3>
+<h3>Segmentação do Mercado</h3>
 
 &emsp; Nossa aplicação, por ser uma plataforma de capacitação dos PTDs e seus administradores, como o Consultor e Knowledge Transfer, o público-alvo se restringem apenas e exclusivamente aos funcionários da própria Bayer. 
-Em uma pesquisa realizada por meio de um forms e respondido por Promotores Técnicos Digitais, foi possível ver que apenas 40% deles usam os conteúdos passados pela Bayer para o trabalho. Problemas como problema relacionado ao acesso rápido aos conteúdos e a falta de incentivo e fiscalização por parte dos administradores desses funcionários. Além disso, 100% deles tem interesse em usar uma plataforma que facilitaria e melhoraria o aprendizado dos PTDs sobre o Climate FieldView, demonstrando a necessidade dessa unificação e facilidade dos assuntos e estudos.
+Em uma pesquisa realizada por meio de um formulário e respondido por Promotores Técnicos Digitais, foi possível ver que apenas 40% deles usam os conteúdos passados pela Bayer para o trabalho. Problemas como problema relacionado ao acesso rápido aos conteúdos e a falta de incentivo e fiscalização por parte dos administradores desses funcionários. Além disso, 100% deles tem interesse em usar uma plataforma que facilitaria e melhoraria o aprendizado dos PTDs sobre o Climate FieldView, demonstrando a necessidade dessa unificação e facilidade dos assuntos e estudos.
 
 &emsp; Logo, a necessidade de algo como a FieldView é claro e atinge bem o público alvo.
 
