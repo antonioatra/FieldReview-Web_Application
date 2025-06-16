@@ -8,8 +8,8 @@ function showModal() {
 }
 
 function hideModal() {
-    modal.classList.add("hidden");
-    dialog.close();
+  modal.classList.add("hidden");
+  dialog.close();
 }
 
 //-----Integração com o backend-----
@@ -29,35 +29,34 @@ const urlOptions = `http://localhost:3000/api/option/`
 const moduleTitle = document.getElementById("moduleTitle");
 const moduleContent = document.getElementById("moduleContent");
 const questionContent = document.getElementById("questionContent");
-const optionsContent = document.getElementsByClassName("optionContent")
 const moduleOrder = document.getElementById("moduleOrder");
 const questionPoints = document.getElementById("questionPoints");
 
 async function runFetch() {
-    try {
-        if (idModule) {
-            try {
-                //pegar as informações do módulo
-                const resp1 = await fetch(urlModule + 'trail/' + idTrail);
-                const data1 = await resp1.json();
-                moduleTitle.value = data1[moduleOrder - 1].titulo
-                moduleContent.value = data1[moduleOrder - 1].conteudo
+  try {
+    if (idModule) {
+      try {
+        //pegar as informações do módulo
+        const resp1 = await fetch(urlModule + 'trail/' + idTrail);
+        const data1 = await resp1.json();
+        moduleTitle.value = data1[moduleOrder - 1].titulo
+        moduleContent.value = data1[moduleOrder - 1].conteudo
 
-            } catch (err) {
-                console.error('Erro ao módulo: ', err);
-            }
-        }
-        //Criar id caso não seja passado o id do módulo
-        else {
-
-        }
-
-    } catch (err) {
-        console.error("Erro inesperado: ", err)
-
-    } finally {
-        console.log("pronto")
+      } catch (err) {
+        console.error('Erro ao módulo: ', err);
+      }
     }
+    //Criar id caso não seja passado o id do módulo
+    else {
+
+    }
+
+  } catch (err) {
+    console.error("Erro inesperado: ", err)
+
+  } finally {
+    console.log("pronto")
+  }
 }
 
 async function createModule() {
@@ -78,13 +77,21 @@ async function createModule() {
       }
     });
 
-    const createdModule = await moduleResponse.json();
+    const moduleJson = await moduleResponse.json();
+    const createdModule = moduleJson.module;
 
     // 2. Criar nova pergunta
+    // 3. Verificar resposta correta (input radio selecionado)
+    const selected = document.querySelector('input[type="radio"]:checked');
+    if (!selected) {
+      alert("Você precisa selecionar uma opção");
+      return;
+    }
+
     const questionData = {
       moduleId: createdModule.id,
       statement: questionContent.value,
-      points: questionPoints.value
+      points: questionPoints.value,
     };
 
     const questionResponse = await fetch(urlQuestion, {
@@ -95,49 +102,10 @@ async function createModule() {
       }
     });
 
-    const createdQuestion = await questionResponse.json();
-
-    // 3. Verificar resposta correta (input radio selecionado)
-    const selected = document.querySelector('input[type="radio"]:checked');
-    if (!selected) {
-      alert("Você precisa selecionar uma opção");
-      return;
-    }
-
-    // 4. Criar opções
-    const textareas = document.querySelectorAll('.optionContent');
-    const radios = document.querySelectorAll('.optionState');
-
-    const optionPromises = [];
-
-    textareas.forEach((textarea, i) => {
-      const isCorrect = radios[i].checked;
-
-      const optionData = {
-        idModule: createdModule.id,
-        text: textarea.value,
-        isCorrect: isCorrect
-      };
-
-      const optionRequest = fetch(`${urlOptions}question/${createdQuestion.id}`, {
-        method: 'POST',
-        body: JSON.stringify(optionData),
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-
-      optionPromises.push(optionRequest);
-    });
-
-    await Promise.all(optionPromises);
-
-    alert("Módulo criado com sucesso!");
-  } catch (err) {
-    console.error('Erro ao criar módulo, pergunta ou opções: ', err);
-    alert("Erro ao criar o módulo. Verifique o console.");
+  } catch(err){
+    console.log('Erro encontrado: ', err);
+    res.status(500).json({error: "Erro encontrado"});
   }
 }
-
 
 runFetch();

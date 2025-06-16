@@ -3,8 +3,8 @@ const Module = require('../models/module');
 // Cria um novo módulo
 exports.store = async (req, res) => {
   try {
-    await Module.create(req.body);
-    res.status(201).json({ message: 'Módulo criado com sucesso' });
+    const result = await Module.create(req.body);
+    res.status(201).json({ message: 'Módulo criado com sucesso', module: result.rows[0]});
   } catch (err) {
     res.status(500).json({ error: 'Erro ao criar módulo.' });
   }

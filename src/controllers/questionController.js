@@ -5,26 +5,33 @@ exports.store = async(req, res) => {  //Chama o model que tem a função de cria
     try {
     const {moduleId, statement, points, options} = req.body;
 
-    const question = await Question.create(moduleId, statement, points);
+    const results = await Question.create({moduleId, statement, points});
+    const question = results.rows[0];
+
     if(!question){
-         return res.status(500).json({error: "Erro ao criar pergunta"}) // Verifica se a pergunta foi criada
+         return res.status(500).json({error: "Erro ao criar pergunta" }) // Verifica se a pergunta foi criada
     }
+
     const promises = options.map(option => { // Espera as opções serem criadas
         return Option.create({
-            questionId: question.id,
+            idQuestion: question.id,
             text: option.text,
             isCorrect: option.isCorrect
         })
     });
 
     const optionsCreated = await Promise.all(promises);
+    console.log(optionsCreated)
+
+    const formattedOptions = optionsCreated.map(opt => opt.rows[0]);
 
     res.status(201).json({
         question: question,
-        options: optionsCreated
+        options: formattedOptions
     }); // retorna a perguna e suas opções
     } catch (err) {
-        res.status(500).json({error: "Erro ao criar pergunta"});
+        console.error("Erro encontrado: ", err);
+        res.status(500).json({error: "Erro ao criar pergunt: "});
     }
 };
 
