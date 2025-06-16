@@ -49,16 +49,22 @@ app.get('/', authMiddleware(), async (req, res) => {
       `http://localhost:3000/api/trail/user/${req.user.id}`,
     );
     const usersResponse = await axios.get('http://localhost:3000/api/user');
-    const notificationsResponse = await axios.get(
-      `http://localhost:3000/api/notification/user/${req.user.id}`,
-    );
+    
+    let notifications = [];
+    try {
+      const notificationsResponse = await axios.get(
+        `http://localhost:3000/api/notification/user/${req.user.id}`,
+      );
+      notifications = Array.isArray(notificationsResponse.data) ? notificationsResponse.data : [];
+    } catch (notificationError) {
+      console.log("Erro ao buscar notificações:", notificationError.message);
+      notifications = [];
+    }
 
     const trails = trailsResponse.data;
     const userTrails = userTrailsResponse.data.trails;
 
     const userList = usersResponse.data;
-
-    const notifications = notificationsResponse.data;
 
     // Processar ranking
     const sortedRank = userList.sort((a, b) => (b.pontuacao || 0) - (a.pontuacao || 0));
