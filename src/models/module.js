@@ -6,7 +6,7 @@ module.exports = {
   async create(data) {
     //Função para criar os módulos
     const query =
-      'INSERT INTO modulo(id_trilha, titulo, conteudo, ordem) VALUES($1, $2, $3, $4) RETURNING *'; // Query para inserir um novo módulo
+      'INSERT INTO modulo(id_trilha, titulo, conteudo, ordem, drivevideo) VALUES($1, $2, $3, $4 $5) RETURNING *'; // Query para inserir um novo módulo
     const values = [data.trailId, data.title, data.content, data.order]; // Pega os parâmetros de criação do módulo
 
     return pool.query(query, values); //Retorna a criação do módulo
@@ -39,8 +39,8 @@ module.exports = {
   async update(id, data) {
     //Função para atualizar trilhas
     const query =
-      'UPDATE modulo SET titulo = $1, conteudo = $2, ordem = $3, updated_at = CURRENT_TIMESTAMP WHERE id = $4';
-    const values = [data.title, data.content, data.order, id];
+      'UPDATE modulo SET titulo = $1, conteudo = $2, ordem = $3, drivevideo = $4, updated_at = CURRENT_TIMESTAMP WHERE id = $5';
+    const values = [data.title, data.content, data.order, data.drivevideo, id];
 
     return pool.query(query, values);
   },
