@@ -177,7 +177,7 @@ app.get('/trail/edit/:id', async (req, res) => {
   const { id } = req.params;
   const editMode = true;
   try {
-    const response = await axios.get(`http://localhost:3000/api/trail/${id}`);
+    const response = await axios.get(`${req.protocol}://${req.get('host')}/api/trail/${id}`);
     const trail = response.data.trail; // Extrair o objeto trail da resposta
     res.render('trailEdit', { editMode, trail });
   } catch (error) {
