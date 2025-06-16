@@ -192,6 +192,10 @@ app.get('/help', async (req, res) => {
   }
 });
 
+app.get('/helpAdmin', authMiddleware(), async(req,res) => {
+  res.render('helpAdmin')
+})
+
 app.get('/dashboard', authMiddleware(), async (req, res) => {
   let users = [];
   let trails = [];
