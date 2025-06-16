@@ -193,7 +193,19 @@ app.get('/help', async (req, res) => {
 });
 
 app.get('/helpAdmin', authMiddleware(), async(req,res) => {
-  res.render('helpAdmin')
+   try {
+    const response = await axios.get('http://localhost:3000/api/help');
+
+    res.render('helpAdmin', {
+      results: response.data.help || [],
+    });
+  } catch (error) {
+    console.error('Erro ao buscar dados de help:', error);
+
+    res.render('helpAdmin', {
+      results: [],
+    });
+  }
 })
 
 app.get('/dashboard', authMiddleware(), async (req, res) => {
