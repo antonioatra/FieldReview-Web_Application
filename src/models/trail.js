@@ -11,7 +11,7 @@ module.exports = {
   async update(id, data) {
     // Função que atualiza a trilha
     const query = 'UPDATE trilha SET titulo = $1, updated_at = CURRENT_TIMESTAMP WHERE id = $2';
-    const values = [data.title, id];
+    const values = [data.titulo, id];
     return pool.query(query, values);
   },
 
@@ -24,7 +24,7 @@ module.exports = {
   async create(data) {
     // Função que cria a trilha
     const query = 'INSERT INTO trilha (titulo) VALUES ($1)';
-    const values = [data.title];
+    const values = [data.titulo];
     return pool.query(query, values);
   },
 

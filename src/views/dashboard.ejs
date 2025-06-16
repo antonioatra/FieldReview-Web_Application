@@ -37,7 +37,7 @@
 
             <div class="gap-4 flex flex-row items-center justify-between">
               <p class="text-2xl col-start-2 col-end-8 ">Trilhas disponíveis na plataforma</p>
-              <a aria-label="Adicionar nova trilha" href="/trilha/novo"
+              <a aria-label="Adicionar nova trilha" href="/trail/edit"
                 class="font-bold whitespace-nowrap bg-[#6DBA0D] text-white px-2 py-1 rounded hover:hover:bg-green-700 transition flex items-center gap-1 h-14 col-start-10 col-end-12 justify-center">
                 <div style="color:#6DBA0D"
                   class="mr-3 px-2 text-base flex items-center justify-center w-6 h-6 bg-white rounded-4xl font-bold ml-1">
@@ -145,6 +145,7 @@
                             const found = trailModules.find(tm => tm.trailId === userTrail.id);
                           %>
                             <%- include('./partials/trail/card', {
+                              isAdministrator: true,
                               trail: userTrail,
                               moduleCount: found ? found.moduleCount : 0, 
                               firstId: found ? found.firstId : null,
@@ -168,7 +169,7 @@
                           <%- include('./partials/trail/card', {
                           trail: trail,  
                           moduleCount: found ? found.moduleCount : 0, 
-                          isAdministrator: false, 
+                          isAdministrator: true, 
                           firstId: found ? found.firstId : null
                           }) %>
                         <% } %>     

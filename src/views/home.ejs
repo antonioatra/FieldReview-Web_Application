@@ -57,30 +57,30 @@
               <span>
                 <img src="/assets/coroaHomePtd.svg" class="w-6 h-6">
               </span>
-              <% ranking.slice(0, 4).forEach((user, index)=> { %>
-                <% if (index===0) { %>
-            <li class="flex flex-col items-center space-x-2">
-              <span class="bg-[color:#00B5EF] text-white px-20 py-3 rounded-md">
-                <%= index + 1 %>. <%= user.nome %>
+            </li>
+            <% ranking.slice(0, 4).forEach((user, index)=> { %>
+              <% if (index===0) { %>
+                <li class="flex flex-col items-center space-x-2">
+                  <span class="bg-[color:#00B5EF] text-white px-20 py-3 rounded-md">
+                    <%= index + 1 %>. <%= user.nome %>
+                  </span>
+                </li>
+              <% } else { %>
+                <li class="flex flex-col items-center space-y-2 py-2">
+                  <span class="text-blue-900">
+                    <%= index + 1 %>. <%= user.nome %>
+                  </span>
+                </li>
+              <% } %>
+            <% }) %>
+
+            <li class="flex flex-col items-center space-y-2 py-4">
+              <span class="text-blue-900">
+                <% if (userPosition !==-1) { %>
+                  <%= userPosition + 1 %>. <%= ranking[userPosition].nome %>
+                <% } %>
               </span>
             </li>
-            <% } else { %>
-              <li class="flex flex-col items-center space-y-2 py-2">
-                <span class="text-blue-900">
-                  <%= index + 1 %>. <%= user.nome %>
-                </span>
-              </li>
-              <% } %>
-                <% }) %>
-
-                  <li class="flex flex-col items-center space-y-2 py-4">
-                    <span class="text-blue-900">
-                      <% if (userPosition !==-1) { %>
-                        <%= userPosition + 1 %>. <%= ranking[userPosition].nome %>
-                            <% } %>
-                    </span>
-                  </li>
-                  </li>
           </ul>
         </div>
 
@@ -117,14 +117,13 @@
                 const found = trailModules.find(tm => tm.trailId === userTrail.id);
                 %>
 
-                  <%- include('./partials/trail/card', { 
-                    trail: userTrail, 
-                    moduleCount: found ? found.moduleCount : 0, firstId: found ? found.firstId : null , 
-                    isAdministrator: false,
-                  }) %>
-                    %>
-                    <% }) %>
-
+                <%- include('./partials/trail/card', { 
+                  trail: userTrail, 
+                  moduleCount: found ? found.moduleCount : 0, 
+                  firstId: found ? found.firstId : null, 
+                  isAdministrator: false
+                }) %>
+                <% }) %>
 
                     <%} %>
 
