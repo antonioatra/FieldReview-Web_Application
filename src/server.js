@@ -59,7 +59,7 @@ app.get('/trail/:idTrail/:idModule/module', (req, res) => {
   const idTrail = req.params.idTrail;
   const idModule = req.params.idModule;
 
-  res.render('adm/Module', {
+  res.render('adm/module', {
     idTrail: idTrail,
     idModule: idModule
   })
@@ -71,7 +71,7 @@ app.get('/trail/:idTrail/module', (req, res) => {
   const idTrail = req.params.idTrail;
   const idModule = null;
 
-  res.render('adm/Module', {
+  res.render('adm/module', {
     idTrail: idTrail,
     idModule: idModule
   })

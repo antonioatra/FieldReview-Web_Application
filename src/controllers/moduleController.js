@@ -17,6 +17,7 @@ exports.showById = async (req, res) => {
     const mod = await Module.findById(id);
     res.json(mod.rows[0]);
   } catch (err) {
+    console.error(err);
     res.status(500).json({ error: 'Erro ao buscar módulo.' });
   }
 };
