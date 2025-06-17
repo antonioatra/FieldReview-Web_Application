@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const tabId = button.getAttribute('data-tab');
       activeTabInput.value = tabId;
-      // Trigger page reload with query param at /dashboard
       window.location.href = `/dashboard?tab=${tabId}`;
     });
   });
@@ -84,84 +83,107 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('user-name').textContent = currentUser.nome;
     document.getElementById('user-email').textContent = currentUser.email;
-    document.getElementById('user-score').textContent = currentUser.score;
+    document.getElementById('user-score').textContent = currentUser.score || 0;
 
-    await loadUserTrails();
-    await loadUserCertificates();
-    await loadUserNotifications();
-    await loadUserProgress();
+    // Limpar seções de trilhas
+    const assignedTrailsContainer = document.getElementById('assigned-trails-container');
+    const availableTrailsContainer = document.getElementById('available-trails-container');
+    assignedTrailsContainer.innerHTML = '';
+    availableTrailsContainer.innerHTML = '';
 
-    document.querySelector('.tab-link').click();
-  };
-
-  // Load user trails
-  window.loadUserTrails = async function () {
     try {
-      const response = await fetch(`/api/trail/user/${currentUser.id}`);
-      if (!response.ok) throw new Error('Erro ao buscar trilhas');
+      // Buscar trilhas do usuário selecionado
+      const userTrailsResponse = await fetch(`/api/trail/user/${currentUser.id}`);
+      const userTrailsData = await userTrailsResponse.json();
+      const userTrails = userTrailsData.trails || [];
 
-      const data = await response.json();
-      const assignedTrails = document.getElementById('assigned-trails');
-      const completedTrails = document.getElementById('completed-trails');
+      // Buscar todas as trilhas disponíveis
+      const trailsResponse = await fetch('/api/trail');
+      const allTrails = await trailsResponse.json();
 
-      assignedTrails.innerHTML = '';
-      completedTrails.innerHTML = '';
+      // Buscar contagem de módulos para cada trilha
+      const trailModules = await Promise.all(
+        allTrails.map(async (trail) => {
+          try {
+            const modulesResponse = await fetch(`/api/module/trail/${trail.id}`);
+            const modules = await modulesResponse.json();
+            return {
+              trailId: trail.id,
+              moduleCount: modules.length,
+              firstId: modules[0]?.id || null,
+            };
+          } catch (error) {
+            console.error(`Erro ao buscar módulos da trilha ${trail.id}:`, error);
+            return { trailId: trail.id, moduleCount: 0, firstId: null };
+          }
+        }),
+      );
 
-      if (data.assigned_trails && data.assigned_trails.length > 0) {
-        data.assigned_trails.forEach((trail) => {
-          const trailElement = createTrailElement(trail, false);
-          assignedTrails.appendChild(trailElement);
-        });
+      // Filtrar trilhas disponíveis (não atribuídas ao usuário)
+      const availableTrails = allTrails.filter(
+        (trail) => !userTrails.some((userTrail) => userTrail.id_trilha === trail.id),
+      );
+
+      // Renderizar trilhas atribuídas
+      if (userTrails.length === 0) {
+        assignedTrailsContainer.innerHTML =
+          '<p class="text-gray-600">Nenhuma trilha foi atribuída para esse usuário</p>';
       } else {
-        assignedTrails.innerHTML = '<p class="text-gray-500">Nenhuma trilha atribuída</p>';
+        userTrails.forEach((trail) => {
+          const found = trailModules.find((tm) => tm.trailId === trail.id_trilha);
+          const trailCard = `
+            <div class="relative bg-white p-4 rounded-lg shadow">
+              <h3 class="text-lg font-semibold">${trail.titulo}</h3>
+              <p class="text-gray-600">${trail.descricao}</p>
+              <p class="text-sm text-gray-500">Módulos: ${found ? found.moduleCount : 0}</p>
+              ${
+                trail.deadline
+                  ? `<p class="text-sm text-gray-500">Prazo: ${new Date(
+                      trail.deadline,
+                    ).toLocaleDateString()}</p>`
+                  : ''
+              }
+            </div>`;
+          assignedTrailsContainer.innerHTML += trailCard;
+        });
       }
 
-      const completedData = data.filter((trail) => trail.completed);
-      if (completedData.length > 0) {
-        completedData.forEach((trail) => {
-          const trailElement = createTrailElement(trail, true);
-          completedTrails.appendChild(trailElement);
-        });
+      // Renderizar trilhas disponíveis
+      if (availableTrails.length === 0) {
+        availableTrailsContainer.innerHTML =
+          '<p class="text-gray-600">Nenhuma trilha disponível para atribuição</p>';
       } else {
-        completedTrails.innerHTML = '<p class="text-gray-500">Nenhuma trilha concluída</p>';
+        availableTrails.forEach((trail) => {
+          const found = trailModules.find((tm) => tm.trailId === trail.id);
+          const trailCard = `
+            <div class="relative bg-white p-4 rounded-lg shadow">
+              <h3 class="text-lg font-semibold">${trail.titulo}</h3>
+              <p class="text-gray-600">${trail.descricao}</p>
+              <p class="text-sm text-gray-500">Módulos: ${found ? found.moduleCount : 0}</p>
+              <button
+                class="absolute top-2 right-2 bg-[#6DBA0D] text-white px-3 py-1 rounded hover:bg-green-700 transition"
+                onclick="openAssignModal('${trail.id}', '${JSON.stringify(currentUser).replace(
+            /'/g,
+            '"',
+          )}')"
+              >
+                + Atribuir
+              </button>
+            </div>`;
+          availableTrailsContainer.innerHTML += trailCard;
+        });
       }
+
+      // Atualizar outros dados do usuário
+      await loadUserCertificates();
+      await loadUserNotifications();
+      await loadUserProgress();
+      document.querySelector('.tab-link').click();
     } catch (error) {
       console.error('Erro ao carregar trilhas:', error);
-      document.getElementById('assigned-trails').innerHTML =
-        '<p class="text-red-500">Erro ao carregar trilhas</p>';
+      assignedTrailsContainer.innerHTML = '<p class="text-red-500">Erro ao carregar trilhas</p>';
+      availableTrailsContainer.innerHTML = '<p class="text-red-500">Erro ao carregar trilhas</p>';
     }
-  };
-
-  // Create trail element
-  window.createTrailElement = function (trail, isCompleted) {
-    const element = document.createElement('div');
-    element.className = 'bg-gray-50 p-3 rounded-lg';
-    const statusBadge = isCompleted
-      ? '<span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2">Concluída</span>'
-      : '<span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full mr-2">Em andamento</span>';
-    const progressBar = isCompleted
-      ? '<div class="w-full bg-gray-200 rounded-full h-2.5 mt-2"><div class="bg-green-600 h-2.5 rounded-full" style="width: 100%"></div></div>'
-      : `<div class="w-full bg-gray-200 rounded-full h-2.5 mt-2"><div class="bg-blue-600 h-2.5 rounded-full" style="width: ${
-          trail.progress || 0
-        }%"></div></div>`;
-    element.innerHTML = `
-      <div class="flex justify-between items-start">
-        <div>
-          <h4 class="font-medium">${trail.title}</h4>
-          ${statusBadge}
-          ${
-            trail.deadline
-              ? `<span class="text-xs text-gray-500">Prazo: ${new Date(
-                  trail.deadline,
-                ).toLocaleDateString()}</span>`
-              : ''
-          }
-        </div>
-        <span class="text-sm">${trail.progress || 0}%</span>
-      </div>
-      ${progressBar}
-    `;
-    return element;
   };
 
   // Load user certificates

@@ -83,14 +83,14 @@ app.get('/', authMiddleware(), async (req, res) => {
           return {
             trailId: trail.id,
             moduleCount: modulesResponse.data.length,
-            firstId: data[0].id
+            firstId: data[0].id,
           };
         } catch (error) {
           console.error(`Erro ao buscar módulos da trilha ${trail.id}:`, error.message);
           return {
             trailId: trail.id,
             moduleCount: 0,
-            firstId: null
+            firstId: null,
           };
         }
       }),
@@ -291,6 +291,7 @@ app.get('/dashboard', authMiddleware(), async (req, res) => {
     trailModules: trailModules,
     availableTrails: availableTrails,
     userTrails: userTrails,
+    user: req.user,
   });
 });
 const PORT = process.env.PORT || 3000;
