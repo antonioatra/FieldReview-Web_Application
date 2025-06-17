@@ -49,16 +49,22 @@ app.get('/', authMiddleware(), async (req, res) => {
       `http://localhost:3000/api/trail/user/${req.user.id}`,
     );
     const usersResponse = await axios.get('http://localhost:3000/api/user');
-    const notificationsResponse = await axios.get(
-      `http://localhost:3000/api/notification/user/${req.user.id}`,
-    );
+    
+    let notifications = [];
+    try {
+      const notificationsResponse = await axios.get(
+        `http://localhost:3000/api/notification/user/${req.user.id}`,
+      );
+      notifications = Array.isArray(notificationsResponse.data) ? notificationsResponse.data : [];
+    } catch (notificationError) {
+      console.log("Erro ao buscar notificações:", notificationError.message);
+      notifications = [];
+    }
 
     const trails = trailsResponse.data;
     const userTrails = userTrailsResponse.data.trails;
 
     const userList = usersResponse.data;
-
-    const notifications = notificationsResponse.data;
 
     // Processar ranking
     const sortedRank = userList.sort((a, b) => (b.pontuacao || 0) - (a.pontuacao || 0));
@@ -159,6 +165,27 @@ app.get('/search', async (req, res) => {
   });
 });
 
+// Rota para CRIAR nova trilha (sem ID)
+app.get('/trail/edit', (req, res) => {
+  const editMode = false;
+  const trail = null; // Sem trilha existente
+  res.render('trailEdit', { editMode, trail });
+});
+
+// Rota para edição de trilha - deve vir ANTES da rota mais genérica
+app.get('/trail/edit/:id', async (req, res) => {
+  const { id } = req.params;
+  const editMode = true;
+  try {
+    const response = await axios.get(`http://localhost:3000/api/trail/${id}`);
+    const trail = response.data.trail; // Extrair o objeto trail da resposta
+    res.render('trailEdit', { editMode, trail });
+  } catch (error) {
+    console.error('Erro ao buscar trilha:', error);
+    res.status(500).send('Erro ao carregar trilha');
+  }
+});
+
 // Página da trilha específica
 app.get('/trail/:idTrail/:idModule', async (req, res) => {
   const trailId = req.params.idTrail;
@@ -191,6 +218,22 @@ app.get('/help', async (req, res) => {
     });
   }
 });
+
+app.get('/helpAdmin', authMiddleware(), async(req,res) => {
+   try {
+    const response = await axios.get('http://localhost:3000/api/help');
+
+    res.render('helpAdmin', {
+      results: response.data.help || [],
+    });
+  } catch (error) {
+    console.error('Erro ao buscar dados de help:', error);
+
+    res.render('helpAdmin', {
+      results: [],
+    });
+  }
+})
 
 app.get('/dashboard', authMiddleware(), async (req, res) => {
   let users = [];
@@ -250,14 +293,6 @@ app.get('/dashboard', authMiddleware(), async (req, res) => {
     userTrails: userTrails,
     user: req.user,
   });
-});
-
-app.get('/trail/edit/:id', async (req, res) => {
-  // Edit existing trail
-  const { id } = req.params;
-  const editMode = true;
-  const trail = await axios.get(`http://localhost:3000/api/trail/${id}`);
-  res.render('trailEdit', { editMode, trail });
 });
 const PORT = process.env.PORT || 3000;
 

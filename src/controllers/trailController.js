@@ -14,6 +14,9 @@ exports.store = async (req, res) => {
 exports.update = async (req, res) => {
   try {
     const { id } = req.params;
+    console.log('Updating trail with ID:', id);
+    console.log('Data received:', req.body);
+    
     const currentTrail = await Trail.findById(id);
     if (!currentTrail) return res.status(404).json({ error: 'Trilha não encontrada.' });
     req.body.title = req.body.title || currentTrail.titulo;
@@ -21,6 +24,7 @@ exports.update = async (req, res) => {
     await Trail.update(id, req.body);
     res.status(200).json({ message: 'Trilha atualizada com sucesso' });
   } catch (err) {
+    console.error('Error updating trail:', err);
     res.status(500).json({ error: 'Erro ao atualizar uma trilha', details: err.message });
   }
 };
