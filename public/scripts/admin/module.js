@@ -54,12 +54,10 @@ const optionState = document.querySelectorAll(".optionState");
         const data2 = await resp2.json();
         questionContent.value = data2.enunciado;
         questionPoints.value = data2.pontos;
-        console.log(data2);
 
         //pegar as informações das opções
         const resp3 = await fetch(urlOptions + "question/" +data2.id);
         const data3 = await resp3.json();
-        console.log(resp3)
 
       } catch (err) {
         console.error('Erro ao pegar informações do módulo: ', err);

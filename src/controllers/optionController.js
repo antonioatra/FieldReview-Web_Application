@@ -19,7 +19,7 @@ exports.showByQuestionId = async (req, res) => {
             return res.status(404).json({ message: 'Essa pergunta não tem opções' });
         }
 
-        return res.json('Opções retornadas:', options.rows);
+        return res.json(options.rows);
 
     } catch (err) {
         res.status(500).json({ error: 'Erro ao encontrar opções da pergunta ', err });
