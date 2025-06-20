@@ -48,8 +48,8 @@ exports.showByUserId = async (req, res) => {
 exports.update = async (req, res) => {
   try {
     const { id } = req.params;
-    await Module.update(id, req.body);
-    res.status(200).json({ message: 'Módulo atualizado com sucesso' });
+    const result = await Module.update(id, req.body);
+    res.status(200).json({ message: 'Módulo atualizado com sucesso', module: result.rows[0] },);
   } catch (err) {
     res.status(500).json({ error: 'Erro ao atualizar módulo' });
   }

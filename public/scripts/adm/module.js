@@ -1,10 +1,12 @@
 //-----Interatividade na tela-----
-const modal = document.getElementById("moduleModal")
-const dialog = document.querySelector("dialog")
-
-dialog.showModal();
-modal.classList.remove("hidden");
+const modal = document.getElementById("moduleModal");
+const dialog = document.querySelector("dialog");
+const loadingPage = document.getElementById("loadingPage");
 function showModal() {
+  dialog.showModal();
+  loadingPage.classList.remove("hidden");
+  modal.classList.remove("hidden");
+  runFetch()
 }
 
 function hideModal() {
@@ -17,15 +19,17 @@ function hideModal() {
 //Infor de id
 const moduleData = document.getElementById("moduleData");
 let idModule = moduleData.dataset.idmodule
- idModule = idModule.replace(/"/g, ''); 
-console.log(idModule);
+if(idModule){
+  idModule = idModule.replace(/"/g, ''); 
+}
 const idTrail = moduleData.dataset.idtrail;
 
 //urls
 const urlTrail = 'http://localhost:3000/api/trail/';
 const urlModule = 'http://localhost:3000/api/module/';
-const urlQuestion = `http://localhost:3000/api/question/`
-const urlOptions = `http://localhost:3000/api/option/`
+const urlQuestion = `http://localhost:3000/api/question/`;
+const urlOptions = `http://localhost:3000/api/option/`;
+
 
 //pegar as tags para alteração
 const moduleTitle = document.getElementById(
@@ -44,7 +48,6 @@ const optionState = document.querySelectorAll(".optionState");
         //pegar as informações do módulo
         const resp1 = await fetch(urlModule + idModule);
         const data1 = await resp1.json();
-        console.log(data1)
         moduleTitle.value = data1.titulo;
         moduleContent.value = data1.conteudo;
         moduleOrder.value = data1.ordem
@@ -54,10 +57,19 @@ const optionState = document.querySelectorAll(".optionState");
         const data2 = await resp2.json();
         questionContent.value = data2.enunciado;
         questionPoints.value = data2.pontos;
+        questionContent.dataset.id = data2.id;
 
         //pegar as informações das opções
         const resp3 = await fetch(urlOptions + "question/" +data2.id);
         const data3 = await resp3.json();
+        const state = Array.from(optionContent).map((element, i) => {
+          element.value = data3[i].texto;
+          element.dataset.id = data3[i].id;
+          return data3[i].eh_correta;
+        });
+        optionState.forEach((element, i) =>{
+          element.checked = state[i];
+        })
 
       } catch (err) {
         console.error('Erro ao pegar informações do módulo: ', err);
@@ -68,11 +80,15 @@ const optionState = document.querySelectorAll(".optionState");
     console.error("Erro inesperado: ", err)
 
   } finally {
-    console.log("pronto")
+    if(!loadingPage.classList.contains("hidden")){
+      loadingPage.classList.add("hidden");
+    }
+    console.log("Todas as informações carregadas")
   }
 }
 
 async function createModule() {
+  
   try {
     //Criar novo módulo
     const moduleOrderNumber = parseInt(moduleOrder.value);
@@ -125,10 +141,69 @@ async function createModule() {
       }
     });
 
-    console.log("todo processo feito com sucesso!")
+    console.log("Todo processo feito com sucesso!")
   } catch(err){
-    console.log('Erro encontrado: ', err);
+    console.error('Erro ao criar o módulo: ', err);
   }
 }
 
-runFetch();
+async function updateModule(){
+  try{
+    //Atualizar o módulo
+    const moduleOrderNumber = parseInt(moduleOrder.value);
+    const moduleData = {
+      title: moduleTitle.value,
+      content: moduleContent.value,
+      order: moduleOrderNumber
+    };
+    const moduleResponse = await fetch(urlModule + idModule, {
+      method: 'PUT',
+      body: JSON.stringify(moduleData),
+      headers: {
+        'Content-type': 'application/json'
+      }
+    });
+    const moduleJson = await moduleResponse.json();
+    const updatedModule = moduleJson.module;
+
+    //Atualizar a pergunta
+    const questionPointsNumber = parseInt(questionPoints.value);
+    const questionData = {
+      statement: questionContent.value,
+      points: questionPointsNumber
+    }
+    const questionResponse = await fetch(urlQuestion + questionContent.dataset.id , {
+      method: 'PUT',
+      body: JSON.stringify(questionData),
+      headers: {
+        'Content-type': 'application/json'
+      }
+    });
+    const updatedQuestion = await questionResponse.json();
+
+    //Atualizar as opções
+    const checked = document.querySelector('input[type="radio"]:checked');
+    const promise = Array.from(optionContent).map((element, i) => {
+      const isSelected = optionState[i] === checked;
+      const optionData = {
+        text: element.value,
+        isCorrect: isSelected
+      };
+      return fetch(urlOptions + element.dataset.id, {
+        method: 'PUT',
+        body: JSON.stringify(optionData),
+        headers: {
+          'Content-type': 'application/json'
+        }
+      
+      })
+    })
+    const optionsUpdated = await Promise.all(promise);
+    console.log("Opções atualizadas: ", optionsUpdated);
+
+  } catch (err) {
+    console.error("Erro ao atualizar o módulo", err);
+  } finally {
+    console.log("Tudo atualizado")
+  }
+}

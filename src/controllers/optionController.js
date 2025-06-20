@@ -26,3 +26,14 @@ exports.showByQuestionId = async (req, res) => {
     }
 
 }
+
+exports.update = async (req, res) => {
+    try{
+        const id = req.params.id;
+        const data = req.body;
+        const option = await Option.update(id, data);
+        res.status(200).json(option.rows);
+    } catch(err) {
+        res.status(500).json({ error: 'Erro ao atualizar opções da pergunta ', err });
+    }
+}
