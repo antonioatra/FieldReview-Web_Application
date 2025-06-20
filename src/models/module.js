@@ -19,10 +19,10 @@ module.exports = {
     return pool.query(query, values);
   },
 
-  async findByTrailId(data) {
+  async findByTrailId(id) {
     // Função para encontrar módulo pelo id da trilha
     const query = 'SELECT * FROM modulo  WHERE id_trilha = $1';
-    const values = [data.id_trail];
+    const values = [id];
 
     return pool.query(query, values);
   },

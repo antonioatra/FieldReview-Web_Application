@@ -3,16 +3,16 @@ const Module = require('../models/module');
 // Cria um novo módulo
 exports.store = async (req, res) => {
   try {
-    const result = await Module.create(req.body);
-    res.status(201).json({ message: 'Módulo criado com sucesso', module: result.rows[0]});
+    const result = const module = await Module.create(req.body);
+    res.status(201).json({ message: 'Módulo criado com sucesso', data: module.rows[0], module: result.rows[0]});
   } catch (err) {
-    res.status(500).json({ error: 'Erro ao criar módulo.' });
+    res.status(500).json({ error: 'Erro ao criar módulo.', details: err.message });
   }
 };
 
 // Retorna um módulo por ID
 exports.showById = async (req, res) => {
-  try { 
+  try {
     const { id } = req.params;
     const mod = await Module.findById(id);
     res.json(mod.rows[0]);
@@ -26,7 +26,7 @@ exports.showById = async (req, res) => {
 exports.showByTrailId = async (req, res) => {
   try {
     const { id } = req.params;
-    const mod = await Module.findByTrailId({ id_trail: id });
+    const mod = await Module.findByTrailId(id);
     res.json(mod.rows);
   } catch (err) {
     res.status(500).json({ error: 'Erro ao retornar módulos' });
@@ -48,8 +48,17 @@ exports.showByUserId = async (req, res) => {
 exports.update = async (req, res) => {
   try {
     const { id } = req.params;
-    const result = await Module.update(id, req.body);
-    res.status(200).json({ message: 'Módulo atualizado com sucesso', module: result.rows[0] },);
+    // Preenche os campos que nao foram enviados com os valores existentes
+    const existingModule = await Module.findById(id);
+    if (!existingModule.rows.length) {
+      return res.status(404).json({ error: 'Módulo não encontrado' });
+    }
+    req.body.title = req.body.title || existingModule.rows[0].titulo;
+    req.body.content = req.body.content || existingModule.rows[0].conteudo;
+    req.body.order = req.body.order || existingModule.rows[0].ordem;
+
+    await Module.update(id, req.body);
+    res.status(200).json({ message: 'Módulo atualizado com sucesso' });
   } catch (err) {
     res.status(500).json({ error: 'Erro ao atualizar módulo' });
   }

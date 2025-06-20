@@ -4,20 +4,28 @@ const User = require('../models/user');
 exports.store = async (req, res) => {
   try {
     const result = await Trail.create(req.body);
-    res.status(201).json({ message: 'Titulo Criado com sucesso', trail: result.rows[0] });
+    res.status(201).json({ message: 'Trilha Criado com sucesso', trail: result.rows[0] });
   } catch (err) {
     res.status(500).json({ error: 'Erro ao criar trilha' });
-    console.error("Erro encotrado " + err)
+    console.error('Erro encotrado ' + err);
   }
 };
 
 exports.update = async (req, res) => {
   try {
     const { id } = req.params;
+    console.log('Updating trail with ID:', id);
+    console.log('Data received:', req.body);
+    
+    const currentTrail = await Trail.findById(id);
+    if (!currentTrail) return res.status(404).json({ error: 'Trilha não encontrada.' });
+    req.body.title = req.body.title || currentTrail.titulo;
+
     await Trail.update(id, req.body);
     res.status(200).json({ message: 'Trilha atualizada com sucesso' });
   } catch (err) {
-    res.status(500).json({ error: 'Erro ao atualizar uma trilha' });
+    console.error('Error updating trail:', err);
+    res.status(500).json({ error: 'Erro ao atualizar uma trilha', details: err.message });
   }
 };
 
@@ -47,6 +55,7 @@ exports.showAll = async (req, res) => {
     const trail = await Trail.findAll();
     res.json(trail);
   } catch (err) {
+    console.log(err);
     res.status(500).json({ error: 'Erro ao retornar trilhas' });
   }
 };
@@ -69,6 +78,19 @@ exports.assignTrail = async (req, res) => {
     });
     res.status(201).json({ message: 'Trilha atribuída com sucesso', assignment: result.rows[0] });
   } catch (err) {
-    res.status(500).json({ error: 'Erro ao atribuir trilha' });
+    res.status(500).json({ error: 'Erro ao atribuir trilha', details: err.message });
+  }
+};
+
+exports.showByUser = async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const user = await User.findById(userId);
+    if (!user) return res.status(404).json({ error: 'Usuário não encontrado' });
+
+    const trails = await Trail.findByUserId(userId);
+    res.status(200).json({ message: 'Trilhas do usuário retornadas com sucesso', trails });
+  } catch (err) {
+    res.status(500).json({ error: 'Erro ao retornar trilhas do usuário' });
   }
 };

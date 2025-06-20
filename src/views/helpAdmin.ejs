@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perguntas Frequentes - Field Review</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800 ">
+    <%- include('./partials/header.ejs') %>
+
+    <main class="max-w-7xl mx-auto px-4 py-14 min-h-screen">
+      <h1 class="text-2xl font-semibold mb-4 text-center">Perguntas frequentes</h1>
+
+      <div class="flex justify-between items-center mb-6">
+        <p class="text-lg font-medium">Help disponível na plataforma</p>
+
+        <a href="#"
+          class="bg-[#6DBA0D] text-white px-4 py-2 rounded flex items-center space-x-2"
+          id="openModalButton" aria-label="Adicionar Help">
+          <img src="./assets/adicionar.svg" class="w-5 h-5" alt="Adicionar">
+          <span class="text-sm font-semibold">Adicionar Help</span>
+        </a>
+      </div>
+
+      <div class="flex flex-wrap gap-4">
+        <% results.forEach(result => { %>
+        <div
+          class="bg-white border border-gray-200 rounded shadow-sm p-4 max-w-md sm:w-80">
+          <div class="flex justify-between items-start mb-2">
+            <h2 class="text-blue-800 font-bold text-sm"><%= result.titulo %></h2>
+
+            <div class="flex flex-col space-y-2 items-center">
+              <!-- Botão para editar -->
+              <a href="#" class="text-red-500 hover:text-red-700"
+                onclick="openEditModal('<%= result.id %>', '<%= result.titulo %>', '<%= result.conteudo %>')">
+                <img src="./assets/editar.svg" alt="Editar" class="w-5 h-5">
+              </a>
+              <!-- Botão para excluir -->
+              <a href="#" class="text-gray-500 hover:text-blue-600"
+                onclick="openDeleteModal('<%= result.id %>')">
+                <img src="./assets/excluir.svg" alt="Excluir" class="w-5 h-5">
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-gray-600">
+            <%= result.conteudo %>
+          </p>
+        </div>
+        <% }); %>
+      </div>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+
+    <!-- Modal -->
+    <div id="modal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+      <div class="bg-white p-6 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/3">
+        <h2 id="modalTitle" class="text-xl font-semibold mb-4">Adicionar um novo card no help</h2>
+        <form id="helpForm">
+          <label class="block mb-2">Alterar o título</label>
+          <input type="text" id="titulo"
+            class="w-full p-2 mb-4 border border-gray-300 rounded"
+            placeholder="Alterar título" required>
+
+          <label class="block mb-2">Alterar conteúdo</label>
+          <textarea id="conteudo"
+            class="w-full p-2 mb-4 border border-gray-300 rounded"
+            placeholder="Alterar conteúdo" required></textarea>
+
+          <div class="flex justify-end">
+            <button type="button"
+              class="bg-[#D30F4B] text-white p-2 rounded mr-2"
+              id="cancelButton">Cancelar</button>
+            <button type="submit" class="bg-[#6DBA0D] text-white p-2 rounded"
+              id="submitButton">Concluir</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const openModalButton = document.getElementById('openModalButton');
+      const modal = document.getElementById('modal');
+      const cancelButton = document.getElementById('cancelButton');
+      const helpForm = document.getElementById('helpForm');
+      const modalTitle = document.getElementById('modalTitle');
+      const submitButton = document.getElementById('submitButton');
+      let currentAction = '';
+      let currentHelpId = '';
+
+      // Função para abrir o modal para adicionar
+      openModalButton.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        currentAction = 'add';
+        modalTitle.textContent = 'Adicionar um novo card no help';
+        submitButton.textContent = 'Adicionar';
+        helpForm.reset();
+      });
+
+      // Função para abrir o modal para editar
+      function openEditModal(id, titulo, conteudo) {
+        modal.classList.remove('hidden');
+        currentAction = 'edit';
+        modalTitle.textContent = 'Editar Help';
+        submitButton.textContent = 'Atualizar';
+        document.getElementById('titulo').value = titulo;
+        document.getElementById('conteudo').value = conteudo;
+        currentHelpId = id;
+      }
+
+      // Função para abrir o modal para excluir
+      function openDeleteModal(id) {
+        const confirmation = confirm('Tem certeza de que deseja excluir esse card?');
+        if (confirmation) {
+          fetch(`/api/help/${id}`, { 
+            method: 'DELETE',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          })
+          .then(response => {
+            if (response.ok) {
+              alert('Card excluído com sucesso');
+              location.reload(); 
+            } else {
+              alert('Erro ao excluir o card. Tente novamente.');
+            }
+          })
+          .catch(error => {
+            console.error('Erro ao excluir:', error);
+            alert('Erro ao excluir o card. Tente novamente.');
+          });
+        }
+      }
+
+      cancelButton.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+
+      helpForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const titulo = document.getElementById('titulo').value;
+        const conteudo = document.getElementById('conteudo').value;
+
+        if (!titulo || !conteudo) {
+          alert('Por favor, preencha todos os campos.');
+          return;
+        }
+
+        const method = currentAction === 'add' ? 'POST' : 'PATCH';
+        const url = currentAction === 'add' ? '/api/help' : `/api/help/${currentHelpId}`;
+
+        fetch(url, {
+          method: method,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ titulo, conteudo }),
+        })
+        .then(response => {
+          if (response.ok) {
+            alert(currentAction === 'add' ? 'Help criado com sucesso' : 'Help atualizado com sucesso');
+            location.reload(); 
+          } else {
+            alert('Erro ao salvar o help. Tente novamente.');
+          }
+        })
+        .catch(error => {
+          console.error('Erro ao salvar o help:', error);
+          alert('Erro ao salvar o help. Tente novamente.');
+        });
+
+        modal.classList.add('hidden');
+      });
+    </script>
+  </body>
+</html>

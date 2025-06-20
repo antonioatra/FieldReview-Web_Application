@@ -1,12 +1,10 @@
 const Users = require('../models/user');
 
-// Cria um novo usuário
 exports.store = async (req, res) => {
   try {
     const result = await Users.create(req.body);
     res.status(201).json({ message: 'User created successfully', user: result.rows[0] });
   } catch (error) {
-    // Unique Violation Erro no Postgres
     if (error.code === '23505') {
       return res.status(409).json({ error: 'Usuário com esse email já existe.' });
     }
@@ -14,7 +12,6 @@ exports.store = async (req, res) => {
   }
 };
 
-// Retorna todos os usuários
 exports.show = async (req, res) => {
   try {
     const users = await Users.findAll();
@@ -24,7 +21,6 @@ exports.show = async (req, res) => {
   }
 };
 
-// Retorna um usuário por ID
 exports.showById = async (req, res) => {
   try {
     const { id } = req.params;
@@ -36,18 +32,34 @@ exports.showById = async (req, res) => {
   }
 };
 
-// Atualiza os dados de um usuário existente
-exports.update = async (req, res) => {
+exports.getCurrentUser = async (req, res) => {
   try {
-    const { id } = req.params;
-    const result = await Users.update(id, req.body);
-    res.status(200).json({ message: 'Atualizado com Sucesso', user: result.rows[0] });
+    const user = await Users.findById(req.user.id);
+    if (!user) return res.status(404).json({ error: 'Usuário não encontrado.' });
+    res.json(user);
   } catch (err) {
-    res.status(500).json({ error: 'Erro ao atualizar usuário' });
+    res.status(500).json({ error: 'Erro ao buscar usuário' });
   }
 };
 
-// Deleta um usuário por ID
+exports.update = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    // Se o campo nao for passado, manter ele com o valor atual
+    const currentUser = await Users.findById(id);
+    if (!currentUser) return res.status(404).json({ error: 'Usuário não encontrado.' });
+    req.body.name = req.body.name || currentUser.nome;
+    req.body.email = req.body.email || currentUser.email;
+    req.body.role = req.body.role || currentUser.cargo;
+
+    const result = await Users.update(id, req.body);
+    res.status(200).json({ message: 'Atualizado com Sucesso', user: result.rows[0] });
+  } catch (err) {
+    res.status(500).json({ error: 'Erro ao atualizar usuário', details: err.message });
+  }
+};
+
 exports.destroy = async (req, res) => {
   try {
     const { id } = req.params;

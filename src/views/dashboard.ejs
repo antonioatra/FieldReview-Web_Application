@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Tabs with EJS</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="font-sans">
+  <%- include('./partials/header.ejs') %>
+    <div class="container mx-auto p-6">
+
+      <!-- Tab Navigation -->
+      <div class="flex border-b border-gray-200">
+        <button
+          class="tab-button px-4 py-2 font-medium text-gray-700 hover:bg-gray-200 focus:outline-none transition-colors duration-200 <%= activeTab === 'trilha' ? 'border-b-2 border-blue-500 text-blue-500' : '' %>"
+          data-tab="trilha">
+          Trilha
+        </button>
+        <button
+          class="tab-button px-4 py-2 font-medium text-gray-700 hover:bg-gray-200 focus:outline-none transition-colors duration-200 <%= activeTab === 'usuarios' ? 'border-b-2 border-blue-500 text-blue-500' : '' %>"
+          data-tab="usuarios">
+          Usuários
+        </button>
+      </div>
+
+      <!-- Hidden input to store active tab state -->
+      <input type="hidden" id="active-tab" value="<%= activeTab %>">
+
+      <!-- Tab Content -->
+      <div id="tab-content" class="mt-4 bg-white rounded-lg shadow border-none shadow-none min-h-screen">
+        <% if (activeTab==='trilha' ) { %>
+          <div class="flex flex-col">
+            <div class="gap-4 flex flex-row items-center justify-between">
+              <p class="text-2xl col-start-2 col-end-8 ">Trilhas disponíveis na plataforma</p>
+              <a aria-label="Adicionar nova trilha" href="/trail/edit"
+                class="font-bold whitespace-nowrap bg-[#6DBA0D] text-white px-2 py-1 rounded hover:hover:bg-green-700 transition flex items-center gap-1 h-14 col-start-10 col-end-12 justify-center">
+                <div style="color:#6DBA0D"
+                  class="mr-3 px-2 text-base flex items-center justify-center w-6 h-6 bg-white rounded-4xl font-bold ml-1">
+                  +
+                </div>
+                Adicionar nova trilha
+              </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+              <% trails.forEach(trail=> { 
+                const found = trailModules.find(tm => tm.trailId === trail.id); %>
+                <%- include('./partials/trail/card', { trail: trail, moduleCount: found ? found.moduleCount : 0, isAdministrator: true, firstId: found ? found.firstId : null }) %>
+              <% }) %>
+            </div>
+          </div>
+        <% } else if (activeTab==='usuarios' ) { %>
+          <main class="flex w-full max-w-6xl mx-auto h-[90vh] bg-white shadow-lg rounded-lg overflow-hidden shadow-none">
+            <aside class="w-1/4 border-r border-gray-200 p-4 overflow-y-auto">
+              <h2 class="text-lg font-semibold mb-4">Usuários Ativos na Plataforma</h2>
+              <div class="mb-4">
+                <input type="text" placeholder="Buscar usuário..." class="w-full p-2 border rounded"
+                  oninput="filterUsers(this.value)" />
+              </div>
+              <ul class="space-y-2" id="user-list">
+                <% users.forEach(user=> { %>
+                  <li
+                    class="p-2 hover:bg-gray-200 cursor-pointer rounded select-none flex justify-between items-center"
+                    onclick="showUserDetails('<%= JSON.stringify(user).replace(/'/g, '"') %>' )">
+                    <span>
+                      <%= user.nome %>
+                    </span>
+                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                      <%= user.score %> pts
+                    </span>
+                  </li>
+                <% }) %>
+              </ul>
+            </aside>
+            <section id="user-details" class="w-3/4 p-6 overflow-y-auto">
+              <div class="text-center text-gray-500" id="default-message">
+                Selecione um usuário para ver os detalhes
+              </div>
+              <div id="user-content" class="hidden">
+                <!-- Cabeçalho com informações básicas -->
+                <div class="flex justify-between items-start mb-6">
+                  <div>
+                    <h2 class="text-2xl font-bold" id="user-name"></h2>
+                    <p class="text-gray-600" id="user-email"></p>
+                    <p class="text-gray-600 hidden">Pontuação: <span class="font-semibold" id="user-score"></span></p>
+                  </div>
+                </div>
+
+                <!-- Abas de navegação dentro de Usuários -->
+                <div class="border-b border-gray-200 mb-6">
+                  <ul class="flex flex-wrap -mb-px" id="tabs">
+                    <li class="mr-2">
+                      <a href="#" class="tab-link inline-block p-4 border-b-2 border-blue-500 rounded-t-lg active"
+                        onclick="switchTab(event, 'progress-tab')">Progresso</a>
+                    </li>
+                    <li class="mr-2 hidden">
+                      <a href="#"
+                        class="tab-link inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+                        onclick="switchTab(event, 'trails-tab')">Trilhas</a>
+                    </li>
+                    <li class="mr-2">
+                      <a href="#"
+                        class="tab-link inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+                        onclick="switchTab(event, 'certificates-tab')">Certificados</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Conteúdo das abas -->
+                  <div id="progress-tab" class="tab-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                      <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="font-semibold mb-2">Progresso Geral</h3>
+                        <div class="h-64">
+                          <canvas id="progressChart"></canvas>
+                        </div>
+                      </div>
+                      <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="font-semibold mb-2">Desempenho Recente</h3>
+                        <div class="space-y-3" id="recent-performance"></div>
+                      </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow mb-6 hidden">
+                      <h3 class="font-semibold mb-2">Áreas de Melhoria</h3>
+                      <div class="space-y-2" id="improvement-areas"></div>
+                    </div>
+                    <section>
+                      <h3 class="text-xl font-bold text-[color:#00B5EF] mb-4">Trilhas atribuídas ao usuário</h3>
+                      <div id="assigned-trails-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <p class="text-gray-600">Selecione um usuário para ver as trilhas atribuídas</p>
+                      </div>
+                    </section>
+                    <section>
+                      <h3 class="text-2xl font-bold text-[color:#00B5EF] mb-4 mt-8">Trilhas Disponíveis</h3>
+                      <div id="available-trails-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <p class="text-gray-600">Selecione um usuário para ver as trilhas disponíveis</p>
+                      </div>
+                    </section>
+                  </div>
+                  <div id="trails-tab" class="tab-content hidden">
+                    <div class="mb-4">
+                      <h3 class="font-semibold">Trilhas Atribuídas</h3>
+                      <div class="mt-2 space-y-3" id="assigned-trails"></div>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold">Trilhas Concluídas</h3>
+                      <div class="mt-2 space-y-3" id="completed-trails"></div>
+                    </div>
+                  </div>
+                  <div id="certificates-tab" class="tab-content hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="certificates-list"></div>
+                  </div>
+                </div>
+              </section>
+            </main>
+
+            <!-- Modal for Assigning Trail -->
+            <div id="assign-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center hidden">
+              <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+                <h2 class="text-xl font-bold mb-4">Atribuir Trilha</h2>
+                <p class="mb-4">Você está atribuindo uma trilha ao usuário!
+                  Caso queira determine uma data limite para que ele conclua os estudos.</p>
+                <form id="assign-form">
+                  <input type="hidden" id="trail-id" name="trailId">
+                  <input type="hidden" id="user-id" name="userId">
+                  <div class="mb-4">
+                    <label for="deadline" class="block text-sm font-medium text-gray-700">Data Limite</label>
+                    <input
+                      type="date"
+                      id="deadline"
+                      name="deadline"
+                      class="mt-1 block w-full p-2 border rounded"
+                      required
+                    >
+                  </div>
+                  <div class="flex justify-end gap-2">
+                    <button
+                      type="button"
+                      class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
+                      onclick="closeAssignModal()"
+                    >
+                      Cancelar
+                    </button>
+                    <button
+                      type="submit"
+                      class="px-4 py-2 bg-[#6DBA0D] text-white rounded hover:bg-green-700"
+                    >
+                      Atribuir
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          <% } %>
+      </div>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/scripts/dashboard.js"></script>
+
+</body>
+
+</html>

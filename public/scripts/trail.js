@@ -85,7 +85,7 @@ async function executarFetches() {
             //inserir informações
             li.innerHTML = `
             <span class="w-4 h-4 bg-green-500 rounded-full"></span>
-            <span class="text-gray-600">${module.titulo}</span>`
+            <a href="/trail/${trailId}/${module.id}" class="text-gray-600">${module.titulo}</a>`
 
             //estilizar
             li.classList.add("flex", "items-center", "space-x-2");
@@ -114,7 +114,7 @@ async function executarFetches() {
             //Inserir as informações
             if(option.eh_correta){
                 label.innerHTML = `
-                <input type="radio" class="w-5 h-5" name="option" data-state="right"/>
+                <input type="radio" class="w-fit h-fit" name="option" data-state="right"/>
                  <span class="text-gray-700">
                     ${option.texto}
                 </span>
@@ -122,7 +122,7 @@ async function executarFetches() {
             }
             else{
                 label.innerHTML = `
-                <input type="radio" class="w-5 h-5" name="option" data-state="wrong"/>
+                <input type="radio" class="w-fit h-fit" name="option" data-state="wrong"/>
                  <span class="text-gray-700" >
                     ${option.texto}
                 </span>
@@ -159,6 +159,7 @@ function checkAnswer(){
     //ver se está certo ou errado
     if (state === 'right'){
         alert("Resposta correta");
+        window.location.href ='/'
     } 
     else {
         alert("Resposta errada")
