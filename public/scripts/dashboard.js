@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Set initial active tab styles
   const initialTab = activeTabInput.value;
-  tabButtons.forEach((button) => {
+  tabButtons.forEach(function (button) {
     if (button.getAttribute('data-tab') === initialTab) {
       button.classList.add('border-b-2', 'border-blue-500', 'text-blue-500');
     } else {
@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Main tab switching with page reload
-  tabButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      tabButtons.forEach((btn) => {
+  tabButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      tabButtons.forEach(function (btn) {
         btn.classList.remove('border-b-2', 'border-blue-500', 'text-blue-500');
         btn.classList.add('text-gray-700');
       });
@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function initializeSubTabs() {
     if (document.getElementById('user-content')) {
       const subTabLinks = document.querySelectorAll('.tab-link');
-      subTabLinks.forEach((link) => {
-        link.addEventListener('click', (event) => {
+      subTabLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
           event.preventDefault();
           switchTab(event, link.getAttribute('onclick').match(/'([^']+)'/)[1]);
         });
@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Sub-tab switching function
   window.switchTab = function (event, tabId) {
     event.preventDefault();
-    document.querySelectorAll('.tab-link').forEach((link) => {
+    document.querySelectorAll('.tab-link').forEach(function (link) {
       link.classList.remove('active', 'border-blue-500', 'text-blue-600');
       link.classList.add('border-transparent');
     });
-    document.querySelectorAll('.tab-content').forEach((content) => {
+    document.querySelectorAll('.tab-content').forEach(function (content) {
       content.classList.add('hidden');
     });
     event.target.classList.add('active', 'border-blue-500', 'text-blue-600');
@@ -71,6 +71,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  // Open modal for assigning trail
+  window.openAssignModal = function (trailId, userData) {
+    window.currentUser = JSON.parse(userData);
+    document.getElementById('trail-id').value = trailId;
+    document.getElementById('user-id').value = window.currentUser.id;
+    document.getElementById('assign-modal').classList.remove('hidden');
+  };
+
+  // Close modal
+  window.closeAssignModal = function () {
+    document.getElementById('assign-modal').classList.add('hidden');
+    document.getElementById('assign-form').reset();
+  };
+
+  // Handle form submission for assigning trail
+  function initializeAssignForm() {
+    const assignForm = document.getElementById('assign-form');
+    if (assignForm) {
+      assignForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const trailId = document.getElementById('trail-id').value;
+        const userId = document.getElementById('user-id').value;
+        const deadline = document.getElementById('deadline').value;
+
+        try {
+          const response = await fetch(`/api/trail/${trailId}/user/${userId}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ deadline }),
+          });
+
+          if (response.ok) {
+            alert('Trilha atribuída com sucesso!');
+            closeAssignModal();
+            showUserDetails(JSON.stringify(window.currentUser));
+          } else {
+            const error = await response.json();
+            alert(`Erro ao atribuir trilha: ${error.error}`);
+          }
+        } catch (err) {
+          alert('Erro ao atribuir trilha. Tente novamente.');
+          console.error(err);
+        }
+      });
+    }
+  }
+
   // Show user details
   window.showUserDetails = async function (userStr) {
     window.currentUser = JSON.parse(userStr);
@@ -81,29 +130,25 @@ document.addEventListener('DOMContentLoaded', () => {
     defaultMessage.classList.add('hidden');
     userContent.classList.remove('hidden');
 
-    document.getElementById('user-name').textContent = currentUser.nome;
-    document.getElementById('user-email').textContent = currentUser.email;
-    document.getElementById('user-score').textContent = currentUser.score || 0;
+    document.getElementById('user-name').textContent = window.currentUser.nome;
+    document.getElementById('user-email').textContent = window.currentUser.email;
+    document.getElementById('user-score').textContent = window.currentUser.score || 0;
 
-    // Limpar seções de trilhas
     const assignedTrailsContainer = document.getElementById('assigned-trails-container');
     const availableTrailsContainer = document.getElementById('available-trails-container');
     assignedTrailsContainer.innerHTML = '';
     availableTrailsContainer.innerHTML = '';
 
     try {
-      // Buscar trilhas do usuário selecionado
-      const userTrailsResponse = await fetch(`/api/trail/user/${currentUser.id}`);
+      const userTrailsResponse = await fetch(`/api/trail/user/${window.currentUser.id}`);
       const userTrailsData = await userTrailsResponse.json();
       const userTrails = userTrailsData.trails || [];
 
-      // Buscar todas as trilhas disponíveis
       const trailsResponse = await fetch('/api/trail');
       const allTrails = await trailsResponse.json();
 
-      // Buscar contagem de módulos para cada trilha
       const trailModules = await Promise.all(
-        allTrails.map(async (trail) => {
+        allTrails.map(async function (trail) {
           try {
             const modulesResponse = await fetch(`/api/module/trail/${trail.id}`);
             const modules = await modulesResponse.json();
@@ -119,18 +164,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }),
       );
 
-      // Filtrar trilhas disponíveis (não atribuídas ao usuário)
-      const availableTrails = allTrails.filter(
-        (trail) => !userTrails.some((userTrail) => userTrail.id_trilha === trail.id),
-      );
+      const availableTrails = allTrails.filter(function (trail) {
+        return !userTrails.some(function (userTrail) {
+          return userTrail.id_trilha === trail.id;
+        });
+      });
 
-      // Renderizar trilhas atribuídas
       if (userTrails.length === 0) {
         assignedTrailsContainer.innerHTML =
           '<p class="text-gray-600">Nenhuma trilha foi atribuída para esse usuário</p>';
       } else {
-        userTrails.forEach((trail) => {
-          const found = trailModules.find((tm) => tm.trailId === trail.id_trilha);
+        userTrails.forEach(function (trail) {
+          const found = trailModules.find(function (tm) {
+            return tm.trailId === trail.id_trilha;
+          });
           const trailCard = `
             <div class="relative bg-white p-4 rounded-lg shadow">
               <h3 class="text-lg font-semibold">${trail.titulo}</h3>
@@ -148,24 +195,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // Renderizar trilhas disponíveis
       if (availableTrails.length === 0) {
         availableTrailsContainer.innerHTML =
           '<p class="text-gray-600">Nenhuma trilha disponível para atribuição</p>';
       } else {
-        availableTrails.forEach((trail) => {
-          const found = trailModules.find((tm) => tm.trailId === trail.id);
+        availableTrails.forEach(function (trail) {
+          const found = trailModules.find(function (tm) {
+            return tm.trailId === trail.id;
+          });
           const trailCard = `
             <div class="relative bg-white p-4 rounded-lg shadow">
               <h3 class="text-lg font-semibold">${trail.titulo}</h3>
               <p class="text-gray-600">${trail.descricao}</p>
               <p class="text-sm text-gray-500">Módulos: ${found ? found.moduleCount : 0}</p>
               <button
-                class="absolute top-2 right-2 bg-[#6DBA0D] text-white px-3 py-1 rounded hover:bg-green-700 transition"
-                onclick="openAssignModal('${trail.id}', '${JSON.stringify(currentUser).replace(
-            /'/g,
-            '"',
-          )}')"
+                class="assign-trail-button absolute top-2 right-2 bg-[#6DBA0D] text-white px-3 py-1 rounded hover:bg-green-700 transition"
+                data-trail-id="${trail.id}"
+                data-user-data='${JSON.stringify(window.currentUser)}'
               >
                 + Atribuir
               </button>
@@ -174,7 +220,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // Atualizar outros dados do usuário
+      // Add event listeners for assign buttons using event delegation
+      availableTrailsContainer.addEventListener('click', function (event) {
+        const button = event.target.closest('.assign-trail-button');
+        if (button) {
+          const trailId = button.getAttribute('data-trail-id');
+          const userData = button.getAttribute('data-user-data');
+          window.openAssignModal(trailId, userData);
+        }
+      });
+
       await loadUserCertificates();
       await loadUserNotifications();
       await loadUserProgress();
@@ -189,14 +244,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load user certificates
   window.loadUserCertificates = async function () {
     try {
-      const response = await fetch(`/api/certificate/user/${currentUser.id}`);
+      const response = await fetch(`/api/certificate/user/${window.currentUser.id}`);
       const certificatesList = document.getElementById('certificates-list');
       certificatesList.innerHTML = '';
 
       if (response.ok) {
         const data = await response.json();
         if (data.certificates && data.certificates.length > 0) {
-          data.certificates.forEach((cert) => {
+          data.certificates.forEach(function (cert) {
             const certElement = document.createElement('div');
             certElement.className = 'bg-white border rounded-lg p-4 shadow-sm';
             certElement.innerHTML = `
@@ -237,14 +292,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load user notifications
   window.loadUserNotifications = async function () {
     try {
-      const response = await fetch(`/api/notification/user/${currentUser.id}`);
+      const response = await fetch(`/api/notification/user/${window.currentUser.id}`);
       const notificationsList = document.getElementById('notifications-list');
       notificationsList.innerHTML = '';
 
       if (response.ok) {
         const data = await response.json();
         if (data.notifications && data.notifications.length > 0) {
-          data.notifications.forEach((notification) => {
+          data.notifications.forEach(function (notification) {
             const notifElement = document.createElement('div');
             notifElement.className = 'bg-white border rounded-lg p-4 shadow-sm';
             notifElement.innerHTML = `
@@ -288,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
           labels: progressData.labels,
           datasets: [
             {
-              label: 'Progresso (%)',
+              label: 'Progresso do Usuário',
               data: progressData.progress,
               backgroundColor: [
                 'rgba(59, 130, 246, 0.7)',
@@ -321,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ];
       const improvementContainer = document.getElementById('improvement-areas');
       improvementContainer.innerHTML = '';
-      improvementAreas.forEach((area) => {
+      improvementAreas.forEach(function (area) {
         const areaElement = document.createElement('div');
         areaElement.className = 'mb-2';
         areaElement.innerHTML = `
@@ -343,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ];
       const performanceContainer = document.getElementById('recent-performance');
       performanceContainer.innerHTML = '';
-      recentPerformance.forEach((perf) => {
+      recentPerformance.forEach(function (perf) {
         const perfElement = document.createElement('div');
         perfElement.className = 'flex justify-between items-center p-2 bg-gray-50 rounded';
         perfElement.innerHTML = `
@@ -366,20 +421,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Admin actions
   window.assignTrail = function () {
-    alert(`Atribuir trilha para ${currentUser.nome}`);
+    alert(`Atribuir trilha para ${window.currentUser.nome}`);
   };
 
   window.sendNotification = function () {
-    alert(`Enviar notificação para ${currentUser.nome}`);
+    alert(`Enviar notificação para ${window.currentUser.nome}`);
   };
 
   window.downloadCertificate = function (certId) {
     alert(`Baixar certificado ${certId}`);
   };
 
-  // Initialize sub-tabs for the default tab if it's Usuários
+  // Initialize sub-tabs and form for the default tab if it's Usuários
   if (activeTabInput.value === 'usuarios') {
     initializeSubTabs();
+    initializeAssignForm();
   }
 });
 
