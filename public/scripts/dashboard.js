@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Open modal for assigning trail
   window.openAssignModal = function (trailId, userData) {
-    console.log('abriu modal');
     window.currentUser = JSON.parse(userData);
     document.getElementById('trail-id').value = trailId;
     document.getElementById('user-id').value = window.currentUser.id;
@@ -438,8 +437,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeSubTabs();
     initializeAssignForm();
   }
-
-  console.log('Dashboard script loaded successfully');
 });
 
 // Global variables
