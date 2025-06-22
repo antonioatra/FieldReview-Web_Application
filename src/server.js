@@ -90,7 +90,7 @@ app.get('/', authMiddleware(), async (req, res) => {
           return {
             ...trail,
             moduleCount: 0,
-            firstModuleId: null
+            firstModuleId: null,
             firstId: null,
           };
         }
