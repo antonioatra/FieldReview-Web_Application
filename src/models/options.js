@@ -4,6 +4,7 @@ module.exports = { // Cria as funções do model
     async create(data) { // Função que cria a opção
         const query = "INSERT INTO opcoes (id_pergunta, texto, eh_correta) VALUES($1, $2, $3) RETURNING *";
         const values = [data.idQuestion, data.text, data.isCorrect];
+        console.log('Values de create do option: ',values)
 
     return pool.query(query, values);
   },
@@ -36,6 +37,6 @@ module.exports = { // Cria as funções do model
         const values = [data.questionId];
 
     const result = await pool.query(query, values);
-    return result.rows; // Retorna todas as opções associadas à pergunta
+    return result; // Retorna todas as opções associadas à pergunta
   },
 };

@@ -78,7 +78,6 @@ app.get('/', authMiddleware(), async (req, res) => {
             `http://localhost:3000/api/module/trail/${trail.id}`,
           );
           const data = modulesResponse.data;
-          console.log(data[0].id);
 
           return {
             trailId: trail.id,
@@ -185,7 +184,7 @@ app.get('/trail/:idTrail/module', (req, res) => {
 
   res.render('adm/module', {
     idTrail: idTrail,
-    idModule: idModule
+    idModule: idModule,
   })
 
 });
@@ -195,7 +194,7 @@ app.get('/trail/:idTrail/module', (req, res) => {
 app.get('/trail/edit', (req, res) => {
   const editMode = false;
   const trail = null; // Sem trilha existente
-  res.render('trailEdit', { editMode, trail });
+  res.render('trailEdit', { editMode, trail});
 });
 
 // Rota para edição de trilha - deve vir ANTES da rota mais genérica
@@ -205,7 +204,10 @@ app.get('/trail/edit/:id', async (req, res) => {
   try {
     const response = await axios.get(`http://localhost:3000/api/trail/${id}`);
     const trail = response.data.trail; // Extrair o objeto trail da resposta
-    res.render('trailEdit', { editMode, trail });
+    const response1 = await axios.get(`http://localhost:3000/api/module/trail/${id}`);
+    const modules = response1.data;
+    console.log("Esse é o modules no server: ", modules)
+    res.render('trailEdit', { editMode, trail, modules });
   } catch (error) {
     console.error('Erro ao buscar trilha:', error);
     res.status(500).send('Erro ao carregar trilha');

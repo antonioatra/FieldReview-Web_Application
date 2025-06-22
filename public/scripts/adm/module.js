@@ -1,12 +1,17 @@
+
+      
 //-----Interatividade na tela-----
 const modal = document.getElementById("moduleModal");
 const dialog = document.querySelector("dialog");
 const loadingPage = document.getElementById("loadingPage");
-function showModal() {
+
+function showModal(element) {
+  const idModule = element.dataset.idmodule ? element.dataset.idmodule : null;
+  const idTrail = element.dataset.idtrail ? element.dataset.idtrail : null;
   dialog.showModal();
   loadingPage.classList.remove("hidden");
   modal.classList.remove("hidden");
-  runFetch()
+  runFetch(idModule, idTrail);
 }
 
 function hideModal() {
@@ -14,16 +19,18 @@ function hideModal() {
   dialog.close();
 }
 
-//-----Integração com o backend-----
-//Pegar as informações da div de informação
-//Infor de id
-const moduleData = document.getElementById("moduleData");
-let idModule = moduleData.dataset.idmodule
-if(idModule){
-  idModule = idModule.replace(/"/g, ''); 
-}
-const idTrail = moduleData.dataset.idtrail;
 
+function checkModule(element){
+  if(modal.dataset.idmodule !== 'null'){
+    updateModule();
+  }
+  else{
+    createModule();
+
+  }
+}
+
+//-----Integração com o backend-----
 //urls
 const urlTrail = 'http://localhost:3000/api/trail/';
 const urlModule = 'http://localhost:3000/api/module/';
@@ -41,7 +48,10 @@ const questionPoints = document.getElementById("questionPoints");
 const optionContent = document.querySelectorAll(".optionContent");
 const optionState = document.querySelectorAll(".optionState");
 
-  async function runFetch() {
+  async function runFetch(idModule, idTrail) {
+    //Inserir id para usar depois
+    modal.setAttribute("data-idmodule", idModule);
+    modal.setAttribute("data-idtrail", idTrail);
   try {
     if (idModule) {
       try {
@@ -85,10 +95,11 @@ const optionState = document.querySelectorAll(".optionState");
     }
     console.log("Todas as informações carregadas")
   }
+
 }
 
 async function createModule() {
-  
+  const idTrail = modal.dataset.idtrail;
   try {
     //Criar novo módulo
     const moduleOrderNumber = parseInt(moduleOrder.value);
@@ -141,13 +152,18 @@ async function createModule() {
       }
     });
 
+    location.reload();
+
     console.log("Todo processo feito com sucesso!")
   } catch(err){
     console.error('Erro ao criar o módulo: ', err);
+  } finally {
+    
   }
 }
 
 async function updateModule(){
+  const idModule = modal.dataset.idmodule;
   try{
     //Atualizar o módulo
     const moduleOrderNumber = parseInt(moduleOrder.value);
@@ -199,7 +215,8 @@ async function updateModule(){
       })
     })
     const optionsUpdated = await Promise.all(promise);
-    console.log("Opções atualizadas: ", optionsUpdated);
+
+    location.reload();
 
   } catch (err) {
     console.error("Erro ao atualizar o módulo", err);

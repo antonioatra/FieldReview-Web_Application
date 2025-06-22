@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= editMode ? 'Editar' : 'Criar' %> Trilha: <%= trail ? trail.titulo : 'Novo' %></title>
+    <link rel="stylesheet" type="text/css" href="/styles/dialog.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="font-sans">
@@ -33,7 +34,7 @@
         <!-- Linha abaixo -->
         <hr class="border-t-2 border-blue-900 mx-6" />
 
-        <form id="trailForm" class="px-6 py-4">
+        <div id="trailForm" class="px-6 py-4">
           <div>
             <label for="titulo" class="block mb-2 text-sm font-medium text-gray-700"
               >Alterar o título</label
@@ -55,17 +56,18 @@
               id="modulesContainer"
               class="bg-white border border-gray-300 rounded-md p-4 space-y-2"
             >
-              <% if (trail && trail.modules) { %> <% trail.modules.forEach(module => { %>
+            
+            <% if (modules) { %> <% modules.forEach(module => { %>
               <div class="flex items-center justify-between bg-gray-50 border rounded px-4 py-2">
                 <div class="flex items-center gap-2">
                   <span class="cursor-move">☰</span>
-                  <input type="text" class="text-sm w-48" value="<%= module %>" readonly />
+                  <input type="text" class="text-sm w-48" value="<%= module.titulo %>" readonly />
                 </div>
                 <div class="flex items-center gap-2">
                   <button class="text-black hover:text-red-600" onclick="removeModule(this, event)">
                     🗑
                   </button>
-                  <button class="text-black hover:text-blue-600" onclick="editModule(this, event)">
+                  <button class="text-black hover:text-blue-600" data-idmodule="<%= module.id%>" data-idtrail="<%= trail.id%>" onclick="showModal(this)">
                     ✎
                   </button>
                 </div>
@@ -87,27 +89,111 @@
               </div>
               <% } %>
             </div>
-
             <div class="mt-4">
               <button
                 type="button"
                 id="addModuleButton"
                 class="w-full flex items-center justify-center gap-2 bg-[#6DBA0D] text-white px-4 py-2 rounded"
+                data-idtrail="<%= trail.id%>"
+                onclick="showModal(this)"
               >
                 <span>➕</span> Adicionar
               </button>
             </div>
           </div>
-        </form>
+        </div>
       </section>
+
+      
     </main>
+
+    <!--Modal que será ficará encima da tela de editar trilha-->
+            <dialog class="relative">
+                <div id="loadingPage" class=" absolute hidden top-0 left-0 w-full h-300 sm:h-200 z-10 p-5 bg-white">Carregando...</div>
+                <div id="moduleModal"
+                class=" hidden overflow-x-hidden overflow-y-auto max-w-[95%] sm:max-w-[800px] text-base font-helvetica bg-[#FAFAFA] flex flex-col justify-center items-center rounded py-4 pb-15 px-4 sm:px-12 rounded-sm m-4 sm:m-10 gap-y-8  place-content-between">
+                
+                    <div class="flex justify-start self-start">
+                        <textarea
+                            placeholder="Título do Módulo"
+                            class=" text-2xl sm:text-3xl w-full align-top text-left border-2 border-solid border-black/10 rounded-sm p-1"
+                            id="moduleTitle"></textarea>
+                    </div>
+
+                    <div class="flex flex-col items-end gap-6 w-full">
+                        <div class="flex sm:flex-row flex-col place-content-between w-full h-full gap-4">
+                            <div
+                                class="flex items-start border border-black p-5 bg-white w-full h-80 md:h-screen/2 md:w-100 rounded-sm">
+                                <textarea id="moduleContent"
+                                    placeholder="Texto do módulo"
+                                    class="flex w-full h-full align-top text-left p-1"></textarea>
+                            </div>
+                            <form
+                                class="flex flex-col gap-4 border border-solid border-black bg-white p-5 w-full sm:w-fit h-screen/2 rounded-sm resize-none ">
+                                <textarea id="questionContent"
+                                    placeholder="Questão"
+                                    class="border-2 border-solid border-black/10 rounded-sm p-1 "></textarea>
+
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex gap-4 ">
+                                        <input type="radio" class="optionState  w-5">
+                                        <textarea
+                                            placeholder="Enunciado"
+                                            class="w-full border-2 border-solid border-black/10 rounded-sm resize-none optionContent p-1 " data-state="none"></textarea>
+                                    </div>
+                                    <div class="flex gap-4">
+                                        <input type="radio" class="optionState w-5">
+                                        <textarea
+                                            placeholder="Enunciado"
+                                            class="w-full border-2 border-solid border-black/10 rounded-sm resize-none optionContent p-1 " data-state="none"></textarea>
+                                    </div>
+                                    <div class="flex gap-4">
+                                        <input type="radio" class="w-5 optionState">
+                                        <textarea
+                                            placeholder="Enunciado"
+                                            class="w-full resize-none  border-2 border-solid border-black/10 rounded-sm optionContent p-1 " data-state="none"></textarea>
+                                    </div>
+                                    <div class="flex gap-4">
+                                        <input type="radio" class="optionState w-5">
+                                        <textarea
+                                            placeholder="Enunciado"
+                                            class="w-full resize-none border-2 border-solid border-black/10 rounded-sm  optionContent p-1" data-state="none"></textarea>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="flex place-content-between w-full gap-8 flex-wrap">
+                            <div class="flex-start flex flex-col gap-2  w-fit h-fit ">
+                                <textarea id="moduleOrder" placeholder="Ordem do módulo" class="h-full w-full border-2 border-solid border-black/30 p-2 bg-white rounded-lg"></textarea>
+                                <textarea id="questionPoints"
+                                    placeholder="Pontos da pergunta" 
+                                    class="h-fit w-fit border-2 border-solid border-black/30 p-2 bg-white rounded-lg"></textarea>
+                            </div>
+
+                            <div class="w-fit flex flex-col gap-2">
+                                <button type="button" onclick="hideModal()" class="bg-[#D30F4B] rounded-sm p-3">
+                                    <img src="/img/cancel.svg">
+                                </button>
+                                <button type="button"
+                                    class="w-full bg-[#66B511] flex justify-center rounded-sm p-3" onclick="checkModule(this)">
+                                    <img src="/img/save.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </dialog>
+            <script src="/scripts/adm/module.js"></script> 
+
     <%- include('./partials/footer.ejs') %>
 
     <script>
       console.log("aqui")
       const editMode = <%= JSON.stringify(editMode) %>;
       const trailId = '<%= trail ? trail.id : "" %>';
-      console.log(trailId);
+      const modules = '<%- JSON.stringify(modules)%>';
+      console.log(modules);
       const modulesContainer = document.getElementById('modulesContainer');
       const addModuleButton = document.getElementById('addModuleButton');
       const saveButton = document.getElementById('saveButton');
@@ -138,10 +224,6 @@
 
       // Edit module (toggle readonly for now, can be enhanced)
       window.editModule = (button, event) => {
-        event.preventDefault();
-        const input = button.closest('div').querySelector('input');
-        input.readOnly = !input.readOnly;
-        input.focus();
       };
 
       // Save form submission
@@ -189,6 +271,10 @@
           alert('Erro ao salvar trilha: ' + error.message);
         }
       });
+
+
+      //atualizar as informações da page
+      
     </script>
   </body>
 </html>

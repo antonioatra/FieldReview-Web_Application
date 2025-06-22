@@ -6,12 +6,12 @@ exports.store = async (req, res) => {
   try {
     const { moduleId, statement, points, options } = req.body;
 
-    const results = await Question.create({moduleId, statement, points});
-    const question = results.rows[0];
+    const question = await Question.create({moduleId, statement, points});
 
     if(!question){
          return res.status(500).json({error: "Erro ao criar pergunta" }) // Verifica se a pergunta foi criada
     }
+
 
     const promises = options.map(option => { // Espera as opções serem criadas
         return Option.create({
@@ -22,7 +22,6 @@ exports.store = async (req, res) => {
     });
 
     const optionsCreated = await Promise.all(promises);
-    console.log(optionsCreated)
 
     const formattedOptions = optionsCreated.map(opt => opt.rows[0]);
 
