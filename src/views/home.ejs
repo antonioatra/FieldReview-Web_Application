@@ -113,7 +113,7 @@
             <p class="text-gray-600">Nenhuma trilha foi atribuída para você ainda</p>
             <% } else { %>
               <% userTrails.forEach(userTrail=> {
-                const found = trailModules.find(tm => tm.trailId === userTrail.id);
+                const found = trailModules.find(tm => tm.trailId === userTrail.id_trilha);
                 %>
 
                 <%- include('./partials/trail/card', { 

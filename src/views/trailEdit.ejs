@@ -10,20 +10,20 @@
     <%- include('./partials/header.ejs') %>
     <main class="p-6 min-h-screen">
       <section class="mb-4">
-        <div class="flex items-center justify-between px-6 py-4">
+        <div class="flex items-center justify-between px-6 py-4 flex-col sm:flex-row gap-4">
           <h2 class="text-3xl font-bold text-black">
             <%= editMode ? 'Editar' : 'Criar' %> Trilha: <%= trail ? trail.titulo : 'Novo' %>
           </h2>
-          <div class="flex gap-2">
+          <div class="flex gap-2 w-full sm:w-fit">
             <button
-              class="flex items-center gap-1 bg-gray-300 text-black px-4 py-2 rounded"
+              class="flex items-center gap-1 bg-gray-300 text-black px-4 py-2 rounded w-full"
               onclick="window.location.href='/dashboard'"
             >
               <span>✖</span> Cancelar
             </button>
             <button
               id="saveButton"
-              class="flex items-center gap-1 bg-[#6DBA0D] text-white px-4 py-2 rounded"
+              class="flex items-center gap-1 bg-[#6DBA0D] text-white px-4 py-2 rounded w-full"
             >
               <span>💾</span> Salvar
             </button>
@@ -55,18 +55,19 @@
               id="modulesContainer"
               class="bg-white border border-gray-300 rounded-md p-4 space-y-2"
             >
-              <% if (trail && trail.modules) { %> <% trail.modules.forEach(module => { %>
+              <% if (trail && trail.modules && trail.modules.length > 0) { %> <%
+              trail.modules.forEach(module => { %>
               <div class="flex items-center justify-between bg-gray-50 border rounded px-4 py-2">
                 <div class="flex items-center gap-2">
                   <span class="cursor-move">☰</span>
-                  <input type="text" class="text-sm w-48" value="<%= module %>" readonly />
+                  <input type="text" class="text-sm w-48" value="<%= module.titulo %>" readonly />
                 </div>
                 <div class="flex items-center gap-2">
                   <button class="text-black hover:text-red-600" onclick="removeModule(this, event)">
-                    🗑
+                    <img src="/trash.svg" alt="Excluir" class="w-4" />
                   </button>
                   <button class="text-black hover:text-blue-600" onclick="editModule(this, event)">
-                    ✎
+                    <img src="/pencil.svg" alt="" class="w-4" />
                   </button>
                 </div>
               </div>
@@ -94,7 +95,7 @@
                 id="addModuleButton"
                 class="w-full flex items-center justify-center gap-2 bg-[#6DBA0D] text-white px-4 py-2 rounded"
               >
-                <span>➕</span> Adicionar
+                + Adicionar
               </button>
             </div>
           </div>
@@ -104,10 +105,8 @@
     <%- include('./partials/footer.ejs') %>
 
     <script>
-      console.log("aqui")
       const editMode = <%= JSON.stringify(editMode) %>;
       const trailId = '<%= trail ? trail.id : "" %>';
-      console.log(trailId);
       const modulesContainer = document.getElementById('modulesContainer');
       const addModuleButton = document.getElementById('addModuleButton');
       const saveButton = document.getElementById('saveButton');
@@ -177,7 +176,7 @@
           console.log('Response status:', response.status);
           const result = await response.json();
           console.log('Response data:', result);
-          
+
           if (response.ok) {
             alert(result.message);
             window.location.href = '/dashboard';

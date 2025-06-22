@@ -70,49 +70,84 @@ app.get('/', authMiddleware(), async (req, res) => {
     const sortedRank = userList.sort((a, b) => (b.pontuacao || 0) - (a.pontuacao || 0));
     const userPosition = sortedRank.findIndex((u) => u.id === req.user.id);
 
-    // Buscar módulos para cada trilha
-    const trailModules = await Promise.all(
+    // Buscar módulos para cada trilha e enriquecer as trilhas com informações de módulos
+    const enrichedTrails = await Promise.all(
       trails.map(async (trail) => {
         try {
           const modulesResponse = await axios.get(
             `http://localhost:3000/api/module/trail/${trail.id}`,
           );
-          const data = modulesResponse.data;
-          console.log(data[0].id);
-
+          const modules = modulesResponse.data;
+          
+          // Adicionar contagem de módulos e o ID do primeiro módulo à trilha
           return {
-            trailId: trail.id,
-            moduleCount: modulesResponse.data.length,
-            firstId: data[0].id,
+            ...trail,
+            moduleCount: modules.length,
+            firstModuleId: modules.length > 0 ? modules[0].id : null
           };
         } catch (error) {
           console.error(`Erro ao buscar módulos da trilha ${trail.id}:`, error.message);
           return {
-            trailId: trail.id,
+            ...trail,
             moduleCount: 0,
+            firstModuleId: null
             firstId: null,
           };
         }
       }),
     );
 
-    // Filtrar trilhas disponíveis que nao estao atribuidas ao usuário
-    const availableTrails = trails.filter((trail) => {
+    // Enriquecer as trilhas do usuário com informações dos módulos
+    const enrichedUserTrails = userTrails.map(userTrail => {
+      // Encontrar a trilha correspondente entre as trilhas enriquecidas
+      const matchingTrail = enrichedTrails.find(trail => trail.id === userTrail.id_trilha);
+      
+      if (matchingTrail) {
+        return {
+          ...userTrail,
+          id: userTrail.id_trilha, // ID importante para o link
+          nome: matchingTrail.nome,
+          descricao: matchingTrail.descricao,
+          imagem: matchingTrail.imagem,
+          titulo: matchingTrail.titulo, // Adicionado título
+          moduleCount: matchingTrail.moduleCount,
+          firstModuleId: matchingTrail.firstModuleId
+        };
+      }
+      
+      return {
+        ...userTrail,
+        id: userTrail.id_trilha, // ID importante para o link
+        moduleCount: 0,
+        firstModuleId: null
+      };
+    });
+
+    // Filtrar trilhas disponíveis que não estão atribuídas ao usuário
+    const availableTrails = enrichedTrails.filter((trail) => {
       return !userTrails.some((userTrail) => userTrail.id_trilha === trail.id);
     });
 
+    // Gerar uma lista simplificada de trailModules para compatibilidade com o template existente
+    const trailModules = enrichedTrails.map(trail => ({
+      trailId: trail.id,
+      moduleCount: trail.moduleCount,
+      firstId: trail.firstModuleId // Usando o nome consistente
+    }));
+
     res.render('home', {
-      userTrails: userTrails,
+      userTrails: enrichedUserTrails,
       availableTrails: availableTrails,
-      trailModules: trailModules,
+      trailModules: trailModules, // mantido para compatibilidade
       ranking: sortedRank,
       userPosition,
       notifications,
     });
   } catch (error) {
+    console.error('Erro na página inicial:', error);
     res.status(500).json({
       error: 'Erro interno do servidor',
-      message: error,
+      message: error.message,
     });
   }
 });
@@ -177,7 +212,7 @@ app.get('/trail/edit/:id', async (req, res) => {
   const { id } = req.params;
   const editMode = true;
   try {
-    const response = await axios.get(`http://localhost:3000/api/trail/${id}`);
+    const response = await axios.get(`${req.protocol}://${req.get('host')}/api/trail/${id}`);
     const trail = response.data.trail; // Extrair o objeto trail da resposta
     res.render('trailEdit', { editMode, trail });
   } catch (error) {
