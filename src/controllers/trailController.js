@@ -121,7 +121,7 @@ exports.assignTrail = async (req, res) => {
     });
     res.status(201).json({ message: 'Trilha atribuída com sucesso', assignment: result.rows[0] });
   } catch (err) {
-    res.status(500).json({ error: 'Erro ao atribuir trilha' });
+    res.status(500).json({ error: 'Erro ao atribuir trilha', details: err.message });
   }
 };
 

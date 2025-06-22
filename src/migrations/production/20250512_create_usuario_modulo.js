@@ -7,6 +7,7 @@ module.exports = async () => {
       id_usuario UUID,
       id_modulo UUID,
       esta_completo BOOLEAN,
+      CONSTRAINT usuario_modulo_unique UNIQUE (id_usuario, id_modulo),
       FOREIGN KEY (id_usuario) REFERENCES usuarios(id) ON DELETE CASCADE,
       FOREIGN KEY (id_modulo) REFERENCES modulo(id) ON DELETE CASCADE
     );
