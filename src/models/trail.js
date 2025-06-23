@@ -1,4 +1,4 @@
-const pool = require('../config/database');
+ const pool = require('../config/database');
 
 module.exports = {
   //Cria as funções do model
@@ -23,16 +23,29 @@ module.exports = {
 
   async create(data) {
     // Função que cria a trilha
-    const query = 'INSERT INTO trilha (titulo) VALUES ($1)';
+    const query = 'INSERT INTO trilha (titulo) VALUES ($1) RETURNING *';
     const values = [data.titulo];
     return pool.query(query, values);
   },
 
   async findById(id) {
-    // Função que retorna a trilha pelo id
-    const query = 'SELECT * FROM trilha WHERE id = $1';
-    const result = await pool.query(query, [id]);
-    return result.rows[0];
+    // Função que retorna a trilha pelo id com seus módulos
+    const trailQuery = 'SELECT * FROM trilha WHERE id = $1';
+    const trailResult = await pool.query(trailQuery, [id]);
+    
+    if (trailResult.rows.length === 0) {
+      return null;
+    }
+    
+    const trail = trailResult.rows[0];
+    
+    // Buscar módulos da trilha
+    const modulesQuery = 'SELECT * FROM modulo WHERE id_trilha = $1 ORDER BY ordem ASC';
+    const modulesResult = await pool.query(modulesQuery, [id]);
+    
+    trail.modules = modulesResult.rows;
+    
+    return trail;
   },
 
   async assignToUser(data) {

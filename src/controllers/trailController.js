@@ -1,13 +1,33 @@
 const Trail = require('../models/trail');
 const User = require('../models/user');
+const pool = require('../config/database');
 
 exports.store = async (req, res) => {
   try {
     const result = await Trail.create(req.body);
-    res.status(201).json({ message: 'Trilha Criado com sucesso', trail: result.rows[0] });
+    const trailId = result.rows[0].id;
+    
+    // Se módulos foram enviados, criar módulos
+    if (req.body.modules && Array.isArray(req.body.modules)) {
+      const Module = require('../models/module');
+      
+      for (let i = 0; i < req.body.modules.length; i++) {
+        const moduleTitle = req.body.modules[i];
+        if (moduleTitle && moduleTitle.trim()) {
+          await Module.create({
+            trailId: trailId,
+            title: moduleTitle.trim(),
+            content: `Conteúdo do módulo: ${moduleTitle}`,
+            order: i + 1
+          });
+        }
+      }
+    }
+    
+    res.status(201).json({ message: 'Trilha criada com sucesso', trail: result.rows[0] });
   } catch (err) {
     res.status(500).json({ error: 'Erro ao criar trilha' });
-    console.error('Erro encotrado ' + err);
+    console.error('Erro encontrado:', err);
   }
 };
 
@@ -17,9 +37,32 @@ exports.update = async (req, res) => {
     
     const currentTrail = await Trail.findById(id);
     if (!currentTrail) return res.status(404).json({ error: 'Trilha não encontrada.' });
-    req.body.title = req.body.title || currentTrail.titulo;
-
-    await Trail.update(id, req.body);
+    
+    // Atualizar título da trilha
+    const titulo = req.body.titulo || currentTrail.titulo;
+    await Trail.update(id, { titulo });
+    
+    // Se módulos foram enviados, atualizar/criar módulos
+    if (req.body.modules && Array.isArray(req.body.modules)) {
+      const Module = require('../models/module');
+      
+      // Deletar módulos existentes da trilha
+      await pool.query('DELETE FROM modulo WHERE id_trilha = $1', [id]);
+      
+      // Criar novos módulos
+      for (let i = 0; i < req.body.modules.length; i++) {
+        const moduleTitle = req.body.modules[i];
+        if (moduleTitle && moduleTitle.trim()) {
+          await Module.create({
+            trailId: id,
+            title: moduleTitle.trim(),
+            content: `Conteúdo do módulo: ${moduleTitle}`,
+            order: i + 1
+          });
+        }
+      }
+    }
+    
     res.status(200).json({ message: 'Trilha atualizada com sucesso' });
   } catch (err) {
     console.error('Error updating trail:', err);

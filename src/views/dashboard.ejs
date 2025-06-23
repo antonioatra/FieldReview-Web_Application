@@ -36,14 +36,14 @@
           <div class="flex flex-col">
             <div class="gap-4 flex flex-row items-center justify-between">
               <p class="text-2xl col-start-2 col-end-8 ">Trilhas disponíveis na plataforma</p>
-              <a aria-label="Adicionar nova trilha" href="/trail/edit"
+              <button aria-label="Adicionar nova trilha" onclick="showModal()"
                 class="font-bold whitespace-nowrap bg-[#6DBA0D] text-white px-2 py-1 rounded hover:hover:bg-green-700 transition flex items-center gap-1 h-14 col-start-10 col-end-12 justify-center">
                 <div style="color:#6DBA0D"
                   class="mr-3 px-2 text-base flex items-center justify-center w-6 h-6 bg-white rounded-4xl font-bold ml-1">
                   +
                 </div>
                 Adicionar nova trilha
-              </a>
+              </button>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
               <% trails.forEach(trail=> { 
@@ -197,9 +197,64 @@
           <% } %>
       </div>
     </div>
+
+    <!--Modal para adicionar uma nova trilha-->
+    <div id="modalAddTrail"class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center hidden ">
+      <div class="bg-white w-fit h-fit p-10 border border-black/10 rounded-lg border-2 flex flex-col gap-10">
+        <h3 class="flex justify-center align-top font-bold">
+          Adicionar uma nova trilha
+        </h3>
+        <input id="trailTitle" placeholder="Título da trilha" class="border border-black/10">
+        <div class="flex justify-between gap-5">
+          <button type="button" class="w-full bg-[#66B511] flex justify-center rounded-sm p-3" onclick="saveTrail()">
+            <img src="img/save.svg">
+          </button>
+          <button type="button" class="w-full bg-[#D30F4B] rounded-sm p-3" onclick="hideModal()">
+            <img src="/img/cancel.svg">
+          </button>
+        </div>
+      </div>
+    </div>
     <%- include('./partials/footer.ejs') %>
 
     <script src="/scripts/dashboard.js"></script>
+    <script>
+
+      // ------ Interatividade com o modal
+      function showModal(){
+        const modal = document.getElementById("modalAddTrail");
+        modal.classList.remove("hidden");
+      }
+
+      function hideModal(){
+        const modal = document.getElementById("modalAddTrail");
+        modal.classList.add("hidden");
+      }
+
+      // ------ Salvar a trilha
+      async function saveTrail(){
+        const trailTitle = document.getElementById("trailTitle").value;
+        try{
+          const response = await fetch('http://localhost:3000/api/trail/', {
+            method: 'POST',
+            body: JSON.stringify({titulo: trailTitle}),
+            headers:{
+              'Content-Type': 'application/json'
+            }
+          })
+
+          const trailCreated = await response.json();
+
+          console.log("Feito com sucesso")
+
+          window.location.href = `trail/edit/${trailCreated.trail.id}`
+
+          // location.reload();
+        } catch (err) {
+          console.log("Erro encontrado: ", err)
+        }
+      }
+    </script>
 
 </body>
 

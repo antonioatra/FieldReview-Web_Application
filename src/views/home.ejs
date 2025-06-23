@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dashboard - FieldView</title>
   <!-- Include Tailwind CSS via CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .progress-circle {
       position: relative;
@@ -113,7 +113,7 @@
             <p class="text-gray-600">Nenhuma trilha foi atribuída para você ainda</p>
             <% } else { %>
               <% userTrails.forEach(userTrail=> {
-                const found = trailModules.find(tm => tm.trailId === userTrail.id);
+                const found = trailModules.find(tm => tm.trailId === userTrail.id_trilha);
                 %>
 
                 <%- include('./partials/trail/card', { 

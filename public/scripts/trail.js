@@ -52,10 +52,10 @@ function showPage() {
 const dataDiv = document.getElementById("trailData");
 const trailId = dataDiv.dataset.idtrail;
 const moduleId = dataDiv.dataset.idmodule;
-const urlModule = `http://localhost:3000/api/module/`;
-const urlTrail = `http://localhost:3000/api/trail/`;
-const urlQuestion = `http://localhost:3000/api/question/module/`
-const urlOptions = `http://localhost:3000/api/option/question/`
+const urlModule = `/api/module/`;
+const urlTrail = `/api/trail/`;
+const urlQuestion = `/api/question/module/`
+const urlOptions = `/api/option/question/`
 
 //Função para criar uma tag
 function createNode(element) {
