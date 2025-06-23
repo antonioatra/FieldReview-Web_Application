@@ -56,6 +56,7 @@ exports.update = async (req, res) => {
     req.body.title = req.body.title || existingModule.rows[0].titulo;
     req.body.content = req.body.content || existingModule.rows[0].conteudo;
     req.body.order = req.body.order || existingModule.rows[0].ordem;
+    req.body.driveVideo = req.body.driveVideo || existingModule.rows[0].drivevideo;
 
     await Module.update(id, req.body);
     res.status(200).json({ message: 'Módulo atualizado com sucesso' });

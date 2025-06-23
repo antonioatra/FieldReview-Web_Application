@@ -5,6 +5,7 @@ const modal = document.getElementById("moduleModal");
 const dialog = document.querySelector("dialog");
 const loadingPage = document.getElementById("loadingPage");
 
+//Mostrar o modal
 function showModal(element) {
   const idModule = element.dataset.idmodule ? element.dataset.idmodule : null;
   const idTrail = element.dataset.idtrail ? element.dataset.idtrail : null;
@@ -14,12 +15,13 @@ function showModal(element) {
   runFetch(idModule, idTrail);
 }
 
+//Esconder o modal
 function hideModal() {
   modal.classList.add("hidden");
   dialog.close();
 }
 
-
+//Checka se é para atualizar ou criar um módulo
 function checkModule(element){
   if(modal.dataset.idmodule !== 'null'){
     updateModule();
@@ -47,6 +49,7 @@ const moduleOrder = document.getElementById("moduleOrder");
 const questionPoints = document.getElementById("questionPoints");
 const optionContent = document.querySelectorAll(".optionContent");
 const optionState = document.querySelectorAll(".optionState");
+const moduleLink = document.getElementById("moduleLink");
 
   async function runFetch(idModule, idTrail) {
     //Inserir id para usar depois
@@ -60,7 +63,8 @@ const optionState = document.querySelectorAll(".optionState");
         const data1 = await resp1.json();
         moduleTitle.value = data1.titulo;
         moduleContent.value = data1.conteudo;
-        moduleOrder.value = data1.ordem
+        moduleOrder.value = data1.ordem;
+        moduleLink.value = data1.drivevideo;
 
         //pegar as informações das perguntas:
         const resp2 = await fetch(urlQuestion+"module/"+idModule);
@@ -102,12 +106,17 @@ async function createModule() {
   const idTrail = modal.dataset.idtrail;
   try {
     //Criar novo módulo
-    const moduleOrderNumber = parseInt(moduleOrder.value);
+    const moduleOrderNumber = Number(moduleOrder.value);
+    if(isNaN(moduleOrderNumber) || moduleOrderNumber < 0){
+      return alert("Você precisa inserir um número válido na posição do módulo")
+    }
+    const driveVideo = moduleLink.value.replace(/\/view\?.*$/, "/preview");
     const moduleData = {
       idTrail: idTrail,
       title: moduleTitle.value,
       content: moduleContent.value,
-      order: moduleOrderNumber
+      order: moduleOrderNumber,
+      driveVideo: driveVideo
     };
 
     const moduleResponse = await fetch(urlModule, {
@@ -137,14 +146,18 @@ async function createModule() {
       };
     });
     //Objeto com a criação da pergunta e das opções
+    const points = Number(questionPoints.value);
+    if(isNaN(points) || points < 0){
+      return alert("Você precisa inserir um número válidos nos pontos")
+    }
     const questionData = {
       moduleId: createdModule.id,
       statement: questionContent.value,
-      points: questionPoints.value,
+      points: points,
       options: optionData
     };
     //Criação das perguntas e das opções
-    const questionResponse = await fetch(urlQuestion, {
+    await fetch(urlQuestion, {
       method: 'POST',
       body: JSON.stringify(questionData),
       headers: {
@@ -157,8 +170,6 @@ async function createModule() {
     console.log("Todo processo feito com sucesso!")
   } catch(err){
     console.error('Erro ao criar o módulo: ', err);
-  } finally {
-    
   }
 }
 
@@ -166,27 +177,33 @@ async function updateModule(){
   const idModule = modal.dataset.idmodule;
   try{
     //Atualizar o módulo
-    const moduleOrderNumber = parseInt(moduleOrder.value);
+    const moduleOrderNumber = Number(moduleOrder.value);
+    if(isNaN(moduleOrderNumber) || moduleOrderNumber < 0){
+      return alert("Você precisa inserir um número válido na posição do módulo")
+    }    
+    const driveVideo = moduleLink.value.replace(/\/view\?.*$/, "/preview");
     const moduleData = {
       title: moduleTitle.value,
       content: moduleContent.value,
-      order: moduleOrderNumber
+      order: moduleOrderNumber,
+      driveVideo: driveVideo
     };
-    const moduleResponse = await fetch(urlModule + idModule, {
+    await fetch(urlModule + idModule, {
       method: 'PUT',
       body: JSON.stringify(moduleData),
       headers: {
         'Content-type': 'application/json'
       }
     });
-    const moduleJson = await moduleResponse.json();
-    const updatedModule = moduleJson.module;
 
     //Atualizar a pergunta
-    const questionPointsNumber = parseInt(questionPoints.value);
+    const points = Number(questionPoints.value);
+    if(isNaN(points) || points < 0){
+      return alert("Você precisa inserir um número válidos nos pontos")
+    }
     const questionData = {
       statement: questionContent.value,
-      points: questionPointsNumber
+      points: points
     }
     const questionResponse = await fetch(urlQuestion + questionContent.dataset.id , {
       method: 'PUT',
@@ -195,7 +212,7 @@ async function updateModule(){
         'Content-type': 'application/json'
       }
     });
-    const updatedQuestion = await questionResponse.json();
+    await questionResponse.json();
 
     //Atualizar as opções
     const checked = document.querySelector('input[type="radio"]:checked');
@@ -214,7 +231,7 @@ async function updateModule(){
       
       })
     })
-    const optionsUpdated = await Promise.all(promise);
+    await Promise.all(promise);
 
     location.reload();
 
