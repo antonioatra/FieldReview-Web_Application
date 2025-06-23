@@ -15,6 +15,8 @@ let moduleContent = document.getElementById("moduleContent");
 let question = document.getElementById("question");
 //Pegar as opções
 let cardOptions = document.getElementById("cardOptions");
+//Pegar o video
+let video = document.getElementById("video");
 
 function showAside() {
     if (asideBar.classList.contains("hidden")) {
@@ -99,6 +101,9 @@ async function executarFetches() {
         const data3 = await resp3.json();
         moduleTitle.innerHTML = data3.titulo;
         moduleContent.innerHTML = data3.conteudo;
+        if(data3.drivevideo){
+            video.setAttribute("src", data3.drivevideo);
+        } 
 
         //GET das pergunta
         const resp4 = await fetch(urlQuestion + moduleId);
