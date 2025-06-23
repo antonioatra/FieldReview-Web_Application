@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FieldReview - Pesquisa</title>
     <!-- Tailwind CSS CDN -->
-    <link
-      href="https://cdn.tailwindcss.com"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet" />
   </head>
   <body class="bg-white">
     <%- include('./partials/header.ejs') %>
@@ -67,7 +64,11 @@
               <% } else { %>
               <p class="max-w-6xl text-gray-700"><%= rawContent %></p>
               <% } %>
-              <a href="#" class="text-blue-900 hover:underline font-bold">Ver mais</a>
+              <a
+                href="/trail/<%= result.id_trilha %>/<%= result.id %>"
+                class="text-blue-900 hover:underline font-bold"
+                >Ver mais</a
+              >
             </div>
             <% }) %>
           </div>
