@@ -3,7 +3,7 @@ dialog {
   position: fixed;
   inset: 0;
   margin: auto;
-  background: transparent;
+  background: #FAFAFA;
   padding: 0;
   z-index: 50;
 }

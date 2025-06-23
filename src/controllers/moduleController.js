@@ -3,8 +3,8 @@ const Module = require('../models/module');
 // Cria um novo módulo
 exports.store = async (req, res) => {
   try {
-    const module = await Module.create(req.body);
-    res.status(201).json({ message: 'Módulo criado com sucesso', data: module.rows[0] });
+    const result = await Module.create(req.body);
+    res.status(201).json({ message: 'Módulo criado com sucesso', module: result.rows[0]});
   } catch (err) {
     res.status(500).json({ error: 'Erro ao criar módulo.', details: err.message });
   }
@@ -17,6 +17,7 @@ exports.showById = async (req, res) => {
     const mod = await Module.findById(id);
     res.json(mod.rows[0]);
   } catch (err) {
+    console.error(err);
     res.status(500).json({ error: 'Erro ao buscar módulo.' });
   }
 };
@@ -55,7 +56,9 @@ exports.update = async (req, res) => {
     req.body.title = req.body.title || existingModule.rows[0].titulo;
     req.body.content = req.body.content || existingModule.rows[0].conteudo;
     req.body.order = req.body.order || existingModule.rows[0].ordem;
-    req.body.drivevideo = req.body.drivevideo || existingModule.rows[0].drivevideo;
+
+    req.body.driveVideo = req.body.driveVideo || existingModule.rows[0].drivevideo;
+
 
     await Module.update(id, req.body);
     res.status(200).json({ message: 'Módulo atualizado com sucesso' });

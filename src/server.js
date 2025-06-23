@@ -204,7 +204,7 @@ app.get('/search', async (req, res) => {
 app.get('/trail/edit', (req, res) => {
   const editMode = false;
   const trail = null; // Sem trilha existente
-  res.render('trailEdit', { editMode, trail });
+  res.render('trailEdit', { editMode, trail});
 });
 
 // Rota para edição de trilha - deve vir ANTES da rota mais genérica

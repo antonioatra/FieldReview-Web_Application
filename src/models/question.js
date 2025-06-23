@@ -2,11 +2,12 @@ const pool = require('../config/database');
 
 //Inicia a chamada dos módulos
 module.exports = {
-  async create(moduleId, statement, points) {
+  async create(data) {
     // cria a função para adicionar novas perguntas
     const query =
       'INSERT INTO pergunta (id_modulo, enunciado, pontos) VALUES($1, $2, $3) RETURNING *';
-    const values = [moduleId, statement, points];
+    const values = [data.moduleId, data.statement, data.points];
+    console.log("values: ", values);
 
     const result = await pool.query(query, values); // retorna o que foi definido
     return result.rows[0]; // retorna a pergunta criada
