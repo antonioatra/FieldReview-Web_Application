@@ -39,7 +39,9 @@ module.exports = {
     //Função para atualizar trilhas
     const query =
       'UPDATE modulo SET titulo = $1, conteudo = $2, ordem = $3, drivevideo = $4, updated_at = CURRENT_TIMESTAMP WHERE id = $5';
+
     const values = [data.title, data.content, data.order, data.driveVideo, id];
+
 
     return pool.query(query, values);
   },

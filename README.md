@@ -4,18 +4,18 @@
 <a href= "https://www.inteli.edu.br/"><img src="/assets/assetsWAD/inteli.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# FieldReview
+# 🔵🟢 Field Review
 
-## Testotech
+## 👥 Testotech
 
 ## :student: Integrantes: 
-- <a href="https://github.com/antonioatra">Antônio Augusto Tavares Ribeiro André</a>
-- <a href="https://github.com/diegofsiilva">Diego Figueiredo Silva</a>
-- <a href="https://github.com/EduardoJesusTavaresSantAnna">Eduardo Jesus Tavares Sant'anna</a> 
-- <a href="https://github.com/obielwb">Gabriel Willian Bartmanovicz</a> 
-- <a href="https://github.com/Leandro-Filho">Leandro Precaro Barankiewicz Filho</a>
-- <a href="https://github.com/Messias-Olivindo">Messias Fernandes de Olivindo</a>
-- <a href="https://github.com/thuliobacco">Thúlio Sallum Bacco Pinto</a> 
+- <a href="https://www.linkedin.com/in/antonio-augusto-tavares-ribeiro-andr%C3%A9-613937345/">Antônio Augusto Tavares Ribeiro André</a>
+- <a href="https://www.linkedin.com/in/diegofigueiredos/">Diego Figueiredo Silva</a>
+- <a href="https://www.linkedin.com/in/eduardo-jesus-/">Eduardo Jesus Tavares Sant'anna</a> 
+- <a href="https://www.linkedin.com/in/gabriel-bartmanovicz/">Gabriel Willian Bartmanovicz</a> 
+- <a href="https://www.linkedin.com/in/leandro-precaro-barankiewicz-filho-8a293a345/">Leandro Precaro Barankiewicz Filho</a>
+- <a href="https://www.linkedin.com/in/messias-olivindo/">Messias Fernandes de Olivindo</a>
+- <a href="https://www.linkedin.com/in/thulio-bacco-55a1172b4/">Thulio Sallum Bacco Pinto</a> 
 
 
 ## :teacher: Professores:
@@ -23,17 +23,23 @@
 - <a href="https://www.linkedin.com/in/marcelo-gon%C3%A7alves-phd-a550652/">Marcelo Gonçalves</a>
 ### Instrutores
 - <a href="https://www.linkedin.com/in/cristiano-benites-ph-d-687647a8/">Cristiano Benites</a>
-- <a href="https://www.linkedin.com/in/pedroteberga/">Pedro Teberga</a> 
+- <a href="https://www.linkedin.com/in/filipe-gon%C3%A7alves-08a55015b/"> Filipe Gonçalves</a> 
 - <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a> 
+- <a href="https://www.linkedin.com/in/geraldo-magela-severino-vasconcelos-22b1b220/">Geraldo Magela</a> 
+- <a href="https://www.linkedin.com/in/pedroteberga/">Pedro Teberga</a> 
 
 
 ## 📝 Descrição
 
-_Descreva seu projeto (até 600 palavras)_
+&emsp; O Field Review é uma plataforma web desenvolvida para capacitar Promotores Técnicos Digitais (PTDs) no uso da ferramenta Climate FieldView, da Bayer Crop Science. A iniciativa surgiu a partir da necessidade de apoiar esses profissionais que, muitas vezes, enfrentam dificuldades técnicas durante a instalação e o suporte da solução no campo. A proposta visa facilitar o acesso ao conhecimento de forma prática e rápida, contribuindo para um atendimento mais eficiente e qualificado.
+
+&emsp; A plataforma conta com dois perfis principais de uso: um voltado aos PTDs, que têm acesso a trilhas de conhecimento com conteúdos interativos, vídeos, tutoriais e quizzes; e outro voltado aos administradores, com funcionalidades que permitem adicionar materiais, organizar os conteúdos e acompanhar o desempenho dos usuários. Essa divisão torna possível uma gestão mais eficaz do aprendizado, permitindo à liderança identificar lacunas de conhecimento e promover formações mais direcionadas.
+
+&emsp; Com foco em acessibilidade e experiência do usuário, o Field Review foi pensado para ser utilizado também em campo, por meio de dispositivos móveis. A interface é simples e objetiva, com sistema de busca que permite ao promotor encontrar rapidamente o que precisa. Ao unir educação, tecnologia e gestão do conhecimento, a plataforma contribui diretamente para a autonomia dos profissionais e fortalece a rede de suporte técnico da Bayer.
 
 ## 📝 Link de demonstração
 
-_Coloque aqui o link para seu projeto publicado e link para vídeo de demonstração_
+<a href="">Link do vídeo</a>
 
 ## 📁 Estrutura de pastas
 
@@ -45,51 +51,105 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto de aplicação web.
 
+- **public**: arquivos públicos utilizados na aplicação Wen, incluindo estilos, imagens e scripts de páginas.
+
 - <b>README.md</b>: arquivo que serve como guia introdutório e explicação geral sobre o projeto e a aplicação (o mesmo arquivo que você está lendo agora).
+
+- **package.json**: define o projeto e suas dependências.
+
+- **package-lock.json**: trava as versões instaladas das dependências
+
+```
+─ assets                # Arquivos de imagem utilizados na ilustração do projeto
+│   └── assetsWAD       # Arquivos de imagem utilizados no WAD
+│       └── api         # Arquivos de imagens dos testes das rotas de API
+├── documentos          # Arquivos de documentação do projeto
+├── public              # Arquivos públicos utilizados na plataforma Web
+│   ├── assets          # Arquivos de imagem utilizados no projeto
+│   ├── fonts           # Fontes utilizadas na solução
+│   ├── img             # Imagens utilizadas no projeto
+│   ├── scripts         # Arquivos scripts das páginas
+│   └── styles          # Estilização de elementos das páginas
+├── src
+│   ├── config          # Configuração do banco de dados
+│   ├── controllers     # Controllers da aplicação
+│   ├── middleware      # Middleware de autentificação do projeto
+│   ├── migrations      # Arquivos de migrations
+│   │   ├── development # Informações para preencher as tabelas
+│   │   └── production  # Criação das tabelas do banco de dados 
+│   ├── models          # Models da aplicação
+│   ├── routes          # Rotas da aplicação
+│   │   └── api         # Rotas das APIs do projeto
+│   └── views           # Views do projeto
+│       ├── adm         # Paǵinas de administrador do projeto
+│       ├── partials    # Elementos parciais do projeto
+│       └── user        # Páginas de usuários do projeto
+│   ├── server.js       # Configuração do servidor da aplicação
+├── package.json        # Dependências do projeto
+├── package-lock.json   # Configurações das dependências
+├── README.md           # Informações gerais do projeto
+```
 
 ## 💻 Configuração para desenvolvimento e execução do código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, bibliotecas, serviços etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o código e executar a aplicação a partir de sua máquina local.*
+&emsp; Para rodar o projeto no seu dispositivo desktop, siga os seguintes passos:
 
-*exemplo de instruções*
+1. Instale o Node.js: 
+👉 https://nodejs.org/en/download 
 
-Aqui encontram-se todas as instruções necessárias para a instalação de todos os programas, bibliotecas e ferramentas imprescindíveis para a configuração do ambiente de desenvolvimento.
+2. Tenha um banco de dados PostrgreSQL hospedado no Supabase:
+👉 https://supabase.com/
 
-1. Baixar e instalar o node.js: [https://nodejs.org/pt-br/](https://nodejs.org/pt-br/) (versão 16.15.1 LTS)
-2. Clone o repositório em questão.
-3. No modo administrador, abra o "prompt de comando" ou o "terminal" e, após, abra a pasta "src/backend" no diretório raiz do repositório clonado e digite o segundo comando:
+3. Clone o repositório do github no local de sua preferência, com o seguinte comando no terminal do seu computador:
+```zh
+git clone https://github.com/Inteli-College/2025-1B-T15-IN02-G03
+```
 
-```sh
+4. Preencha as informações no .env.example:
+ ```
+ DB_USER=
+DB_HOST=
+DB_PORT=
+DB_PASSWORD=
+DB_NAME=
+
+JWT_SECRET=
+ ```
+
+5. Renomeie o **.env.example** para **.env**
+
+6. Instale as dependências localizadas na raiz do projeto, com o seguinte comando no terminal:
+```zh
 npm install
 ```
 
-Isso instalará todas as dependências definidas no arquivo <b>package.json</b> que são necessárias para rodar o projeto. Agora o projeto já está pronto para ser modificado. Caso ainda deseje iniciar a aplicação, digite o comando abaixo no terminal:
+7. Monte as tabelas no seu banco de dados com o seguinte comando no terminal:
+ ```zh
+npm run migrate-production
+```
 
-```sh
+8. Rode o projeto com o seguinte comando no terminal na raiz do projeto:
+```zh
 npm start
 ```
-5. Agora você pode acessar a aplicação através do link http://localhost:1234/
-6. O servidor está online.
+
+9. Acesse a aplicação no navegador pelo endereço: 
+👉 http://localhost:3000/
+
 
 ## 🗃 Histórico de lançamentos
 
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - 16/05/2025 - Desenvolvimento do Modelo Entidade-Relacionamento do banco de dados e realização dos wireframes da aplicação Web
-    * 
-* 0.1.0 - 30/04/2025 - Levantamento inicial do projeto, com entendimento do negócio, definição dos objetivos e escopo da primeira versão da Aplicação Web.
-    *
+* 0.5.0 - 26/06/2025 
+    * MVP da plataforma Web com as principais funcionalidades da aplicação na arquitetura MVC
+* 0.4.0 - 13/06/2025
+    * Desenvolvimento da primeira versão funcional da aplicação, apresentando integração do front-end com o back-end da plataforma.
+* 0.3.0 - 30/05/2025
+    * Desenvolvimento do back-end da aplicação com a construção dos models e controllers da aplicação.
+* 0.2.0 - 16/05/2025 
+    * Desenvolvimento do Modelo Entidade-Relacionamento do banco de dados e realização dos wireframes da aplicação Web
+* 0.1.0 - 30/04/2025 
+    * Levantamento inicial do projeto, com entendimento do negócio, definição dos objetivos e escopo da primeira versão da Aplicação Web.
 
 ## 📋 Licença/License
-```
-Alunos inteli (remover essa observação do readme.md após leitura e execução, junto com o link para o tutorial):
 
-1. Siga o tutorial para criação da licença: https://drive.google.com/file/d/1hXWLHUhjBkPVuGqeE2LZKozFntnJZzlx/view
-```
-
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M2/">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.yggbrasil.com.br/vr">Inteli, Nome do integrante 1, Nome do integrante 2, Nome do integrante 3, Nome do integrante 4, Nome do integrante 5, Nome do integrante 6, Nome do integrante 7</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
-
+<a href="https://github.com/Inteli-College/2025-1B-T15-IN02-G03">Field Review</a> © 2025 by <a href="https://github.com/Inteli-College/2025-1B-T15-IN02-G03"> Inteli, Antônio Augusto Tavares Ribeiro André, Diego Figueiredo Silva, Eduardo Jesus Tavares Sant'anna, Gabriel Willian Bartmanovicz, Leandro Precaro Barankiewicz Filho, Messias Fernandes de Olivindo</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
