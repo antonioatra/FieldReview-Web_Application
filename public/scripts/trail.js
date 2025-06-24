@@ -5,6 +5,10 @@ let asideBar = document.getElementById("asideBar");
 let trailTitle = document.getElementById("trailTitle")
 //titulo da trilha mobile
 let mobileTrailTitle = document.getElementById("mobileTrailTitle");
+//titulo do módulo mobile
+let mobileModuleTitle = document.getElementById("mobileModuleTitle");
+//titulo do módulo desktop
+let desktopModuleTitle = document.getElementById("desktopModuleTitle");
 //pegar o ul para colocar os modulos
 let moduleList = document.getElementById("moduleList");
 //Pegar o título do módulo
@@ -98,6 +102,8 @@ async function executarFetches() {
         const resp3 = await fetch(urlModule + moduleId);
         const data3 = await resp3.json();
         moduleTitle.innerHTML = data3.titulo;
+        mobileModuleTitle.innerHTML = data3.titulo;
+        desktopModuleTitle.innerHTML = data3.titulo;
         moduleContent.innerHTML = data3.conteudo;
 
         //GET das pergunta

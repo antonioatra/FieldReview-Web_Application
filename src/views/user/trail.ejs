@@ -31,22 +31,29 @@
       <%- include('../partials/header.ejs') %>
     </div>
 
-    <!--Título que aparecerá em telas pequenas-->
-    <h1 class="sm:hidden col-start-2 text-xl col-end-10 self-start pt-4 row-start-2 font-bold" id="mobileTrailTitle">
+    <!--Título da trilha que aparecerá em telas pequenas-->
+    <h1 class="sm:hidden col-start-2 text-2xl col-end-10 self-start pt-4 row-start-2 font-bold text-[#003B71]" id="mobileTrailTitle">
 
     </h1>
+    
+    <!--Título do módulo que aparecerá em telas pequenas-->
+    <h2 class="sm:hidden col-start-2 text-lg col-end-10 self-start pt-2 row-start-3 font-semibold text-[#66B511]" id="mobileModuleTitle">
+
+    </h2>
 
     <!--Botão para telas pequenas-->
     <button
-      class="block sm:hidden text-center mt-4 col-start-2 col-span-4 text-left row-start-5 rounded bg-[#66B511] text-white text-base"
+      class="block sm:hidden text-center mt-4 col-start-2 col-span-4 text-left row-start-6 rounded bg-[#66B511] text-white text-base"
       onclick=showAside()>Módulos</button>
 
     <!--Barra lateral de mostrar os módulos-->
     <aside
-      class="hidden relative sm:block sm:h-fit bg-white border-2 border-black/10 rounded p-6 col-start-1 col-end-12 sm:col-end-4 mt-8 sm:left-0 row-start-5 sm:row-start-auto sm:left-0 sm:top-5"
+      class="hidden relative sm:block sm:h-fit bg-white border-2 border-black/10 rounded p-6 col-start-1 col-end-12 sm:col-end-4 mt-8 sm:left-0 row-start-6 sm:row-start-auto sm:left-0 sm:top-5"
       id="asideBar">
-      <h3 class="hidden sm:block text-base sm:text-lg font-bold text-black mb-4" id="trailTitle">
+      <h3 class="hidden sm:block text-2xl sm:text-3xl font-bold text-[#003B71] mb-2" id="trailTitle">
       </h3>
+      <h4 class="hidden sm:block text-lg sm:text-xl font-semibold text-[#66B511] mb-4" id="desktopModuleTitle">
+      </h4>
       <button class="absolute top-3 right-5 sm:hidden" onclick=hideAside()>
         <img src="/img/Subtract.svg" class="h-[25px] w-auto">
       </button>
@@ -56,8 +63,8 @@
 
 
     <!--Conteúdo principal das telas-->
-    <main class=" col-start-2 sm:col-start-5  col-end-12 pt-8 sm:p-8 row-start-6 sm:row-auto">
-      <h2 id="moduleTitle" class="text-3xl font-bold text-[#003B71] mb-6 sm:text-5xl"></h2>
+    <main class=" col-start-2 sm:col-start-5  col-end-12 pt-8 sm:p-8 row-start-7 sm:row-auto">
+      <h2 id="moduleTitle" class="text-2xl font-semibold text-[#66B511] mb-6 sm:text-3xl"></h2>
 
       <div class="bg-gray-200 h-96 rounded-lg mb-6 flex items-center justify-center">
         <iframe class="rounded shadow-lg"
@@ -87,7 +94,7 @@
         </form>
       </div>
     </main>
-    <div class="mt-8 w-full col-start-1 col-end-13 row-start-7">
+    <div class="mt-8 w-full col-start-1 col-end-13 row-start-8">
       <%- include('../partials/footer.ejs') %>
     </div>
   </div>
