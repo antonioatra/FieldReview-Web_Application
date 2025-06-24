@@ -1412,9 +1412,46 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 &emsp; As principais dificuldades enfrentadas durante o desenvolvimento da segunda versão envolveram, principalmente, conexão com o banco de dados, a própria integração do front-end com o back-end e período curto de aprendizado e aplicagem do conteúdo estudado no projeto. Como próximos passos, será realizada a otimização de desempenho, versão final da aplicação web, correção de bugs e realização de testes de usuários.
 
 
-## 4.3. Versão final da aplicação web (sprint 5)
+## 4.3. Versão final da aplicação web 
 
-*Descreva e ilustre aqui o desenvolvimento da última versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+&emsp; Durante a Sprint 5, a aplicação web passou por sua última grande etapa de desenvolvimento. Foram implementadas diversas melhorias e finalizações tanto no front-end quanto no back-end, com o objetivo de entregar uma versão funcional e robusta da plataforma. Um dos principais focos foi a integração da tela de trilhas do administrador com o sistema de gerenciamento de trilhas no banco de dados, permitindo a edição e exclusão direta por meio da interface. Além disso, foi adicionada a funcionalidade de atribuição de trilhas específicas para usuários, tornando a experiência mais personalizada.
+
+&emsp; Outra entrega importante foi a finalização da tela de ajuda do administrador, com responsividade e comunicação completa entre o front-end e o back-end. Também foi desenvolvida uma nova funcionalidade que permite exibir vídeos diretamente nos conteúdos dos módulos, ampliando os recursos didáticos disponíveis para os usuários. Junto a isso, foram exibidas as estatísticas de uso por parte dos usuários, acessíveis pela interface administrativa. Isso exigiu integração entre as informações armazenadas no banco de dados e sua visualização estruturada no painel.
+
+
+<p align="center">
+<sub>Figura X: Demonstra como o administrador pode associar trilhas específicas aos usuários.</sub>  <img src="../assets/assetsWAD/asign-trail.png"/>
+<br> 
+<sub>Fonte: Material produzido pelos autores (2025)</sub>
+</p>
+
+
+<p align="center"> 
+<sub>Figura X: Exibe os dados de progresso e desempenho dos usuários, visíveis no painel do administrador.</sub>
+<img src="../assets/assetsWAD/dashboard-users.png">
+<br>
+<sub>Fonte: Material produzido pelos autores (2025)</sub>
+  </p>
+
+
+<p align="center"> 
+<sub>Figura X: Exemplo de vídeo integrado ao conteúdo do módulo</sub>
+<img src="../assets/assetsWAD/embeded-video.png">
+<br>
+<sub>Fonte: Material produzido pelos autores (2025)</sub>
+  </p>
+
+&emsp; Durante o desenvolvimento, alguns desafios surgiram, como conflitos de merge entre diferentes branches, além de pequenos ajustes na integração com o banco de dados e retrabalho na responsividade de algumas telas. Ainda assim, foi possível avançar de forma consistente.
+
+&emsp; Além disso, a equipe finalizou o sistema de progresso dos usuários, melhorou a experiência nas telas administrativas e concluiu os testes de usabilidade antes da entrega final. As seções da documentação também foram atualizadas, além dos relatórios de testes e conclusões finais.
+
+&emsp; Sobre os testes de usabilidade realizados, foram conduzidos com um grupo de usuários aleatórios, que interagiram com a plataforma a partir de objetivos passados a eles e forneceram feedback sobre a usabilidade, funcionalidade e design. As principais observações foram relacionadas à clareza das instruções, facilidade de navegação e eficiência na realização de tarefas. Com base nesse feedback, ajustes foram feitos para melhorar a experiência do usuário.
+
+<p align="center">
+<sub>Figura X: Feedbacks dados durante a etapa de testes de usabilidade </sub>
+ <img src="../assets/assetsWAD/test-feedbacks.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
 
 # <a name="c5"></a>5. Testes
 
