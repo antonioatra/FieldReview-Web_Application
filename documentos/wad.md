@@ -1681,7 +1681,7 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 
 &emsp; A decisão se justifica pelas tendências observadas nas análises anteriores. Como mostram relatórios da Embrapa e FAO, há demanda crescente por capacitação contínua e acessível, sobretudo no meio rural, onde limitações logísticas e financeiras ainda representam barreiras ao aprendizado formal. Além disso, segundo a McKinsey, investimentos em educação e tecnologia no campo geram aumento de produtividade e valor agregado à cadeia agrícola — o que justifica o investimento estratégico da Bayer nesse projeto, com retorno indireto em eficiência, sustentabilidade e posicionamento de marca.
 
-## 6.3 Praça (Distribuição)
+### Praça
 
 &emsp; O FieldReview, como aplicação web, será distribuído via navegadores, acessível em dispositivos Android, iOS (iPads, iPhones) e desktops, semelhante ao Climate FieldView™. A Bayer o disponibilizará em seu [site oficial](https://www.agro.bayer.com.br/) e na plataforma Orbia, conectando Promotores Técnicos Digitais (PTDs) a agricultores. O LinkedIn será utilizado para promover a ferramenta, com posts direcionados aos profissionais do agronegócio, destacando benefícios como monitoramento de lavouras. Usando sistemas de CRM, a Bayer enviará e-mails segmentados a PTDs, com links diretos para o FieldReview e guias de uso, facilitando a adoção. Eventos como a Agrishow e dias de campo do Bayer Forward Farming promoveriam a ferramenta com demonstrações práticas e QR codes para acesso via navegador. A integração com o programa Impulso Bayer reforçaria a distribuição, oferecendo benefícios como pontos para usuários testarem, garantindo alcance e engajamento com agricultores e distribuidores.
 
