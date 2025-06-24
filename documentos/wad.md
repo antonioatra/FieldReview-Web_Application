@@ -1421,7 +1421,7 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 ## 5.1. Relatório de testes de integração de endpoints automatizados (sprint 4)
 
 
-&emsp; Nesta seção, apresentamos os testes de integração realizados nos endpoints da aplicação web, utilizando o software Postman para garantir a funcionalidade e a robustez do sistema. Os testes foram projetados para verificar se os endpoints estão respondendo corretamente às requisições e se as operações CRUD (Create, Read, Update, Delete) estão funcionando conforme esperado.
+&emsp; Nesta seção, apresentamos os testes de integração realizados nos endpoints da aplicação web, utilizando o software Postman para garantir a funcionalidade e a robustez do s  istema. Os testes foram projetados para verificar se os endpoints estão respondendo corretamente às requisições e se as operações CRUD (Create, Read, Update, Delete) estão funcionando conforme esperado.
 
 &emsp; Abaixo estão as imagens dos testes realizados, junto com uma breve descrição de cada um:
 
@@ -1681,7 +1681,7 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 
 &emsp; A decisão se justifica pelas tendências observadas nas análises anteriores. Como mostram relatórios da Embrapa e FAO, há demanda crescente por capacitação contínua e acessível, sobretudo no meio rural, onde limitações logísticas e financeiras ainda representam barreiras ao aprendizado formal. Além disso, segundo a McKinsey, investimentos em educação e tecnologia no campo geram aumento de produtividade e valor agregado à cadeia agrícola — o que justifica o investimento estratégico da Bayer nesse projeto, com retorno indireto em eficiência, sustentabilidade e posicionamento de marca.
 
-*6.3 Praça (Distribuição)*
+## 6.3 Praça (Distribuição)
 
 &emsp; O FieldReview, como aplicação web, será distribuído via navegadores, acessível em dispositivos Android, iOS (iPads, iPhones) e desktops, semelhante ao Climate FieldView™. A Bayer o disponibilizará em seu [site oficial](https://www.agro.bayer.com.br/) e na plataforma Orbia, conectando Promotores Técnicos Digitais (PTDs) a agricultores. O LinkedIn será utilizado para promover a ferramenta, com posts direcionados aos profissionais do agronegócio, destacando benefícios como monitoramento de lavouras. Usando sistemas de CRM, a Bayer enviará e-mails segmentados a PTDs, com links diretos para o FieldReview e guias de uso, facilitando a adoção. Eventos como a Agrishow e dias de campo do Bayer Forward Farming promoveriam a ferramenta com demonstrações práticas e QR codes para acesso via navegador. A integração com o programa Impulso Bayer reforçaria a distribuição, oferecendo benefícios como pontos para usuários testarem, garantindo alcance e engajamento com agricultores e distribuidores.
 
@@ -1692,15 +1692,40 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 &emsp; As estratégias de promoção do FieldReview, aplicação web da Bayer Crop Science, focam em canais digitais para capacitar os Promotores Técnicos Digitais (PTDs). SEO é otimizado no site cropscience.bayer.com, com palavras-chave como “capacitação em agricultura”, “estudo FieldView” e “treinamento FieldView”, atraindo PTDs em busca de aprendizado sobre o Climate FieldView. Marketing de conteúdo inclui vídeos no YouTube, com tutoriais práticos sobre o FieldReview, além de blogs ensinando a utilizá-lo. E-mails via Salesforce CRM entregam guias de capacitação e convites para a utilização da plataforma, onde as demonstrações práticas em vídeo reforçam o aprendizado. A integração com o Impulso Bayer oferece pontos por uso, incentivando adoção. 
 
 
-# <a name="c7"></a>7. Conclusões e trabalhos futuros (sprint 5)
+# <a name="c7"></a>7. Conclusões e Trabalhos Futuros
 
-*Escreva de que formas a solução da aplicação web atingiu os objetivos descritos na seção 2 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral.*
+&emsp; Nesta seção, apresentamos as conclusões obtidas com o desenvolvimento da aplicação web e registramos os trabalhos futuros sugeridos para evolução da solução. O objetivo é refletir como a aplicação atendeu aos objetivos propostos na seção 2 deste documento, além de indicar pontos fortes, aspectos a melhorar e possíveis aprimoramentos futuros.
 
-*Relacione os pontos de melhorias evidenciados nos testes com planos de ações para serem implementadas. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para ações futuras*
+&emsp; A aplicação web desenvolvida atingiu de forma satisfatória os objetivos descritos na seção 2, proporcionando uma solução prática para o ecossistema da Bayer. 
 
-*Relacione também quaisquer outras ideias que o grupo tenha para melhorias futuras*
+&emsp; Destacaram-se como pontos fortes:
 
-# <a name="c8"></a>8. Referências (sprints 1 a 5)
+- Desesnvolvimento da plataforma visando a melhor interação possível dos PTDs.
+- Dinâmica do sistema de administração entre os knowledge transfer e os usuários.
+
+&emsp; Por outro lado, identificamos pontos que podem ser aprimorados:
+
+- Otimização da interface de certificados.
+- Desenvolvimento da tela de perfil.
+
+&emsp; Durante os testes realizados, foram identificadas as seguintes oportunidades de melhoria:
+
+- Revisão do design, testando displays do Help em listas. 
+
+    &emsp; *Plano de ação: trocar o display em coluna para listas e realizar novos testes*
+
+- Alteração de senha.
+
+  &emsp; *Plano de ação: colocar função de alterar a senha* 
+
+&emsp; Além das melhorias apontadas nos testes, o grupo identificou outras possibilidades para evolução da aplicação em versões futuras:
+
+- Implementação de *notificações externas* via email ou whatsapp.
+- Integração de *pesquisas com inteligência artificial* para o entendimento da intenção do usuário.
+- Atribuição de trilhas a vários usuários.
+- Implantação de tempo de expiração dos certificados.
+
+# <a name="c8"></a>8. Referências
 
 
 1. AGROLINK. Perfil dos produtores rurais no Brasil: mais jovens e conectados. 2023. Disponível em: https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html. Acesso em: 29 abr. 2025.
