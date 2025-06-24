@@ -57,7 +57,7 @@
 
 ### 2.1.1. Modelo de 5 Forças de Porter 
 
-&emsp; O modelo de 5 forças de Porter é uma ferramenta de análise para avaliar a competitividade no setor de negócios que a empresa atua <sup>[7]</sup>. Sob o ponto de vista da Bayer Crop Science, montou-se o seguinte modelo, dando origem à Figura 1:
+&emsp; O modelo de 5 forças de Porter é uma ferramenta de análise para avaliar a competitividade no setor de negócios que a empresa atua. Sob o ponto de vista da Bayer Crop Science, montou-se o seguinte modelo, dando origem à Figura 1:
 
 <p align="center">
 <sup>Figura 1: 5 Forças de Porter aplicadas à empresa Bayer Crop Science.</sup> <br>
@@ -69,28 +69,28 @@
 
 &emsp; Em relação à concorrência no mercado agrícola, os rivais da Bayer Crop Science podem ser divididos entre o ramo de sementes, proteção de cultivos e soluções digitais.
 
-&emsp; No que diz respeito à área de sementes, a rivalidade entre os concorrentes é alta, uma vez que há grandes companhias atuando nesse ramo. A exemplo disso, pode-se citar empresas como: DowDuPont Inc., Syngenta AG, Groupe Limagrain e KWS SAAT SE <sup>[9]</sup>.
+&emsp; No que diz respeito à área de sementes, a rivalidade entre os concorrentes é alta, uma vez que há grandes companhias atuando nesse ramo. A exemplo disso, pode-se citar empresas como: DowDuPont Inc., Syngenta AG, Groupe Limagrain e KWS SAAT SE.
 
-&emsp; No que se refere ao mercado de proteção de cultivos, a rivalidade entre concorrentes também é alta, já que existem diversas empresas grandes disputando nessa área. Dentre as principais empresas, cita-se: Syngenta Crop Protection, BASF, Corteva, entre outras <sup>[2]</sup>.
+&emsp; No que se refere ao mercado de proteção de cultivos, a rivalidade entre concorrentes também é alta, já que existem diversas empresas grandes disputando nessa área. Dentre as principais empresas, cita-se: Syngenta Crop Protection, BASF, Corteva, entre outras.
 
-&emsp; Com relação ao ramo de soluções digitais na agricultura, a rivalidade entre concorrentes é alta, visto que é um mercado dominado por big techs. Exemplificando, essa área é dominada pelas empresas AGCO Corporation, Deere & Company, IBM Corporation e Microsoft <sup>[8]</sup>.
+&emsp; Com relação ao ramo de soluções digitais na agricultura, a rivalidade entre concorrentes é alta, visto que é um mercado dominado por big techs. Exemplificando, essa área é dominada pelas empresas AGCO Corporation, Deere & Company, IBM Corporation e Microsoft.
 
 
 #### **Poder de barganha dos compradores**
 
-&emsp; O poder de barganha dos clientes é baixo, visto que os produtos oferecidos pela Bayer Crop Science oferecem funcionalidades e tecnologias exclusivas que reduzem a sensibilidade dos clientes ao preço. Exemplificando, há o programa de fidelidade Impulso Bayer, na qual é possível trocar pontos por recompensas <sup>[5]</sup>, e o produto FieldView apresenta ferramentas tecnológicas únicas para o produtor rural <sup>[4]</sup>. Assim, os fatores técnicos e as exclusividades que a empresa oferece são decisivos para motivar a compra dos consumidores.
+&emsp; O poder de barganha dos clientes é baixo, visto que os produtos oferecidos pela Bayer Crop Science oferecem funcionalidades e tecnologias exclusivas que reduzem a sensibilidade dos clientes ao preço. Exemplificando, há o programa de fidelidade Impulso Bayer, na qual é possível trocar pontos por recompensas, e o produto FieldView apresenta ferramentas tecnológicas únicas para o produtor rural. Assim, os fatores técnicos e as exclusividades que a empresa oferece são decisivos para motivar a compra dos consumidores.
 
 #### **Poder de barganha dos fornecedores**
 
-&emsp; O poder de barganha dos fornecedores é alto, devido à necessidade que a empresa possui por serviços especializados de outras companhias. Acerca disso, no ramo de sementes, como exemplo há o Agroeste e Dekalb; na proteção de cultivos, existem a Curbix, Sivanto e outros; além disso, nas soluções digitais, pode-se citar o The Climate Corporation com a plataforma agrícola Climate FieldView <sup>[3]</sup>.
+&emsp; O poder de barganha dos fornecedores é alto, devido à necessidade que a empresa possui por serviços especializados de outras companhias. Acerca disso, no ramo de sementes, como exemplo há o Agroeste e Dekalb; na proteção de cultivos, existem a Curbix, Sivanto e outros; além disso, nas soluções digitais, pode-se citar o The Climate Corporation com a plataforma agrícola Climate FieldView.
 
 #### **Ameaça de produtos substitutos**
 
-&emsp; A ameaça de produtos substitutos é média, levando em conta o perfil diversificado dos produtores rurais. Embora uma grande quantidade de produtores rurais optem por serviços já usados cotidianamente, percebe-se que atualmente há uma crescente adoção de soluções digitais e novas tecnologias nos campos agrícolas. Dessa forma, percebe-se a mudança de perfil dos consumidores, aceitando o emprego de novos produtos em suas propriedades <sup>[1]</sup>.
+&emsp; A ameaça de produtos substitutos é média, levando em conta o perfil diversificado dos produtores rurais. Embora uma grande quantidade de produtores rurais optem por serviços já usados cotidianamente, percebe-se que atualmente há uma crescente adoção de soluções digitais e novas tecnologias nos campos agrícolas. Dessa forma, percebe-se a mudança de perfil dos consumidores, aceitando o emprego de novos produtos em suas propriedades.
 
 #### **Ameaça de novos entrantes**
 
-&emsp; A ameaça de novos entrantes é baixa, tendo em vista que o mercado agrícola já é bem consolidado com empresas de grande relevância internacional. Sob esse contexto, o ramo agrícola é de alta competitividade no nível mundial, na qual empresas como a própria Bayer Crop Science, Corteva, Phos Agro, AGCO, Sime Darby Plantation e outras companhias disputam um lugar de destaque. Por conseguinte, apesar do crescimento constante, o mercado agrícola é de difícil acesso para novos entrantes em todas as áreas de atuação do agronegócio <sup>[6]</sup>.
+&emsp; A ameaça de novos entrantes é baixa, tendo em vista que o mercado agrícola já é bem consolidado com empresas de grande relevância internacional. Sob esse contexto, o ramo agrícola é de alta competitividade no nível mundial, na qual empresas como a própria Bayer Crop Science, Corteva, Phos Agro, AGCO, Sime Darby Plantation e outras companhias disputam um lugar de destaque. Por conseguinte, apesar do crescimento constante, o mercado agrícola é de difícil acesso para novos entrantes em todas as áreas de atuação do agronegócio.
 
 ### 2.1.2. Análise SWOT da Instituição Parceira 
 
@@ -129,9 +129,9 @@
 
 ### 2.1.4. Value Proposition Canvas : 
 
-&emsp; Segundo Pereira<sup>[10]</sup>, o modelo de negócio criado por Alexander Osterwalder, Yves Pigneur e Alan Smith denominado “Value Proposition Canvas” é uma ferramenta desenhada para garantir que o produto atenda às necessidades dos clientes, traga-lhes benefícios e resolva seus problemas, estruturando como o serviço agrega valor a eles. Para isso, a ferramenta utiliza duas seções do Business Model Canvas, a saber: “Segmentos de Clientes” e “Propostas de Valor”.
+&emsp; Segundo Pereira, o modelo de negócio criado por Alexander Osterwalder, Yves Pigneur e Alan Smith denominado “Value Proposition Canvas” é uma ferramenta desenhada para garantir que o produto atenda às necessidades dos clientes, traga-lhes benefícios e resolva seus problemas, estruturando como o serviço agrega valor a eles. Para isso, a ferramenta utiliza duas seções do Business Model Canvas, a saber: “Segmentos de Clientes” e “Propostas de Valor”.
 
-&emsp; Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um perfil apresentado pelo cliente mostrando suas tarefas, suas dores e seus ganhos. O lado esquerdo inclui a proposta de valor que deve ser entregue ao cliente, abrangendo produtos e serviços, criadores de benefícios e analgésicos (este é o mapa de valor)<sup>[10]</sup>.
+&emsp; Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um perfil apresentado pelo cliente mostrando suas tarefas, suas dores e seus ganhos. O lado esquerdo inclui a proposta de valor que deve ser entregue ao cliente, abrangendo produtos e serviços, criadores de benefícios e analgésicos (este é o mapa de valor).
 
 &emsp; Portanto, é importante descrever o conceito geral de cada tópico, mostrar a relação entre eles e como eles se afetam direta ou indiretamente. Portanto, os tópicos subsequentes abordarão elementos inerentes ao Value Proposition Canvas da solução proposta para o projeto atual, iniciando pelo perfil do cliente. Além disso, a Figura 3 mostra esses elementos visualmente:
 
@@ -143,7 +143,7 @@
 
 #### Tarefas do Cliente
 
-&emsp; Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, auxiliando no entendimento de como é possível agir perante a problemática em questão<sup>[10]</sup>.. No contexto da capacitação de promotores, o cliente realiza as seguintes tarefas:
+&emsp; Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, auxiliando no entendimento de como é possível agir perante a problemática em questão. No contexto da capacitação de promotores, o cliente realiza as seguintes tarefas:
 
 - **Utilizar o site de “Ajuda Rápida” do Climate FIELDVIEW:** O PTD(Promotor Técnico Digital) depende de um site que não foca em ensinar adequadamente ele sobre o uso do Climate FieldView.
 
@@ -153,7 +153,7 @@
 
 #### Ganhos
 
-&emsp; No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Esta parte foca naquilo que o cliente almeja alcançar no escopo em questão, devendo cada ganho ser viabilizado por um criador de ganho correspondente<sup>[10]</sup>. Assim, foram identificados os seguintes ganhos:
+&emsp; No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Esta parte foca naquilo que o cliente almeja alcançar no escopo em questão, devendo cada ganho ser viabilizado por um criador de ganho correspondente. Assim, foram identificados os seguintes ganhos:
 
 - **Aprimorar competências específicas:** com uma análise feita pelo Consultor de Sucesso do Cliente, ele pode mandar ao PTD especifico uma trilha que ele pode se preocupar mais. 
 
@@ -172,7 +172,7 @@
 
 #### Dores
 
-&emsp; No segmento de dores, há a definição daquilo com que o cliente sofre em decorrência da falta de uma solução efetiva ao seu problema<sup>[10]</sup>.. As dores identificadas foram:
+&emsp; No segmento de dores, há a definição daquilo com que o cliente sofre em decorrência da falta de uma solução efetiva ao seu problema. As dores identificadas foram:
 
 - **Não há nenhuma plataforma de capacitação adequada e ágil:** não tem uma plataforma que torne os Promotores capacitados ou possa os ajudar rápido e efetivamente.
 
@@ -188,7 +188,7 @@
 
 #### Produtos e Serviços
 
-&emsp; No segmento de produtos e serviços, há a identificação daquilo que deve ser entregue ao cliente, por meio de funcionalidades definidas e claras <sup>[10]</sup>. No presente contexto, propõe-se:
+&emsp; No segmento de produtos e serviços, há a identificação daquilo que deve ser entregue ao cliente, por meio de funcionalidades definidas e claras. No presente contexto, propõe-se:
 Plataforma web com trilhas de aprendizado voltadas aos promotores, com foco na melhoria de sua capacitação em campo: trazer uma solução web, de fácil acesso.
 
 - **Sistema com acessos distintos para o Consultor de Sucesso do Cliente e para os promotores, facilitando a avaliação dos promotores pelo consultor:** trazer uma área destinada ao consultor, para saber sobre os promotores, e outra para os promotores com suas trilhas a serem feitas.
@@ -199,7 +199,7 @@ Plataforma web com trilhas de aprendizado voltadas aos promotores, com foco na m
 
 #### Criadores de Ganhos
 
-&emsp; Os criadores de ganhos identificam o que será implementado para gerar satisfação ao cliente, estando conectados diretamente aos ganhos elencados no perfil do cliente <sup>[10]</sup>. Assim, temos:
+&emsp; Os criadores de ganhos identificam o que será implementado para gerar satisfação ao cliente, estando conectados diretamente aos ganhos elencados no perfil do cliente. Assim, temos:
 Trilhas de capacitação para os promotores, com recursos visuais e auditivos, visando aprimorar suas habilidades e a qualidade do seu trabalho: trilhas com métodos de ensino diversos para auxiliar os PDT’s a serem capacitados e elevar sua qualidade de atendimento.
 
 - **Permitir que o Consultor possa indicar trilhas específicas ao promotor, caso necessário:** permitir que os Consultores possam indicar trilhas a serem feitas para melhorar especificamente algumas capacitações dos Promotores, trazendo um meio de comunicação entre ambos.
@@ -210,7 +210,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 
 #### Aliviadores de Dor
 
-&emsp; Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas<sup>[10]</sup>. Nesse sentido, definem-se:
+&emsp; Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas. Nesse sentido, definem-se:
 
 - **Plataforma web estruturada em trilhas e módulos de aprendizado, projetada para apoiar a capacitação do promotor com agilidade e eficiência:** plataforma intuitiva e de fácil acesso para os Promotores possam acessar e aprender com métodos diferentes.
 
@@ -1559,11 +1559,11 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 <h3> Visão Geral do Mercado</h3>
 
-&emsp;Com o aumento significativo da população, a demanda por alimentos está crescendo drasticamente. No aspecto brasileiro, o agronegócio representou cerca de 1/4 do PIB do país em 2024, somado à venda de bens e serviços gerados chegando a cerca de R$ 2,72 trilhões, sendo 70% provenientes do ramo agrícola, segundo a Confederação da Agricultura e Pecuária do Brasil (CNA)<sup>[]</sup>. Ademais, o país é importante na exportação de produtos agrícolas, sendo chamado de "celeiro do mundo", segundo a CNN Brasil<sup>[]</sup>.
+&emsp;Com o aumento significativo da população, a demanda por alimentos está crescendo drasticamente. No aspecto brasileiro, o agronegócio representou cerca de 1/4 do PIB do país em 2024, somado à venda de bens e serviços gerados chegando a cerca de R$ 2,72 trilhões, sendo 70% provenientes do ramo agrícola, segundo a Confederação da Agricultura e Pecuária do Brasil (CNA). Ademais, o país é importante na exportação de produtos agrícolas, sendo chamado de "celeiro do mundo", segundo a CNN Brasil.
 
-&emsp;Além disso, a inserção de tecnologia só vem crescendo. Segundo o Blog FieldView<sup>[]</sup>, já existem soluções tecnológicas eficientes para o campo, como Climate FieldView, um sistema de monitoramento inteligente. Além disso, existem tecnologias para a produção de sementes modificadas, máquinas autônomas controladas à distância, entre outras.
+&emsp;Além disso, a inserção de tecnologia só vem crescendo. Segundo o Blog FieldView, já existem soluções tecnológicas eficientes para o campo, como Climate FieldView, um sistema de monitoramento inteligente. Além disso, existem tecnologias para a produção de sementes modificadas, máquinas autônomas controladas à distância, entre outras.
 
-&emsp;Por ser um mercado voltado a alimentos e problemas com áreas florestais, o agronegócio é afetado com regulações para um controle tanto da saúde das pessoas quanto na preservação da natureza. Na legislação brasileira, existe a Lei nº 14.785, de 27 de dezembro de 2023, que fortalece a fiscalização dos agrotóxicos desde sua criação, testes, comercialização e a venda dos mesmos<sup>[]</sup>. Leis de preservação também vêm aumentando, já que o crescimento agrícola está diretamente ligado ao desmatamento. A Lei nº 6.938/1981 tem como objetivo aumentar a fiscalização de áreas reservadas, aumentar a preservação e implementar instrumentos para atingir seus objetivos<sup>[]</sup>.
+&emsp;Por ser um mercado voltado a alimentos e problemas com áreas florestais, o agronegócio é afetado com regulações para um controle tanto da saúde das pessoas quanto na preservação da natureza. Na legislação brasileira, existe a Lei nº 14.785, de 27 de dezembro de 2023, que fortalece a fiscalização dos agrotóxicos desde sua criação, testes, comercialização e a venda dos mesmos. Leis de preservação também vêm aumentando, já que o crescimento agrícola está diretamente ligado ao desmatamento. A Lei nº 6.938/1981 tem como objetivo aumentar a fiscalização de áreas reservadas, aumentar a preservação e implementar instrumentos para atingir seus objetivos.
 
 <!--Trocar os <sup>[]</sup> pelo link na referência de cada um-->
 
@@ -1699,45 +1699,26 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 # <a name="c8"></a>8. Referências 
 
 
-1. AGROLINK. Perfil dos produtores rurais no Brasil: mais jovens e conectados. 2023. Disponível em: https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html. Acesso em: 29 abr. 2025.
-
-2. AGROPAGES. Top 20 global agrochemical companies in 2023 unveiled. 2024. Disponível em: https://news.agropages.com/News/NewsDetail---51737.htm. Acesso em: 29 abr. 2025.
-
-3. BAYER. Agro Bayer Brasil. 2025. Disponível em: https://www.agro.bayer.com.br/. Acesso em: 29 abr. 2025
-
-4. BAYER CROP SCIENCE. Climate FieldView™. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/climate-fieldview. Acesso em: 29 abr. 2025.
-
-5. BAYER CROP SCIENCE. Impulso Bayer: o programa. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/impulso-bayer/o-programa. Acesso em: 29 abr. 2025.
-
-6. COODESH. O que é arquitetura MVC? Coodesh, 2025. Disponível em: https://coodesh.com/blog/dicionario/o-que-e-arquitetura-mvc/. Acesso em: 30 maio 2025.
-
-7. HARSH, Kumar. O que é Arquitetura de Aplicativos Web? Quebrando um aplicativo da Web. Kinsta, 17 jan. 2025. Disponível em: https://kinsta.com/pt/blog/arquitetura-aplicativos-web/. Acesso em: 30 maio 2025.
-
-8. INTELIGÊNCIA FINANCEIRA. Empresas do agronegócio: as maiores companhias agrícolas do mundo. 2024. Disponível em: https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/. Acesso em: 29 abr. 2025.
-
-9. MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia [recurso eletrônico]. 1. ed. Rio de Janeiro: Alta Books, 2019. Disponível em: https://integrada.minhabiblioteca.com.br. Acesso em: 29 abr. 2025.
-
-10. MARKET RESEARCH FUTURE. Digital agriculture market research report—global forecast 2030. 2023. Disponível em: https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695. Acesso em: 29 abr. 2025.
-
-11. MARKET RESEARCH FUTURE. Seeds market research report. [S.l.]: Market Research Future, 2023. Disponível em: https://www.marketresearchfuture.com/reports/seeds-market-7252. Acesso em: 28 abr. 2025.
-
-12. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
-
-13. MCKINSEY & COMPANY. Agriculture’s connected future: How technology can yield new growth. New York, 2020. Disponível em: https://www.mckinsey.com/industries/agriculture/our-insights/agricultures-connected-future-how-technology-can-yield-new-growth. 
-
-14. EMBRAPA – Empresa Brasileira de Pesquisa Agropecuária. Visão 2030: o futuro da agricultura brasileira. Brasília, DF: Embrapa, 2023. Disponível em: https://www.embrapa.br/visao/o-futuro-da-agricultura-brasileira.
-
-15. FAO – Food and Agriculture Organization of the United Nations. The State of Food and Agriculture 2021: making agrifood systems more resilient to shocks and stresses. Rome: FAO, 2021. Disponível em: https://openknowledge.fao.org/handle/20.500.14283/cb4476en.
-
-16. BRASIL. Ministério da Agricultura e Pecuária. Lei nº 14.785, de 27 de dezembro de 2023. Dispõe sobre o controle e a fiscalização de agrotóxicos e afins. Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao. Acesso em: 4 jun. 2025.
-
-17. BRASIL. Lei nº 6.938, de 31 de agosto de 1981. Dispõe sobre a Política Nacional do Meio Ambiente, seus fins e mecanismos de formulação e aplicação, e dá outras providências. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l6938compilada.htm. Acesso em: 4 jun. 2025.
-
-18. CNN Brasil. Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 4 mar. 2024. Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/. Acesso em: 4 jun. 2025.
-
-19. EQUIPE FIELDVIEW™. Tecnologia no agronegócio: conheça 7 inovações tecnológicas. 5 nov. 2021. Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro. Acesso em: 4 jun. 2025.
-
-20. CONFEDERAÇÃO DA AGRICULTURA E PECUÁRIA DO BRASIL (CNA). Panorama do Agro. Brasília: CNA, 2025. Disponível em: https://www.cnabrasil.org.br/cna/panorama-do-agro. Acesso em: 4 jun. 2025.
+1. <a name="ref1"></a> [AGROLINK. Perfil dos produtores rurais no Brasil: mais jovens e conectados. 2023.](https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html)  
+2. <a name="ref2"></a> [AGROPAGES. Top 20 global agrochemical companies in 2023 unveiled. 2024.](https://news.agropages.com/News/NewsDetail---51737.htm)  
+3. <a name="ref3"></a> [BAYER. Agro Bayer Brasil. 2025.](https://www.agro.bayer.com.br/)  
+4. <a name="ref4"></a> [BAYER CROP SCIENCE. Climate FieldView™. São Paulo: Bayer, [2024].](https://www.agro.bayer.com.br/climate-fieldview)  
+5. <a name="ref5"></a> [BAYER CROP SCIENCE. Impulso Bayer: o programa. São Paulo: Bayer, [2024].](https://www.agro.bayer.com.br/impulso-bayer/o-programa)  
+6. <a name="ref6"></a> [COODESH. O que é arquitetura MVC? Coodesh, 2025.](https://coodesh.com/blog/dicionario/o-que-e-arquitetura-mvc/)  
+7. <a name="ref7"></a> [HARSH, Kumar. O que é Arquitetura de Aplicativos Web? Kinsta, 17 jan. 2025.](https://kinsta.com/pt/blog/arquitetura-aplicativos-web/)  
+8. <a name="ref8"></a> [INTELIGÊNCIA FINANCEIRA. Empresas do agronegócio: as maiores companhias agrícolas do mundo. 2024.](https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/)  
+9. <a name="ref9"></a> [MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. 2019.](https://integrada.minhabiblioteca.com.br)  
+10. <a name="ref10"></a> [MARKET RESEARCH FUTURE. Digital agriculture market research report—global forecast 2030. 2023.](https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695)  
+11. <a name="ref11"></a> [MARKET RESEARCH FUTURE. Seeds market research report. 2023.](https://www.marketresearchfuture.com/reports/seeds-market-7252)  
+12. <a name="ref12"></a> [PEREIRA, Daniel. O que é o Value Proposition Canvas?. 27 set. 2024.](https://businessmodelanalyst.com/pt/value-proposition-canvas/)  
+13. <a name="ref13"></a> [MCKINSEY & COMPANY. Agriculture’s connected future: How technology can yield new growth. 2020.](https://www.mckinsey.com/industries/agriculture/our-insights/agricultures-connected-future-how-technology-can-yield-new-growth)  
+14. <a name="ref14"></a> [EMBRAPA. Visão 2030: o futuro da agricultura brasileira. 2023.](https://www.embrapa.br/visao/o-futuro-da-agricultura-brasileira)  
+15. <a name="ref15"></a> [FAO. The State of Food and Agriculture 2021. Rome: FAO, 2021.](https://openknowledge.fao.org/handle/20.500.14283/cb4476en)  
+16. <a name="ref16"></a> [BRASIL. Lei nº 14.785, de 27 de dezembro de 2023.](https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao)  
+17. <a name="ref17"></a> [BRASIL. Lei nº 6.938, de 31 de agosto de 1981.](https://www.planalto.gov.br/ccivil_03/leis/l6938compilada.htm)  
+18. <a name="ref18"></a> [CNN Brasil. Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 4 mar. 2024.](https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/)  
+19. <a name="ref19"></a> [EQUIPE FIELDVIEW™. Tecnologia no agronegócio: conheça 7 inovações tecnológicas. 5 nov. 2021.](https://blog.climatefieldview.com.br/inovacoes-agro)  
+20. <a name="ref20"></a> [CNA. Panorama do Agro. Brasília: CNA, 2025.](https://www.cnabrasil.org.br/cna/panorama-do-agro)
 
 # <a name="c9"></a>Anexos
 
