@@ -97,36 +97,101 @@ app.get('/', authMiddleware(), async (req, res) => {
       }),
     );
 
-    // Enriquecer as trilhas do usuário com informações dos módulos
-    const enrichedUserTrails = userTrails.map(userTrail => {
-      // Encontrar a trilha correspondente entre as trilhas enriquecidas
-      const matchingTrail = enrichedTrails.find(trail => trail.id === userTrail.id_trilha);
-      
-      if (matchingTrail) {
+    // Enriquecer as trilhas do usuário com informações dos módulos e progresso
+    const enrichedUserTrails = await Promise.all(
+      userTrails.map(async userTrail => {
+        // Encontrar a trilha correspondente entre as trilhas enriquecidas
+        const matchingTrail = enrichedTrails.find(trail => trail.id === userTrail.id_trilha);
+        
+        if (matchingTrail) {
+          // Buscar progresso da trilha para o usuário
+          let progress = 0;
+          try {
+            const progressResponse = await axios.get(
+              `http://localhost:3000/api/trail/progress/${req.user.id}/${userTrail.id_trilha}`
+            );
+            progress = progressResponse.data.progress || 0;
+          } catch (error) {
+            console.error(`Erro ao buscar progresso da trilha ${userTrail.id_trilha}:`, error.message);
+          }
+
+          return {
+            ...userTrail,
+            id: userTrail.id_trilha, // ID importante para o link
+            nome: matchingTrail.nome,
+            descricao: matchingTrail.descricao,
+            imagem: matchingTrail.imagem,
+            titulo: matchingTrail.titulo, // Adicionado título
+            moduleCount: matchingTrail.moduleCount,
+            firstModuleId: matchingTrail.firstModuleId,
+            progress: progress // Progresso calculado
+          };
+        }
+        
         return {
           ...userTrail,
           id: userTrail.id_trilha, // ID importante para o link
-          nome: matchingTrail.nome,
-          descricao: matchingTrail.descricao,
-          imagem: matchingTrail.imagem,
-          titulo: matchingTrail.titulo, // Adicionado título
-          moduleCount: matchingTrail.moduleCount,
-          firstModuleId: matchingTrail.firstModuleId
+          moduleCount: 0,
+          firstModuleId: null,
+          progress: 0
         };
-      }
-      
-      return {
-        ...userTrail,
-        id: userTrail.id_trilha, // ID importante para o link
-        moduleCount: 0,
-        firstModuleId: null
-      };
-    });
+      })
+    );
 
-    // Filtrar trilhas disponíveis que não estão atribuídas ao usuário
-    const availableTrails = enrichedTrails.filter((trail) => {
-      return !userTrails.some((userTrail) => userTrail.id_trilha === trail.id);
-    });
+    // Filtrar trilhas disponíveis que não estão atribuídas ao usuário e adicionar progresso
+    const availableTrails = await Promise.all(
+      enrichedTrails
+        .filter((trail) => {
+          return !userTrails.some((userTrail) => userTrail.id_trilha === trail.id);
+        })
+        .map(async (trail) => {
+          // Buscar progresso da trilha para o usuário
+          let progress = 0;
+          try {
+            const progressResponse = await axios.get(
+              `http://localhost:3000/api/trail/progress/${req.user.id}/${trail.id}`
+            );
+            progress = progressResponse.data.progress || 0;
+          } catch (error) {
+            console.error(`Erro ao buscar progresso da trilha ${trail.id}:`, error.message);
+          }
+
+          return {
+            ...trail,
+            progress: progress
+          };
+        })
+    );
+
+    // Separar trilhas do usuário entre em progresso e concluídas
+    const userTrailsInProgress = enrichedUserTrails.filter(trail => trail.progress < 100);
+    const userTrailsCompleted = enrichedUserTrails.filter(trail => trail.progress === 100);
+    
+    // Separar trilhas disponíveis entre em progresso e concluídas
+    const availableTrailsInProgress = availableTrails.filter(trail => trail.progress < 100);
+    const availableTrailsCompleted = availableTrails.filter(trail => trail.progress === 100);
+    
+    // Buscar trilhas concluídas adicionais da API
+    let apiCompletedTrails = [];
+    try {
+      const completedTrailsResponse = await axios.get(
+        `http://localhost:3000/api/trail/completed/${req.user.id}`
+      );
+      apiCompletedTrails = completedTrailsResponse.data.completedTrails || [];
+    } catch (error) {
+      console.log("Erro ao buscar trilhas concluídas:", error.message);
+      apiCompletedTrails = [];
+    }
+    
+    // Combinar todas as trilhas concluídas (atribuídas + disponíveis + API)
+    const allCompletedTrails = [
+      ...userTrailsCompleted,
+      ...availableTrailsCompleted,
+      ...apiCompletedTrails.filter(apiTrail => 
+        !userTrailsCompleted.some(trail => trail.id === apiTrail.id) &&
+        !availableTrailsCompleted.some(trail => trail.id === apiTrail.id)
+      )
+    ];
 
     // Gerar uma lista simplificada de trailModules para compatibilidade com o template existente
     const trailModules = enrichedTrails.map(trail => ({
@@ -136,8 +201,9 @@ app.get('/', authMiddleware(), async (req, res) => {
     }));
 
     res.render('home', {
-      userTrails: enrichedUserTrails,
-      availableTrails: availableTrails,
+      userTrails: userTrailsInProgress, // Apenas trilhas em progresso (< 100%)
+      availableTrails: availableTrailsInProgress, // Apenas trilhas disponíveis em progresso (< 100%)
+      completedTrails: allCompletedTrails, // Todas as trilhas com 100% de progresso
       trailModules: trailModules, // mantido para compatibilidade
       ranking: sortedRank,
       userPosition,
@@ -222,7 +288,7 @@ app.get('/trail/edit/:id', async (req, res) => {
 });
 
 // Página da trilha específica
-app.get('/trail/:idTrail/:idModule', async (req, res) => {
+app.get('/trail/:idTrail/:idModule', authMiddleware(), async (req, res) => {
   const trailId = req.params.idTrail;
   const moduleId = req.params.idModule;
 

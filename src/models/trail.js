@@ -1,4 +1,4 @@
- const pool = require('../config/database');
+const pool = require('../config/database');
 
 module.exports = {
   //Cria as funções do model
@@ -66,5 +66,86 @@ module.exports = {
     `;
     const result = await pool.query(query, [userId]);
     return result.rows;
+  },
+
+  async getCompletedTrailsByUser(userId) {
+    // Buscar trilhas onde todos os módulos foram completados
+    const query = `
+      SELECT DISTINCT t.id, t.titulo, t.descricao, t.imagem, 
+             COUNT(m.id)::integer as total_modules,
+             COUNT(CASE WHEN um.esta_completo = true THEN 1 END)::integer as completed_modules
+      FROM trilha t
+      JOIN usuario_trilha ut ON t.id = ut.id_trilha
+      JOIN modulo m ON t.id = m.id_trilha
+      LEFT JOIN usuario_modulo um ON m.id = um.id_modulo AND um.id_usuario = $1
+      WHERE ut.id_usuario = $1
+      GROUP BY t.id, t.titulo, t.descricao, t.imagem
+      HAVING COUNT(m.id) = COUNT(CASE WHEN um.esta_completo = true THEN 1 END) AND COUNT(m.id) > 0
+    `;
+    const result = await pool.query(query, [userId]);
+    return result.rows;
+  },
+
+  async markModuleComplete(userId, moduleId) {
+    // Marcar módulo como completo ou inserir se não existir
+    const query = `
+      INSERT INTO usuario_modulo (id_usuario, id_modulo, esta_completo)
+      VALUES ($1, $2, true)
+      ON CONFLICT (id_usuario, id_modulo) 
+      DO UPDATE SET esta_completo = true, updated_at = CURRENT_TIMESTAMP
+      RETURNING *
+    `;
+    
+    try {
+      const result = await pool.query(query, [userId, moduleId]);
+      return result.rows[0];
+    } catch (error) {
+      // Se não há constraint, fazer um SELECT + INSERT/UPDATE manual
+      console.log('Tentando abordagem alternativa para marcar módulo como completo');
+      
+      // Verificar se já existe
+      const checkQuery = 'SELECT * FROM usuario_modulo WHERE id_usuario = $1 AND id_modulo = $2';
+      const checkResult = await pool.query(checkQuery, [userId, moduleId]);
+      
+      if (checkResult.rows.length > 0) {
+        // Atualizar existente
+        const updateQuery = `
+          UPDATE usuario_modulo 
+          SET esta_completo = true, updated_at = CURRENT_TIMESTAMP 
+          WHERE id_usuario = $1 AND id_modulo = $2 
+          RETURNING *
+        `;
+        const result = await pool.query(updateQuery, [userId, moduleId]);
+        return result.rows[0];
+      } else {
+        // Inserir novo
+        const insertQuery = `
+          INSERT INTO usuario_modulo (id_usuario, id_modulo, esta_completo)
+          VALUES ($1, $2, true)
+          RETURNING *
+        `;
+        const result = await pool.query(insertQuery, [userId, moduleId]);
+        return result.rows[0];
+      }
+    }
+  },
+
+  async getTrailProgressByUser(userId, trailId) {
+    // Calcular progresso da trilha para um usuário específico
+    const query = `
+      SELECT 
+        COUNT(m.id)::integer as total_modules,
+        COUNT(CASE WHEN um.esta_completo = true THEN 1 END)::integer as completed_modules
+      FROM modulo m
+      LEFT JOIN usuario_modulo um ON m.id = um.id_modulo AND um.id_usuario = $1
+      WHERE m.id_trilha = $2
+    `;
+    const result = await pool.query(query, [userId, trailId]);
+    const { total_modules, completed_modules } = result.rows[0];
+    
+    if (total_modules === 0) return 0;
+    
+    const progress = Math.round((completed_modules / total_modules) * 100);
+    return progress;
   },
 };

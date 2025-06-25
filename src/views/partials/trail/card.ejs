@@ -4,8 +4,14 @@
       <a>
         <% } %>
 
-          <div class="bg-[#F6F6F6] text-white rounded-lg m-sm shadow-md hover:shadow-lg transition relative">
-            <h4 class="text-lg font-bold text-black p-6">
+          <div class="bg-[#F6F6F6] text-white rounded-lg m-sm shadow-md hover:shadow-lg transition relative <%= typeof isCompleted !== 'undefined' && isCompleted ? 'border-l-4 border-green-500' : '' %>">
+            <% if (typeof isCompleted !== 'undefined' && isCompleted) { %>
+              <div class="flex items-center mb-2 pt-4 px-6">
+                <div class="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+                <span class="text-green-600 font-semibold text-sm">CONCLUÍDA</span>
+              </div>
+            <% } %>
+            <h4 class="text-lg font-bold text-black <%= typeof isCompleted !== 'undefined' && isCompleted ? 'px-6 pb-4' : 'p-6' %>">
               <%= trail.titulo %>
             </h4>
             <% if (isAdministrator) { %>
@@ -29,12 +35,20 @@
                     </p>
                   </div>
 
-                  <div
-                    class="relative w-20 h-20 rounded-full border-[10px] border-[#6DBA0D] flex items-center justify-center mr-4">
-                    <div class="absolute inset-[10px] bg-white rounded-full flex items-center justify-center">
-                      <span class="text-black text-sm font-semibold">
-                        <%= trail.progress || 0 %>%
-                      </span>
+                  <div class="mr-4">
+                    <!-- Círculo de progresso simples -->
+                    <div class="relative w-20 h-20 rounded-full border-4 <%= typeof isCompleted !== 'undefined' && isCompleted ? 'border-green-500' : 'border-gray-300' %> flex items-center justify-center">
+                      <!-- Barra de progresso circular usando conic-gradient inline -->
+                      <div 
+                        class="absolute inset-0 rounded-full"
+                        style="background: conic-gradient(#22c55e 0% <%= trail.progress || 0 %>%, transparent <%= trail.progress || 0 %>% 100%);"
+                      ></div>
+                      <!-- Círculo interno branco -->
+                      <div class="relative w-14 h-14 bg-white rounded-full flex items-center justify-center z-10">
+                        <span class="<%= typeof isCompleted !== 'undefined' && isCompleted ? 'text-green-600' : 'text-black' %> text-sm font-semibold">
+                          <%= Math.round(trail.progress || 0) %>%
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
