@@ -43,7 +43,7 @@ exports.update = async (req, res) => {
     await Trail.update(id, { titulo });
     
     // Se módulos foram enviados, atualizar/criar módulos
-    if (req.body.modules && Array.isArray(req.body.modules)) {
+  /*   if (req.body.modules && Array.isArray(req.body.modules)) {
       const Module = require('../models/module');
       
       // Deletar módulos existentes da trilha
@@ -61,7 +61,7 @@ exports.update = async (req, res) => {
           });
         }
       }
-    }
+    } */
     
     res.status(200).json({ message: 'Trilha atualizada com sucesso' });
   } catch (err) {
