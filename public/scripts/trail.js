@@ -85,10 +85,20 @@ async function executarFetches() {
         data2.map((module) => {
             //criar a tag de componente de uma lista
             let li = createNode("li");
+            
+            // Verificar se é o módulo atual para destacar
+            const isCurrentModule = module.id == moduleId;
+            const circleClass = isCurrentModule 
+                ? "w-4 h-4 bg-green-500 rounded-full ring-2 ring-green-300 ring-offset-1" 
+                : "w-4 h-4 bg-gray-300 rounded-full";
+            const linkClass = isCurrentModule 
+                ? "text-blue-600 font-semibold" 
+                : "text-gray-600";
+            
             //inserir informações
             li.innerHTML = `
-            <span class="w-4 h-4 bg-green-500 rounded-full"></span>
-            <a href="/trail/${trailId}/${module.id}" class="text-gray-600">${module.titulo}</a>`
+            <span class="${circleClass}"></span>
+            <a href="/trail/${trailId}/${module.id}" class="${linkClass}">${module.titulo}</a>`
 
             //estilizar
             li.classList.add("flex", "items-center", "space-x-2");
