@@ -53,6 +53,28 @@
             </div>
           </div>
         <% } else if (activeTab==='usuarios' ) { %>
+          <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-900 mb-6">Estatísticas Gerais dos Usuários</h2>
+            <div id="loadingStats" class="text-gray-600">Carregando estatísticas...</div>
+            <div id="statsContainer" class="hidden grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                <h3 class="text-xl font-semibold text-blue-900 mb-2">Total de Usuários</h3>
+                <p id="totalUsers" class="text-2xl font-bold text-gray-700">0</p>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                <h3 class="text-xl font-semibold text-blue-900 mb-2">Total de Trilhas Concluídas</h3>
+                <p id="totalCompletedTrails" class="text-2xl font-bold text-gray-700">0</p>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                <h3 class="text-xl font-semibold text-blue-900 mb-2">Progresso Médio</h3>
+                <p id="averageProgress" class="text-2xl font-bold text-gray-700">0%</p>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                <h3 class="text-xl font-semibold text-blue-900 mb-2">Trilha mais popular</h3>
+                <p id="popular-trail" class="text-2xl font-bold text-gray-700">-</p>
+              </div>
+            </div>
+          </section>
           <main class="flex w-full max-w-6xl mx-auto h-[90vh] bg-white shadow-lg rounded-lg overflow-hidden shadow-none">
             <aside class="w-1/4 border-r border-gray-200 p-4 overflow-y-auto">
               <h2 class="text-lg font-semibold mb-4">Usuários Ativos na Plataforma</h2>
@@ -118,7 +140,7 @@
                           <canvas id="progressChart"></canvas>
                         </div>
                       </div>
-                      <div class="bg-white p-4 rounded-lg shadow">
+                      <div class="bg-white p-4 rounded-lg shadow hidden">
                         <h3 class="font-semibold mb-2">Desempenho Recente</h3>
                         <div class="space-y-3" id="recent-performance"></div>
                       </div>
@@ -252,6 +274,36 @@
           console.log("Erro encontrado: ", err)
         }
       }
+
+      async function loadUserStats() {
+        const loadingStats = document.getElementById('loadingStats');
+        const statsContainer = document.getElementById('statsContainer');
+  
+        try {
+          const response = await fetch('/api/user/find/stats', {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+          });
+  
+          const data = await response.json();
+  
+          // Update DOM with stats
+          document.getElementById('totalUsers').textContent = data.totalUsers || 0;
+          document.getElementById('totalCompletedTrails').textContent = data.totalCompletedTrails || 0;
+          document.getElementById('averageProgress').textContent = `${Math.round(data.averageProgress || 0)}%`;
+          document.getElementById('popular-trail').textContent = data.mostDoneTrail.title || '-';
+          
+  
+          // Show stats and hide loading
+          loadingStats.classList.add('hidden');
+          statsContainer.classList.remove('hidden');
+        } catch (error) {
+          console.error('Error loading stats:', error);
+          loadingStats.textContent = `Erro ao carregar estatísticas. ${error}`;
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', loadUserStats);
     </script>
 
 </body>

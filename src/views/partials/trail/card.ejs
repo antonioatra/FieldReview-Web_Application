@@ -30,11 +30,14 @@
                     <p class="mt-2 text-black font-semibold px-4">
                       <%= moduleCount || 0 %> Módulos
                     </p>
-                    <p class="mt-2 text-black px-4">
+                    <!-- <p class="mt-2 text-black px-4">
                       Pessoas que completaram: <%= trail.completedCount || 15 %>
-                    </p>
+                    </p> -->
                   </div>
 
+                  <% if (!isAdministrator) { %>
+
+                  
                   <div class="mr-4">
                     <!-- Círculo de progresso simples -->
                     <div class="relative w-20 h-20 rounded-full border-4 <%= typeof isCompleted !== 'undefined' && isCompleted ? 'border-green-500' : 'border-gray-300' %> flex items-center justify-center">
@@ -51,6 +54,7 @@
                       </div>
                     </div>
                   </div>
+                  <% } %>
                 </div>
           </div>
       </a>

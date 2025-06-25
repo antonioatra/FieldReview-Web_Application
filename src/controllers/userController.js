@@ -28,7 +28,7 @@ exports.showById = async (req, res) => {
     if (!user) return res.status(404).json({ error: 'Usuário não encontrado.' });
     res.json(user);
   } catch (err) {
-    res.status(500).json({ error: 'Erro ao buscar usuário' });
+    res.status(500).json({ error: 'ShowById: Erro ao buscar usuário' });
   }
 };
 
@@ -38,7 +38,7 @@ exports.getCurrentUser = async (req, res) => {
     if (!user) return res.status(404).json({ error: 'Usuário não encontrado.' });
     res.json(user);
   } catch (err) {
-    res.status(500).json({ error: 'Erro ao buscar usuário' });
+    res.status(500).json({ error: 'CurrentUser: Erro ao buscar usuário' });
   }
 };
 
@@ -67,5 +67,32 @@ exports.destroy = async (req, res) => {
     res.status(200).json({ message: 'Usuário deletado com sucesso' });
   } catch (err) {
     res.status(500).json({ error: 'Erro ao deletar usuário.' });
+  }
+};
+
+exports.getUserStats = async (req, res) => {
+  try {
+    const stats = await Users.getUserStats();
+    res.status(200).json(stats);
+  } catch (error) {
+    console.error('Error in getUserStats controller:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+};
+
+exports.getUserTrailsProgress = async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const user = await Users.findById(userId);
+    if (!user) return res.status(404).json({ error: 'Usuário não encontrado' });
+
+    const data = await Users.getUserTrailsProgress(userId);
+    res.status(200).json({
+      message: 'Progresso das trilhas retornado com sucesso',
+      data,
+    });
+  } catch (err) {
+    console.error('Erro ao buscar progresso das trilhas:', err);
+    res.status(500).json({ error: 'Erro ao retornar progresso das trilhas', message: err.message });
   }
 };
