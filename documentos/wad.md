@@ -238,7 +238,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 <sub>Fonte: Material produzido pelos autores (2025)</sub>
 </p>
 
-&emsp; Para explicar os termos colocados na imagem acima, faremos um quadro de ameaças e de oportunidades descrevendo cada tópico, com a categoria que ela se encontra, a probabilidade de acontecer e o impacto que esse risco pode ocasionar no projeto.
+&emsp; Para explicar os termos colocados na imagem acima, faremos um quadro de ameaças e de oportunidades descrevendo cada tópico [Quadro 1-2], com a categoria que ela se encontra, a probabilidade de acontecer e o impacto que esse risco pode ocasionar no projeto.
 
 <p align = 'center'>
 <sup>Quadro 1: Descrição dos riscos do projeto.</sup>
@@ -530,7 +530,7 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 
 *Posicione aqui o diagrama de arquitetura da sua solução de aplicação web. Atualize sempre que necessário*
 
-&emsp; A arquitetura de uma aplicação web [Figura 7-9] consiste em uma representação gráfica de como os vários componentes da solução interagem entre si (HASH, 2025). Essa representação é importante para visualizar como funciona o relacionamento entre cliente e servidor, e como essas operações são executadas por outras partes da plataforma web. Dessa maneira, é importante projetar o modo como ocorrerá essas interações para então inicar a construção da solução Web.
+&emsp; A arquitetura de uma aplicação web [Figura 7-8] consiste em uma representação gráfica de como os vários componentes da solução interagem entre si (HASH, 2025). Essa representação é importante para visualizar como funciona o relacionamento entre cliente e servidor, e como essas operações são executadas por outras partes da plataforma web. Dessa maneira, é importante projetar o modo como ocorrerá essas interações para então inicar a construção da solução Web.
 
 &emsp; Com base nessa perspectiva, a arquitetura Model-View-Controller (MVC) foi aplicada à plataforma, na qual cada parte dessa organização é responsável por uma tarefa distinta. Essa arquitetura foi criada em 1979 pelo cientista da computação norueguês Trygve Reenskaug, com a proposta de separar o projeto em camadas para reduzir as dependências entre elas (COODESH). Assim, os elementos dessa organização são separados em:
 
@@ -554,7 +554,7 @@ Figura 7: Arquitetura da plataforma Field Review no draw.io.
 
 <div align="center">
 <sub>
-Fonte 8: Material produzido pelos autores (2025).<br>
+Fonte : Material produzido pelos autores (2025).<br>
 </sub>
 </div>
 
@@ -564,7 +564,7 @@ Fonte 8: Material produzido pelos autores (2025).<br>
 
 <div align="center">
 <sup>
-Figura 9: Arquitetura da plataforma Field Review no mermaid.io.
+Figura 8: Arquitetura da plataforma Field Review no mermaid.io.
 </sup>
 </div>
 
@@ -636,21 +636,21 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 
 ## 3.2. Wireframes (sprint 2)
 
-&emsp; O wireframe [Figura 10-16] é uma representação esquemática inicial de uma interface de usuário, geralmente elaborada com baixa fidelidade. Seu objetivo principal é auxiliar na definição da estrutura e na disposição dos elementos visuais e informacionais da interface, sem, contudo, abordar em profundidade as funcionalidades ou aspectos estéticos do sistema. Essa ferramenta é amplamente utilizada nas etapas iniciais do design de interfaces, por permitir uma visualização clara da hierarquia da informação e da navegação pretendida, facilitando a comunicação entre designers, desenvolvedores e demais *stakeholders*.
+&emsp; O wireframe [Figura 9-15] é uma representação esquemática inicial de uma interface de usuário, geralmente elaborada com baixa fidelidade. Seu objetivo principal é auxiliar na definição da estrutura e na disposição dos elementos visuais e informacionais da interface, sem, contudo, abordar em profundidade as funcionalidades ou aspectos estéticos do sistema. Essa ferramenta é amplamente utilizada nas etapas iniciais do design de interfaces, por permitir uma visualização clara da hierarquia da informação e da navegação pretendida, facilitando a comunicação entre designers, desenvolvedores e demais *stakeholders*.
 
 
  **Funcionalidades do Usuário Comum** <br>
 
 #### Tela inicial do Usuário padrão
 
-<p align = "center"><sup>Figura 10: Tela desktop inicial do Promotor Técnico Digital</sup>
+<p align = "center"><sup>Figura 9: Tela desktop inicial do Promotor Técnico Digital</sup>
 </p>
 <p align="center">
 <img src="../assets/assetsWAD/telaUsuarioPadrao.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 <p align = "center">
-<sup>Figura 11: Tela mobile inicial do Promotor Técnico Digital</sup>
+<sup>Figura 10: Tela mobile inicial do Promotor Técnico Digital</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/mobileUsuarioPadrao.png">
@@ -670,14 +670,14 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 
 
 <p align = "center">
-<sup>Figura 12: Tela desktop das trilhas do Promotor Técnico Digital</sup>
+<sup>Figura 11: Tela desktop das trilhas do Promotor Técnico Digital</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/telaTrilhas.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 <p align = "center">
-<sup>Figura 13: Tela mobile das trilhas do Promotor Técnico Digital</sup>
+<sup>Figura 12: Tela mobile das trilhas do Promotor Técnico Digital</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/mobileTrilhas.png">
@@ -698,7 +698,7 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 #### Tela inicial do Administrador
 
 <p align = "center">
-<sup>Figura 14: Tela desktop inicial do Administrador</sup>
+<sup>Figura 13: Tela desktop inicial do Administrador</sup>
 </p>
 <p align = "center">
 </p>
@@ -707,7 +707,7 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 <p align = "center">
-<sup>Figura 15: Tela mobile inicial do Administrador</sup>
+<sup>Figura 14: Tela mobile inicial do Administrador</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/mobileAdminUsuarios.png">
@@ -716,7 +716,7 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 &emsp; Na aba de 'Usuários', o administrador tem acesso a uma tabela que exibe o ranking dos usuários, com a possibilidade de visualizar estatísticas individuais. Essas estatísticas incluem as trilhas já concluídas, a pontuação no ranking e a opção de recomendar trilhas que ainda não foram realizadas.
 
 <p align = "center">
-<sup>Figura 16: Fluxo de navagação entre as telas da plataforma web</sup>
+<sup>Figura 15: Fluxo de navagação entre as telas da plataforma web</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/FieldReviewFull.png">
@@ -733,32 +733,31 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 ## 3.3. Guia de estilos (sprint 3)
 
-*Descreva aqui orientações gerais para o leitor sobre como utilizar os componentes do guia de estilos de sua solução*
 
 ### 3.3.1 Cores
 
 <p align = "center">
-<sup>Figura 17: Guia de Cores</sup>
+<sup>Figura 16: Guia de Cores</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/guiaCores.jpg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> 
 
-&emsp; Um guia de cores [Figura 17]é um documento que define um conjunto padronizado de cores a serem usadas em uma interface digital, com o objetivo de garantir consistência visual, usabilidade e identidade da marca.
+&emsp; Um guia de cores [Figura 16]é um documento que define um conjunto padronizado de cores a serem usadas em uma interface digital, com o objetivo de garantir consistência visual, usabilidade e identidade da marca.
 
 &emsp; No guia apresentado, as cores são organizadas por grupo cromático (como azul, verde, rosa, etc.), tonalidade (clara, média ou escura) e uso sugerido (como links, botões, textos ou fundos). Cada cor tem um código hexadecimal específico, o que facilita sua aplicação no desenvolvimento web. Além disso, o guia indica como utilizar cada cor de forma funcional — por exemplo, azul claro para links, verde brilhante para indicadores positivos, e preto para textos.
 
 ### 3.3.2 Tipografia
 
 
-&emsp; A tipografia da aplicação Web [Figura 18-19] é baseada no guia de marca da empresa Bayer, na qual a fonte Helvetica, amplamente utilizada pela Bayer em suas soluções tecnológicas e materiais online, foi adotada para garantir identidade visual e consistência.
+&emsp; A tipografia da aplicação Web [Figura 17-18] é baseada no guia de marca da empresa Bayer, na qual a fonte Helvetica, amplamente utilizada pela Bayer em suas soluções tecnológicas e materiais online, foi adotada para garantir identidade visual e consistência.
 
 &emsp; Com a adaptação da plataforma para desktop e dispotivos móveis, realizou-se um guia para a versão de computador e outro para celular. Dessa maneira, o guia tipográfico ficou da seguinte forma:
 
 - **Guia de estilos tipográfico para o computador:**
 
 <div align="center">
-<sup>Figura 18: Guia de estilos tipográfico do Field Review</sup>
+<sup>Figura 17: Guia de estilos tipográfico do Field Review</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/tipografiaFieldReviewDesktop.png">
@@ -770,7 +769,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 - **Guia de estilos tipográfico para celulares:**
 
 <div align="center">
-<sup>Figura 19: Guia de estilos tipográficos mobile do Field Review</sup>
+<sup>Figura 18: Guia de estilos tipográficos mobile do Field Review</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/tipografiaFieldReviewMobile.png">
@@ -807,7 +806,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 - Link do rodapé: É o tipo utilizado no rodapé da aplicação, com o tamanho de 16px ou 1 rem no desktop e 12px ou 0.8 rem , e peso bold.
 
-&emsp; Para facilitar a visualização da tipografia do projeto, elaborou-se o seguinte quadro com o estilo, tamanho, peso e estilo da fonte e seu respectivo uso [Quadro 33]:
+&emsp; Para facilitar a visualização da tipografia do projeto, elaborou-se o seguinte quadro com o estilo, tamanho, peso e estilo da fonte e seu respectivo uso [Quadro 16]:
 
 <div align = "center">
 <sup>Quadro 16: Quadro de estilo tipográfico desktop do Field Review.</sup>
@@ -836,7 +835,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 ### 3.3.3 Iconografia e imagens 
 
- &emsp; A iconografia e as imagens [Figura 20-21] são componentes fundamentais no design de uma aplicação web, contribuindo para a experiência do usuário e a identidade visual do site melhorando seu aspecto visual e tornando-o mais convidativo e agradável de usar.
+ &emsp; A iconografia e as imagens [Figura 19-20] são componentes fundamentais no design de uma aplicação web, contribuindo para a experiência do usuário e a identidade visual do site melhorando seu aspecto visual e tornando-o mais convidativo e agradável de usar.
 
 **Iconografia**
 
@@ -847,7 +846,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
   &emsp; Abaixo, apresentamos os ícones selecionados até o momento pela equipe de desenvolvimento. Para manter a padronização visual, todos foram escolhidos na versão "Solid".
 
 <p align = "center">
-<sup>Figura 20: Iconografia do Projeto</sup>
+<sup>Figura 19: Iconografia do Projeto</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/iconografia.png">
@@ -859,7 +858,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
  &emsp; Além dos elementos mencionados no tópico anterior, é importante destacar o papel central que o logo da aplicação FieldReview desempenha em toda a plataforma. Desenvolvida com base nas cores primárias da Bayer (azul e verde) e elementos gráficos que remetem a logo do Climate FieldView, ele não apenas reflete visualmente o nome do projeto, mas também incorpora sua essência e propósito dentro do ecossistema de soluções Bayer/Climate FieldView. A presença consistente do logo ao longo da plataforma reforçará a identidade visual da marca, tornando-o instantaneamente reconhecível e associado com os valores e objetivos do FieldReview.
 
 <p align = "center">
-<sup>Figura 21: Logo do Projeto</sup>
+<sup>Figura 20: Logo do Projeto</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/fieldreview-logo.png">
@@ -868,10 +867,10 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 ## 3.4 Protótipo de alta fidelidade (sprint 3)
 
-&emsp; Para preparar a implementação do frontend da aplicação Web, realizou-se o seguinte protótipo de alta fidelidade [Figura 22]:
+&emsp; Para preparar a implementação do frontend da aplicação Web, realizou-se o seguinte protótipo de alta fidelidade [Figura 21]:
 
 <div align="center">
-<sup>Figura 22: Fluxo do protótipo de alta fidelidade.</sup>
+<sup>Figura 21: Fluxo do protótipo de alta fidelidade.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/prototipoAltaFidelidade.png">
@@ -884,10 +883,10 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 &emsp; Para a realização do protótipo de alta fidelidade, utilizou-se o guia de estilos para guiar a elaboração das telas da plataforma. Além disso, realizou-se a divisão do fluxo do site em um caminho para o promotor técnico digital (PTD) e outra para o administrador.
 
-&emsp; A primeira tela [Figura 23-24] do site consiste no login e cadastro na plataforma, realizada de acordo com a US04 para suprir a necessidade do PTD entrar na plataforma para acessar o conteúdo. Assim, essa primeira tela ficou da seguinte maneira:
+&emsp; A primeira tela [Figura 22-23] do site consiste no login e cadastro na plataforma, realizada de acordo com a US04 para suprir a necessidade do PTD entrar na plataforma para acessar o conteúdo. Assim, essa primeira tela ficou da seguinte maneira:
 
 <div align="center">
-<sup>Figura 23: Tela de login da aplicação.</sup>
+<sup>Figura 22: Tela de login da aplicação.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/login.png">
@@ -897,7 +896,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 </div>
 
 <p align = "center">
-<sup>Figura 24: Tela mobile de login</sup>
+<sup>Figura 23: Tela mobile de login</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/loginMobile.png">
@@ -909,10 +908,10 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 &emsp; As telas direcionadas aos promotores estão relacionadas com as user stories essenciais: US01, US02 e US05, relacionadas à busca rápida para sanar dúvidas, o acesso a conteúdos das trilhas e o ato de revisar as trilhas depois. Dessa forma a apresentação das páginas será disposta em: tela inicial, tela de trilhas e a tela de pesquisa.
 
-&emsp; A tela inicial [Figura 25-26] compreende as principais informações da aplicação, apresentando o ranking dos usuários, as notificações, as trilhas que os usuários estão realizando e as trilhas que estão disponíveis, de acordo com a figura abaixo:
+&emsp; A tela inicial [Figura 24-25] compreende as principais informações da aplicação, apresentando o ranking dos usuários, as notificações, as trilhas que os usuários estão realizando e as trilhas que estão disponíveis, de acordo com a figura abaixo:
 
 <div align="center">
-<sup>Figura 25: Tela inicial do usuário promotor.</sup>
+<sup>Figura 24: Tela inicial do usuário promotor.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/inicialPTD.png">
@@ -922,16 +921,16 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 </div>
 
 <p align = "center">
-<sup>Figura 26: Tela mobile inicial do Promotor Técnico Digital</sup>
+<sup>Figura 25: Tela mobile inicial do Promotor Técnico Digital</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/homePTD.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Em relação à tela de trilhas [Figura 27-28], essa interface apresentará a disposição dos módulos na trilha, o vídeo e texto explicativo junto com a pergunta para validar o aprendizado. Além disso, é importante destacar que essa tela está relacionada a user story US02 com o acesso aos materiais disponíveis na plataforma. Dessa maneira, a tela está disposta da seguinte forma:
+&emsp; Em relação à tela de trilhas [Figura 26-27], essa interface apresentará a disposição dos módulos na trilha, o vídeo e texto explicativo junto com a pergunta para validar o aprendizado. Além disso, é importante destacar que essa tela está relacionada a user story US02 com o acesso aos materiais disponíveis na plataforma. Dessa maneira, a tela está disposta da seguinte forma:
 
 <div align="center">
-<sup>Figura 27: Página de trilhas do PTD.</sup>
+<sup>Figura 26: Página de trilhas do PTD.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/trilhaPTD.png">
@@ -941,16 +940,16 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 </div>
 
 <p align = "center">
-<sup>Figura 28: Tela mobile de trilhas do PTD</sup>
+<sup>Figura 27: Tela mobile de trilhas do PTD</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/trilhaPTDMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; No que diz respeito à tela de pesquisa [Figura 29-30], ela apresenta dois resultados de acordo com o texto inserido, uma área para os elementos de ajuda rápida da plataforma e outra parte para os resultados de acordo com as trilhas do site. Vale ressaltar que essa tela está relacionada à user story US01 com os resultados da busca rápida feita pelo promotor. Assim, a tela foi prototipada da seguinte maneira: 
+&emsp; No que diz respeito à tela de pesquisa [Figura 28-29], ela apresenta dois resultados de acordo com o texto inserido, uma área para os elementos de ajuda rápida da plataforma e outra parte para os resultados de acordo com as trilhas do site. Vale ressaltar que essa tela está relacionada à user story US01 com os resultados da busca rápida feita pelo promotor. Assim, a tela foi prototipada da seguinte maneira: 
 
 <div align="center">
-<sup>Figura 29: Tela de pesquisa do PTD.</sup>
+<sup>Figura 28: Tela de pesquisa do PTD.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/pesquisaPTD.png">
@@ -960,16 +959,16 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 </div>
 
 <p align = "center">
-<sup>Figura 30: Tela mobile de pesquisas do PTD</sup>
+<sup>Figura 29: Tela mobile de pesquisas do PTD</sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/pesquisaPTDMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&smsp; A tela de ajuda [Figura 31-32] tem como objetivo oferecer suporte rápido ao usuário por meio de uma seção de perguntas frequentes. Nela, são apresentados cards com dúvidas comuns, como "O que é o Climate FieldView", acompanhadas de respostas objetivas e fáceis de ler.
+&smsp; A tela de ajuda [Figura 30-31] tem como objetivo oferecer suporte rápido ao usuário por meio de uma seção de perguntas frequentes. Nela, são apresentados cards com dúvidas comuns, como "O que é o Climate FieldView", acompanhadas de respostas objetivas e fáceis de ler.
 
 <div align="center">
-<sup>Figura 31: Tela de help do PTD.</sup>
+<sup>Figura 30: Tela de help do PTD.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/helpPTD.png">
@@ -979,7 +978,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 </div>
 
 <div align="center">
-<sup>Figura 32: Tela mobile de help do PTD.</sup>
+<sup>Figura 31: Tela mobile de help do PTD.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/helpPTDmobile.png">
@@ -995,10 +994,10 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 &emsp; As telas direcionadas ao administrador da plataforma estão relacionadas diretamente à user story US03 de acordo com a vontade do consultor de atribuir trilhas aos seus colegas de equipe visando a capacitação técnica do time. Dessa maneira, as telas desse fluxo são: tela de trilhas, tela de alteração de uma trilha, tela de alteração de um módulo, tela de usuários e tela de atribuir uma trilha ao usuário.
 
-&emsp; A tela de trilhas [Figura 33-34] compreende as ações relacionadas a observar as trilhas disponíveis na plataforma e a possibilidade de adicionar uma nova trilha, de acordo com a figura abaixo:
+&emsp; A tela de trilhas [Figura 32-33] compreende as ações relacionadas a observar as trilhas disponíveis na plataforma e a possibilidade de adicionar uma nova trilha, de acordo com a figura abaixo:
 
 <div align="center">
-<sup>Figura 33: Página de trilhas do administrador.</sup>
+<sup>Figura 32: Página de trilhas do administrador.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/admtrilha.png">
@@ -1008,17 +1007,17 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 </div>
 
 <p align = "center">
-<sup>Figura 34: Tela mobile de trilhas do administrador.<sup>
+<sup>Figura 33: Tela mobile de trilhas do administrador.<sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/trilhaADMmobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 
-&emsp; Em relação à tela de alteração das trilhas [Figura 35-36], nesse campo o usuário pode alterar o título do conteúdo e apagar ou atualizar ou criar um novo módulo, além de cancelar suas alterações ou salvá-las, assim representado na figura abaixo:
+&emsp; Em relação à tela de alteração das trilhas [Figura 34-35], nesse campo o usuário pode alterar o título do conteúdo e apagar ou atualizar ou criar um novo módulo, além de cancelar suas alterações ou salvá-las, assim representado na figura abaixo:
 
 <div align="center">
-<sup>Figura 35: Página de editar trilha do administrador.</sup>
+<sup>Figura 34: Página de editar trilha do administrador.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/editarTrilhaAdm.png">
@@ -1028,16 +1027,16 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 </div>
 
 <p align = "center">
-<sup>Figura 36: Tela mobile de editar trilha do administrador.<sup>
+<sup>Figura 35: Tela mobile de editar trilha do administrador.<sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/editorTrilhaAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Sobre a tela de editar o módulo [Figura 37-38], nela o usuário pode alterar o conteúdo e as perguntas do material selecionado, assim como é apresentado na imagem abaixo:
+&emsp; Sobre a tela de editar o módulo [Figura 36-37], nela o usuário pode alterar o conteúdo e as perguntas do material selecionado, assim como é apresentado na imagem abaixo:
 
 <div align="center">
-<sup>Figura 37: Página de editar módulos do administrador.</sup>
+<sup>Figura 36: Página de editar módulos do administrador.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/editarModuloAdm.png">
@@ -1047,16 +1046,16 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 </div>
 
 <p align = "center">
-<sup>Figura 38: Tela mobile de editar módulos do administrador.<sup>
+<sup>Figura 37: Tela mobile de editar módulos do administrador.<sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/editarModuloAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; No que diz respeito à tela de usuários [Figura 39-40], nela aparece todos os usuários cadastrados na plataforma, com a possibilidade do administrador poder ver progresso e atribuir trilhas ao usuário selecionado, assim como é apresentado na figura abaixo:
+&emsp; No que diz respeito à tela de usuários [Figura 38-39], nela aparece todos os usuários cadastrados na plataforma, com a possibilidade do administrador poder ver progresso e atribuir trilhas ao usuário selecionado, assim como é apresentado na figura abaixo:
 
 <div align="center">
-<sup>Figura 41: Tela de usuários do administrador.</sup>
+<sup>Figura 38: Tela de usuários do administrador.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/usuariosAdm.png">
@@ -1066,17 +1065,17 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 </div>
 
 <p align = "center">
-<sup>Figura 42: Tela mobile de usuários do administrador.<sup>
+<sup>Figura 39: Tela mobile de usuários do administrador.<sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/usuarioAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Sobre a tela de atribuir uma
-trilha ao usuários [Figura 43-44], nela o administrador define uma data para o PTD completar o conteúdo que ele considerou importante para o promotor realizar, de acordo com o protótipo abaixo: 
+trilha ao usuários [Figura 40-41], nela o administrador define uma data para o PTD completar o conteúdo que ele considerou importante para o promotor realizar, de acordo com o protótipo abaixo: 
 
 <div align="center">
-<sup>Figura 43: Página de confirmação de tempo.</sup>
+<sup>Figura 40: Página de confirmação de tempo.</sup>
 </div>
 <div align="center">
 <img src="../assets/assetsWAD/atribuirTrilhaAdm.png">
@@ -1086,39 +1085,39 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 </div>
 
 <p align = "center">
-<sup>Figura 44: Tela mobile de confirmação de tempo.<sup>
+<sup>Figura 41: Tela mobile de confirmação de tempo.<sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/dataADM.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A tela de administração do help [Figura 45-46] permite ao administrador gerenciar as informações exibidas na seção de perguntas frequentes da plataforma. Nessa interface, é possível adicionar novos tópicos de ajuda, além de editar ou remover conteúdos já existentes.
+&emsp; A tela de administração do help [Figura 42-43] permite ao administrador gerenciar as informações exibidas na seção de perguntas frequentes da plataforma. Nessa interface, é possível adicionar novos tópicos de ajuda, além de editar ou remover conteúdos já existentes.
 
 <p align = "center">
-<sup>Figura 45: Tela de help administrador.<sup>
+<sup>Figura 42: Tela de help administrador.<sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/admHelp.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 <p align = "center">
-<sup>Figura 46: Tela mobile de help administrador.<sup>
+<sup>Figura 43: Tela mobile de help administrador.<sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/admHelpMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A tela de edição do help [Figura 47-48] permite ao administrador criar ou modificar cards de perguntas frequentes, inserindo título e conteúdo de forma rápida. 
+&emsp; A tela de edição do help [Figura 44-45] permite ao administrador criar ou modificar cards de perguntas frequentes, inserindo título e conteúdo de forma rápida. 
 
 <p align = "center">
-<sup>Figura 47: Tela de edição do help administrador.<sup>
+<sup>Figura 44: Tela de edição do help administrador.<sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/adicionarHelp.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 <p align = "center">
-<sup>Figura 48: Tela mobile de edição do help administrador.<sup>
+<sup>Figura 45: Tela mobile de edição do help administrador.<sup>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/adicionarHelpMobile.png">
@@ -1131,14 +1130,14 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 
 ### 3.5.1. Modelo relacional (sprints 2 e 4)
 
-&emsp; A seguir, apresenta-se o Diagrama de Entidade e Relacionamento (DER) [Figura 49-61], que é o modelo lógico derivado da MER (Modelagem Entidade e Relacionamento), com a explicação de todas as entidades e seus respectivos relacionamentos. Este diagrama servirá como base para implementação do banco de dados do site.
+&emsp; A seguir, apresenta-se o Diagrama de Entidade e Relacionamento (DER) [Figura 46-57], que é o modelo lógico derivado da MER (Modelagem Entidade e Relacionamento), com a explicação de todas as entidades e seus respectivos relacionamentos. Este diagrama servirá como base para implementação do banco de dados do site.
 
 &emsp; Para fins de organização, será apresentado todas as entidades primeiro e depois seus relacionamentos.
 
 #### Entidades.
 
 <p align = "center">
-<sub>Figura 49: Entidade Usuário</sub>
+<sub>Figura 46: Entidade Usuário</sub>
 </p>
 <p align="center"> 
 <img src="../assets/assetsWAD/usuario_modelo_relacional.png">
@@ -1147,7 +1146,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 &emsp;A imagem acima refere-se à entidade **usuario**, cujos atributos são: **id**, gerado automaticamente após sua criação e que servirá para sua identificação, principalmente dentro do banco de dados; **nome**, fornecido pelo usuário durante o cadastro; **email**, utilizado para contato e para o recebimento de notificações; **senha**, também definida pelo usuário; **cargo**, responsável por diferenciar PTDs (quem fará as trilhas) e Administradores (quem recomenda usuários a fazerem trilhas); **pontuacao**, que representa a pontuação obtida pelo PTD após responder corretamente a uma pergunta de qualquer módulo (este atributo será null para Administradores, já que eles não fazem as trilhas); **created_at**, gerado quando a entidade Usuário é criada; e **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
-<sup>Figura 50: Entidade usuario-trilha</sup>
+<sup>Figura 47: Entidade usuario-trilha</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-trilha_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
@@ -1155,7 +1154,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 &emsp;&emsp; A imagem acima é a tabela intermediária **usuario-trilha**. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso os IDs da entidade **usuario** e **trilha**), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N. Lém disso, temos atributos que relacionam as duas entidades, que são o **status**, que mostrará qual estágio de conclusão ela está, além do atributo **prazo** que mostrará para um certo Usuário qual prazo ele tem para fazer. 
 
 <p align="center">
-<sup>Figura 51: Entidade usuario-certificado</sup>
+<sup>Figura 48: Entidade usuario-certificado</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-certificado_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
@@ -1163,7 +1162,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
  &emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-certificado** também é criada porque a relação Usuário e Certificado é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Certificados).
 
 <p align = "center">
-<sup>Figura 52: Entidade usuario-notificacao</sup>
+<sup>Figura 49: Entidade usuario-notificacao</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-notificacao_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -1171,7 +1170,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 &emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-notificacao** também é criada porque a relação Usuário e Notificação é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Notificação).
 
 <p align = "center">
-<sup>Figura 53: Entidade usuario-modulo</sup>
+<sup>Figura 50: Entidade usuario-modulo</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/usuario-modulo_modelo_relacional .png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -1179,7 +1178,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 &emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-modulo** também é criada porque a relação Usuário e Módulo é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Módulo), além do atributo **esta_completo** que será resposável por mostrar se o módulo foi completado pelo usuário.
 
 <p align = "center">
-<sup>Figura 54: Entidade certificado</sup>
+<sup>Figura 51: Entidade certificado</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/certificado_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -1187,7 +1186,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 &emsp; A imagem acima é referente a tabela da entidade **certificado**, cujos atributos são: **ID próprio**; **titulo**, é o nome dado ao certificado; **descricao**, é a explicação do certificado, com detalhes e skills adquiridos por completar tal trilha; **imagem** guarda a representação visual do certificado; e por fim o **id_trilha**, esse atributo existe porque o certificado é o documento adquirido após completar com êxito alguma trilha, assim, o entidade certificado tem relação de dependência com a entidade trilha.
 
 <p align = "center">
-<sup>Figura 55: Entidade trilha</sup>
+<sup>Figura 52: Entidade trilha</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/trilha_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -1195,7 +1194,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 &emsp; A imagem acima é referente a tabela da entidade **trilha**, cujos atributos são: **ID próprio**; **titulo**, o nome da trilha referente; **prazo**, determinado pelo Administrador, cuja sua função é determinar um tempo para a conclusão de todos os módulos dentro desssa trilha; **created_at** gerado quando a entidade usuário é criada; e o **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
-<sup>Figura 56: Entidade modulo</sup>
+<sup>Figura 53: Entidade modulo</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/modulo_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -1203,7 +1202,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 &emsp; A imagem acima é referente a tabela da entidade **modulo**, cujos atributos são: **ID próprio**; **id_trilha**, será responsável por fazer a relação de dependência de tal módulo a alguma trilha, ou seja, inserindo o módulo a uma trilha; **titulo**, o nome da trilha referente; **conteudo**, será responsável por guardar informações de vídeos, textos, PDFs, tudo referente ao conteúdo que deve ser ensinado nesse módulo; **esta_completo**, sua única função será verificar se a pergunta foi respondida, retornando como módulo completo ou não; **ordem**, para que os módulos fiquem organizados dentro da trilha; **created_at** é gerado quando o atributo usuário é criado; e o **updated_at** é responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
-<sup>Figura 57: Entidade pergunta</sup>
+<sup>Figura 54: Entidade pergunta</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/perguntas_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -1211,7 +1210,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 &emsp; A imagem acima é referente à tabela da entidade **perguntas**, cujos atributos são: **ID próprio**; **enunciado**, é a pergunta referente ao conteúdo do módulo; **id_modulos**, será responsável por fazer a relação de dependência da pergunta com o módulo correspondente; e **pontos**, refere-se aos pontos ganhos ao responder corretamente o enunciado.
 
 <p align = "center">
-<sup>Figura 58: Entidade opcoes</sup>
+<sup>Figura 55: Entidade opcoes</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/opção_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -1219,7 +1218,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 &emsp; A imagem acima é referente à tabela da entidade **opcoes**, cujos atributos são: **ID próprio**; **texto**, é o que estará escrito como potencial resposta para a pergunta correspondente; **id_perguntas**, será responsável por fazer a relação de dependência das opções com a pergunta correspondente; e **eh_correta** identifica se a alternativa é a resposta certa ou não.
 
 <p align = "center">
-<sup>Figura 59: Entidade notificacao</sup>
+<sup>Figura 56: Entidade notificacao</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/notificacao_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -1227,7 +1226,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 &emsp; A imagem acima é referente à tabela da entidade Notificação, cujos seus atributos são: **ID próprio**, **titulo**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação carregará. Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
-<sup>Figura 60: Entidade help</sup>
+<sup>Figura 57: Entidade help</sup>
 </p>
 <p align="center"> <img src="../assets/assetsWAD/Help_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
@@ -1238,7 +1237,7 @@ trilha ao usuários [Figura 43-44], nela o administrador define uma data para o 
 
 <p align = "center">
   
-<sup>Figura 61: Modelo Entidade-Reçacionamento da aplicação web</sup>
+<sup>Figura 58: Modelo Entidade-Reçacionamento da aplicação web</sup>
 
 </p>
 <p align="center"> <img src="../assets/assetsWAD/diagrama_modelo_relacional.png">
@@ -1382,13 +1381,13 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 &emsp; A primeira versão da aplicação web representa um marco inicial no processo de construção do sistema, concentrando-se na estruturação das funcionalidades básicas, priorizando a organização do código e a implementação das rotas da WebAPI. Essa etapa tem como objetivo garantir que a base técnica esteja sólida para permitir o crescimento futuro da aplicação de forma segura, escalável e eficiente.
 
 &emsp; Nesta fase, o foco esteve na criação do back-end da aplicação utilizando o framework Express com Node.js, estruturado dentro do padrão MVC. Foram desenvolvidos diversos endpoints conforme especificado na documentação da WebAPI (ver seção 3.6), os quais já se encontram operacionais. As rotas criadas contemplam operações essenciais como GET, POST, PUT e DELETE, proporcionando uma API RESTful funcional.
-<p align="center"><sup>Figura 62: Representação JSON das trilhas</sup> <img src="../assets/assetsWAD/codigoRotas.jpeg">
+<p align="center"><sup>Figura 59: Representação JSON das trilhas</sup> <img src="../assets/assetsWAD/codigoRotas.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Além disso, foi iniciado o desenvolvimento do front-end [Figura 63-64] da aplicação com uma abordagem rudimentar, utilizando exclusivamente HTML, Tailwind CSS e JavaScript. Essa interface ainda está em estágio inicial, mas já apresenta a estrutura necessária para integrar as funcionalidades do sistema à experiência do usuário. Segue um exemplo da tela inicial e da tela de trilhas:
-<p align="center"><sup>Figura 63: Implementação inicial do front-end da aplicação do home</sup> <img src="../assets/assetsWAD/telaInicialSR.jpeg">
+&emsp; Além disso, foi iniciado o desenvolvimento do front-end [Figura 60-61] da aplicação com uma abordagem rudimentar, utilizando exclusivamente HTML, Tailwind CSS e JavaScript. Essa interface ainda está em estágio inicial, mas já apresenta a estrutura necessária para integrar as funcionalidades do sistema à experiência do usuário. Segue um exemplo da tela inicial e da tela de trilhas:
+<p align="center"><sup>Figura 60: Implementação inicial do front-end da aplicação do home</sup> <img src="../assets/assetsWAD/telaInicialSR.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
-<p align="center"><sup>Figura 64: Implementação inicia do front-end da aplicação das trilhas</sup> <img src="../assets/assetsWAD/telaTrilhasSR.jpeg">
+<p align="center"><sup>Figura 61: Implementação inicia do front-end da aplicação das trilhas</sup> <img src="../assets/assetsWAD/telaTrilhasSR.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Uma das dificuldades encontradas foi agrupar adequadamente cada entidade dos models no seu domínio do controller apropriado, por haver diversas tabelas de relacionamento, foi necessário tirar dúvidas com os professores e monitores sobre a melhor forma de organizar a estrutura do projeto.
@@ -1403,20 +1402,20 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 &emsp; Essas entregas são fundamentais para garantir maior robustez ao sistema, melhorar a experiência do usuário e reduzir riscos relacionados à interoperabilidade entre os componentes da aplicação. Além disso, esta versão permite validar as melhorias implementadas e preparar o ambiente para as funcionalidades que serão adicionadas nas próximas sprints.
 
-<p align="center"><sup>Figura 65: Implementação final do front-end da tela de home</sup> <img src="../assets/assetsWAD/telaHomeWEB.jpeg">
+<p align="center"><sup>Figura 62: Implementação final do front-end da tela de home</sup> <img src="../assets/assetsWAD/telaHomeWEB.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Essa é a tela principal (home) [Figura 65], como se pode observar, houve uma mudança drástica de cores e do layout em relação à primeira versão.
+&emsp; Essa é a tela principal (home) [Figura 62], como se pode observar, houve uma mudança drástica de cores e do layout em relação à primeira versão.
 
-<p align="center"><sup>Figura 66: Implementação final do front-end da tela de perguntas frequentes</sup> <img src="../assets/assetsWAD/telaHelpWEB.jpeg">
+<p align="center"><sup>Figura 63: Implementação final do front-end da tela de perguntas frequentes</sup> <img src="../assets/assetsWAD/telaHelpWEB.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Já essa tela é a de help [Figura 66], que apresenta algumas perguntas frequentes.
+&emsp; Já essa tela é a de help [Figura 63], que apresenta algumas perguntas frequentes.
 
-<p align="center"><sup>Figura 67: Implementação final  do front-end da tela de perguntas rápidas</sup> <img src="../assets/assetsWAD/telaPerguntaWEB.jpeg">
+<p align="center"><sup>Figura 64: Implementação final  do front-end da tela de perguntas rápidas</sup> <img src="../assets/assetsWAD/telaPerguntaWEB.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Essa tela [Figura 67], por sua vez, é a de perguntas rápidas, retornando módulos com base na pesquisa realizada.
+&emsp; Essa tela [Figura 64], por sua vez, é a de perguntas rápidas, retornando módulos com base na pesquisa realizada.
 
 &emsp; As principais dificuldades enfrentadas durante o desenvolvimento da segunda versão envolveram, principalmente, conexão com o banco de dados, a própria integração do front-end com o back-end e período curto de aprendizado e aplicagem do conteúdo estudado no projeto. Como próximos passos, será realizada a otimização de desempenho, versão final da aplicação web, correção de bugs e realização de testes de usuários.
 
