@@ -9,5 +9,6 @@ router.get('/me', UserController.getCurrentUser);
 router.get('/:id', UserController.showById);
 router.patch('/:id', UserController.update);
 router.delete('/:id', UserController.destroy);
+router.get('/find/stats', UserController.getUserStats);
 
 module.exports = router;
