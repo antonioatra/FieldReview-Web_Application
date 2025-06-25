@@ -1718,7 +1718,7 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 
 &emsp; A decisão se justifica pelas tendências observadas nas análises anteriores. Como mostram relatórios da Embrapa e FAO, há demanda crescente por capacitação contínua e acessível, sobretudo no meio rural, onde limitações logísticas e financeiras ainda representam barreiras ao aprendizado formal. Além disso, segundo a McKinsey, investimentos em educação e tecnologia no campo geram aumento de produtividade e valor agregado à cadeia agrícola — o que justifica o investimento estratégico da Bayer nesse projeto, com retorno indireto em eficiência, sustentabilidade e posicionamento de marca.
 
-*6.3 Praça (Distribuição)*
+### Praça
 
 &emsp; O FieldReview, como aplicação web, será distribuído via navegadores, acessível em dispositivos Android, iOS (iPads, iPhones) e desktops, semelhante ao Climate FieldView™. A Bayer o disponibilizará em seu [site oficial](https://www.agro.bayer.com.br/) e na plataforma Orbia, conectando Promotores Técnicos Digitais (PTDs) a agricultores. O LinkedIn será utilizado para promover a ferramenta, com posts direcionados aos profissionais do agronegócio, destacando benefícios como monitoramento de lavouras. Usando sistemas de CRM, a Bayer enviará e-mails segmentados a PTDs, com links diretos para o FieldReview e guias de uso, facilitando a adoção. Eventos como a Agrishow e dias de campo do Bayer Forward Farming promoveriam a ferramenta com demonstrações práticas e QR codes para acesso via navegador. A integração com o programa Impulso Bayer reforçaria a distribuição, oferecendo benefícios como pontos para usuários testarem, garantindo alcance e engajamento com agricultores e distribuidores.
 
@@ -1729,15 +1729,58 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 &emsp; As estratégias de promoção do FieldReview, aplicação web da Bayer Crop Science, focam em canais digitais para capacitar os Promotores Técnicos Digitais (PTDs). SEO é otimizado no site cropscience.bayer.com, com palavras-chave como “capacitação em agricultura”, “estudo FieldView” e “treinamento FieldView”, atraindo PTDs em busca de aprendizado sobre o Climate FieldView. Marketing de conteúdo inclui vídeos no YouTube, com tutoriais práticos sobre o FieldReview, além de blogs ensinando a utilizá-lo. E-mails via Salesforce CRM entregam guias de capacitação e convites para a utilização da plataforma, onde as demonstrações práticas em vídeo reforçam o aprendizado. A integração com o Impulso Bayer oferece pontos por uso, incentivando adoção. 
 
 
-# <a name="c7"></a>7. Conclusões e trabalhos futuros (sprint 5)
+# <a name="c7"></a>7. Conclusões e Trabalhos Futuros
 
-*Escreva de que formas a solução da aplicação web atingiu os objetivos descritos na seção 2 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral.*
+&emsp; A aplicação web FieldReview foi desenvolvida com sucesso, atendendo aos objetivos estabelecidos na seção 2 do documento, que incluíam capacitar os Promotores Técnicos Digitais (PTDs) no uso eficiente do Climate FieldView, melhorar a qualidade do atendimento em campo, reduzir a sobrecarga no suporte remoto e aumentar a satisfação dos clientes da Bayer Crop Science. A plataforma entrega uma solução prática e escalável, alinhada às necessidades do ecossistema agrícola e às tendências de digitalização no setor, promovendo aprendizado contínuo e engajamento dos usuários por meio de trilhas modulares, gamificação e funcionalidades administrativas.
 
-*Relacione os pontos de melhorias evidenciados nos testes com planos de ações para serem implementadas. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para ações futuras*
+### 7.1. Resultados Alcançados
 
-*Relacione também quaisquer outras ideias que o grupo tenha para melhorias futuras*
+&emsp; O desenvolvimento do FieldReview resultou em uma plataforma funcional que cumpre os seguintes objetivos principais:
 
-# <a name="c8"></a>8. Referências (sprints 1 a 5)
+- **Capacitação Eficiente:** As trilhas de aprendizado modulares, com conteúdos intuitivos e busca rápida, permitem que os PTDs adquiram conhecimentos técnicos de forma prática e ágil, reduzindo a dependência de suporte remoto.
+- **Engajamento dos Usuários**: O sistema de pontuação e certificados incentiva a participação ativa dos PTDs, promovendo uma competição saudável e o reconhecimento de suas conquistas.
+- **Gestão de Desempenho:** A interface administrativa oferece aos consultores visibilidade detalhada do progresso individual e coletivo, possibilitando a personalização de trilhas e o acompanhamento em tempo real.
+- **Usabilidade:** A interface responsiva e a identidade visual alinhada à Bayer garantem acessibilidade e consistência, mesmo em contextos com conectividade limitada.
+  
+&emsp; Os testes de integração (seção 5.1) confirmaram a robustez dos endpoints da API, enquanto as telas desenvolvidas (seção 4.2) demonstram avanços significativos na experiência do usuário. A pesquisa com PTDs (seção 6.4) revelou que 100% dos respondentes demonstraram interesse em uma plataforma que facilite o aprendizado, validando a relevância da solução.
+
+### 7.2. Pontos Fortes
+&emsp; Os principais pontos fortes do FieldReview incluem:
+
+- **Foco na Capacitação Contextualizada:** A plataforma é tailor-made para o Climate FieldView, oferecendo conteúdos específicos que atendem diretamente às necessidades dos PTDs no campo.
+- **Sistema de Gamificação:** O ranking de desempenho e a emissão de certificados aumentam a motivação e o engajamento, alinhando-se às preferências psicográficas dos PTDs (seção 6.4).
+- **Flexibilidade Administrativa:** A funcionalidade de atribuição de trilhas e monitoramento de progresso permite aos consultores personalizar o aprendizado, garantindo maior eficácia na capacitação.
+- **Integração com a Marca Bayer:** A identidade visual consistente e a integração com o ecossistema Bayer reforçam a credibilidade e a adoção da plataforma.
+
+### 7.3. Limitações e Oportunidades de Melhoria
+
+&emsp; Apesar dos avanços, algumas limitações foram identificadas durante o desenvolvimento e os testes, oferecendo oportunidades para melhorias:
+
+- **Interface de Certificados:** A apresentação visual dos certificados ainda não está otimizada, podendo impactar a experiência do usuário.
+  - Plano de Ação: Implementar um design mais atrativo e funcional para os certificados, com opções de visualização em PDF e compartilhamento em redes profissionais, como o LinkedIn.
+- **Tela de Perfil:** A seção de perfil do usuário carece de funcionalidades avançadas, como histórico detalhado de trilhas e estatísticas de desempenho.
+  - Plano de Ação: Desenvolver uma interface de perfil mais robusta, com gráficos de progresso e integração com o sistema de pontuação.
+- **Funcionalidade de Alteração de Senha:** A ausência de uma opção para os usuários alterarem suas senhas compromete a autonomia e a segurança.
+  - Plano de Ação: Implementar uma funcionalidade de alteração de senha com validação segura no painel do usuário.
+
+### 7.4. Trabalhos Futuros
+
+&emsp; Para consolidar o FieldReview como uma ferramenta indispensável no ecossistema da Bayer Crop Science e atender às demandas de um mercado agrícola em constante evolução, os seguintes aprimoramentos são sugeridos para versões futuras:
+
+- **Notificações Externas:** Integrar notificações via e-mail e WhatsApp para alertar os PTDs sobre novas trilhas, prazos e atualizações, aumentando a adesão e o engajamento.
+- **Pesquisa com Inteligência Artificial**: Implementar um sistema de busca baseado em IA que interprete a intenção do usuário, oferecendo resultados mais precisos e personalizados para dúvidas em tempo real.
+- **Atribuição de Trilhas em Lote:** Permitir que consultores atribuam trilhas a múltiplos PTDs simultaneamente, otimizando o gerenciamento de equipes numerosas.
+- **Validade de Certificados:** Introduzir um sistema de expiração para certificados, incentivando a recertificação periódica e garantindo a atualização contínua dos conhecimentos.
+- **Integração com Outras Plataformas:** Explorar integrações com outras ferramentas digitais da Bayer, para oferecer benefícios adicionais, como troca de pontos por recompensas.
+- **Análise Avançada de Dados:** Incorporar dashboards analíticos para consultores, com métricas detalhadas sobre o desempenho da equipe e insights baseados em dados para otimizar estratégias de capacitação.
+
+### 7.5. Impacto e Relevância
+
+&emsp; O FieldReview representa um avanço significativo na capacitação de profissionais do agronegócio, alinhando-se às tendências de digitalização e formação contínua destacadas na seção 6.2. Ao melhorar o domínio técnico dos PTDs, a plataforma contribui para a eficiência operacional, a redução de erros e a satisfação dos agricultores, fortalecendo a posição da Bayer como líder em soluções digitais para o campo. Além disso, a escalabilidade da solução permite sua adaptação para outros contextos dentro do setor agrícola, como treinamento de distribuidores ou capacitação de agricultores, ampliando seu impacto potencial.
+
+&emsp; Os próximos passos incluem a realização de testes de usabilidade mais amplos (seção 5.2), a validação com um grupo maior de PTDs e consultores, e a implementação das melhorias sugeridas. Com isso, o FieldReview tem o potencial de se consolidar como uma ferramenta estratégica para a Bayer, promovendo inovação, eficiência e sustentabilidade no agronegócio brasileiro.
+
+# <a name="c8"></a>8. Referências
 
 
 1. AGROLINK. Perfil dos produtores rurais no Brasil: mais jovens e conectados. 2023. Disponível em: https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html. Acesso em: 29 abr. 2025.
