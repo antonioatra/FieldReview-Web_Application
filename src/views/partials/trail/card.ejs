@@ -29,12 +29,20 @@
                     </p>
                   </div>
 
-                  <div
-                    class="relative w-20 h-20 rounded-full border-[10px] border-[#6DBA0D] flex items-center justify-center mr-4">
-                    <div class="absolute inset-[10px] bg-white rounded-full flex items-center justify-center">
-                      <span class="text-black text-sm font-semibold">
-                        <%= trail.progress || 0 %>%
-                      </span>
+                  <div class="mr-4">
+                    <!-- Círculo de progresso simples -->
+                    <div class="relative w-20 h-20 rounded-full border-4 border-gray-300 flex items-center justify-center">
+                      <!-- Barra de progresso circular usando conic-gradient inline -->
+                      <div 
+                        class="absolute inset-0 rounded-full"
+                        style="background: conic-gradient(#22c55e 0% <%= trail.progress || 0 %>%, transparent <%= trail.progress || 0 %>% 100%);"
+                      ></div>
+                      <!-- Círculo interno branco -->
+                      <div class="relative w-14 h-14 bg-white rounded-full flex items-center justify-center z-10">
+                        <span class="text-black text-sm font-semibold">
+                          <%= Math.round(trail.progress || 0) %>%
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>

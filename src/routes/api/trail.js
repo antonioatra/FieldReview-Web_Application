@@ -11,5 +11,6 @@ router.post('/:id/user/:userId', TrailController.assignTrail);
 router.get('/user/:userId', TrailController.showByUser);
 router.get('/completed/:userId', TrailController.getCompletedTrails);
 router.post('/module/:moduleId/complete/:userId', TrailController.markModuleComplete);
+router.get('/progress/:userId/:trailId', TrailController.getTrailProgress);
 
 module.exports = router;
