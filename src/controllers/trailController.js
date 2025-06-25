@@ -43,7 +43,7 @@ exports.update = async (req, res) => {
     await Trail.update(id, { titulo });
     
     // Se módulos foram enviados, atualizar/criar módulos
-    if (req.body.modules && Array.isArray(req.body.modules)) {
+  /*   if (req.body.modules && Array.isArray(req.body.modules)) {
       const Module = require('../models/module');
       
       // Deletar módulos existentes da trilha
@@ -61,7 +61,7 @@ exports.update = async (req, res) => {
           });
         }
       }
-    }
+    } */
     
     res.status(200).json({ message: 'Trilha atualizada com sucesso' });
   } catch (err) {
@@ -133,5 +133,53 @@ exports.showByUser = async (req, res) => {
     res.status(200).json({ message: 'Trilhas do usuário retornadas com sucesso', trails });
   } catch (err) {
     res.status(500).json({ error: 'Erro ao retornar trilhas do usuário' });
+  }
+};
+
+exports.getCompletedTrails = async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const user = await User.findById(userId);
+    if (!user) return res.status(404).json({ error: 'Usuário não encontrado' });
+
+    const completedTrails = await Trail.getCompletedTrailsByUser(userId);
+    res.status(200).json({ 
+      message: 'Trilhas concluídas retornadas com sucesso', 
+      completedTrails 
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Erro ao retornar trilhas concluídas' });
+  }
+};
+
+exports.markModuleComplete = async (req, res) => {
+  const { moduleId, userId } = req.params;
+  try {
+    const user = await User.findById(userId);
+    if (!user) return res.status(404).json({ error: 'Usuário não encontrado' });
+
+    const result = await Trail.markModuleComplete(userId, moduleId);
+    res.status(200).json({ 
+      message: 'Módulo marcado como completo', 
+      completion: result 
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Erro ao marcar módulo como completo' });
+  }
+};
+
+exports.getTrailProgress = async (req, res) => {
+  const { userId, trailId } = req.params;
+  try {
+    const user = await User.findById(userId);
+    if (!user) return res.status(404).json({ error: 'Usuário não encontrado' });
+
+    const progress = await Trail.getTrailProgressByUser(userId, trailId);
+    res.status(200).json({ 
+      message: 'Progresso da trilha calculado', 
+      progress 
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Erro ao calcular progresso da trilha' });
   }
 };

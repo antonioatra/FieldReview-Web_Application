@@ -39,7 +39,7 @@
 
 <br>
 
-# <a name="c1"></a>1. Introdução (sprints 1 a 5)
+# <a name="c1"></a>1. Introdução 
 
 &emsp; O Climate FieldView faz parte do portfólio de soluções digitais da Bayer Crop Science, que visa ajudar os agricultores a tomarem decisões mais informadas e precisas em suas operações agrícolas. A plataforma oferece uma variedade de ferramentas e recursos para monitorar e gerenciar as atividades agrícolas, desde o planejamento até a colheita. A problemática trazida pelo parceiro se dá à medida que os agentes responsáveis para a instalação e suporte presencial do produto nas fazendas (os chamados Promotores Técnicos Digitais) muitas vezes não possuem a capacitação técnica necessária para realizar tais atendimentos. 
 
@@ -48,16 +48,16 @@
 &emsp; Além disso, a plataforma conta com um sistema de gamificação e pontos que visa incentivar o aprendizado e a aplicação prática dos conhecimentos adquiridos, possibilitando tanto que os promotores técnicos se capacitem para realizar atendimentos mais qualificados, quanto que a liderança tenha um controle sobre o nível de conhecimento dos seus promotores.
 
 
-# <a name="c2"></a>2. Visão Geral da Aplicação Web (sprint 1)
+# <a name="c2"></a>2. Visão Geral da Aplicação Web 
 
 &emsp; Na seção a seguir será apresentada a visão geral do projeto, englobando o escopo do projeto, persona e user stories para levantar informações acerca dos negócios e UX da solução.
 
-## 2.1. Escopo do Projeto (sprints 1 e 4)
+## 2.1. Escopo do Projeto 
 &emsp; No que diz respeito ao escopo do projeto, realizou-se uma análise aprofundada da empresa e da aplicação web, resultando: modelo de 5 forças de Porter, análise SWOT, solução, value proposition canvas e matriz de riscos.
 
-### 2.1.1. Modelo de 5 Forças de Porter (sprint 1)
+### 2.1.1. Modelo de 5 Forças de Porter 
 
-&emsp; O modelo de 5 forças de Porter é uma ferramenta de análise para avaliar a competitividade no setor de negócios que a empresa atua <sup>[7]</sup>. Sob o ponto de vista da Bayer Crop Science, montou-se o seguinte modelo [Figura 1]:
+&emsp; O modelo de 5 forças de Porter é uma ferramenta de análise para avaliar a competitividade no setor de negócios que a empresa atua. Sob o ponto de vista da Bayer Crop Science, montou-se o seguinte modelo [Figura 1]:
 
 <p align="center">
 <sup>Figura 1: 5 Forças de Porter aplicadas à empresa Bayer Crop Science.</sup> <br>
@@ -69,30 +69,30 @@
 
 &emsp; Em relação à concorrência no mercado agrícola, os rivais da Bayer Crop Science podem ser divididos entre o ramo de sementes, proteção de cultivos e soluções digitais.
 
-&emsp; No que diz respeito à área de sementes, a rivalidade entre os concorrentes é alta, uma vez que há grandes companhias atuando nesse ramo. A exemplo disso, pode-se citar empresas como: DowDuPont Inc., Syngenta AG, Groupe Limagrain e KWS SAAT SE <sup>[9]</sup>.
+&emsp; No que diz respeito à área de sementes, a rivalidade entre os concorrentes é alta, uma vez que há grandes companhias atuando nesse ramo. A exemplo disso, pode-se citar empresas como: DowDuPont Inc., Syngenta AG, Groupe Limagrain e KWS SAAT SE.
 
-&emsp; No que se refere ao mercado de proteção de cultivos, a rivalidade entre concorrentes também é alta, já que existem diversas empresas grandes disputando nessa área. Dentre as principais empresas, cita-se: Syngenta Crop Protection, BASF, Corteva, entre outras <sup>[2]</sup>.
+&emsp; No que se refere ao mercado de proteção de cultivos, a rivalidade entre concorrentes também é alta, já que existem diversas empresas grandes disputando nessa área. Dentre as principais empresas, cita-se: Syngenta Crop Protection, BASF, Corteva, entre outras.
 
-&emsp; Com relação ao ramo de soluções digitais na agricultura, a rivalidade entre concorrentes é alta, visto que é um mercado dominado por big techs. Exemplificando, essa área é dominada pelas empresas AGCO Corporation, Deere & Company, IBM Corporation e Microsoft <sup>[8]</sup>.
+&emsp; Com relação ao ramo de soluções digitais na agricultura, a rivalidade entre concorrentes é alta, visto que é um mercado dominado por big techs. Exemplificando, essa área é dominada pelas empresas AGCO Corporation, Deere & Company, IBM Corporation e Microsoft.
 
 
 #### **Poder de barganha dos compradores**
 
-&emsp; O poder de barganha dos clientes é baixo, visto que os produtos oferecidos pela Bayer Crop Science oferecem funcionalidades e tecnologias exclusivas que reduzem a sensibilidade dos clientes ao preço. Exemplificando, há o programa de fidelidade Impulso Bayer, na qual é possível trocar pontos por recompensas <sup>[5]</sup>, e o produto FieldView apresenta ferramentas tecnológicas únicas para o produtor rural <sup>[4]</sup>. Assim, os fatores técnicos e as exclusividades que a empresa oferece são decisivos para motivar a compra dos consumidores.
+&emsp; O poder de barganha dos clientes é baixo, visto que os produtos oferecidos pela Bayer Crop Science oferecem funcionalidades e tecnologias exclusivas que reduzem a sensibilidade dos clientes ao preço. Exemplificando, há o programa de fidelidade Impulso Bayer, na qual é possível trocar pontos por recompensas, e o produto FieldView apresenta ferramentas tecnológicas únicas para o produtor rural. Assim, os fatores técnicos e as exclusividades que a empresa oferece são decisivos para motivar a compra dos consumidores.
 
 #### **Poder de barganha dos fornecedores**
 
-&emsp; O poder de barganha dos fornecedores é alto, devido à necessidade que a empresa possui por serviços especializados de outras companhias. Acerca disso, no ramo de sementes, como exemplo há o Agroeste e Dekalb; na proteção de cultivos, existem a Curbix, Sivanto e outros; além disso, nas soluções digitais, pode-se citar o The Climate Corporation com a plataforma agrícola Climate FieldView <sup>[3]</sup>.
+&emsp; O poder de barganha dos fornecedores é alto, devido à necessidade que a empresa possui por serviços especializados de outras companhias. Acerca disso, no ramo de sementes, como exemplo há o Agroeste e Dekalb; na proteção de cultivos, existem a Curbix, Sivanto e outros; além disso, nas soluções digitais, pode-se citar o The Climate Corporation com a plataforma agrícola Climate FieldView.
 
 #### **Ameaça de produtos substitutos**
 
-&emsp; A ameaça de produtos substitutos é média, levando em conta o perfil diversificado dos produtores rurais. Embora uma grande quantidade de produtores rurais optem por serviços já usados cotidianamente, percebe-se que atualmente há uma crescente adoção de soluções digitais e novas tecnologias nos campos agrícolas. Dessa forma, percebe-se a mudança de perfil dos consumidores, aceitando o emprego de novos produtos em suas propriedades <sup>[1]</sup>.
+&emsp; A ameaça de produtos substitutos é média, levando em conta o perfil diversificado dos produtores rurais. Embora uma grande quantidade de produtores rurais optem por serviços já usados cotidianamente, percebe-se que atualmente há uma crescente adoção de soluções digitais e novas tecnologias nos campos agrícolas. Dessa forma, percebe-se a mudança de perfil dos consumidores, aceitando o emprego de novos produtos em suas propriedades.
 
 #### **Ameaça de novos entrantes**
 
-&emsp; A ameaça de novos entrantes é baixa, tendo em vista que o mercado agrícola já é bem consolidado com empresas de grande relevância internacional. Sob esse contexto, o ramo agrícola é de alta competitividade no nível mundial, na qual empresas como a própria Bayer Crop Science, Corteva, Phos Agro, AGCO, Sime Darby Plantation e outras companhias disputam um lugar de destaque. Por conseguinte, apesar do crescimento constante, o mercado agrícola é de difícil acesso para novos entrantes em todas as áreas de atuação do agronegócio <sup>[6]</sup>.
+&emsp; A ameaça de novos entrantes é baixa, tendo em vista que o mercado agrícola já é bem consolidado com empresas de grande relevância internacional. Sob esse contexto, o ramo agrícola é de alta competitividade no nível mundial, na qual empresas como a própria Bayer Crop Science, Corteva, Phos Agro, AGCO, Sime Darby Plantation e outras companhias disputam um lugar de destaque. Por conseguinte, apesar do crescimento constante, o mercado agrícola é de difícil acesso para novos entrantes em todas as áreas de atuação do agronegócio.
 
-### 2.1.2. Análise SWOT da Instituição Parceira (sprint 1)
+### 2.1.2. Análise SWOT da Instituição Parceira 
 
 &emsp; A Análise SWOT [Figura 2] (também conhecida como Matriz FOFA, no Brasil) é uma ferramenta estratégica utilizada para avaliar os pontos fortes (Strengths), pontos fracos (Weaknesses), oportunidades (Opportunities) e ameaças (Threats) de uma organização, projeto ou situação. Ela auxilia na compreensão do cenário interno e externo, facilitando a tomada de decisões mais conscientes e eficazes.
 
@@ -112,7 +112,7 @@
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
-### 2.1.3. Solução (sprints 1 a 5)
+### 2.1.3. Solução 
 
 &emsp; A solução baseia-se em uma parceria com a Bayer, que oferece uma ferramenta chamada Climate FieldView — um sistema de software e hardware utilizado para coletar dados de máquinas agrícolas e monitorar a saúde das lavouras. No entanto, essa ferramenta apresenta dificuldades em sua instalação e manuseio por parte dos PTDs (Promotores Técnicos Digitais), uma vez que esses profissionais nem sempre possuem a capacitação técnica necessária para realizar um trabalho eficiente e satisfatório.
 
@@ -137,11 +137,11 @@
 
 &emsp; Com a efetiva atuação da plataforma espera-se que os PTDs estejam preparados para a sua área de atuação e execução de suas atividades de maneira direta e ágil. Como critério de avaliação será possível perceber uma diminuição na sobrecarga do atendimento remoto e uma melhor avaliação dos clientes sobre a atuação dos PTDs.
 
-### 2.1.4. Value Proposition Canvas (sprint 1): 
+### 2.1.4. Value Proposition Canvas : 
 
-&emsp; Segundo Pereira<sup>[10]</sup>, o modelo de negócio criado por Alexander Osterwalder, Yves Pigneur e Alan Smith denominado “Value Proposition Canvas” [Figura 3] é uma ferramenta desenhada para garantir que o produto atenda às necessidades dos clientes, traga-lhes benefícios e resolva seus problemas, estruturando como o serviço agrega valor a eles. Para isso, a ferramenta utiliza duas seções do Business Model Canvas, a saber: “Segmentos de Clientes” e “Propostas de Valor”.
+&emsp; Segundo Pereira, o modelo de negócio criado por Alexander Osterwalder, Yves Pigneur e Alan Smith denominado “Value Proposition Canvas” [Figura 3] é uma ferramenta desenhada para garantir que o produto atenda às necessidades dos clientes, traga-lhes benefícios e resolva seus problemas, estruturando como o serviço agrega valor a eles. Para isso, a ferramenta utiliza duas seções do Business Model Canvas, a saber: “Segmentos de Clientes” e “Propostas de Valor”.
 
-&emsp; Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um perfil apresentado pelo cliente mostrando suas tarefas, suas dores e seus ganhos. O lado esquerdo inclui a proposta de valor que deve ser entregue ao cliente, abrangendo produtos e serviços, criadores de benefícios e analgésicos (este é o mapa de valor)<sup>[10]</sup>.
+&emsp; Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um perfil apresentado pelo cliente mostrando suas tarefas, suas dores e seus ganhos. O lado esquerdo inclui a proposta de valor que deve ser entregue ao cliente, abrangendo produtos e serviços, criadores de benefícios e analgésicos (este é o mapa de valor).
 
 &emsp; Portanto, é importante descrever o conceito geral de cada tópico, mostrar a relação entre eles e como eles se afetam direta ou indiretamente. Portanto, os tópicos subsequentes abordarão elementos inerentes ao Value Proposition Canvas da solução proposta para o projeto atual, iniciando pelo perfil do cliente. Além disso, a Figura 3 mostra esses elementos visualmente:
 
@@ -153,7 +153,7 @@
 
 #### Tarefas do Cliente
 
-&emsp; Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, auxiliando no entendimento de como é possível agir perante a problemática em questão<sup>[10]</sup>.. No contexto da capacitação de promotores, o cliente realiza as seguintes tarefas:
+&emsp; Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, auxiliando no entendimento de como é possível agir perante a problemática em questão. No contexto da capacitação de promotores, o cliente realiza as seguintes tarefas:
 
 - **Utilizar o site de “Ajuda Rápida” do Climate FIELDVIEW:** O PTD(Promotor Técnico Digital) depende de um site que não foca em ensinar adequadamente ele sobre o uso do Climate FieldView.
 
@@ -163,7 +163,7 @@
 
 #### Ganhos
 
-&emsp; No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Esta parte foca naquilo que o cliente almeja alcançar no escopo em questão, devendo cada ganho ser viabilizado por um criador de ganho correspondente<sup>[10]</sup>. Assim, foram identificados os seguintes ganhos:
+&emsp; No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Esta parte foca naquilo que o cliente almeja alcançar no escopo em questão, devendo cada ganho ser viabilizado por um criador de ganho correspondente. Assim, foram identificados os seguintes ganhos:
 
 - **Aprimorar competências específicas:** com uma análise feita pelo Consultor de Sucesso do Cliente, ele pode mandar ao PTD especifico uma trilha que ele pode se preocupar mais. 
 
@@ -182,7 +182,7 @@
 
 #### Dores
 
-&emsp; No segmento de dores, há a definição daquilo com que o cliente sofre em decorrência da falta de uma solução efetiva ao seu problema<sup>[10]</sup>.. As dores identificadas foram:
+&emsp; No segmento de dores, há a definição daquilo com que o cliente sofre em decorrência da falta de uma solução efetiva ao seu problema. As dores identificadas foram:
 
 - **Não há nenhuma plataforma de capacitação adequada e ágil:** não tem uma plataforma que torne os Promotores capacitados ou possa os ajudar rápido e efetivamente.
 
@@ -198,7 +198,7 @@
 
 #### Produtos e Serviços
 
-&emsp; No segmento de produtos e serviços, há a identificação daquilo que deve ser entregue ao cliente, por meio de funcionalidades definidas e claras <sup>[10]</sup>. No presente contexto, propõe-se:
+&emsp; No segmento de produtos e serviços, há a identificação daquilo que deve ser entregue ao cliente, por meio de funcionalidades definidas e claras. No presente contexto, propõe-se:
 Plataforma web com trilhas de aprendizado voltadas aos promotores, com foco na melhoria de sua capacitação em campo: trazer uma solução web, de fácil acesso.
 
 - **Sistema com acessos distintos para o Consultor de Sucesso do Cliente e para os promotores, facilitando a avaliação dos promotores pelo consultor:** trazer uma área destinada ao consultor, para saber sobre os promotores, e outra para os promotores com suas trilhas a serem feitas.
@@ -209,7 +209,7 @@ Plataforma web com trilhas de aprendizado voltadas aos promotores, com foco na m
 
 #### Criadores de Ganhos
 
-&emsp; Os criadores de ganhos identificam o que será implementado para gerar satisfação ao cliente, estando conectados diretamente aos ganhos elencados no perfil do cliente <sup>[10]</sup>. Assim, temos:
+&emsp; Os criadores de ganhos identificam o que será implementado para gerar satisfação ao cliente, estando conectados diretamente aos ganhos elencados no perfil do cliente. Assim, temos:
 Trilhas de capacitação para os promotores, com recursos visuais e auditivos, visando aprimorar suas habilidades e a qualidade do seu trabalho: trilhas com métodos de ensino diversos para auxiliar os PDT’s a serem capacitados e elevar sua qualidade de atendimento.
 
 - **Permitir que o Consultor possa indicar trilhas específicas ao promotor, caso necessário:** permitir que os Consultores possam indicar trilhas a serem feitas para melhorar especificamente algumas capacitações dos Promotores, trazendo um meio de comunicação entre ambos.
@@ -220,7 +220,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 
 #### Aliviadores de Dor
 
-&emsp; Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas<sup>[10]</sup>. Nesse sentido, definem-se:
+&emsp; Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas. Nesse sentido, definem-se:
 
 - **Plataforma web estruturada em trilhas e módulos de aprendizado, projetada para apoiar a capacitação do promotor com agilidade e eficiência:** plataforma intuitiva e de fácil acesso para os Promotores possam acessar e aprender com métodos diferentes.
 
@@ -228,7 +228,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 
 - **Recomendações de trilhas personalizadas, definidas com a orientação do consultor:** o Consultor poder indicar aos Promotores que achar justo, trilhas que possam ser déficits ou sejam mais requisitadas que outras mais normais.
 
-### 2.1.5. Matriz de Riscos do Projeto (sprint 1)
+### 2.1.5. Matriz de Riscos do Projeto 
 
 &emsp; A matriz de riscos [Figura 4] é uma ferramenta essencial para identificar, avaliar e priorizar ameaças que podem impactar o projeto. A avaliação qualitativa de riscos utiliza uma matriz que integra frequência (probabilidade de ocorrência) e severidade (impacto econômico). Os riscos de alta severidade e frequência requerem atenção imediata, enquanto os de menor impacto podem ser monitorados com menor urgência. Essa priorização permite a distribuição eficaz de recursos para ações preventivas e corretivas, garantindo a continuidade do projeto.
 
@@ -278,7 +278,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 </p>
 
 
-## 2.2. Personas (sprint 1)
+## 2.2. Personas 
 
 &emsp; As personas [Figuras 5-6] mapeadas para o projeto representam os perfis centrais dos usuários que interagem diretamente com a solução proposta. As personas foram desenvolvidas com base nas necessidades do parceiro Bayer Crop Science e visam orientar decisões de design, funcionalidades e usabilidade da aplicação.
 
@@ -294,7 +294,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 <p align="center"> <img src="../assets/assetsWAD/personasconsultor.png"> 
 <br> <sub>Fonte:  Material produzido pelos autores (2025).</sub> </p>
 
-## 2.3. User Stories (sprints 1 a 5)
+## 2.3. User Stories 
 
 &emsp; As User Stories [Quadros 7-18] são um elemento essencial para o planejamento de um projeto, pois elas norteiam o grupo a realizar suas tarefas com base em uma das personas desenvolvidas pelo grupo. Assim, projetou-se as seguintes personas de acordo com os quadros abaixo:
 
@@ -524,11 +524,10 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
-# <a name="c3"></a>3. Projeto da Aplicação Web (sprints 1 a 4)
+# <a name="c3"></a>3. Projeto da Aplicação Web 
 
-## 3.1. Arquitetura (sprints 3 e 4)
+## 3.1. Arquitetura 
 
-*Posicione aqui o diagrama de arquitetura da sua solução de aplicação web. Atualize sempre que necessário*
 
 &emsp; A arquitetura de uma aplicação web [Figura 7-8] consiste em uma representação gráfica de como os vários componentes da solução interagem entre si (HASH, 2025). Essa representação é importante para visualizar como funciona o relacionamento entre cliente e servidor, e como essas operações são executadas por outras partes da plataforma web. Dessa maneira, é importante projetar o modo como ocorrerá essas interações para então inicar a construção da solução Web.
 
@@ -540,7 +539,7 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 
 - Controller (Controlador): Faz a intermediação entre as duas camadas, levando requisições e respostas entre elas, fazendo parte do backend do projeto.
 
-&emsp; Dessa maneira, realizou-se o seguinte diagrama da arquitetura MVC do Field Review no draw.io:
+&emsp; Dessa maneira, realizou-se o seguinte diagrama da arquitetura MVC do Field Review no draw.io, representado pela imagem 7:
 
 <div align="center">
 <sup>
@@ -560,7 +559,7 @@ Fonte : Material produzido pelos autores (2025).<br>
 
 [Clique aqui para melhor visualização](https://drive.google.com/file/d/1bAWjgLLZlXq5cCn7E9oCHs4irSq8bSpP/view?usp=sharing)
 
-&emsp; Além disso, realizou-se esse diagrama utilizando o mermaid.js:
+&emsp; Além disso, realizou-se esse diagrama utilizando o mermaid.js, representado pela imagem 8:
 
 <div align="center">
 <sup>
@@ -634,7 +633,7 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 
 &emsp; Portanto, é notável como a utilização de uma arquitetura em uma aplicação organiza e distribui as tarefas de uma plataforma de maneira eficiente e que permita a continuidade do desenvolvimento por outros colaboradores.
 
-## 3.2. Wireframes (sprint 2)
+## 3.2. Wireframes 
 
 &emsp; O wireframe [Figura 9-15] é uma representação esquemática inicial de uma interface de usuário, geralmente elaborada com baixa fidelidade. Seu objetivo principal é auxiliar na definição da estrutura e na disposição dos elementos visuais e informacionais da interface, sem, contudo, abordar em profundidade as funcionalidades ou aspectos estéticos do sistema. Essa ferramenta é amplamente utilizada nas etapas iniciais do design de interfaces, por permitir uma visualização clara da hierarquia da informação e da navegação pretendida, facilitando a comunicação entre designers, desenvolvedores e demais *stakeholders*.
 
@@ -656,7 +655,7 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 <img src="../assets/assetsWAD/mobileUsuarioPadrao.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Após realizar o login, a plataforma irá redirecionar para a tela correspondente à função do usuário: comum ou administrador. Na tela inicial do usuário, é possível observar o ranking geral e a sua posição, além de notificações sobre atualizações, trilhas já concluídas e trilhas disponíveis.
+&emsp; Após realizar o login, a plataforma irá redirecionar para a tela correspondente à função do usuário: comum ou administrador (Figura 9 e 10). Na tela inicial do usuário, é possível observar o ranking geral e a sua posição, além de notificações sobre atualizações, trilhas já concluídas e trilhas disponíveis.
 
 &emsp; Na interface inicial destinada ao usuário comum, são disponibilizadas as seguintes informações:
 
@@ -683,7 +682,7 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 <img src="../assets/assetsWAD/mobileTrilhas.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Na listagem de trilhas exibida na página inicial, ao selecionar a trilha de interesse, o usuário é redirecionado para a interface específica da trilha escolhida. Nessa tela, são apresentados os módulos que a compõem, cada um contendo:
+&emsp; Na listagem de trilhas exibida na página inicial (Figuras 11 e 12), ao selecionar a trilha de interesse, o usuário é redirecionado para a interface específica da trilha escolhida. Nessa tela, são apresentados os módulos que a compõem, cada um contendo:
 
 * Material de estudo relacionado ao tema do módulo;  
 * Uma pergunta destinada à validação do conhecimento adquirido pelo usuário.
@@ -713,7 +712,7 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 <img src="../assets/assetsWAD/mobileAdminUsuarios.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Na aba de 'Usuários', o administrador tem acesso a uma tabela que exibe o ranking dos usuários, com a possibilidade de visualizar estatísticas individuais. Essas estatísticas incluem as trilhas já concluídas, a pontuação no ranking e a opção de recomendar trilhas que ainda não foram realizadas.
+&emsp; Na aba de 'Usuários', o administrador tem acesso a uma tabela que exibe o ranking dos usuários, com a possibilidade de visualizar estatísticas individuais (Figura 13 e 14). Essas estatísticas incluem as trilhas já concluídas, a pontuação no ranking e a opção de recomendar trilhas que ainda não foram realizadas.
 
 <p align = "center">
 <sup>Figura 15: Fluxo de navagação entre as telas da plataforma web</sup>
@@ -722,7 +721,7 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 <img src="../assets/assetsWAD/FieldReviewFull.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Representação de como ocorrerá o fluxo entre as telas dentro da aplicação. O wireframe é extremamente importante para a etapa inicial do desenvolvimento do projeto.
+&emsp; A figura 15 é a representação de como ocorrerá o fluxo entre as telas dentro da aplicação. O wireframe é extremamente importante para a etapa inicial do desenvolvimento do projeto.
 
 Segue o link do local onde foi desenvolvido o wireframe para visualização de todas as telas da aplicação:<br>
  https://whimsical.com/fieldreview-home-FCLJQWvMrHGbsAYkEbDkzE
@@ -731,10 +730,12 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 
 
-## 3.3. Guia de estilos (sprint 3)
+## 3.3. Guia de estilos 
 
 
 ### 3.3.1 Cores
+
+&emsp; Um guia de cores é um documento que define um conjunto padronizado de cores a serem usadas em uma interface digital, com o objetivo de garantir consistência visual, usabilidade e identidade da marca.
 
 <p align = "center">
 <sup>Figura 16: Guia de Cores</sup>
@@ -745,14 +746,13 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 &emsp; Um guia de cores [Figura 16]é um documento que define um conjunto padronizado de cores a serem usadas em uma interface digital, com o objetivo de garantir consistência visual, usabilidade e identidade da marca.
 
-&emsp; No guia apresentado, as cores são organizadas por grupo cromático (como azul, verde, rosa, etc.), tonalidade (clara, média ou escura) e uso sugerido (como links, botões, textos ou fundos). Cada cor tem um código hexadecimal específico, o que facilita sua aplicação no desenvolvimento web. Além disso, o guia indica como utilizar cada cor de forma funcional — por exemplo, azul claro para links, verde brilhante para indicadores positivos, e preto para textos.
+&emsp; No guia apresentado na imagem 16, as cores são organizadas por grupo cromático (como azul, verde, rosa, etc.), tonalidade (clara, média ou escura) e uso sugerido (como links, botões, textos ou fundos). Cada cor tem um código hexadecimal específico, o que facilita sua aplicação no desenvolvimento web. Além disso, o guia indica como utilizar cada cor de forma funcional — por exemplo, azul claro para links, verde brilhante para indicadores positivos, e preto para textos.
 
 ### 3.3.2 Tipografia
 
-
 &emsp; A tipografia da aplicação Web [Figura 17-18] é baseada no guia de marca da empresa Bayer, na qual a fonte Helvetica, amplamente utilizada pela Bayer em suas soluções tecnológicas e materiais online, foi adotada para garantir identidade visual e consistência.
 
-&emsp; Com a adaptação da plataforma para desktop e dispotivos móveis, realizou-se um guia para a versão de computador e outro para celular. Dessa maneira, o guia tipográfico ficou da seguinte forma:
+&emsp; Com a adaptação da plataforma para desktop e dispotivos móveis, realizou-se um guia para a versão de computador (Figura 17) e outro para celular (Figura 18). Dessa maneira, o guia tipográfico ficou da seguinte forma:
 
 - **Guia de estilos tipográfico para o computador:**
 
@@ -843,7 +843,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
   &emsp; O [Hero Icons](https://heroicons.com/) oferece uma ampla biblioteca de ícones gratuitos, compatíveis com qualquer página web. Além disso, a plataforma assegura a otimização e compatibilidade dos elementos, permitindo que o foco do desenvolvimento permaneça no conteúdo e no estilo do projeto. Por isso, optamos por integrar os ícones do Hero Icons em nosso projeto. Todos os ícones estão disponíveis nos formatos SVG e JSX.
 
-  &emsp; Abaixo, apresentamos os ícones selecionados até o momento pela equipe de desenvolvimento. Para manter a padronização visual, todos foram escolhidos na versão "Solid".
+  &emsp; Na imagem 19, apresentamos os ícones selecionados até o momento pela equipe de desenvolvimento. Para manter a padronização visual, todos foram escolhidos na versão "Solid".
 
 <p align = "center">
 <sup>Figura 19: Iconografia do Projeto</sup>
@@ -855,7 +855,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 **Logo**
 
- &emsp; Além dos elementos mencionados no tópico anterior, é importante destacar o papel central que o logo da aplicação FieldReview desempenha em toda a plataforma. Desenvolvida com base nas cores primárias da Bayer (azul e verde) e elementos gráficos que remetem a logo do Climate FieldView, ele não apenas reflete visualmente o nome do projeto, mas também incorpora sua essência e propósito dentro do ecossistema de soluções Bayer/Climate FieldView. A presença consistente do logo ao longo da plataforma reforçará a identidade visual da marca, tornando-o instantaneamente reconhecível e associado com os valores e objetivos do FieldReview.
+ &emsp; Além dos elementos mencionados no tópico anterior, é importante destacar o papel central que o logo da aplicação FieldReview desempenha em toda a plataforma. Desenvolvida com base nas cores primárias da Bayer (azul e verde) e elementos gráficos que remetem a logo do Climate FieldView, ele não apenas reflete visualmente o nome do projeto, mas também incorpora sua essência e propósito dentro do ecossistema de soluções Bayer/Climate FieldView. A presença consistente do logo ao longo da plataforma reforçará a identidade visual da marca, tornando-o instantaneamente reconhecível e associado com os valores e objetivos do FieldReview. A imagem 20 é a logo produzida.
 
 <p align = "center">
 <sup>Figura 20: Logo do Projeto</sup>
@@ -868,6 +868,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 ## 3.4 Protótipo de alta fidelidade (sprint 3)
 
 &emsp; Para preparar a implementação do frontend da aplicação Web, realizou-se o seguinte protótipo de alta fidelidade [Figura 21]:
+
 
 <div align="center">
 <sup>Figura 21: Fluxo do protótipo de alta fidelidade.</sup>
@@ -883,7 +884,8 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 &emsp; Para a realização do protótipo de alta fidelidade, utilizou-se o guia de estilos para guiar a elaboração das telas da plataforma. Além disso, realizou-se a divisão do fluxo do site em um caminho para o promotor técnico digital (PTD) e outra para o administrador.
 
-&emsp; A primeira tela [Figura 22-23] do site consiste no login e cadastro na plataforma, realizada de acordo com a US04 para suprir a necessidade do PTD entrar na plataforma para acessar o conteúdo. Assim, essa primeira tela ficou da seguinte maneira:
+
+&emsp; A primeira tela do site [Figura 22-23] consiste no login e cadastro na plataforma, realizada de acordo com a US04 para suprir a necessidade do PTD entrar na plataforma para acessar o conteúdo. Assim, essa primeira tela ficou da seguinte maneira:
 
 <div align="center">
 <sup>Figura 22: Tela de login da aplicação.</sup>
@@ -1126,9 +1128,9 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 
 &emsp; Portanto, esse fluxo específico do administrador foi realizado para suprir as necessidades do consultor para gerenciar sua equipe de maneira mais eficiente e criar material de qualidade para os usuários.
 
-## 3.5. Modelagem do banco de dados (sprints 2 e 4)
+## 3.5. Modelagem do banco de dados 
 
-### 3.5.1. Modelo relacional (sprints 2 e 4)
+### 3.5.1. Modelo relacional 
 
 &emsp; A seguir, apresenta-se o Diagrama de Entidade e Relacionamento (DER) [Figura 46-57], que é o modelo lógico derivado da MER (Modelagem Entidade e Relacionamento), com a explicação de todas as entidades e seus respectivos relacionamentos. Este diagrama servirá como base para implementação do banco de dados do site.
 
@@ -1143,7 +1145,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <img src="../assets/assetsWAD/usuario_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
 
-&emsp;A imagem acima refere-se à entidade **usuario**, cujos atributos são: **id**, gerado automaticamente após sua criação e que servirá para sua identificação, principalmente dentro do banco de dados; **nome**, fornecido pelo usuário durante o cadastro; **email**, utilizado para contato e para o recebimento de notificações; **senha**, também definida pelo usuário; **cargo**, responsável por diferenciar PTDs (quem fará as trilhas) e Administradores (quem recomenda usuários a fazerem trilhas); **pontuacao**, que representa a pontuação obtida pelo PTD após responder corretamente a uma pergunta de qualquer módulo (este atributo será null para Administradores, já que eles não fazem as trilhas); **created_at**, gerado quando a entidade Usuário é criada; e **updated_at**, responsável por registrar quando o usuário é atualizado.
+&emsp;A imagem 46 refere-se à entidade **usuario**, cujos atributos são: **id**, gerado automaticamente após sua criação e que servirá para sua identificação, principalmente dentro do banco de dados; **nome**, fornecido pelo usuário durante o cadastro; **email**, utilizado para contato e para o recebimento de notificações; **senha**, também definida pelo usuário; **cargo**, responsável por diferenciar PTDs (quem fará as trilhas) e Administradores (quem recomenda usuários a fazerem trilhas); **pontuacao**, que representa a pontuação obtida pelo PTD após responder corretamente a uma pergunta de qualquer módulo (este atributo será null para Administradores, já que eles não fazem as trilhas); **created_at**, gerado quando a entidade Usuário é criada; e **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
 <sup>Figura 47: Entidade usuario-trilha</sup>
@@ -1151,7 +1153,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/usuario-trilha_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
 
-&emsp;&emsp; A imagem acima é a tabela intermediária **usuario-trilha**. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso os IDs da entidade **usuario** e **trilha**), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N. Lém disso, temos atributos que relacionam as duas entidades, que são o **status**, que mostrará qual estágio de conclusão ela está, além do atributo **prazo** que mostrará para um certo Usuário qual prazo ele tem para fazer. 
+&emsp;&emsp; A imagem 47 é a tabela intermediária **usuario-trilha**. Ela é criada porque o banco de dados não suporta uma relação N:N, assim se cria essa tabela com apenas o **ID próprio** e os **IDs das entidades relacionadas** (neste caso os IDs da entidade **usuario** e **trilha**), com o intuito de fazer a quebra da relação N:N, formando uma relação 1:N. Lém disso, temos atributos que relacionam as duas entidades, que são o **status**, que mostrará qual estágio de conclusão ela está, além do atributo **prazo** que mostrará para um certo Usuário qual prazo ele tem para fazer. 
 
 <p align="center">
 <sup>Figura 48: Entidade usuario-certificado</sup>
@@ -1159,7 +1161,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/usuario-certificado_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores(2025)</sub> </p>
 
- &emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-certificado** também é criada porque a relação Usuário e Certificado é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Certificados).
+ &emsp; Seguindo o mesmo modelo da explicação acima, a imagem 48 representa a entidade **usuario-certificado** também é criada porque a relação Usuário e Certificado é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Certificados).
 
 <p align = "center">
 <sup>Figura 49: Entidade usuario-notificacao</sup>
@@ -1167,7 +1169,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/usuario-notificacao_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-notificacao** também é criada porque a relação Usuário e Notificação é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Notificação).
+&emsp; Seguindo o mesmo modelo da explicação acima, a imagem 49 representa a entidade **usuario-notificacao** também é criada porque a relação Usuário e Notificação é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Notificação).
 
 <p align = "center">
 <sup>Figura 50: Entidade usuario-modulo</sup>
@@ -1175,7 +1177,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/usuario-modulo_modelo_relacional .png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Seguindo o mesmo modelo da explicação acima, a entidade **usuario-modulo** também é criada porque a relação Usuário e Módulo é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Módulo), além do atributo **esta_completo** que será resposável por mostrar se o módulo foi completado pelo usuário.
+&emsp; Seguindo o mesmo modelo da explicação acima,  a imagem 50 representa a entidade **usuario-modulo** também é criada porque a relação Usuário e Módulo é N:N. Os atributos dessa entidade é **ID próprio** e os **IDs das entidades relacionadas** (Usuário e Módulo), além do atributo **esta_completo** que será resposável por mostrar se o módulo foi completado pelo usuário.
 
 <p align = "center">
 <sup>Figura 51: Entidade certificado</sup>
@@ -1183,7 +1185,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/certificado_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A imagem acima é referente a tabela da entidade **certificado**, cujos atributos são: **ID próprio**; **titulo**, é o nome dado ao certificado; **descricao**, é a explicação do certificado, com detalhes e skills adquiridos por completar tal trilha; **imagem** guarda a representação visual do certificado; e por fim o **id_trilha**, esse atributo existe porque o certificado é o documento adquirido após completar com êxito alguma trilha, assim, o entidade certificado tem relação de dependência com a entidade trilha.
+&emsp; A imagem 51 é referente a tabela da entidade **certificado**, cujos atributos são: **ID próprio**; **titulo**, é o nome dado ao certificado; **descricao**, é a explicação do certificado, com detalhes e skills adquiridos por completar tal trilha; **imagem** guarda a representação visual do certificado; e por fim o **id_trilha**, esse atributo existe porque o certificado é o documento adquirido após completar com êxito alguma trilha, assim, o entidade certificado tem relação de dependência com a entidade trilha.
 
 <p align = "center">
 <sup>Figura 52: Entidade trilha</sup>
@@ -1191,7 +1193,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/trilha_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A imagem acima é referente a tabela da entidade **trilha**, cujos atributos são: **ID próprio**; **titulo**, o nome da trilha referente; **prazo**, determinado pelo Administrador, cuja sua função é determinar um tempo para a conclusão de todos os módulos dentro desssa trilha; **created_at** gerado quando a entidade usuário é criada; e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+&emsp; A imagem 52 é referente a tabela da entidade **trilha**, cujos atributos são: **ID próprio**; **titulo**, o nome da trilha referente; **prazo**, determinado pelo Administrador, cuja sua função é determinar um tempo para a conclusão de todos os módulos dentro desssa trilha; **created_at** gerado quando a entidade usuário é criada; e o **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
 <sup>Figura 53: Entidade modulo</sup>
@@ -1199,7 +1201,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/modulo_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A imagem acima é referente a tabela da entidade **modulo**, cujos atributos são: **ID próprio**; **id_trilha**, será responsável por fazer a relação de dependência de tal módulo a alguma trilha, ou seja, inserindo o módulo a uma trilha; **titulo**, o nome da trilha referente; **conteudo**, será responsável por guardar informações de vídeos, textos, PDFs, tudo referente ao conteúdo que deve ser ensinado nesse módulo; **esta_completo**, sua única função será verificar se a pergunta foi respondida, retornando como módulo completo ou não; **ordem**, para que os módulos fiquem organizados dentro da trilha; **created_at** é gerado quando o atributo usuário é criado; e o **updated_at** é responsável por registrar quando o usuário é atualizado.
+&emsp; A imagem 53 é referente a tabela da entidade **modulo**, cujos atributos são: **ID próprio**; **id_trilha**, será responsável por fazer a relação de dependência de tal módulo a alguma trilha, ou seja, inserindo o módulo a uma trilha; **titulo**, o nome da trilha referente; **conteudo**, será responsável por guardar informações de vídeos, textos, PDFs, tudo referente ao conteúdo que deve ser ensinado nesse módulo; **esta_completo**, sua única função será verificar se a pergunta foi respondida, retornando como módulo completo ou não; **ordem**, para que os módulos fiquem organizados dentro da trilha; **created_at** é gerado quando o atributo usuário é criado; e o **updated_at** é responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
 <sup>Figura 54: Entidade pergunta</sup>
@@ -1207,7 +1209,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/perguntas_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A imagem acima é referente à tabela da entidade **perguntas**, cujos atributos são: **ID próprio**; **enunciado**, é a pergunta referente ao conteúdo do módulo; **id_modulos**, será responsável por fazer a relação de dependência da pergunta com o módulo correspondente; e **pontos**, refere-se aos pontos ganhos ao responder corretamente o enunciado.
+&emsp; A imagem 54 é referente à tabela da entidade **perguntas**, cujos atributos são: **ID próprio**; **enunciado**, é a pergunta referente ao conteúdo do módulo; **id_modulos**, será responsável por fazer a relação de dependência da pergunta com o módulo correspondente; e **pontos**, refere-se aos pontos ganhos ao responder corretamente o enunciado.
 
 <p align = "center">
 <sup>Figura 55: Entidade opcoes</sup>
@@ -1215,7 +1217,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/opção_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A imagem acima é referente à tabela da entidade **opcoes**, cujos atributos são: **ID próprio**; **texto**, é o que estará escrito como potencial resposta para a pergunta correspondente; **id_perguntas**, será responsável por fazer a relação de dependência das opções com a pergunta correspondente; e **eh_correta** identifica se a alternativa é a resposta certa ou não.
+&emsp; A imagem 55 é referente à tabela da entidade **opcoes**, cujos atributos são: **ID próprio**; **texto**, é o que estará escrito como potencial resposta para a pergunta correspondente; **id_perguntas**, será responsável por fazer a relação de dependência das opções com a pergunta correspondente; e **eh_correta** identifica se a alternativa é a resposta certa ou não.
 
 <p align = "center">
 <sup>Figura 56: Entidade notificacao</sup>
@@ -1223,7 +1225,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/notificacao_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A imagem acima é referente à tabela da entidade Notificação, cujos seus atributos são: **ID próprio**, **titulo**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação carregará. Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
+&emsp; A imagem 56 é referente à tabela da entidade Notificação, cujos seus atributos são: **ID próprio**, **titulo**, o nome da trilha referente, **Descrição**, será a mensagem que a notificação carregará. Por fim,  **created_at** gerado quando a entidade usuário é criada e o **updated_at**, responsável por registrar quando o usuário é atualizado.
 
 <p align = "center">
 <sup>Figura 57: Entidade help</sup>
@@ -1231,7 +1233,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 <p align="center"> <img src="../assets/assetsWAD/Help_modelo_relacional.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A imagem acima é referente à tabela da entidade help, cujos atributos são: **ID próprio**, **titulo** que representa a pergunta do FAQ, e o **conteudo** que indica a resposta para a pergunta. Por fim, **created_at** e **updated_at** indicam quando que a entidade é criada e atualizada, respectivamente.
+&emsp; A imagem 57 é referente à tabela da entidade help, cujos atributos são: **ID próprio**, **titulo** que representa a pergunta do FAQ, e o **conteudo** que indica a resposta para a pergunta. Por fim, **created_at** e **updated_at** indicam quando que a entidade é criada e atualizada, respectivamente.
 
 #### Relacionamento entre as Entidades
 
@@ -1310,7 +1312,7 @@ trilha ao usuários [Figura 40-41], nela o administrador define uma data para o 
 
 ---
 
-### 3.5.2. Consultas SQL e lógica proposicional (sprint 2)
+### 3.5.2. Consultas SQL e lógica proposicional 
 
 &emsp; Nesta seção, apresentamos uma lista de consultas SQL compostas [Quadro 74-76], implementadas no back-end da aplicação web, acompanhadas de sua lógica proposicional. Cada consulta inclui a expressão SQL, a proposição lógica correspondente e a tabela verdade que ilustra as combinações possíveis e os resultados esperados.
 
@@ -1364,7 +1366,7 @@ Contexto de aplicação da consulta 2: Ao final de cada módulo de aprendizado, 
 </p>
 
 Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua conta ou não deseja mais participar de uma trilha específica, essa consulta é utilizada para remover o registro do usuário na trilha. Isso garante que o banco de dados permaneça atualizado e livre de informações desnecessárias.
-## 3.6. WebAPI e endpoints (sprints 3 e 4)
+## 3.6. WebAPI e endpoints 
 
 &emsp;&emsp; Nesta seção, será destinada a mostrar todas as possíveis rotas de API juntamente com os endpoints, mostrando os seguintes pontos:
 - Endereço e método (GET, POST, PUT, PATCH, DELETE)
@@ -1376,7 +1378,7 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 # <a name="c4"></a>4. Desenvolvimento da Aplicação Web
 
-## 4.1. Primeira versão da aplicação web (sprint 3)
+## 4.1. Primeira versão da aplicação web 
 
 &emsp; A primeira versão da aplicação web representa um marco inicial no processo de construção do sistema, concentrando-se na estruturação das funcionalidades básicas, priorizando a organização do código e a implementação das rotas da WebAPI. Essa etapa tem como objetivo garantir que a base técnica esteja sólida para permitir o crescimento futuro da aplicação de forma segura, escalável e eficiente.
 
@@ -1396,7 +1398,7 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 &emsp; A evolução desta versão envolverá a validação da comunicação entre front-end e back-end, a consolidação da integração com o banco de dados e a melhoria progressiva da interface de usuário, tornando-a mais interativa e visualmente consistente com a identidade do projeto.
 
-## 4.2. Segunda versão da aplicação web (sprint 4)
+## 4.2. Segunda versão da aplicação web 
 
 &emsp; A segunda versão da aplicação web representa um avanço essencial para o seguimento do projeto, pois consolida os progressos obtidos nas sprints anteriores e dá continuidade ao ciclo de desenvolvimento iterativo. Nesta etapa, o foco principal foi evoluir pontos que haviam sido definidos como prioritários na sprint anterior, incluindo a validação da comunicação entre frontend e backend, a consolidação da integração com o banco de dados e o aprimoramento progressivo da interface de usuário, tornando-a mais interativa e alinhada à identidade visual do projeto.
 
@@ -1420,13 +1422,51 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 &emsp; As principais dificuldades enfrentadas durante o desenvolvimento da segunda versão envolveram, principalmente, conexão com o banco de dados, a própria integração do front-end com o back-end e período curto de aprendizado e aplicagem do conteúdo estudado no projeto. Como próximos passos, será realizada a otimização de desempenho, versão final da aplicação web, correção de bugs e realização de testes de usuários.
 
 
-## 4.3. Versão final da aplicação web (sprint 5)
+## 4.3. Versão final da aplicação web 
 
-*Descreva e ilustre aqui o desenvolvimento da última versão do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+&emsp; Durante a Sprint 5, a aplicação web passou por sua última grande etapa de desenvolvimento. Foram implementadas diversas melhorias e finalizações tanto no front-end quanto no back-end, com o objetivo de entregar uma versão funcional e robusta da plataforma. Um dos principais focos foi a integração da tela de trilhas do administrador com o sistema de gerenciamento de trilhas no banco de dados, permitindo a edição e exclusão direta por meio da interface. Além disso, foi adicionada a funcionalidade de atribuição de trilhas específicas para usuários, tornando a experiência mais personalizada.
+
+&emsp; Outra entrega importante foi a finalização da tela de ajuda do administrador, com responsividade e comunicação completa entre o front-end e o back-end. Também foi desenvolvida uma nova funcionalidade que permite exibir vídeos diretamente nos conteúdos dos módulos, ampliando os recursos didáticos disponíveis para os usuários. Junto a isso, foram exibidas as estatísticas de uso por parte dos usuários, acessíveis pela interface administrativa. Isso exigiu integração entre as informações armazenadas no banco de dados e sua visualização estruturada no painel.
+
+
+<p align="center">
+<sub>Figura 59: Demonstra como o administrador pode associar trilhas específicas aos usuários.</sub>  <img src="../assets/assetsWAD/asign-trail.png"/>
+<br> 
+<sub>Fonte: Material produzido pelos autores (2025)</sub>
+</p>
+
+
+<p align="center"> 
+<sub>Figura 60: Exibe os dados de progresso e desempenho dos usuários, visíveis no painel do administrador.</sub>
+<img src="../assets/assetsWAD/dashboard-users.png">
+<br>
+<sub>Fonte: Material produzido pelos autores (2025)</sub>
+  </p>
+
+
+<p align="center"> 
+<sub>Figura 61: Exemplo de vídeo integrado ao conteúdo do módulo</sub>
+<img src="../assets/assetsWAD/embeded-video.png">
+<br>
+<sub>Fonte: Material produzido pelos autores (2025)</sub>
+  </p>
+
+&emsp; Durante o desenvolvimento, alguns desafios surgiram, como conflitos de merge entre diferentes branches, além de pequenos ajustes na integração com o banco de dados e retrabalho na responsividade de algumas telas. Ainda assim, foi possível avançar de forma consistente.
+
+&emsp; Além disso, a equipe finalizou o sistema de progresso dos usuários, melhorou a experiência nas telas administrativas e concluiu os testes de usabilidade antes da entrega final. As seções da documentação também foram atualizadas, além dos relatórios de testes e conclusões finais.
+
+&emsp; Sobre os testes de usabilidade realizados, foram conduzidos com um grupo de usuários aleatórios, que interagiram com a plataforma a partir de objetivos passados a eles e forneceram feedback sobre a usabilidade, funcionalidade e design. As principais observações foram relacionadas à clareza das instruções, facilidade de navegação e eficiência na realização de tarefas. Com base nesse feedback, ajustes foram feitos para melhorar a experiência do usuário.
+
+<p align="center">
+<sub>Figura 62: Feedbacks dados durante a etapa de testes de usabilidade </sub>
+ <img src="../assets/assetsWAD/test-feedbacks.png">
+<br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
+
+
 
 # <a name="c5"></a>5. Testes
 
-## 5.1. Relatório de testes de integração de endpoints automatizados (sprint 4)
+## 5.1. Relatório de testes de integração de endpoints automatizados 
 
 
 &emsp; Nesta seção, apresentamos os testes de integração realizados nos endpoints da aplicação web, utilizando o software Postman para garantir a funcionalidade e a robustez do sistema. Os testes foram projetados para verificar se os endpoints estão respondendo corretamente às requisições e se as operações CRUD (Create, Read, Update, Delete) estão funcionando conforme esperado.
@@ -1543,11 +1583,11 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 **DELETE /notification/:id - Deleta uma notificação**
 <p align="center"> <img src="../assets/assetsWAD/api/delete-notification.png">
 
-## 5.2. Testes de usabilidade (sprint 5)
+## 5.2. Testes de usabilidade 
 
 *Posicione aqui as tabelas com enunciados de tarefas, etapas e resultados de testes de usabilidade. Ou utilize um link para seu relatório de testes (mantenha o link sempre público para visualização)*
 
-# <a name="c6"></a>6. Estudo de Mercado e Plano de Marketing (sprint 4)
+# <a name="c6"></a>6. Estudo de Mercado e Plano de Marketing 
 
 ## 6.1 Resumo Executivo
 
@@ -1571,11 +1611,11 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 <h3> Visão Geral do Mercado</h3>
 
-&emsp;Com o aumento significativo da população, a demanda por alimentos está crescendo drasticamente. No aspecto brasileiro, o agronegócio representou cerca de 1/4 do PIB do país em 2024, somado à venda de bens e serviços gerados chegando a cerca de R$ 2,72 trilhões, sendo 70% provenientes do ramo agrícola, segundo a Confederação da Agricultura e Pecuária do Brasil (CNA)<sup>[]</sup>. Ademais, o país é importante na exportação de produtos agrícolas, sendo chamado de "celeiro do mundo", segundo a CNN Brasil<sup>[]</sup>.
+&emsp;Com o aumento significativo da população, a demanda por alimentos está crescendo drasticamente. No aspecto brasileiro, o agronegócio representou cerca de 1/4 do PIB do país em 2024, somado à venda de bens e serviços gerados chegando a cerca de R$ 2,72 trilhões, sendo 70% provenientes do ramo agrícola, segundo a Confederação da Agricultura e Pecuária do Brasil (CNA). Ademais, o país é importante na exportação de produtos agrícolas, sendo chamado de "celeiro do mundo", segundo a CNN Brasil.
 
-&emsp;Além disso, a inserção de tecnologia só vem crescendo. Segundo o Blog FieldView<sup>[]</sup>, já existem soluções tecnológicas eficientes para o campo, como Climate FieldView, um sistema de monitoramento inteligente. Além disso, existem tecnologias para a produção de sementes modificadas, máquinas autônomas controladas à distância, entre outras.
+&emsp;Além disso, a inserção de tecnologia só vem crescendo. Segundo o Blog FieldView, já existem soluções tecnológicas eficientes para o campo, como Climate FieldView, um sistema de monitoramento inteligente. Além disso, existem tecnologias para a produção de sementes modificadas, máquinas autônomas controladas à distância, entre outras.
 
-&emsp;Por ser um mercado voltado a alimentos e problemas com áreas florestais, o agronegócio é afetado com regulações para um controle tanto da saúde das pessoas quanto na preservação da natureza. Na legislação brasileira, existe a Lei nº 14.785, de 27 de dezembro de 2023, que fortalece a fiscalização dos agrotóxicos desde sua criação, testes, comercialização e a venda dos mesmos<sup>[]</sup>. Leis de preservação também vêm aumentando, já que o crescimento agrícola está diretamente ligado ao desmatamento. A Lei nº 6.938/1981 tem como objetivo aumentar a fiscalização de áreas reservadas, aumentar a preservação e implementar instrumentos para atingir seus objetivos<sup>[]</sup>.
+&emsp;Por ser um mercado voltado a alimentos e problemas com áreas florestais, o agronegócio é afetado com regulações para um controle tanto da saúde das pessoas quanto na preservação da natureza. Na legislação brasileira, existe a Lei nº 14.785, de 27 de dezembro de 2023, que fortalece a fiscalização dos agrotóxicos desde sua criação, testes, comercialização e a venda dos mesmos. Leis de preservação também vêm aumentando, já que o crescimento agrícola está diretamente ligado ao desmatamento. A Lei nº 6.938/1981 tem como objetivo aumentar a fiscalização de áreas reservadas, aumentar a preservação e implementar instrumentos para atingir seus objetivos.
 
 <!--Trocar os <sup>[]</sup> pelo link na referência de cada um-->
 
@@ -1604,7 +1644,7 @@ Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizag
 
 &emsp; Compreender quem são os concorrentes diretos e indiretos da solução proposta é essencial para o sucesso do projeto. Essa análise fornece uma visão estratégica do mercado, permitindo identificar lacunas, oportunidades de diferenciação e possíveis ameaças à adoção da aplicação.
 
-*a) Principais Concorrentes*
+<h3> Principais Concorrentes</h3>
 
 &emsp; <strong> Concorrentes diretos </strong> são plataformas que oferecem serviços semelhantes, voltados ao monitoramento de lavouras, análise de dados agronômicos e suporte à tomada de decisão no campo. Destacam-se:
 <ul> 
@@ -1620,7 +1660,7 @@ Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizag
 </ul>
 
 
-*b) Vantagens Competitivas da Aplicação Web*
+<h3> Vantagens Competitivas da Aplicação Web </h3>
 
 &emsp; O FieldReview destaca-se como uma solução exclusiva e estratégica dentro do ecossistema Bayer, oferecendo uma experiência de capacitação focada nos Promotores Técnicos Digitais (PTDs) e consultores que operam com o Climate FieldView. Com trilhas modulares de aprendizagem adaptadas às necessidades de cada PTD, recursos de gamificação, certificações e um sistema de busca rápida para dúvidas operacionais, a plataforma promove engajamento real e aplicação prática do conhecimento. O painel de consultores, os permitem monitorar e ajustar o progresso técnico da equipe, elevando o padrão de suporte agronômico prestado ao agricultor.
 
@@ -1652,12 +1692,12 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 &emsp;Esses dados revelam a necessidade de uma plataforma digital de capacitação contínua, com acesso fácil e conteúdos práticos que otimizem o tempo e a performance no campo.
 ## 6.5 Posicionamento
 
-*a) Proposta de Valor Única*
+<h3> Proposta de Valor Única* </h3>
 
 &emsp; O FieldReview oferece uma proposta de valor única ao capacitar Promotores Técnicos Digitais (PTDs) no uso eficiente do Climate FieldView, plataforma líder em agricultura digital. Diferentemente de soluções genéricas de treinamento, o FieldReview é uma ferramenta sob medida que combina trilhas de aprendizado intuitivas, sistema de gamificação com pontuação e certificados, e uma interface de administração robusta para acompanhamento de desempenho. Essa abordagem garante que os PTDs adquiram habilidades técnicas de forma ágil e prática, reduzindo a dependência de suporte remoto e elevando a qualidade do atendimento presencial aos agricultores. A funcionalidade de busca rápida permite resolver dúvidas em tempo real, enquanto o sistema de ranking e certificados incentiva o engajamento contínuo. Para os consultores, a plataforma oferece visibilidade detalhada do progresso da equipe, possibilitando a personalização de trilhas de capacitação. Ao integrar tecnologia educacional com as necessidades específicas do setor agrícola, o FieldReview não apenas melhora a eficiência operacional, mas também fortalece a confiança dos clientes na Bayer, promovendo maior adoção e satisfação com o Climate FieldView. Essa solução única alinha capacitação técnica com inovação, atendendo às demandas de um mercado agrícola cada vez mais digitalizado e competitivo.
 
 
-*b) Estratégia de Diferenciação*
+<h3> Estratégia de Diferenciação</h3>
 
 &emsp; A estratégia de diferenciação do FieldReview baseia-se em sua abordagem personalizada e focada nas necessidades específicas dos Promotores Técnicos Digitais (PTDs) e consultores da Bayer Crop Science. Diferentemente de plataformas genéricas de e-learning, o FieldReview é projetado exclusivamente para o ecossistema do Climate FieldView, garantindo relevância contextual e aplicabilidade direta no campo. A combinação de trilhas de aprendizado modulares, gamificação com pontuação e certificados, e uma interface de busca rápida para resolução de dúvidas em tempo real distingue a aplicação de concorrentes que oferecem treinamentos amplos e menos específicos. Além disso, o sistema de administração permite que consultores monitorem e personalizem o aprendizado, ajustando trilhas às deficiências técnicas de cada PTD, o que aumenta a eficiência e a eficácia do treinamento. A identidade visual alinhada à Bayer, utilizando cores e tipografia consistentes, reforça a credibilidade e integração com a marca. A usabilidade otimizada para desktop e mobile assegura acessibilidade em diferentes contextos, incluindo áreas rurais com conectividade limitada. Ao focar na capacitação prática e no acompanhamento detalhado do desempenho, o FieldReview se posiciona como uma ferramenta indispensável para melhorar a qualidade do suporte técnico, reduzir a sobrecarga no atendimento remoto e elevar a satisfação dos agricultores, destacando-se em um mercado onde a precisão e a agilidade no treinamento são cruciais.
 
@@ -1689,6 +1729,7 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 
 &emsp; A decisão se justifica pelas tendências observadas nas análises anteriores. Como mostram relatórios da Embrapa e FAO, há demanda crescente por capacitação contínua e acessível, sobretudo no meio rural, onde limitações logísticas e financeiras ainda representam barreiras ao aprendizado formal. Além disso, segundo a McKinsey, investimentos em educação e tecnologia no campo geram aumento de produtividade e valor agregado à cadeia agrícola — o que justifica o investimento estratégico da Bayer nesse projeto, com retorno indireto em eficiência, sustentabilidade e posicionamento de marca.
 
+
 ### Praça 
 
 &emsp; O FieldReview, como aplicação web, será distribuído via navegadores, acessível em dispositivos Android, iOS (iPads, iPhones) e desktops, semelhante ao Climate FieldView™. A Bayer o disponibilizará em seu [site oficial](https://www.agro.bayer.com.br/) e na plataforma Orbia, conectando Promotores Técnicos Digitais (PTDs) a agricultores. O LinkedIn será utilizado para promover a ferramenta, com posts direcionados aos profissionais do agronegócio, destacando benefícios como monitoramento de lavouras. Usando sistemas de CRM, a Bayer enviará e-mails segmentados a PTDs, com links diretos para o FieldReview e guias de uso, facilitando a adoção. Eventos como a Agrishow e dias de campo do Bayer Forward Farming promoveriam a ferramenta com demonstrações práticas e QR codes para acesso via navegador. A integração com o programa Impulso Bayer reforçaria a distribuição, oferecendo benefícios como pontos para usuários testarem, garantindo alcance e engajamento com agricultores e distribuidores.
@@ -1700,56 +1741,82 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 &emsp; As estratégias de promoção do FieldReview, aplicação web da Bayer Crop Science, focam em canais digitais para capacitar os Promotores Técnicos Digitais (PTDs). SEO é otimizado no site cropscience.bayer.com, com palavras-chave como “capacitação em agricultura”, “estudo FieldView” e “treinamento FieldView”, atraindo PTDs em busca de aprendizado sobre o Climate FieldView. Marketing de conteúdo inclui vídeos no YouTube, com tutoriais práticos sobre o FieldReview, além de blogs ensinando a utilizá-lo. E-mails via Salesforce CRM entregam guias de capacitação e convites para a utilização da plataforma, onde as demonstrações práticas em vídeo reforçam o aprendizado. A integração com o Impulso Bayer oferece pontos por uso, incentivando adoção. 
 
 
-# <a name="c7"></a>7. Conclusões e trabalhos futuros (sprint 5)
 
-*Escreva de que formas a solução da aplicação web atingiu os objetivos descritos na seção 2 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral.*
+# <a name="c7"></a>7. Conclusões e Trabalhos Futuros
 
-*Relacione os pontos de melhorias evidenciados nos testes com planos de ações para serem implementadas. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para ações futuras*
+&emsp; A aplicação web FieldReview foi desenvolvida com sucesso, atendendo aos objetivos estabelecidos na seção 2 do documento, que incluíam capacitar os Promotores Técnicos Digitais (PTDs) no uso eficiente do Climate FieldView, melhorar a qualidade do atendimento em campo, reduzir a sobrecarga no suporte remoto e aumentar a satisfação dos clientes da Bayer Crop Science. A plataforma entrega uma solução prática e escalável, alinhada às necessidades do ecossistema agrícola e às tendências de digitalização no setor, promovendo aprendizado contínuo e engajamento dos usuários por meio de trilhas modulares, gamificação e funcionalidades administrativas.
 
-*Relacione também quaisquer outras ideias que o grupo tenha para melhorias futuras*
+### 7.1. Resultados Alcançados
 
-# <a name="c8"></a>8. Referências (sprints 1 a 5)
+&emsp; O desenvolvimento do FieldReview resultou em uma plataforma funcional que cumpre os seguintes objetivos principais:
+
+- **Capacitação Eficiente:** As trilhas de aprendizado modulares, com conteúdos intuitivos e busca rápida, permitem que os PTDs adquiram conhecimentos técnicos de forma prática e ágil, reduzindo a dependência de suporte remoto.
+- **Engajamento dos Usuários**: O sistema de pontuação e certificados incentiva a participação ativa dos PTDs, promovendo uma competição saudável e o reconhecimento de suas conquistas.
+- **Gestão de Desempenho:** A interface administrativa oferece aos consultores visibilidade detalhada do progresso individual e coletivo, possibilitando a personalização de trilhas e o acompanhamento em tempo real.
+- **Usabilidade:** A interface responsiva e a identidade visual alinhada à Bayer garantem acessibilidade e consistência, mesmo em contextos com conectividade limitada.
+  
+&emsp; Os testes de integração (seção 5.1) confirmaram a robustez dos endpoints da API, enquanto as telas desenvolvidas (seção 4.2) demonstram avanços significativos na experiência do usuário. A pesquisa com PTDs (seção 6.4) revelou que 100% dos respondentes demonstraram interesse em uma plataforma que facilite o aprendizado, validando a relevância da solução.
+
+### 7.2. Pontos Fortes
+&emsp; Os principais pontos fortes do FieldReview incluem:
+
+- **Foco na Capacitação Contextualizada:** A plataforma é tailor-made para o Climate FieldView, oferecendo conteúdos específicos que atendem diretamente às necessidades dos PTDs no campo.
+- **Sistema de Gamificação:** O ranking de desempenho e a emissão de certificados aumentam a motivação e o engajamento, alinhando-se às preferências psicográficas dos PTDs (seção 6.4).
+- **Flexibilidade Administrativa:** A funcionalidade de atribuição de trilhas e monitoramento de progresso permite aos consultores personalizar o aprendizado, garantindo maior eficácia na capacitação.
+- **Integração com a Marca Bayer:** A identidade visual consistente e a integração com o ecossistema Bayer reforçam a credibilidade e a adoção da plataforma.
+
+### 7.3. Limitações e Oportunidades de Melhoria
+
+&emsp; Apesar dos avanços, algumas limitações foram identificadas durante o desenvolvimento e os testes, oferecendo oportunidades para melhorias:
+
+- **Interface de Certificados:** A apresentação visual dos certificados ainda não está otimizada, podendo impactar a experiência do usuário.
+  - Plano de Ação: Implementar um design mais atrativo e funcional para os certificados, com opções de visualização em PDF e compartilhamento em redes profissionais, como o LinkedIn.
+- **Tela de Perfil:** A seção de perfil do usuário carece de funcionalidades avançadas, como histórico detalhado de trilhas e estatísticas de desempenho.
+  - Plano de Ação: Desenvolver uma interface de perfil mais robusta, com gráficos de progresso e integração com o sistema de pontuação.
+- **Funcionalidade de Alteração de Senha:** A ausência de uma opção para os usuários alterarem suas senhas compromete a autonomia e a segurança.
+  - Plano de Ação: Implementar uma funcionalidade de alteração de senha com validação segura no painel do usuário.
+
+### 7.4. Trabalhos Futuros
+
+&emsp; Para consolidar o FieldReview como uma ferramenta indispensável no ecossistema da Bayer Crop Science e atender às demandas de um mercado agrícola em constante evolução, os seguintes aprimoramentos são sugeridos para versões futuras:
+
+- **Notificações Externas:** Integrar notificações via e-mail e WhatsApp para alertar os PTDs sobre novas trilhas, prazos e atualizações, aumentando a adesão e o engajamento.
+- **Pesquisa com Inteligência Artificial**: Implementar um sistema de busca baseado em IA que interprete a intenção do usuário, oferecendo resultados mais precisos e personalizados para dúvidas em tempo real.
+- **Atribuição de Trilhas em Lote:** Permitir que consultores atribuam trilhas a múltiplos PTDs simultaneamente, otimizando o gerenciamento de equipes numerosas.
+- **Validade de Certificados:** Introduzir um sistema de expiração para certificados, incentivando a recertificação periódica e garantindo a atualização contínua dos conhecimentos.
+- **Integração com Outras Plataformas:** Explorar integrações com outras ferramentas digitais da Bayer, para oferecer benefícios adicionais, como troca de pontos por recompensas.
+- **Análise Avançada de Dados:** Incorporar dashboards analíticos para consultores, com métricas detalhadas sobre o desempenho da equipe e insights baseados em dados para otimizar estratégias de capacitação.
+
+### 7.5. Impacto e Relevância
+
+&emsp; O FieldReview representa um avanço significativo na capacitação de profissionais do agronegócio, alinhando-se às tendências de digitalização e formação contínua destacadas na seção 6.2. Ao melhorar o domínio técnico dos PTDs, a plataforma contribui para a eficiência operacional, a redução de erros e a satisfação dos agricultores, fortalecendo a posição da Bayer como líder em soluções digitais para o campo. Além disso, a escalabilidade da solução permite sua adaptação para outros contextos dentro do setor agrícola, como treinamento de distribuidores ou capacitação de agricultores, ampliando seu impacto potencial.
+
+&emsp; Os próximos passos incluem a realização de testes de usabilidade mais amplos (seção 5.2), a validação com um grupo maior de PTDs e consultores, e a implementação das melhorias sugeridas. Com isso, o FieldReview tem o potencial de se consolidar como uma ferramenta estratégica para a Bayer, promovendo inovação, eficiência e sustentabilidade no agronegócio brasileiro.
 
 
-1. AGROLINK. Perfil dos produtores rurais no Brasil: mais jovens e conectados. 2023. Disponível em: https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html. Acesso em: 29 abr. 2025.
+# <a name="c8"></a>8. Referências 
 
-2. AGROPAGES. Top 20 global agrochemical companies in 2023 unveiled. 2024. Disponível em: https://news.agropages.com/News/NewsDetail---51737.htm. Acesso em: 29 abr. 2025.
 
-3. BAYER. Agro Bayer Brasil. 2025. Disponível em: https://www.agro.bayer.com.br/. Acesso em: 29 abr. 2025
-
-4. BAYER CROP SCIENCE. Climate FieldView™. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/climate-fieldview. Acesso em: 29 abr. 2025.
-
-5. BAYER CROP SCIENCE. Impulso Bayer: o programa. São Paulo: Bayer, [2024]. Disponível em: https://www.agro.bayer.com.br/impulso-bayer/o-programa. Acesso em: 29 abr. 2025.
-
-6. COODESH. O que é arquitetura MVC? Coodesh, 2025. Disponível em: https://coodesh.com/blog/dicionario/o-que-e-arquitetura-mvc/. Acesso em: 30 maio 2025.
-
-7. HARSH, Kumar. O que é Arquitetura de Aplicativos Web? Quebrando um aplicativo da Web. Kinsta, 17 jan. 2025. Disponível em: https://kinsta.com/pt/blog/arquitetura-aplicativos-web/. Acesso em: 30 maio 2025.
-
-8. INTELIGÊNCIA FINANCEIRA. Empresas do agronegócio: as maiores companhias agrícolas do mundo. 2024. Disponível em: https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/. Acesso em: 29 abr. 2025.
-
-9. MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia [recurso eletrônico]. 1. ed. Rio de Janeiro: Alta Books, 2019. Disponível em: https://integrada.minhabiblioteca.com.br. Acesso em: 29 abr. 2025.
-
-10. MARKET RESEARCH FUTURE. Digital agriculture market research report—global forecast 2030. 2023. Disponível em: https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695. Acesso em: 29 abr. 2025.
-
-11. MARKET RESEARCH FUTURE. Seeds market research report. [S.l.]: Market Research Future, 2023. Disponível em: https://www.marketresearchfuture.com/reports/seeds-market-7252. Acesso em: 28 abr. 2025.
-
-12. PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
-
-13. MCKINSEY & COMPANY. Agriculture’s connected future: How technology can yield new growth. New York, 2020. Disponível em: https://www.mckinsey.com/industries/agriculture/our-insights/agricultures-connected-future-how-technology-can-yield-new-growth. 
-
-14. EMBRAPA – Empresa Brasileira de Pesquisa Agropecuária. Visão 2030: o futuro da agricultura brasileira. Brasília, DF: Embrapa, 2023. Disponível em: https://www.embrapa.br/visao/o-futuro-da-agricultura-brasileira.
-
-15. FAO – Food and Agriculture Organization of the United Nations. The State of Food and Agriculture 2021: making agrifood systems more resilient to shocks and stresses. Rome: FAO, 2021. Disponível em: https://openknowledge.fao.org/handle/20.500.14283/cb4476en.
-
-16. BRASIL. Ministério da Agricultura e Pecuária. Lei nº 14.785, de 27 de dezembro de 2023. Dispõe sobre o controle e a fiscalização de agrotóxicos e afins. Disponível em: https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao. Acesso em: 4 jun. 2025.
-
-17. BRASIL. Lei nº 6.938, de 31 de agosto de 1981. Dispõe sobre a Política Nacional do Meio Ambiente, seus fins e mecanismos de formulação e aplicação, e dá outras providências. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l6938compilada.htm. Acesso em: 4 jun. 2025.
-
-18. CNN Brasil. Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 4 mar. 2024. Disponível em: https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/. Acesso em: 4 jun. 2025.
-
-19. EQUIPE FIELDVIEW™. Tecnologia no agronegócio: conheça 7 inovações tecnológicas. 5 nov. 2021. Disponível em: https://blog.climatefieldview.com.br/inovacoes-agro. Acesso em: 4 jun. 2025.
-
-20. CONFEDERAÇÃO DA AGRICULTURA E PECUÁRIA DO BRASIL (CNA). Panorama do Agro. Brasília: CNA, 2025. Disponível em: https://www.cnabrasil.org.br/cna/panorama-do-agro. Acesso em: 4 jun. 2025.
+1. <a name="ref1"></a> [AGROLINK. Perfil dos produtores rurais no Brasil: mais jovens e conectados. 2023.](https://www.agrolink.com.br/noticias/perfil-dos-produtores-rurais-no-brasil--mais-jovens-e-conectados_483737.html)  
+2. <a name="ref2"></a> [AGROPAGES. Top 20 global agrochemical companies in 2023 unveiled. 2024.](https://news.agropages.com/News/NewsDetail---51737.htm)  
+3. <a name="ref3"></a> [BAYER. Agro Bayer Brasil. 2025.](https://www.agro.bayer.com.br/)  
+4. <a name="ref4"></a> [BAYER CROP SCIENCE. Climate FieldView™. São Paulo: Bayer, [2024].](https://www.agro.bayer.com.br/climate-fieldview)  
+5. <a name="ref5"></a> [BAYER CROP SCIENCE. Impulso Bayer: o programa. São Paulo: Bayer, [2024].](https://www.agro.bayer.com.br/impulso-bayer/o-programa)  
+6. <a name="ref6"></a> [COODESH. O que é arquitetura MVC? Coodesh, 2025.](https://coodesh.com/blog/dicionario/o-que-e-arquitetura-mvc/)  
+7. <a name="ref7"></a> [HARSH, Kumar. O que é Arquitetura de Aplicativos Web? Kinsta, 17 jan. 2025.](https://kinsta.com/pt/blog/arquitetura-aplicativos-web/)  
+8. <a name="ref8"></a> [INTELIGÊNCIA FINANCEIRA. Empresas do agronegócio: as maiores companhias agrícolas do mundo. 2024.](https://inteligenciafinanceira.com.br/onde-investir/investir-em-agronegocios/empresas-do-agronegocio-as-maiores-companhias-agricolas-do-mundo/)  
+9. <a name="ref9"></a> [MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. 2019.](https://integrada.minhabiblioteca.com.br)  
+10. <a name="ref10"></a> [MARKET RESEARCH FUTURE. Digital agriculture market research report—global forecast 2030. 2023.](https://www.marketresearchfuture.com/reports/digital-Agricultureiculture-market-10695)  
+11. <a name="ref11"></a> [MARKET RESEARCH FUTURE. Seeds market research report. 2023.](https://www.marketresearchfuture.com/reports/seeds-market-7252)  
+12. <a name="ref12"></a> [PEREIRA, Daniel. O que é o Value Proposition Canvas?. 27 set. 2024.](https://businessmodelanalyst.com/pt/value-proposition-canvas/)  
+13. <a name="ref13"></a> [MCKINSEY & COMPANY. Agriculture’s connected future: How technology can yield new growth. 2020.](https://www.mckinsey.com/industries/agriculture/our-insights/agricultures-connected-future-how-technology-can-yield-new-growth)  
+14. <a name="ref14"></a> [EMBRAPA. Visão 2030: o futuro da agricultura brasileira. 2023.](https://www.embrapa.br/visao/o-futuro-da-agricultura-brasileira)  
+15. <a name="ref15"></a> [FAO. The State of Food and Agriculture 2021. Rome: FAO, 2021.](https://openknowledge.fao.org/handle/20.500.14283/cb4476en)  
+16. <a name="ref16"></a> [BRASIL. Lei nº 14.785, de 27 de dezembro de 2023.](https://www.gov.br/agricultura/pt-br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao)  
+17. <a name="ref17"></a> [BRASIL. Lei nº 6.938, de 31 de agosto de 1981.](https://www.planalto.gov.br/ccivil_03/leis/l6938compilada.htm)  
+18. <a name="ref18"></a> [CNN Brasil. Brasil virou "celeiro do mundo" e já lidera exportações mundiais de sete alimentos, diz BTG. 4 mar. 2024.](https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-virou-celeiro-do-mundo-e-ja-lidera-exportacoes-mundiais-de-sete-alimentos-diz-btg/)  
+19. <a name="ref19"></a> [EQUIPE FIELDVIEW™. Tecnologia no agronegócio: conheça 7 inovações tecnológicas. 5 nov. 2021.](https://blog.climatefieldview.com.br/inovacoes-agro)  
+20. <a name="ref20"></a> [CNA. Panorama do Agro. Brasília: CNA, 2025.](https://www.cnabrasil.org.br/cna/panorama-do-agro)
 
 # <a name="c9"></a>Anexos
 

@@ -5,6 +5,8 @@ let asideBar = document.getElementById("asideBar");
 let trailTitle = document.getElementById("trailTitle")
 //titulo da trilha mobile
 let mobileTrailTitle = document.getElementById("mobileTrailTitle");
+//titulo da trilha principal
+let mainTrailTitle = document.getElementById("mainTrailTitle");
 //pegar o ul para colocar os modulos
 let moduleList = document.getElementById("moduleList");
 //Pegar o título do módulo
@@ -15,6 +17,8 @@ let moduleContent = document.getElementById("moduleContent");
 let question = document.getElementById("question");
 //Pegar as opções
 let cardOptions = document.getElementById("cardOptions");
+//Pegar o video
+let video = document.getElementById("video");
 
 function showAside() {
     if (asideBar.classList.contains("hidden")) {
@@ -52,6 +56,7 @@ function showPage() {
 const dataDiv = document.getElementById("trailData");
 const trailId = dataDiv.dataset.idtrail;
 const moduleId = dataDiv.dataset.idmodule;
+const userId = dataDiv.dataset.userid;
 const urlModule = `/api/module/`;
 const urlTrail = `/api/trail/`;
 const urlQuestion = `/api/question/module/`
@@ -75,6 +80,7 @@ async function executarFetches() {
         const data1 = await resp1.json();
         trailTitle.innerHTML = data1.trail.titulo;
         mobileTrailTitle.innerHTML = data1.trail.titulo;
+        mainTrailTitle.innerHTML = data1.trail.titulo;
 
         //Titulo dos módulos
         const resp2 = await fetch(`${urlModule}trail/${trailId}`);
@@ -82,10 +88,20 @@ async function executarFetches() {
         data2.map((module) => {
             //criar a tag de componente de uma lista
             let li = createNode("li");
+            
+            // Verificar se é o módulo atual para destacar
+            const isCurrentModule = module.id == moduleId;
+            const circleClass = isCurrentModule 
+                ? "w-4 h-4 bg-green-500 rounded-full ring-2 ring-green-300 ring-offset-1" 
+                : "w-4 h-4 bg-gray-300 rounded-full";
+            const linkClass = isCurrentModule 
+                ? "text-blue-600 font-semibold" 
+                : "text-gray-600";
+            
             //inserir informações
             li.innerHTML = `
-            <span class="w-4 h-4 bg-green-500 rounded-full"></span>
-            <a href="/trail/${trailId}/${module.id}" class="text-gray-600">${module.titulo}</a>`
+            <span class="${circleClass}"></span>
+            <a href="/trail/${trailId}/${module.id}" class="${linkClass}">${module.titulo}</a>`
 
             //estilizar
             li.classList.add("flex", "items-center", "space-x-2");
@@ -99,6 +115,9 @@ async function executarFetches() {
         const data3 = await resp3.json();
         moduleTitle.innerHTML = data3.titulo;
         moduleContent.innerHTML = data3.conteudo;
+        if(data3.drivevideo){
+            video.setAttribute("src", data3.drivevideo);
+        } 
 
         //GET das pergunta
         const resp4 = await fetch(urlQuestion + moduleId);
@@ -151,6 +170,7 @@ function checkAnswer(){
     //Se nada for selecionado
     if (!selected){
         alert("Você precisa selcionar uma opção");
+        return;
     }
 
     //Pegar se está errado ou falso
@@ -158,11 +178,33 @@ function checkAnswer(){
 
     //ver se está certo ou errado
     if (state === 'right'){
-        alert("Resposta correta");
-        window.location.href ='/'
+        // Marcar módulo como completo
+        markModuleComplete();
+        alert("Resposta correta! Módulo concluído.");
+        window.location.href ='/';
     } 
     else {
-        alert("Resposta errada")
+        alert("Resposta errada");
+    }
+}
+
+// Função para marcar módulo como completo
+async function markModuleComplete() {
+    try {
+        const response = await fetch(`/api/trail/module/${moduleId}/complete/${userId}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        });
+        
+        if (response.ok) {
+            console.log('Módulo marcado como completo!');
+        } else {
+            console.error('Erro ao marcar módulo como completo');
+        }
+    } catch (error) {
+        console.error('Erro ao marcar módulo como completo:', error);
     }
 }
 

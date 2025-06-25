@@ -57,12 +57,17 @@
 
     <!--Conteúdo principal das telas-->
     <main class=" col-start-2 sm:col-start-5  col-end-12 pt-8 sm:p-8 row-start-6 sm:row-auto">
-      <h2 id="moduleTitle" class="text-3xl font-bold text-[#003B71] mb-6 sm:text-5xl"></h2>
+      
+      <!-- Título da Trilha - Maior -->
+      <h1 id="mainTrailTitle" class="text-3xl font-bold text-[#003B71] mb-4 sm:text-4xl"></h1>
+      
+      <!-- Título do Módulo - Menor -->
+      <h2 id="moduleTitle" class="text-2xl font-bold text-[#66B511] mb-6 sm:text-3xl"></h2>
 
       <div class="bg-gray-200 h-96 rounded-lg mb-6 flex items-center justify-center">
         <iframe class="rounded shadow-lg"
-          id="video" src="https://drive.google.com/file/d/1GnQEPjPGCPsdAmmUNX8XTybHzAVpiJWp/preview" width="640" height="360"
-          allow="autoplay" allowfullscreen>
+          id="video" width="640" height="360"
+          allow="autoplay" title="vídeo explicativo do módulo" allowfullscreen>
         </iframe> 
       </div>
 
@@ -93,7 +98,7 @@
   </div>
 
   <!--Passar as informações de id com um div só de informações-->
-  <div id="trailData" data-idtrail="<%= idTrail %>" data-idmodule="<%= idModule %>"></div>
+  <div id="trailData" data-idtrail="<%= idTrail %>" data-idmodule="<%= idModule %>" data-userid="<%= user.id %>"></div>
   <script src="/scripts/trail.js"></script>
 </body>
 
