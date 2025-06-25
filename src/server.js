@@ -163,17 +163,35 @@ app.get('/', authMiddleware(), async (req, res) => {
         })
     );
 
-    // Buscar trilhas concluídas
-    let completedTrails = [];
+    // Separar trilhas do usuário entre em progresso e concluídas
+    const userTrailsInProgress = enrichedUserTrails.filter(trail => trail.progress < 100);
+    const userTrailsCompleted = enrichedUserTrails.filter(trail => trail.progress === 100);
+    
+    // Separar trilhas disponíveis entre em progresso e concluídas
+    const availableTrailsInProgress = availableTrails.filter(trail => trail.progress < 100);
+    const availableTrailsCompleted = availableTrails.filter(trail => trail.progress === 100);
+    
+    // Buscar trilhas concluídas adicionais da API
+    let apiCompletedTrails = [];
     try {
       const completedTrailsResponse = await axios.get(
         `http://localhost:3000/api/trail/completed/${req.user.id}`
       );
-      completedTrails = completedTrailsResponse.data.completedTrails || [];
+      apiCompletedTrails = completedTrailsResponse.data.completedTrails || [];
     } catch (error) {
       console.log("Erro ao buscar trilhas concluídas:", error.message);
-      completedTrails = [];
+      apiCompletedTrails = [];
     }
+    
+    // Combinar todas as trilhas concluídas (atribuídas + disponíveis + API)
+    const allCompletedTrails = [
+      ...userTrailsCompleted,
+      ...availableTrailsCompleted,
+      ...apiCompletedTrails.filter(apiTrail => 
+        !userTrailsCompleted.some(trail => trail.id === apiTrail.id) &&
+        !availableTrailsCompleted.some(trail => trail.id === apiTrail.id)
+      )
+    ];
 
     // Gerar uma lista simplificada de trailModules para compatibilidade com o template existente
     const trailModules = enrichedTrails.map(trail => ({
@@ -183,9 +201,9 @@ app.get('/', authMiddleware(), async (req, res) => {
     }));
 
     res.render('home', {
-      userTrails: enrichedUserTrails,
-      availableTrails: availableTrails,
-      completedTrails: completedTrails,
+      userTrails: userTrailsInProgress, // Apenas trilhas em progresso (< 100%)
+      availableTrails: availableTrailsInProgress, // Apenas trilhas disponíveis em progresso (< 100%)
+      completedTrails: allCompletedTrails, // Todas as trilhas com 100% de progresso
       trailModules: trailModules, // mantido para compatibilidade
       ranking: sortedRank,
       userPosition,
