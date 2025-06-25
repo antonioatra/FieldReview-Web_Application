@@ -79,3 +79,20 @@ exports.getUserStats = async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 };
+
+exports.getUserTrailsProgress = async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const user = await Users.findById(userId);
+    if (!user) return res.status(404).json({ error: 'Usuário não encontrado' });
+
+    const data = await Users.getUserTrailsProgress(userId);
+    res.status(200).json({
+      message: 'Progresso das trilhas retornado com sucesso',
+      data,
+    });
+  } catch (err) {
+    console.error('Erro ao buscar progresso das trilhas:', err);
+    res.status(500).json({ error: 'Erro ao retornar progresso das trilhas', message: err.message });
+  }
+};

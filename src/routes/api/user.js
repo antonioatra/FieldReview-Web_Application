@@ -10,5 +10,6 @@ router.get('/:id', UserController.showById);
 router.patch('/:id', UserController.update);
 router.delete('/:id', UserController.destroy);
 router.get('/find/stats', UserController.getUserStats);
+router.get('/progress/all/:userId', UserController.getUserTrailsProgress);
 
 module.exports = router;

@@ -328,10 +328,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load user progress
   window.loadUserProgress = async function () {
     try {
-      const progressData = {
-        labels: ['Trilha 1', 'Trilha 2', 'Trilha 3', 'Trilha 4', 'Trilha 5'],
-        progress: [85, 60, 45, 90, 30],
-      };
+      // const progressData = {
+      //   labels: ['Trilha 1', 'Trilha 2', 'Trilha 3', 'Trilha 4', 'Trilha 5'],
+      //   progress: [85, 60, 45, 90, 30],
+      // };
+
+      const progressResponse = await fetch(`/api/user/progress/all/${window.currentUser.id}`);
+
+      const progressData = await progressResponse.json();
 
       const ctx = document.getElementById('progressChart').getContext('2d');
       if (window.progressChart) {
@@ -340,11 +344,11 @@ document.addEventListener('DOMContentLoaded', () => {
       window.progressChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: progressData.labels,
+          labels: progressData.data.labels,
           datasets: [
             {
               label: 'Progresso do Usuário',
-              data: progressData.progress,
+              data: progressData.data.progress,
               backgroundColor: [
                 'rgba(59, 130, 246, 0.7)',
                 'rgba(59, 130, 246, 0.7)',
@@ -396,6 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { trail: 'Configuração Básica', score: 72, date: '2025-05-10' },
         { trail: 'Análise de Dados', score: 68, date: '2025-05-05' },
       ];
+
       const performanceContainer = document.getElementById('recent-performance');
       performanceContainer.innerHTML = '';
       recentPerformance.forEach(function (perf) {

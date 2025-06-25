@@ -100,16 +100,68 @@ module.exports = {
       const pointsResult = await pool.query(pointsQuery);
       const totalPoints = parseInt(pointsResult.rows[0].total_completed_modules);
 
+      // Most done trail (trail completed by the most users)
+      const mostDoneTrailQuery = `
+        SELECT t.titulo, COUNT(DISTINCT ut.id_usuario) as completion_count
+        FROM usuario_trilha ut
+        JOIN trilha t ON ut.id_trilha = t.id
+        JOIN modulo m ON t.id = m.id_trilha
+        LEFT JOIN usuario_modulo um ON m.id = um.id_modulo AND um.id_usuario = ut.id_usuario
+        GROUP BY t.id, t.titulo
+        HAVING COUNT(m.id) = COUNT(CASE WHEN um.esta_completo = true THEN 1 END) AND COUNT(m.id) > 0
+        ORDER BY completion_count DESC
+        LIMIT 1
+      `;
+      const mostDoneTrailResult = await pool.query(mostDoneTrailQuery);
+      const mostDoneTrail = mostDoneTrailResult.rows[0]
+        ? {
+            title: mostDoneTrailResult.rows[0].titulo,
+            completionCount: parseInt(mostDoneTrailResult.rows[0].completion_count),
+          }
+        : { title: null, completionCount: 0 };
+
       return {
         totalUsers,
         totalCompletedTrails,
         averageProgress,
         totalPoints,
+        mostDoneTrail,
       };
     } catch (error) {
       console.error('Error fetching user stats:', error);
       throw new Error('Database error while fetching user stats');
     }
+  },
+
+  async getUserTrailsProgress(userId) {
+    const query = `
+      SELECT 
+        t.titulo as trail_title,
+        COUNT(m.id)::integer as total_modules,
+        COUNT(CASE WHEN um.esta_completo = true THEN 1 END)::integer as completed_modules
+      FROM usuario_trilha ut
+      JOIN trilha t ON ut.id_trilha = t.id
+      LEFT JOIN modulo m ON t.id = m.id_trilha
+      LEFT JOIN usuario_modulo um ON m.id = um.id_modulo AND um.id_usuario = $1
+      WHERE ut.id_usuario = $1
+      GROUP BY t.id, t.titulo
+    `;
+    const result = await pool.query(query, [userId]);
+
+    const labels = [];
+    const progress = [];
+
+    result.rows.forEach((row) => {
+      labels.push(row.trail_title);
+      const progressPercentage =
+        row.total_modules === 0 ? 0 : Math.round((row.completed_modules / row.total_modules) * 100);
+      progress.push(progressPercentage);
+    });
+
+    return {
+      labels,
+      progress,
+    };
   },
 
   // Add pool to be used in authController
