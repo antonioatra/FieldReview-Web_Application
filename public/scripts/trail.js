@@ -54,6 +54,7 @@ function showPage() {
 const dataDiv = document.getElementById("trailData");
 const trailId = dataDiv.dataset.idtrail;
 const moduleId = dataDiv.dataset.idmodule;
+const userId = dataDiv.dataset.userid;
 const urlModule = `/api/module/`;
 const urlTrail = `/api/trail/`;
 const urlQuestion = `/api/question/module/`
@@ -164,6 +165,7 @@ function checkAnswer(){
     //Se nada for selecionado
     if (!selected){
         alert("Você precisa selcionar uma opção");
+        return;
     }
 
     //Pegar se está errado ou falso
@@ -171,11 +173,33 @@ function checkAnswer(){
 
     //ver se está certo ou errado
     if (state === 'right'){
-        alert("Resposta correta");
-        window.location.href ='/'
+        // Marcar módulo como completo
+        markModuleComplete();
+        alert("Resposta correta! Módulo concluído.");
+        window.location.href ='/';
     } 
     else {
-        alert("Resposta errada")
+        alert("Resposta errada");
+    }
+}
+
+// Função para marcar módulo como completo
+async function markModuleComplete() {
+    try {
+        const response = await fetch(`/api/trail/module/${moduleId}/complete/${userId}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        });
+        
+        if (response.ok) {
+            console.log('Módulo marcado como completo!');
+        } else {
+            console.error('Erro ao marcar módulo como completo');
+        }
+    } catch (error) {
+        console.error('Erro ao marcar módulo como completo:', error);
     }
 }
 

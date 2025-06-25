@@ -128,6 +128,18 @@ app.get('/', authMiddleware(), async (req, res) => {
       return !userTrails.some((userTrail) => userTrail.id_trilha === trail.id);
     });
 
+    // Buscar trilhas concluídas
+    let completedTrails = [];
+    try {
+      const completedTrailsResponse = await axios.get(
+        `http://localhost:3000/api/trail/completed/${req.user.id}`
+      );
+      completedTrails = completedTrailsResponse.data.completedTrails || [];
+    } catch (error) {
+      console.log("Erro ao buscar trilhas concluídas:", error.message);
+      completedTrails = [];
+    }
+
     // Gerar uma lista simplificada de trailModules para compatibilidade com o template existente
     const trailModules = enrichedTrails.map(trail => ({
       trailId: trail.id,
@@ -138,6 +150,7 @@ app.get('/', authMiddleware(), async (req, res) => {
     res.render('home', {
       userTrails: enrichedUserTrails,
       availableTrails: availableTrails,
+      completedTrails: completedTrails,
       trailModules: trailModules, // mantido para compatibilidade
       ranking: sortedRank,
       userPosition,
@@ -222,7 +235,7 @@ app.get('/trail/edit/:id', async (req, res) => {
 });
 
 // Página da trilha específica
-app.get('/trail/:idTrail/:idModule', async (req, res) => {
+app.get('/trail/:idTrail/:idModule', authMiddleware(), async (req, res) => {
   const trailId = req.params.idTrail;
   const moduleId = req.params.idModule;
 

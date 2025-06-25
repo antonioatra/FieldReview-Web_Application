@@ -1,4 +1,4 @@
- const pool = require('../config/database');
+const pool = require('../config/database');
 
 module.exports = {
   //Cria as funções do model
@@ -66,5 +66,36 @@ module.exports = {
     `;
     const result = await pool.query(query, [userId]);
     return result.rows;
+  },
+
+  async getCompletedTrailsByUser(userId) {
+    // Buscar trilhas onde todos os módulos foram completados
+    const query = `
+      SELECT DISTINCT t.id, t.titulo, t.descricao, t.imagem, 
+             COUNT(m.id) as total_modules,
+             COUNT(um.id) as completed_modules
+      FROM trilha t
+      JOIN usuario_trilha ut ON t.id = ut.id_trilha
+      JOIN modulo m ON t.id = m.id_trilha
+      LEFT JOIN usuario_modulo um ON m.id = um.id_modulo AND um.id_usuario = $1 AND um.esta_completo = true
+      WHERE ut.id_usuario = $1
+      GROUP BY t.id, t.titulo, t.descricao, t.imagem
+      HAVING COUNT(m.id) = COUNT(um.id) AND COUNT(m.id) > 0
+    `;
+    const result = await pool.query(query, [userId]);
+    return result.rows;
+  },
+
+  async markModuleComplete(userId, moduleId) {
+    // Marcar módulo como completo ou inserir se não existir
+    const query = `
+      INSERT INTO usuario_modulo (id_usuario, id_modulo, esta_completo)
+      VALUES ($1, $2, true)
+      ON CONFLICT (id_usuario, id_modulo) 
+      DO UPDATE SET esta_completo = true, updated_at = CURRENT_TIMESTAMP
+      RETURNING *
+    `;
+    const result = await pool.query(query, [userId, moduleId]);
+    return result.rows[0];
   },
 };
