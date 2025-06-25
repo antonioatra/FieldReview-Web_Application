@@ -57,7 +57,7 @@
 
 ### 2.1.1. Modelo de 5 Forças de Porter 
 
-&emsp; O modelo de 5 forças de Porter é uma ferramenta de análise para avaliar a competitividade no setor de negócios que a empresa atua. Sob o ponto de vista da Bayer Crop Science, montou-se o seguinte modelo, dando origem à Figura 1:
+&emsp; O modelo de 5 forças de Porter é uma ferramenta de análise para avaliar a competitividade no setor de negócios que a empresa atua. Sob o ponto de vista da Bayer Crop Science, montou-se o seguinte modelo [Figura 1]:
 
 <p align="center">
 <sup>Figura 1: 5 Forças de Porter aplicadas à empresa Bayer Crop Science.</sup> <br>
@@ -94,7 +94,17 @@
 
 ### 2.1.2. Análise SWOT da Instituição Parceira 
 
-&emsp; A Bayer CropScience é líder no agronegócio por seu ecossistema completo e forte presença no mercado, com destaque para o FieldView, solução digital que a diferencia da concorrência. No entanto, seu foco em grandes produtores pode limitar seu alcance entre pequenos agricultores. A empresa enfrenta ameaças como questões ambientais e processos legais, que afetam sua reputação. Por outro lado, há oportunidades na expansão de soluções sustentáveis, como o projeto PRO Carbono, e parcerias com universidades, fortalecendo sua inovação e presença no setor frente a concorrentes com tecnologias emergentes. A imagem 2 descreverá visualmente essa análise.
+&emsp; A Análise SWOT [Figura 2] (também conhecida como Matriz FOFA, no Brasil) é uma ferramenta estratégica utilizada para avaliar os pontos fortes (Strengths), pontos fracos (Weaknesses), oportunidades (Opportunities) e ameaças (Threats) de uma organização, projeto ou situação. Ela auxilia na compreensão do cenário interno e externo, facilitando a tomada de decisões mais conscientes e eficazes.
+
+&emsp; A análise é dividida em dois aspectos principais:
+
+ - **Ambiente Interno:** composto pelos pontos fortes e pontos fracos, ou seja, fatores que a organização pode controlar.
+
+- **Ambiente Externo:** composto pelas oportunidades e ameaças, fatores que estão fora do controle da organização, mas que influenciam seus resultados.
+
+&emsp; Ao mapear esses quatro elementos, a Análise SWOT permite que empresas ou indivíduos tracem estratégias mais alinhadas com suas capacidades e com o cenário ao seu redor. É uma abordagem amplamente utilizada no planejamento estratégico, no desenvolvimento de negócios e até em decisões pessoais.
+
+&emsp; A Bayer CropScience é líder no agronegócio por seu ecossistema completo e forte presença no mercado, com destaque para o FieldView, solução digital que a diferencia da concorrência. No entanto, seu foco em grandes produtores pode limitar seu alcance entre pequenos agricultores. A empresa enfrenta ameaças como questões ambientais e processos legais, que afetam sua reputação. Por outro lado, há oportunidades na expansão de soluções sustentáveis, como o projeto PRO Carbono, e parcerias com universidades, fortalecendo sua inovação e presença no setor frente a concorrentes com tecnologias emergentes.
 
 <p align = 'center'>
 <sup>Figura 2: Análise SWOT da Bayer Crop Science.</sup>
@@ -129,7 +139,7 @@
 
 ### 2.1.4. Value Proposition Canvas : 
 
-&emsp; Segundo Pereira, o modelo de negócio criado por Alexander Osterwalder, Yves Pigneur e Alan Smith denominado “Value Proposition Canvas” é uma ferramenta desenhada para garantir que o produto atenda às necessidades dos clientes, traga-lhes benefícios e resolva seus problemas, estruturando como o serviço agrega valor a eles. Para isso, a ferramenta utiliza duas seções do Business Model Canvas, a saber: “Segmentos de Clientes” e “Propostas de Valor”.
+&emsp; Segundo Pereira, o modelo de negócio criado por Alexander Osterwalder, Yves Pigneur e Alan Smith denominado “Value Proposition Canvas” [Figura 3] é uma ferramenta desenhada para garantir que o produto atenda às necessidades dos clientes, traga-lhes benefícios e resolva seus problemas, estruturando como o serviço agrega valor a eles. Para isso, a ferramenta utiliza duas seções do Business Model Canvas, a saber: “Segmentos de Clientes” e “Propostas de Valor”.
 
 &emsp; Nesse sentido, o Value Proposition Canvas tem dois lados. À direita está um perfil apresentado pelo cliente mostrando suas tarefas, suas dores e seus ganhos. O lado esquerdo inclui a proposta de valor que deve ser entregue ao cliente, abrangendo produtos e serviços, criadores de benefícios e analgésicos (este é o mapa de valor).
 
@@ -220,7 +230,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 
 ### 2.1.5. Matriz de Riscos do Projeto 
 
-&emsp; A matriz de riscos é uma ferramenta essencial para identificar, avaliar e priorizar ameaças que podem impactar o projeto. A avaliação qualitativa de riscos utiliza uma matriz que integra frequência (probabilidade de ocorrência) e severidade (impacto econômico). Os riscos de alta severidade e frequência requerem atenção imediata, enquanto os de menor impacto podem ser monitorados com menor urgência. Essa priorização permite a distribuição eficaz de recursos para ações preventivas e corretivas, garantindo a continuidade do projeto. A Figura 4 representa o mapeamento feito pelo grupo.
+&emsp; A matriz de riscos [Figura 4] é uma ferramenta essencial para identificar, avaliar e priorizar ameaças que podem impactar o projeto. A avaliação qualitativa de riscos utiliza uma matriz que integra frequência (probabilidade de ocorrência) e severidade (impacto econômico). Os riscos de alta severidade e frequência requerem atenção imediata, enquanto os de menor impacto podem ser monitorados com menor urgência. Essa priorização permite a distribuição eficaz de recursos para ações preventivas e corretivas, garantindo a continuidade do projeto.
 
 <p align = 'center'>
 <sup>Figura 4: Matriz de riscos e oportunidades do projeto.</sup>
@@ -228,7 +238,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 <sub>Fonte: Material produzido pelos autores (2025)</sub>
 </p>
 
-&emsp; Para explicar os termos colocados na imagem acima, faremos um quadro de ameaças e de oportunidades descrevendo cada tópico, com a categoria que ela se encontra, a probabilidade de acontecer e o impacto que esse risco pode ocasionar no projeto.
+&emsp; Para explicar os termos colocados na imagem acima, faremos um quadro de ameaças e de oportunidades descrevendo cada tópico [Quadro 1-2], com a categoria que ela se encontra, a probabilidade de acontecer e o impacto que esse risco pode ocasionar no projeto.
 
 <p align = 'center'>
 <sup>Quadro 1: Descrição dos riscos do projeto.</sup>
@@ -270,7 +280,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 
 ## 2.2. Personas 
 
-&emsp; As personas mapeadas para o projeto representam os perfis centrais dos usuários que interagem diretamente com a solução proposta. As personas foram desenvolvidas com base nas necessidades do parceiro Bayer Crop Science e visam orientar decisões de design, funcionalidades e usabilidade da aplicação. As imagens 5 e 6 representam as personas do nosso projeto.
+&emsp; As personas [Figuras 5-6] mapeadas para o projeto representam os perfis centrais dos usuários que interagem diretamente com a solução proposta. As personas foram desenvolvidas com base nas necessidades do parceiro Bayer Crop Science e visam orientar decisões de design, funcionalidades e usabilidade da aplicação.
 
 <p align = 'center'>
 <sup>Figura 5: Representação da persona PTD Jorge Faria.</sup>
@@ -286,7 +296,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 
 ## 2.3. User Stories 
 
-&emsp; As User Stories são um elemento essencial para o planejamento de um projeto, pois elas norteiam o grupo a realizar suas tarefas com base em uma das personas desenvolvidas pelo grupo. Assim, projetou-se as seguintes personas de acordo com os quadros abaixo:
+&emsp; As User Stories [Quadros 7-18] são um elemento essencial para o planejamento de um projeto, pois elas norteiam o grupo a realizar suas tarefas com base em uma das personas desenvolvidas pelo grupo. Assim, projetou-se as seguintes personas de acordo com os quadros abaixo:
 
 <p align = 'center'>
 <sup>Quadro 3: Informações da user story 01.</sup>
@@ -519,7 +529,7 @@ Teste de aceite 2 | Entender o projeto. <br>Aceitou = Todos os integrantes do gr
 ## 3.1. Arquitetura 
 
 
-&emsp; A arquitetura de uma aplicação web consiste em uma representação gráfica de como os vários componentes da solução interagem entre si (HASH, 2025). Essa representação é importante para visualizar como funciona o relacionamento entre cliente e servidor, e como essas operações são executadas por outras partes da plataforma web. Dessa maneira, é importante projetar o modo como ocorrerá essas interações para então inicar a construção da solução Web.
+&emsp; A arquitetura de uma aplicação web [Figura 7-8] consiste em uma representação gráfica de como os vários componentes da solução interagem entre si (HASH, 2025). Essa representação é importante para visualizar como funciona o relacionamento entre cliente e servidor, e como essas operações são executadas por outras partes da plataforma web. Dessa maneira, é importante projetar o modo como ocorrerá essas interações para então inicar a construção da solução Web.
 
 &emsp; Com base nessa perspectiva, a arquitetura Model-View-Controller (MVC) foi aplicada à plataforma, na qual cada parte dessa organização é responsável por uma tarefa distinta. Essa arquitetura foi criada em 1979 pelo cientista da computação norueguês Trygve Reenskaug, com a proposta de separar o projeto em camadas para reduzir as dependências entre elas (COODESH). Assim, os elementos dessa organização são separados em:
 
@@ -543,7 +553,7 @@ Figura 7: Arquitetura da plataforma Field Review no draw.io.
 
 <div align="center">
 <sub>
-Fonte: Material produzido pelos autores (2025).<br>
+Fonte : Material produzido pelos autores (2025).<br>
 </sub>
 </div>
 
@@ -625,7 +635,7 @@ Sobre as camadas da aplicação, a divisão ocorreu de acordo com a arquitetura 
 
 ## 3.2. Wireframes 
 
-&emsp; O wireframe é uma representação esquemática inicial de uma interface de usuário, geralmente elaborada com baixa fidelidade. Seu objetivo principal é auxiliar na definição da estrutura e na disposição dos elementos visuais e informacionais da interface, sem, contudo, abordar em profundidade as funcionalidades ou aspectos estéticos do sistema. Essa ferramenta é amplamente utilizada nas etapas iniciais do design de interfaces, por permitir uma visualização clara da hierarquia da informação e da navegação pretendida, facilitando a comunicação entre designers, desenvolvedores e demais *stakeholders*.
+&emsp; O wireframe [Figura 9-15] é uma representação esquemática inicial de uma interface de usuário, geralmente elaborada com baixa fidelidade. Seu objetivo principal é auxiliar na definição da estrutura e na disposição dos elementos visuais e informacionais da interface, sem, contudo, abordar em profundidade as funcionalidades ou aspectos estéticos do sistema. Essa ferramenta é amplamente utilizada nas etapas iniciais do design de interfaces, por permitir uma visualização clara da hierarquia da informação e da navegação pretendida, facilitando a comunicação entre designers, desenvolvedores e demais *stakeholders*.
 
 
  **Funcionalidades do Usuário Comum** <br>
@@ -734,12 +744,13 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/guiaCores.jpg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> 
 
+&emsp; Um guia de cores [Figura 16]é um documento que define um conjunto padronizado de cores a serem usadas em uma interface digital, com o objetivo de garantir consistência visual, usabilidade e identidade da marca.
 
 &emsp; No guia apresentado na imagem 16, as cores são organizadas por grupo cromático (como azul, verde, rosa, etc.), tonalidade (clara, média ou escura) e uso sugerido (como links, botões, textos ou fundos). Cada cor tem um código hexadecimal específico, o que facilita sua aplicação no desenvolvimento web. Além disso, o guia indica como utilizar cada cor de forma funcional — por exemplo, azul claro para links, verde brilhante para indicadores positivos, e preto para textos.
 
 ### 3.3.2 Tipografia
 
-&emsp; A tipografia da aplicação Web é baseada no guia de marca da empresa Bayer, na qual a fonte Helvetica, amplamente utilizada pela Bayer em suas soluções tecnológicas e materiais online, foi adotada para garantir identidade visual e consistência.
+&emsp; A tipografia da aplicação Web [Figura 17-18] é baseada no guia de marca da empresa Bayer, na qual a fonte Helvetica, amplamente utilizada pela Bayer em suas soluções tecnológicas e materiais online, foi adotada para garantir identidade visual e consistência.
 
 &emsp; Com a adaptação da plataforma para desktop e dispotivos móveis, realizou-se um guia para a versão de computador (Figura 17) e outro para celular (Figura 18). Dessa maneira, o guia tipográfico ficou da seguinte forma:
 
@@ -795,10 +806,10 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 - Link do rodapé: É o tipo utilizado no rodapé da aplicação, com o tamanho de 16px ou 1 rem no desktop e 12px ou 0.8 rem , e peso bold.
 
-&emsp; Para facilitar a visualização da tipografia do projeto, elaborou-se o seguinte quadro com o estilo, tamanho, peso e estilo da fonte e seu respectivo uso:
+&emsp; Para facilitar a visualização da tipografia do projeto, elaborou-se o seguinte quadro com o estilo, tamanho, peso e estilo da fonte e seu respectivo uso [Quadro 16]:
 
 <div align = "center">
-<sup>Quadro : Quadro de estilo tipográfico desktop do Field Review.</sup>
+<sup>Quadro 16: Quadro de estilo tipográfico desktop do Field Review.</sup>
 </div>
 
 | Estilo               | Tamanho Desktop (px/rem) | Tamanho Mobile (px/rem) | Peso da fonte | Estilo da fonte | Uso                                                                 |
@@ -819,12 +830,12 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 
 <div align = "center">
-<p>Fonte: Material produzido pelos autores (2025).</p>
+<p>Fonte : Material produzido pelos autores (2025).</p>
 </div>
 
 ### 3.3.3 Iconografia e imagens 
 
- &emsp; A iconografia e as imagens são componentes fundamentais no design de uma aplicação web, contribuindo para a experiência do usuário e a identidade visual do site melhorando seu aspecto visual e tornando-o mais convidativo e agradável de usar.
+ &emsp; A iconografia e as imagens [Figura 19-20] são componentes fundamentais no design de uma aplicação web, contribuindo para a experiência do usuário e a identidade visual do site melhorando seu aspecto visual e tornando-o mais convidativo e agradável de usar.
 
 **Iconografia**
 
@@ -854,8 +865,10 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 
-## 3.4 Protótipo de alta fidelidade 
-&emsp; Para preparar a implementação do frontend da aplicação Web, realizou-se o seguinte protótipo de alta fidelidade(Figura 21):
+## 3.4 Protótipo de alta fidelidade (sprint 3)
+
+&emsp; Para preparar a implementação do frontend da aplicação Web, realizou-se o seguinte protótipo de alta fidelidade [Figura 21]:
+
 
 <div align="center">
 <sup>Figura 21: Fluxo do protótipo de alta fidelidade.</sup>
@@ -871,7 +884,8 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 &emsp; Para a realização do protótipo de alta fidelidade, utilizou-se o guia de estilos para guiar a elaboração das telas da plataforma. Além disso, realizou-se a divisão do fluxo do site em um caminho para o promotor técnico digital (PTD) e outra para o administrador.
 
-&emsp; A primeira tela do site consiste no login e cadastro na plataforma (Figura 22 e 23), realizada de acordo com a US04 para suprir a necessidade do PTD entrar na plataforma para acessar o conteúdo. Assim, essa primeira tela ficou da seguinte maneira:
+
+&emsp; A primeira tela do site [Figura 22-23] consiste no login e cadastro na plataforma, realizada de acordo com a US04 para suprir a necessidade do PTD entrar na plataforma para acessar o conteúdo. Assim, essa primeira tela ficou da seguinte maneira:
 
 <div align="center">
 <sup>Figura 22: Tela de login da aplicação.</sup>
@@ -896,7 +910,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 &emsp; As telas direcionadas aos promotores estão relacionadas com as user stories essenciais: US01, US02 e US05, relacionadas à busca rápida para sanar dúvidas, o acesso a conteúdos das trilhas e o ato de revisar as trilhas depois. Dessa forma a apresentação das páginas será disposta em: tela inicial, tela de trilhas e a tela de pesquisa.
 
-&emsp; A tela inicial compreende as principais informações da aplicação, apresentando o ranking dos usuários, as notificações, as trilhas que os usuários estão realizando e as trilhas que estão disponíveis, de acordo com as figuras 24 e 25:
+&emsp; A tela inicial [Figura 24-25] compreende as principais informações da aplicação, apresentando o ranking dos usuários, as notificações, as trilhas que os usuários estão realizando e as trilhas que estão disponíveis, de acordo com a figura abaixo:
 
 <div align="center">
 <sup>Figura 24: Tela inicial do usuário promotor.</sup>
@@ -915,7 +929,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/homePTD.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Em relação à tela de trilhas, essa interface apresentará a disposição dos módulos na trilha, o vídeo e texto explicativo junto com a pergunta para validar o aprendizado. Além disso, é importante destacar que essa tela está relacionada a user story US02 com o acesso aos materiais disponíveis na plataforma. Dessa maneira, a tela está disposta seguindo as imagens 26 e 27:
+&emsp; Em relação à tela de trilhas [Figura 26-27], essa interface apresentará a disposição dos módulos na trilha, o vídeo e texto explicativo junto com a pergunta para validar o aprendizado. Além disso, é importante destacar que essa tela está relacionada a user story US02 com o acesso aos materiais disponíveis na plataforma. Dessa maneira, a tela está disposta da seguinte forma:
 
 <div align="center">
 <sup>Figura 26: Página de trilhas do PTD.</sup>
@@ -934,7 +948,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/trilhaPTDMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; No que diz respeito à tela de pesquisa, ela apresenta dois resultados de acordo com o texto inserido, uma área para os elementos de ajuda rápida da plataforma e outra parte para os resultados de acordo com as trilhas do site. Vale ressaltar que essa tela está relacionada à user story US01 com os resultados da busca rápida feita pelo promotor. Assim, a tela foi prototipada seguindo a imagem 28 e 29: 
+&emsp; No que diz respeito à tela de pesquisa [Figura 28-29], ela apresenta dois resultados de acordo com o texto inserido, uma área para os elementos de ajuda rápida da plataforma e outra parte para os resultados de acordo com as trilhas do site. Vale ressaltar que essa tela está relacionada à user story US01 com os resultados da busca rápida feita pelo promotor. Assim, a tela foi prototipada da seguinte maneira: 
 
 <div align="center">
 <sup>Figura 28: Tela de pesquisa do PTD.</sup>
@@ -953,7 +967,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/pesquisaPTDMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&smsp; A tela de ajuda tem como objetivo oferecer suporte rápido ao usuário por meio de uma seção de perguntas frequentes. Nela, são apresentados cards com dúvidas comuns, como "O que é o Climate FieldView", acompanhadas de respostas objetivas e fáceis de ler (Figuras 30 e 31).
+&smsp; A tela de ajuda [Figura 30-31] tem como objetivo oferecer suporte rápido ao usuário por meio de uma seção de perguntas frequentes. Nela, são apresentados cards com dúvidas comuns, como "O que é o Climate FieldView", acompanhadas de respostas objetivas e fáceis de ler.
 
 <div align="center">
 <sup>Figura 30: Tela de help do PTD.</sup>
@@ -982,7 +996,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 &emsp; As telas direcionadas ao administrador da plataforma estão relacionadas diretamente à user story US03 de acordo com a vontade do consultor de atribuir trilhas aos seus colegas de equipe visando a capacitação técnica do time. Dessa maneira, as telas desse fluxo são: tela de trilhas, tela de alteração de uma trilha, tela de alteração de um módulo, tela de usuários e tela de atribuir uma trilha ao usuário.
 
-&emsp; A tela de trilhas compreende as ações relacionadas a observar as trilhas disponíveis na plataforma e a possibilidade de adicionar uma nova trilha, de acordo com as figuras 32 e 33:
+&emsp; A tela de trilhas [Figura 32-33] compreende as ações relacionadas a observar as trilhas disponíveis na plataforma e a possibilidade de adicionar uma nova trilha, de acordo com a figura abaixo:
 
 <div align="center">
 <sup>Figura 32: Página de trilhas do administrador.</sup>
@@ -1002,7 +1016,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 
-&emsp; Em relação à tela de alteração das trilhas, nesse campo o usuário pode alterar o título do conteúdo e apagar ou atualizar ou criar um novo módulo, além de cancelar suas alterações ou salvá-las, assim representado nas figuras 34 e 35:
+&emsp; Em relação à tela de alteração das trilhas [Figura 34-35], nesse campo o usuário pode alterar o título do conteúdo e apagar ou atualizar ou criar um novo módulo, além de cancelar suas alterações ou salvá-las, assim representado na figura abaixo:
 
 <div align="center">
 <sup>Figura 34: Página de editar trilha do administrador.</sup>
@@ -1021,7 +1035,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/editorTrilhaAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Sobre a tela de editar o módulo, nela o usuário pode alterar o conteúdo e as perguntas do material selecionado, assim como é apresentado nas imagens 36 e 37:
+&emsp; Sobre a tela de editar o módulo [Figura 36-37], nela o usuário pode alterar o conteúdo e as perguntas do material selecionado, assim como é apresentado na imagem abaixo:
 
 <div align="center">
 <sup>Figura 36: Página de editar módulos do administrador.</sup>
@@ -1040,7 +1054,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <img src="../assets/assetsWAD/editarModuloAdmMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; No que diz respeito à tela de usuários, nela aparece todos os usuários cadastrados na plataforma, com a possibilidade do administrador poder ver progresso e atribuir trilhas ao usuário selecionado, assim como é apresentado nas figuras 38 e 39:
+&emsp; No que diz respeito à tela de usuários [Figura 38-39], nela aparece todos os usuários cadastrados na plataforma, com a possibilidade do administrador poder ver progresso e atribuir trilhas ao usuário selecionado, assim como é apresentado na figura abaixo:
 
 <div align="center">
 <sup>Figura 38: Tela de usuários do administrador.</sup>
@@ -1060,7 +1074,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Sobre a tela de atribuir uma
-trilha ao usuários, nela o administrador define uma data para o PTD completar o conteúdo que ele considerou importante para o promotor realizar, de acordo com os protótipos das imagens 40 e 41: 
+trilha ao usuários [Figura 40-41], nela o administrador define uma data para o PTD completar o conteúdo que ele considerou importante para o promotor realizar, de acordo com o protótipo abaixo: 
 
 <div align="center">
 <sup>Figura 40: Página de confirmação de tempo.</sup>
@@ -1079,7 +1093,7 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 <img src="../assets/assetsWAD/dataADM.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A tela de administração do help permite ao administrador gerenciar as informações exibidas na seção de perguntas frequentes da plataforma. Nessa interface, é possível adicionar novos tópicos de ajuda, além de editar ou remover conteúdos já existentes. Segue as imagens 42 e 43 para observar como será.
+&emsp; A tela de administração do help [Figura 42-43] permite ao administrador gerenciar as informações exibidas na seção de perguntas frequentes da plataforma. Nessa interface, é possível adicionar novos tópicos de ajuda, além de editar ou remover conteúdos já existentes.
 
 <p align = "center">
 <sup>Figura 42: Tela de help administrador.<sup>
@@ -1095,7 +1109,7 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 <img src="../assets/assetsWAD/admHelpMobile.png">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; A tela de edição do help permite ao administrador criar ou modificar cards de perguntas frequentes, inserindo título e conteúdo de forma rápida (Figura 44 e 45). 
+&emsp; A tela de edição do help [Figura 44-45] permite ao administrador criar ou modificar cards de perguntas frequentes, inserindo título e conteúdo de forma rápida. 
 
 <p align = "center">
 <sup>Figura 44: Tela de edição do help administrador.<sup>
@@ -1118,7 +1132,7 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 
 ### 3.5.1. Modelo relacional 
 
-&emsp; A seguir, apresenta-se o Diagrama de Entidade e Relacionamento (DER), que é o modelo lógico derivado da MER (Modelagem Entidade e Relacionamento), com a explicação de todas as entidades e seus respectivos relacionamentos. Este diagrama servirá como base para implementação do banco de dados do site.
+&emsp; A seguir, apresenta-se o Diagrama de Entidade e Relacionamento (DER) [Figura 46-57], que é o modelo lógico derivado da MER (Modelagem Entidade e Relacionamento), com a explicação de todas as entidades e seus respectivos relacionamentos. Este diagrama servirá como base para implementação do banco de dados do site.
 
 &emsp; Para fins de organização, será apresentado todas as entidades primeiro e depois seus relacionamentos.
 
@@ -1300,13 +1314,13 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 
 ### 3.5.2. Consultas SQL e lógica proposicional 
 
-&emsp; Nesta seção, apresentamos uma lista de consultas SQL compostas, implementadas no back-end da aplicação web, acompanhadas de sua lógica proposicional. Cada consulta inclui a expressão SQL, a proposição lógica correspondente e a tabela verdade que ilustra as combinações possíveis e os resultados esperados.
+&emsp; Nesta seção, apresentamos uma lista de consultas SQL compostas [Quadro 74-76], implementadas no back-end da aplicação web, acompanhadas de sua lógica proposicional. Cada consulta inclui a expressão SQL, a proposição lógica correspondente e a tabela verdade que ilustra as combinações possíveis e os resultados esperados.
 
 
 #### Consultas e Tabelas Verdade.
 
 <p align = 'center'>
-<sup>Quadro 16: Atualização do prazo para completar a trilha.</sup>
+<sup>Quadro 17: Atualização do prazo para completar a trilha.</sup>
 </p>
 
 #1 | ---
@@ -1322,7 +1336,7 @@ trilha ao usuários, nela o administrador define uma data para o PTD completar o
 Contexto de aplicação da consulta 1: Cada trilha dentro da plataforma possui um prazo para ser concluída. Caso o usuário não conclua a trilha atribuída a ele dentro do prazo, o status da trilha é atualizado para 'perdeu_prazo'. Essa consulta é executada periodicamente para garantir que as trilhas com prazos expirados sejam atualizadas corretamente.
 
 <p align = 'center'>
-<sup>Quadro 17: Verificar a resposta correta.</sup>
+<sup>Quadro 18: Verificar a resposta correta.</sup>
 </p>
 
 #2 | ---
@@ -1338,7 +1352,7 @@ Contexto de aplicação da consulta 1: Cada trilha dentro da plataforma possui u
 Contexto de aplicação da consulta 2: Ao final de cada módulo de aprendizado, o usuário deve responder a uma pergunta para avaliar seu conhecimento. Essa consulta é utilizada para verificar dentre as opções disponíveis qual é a correta, permitindo que o sistema valide a resposta do usuário e calcule sua pontuação.
 
 <p align = 'center'>
-<sup>Quadro 18: Apagar um usuário.</sup>
+<sup>Quadro 19: Apagar um usuário.</sup>
 </p>
 
 #3 | ---
@@ -1369,13 +1383,13 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 &emsp; A primeira versão da aplicação web representa um marco inicial no processo de construção do sistema, concentrando-se na estruturação das funcionalidades básicas, priorizando a organização do código e a implementação das rotas da WebAPI. Essa etapa tem como objetivo garantir que a base técnica esteja sólida para permitir o crescimento futuro da aplicação de forma segura, escalável e eficiente.
 
 &emsp; Nesta fase, o foco esteve na criação do back-end da aplicação utilizando o framework Express com Node.js, estruturado dentro do padrão MVC. Foram desenvolvidos diversos endpoints conforme especificado na documentação da WebAPI (ver seção 3.6), os quais já se encontram operacionais. As rotas criadas contemplam operações essenciais como GET, POST, PUT e DELETE, proporcionando uma API RESTful funcional.
-<p align="center"> <img src="../assets/assetsWAD/codigoRotas.jpeg">
+<p align="center"><sup>Figura 59: Representação JSON das trilhas</sup> <img src="../assets/assetsWAD/codigoRotas.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Além disso, foi iniciado o desenvolvimento do front-end da aplicação com uma abordagem rudimentar, utilizando exclusivamente HTML, Tailwind CSS e JavaScript. Essa interface ainda está em estágio inicial, mas já apresenta a estrutura necessária para integrar as funcionalidades do sistema à experiência do usuário. Segue um exemplo da tela inicial e da tela de trilhas:
-<p align="center"> <img src="../assets/assetsWAD/telaInicialSR.jpeg">
+&emsp; Além disso, foi iniciado o desenvolvimento do front-end [Figura 60-61] da aplicação com uma abordagem rudimentar, utilizando exclusivamente HTML, Tailwind CSS e JavaScript. Essa interface ainda está em estágio inicial, mas já apresenta a estrutura necessária para integrar as funcionalidades do sistema à experiência do usuário. Segue um exemplo da tela inicial e da tela de trilhas:
+<p align="center"><sup>Figura 60: Implementação inicial do front-end da aplicação do home</sup> <img src="../assets/assetsWAD/telaInicialSR.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
-<p align="center"> <img src="../assets/assetsWAD/telaTrilhasSR.jpeg">
+<p align="center"><sup>Figura 61: Implementação inicia do front-end da aplicação das trilhas</sup> <img src="../assets/assetsWAD/telaTrilhasSR.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
 &emsp; Uma das dificuldades encontradas foi agrupar adequadamente cada entidade dos models no seu domínio do controller apropriado, por haver diversas tabelas de relacionamento, foi necessário tirar dúvidas com os professores e monitores sobre a melhor forma de organizar a estrutura do projeto.
@@ -1390,20 +1404,20 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 &emsp; Essas entregas são fundamentais para garantir maior robustez ao sistema, melhorar a experiência do usuário e reduzir riscos relacionados à interoperabilidade entre os componentes da aplicação. Além disso, esta versão permite validar as melhorias implementadas e preparar o ambiente para as funcionalidades que serão adicionadas nas próximas sprints.
 
-<p align="center"> <img src="../assets/assetsWAD/telaHomeWEB.jpeg">
+<p align="center"><sup>Figura 62: Implementação final do front-end da tela de home</sup> <img src="../assets/assetsWAD/telaHomeWEB.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Essa é a tela principal (home), como se pode observar, houve uma mudança drástica de cores e do layout em relação à primeira versão.
+&emsp; Essa é a tela principal (home) [Figura 62], como se pode observar, houve uma mudança drástica de cores e do layout em relação à primeira versão.
 
-<p align="center"> <img src="../assets/assetsWAD/telaHelpWEB.jpeg">
+<p align="center"><sup>Figura 63: Implementação final do front-end da tela de perguntas frequentes</sup> <img src="../assets/assetsWAD/telaHelpWEB.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Já essa tela é a de help, que apresenta algumas perguntas frequentes.
+&emsp; Já essa tela é a de help [Figura 63], que apresenta algumas perguntas frequentes.
 
-<p align="center"> <img src="../assets/assetsWAD/telaPerguntaWEB.jpeg">
+<p align="center"><sup>Figura 64: Implementação final  do front-end da tela de perguntas rápidas</sup> <img src="../assets/assetsWAD/telaPerguntaWEB.jpeg">
 <br> <sub>Fonte: Material produzido pelos autores (2025)</sub> </p>
 
-&emsp; Essa tela, por sua vez, é a de perguntas rápidas, retornando módulos com base na pesquisa realizada.
+&emsp; Essa tela [Figura 64], por sua vez, é a de perguntas rápidas, retornando módulos com base na pesquisa realizada.
 
 &emsp; As principais dificuldades enfrentadas durante o desenvolvimento da segunda versão envolveram, principalmente, conexão com o banco de dados, a própria integração do front-end com o back-end e período curto de aprendizado e aplicagem do conteúdo estudado no projeto. Como próximos passos, será realizada a otimização de desempenho, versão final da aplicação web, correção de bugs e realização de testes de usuários.
 
