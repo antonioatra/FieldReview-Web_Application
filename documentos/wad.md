@@ -1585,49 +1585,82 @@ Contexto de aplicação da consulta 3: Quando um usuário decide cancelar sua co
 
 ## 5.2. Testes de usabilidade 
 
+### Tarefa 1: Suponha que você é um promotor técnico digital e utilizará a barra de pesquisa para encontrar uma resposta específica a uma dúvida
 
-##### Tarefa 1: Suponha que você é um promotor técnico digital e utilizará a barra de pesquisa para sanar uma dúvida
-
-| Usuário       | Etapa 1 | Etapa 2 | Etapa 3 | Etapa 4 | Etapa 5 |
-|---------------|---------|---------|---------|---------|---------|
-|| **Descrição 1**: Realizar o login na plataforma | **Descrição 2**: Visualizar a home page  | **Descrição 3**: Descrever a dúvida na barra de pesquisa | **Descrição 4**: Confirmar a busca com a tecla enter | **Descrição 5**:  Visualizar a dúvida específica |
-| **Icaro**     | Registrou-se na plataforma e realizou login corretamente, sem dificuldades aparentes, indicando um processo de autenticação bem projetado. | Acessou a home page sem problemas, reconhecendo a interface inicial de forma intuitiva. | Teve dificuldade inicial para perceber que a barra de pesquisa era interativa, sugerindo uma possível falha de usabilidade visual ou falta de destaque. | Completou a busca com sucesso após entender o funcionamento da barra, pressionando a tecla enter sem problemas. | Visualizou a dúvida específica corretamente, com o sistema retornando os resultados esperados. |
-| **Vitor Lopes** | Completou o login de forma eficiente, sem barreiras ou erros, demonstrando boa usabilidade no processo de autenticação. | Visualizou a home page rapidamente, com navegação fluida e interface clara. | Descreveu a dúvida na barra de pesquisa sem dificuldades, indicando que o elemento era facilmente identificável. | Confirmou a busca pressionando a tecla enter sem problemas, com o sistema respondendo adequadamente. | Visualizou a dúvida específica com sucesso, com resultados retornados de forma precisa e clara. |
-| **Pedro**     | Realizou o login sem obstáculos, acessando a plataforma de maneira fluida e sem erros. | Acessou a home page com sucesso, reconhecendo os elementos principais da interface sem dificuldades. | Descreveu a dúvida na barra de pesquisa com facilidade, sem reportar problemas de usabilidade ou confusão. | Pressionou a tecla enter para confirmar a busca sem problemas, com interação intuitiva. | Visualizou a dúvida específica corretamente, com o sistema funcionando como esperado. |
-| **João Furtado** | Completou o login corretamente, com processo rápido e sem dificuldades, indicando um fluxo de autenticação eficiente. | Acessou a home page sem problemas, com interface reconhecível e amigável. | Descreveu a dúvida na barra de pesquisa sem obstáculos, com o elemento bem posicionado e funcional. | Confirmou a busca com a tecla enter de forma fluida, sem erros no sistema. | Visualizou a dúvida específica com sucesso, com resultados claros e relevantes. |
-| **Sérgio**   | Realizou o login sem dificuldades, com acesso rápido e sem erros reportados, demonstrando boa usabilidade. | Visualizou a home page com sucesso, reconhecendo a interface inicial de forma intuitiva. | Descreveu a dúvida na barra de pesquisa sem problemas, com interação clara e direta. | Pressionou a tecla enter para confirmar a busca sem dificuldades, com o sistema respondendo corretamente. | Visualizou a dúvida específica com sucesso, com resultados retornados de forma eficiente. |
-| **Samuel**    | Completou o login corretamente, sem dificuldades no processo de autenticação, indicando um fluxo bem projetado. | Acessou a home page sem problemas, com interface acessível e intuitiva. | Enfrentou dificuldade para identificar e usar a barra de pesquisa, sugerindo falta de clareza visual ou feedback insuficiente.  | Confirmou a busca com a tecla enter após superar a dificuldade inicial, sem problemas adicionais. | Visualizou a dúvida específica corretamente, com o sistema retornando os resultados esperados. |
-
-
-<br>
-
-##### Tarefa 2: Suponha que você é o promotor técnico digital e você irá visualizar as trilhas, módulos e vai responder as questões
+**Contexto do Teste**: Testes realizados nos atêlies do Inteli. Os participantes os usuários, com idades entre 18-50 anos e experiência básica em plataformas digitais assumiram o papel de "promotor técnico digital", um profissional que utiliza sistemas digitais para consultar informações técnicas e resolver dúvidas operacionais.
 
 | Usuário       | Etapa 1 | Etapa 2 | Etapa 3 | Etapa 4 | Etapa 5 |
 |---------------|---------|---------|---------|---------|---------|
-|| **Descrição 1**: Realizar o login na plataforma | **Descrição 2**: Acessar a página inicial |**Descrição 3**: Selecionar uma trilha| **Descrição 4**: Visualizar os módulos | **Descrição 5**: Responder a pergunta |
-| **Icaro**     | Realizou o login corretamente, sem dificuldades aparentes, indicando boa usabilidade no processo de autenticação. | Acessou a página inicial sem problemas, reconhecendo a interface inicial de forma intuitiva. | Selecionou uma trilha com sucesso, sem reportar confusão com o nome da trilha ou a interface. | Visualizou os módulos claramente, com navegação fluida e sem dificuldades relatadas. | Respondeu a pergunta corretamente, com o sistema registrando o progresso adequadamente. |
-| **Vitor Lopes** | Completou o login de forma eficiente, sem erros ou barreiras no acesso à plataforma. | Visualizou a página inicial rapidamente, com navegação intuitiva e sem problemas. | Selecionou a trilha sem dificuldades, demonstrando clareza na interface de seleção. | Acessou os módulos com facilidade, com boa visibilidade e organização do conteúdo. | Respondeu a pergunta com sucesso, sem reportar problemas no sistema de resposta. |
-| **Pedro**     | Realizou o login sem dificuldades, acessando a plataforma de maneira fluida. | Acessou a página inicial com sucesso, reconhecendo os elementos principais da interface. | Selecionou uma trilha corretamente, sem confusão com a nomenclatura ou layout. | Visualizou os módulos sem problemas, com navegação clara e intuitiva. | Respondeu a pergunta com sucesso, com feedback adequado do sistema. |
-| **João Furtado** | Completou o login sem obstáculos, indicando que o processo é bem projetado. | Acessou a página inicial sem dificuldades, com interface reconhecível e amigável. | Selecionou a trilha com facilidade, sem reportar problemas de usabilidade. | Visualizou os módulos de forma clara, com boa organização visual e navegação. | Respondeu a pergunta corretamente, com o sistema funcionando como esperado. |
-| **Sérgio**   | Realizou o login sem problemas, com acesso rápido e sem erros reportados. | Acessou a página inicial com sucesso, reconhecendo a interface sem dificuldades. | Selecionou uma trilha sem problemas, com clareza na interação com o sistema. | Visualizou os módulos de forma fluida, com boa usabilidade e sem confusão. | Respondeu a pergunta com sucesso, com feedback claro do sistema. |
-| **Samuel**    | Completou o login corretamente, sem dificuldades no processo de autenticação. | Acessou a página inicial sem problemas, com interface intuitiva e acessível. | Teve dificuldade ao tentar acessar a trilha, clicando acidentalmente no botão "HELP" devido à falta de clareza na interface ou destaque visual da trilha. | Visualizou os módulos com sucesso após superar a dificuldade inicial, indicando boa usabilidade nos módulos. | Respondeu a pergunta corretamente, com o sistema registrando a interação sem problemas. |
+|               | **Descrição 1** | **Descrição 2** | **Descrição 3** | **Descrição 4** | **Descrição 5** |
+|               | Realizar o login na plataforma | Visualizar a home page | Descrever a dúvida na barra de pesquisa (localizada no topo da interface) | Confirmar a busca com a tecla Enter | Visualizar a resposta específica à dúvida |
+| **Icaro**     | Registrou-se e realizou login corretamente, sem dificuldades, indicando um processo de autenticação eficiente. | Acessou a home page sem problemas, reconhecendo a interface inicial intuitivamente. | Teve dificuldade para perceber que a barra de pesquisa (no topo da tela) era interativa, devido à falta de destaque visual. **Melhoria sugerida**: Adicionar uma lupa funcional e um placeholder (ex.: "Digite sua dúvida aqui"). [Afeta: Icaro, Samuca] | Completou a busca com a tecla Enter após entender a barra, sem problemas adicionais. | Visualizou a resposta específica corretamente, com resultados claros e relevantes. |
+| **Vitor Lopes** | Completou o login de forma eficiente, sem erros, demonstrando boa usabilidade. | Visualizou a home page rapidamente, com navegação fluida. | Descreveu a dúvida na barra de pesquisa sem dificuldades, indicando que o elemento era identificável. | Confirmou a busca com a tecla Enter sem problemas, com resposta imediata do sistema. | Visualizou a resposta específica com sucesso, com resultados precisos. |
+| **Pedro**     | Realizou o login sem obstáculos, com processo fluido. | Acessou a home page com sucesso, reconhecendo os elementos da interface. | Descreveu a dúvida na barra de pesquisa com facilidade, sem confusão. | Pressionou a tecla Enter para confirmar a busca, com interação intuitiva. | Visualizou a resposta específica corretamente, com sistema funcionando como esperado. |
+| **João Furtado** | Completou o login rapidamente, sem dificuldades, indicando um fluxo eficiente. | Acessou a home page sem problemas, com interface amigável. | Descreveu a dúvida na barra de pesquisa sem obstáculos, com elemento bem posicionado. | Confirmou a busca com a tecla Enter de forma fluida, sem erros. | Visualizou a resposta específica com sucesso, com resultados relevantes. |
+| **Sérgio**   | Realizou o login sem dificuldades, com acesso rápido. | Visualizou a home page com sucesso, reconhecendo a interface intuitivamente. | Descreveu a dúvida na barra de pesquisa sem problemas, com interação clara. | Pressionou a tecla Enter para confirmar a busca, com resposta correta do sistema. | Visualizou a resposta específica com sucesso, com resultados eficientes. |
+| **Samuel**    | Completou o login corretamente, sem dificuldades. | Acessou a home page sem problemas, com interface acessível. | Enfrentou dificuldade para identificar a barra de pesquisa, devido à falta de feedback visual. **Melhoria sugerida**: Melhorar o contraste da barra e reavaliar a lupa (marcada como "Finalizado", mas ineficaz). [Afeta: Icaro, Samuca] | Confirmou a busca com a tecla Enter após superar a dificuldade, sem problemas. | Visualizou a resposta específica corretamente, com resultados esperados. |
+
+**Pontos de Melhoria Identificados**:
+
+| Problema | Severidade | Resumo e Melhoria Sugerida | Participantes Afetados | Status |
+|----------|------------|----------------------------|------------------------|--------|
+| Lupa da pesquisa | Baixa | A lupa na barra de pesquisa não funciona, dificultando a interação. **Melhoria**: Garantir que a lupa seja clicável e adicione feedback visual. | Icaro, Samuca | Finalizado |
+| Pesquisa (ver mais) | Alta | O botão "ver mais" na pesquisa não funciona. **Melhoria**: Corrigir a funcionalidade do botão. | Não especificado | Finalizado |
+
+
+### Tarefa 2: Suponha que você é um promotor técnico digital e irá visualizar trilhas, módulos e completar uma questão
+
+**Contexto do Teste**: Testes realizados nos atêlies do Inteli. Os participantes os usuários, com idades entre 18-50 anos e experiência básica em plataformas digitais assumiram o papel de "promotor técnico digital", um profissional que utiliza sistemas digitais para consultar informações técnicas e resolver dúvidas operacionais.
+
+| Usuário       | Etapa 1 | Etapa 2 | Etapa 3 | Etapa 4 | Etapa 5 |
+|---------------|---------|---------|---------|---------|---------|
+|               | **Descrição 1** | **Descrição 2** | **Descrição 3** | **Descrição 4** | **Descrição 5** |
+|               | Realizar o login na plataforma | Acessar a página inicial | Selecionar uma trilha (listada na seção "Suas Trilhas") | Visualizar os módulos da trilha | Responder a uma questão do módulo |
+| **Icaro**     | Realizou o login corretamente, sem dificuldades, indicando boa usabilidade. | Acessou a página inicial sem problemas, reconhecendo a interface. | Selecionou uma trilha com sucesso, sem confusão com a interface. | Visualizou os módulos claramente, com navegação fluida. | Respondeu a questão corretamente, com progresso registrado. |
+| **Vitor Lopes** | Completou o login eficientemente, sem erros. | Visualizou a página inicial rapidamente, com navegação intuitiva. | Selecionou a trilha sem dificuldades, com interface clara. | Acessou os módulos com facilidade, com boa organização. | Respondeu a questão com sucesso, sem problemas no sistema. |
+| **Pedro**     | Realizou o login sem obstáculos, com processo fluido. | Acessou a página inicial com sucesso, reconhecendo os elementos. | Selecionou uma trilha corretamente, sem confusão. | Visualizou os módulos sem problemas, com navegação clara. | Respondeu a questão com sucesso, com feedback adequado. |
+| **João Furtado** | Completou o login sem dificuldades, com fluxo eficiente. | Acessou a página inicial sem problemas, com interface amigável. | Selecionou a trilha com facilidade, sem problemas de usabilidade. | Visualizou os módulos claramente, com boa organização. | Respondeu a questão corretamente, com sistema funcionando. |
+| **Sérgio**   | Realizou o login sem problemas, com acesso rápido. | Acessou a página inicial com sucesso, reconhecendo a interface. | Selecionou uma trilha sem dificuldades, com interação clara. | Visualizou os módulos de forma fluida, sem confusão. | Respondeu a questão com sucesso, com feedback claro. |
+| **Samuel**    | Completou o login corretamente, sem dificuldades. | Acessou a página inicial sem problemas, com interface intuitiva. | Teve dificuldade ao selecionar a trilha, clicando no "HELP" por engano devido à falta de destaque visual. **Melhoria sugerida**: Melhorar o contraste do botão de trilhas e evitar sobreposição com o "HELP". | Visualizou os módulos com sucesso após superar a dificuldade. | Respondeu a questão corretamente, sem problemas adicionais. |
+
+**Pontos de Melhoria Identificados**:
+
+| Problema | Severidade | Resumo e Melhoria Sugerida | Participantes Afetados | Status |
+|----------|------------|----------------------------|------------------------|--------|
+| Acessar a trilha | Catástrofe | O servidor falha ao clicar na trilha. **Melhoria**: Corrigir estabilidade do servidor. | Não especificado | Finalizado |
+| Suas trilhas | Alta | Usuário confundiu "Suas Trilhas" com trilhas favoritas. **Melhoria**: Clarificar o texto ou adicionar tooltip. | Não especificado | Finalizado |
+| Help | Alta | Confusão sobre o propósito do "HELP". **Melhoria**: Adicionar descrição clara ou tooltip no botão. | Samuel | Finalizado |
+| Visualização dos módulos | Baixa | Falta de marcação evidente no módulo ativo. **Melhoria**: Adicionar destaque visual lateralAbbreviations: **Melhoria**: Adicionar destaque visual lateral. | Não especificado | Finalizado |
+| Porcentagem da trilha | Baixa | Progresso da trilha não atualiza após responder questão. **Melhoria**: Corrigir atualização do progresso. | Não especificado | Finalizado |
+| Texto do módulo | Baixa | Bloco de texto considerado agressivo (muita informação). **Melhoria**: Simplificar e organizar o conteúdo. | Não especificado | Finalizado |
 
 ---
 
-##### Tarefa 3: Suponha que você é um administrador digital e utilize o sistema para solucionar uma dúvida frequente (HELP)
+### Tarefa 3: Suponha que você é um promotor técnico digital e utilizará o sistema para solucionar uma dúvida frequente via seção HELP
+
+**Contexto do Teste**: Testes realizados nos atêlies do Inteli. Os participantes os usuários, com idades entre 18-50 anos e experiência básica em plataformas digitais assumiram o papel de "promotor técnico digital", um profissional que utiliza sistemas digitais para consultar informações técnicas e resolver dúvidas operacionais.
 
 | Usuário       | Etapa 1 | Etapa 2 | Etapa 3 | Etapa 4 | Etapa 5 |
 |---------------|---------|---------|---------|---------|---------|
-|| **Descrição 1**: Realizar o login na plataforma | **Descrição 2**: Acessar a home da plataforma | **Descrição 3**: Clicar no Help no header | **Descrição 4**: Visualizar as perguntas frequentes | **Descrição 5**: Baixar os conteúdos 
-| **Icaro**     | Completou o login corretamente, com processo fluido e sem dificuldades. | Acessou a página inicial com sucesso, reconhecendo a interface de forma intuitiva. | Clicou no botão "Help" sem problemas, indicando boa visibilidade do elemento no header. | Visualizou as perguntas frequentes com clareza, navegando pela seção sem dificuldades. | Baixou os conteúdos com sucesso, com o sistema funcionando como esperado. |
-| **Vitor Lopes** | Realizou o login de forma eficiente, sem barreiras ou erros no acesso. | Acessou a página inicial rapidamente, com interface clara e intuitiva. | Localizou e clicou no botão "Help" sem dificuldades, com boa usabilidade no header. | Visualizou as perguntas frequentes sem problemas, com layout acessível e organizado. | Baixou os conteúdos corretamente, sem reportar falhas no sistema. |
-| **Pedro**     | Completou o login sem obstáculos, com processo de autenticação fluido. | Acessou a página inicial com sucesso, reconhecendo os elementos principais da interface. | Clicou no botão "Help" com facilidade, indicando boa sinalização do elemento. | Visualizou as perguntas frequentes sem dificuldades, com navegação clara e intuitiva. | Baixou os conteúdos com sucesso, com feedback adequado do sistema. |
-| **João Furtado** | Realizou o login sem problemas, com acesso rápido e eficiente à plataforma. | Acessou a página inicial sem dificuldades, com interface reconhecível e amigável. | Clicou no botão "Help" sem obstáculos, com boa visibilidade do elemento no header. | Visualizou as perguntas frequentes com clareza, com layout bem estruturado. | Baixou os conteúdos com sucesso, com o sistema funcionando corretamente. |
-| **Sérgio**   | Completou o login sem dificuldades, com processo de autenticação eficiente. | Acessou a página inicial com sucesso, reconhecendo a interface sem problemas. | Clicou no botão "Help" com facilidade, mas relatou leve confusão sobre o propósito do "Help". **Melhoria sugerida: Adicionar um texto explicativo no botão "Help" para esclarecer sua função.** | Visualizou as perguntas frequentes sem dificuldades, com navegação fluida. | Baixou os conteúdos com sucesso, sem reportar problemas no sistema. |
-| **Samuel**    | Realizou o login corretamente, com processo fluido e sem barreiras. | Acessou a página inicial sem dificuldades, com interface intuitiva. | Teve bastante dificuldade para localizar e entender o botão "Help", indicando possível problema de usabilidade ou falta de destaque visual. **Melhoria sugerida: Adicionar uma descrição clara sobre do "Help" e sua funcionalidade.** | Visualizou as perguntas frequentes com sucesso após superar a dificuldade inicial, com layout acessível. | Baixou os conteúdos corretamente, com o sistema funcionando como esperado. |
+|               | **Descrição 1** | **Descrição 2** | **Descrição 3** | **Descrição 4** | **Descrição 5** |
+|               | Realizar o login na plataforma | Acessar a home da plataforma | Clicar no botão "Help" no header | Visualizar as perguntas frequentes | Baixar os conteúdos associados |
+| **Icaro**     | Completou o login corretamente, com processo fluido. | Acessou a home page com sucesso, reconhecendo a interface. | Clicou no botão "Help" sem problemas, com boa visibilidade. | Visualizou as perguntas frequentes com clareza, navegando sem dificuldades. | Baixou os conteúdos com sucesso, com sistema funcionando. |
+| **Vitor Lopes** | Realizou o login eficientemente, sem barreiras. | Acessou a home page rapidamente, com interface clara. | Localizou e clicou no "Help" sem dificuldades, com boa usabilidade. | Visualizou as perguntas frequentes sem problemas, com layout organizado. | Baixou os conteúdos corretamente, sem falhas. |
+| **Pedro**     | Completou o login sem obstáculos, com processo fluido. | Acessou a home page com sucesso, reconhecendo os elementos. | Clicou no "Help" com facilidade, com boa sinalização. | Visualizou as perguntas frequentes sem dificuldades, com navegação clara. | Baixou os conteúdos com sucesso, com feedback adequado. |
+| **João Furtado** | Realizou o login sem problemas, com acesso rápido. | Acessou a home page sem dificuldades, com interface amigável. | Clicou no "Help" sem obstáculos, com boa visibilidade. | Visualizou as perguntas frequentes com clareza, com layout estruturado. | Baixou os conteúdos com sucesso, com sistema correto. |
+| **Sérgio**   | Completou o login sem dificuldades, com processo eficiente. | Acessou a home page com sucesso, reconhecendo a interface. | Clicou no "Help" com facilidade, mas relatou confusão sobre seu propósito. **Melhoria sugerida**: Adicionar um texto explicativo no botão "Help". | Visualizou as perguntas frequentes sem dificuldades, com navegação fluida. | Baixou os conteúdos com sucesso, sem problemas. |
+| **Samuca**    | Realizou o login corretamente, com processo fluido. | Acessou a home page sem dificuldades, com interface intuitiva. | Teve grande dificuldade para localizar o botão "Help", devido à falta de destaque. **Melhoria sugerida**: Aumentar contraste e reavaliar usabilidade do "Help" (marcado como "Finalizado", but ineficaz). [Afeta: Sergin*, Samuca] | Visualizou as perguntas frequentes com sucesso após superar a dificuldade. | Baixou os conteúdos corretamente, com sistema funcionando. |
 
+**Pontos de Melhoria Identificados**:
 
+| Problema | Severidade | Resumo e Melhoria Sugerida | Participantes Afetados | Status |
+|----------|------------|----------------------------|------------------------|--------|
+| Help (percepção) | Catástrofe | Usuários não perceberam o propósito do "Help". **Melhoria**: Adicionar ícone intuitivo e descrição clara. | Sérgio, Samuel | Finalizado |
+| Help (confusão) | Alta | Dúvida sobre o que o "Help" oferece. **Melhoria**: Incluir texto explicativo no header. | Sérgio, Samuel | Finalizado |
+| Feedback: Design (grid do Help) | Baixa | Sugestão de mudar o grid do "Help" para lista. **Melhoria**: Revisar layout do "Help". | Pedro | Passos futuros |
+| Espaçamento footer | Baixa | Espaçamento excessivo no footer. **Melhoria**: Ajustar espaçamento visual. | Não especificado | Finalizado |
+
+---
 
 # <a name="c6"></a>6. Estudo de Mercado e Plano de Marketing 
 
