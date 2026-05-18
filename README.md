@@ -31,7 +31,7 @@
 
 ## 📝 Descrição
 
-&emsp; O Field Review é uma plataforma web desenvolvida para capacitar Promotores Técnicos Digitais (PTDs) no uso da ferramenta Climate FieldView, da Bayer Crop Science. A iniciativa surgiu a partir da necessidade de apoiar esses profissionais que, muitas vezes, enfrentam dificuldades técnicas durante a instalação e o suporte da solução no campo. A proposta visa facilitar o acesso ao conhecimento de forma prática e rápida, contribuindo para um atendimento mais eficiente e qualificado.
+&emsp; O Field Review é uma plataforma web desenvolvida para capacitar Promotores Técnicos Digitais (PTDs) no uso de um ferramente tecnologia de controle do campo. A iniciativa surgiu a partir da necessidade de apoiar esses profissionais que, muitas vezes, enfrentam dificuldades técnicas durante a instalação e o suporte da solução no campo. A proposta visa facilitar o acesso ao conhecimento de forma prática e rápida, contribuindo para um atendimento mais eficiente e qualificado.
 
 &emsp; A plataforma conta com dois perfis principais de uso: um voltado aos PTDs, que têm acesso a trilhas de conhecimento com conteúdos interativos, vídeos, tutoriais e quizzes; e outro voltado aos administradores, com funcionalidades que permitem adicionar materiais, organizar os conteúdos e acompanhar o desempenho dos usuários. Essa divisão torna possível uma gestão mais eficaz do aprendizado, permitindo à liderança identificar lacunas de conhecimento e promover formações mais direcionadas.
 
