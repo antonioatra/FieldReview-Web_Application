@@ -41,7 +41,7 @@
 
 # <a name="c1"></a>1. Introdução 
 
-&emsp; O Climate FieldView faz parte do portfólio de soluções digitais da Bayer Crop Science, que visa ajudar os agricultores a tomarem decisões mais informadas e precisas em suas operações agrícolas. A plataforma oferece uma variedade de ferramentas e recursos para monitorar e gerenciar as atividades agrícolas, desde o planejamento até a colheita. A problemática trazida pelo parceiro se dá à medida que os agentes responsáveis para a instalação e suporte presencial do produto nas fazendas (os chamados Promotores Técnicos Digitais) muitas vezes não possuem a capacitação técnica necessária para realizar tais atendimentos. 
+&emsp; A problemática trazida pelo parceiro se dá à medida que os agentes responsáveis para a instalação e suporte presencial do produto nas fazendas (os chamados Promotores Técnicos Digitais) muitas vezes não possuem a capacitação técnica necessária para realizar tais atendimentos. 
 
 &emsp; A solução desenvolvida busca ser uma ferramenta para auxiliar na formação e capacitação desses profissionais, permitindo que eles tenham acesso a informações técnicas e práticas sobre o uso do Climate FieldView de maneira fácil e rápida. A plataforma oferece diferentes trilhas do conhecimento sobre as diferentes funcionalidades do sistema além de um sistema de pesquisa que permite que o usuário encontre rapidamente o conteúdo desejado. 
 
@@ -57,17 +57,17 @@
 
 ### 2.1.1. Modelo de 5 Forças de Porter 
 
-&emsp; O modelo de 5 forças de Porter é uma ferramenta de análise para avaliar a competitividade no setor de negócios que a empresa atua. Sob o ponto de vista da Bayer Crop Science, montou-se o seguinte modelo [Figura 1]:
+&emsp; O modelo de 5 forças de Porter é uma ferramenta de análise para avaliar a competitividade no setor de negócios que a empresa atua. Sob o ponto de vista do parceiro, montou-se o seguinte modelo [Figura 1]:
 
 <p align="center">
-<sup>Figura 1: 5 Forças de Porter aplicadas à empresa Bayer Crop Science.</sup> <br>
+<sup>Figura 1: 5 Forças de Porter aplicadas à empresa.</sup> <br>
     <img src="../assets/assetsWAD/cincoForcasPorter.png"> <br>
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 #### **Rivalidade entre concorrentes**
 
-&emsp; Em relação à concorrência no mercado agrícola, os rivais da Bayer Crop Science podem ser divididos entre o ramo de sementes, proteção de cultivos e soluções digitais.
+&emsp; Em relação à concorrência no mercado agrícola, os rivais da empresa podem ser divididos entre o ramo de sementes, proteção de cultivos e soluções digitais.
 
 &emsp; No que diz respeito à área de sementes, a rivalidade entre os concorrentes é alta, uma vez que há grandes companhias atuando nesse ramo. A exemplo disso, pode-se citar empresas como: DowDuPont Inc., Syngenta AG, Groupe Limagrain e KWS SAAT SE.
 
@@ -78,7 +78,7 @@
 
 #### **Poder de barganha dos compradores**
 
-&emsp; O poder de barganha dos clientes é baixo, visto que os produtos oferecidos pela Bayer Crop Science oferecem funcionalidades e tecnologias exclusivas que reduzem a sensibilidade dos clientes ao preço. Exemplificando, há o programa de fidelidade Impulso Bayer, na qual é possível trocar pontos por recompensas, e o produto FieldView apresenta ferramentas tecnológicas únicas para o produtor rural. Assim, os fatores técnicos e as exclusividades que a empresa oferece são decisivos para motivar a compra dos consumidores.
+&emsp; O poder de barganha dos clientes é baixo, visto que os produtos oferecidos pela empresa oferecem funcionalidades e tecnologias exclusivas que reduzem a sensibilidade dos clientes ao preço. Exemplificando, há o programa de fidelidade Impulso da empresa, na qual é possível trocar pontos por recompensas, e o produto FieldView apresenta ferramentas tecnológicas únicas para o produtor rural. Assim, os fatores técnicos e as exclusividades que a empresa oferece são decisivos para motivar a compra dos consumidores.
 
 #### **Poder de barganha dos fornecedores**
 
@@ -90,7 +90,7 @@
 
 #### **Ameaça de novos entrantes**
 
-&emsp; A ameaça de novos entrantes é baixa, tendo em vista que o mercado agrícola já é bem consolidado com empresas de grande relevância internacional. Sob esse contexto, o ramo agrícola é de alta competitividade no nível mundial, na qual empresas como a própria Bayer Crop Science, Corteva, Phos Agro, AGCO, Sime Darby Plantation e outras companhias disputam um lugar de destaque. Por conseguinte, apesar do crescimento constante, o mercado agrícola é de difícil acesso para novos entrantes em todas as áreas de atuação do agronegócio.
+&emsp; A ameaça de novos entrantes é baixa, tendo em vista que o mercado agrícola já é bem consolidado com empresas de grande relevância internacional. Sob esse contexto, o ramo agrícola é de alta competitividade no nível mundial, na qual empresas como a própria empresa, Corteva, Phos Agro, AGCO, Sime Darby Plantation e outras companhias disputam um lugar de destaque. Por conseguinte, apesar do crescimento constante, o mercado agrícola é de difícil acesso para novos entrantes em todas as áreas de atuação do agronegócio.
 
 ### 2.1.2. Análise SWOT da Instituição Parceira 
 
@@ -104,17 +104,17 @@
 
 &emsp; Ao mapear esses quatro elementos, a Análise SWOT permite que empresas ou indivíduos tracem estratégias mais alinhadas com suas capacidades e com o cenário ao seu redor. É uma abordagem amplamente utilizada no planejamento estratégico, no desenvolvimento de negócios e até em decisões pessoais.
 
-&emsp; A Bayer CropScience é líder no agronegócio por seu ecossistema completo e forte presença no mercado, com destaque para o FieldView, solução digital que a diferencia da concorrência. No entanto, seu foco em grandes produtores pode limitar seu alcance entre pequenos agricultores. A empresa enfrenta ameaças como questões ambientais e processos legais, que afetam sua reputação. Por outro lado, há oportunidades na expansão de soluções sustentáveis, como o projeto PRO Carbono, e parcerias com universidades, fortalecendo sua inovação e presença no setor frente a concorrentes com tecnologias emergentes.
+&emsp; A empresa é líder no agronegócio por seu ecossistema completo e forte presença no mercado, com destaque para o FieldView, solução digital que a diferencia da concorrência. No entanto, seu foco em grandes produtores pode limitar seu alcance entre pequenos agricultores. A empresa enfrenta ameaças como questões ambientais e processos legais, que afetam sua reputação. Por outro lado, há oportunidades na expansão de soluções sustentáveis, como o projeto PRO Carbono, e parcerias com universidades, fortalecendo sua inovação e presença no setor frente a concorrentes com tecnologias emergentes.
 
 <p align = 'center'>
-<sup>Figura 2: Análise SWOT da Bayer Crop Science.</sup>
+<sup>Figura 2: Análise SWOT da empresa.</sup>
 <img src="../assets/assetsWAD/analiseSWOT.png">
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
 </p>
 
 ### 2.1.3. Solução 
 
-&emsp; A solução baseia-se em uma parceria com a Bayer, que oferece uma ferramenta chamada Climate FieldView — um sistema de software e hardware utilizado para coletar dados de máquinas agrícolas e monitorar a saúde das lavouras. No entanto, essa ferramenta apresenta dificuldades em sua instalação e manuseio por parte dos PTDs (Promotores Técnicos Digitais), uma vez que esses profissionais nem sempre possuem a capacitação técnica necessária para realizar um trabalho eficiente e satisfatório.
+&emsp; A solução baseia-se em uma parceria com a empresa, que oferece uma ferramenta chamada Climate FieldView — um sistema de software e hardware utilizado para coletar dados de máquinas agrícolas e monitorar a saúde das lavouras. No entanto, essa ferramenta apresenta dificuldades em sua instalação e manuseio por parte dos PTDs (Promotores Técnicos Digitais), uma vez que esses profissionais nem sempre possuem a capacitação técnica necessária para realizar um trabalho eficiente e satisfatório.
 
 #### Problema a ser resolvido: <br>
 &emsp; Devido a alta rotatividade dos PTDs, os responsáveis pela instalação do Climate FieldView, eles acabam sendo direcionados para atuar a instalação sem a devida capacidade técnica e, consequentemente, acarretam na insatisfação dos clientes que adquiriram o produto e sobrecarrega o atendimento remoto já que o presencial não está sendo efetivo.
@@ -251,7 +251,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 | Plataforma não funcionar sem rede de internet           | Técnico / Infraestrutura           | A dependência de conexão com a internet pode inviabilizar o uso da solução em regiões remotas ou com sinal instável.                        | 50            | Muito Alto  |
 | PDTs não conseguirem utilizar a plataforma de maneira intuitiva | Produto / Usabilidade             | A complexidade da interface ou navegação pode impedir que os PDTs usem a plataforma corretamente, afetando a experiência e resultados.       | 30            | Alto        |
 | Falta de conhecimento na área de back end               | Pessoas (falta de conhecimento)    | Habilidades limitadas em back end podem atrasar a construção de funcionalidades críticas e a progressão do trabalho.                        | 30            | Moderado    |
-| Análise da empresa (Bayer CropScience)                  | Pesquisa                           | Análise bem feita do parceiro sem nenhum impeditivo ou dificuldade.                                                                         | 10            | Muito Baixo |
+| Análise da empresa                  | Pesquisa                           | Análise bem feita do parceiro sem nenhum impeditivo ou dificuldade.                                                                         | 10            | Muito Baixo |
 | Desentendimento entre a equipe                          | Relacionamento / Relação           | Conflitos interpessoais podem gerar impacto na produtividade e na continuidade do projeto.                                                   | 10            | Baixo       |
 <p align = 'center'>
 <sub>Fonte: Material produzido pelos autores (2025).</sub>
@@ -266,7 +266,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 
 | Oportunidade                                | Categoria               | Descrição                                                                                         | Probabilidade | Impacto    |
 |---------------------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------|---------------|------------|
-| Conhecer uma grande empresa internacional   | Rede de contatos        | Contato com a Bayer proporciona networking relevante e aprendizado sobre o mercado internacional, além de entender como é trabalhar para uma empresa grande pela primeira vez. | 90            | Alto       |
+| Conhecer uma grande empresa internacional   | Rede de contatos        | Contato com a empresa proporciona networking relevante e aprendizado sobre o mercado internacional, além de entender como é trabalhar para uma empresa grande pela primeira vez. | 90            | Alto       |
 | Alto engajamento com o projeto              | Pessoas  | A equipe está motivada, o que fortalece o comprometimento e a dedicação ao projeto, aumentando a produtividade e a disposição para passar por dificuldades ou aprender e aplicar o que o projeto precisar.               | 90            | Muito Alto |
 | Aprender novas tecnologias                  | Educacional / Técnico   | O projeto permite o contato com ferramentas e linguagens ainda não dominadas pelos membros, ampliando o conhecimento em áreas nas quais todos irão trabalhar futuramente e nos transformando em profissionais mais completos.       | 70            | Muito Alto |
 | Ganho financeiro através da venda da ideia  | Financeira / Negócios   | A solução proposta pode gerar lucro no futuro caso seja viabilizada comercialmente.               | 70            | Alto       |
@@ -280,7 +280,7 @@ Trilhas de capacitação para os promotores, com recursos visuais e auditivos, v
 
 ## 2.2. Personas 
 
-&emsp; As personas [Figuras 5-6] mapeadas para o projeto representam os perfis centrais dos usuários que interagem diretamente com a solução proposta. As personas foram desenvolvidas com base nas necessidades do parceiro Bayer Crop Science e visam orientar decisões de design, funcionalidades e usabilidade da aplicação.
+&emsp; As personas [Figuras 5-6] mapeadas para o projeto representam os perfis centrais dos usuários que interagem diretamente com a solução proposta. As personas foram desenvolvidas com base nas necessidades do parceiro e e visam orientar decisões de design, funcionalidades e usabilidade da aplicação.
 
 <p align = 'center'>
 <sup>Figura 5: Representação da persona PTD Jorge Faria.</sup>
@@ -750,7 +750,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 ### 3.3.2 Tipografia
 
-&emsp; A tipografia da aplicação Web [Figura 17-18] é baseada no guia de marca da empresa Bayer, na qual a fonte Helvetica, amplamente utilizada pela Bayer em suas soluções tecnológicas e materiais online, foi adotada para garantir identidade visual e consistência.
+&emsp; A tipografia da aplicação Web [Figura 17-18] é baseada no guia de marca da empresa , na qual a fonte Helvetica, amplamente utilizada pela empresa em suas soluções tecnológicas e materiais online, foi adotada para garantir identidade visual e consistência.
 
 &emsp; Com a adaptação da plataforma para desktop e dispotivos móveis, realizou-se um guia para a versão de computador (Figura 17) e outro para celular (Figura 18). Dessa maneira, o guia tipográfico ficou da seguinte forma:
 
@@ -855,7 +855,7 @@ Segue o link do local onde foi desenvolvido o wireframe para visualização de t
 
 **Logo**
 
- &emsp; Além dos elementos mencionados no tópico anterior, é importante destacar o papel central que o logo da aplicação FieldReview desempenha em toda a plataforma. Desenvolvida com base nas cores primárias da Bayer (azul e verde) e elementos gráficos que remetem a logo do Climate FieldView, ele não apenas reflete visualmente o nome do projeto, mas também incorpora sua essência e propósito dentro do ecossistema de soluções Bayer/Climate FieldView. A presença consistente do logo ao longo da plataforma reforçará a identidade visual da marca, tornando-o instantaneamente reconhecível e associado com os valores e objetivos do FieldReview. A imagem 20 é a logo produzida.
+ &emsp; Além dos elementos mencionados no tópico anterior, é importante destacar o papel central que o logo da aplicação FieldReview desempenha em toda a plataforma. Desenvolvida com base nas cores primárias da empresa (azul e verde) e elementos gráficos que remetem a logo do Climate FieldView, ele não apenas reflete visualmente o nome do projeto, mas também incorpora sua essência e propósito dentro do ecossistema de soluções da empresa. A presença consistente do logo ao longo da plataforma reforçará a identidade visual da marca, tornando-o instantaneamente reconhecível e associado com os valores e objetivos do FieldReview. A imagem 20 é a logo produzida.
 
 <p align = "center">
 <sup>Figura 20: Logo do Projeto</sup>
@@ -1737,17 +1737,17 @@ Nesse contexto, a proposta de um site educativo baseado em trilhas de aprendizag
 
 <h3> Vantagens Competitivas da Aplicação Web </h3>
 
-&emsp; O FieldReview destaca-se como uma solução exclusiva e estratégica dentro do ecossistema Bayer, oferecendo uma experiência de capacitação focada nos Promotores Técnicos Digitais (PTDs) e consultores que operam com o Climate FieldView. Com trilhas modulares de aprendizagem adaptadas às necessidades de cada PTD, recursos de gamificação, certificações e um sistema de busca rápida para dúvidas operacionais, a plataforma promove engajamento real e aplicação prática do conhecimento. O painel de consultores, os permitem monitorar e ajustar o progresso técnico da equipe, elevando o padrão de suporte agronômico prestado ao agricultor.
+&emsp; O FieldReview destaca-se como uma solução exclusiva e estratégica dentro do ecossistema da empresa, oferecendo uma experiência de capacitação focada nos Promotores Técnicos Digitais (PTDs) e consultores que operam com o Climate FieldView. Com trilhas modulares de aprendizagem adaptadas às necessidades de cada PTD, recursos de gamificação, certificações e um sistema de busca rápida para dúvidas operacionais, a plataforma promove engajamento real e aplicação prática do conhecimento. O painel de consultores, os permitem monitorar e ajustar o progresso técnico da equipe, elevando o padrão de suporte agronômico prestado ao agricultor.
 
 &emsp; A plataforma diferencia-se das aplicações comuns devido ao seu desenvolvimento exclusivo para a aprendizagem dos Promotores Técnicos Digitais. Dentre as funcionalidades específicas, destacam-se as trilhas de conhecimento, que evoluem dos conteúdos mais básicos até as funções mais recentes adicionadas ao Climate FieldView. Também há notificações para informar o usuário sobre novas trilhas atribuídas pelo seu líder de equipe. Além disso, o processo de avaliação por etapas visa melhorar a experiência dos promotores em meio à sua rotina corrida, evitando que percam muito tempo com provas extensas.
 
-&emsp; Em relação à equipe de liderança e aos produtores de conteúdo da Bayer, a aplicação se mostra relevante por suas funcionalidades administrativas. Entre os diferenciais voltados a esses profissionais, destacam-se as funções de criar, editar e excluir trilhas na plataforma, bem como a possibilidade de atribuir trilhas a funcionários específicos. Ademais, a aplicação permite visualizar dados de usuários específicos e adicionar perguntas frequentes para esclarecer dúvidas gerais dos promotores.
+&emsp; Em relação à equipe de liderança e aos produtores de conteúdo da empresa, a aplicação se mostra relevante por suas funcionalidades administrativas. Entre os diferenciais voltados a esses profissionais, destacam-se as funções de criar, editar e excluir trilhas na plataforma, bem como a possibilidade de atribuir trilhas a funcionários específicos. Ademais, a aplicação permite visualizar dados de usuários específicos e adicionar perguntas frequentes para esclarecer dúvidas gerais dos promotores.
 
 ## 6.4 Público-Alvo
 <h3>Segmentação do Mercado</h3>
 
-&emsp; Nossa aplicação, por ser uma plataforma de capacitação dos PTDs e seus administradores, como o Consultor e Knowledge Transfer, o público-alvo se restringem apenas e exclusivamente aos funcionários da própria Bayer. 
-Em uma pesquisa realizada por meio de um formulário e respondido por Promotores Técnicos Digitais, foi possível ver que apenas 40% deles usam os conteúdos passados pela Bayer para o trabalho. Problemas como problema relacionado ao acesso rápido aos conteúdos e a falta de incentivo e fiscalização por parte dos administradores desses funcionários. Além disso, 100% deles tem interesse em usar uma plataforma que facilitaria e melhoraria o aprendizado dos PTDs sobre o Climate FieldView, demonstrando a necessidade dessa unificação e facilidade dos assuntos e estudos.
+&emsp; Nossa aplicação, por ser uma plataforma de capacitação dos PTDs e seus administradores, como o Consultor e Knowledge Transfer, o público-alvo se restringem apenas e exclusivamente aos funcionários da própria empresa. 
+Em uma pesquisa realizada por meio de um formulário e respondido por Promotores Técnicos Digitais, foi possível ver que apenas 40% deles usam os conteúdos passados pela empresa para o trabalho. Problemas como problema relacionado ao acesso rápido aos conteúdos e a falta de incentivo e fiscalização por parte dos administradores desses funcionários. Além disso, 100% deles tem interesse em usar uma plataforma que facilitaria e melhoraria o aprendizado dos PTDs sobre o Climate FieldView, demonstrando a necessidade dessa unificação e facilidade dos assuntos e estudos.
 
 &emsp; Logo, a necessidade de algo como a FieldView é claro e atinge bem o público alvo.
 
@@ -1756,7 +1756,7 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 <h3>Perfil do Público-Alvo</h3>
 
 
-&emsp;O público-alvo da nossa proposta são os Promotores Técnicos Digitais (PTDs) da Bayer, profissionais com atuação em todo o território nacional. No entanto, segundo pesquisa própria aplicada aos colaboradores, a maior concentração desses profissionais encontra-se na região Centro-Oeste, devido à alta densidade de propriedades agrícolas nessa área (IBGE, 2023).
+&emsp;O público-alvo da nossa proposta são os Promotores Técnicos Digitais (PTDs) da empresa, profissionais com atuação em todo o território nacional. No entanto, segundo pesquisa própria aplicada aos colaboradores, a maior concentração desses profissionais encontra-se na região Centro-Oeste, devido à alta densidade de propriedades agrícolas nessa área (IBGE, 2023).
 
 &emsp;Por meio de uma análise de perfis no LinkedIn e dados coletados por formulário, observamos que a maioria dos PTDs possui ensino superior em Agronomia, Engenharia Agronômica ou Engenharia Agrícola, com idade média de 26 anos.
 
@@ -1769,12 +1769,12 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 
 <h3> Proposta de Valor Única* </h3>
 
-&emsp; O FieldReview oferece uma proposta de valor única ao capacitar Promotores Técnicos Digitais (PTDs) no uso eficiente do Climate FieldView, plataforma líder em agricultura digital. Diferentemente de soluções genéricas de treinamento, o FieldReview é uma ferramenta sob medida que combina trilhas de aprendizado intuitivas, sistema de gamificação com pontuação e certificados, e uma interface de administração robusta para acompanhamento de desempenho. Essa abordagem garante que os PTDs adquiram habilidades técnicas de forma ágil e prática, reduzindo a dependência de suporte remoto e elevando a qualidade do atendimento presencial aos agricultores. A funcionalidade de busca rápida permite resolver dúvidas em tempo real, enquanto o sistema de ranking e certificados incentiva o engajamento contínuo. Para os consultores, a plataforma oferece visibilidade detalhada do progresso da equipe, possibilitando a personalização de trilhas de capacitação. Ao integrar tecnologia educacional com as necessidades específicas do setor agrícola, o FieldReview não apenas melhora a eficiência operacional, mas também fortalece a confiança dos clientes na Bayer, promovendo maior adoção e satisfação com o Climate FieldView. Essa solução única alinha capacitação técnica com inovação, atendendo às demandas de um mercado agrícola cada vez mais digitalizado e competitivo.
+&emsp; O FieldReview oferece uma proposta de valor única ao capacitar Promotores Técnicos Digitais (PTDs) no uso eficiente do Climate FieldView, plataforma líder em agricultura digital. Diferentemente de soluções genéricas de treinamento, o FieldReview é uma ferramenta sob medida que combina trilhas de aprendizado intuitivas, sistema de gamificação com pontuação e certificados, e uma interface de administração robusta para acompanhamento de desempenho. Essa abordagem garante que os PTDs adquiram habilidades técnicas de forma ágil e prática, reduzindo a dependência de suporte remoto e elevando a qualidade do atendimento presencial aos agricultores. A funcionalidade de busca rápida permite resolver dúvidas em tempo real, enquanto o sistema de ranking e certificados incentiva o engajamento contínuo. Para os consultores, a plataforma oferece visibilidade detalhada do progresso da equipe, possibilitando a personalização de trilhas de capacitação. Ao integrar tecnologia educacional com as necessidades específicas do setor agrícola, o FieldReview não apenas melhora a eficiência operacional, mas também fortalece a confiança dos clientes na empresa, promovendo maior adoção e satisfação com o Climate FieldView. Essa solução única alinha capacitação técnica com inovação, atendendo às demandas de um mercado agrícola cada vez mais digitalizado e competitivo.
 
 
 <h3> Estratégia de Diferenciação</h3>
 
-&emsp; A estratégia de diferenciação do FieldReview baseia-se em sua abordagem personalizada e focada nas necessidades específicas dos Promotores Técnicos Digitais (PTDs) e consultores da Bayer Crop Science. Diferentemente de plataformas genéricas de e-learning, o FieldReview é projetado exclusivamente para o ecossistema do Climate FieldView, garantindo relevância contextual e aplicabilidade direta no campo. A combinação de trilhas de aprendizado modulares, gamificação com pontuação e certificados, e uma interface de busca rápida para resolução de dúvidas em tempo real distingue a aplicação de concorrentes que oferecem treinamentos amplos e menos específicos. Além disso, o sistema de administração permite que consultores monitorem e personalizem o aprendizado, ajustando trilhas às deficiências técnicas de cada PTD, o que aumenta a eficiência e a eficácia do treinamento. A identidade visual alinhada à Bayer, utilizando cores e tipografia consistentes, reforça a credibilidade e integração com a marca. A usabilidade otimizada para desktop e mobile assegura acessibilidade em diferentes contextos, incluindo áreas rurais com conectividade limitada. Ao focar na capacitação prática e no acompanhamento detalhado do desempenho, o FieldReview se posiciona como uma ferramenta indispensável para melhorar a qualidade do suporte técnico, reduzir a sobrecarga no atendimento remoto e elevar a satisfação dos agricultores, destacando-se em um mercado onde a precisão e a agilidade no treinamento são cruciais.
+&emsp; A estratégia de diferenciação do FieldReview baseia-se em sua abordagem personalizada e focada nas necessidades específicas dos Promotores Técnicos Digitais (PTDs) e consultores da empresa. Diferentemente de plataformas genéricas de e-learning, o FieldReview é projetado exclusivamente para o ecossistema do Climate FieldView, garantindo relevância contextual e aplicabilidade direta no campo. A combinação de trilhas de aprendizado modulares, gamificação com pontuação e certificados, e uma interface de busca rápida para resolução de dúvidas em tempo real distingue a aplicação de concorrentes que oferecem treinamentos amplos e menos específicos. Além disso, o sistema de administração permite que consultores monitorem e personalizem o aprendizado, ajustando trilhas às deficiências técnicas de cada PTD, o que aumenta a eficiência e a eficácia do treinamento. A identidade visual alinhada à empresa, utilizando cores e tipografia consistentes, reforça a credibilidade e integração com a marca. A usabilidade otimizada para desktop e mobile assegura acessibilidade em diferentes contextos, incluindo áreas rurais com conectividade limitada. Ao focar na capacitação prática e no acompanhamento detalhado do desempenho, o FieldReview se posiciona como uma ferramenta indispensável para melhorar a qualidade do suporte técnico, reduzir a sobrecarga no atendimento remoto e elevar a satisfação dos agricultores, destacando-se em um mercado onde a precisão e a agilidade no treinamento são cruciais.
 
 
 ## 6.6 Estratégia de Marketing 
@@ -1800,26 +1800,26 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 &emsp; Seu principal diferencial competitivo é o foco direto na capacitação prática e contextualizada dos usuários, algo ainda pouco explorado no setor. Além disso, a combinação de conteúdos interativos, ranking e usabilidade otimizada torna o FieldReview uma solução eficaz e alinhada às necessidades do campo.
 
 ### Preço
-&emsp; A estratégia de precificação adotada neste projeto é do tipo valorização por conteúdo e impacto, com foco em acessibilidade e escala. Considerando o público-alvo — agentes de campo (PTDs) vinculados à Bayer ou parceiros no setor agrícola — opta-se por um modelo de acesso gratuito para os usuários finais, sendo o custo integralmente subsidiado pela empresa ou parceiros institucionais. Essa abordagem reforça o compromisso da marca com o desenvolvimento técnico do setor e a democratização do conhecimento.
+&emsp; A estratégia de precificação adotada neste projeto é do tipo valorização por conteúdo e impacto, com foco em acessibilidade e escala. Considerando o público-alvo — agentes de campo (PTDs) vinculados à empresa ou parceiros no setor agrícola — opta-se por um modelo de acesso gratuito para os usuários finais, sendo o custo integralmente subsidiado pela empresa ou parceiros institucionais. Essa abordagem reforça o compromisso da marca com o desenvolvimento técnico do setor e a democratização do conhecimento.
 
-&emsp; A decisão se justifica pelas tendências observadas nas análises anteriores. Como mostram relatórios da Embrapa e FAO, há demanda crescente por capacitação contínua e acessível, sobretudo no meio rural, onde limitações logísticas e financeiras ainda representam barreiras ao aprendizado formal. Além disso, segundo a McKinsey, investimentos em educação e tecnologia no campo geram aumento de produtividade e valor agregado à cadeia agrícola — o que justifica o investimento estratégico da Bayer nesse projeto, com retorno indireto em eficiência, sustentabilidade e posicionamento de marca.
+&emsp; A decisão se justifica pelas tendências observadas nas análises anteriores. Como mostram relatórios da Embrapa e FAO, há demanda crescente por capacitação contínua e acessível, sobretudo no meio rural, onde limitações logísticas e financeiras ainda representam barreiras ao aprendizado formal. Além disso, segundo a McKinsey, investimentos em educação e tecnologia no campo geram aumento de produtividade e valor agregado à cadeia agrícola — o que justifica o investimento estratégico da empresa nesse projeto, com retorno indireto em eficiência, sustentabilidade e posicionamento de marca.
 
 
 ### Praça 
 
-&emsp; O FieldReview, como aplicação web, será distribuído via navegadores, acessível em dispositivos Android, iOS (iPads, iPhones) e desktops, semelhante ao Climate FieldView™. A Bayer o disponibilizará em seu [site oficial](https://www.agro.bayer.com.br/) e na plataforma Orbia, conectando Promotores Técnicos Digitais (PTDs) a agricultores. O LinkedIn será utilizado para promover a ferramenta, com posts direcionados aos profissionais do agronegócio, destacando benefícios como monitoramento de lavouras. Usando sistemas de CRM, a Bayer enviará e-mails segmentados a PTDs, com links diretos para o FieldReview e guias de uso, facilitando a adoção. Eventos como a Agrishow e dias de campo do Bayer Forward Farming promoveriam a ferramenta com demonstrações práticas e QR codes para acesso via navegador. A integração com o programa Impulso Bayer reforçaria a distribuição, oferecendo benefícios como pontos para usuários testarem, garantindo alcance e engajamento com agricultores e distribuidores.
+&emsp; O FieldReview, como aplicação web, será distribuído via navegadores, acessível em dispositivos Android, iOS (iPads, iPhones) e desktops, semelhante ao Climate FieldView™. A empresa o disponibilizará em seu [site oficial](https://www.agro.bayer.com.br/) e na plataforma Orbia, conectando Promotores Técnicos Digitais (PTDs) a agricultores. O LinkedIn será utilizado para promover a ferramenta, com posts direcionados aos profissionais do agronegócio, destacando benefícios como monitoramento de lavouras. Usando sistemas de CRM, a empresa enviará e-mails segmentados a PTDs, com links diretos para o FieldReview e guias de uso, facilitando a adoção. Eventos como a Agrishow e dias de campo do empresa Forward Farming promoveriam a ferramenta com demonstrações práticas e QR codes para acesso via navegador. A integração com o programa Impulso da empresa reforçaria a distribuição, oferecendo benefícios como pontos para usuários testarem, garantindo alcance e engajamento com agricultores e distribuidores.
 
 
 
 ### Promoção
 
-&emsp; As estratégias de promoção do FieldReview, aplicação web da Bayer Crop Science, focam em canais digitais para capacitar os Promotores Técnicos Digitais (PTDs). SEO é otimizado no site cropscience.bayer.com, com palavras-chave como “capacitação em agricultura”, “estudo FieldView” e “treinamento FieldView”, atraindo PTDs em busca de aprendizado sobre o Climate FieldView. Marketing de conteúdo inclui vídeos no YouTube, com tutoriais práticos sobre o FieldReview, além de blogs ensinando a utilizá-lo. E-mails via Salesforce CRM entregam guias de capacitação e convites para a utilização da plataforma, onde as demonstrações práticas em vídeo reforçam o aprendizado. A integração com o Impulso Bayer oferece pontos por uso, incentivando adoção. 
+&emsp; As estratégias de promoção do FieldReview, aplicação web da empresa, focam em canais digitais para capacitar os Promotores Técnicos Digitais (PTDs). SEO é otimizado no site da empresa, com palavras-chave como “capacitação em agricultura”, “estudo FieldView” e “treinamento FieldView”, atraindo PTDs em busca de aprendizado sobre o Climate FieldView. Marketing de conteúdo inclui vídeos no YouTube, com tutoriais práticos sobre o FieldReview, além de blogs ensinando a utilizá-lo. E-mails via Salesforce CRM entregam guias de capacitação e convites para a utilização da plataforma, onde as demonstrações práticas em vídeo reforçam o aprendizado. A integração com o Impulso da empresa oferece pontos por uso, incentivando adoção. 
 
 
 
 # <a name="c7"></a>7. Conclusões e Trabalhos Futuros
 
-&emsp; A aplicação web FieldReview foi desenvolvida com sucesso, atendendo aos objetivos estabelecidos na seção 2 do documento, que incluíam capacitar os Promotores Técnicos Digitais (PTDs) no uso eficiente do Climate FieldView, melhorar a qualidade do atendimento em campo, reduzir a sobrecarga no suporte remoto e aumentar a satisfação dos clientes da Bayer Crop Science. A plataforma entrega uma solução prática e escalável, alinhada às necessidades do ecossistema agrícola e às tendências de digitalização no setor, promovendo aprendizado contínuo e engajamento dos usuários por meio de trilhas modulares, gamificação e funcionalidades administrativas.
+&emsp; A aplicação web FieldReview foi desenvolvida com sucesso, atendendo aos objetivos estabelecidos na seção 2 do documento, que incluíam capacitar os Promotores Técnicos Digitais (PTDs) no uso eficiente do Climate FieldView, melhorar a qualidade do atendimento em campo, reduzir a sobrecarga no suporte remoto e aumentar a satisfação dos clientes da empresa. A plataforma entrega uma solução prática e escalável, alinhada às necessidades do ecossistema agrícola e às tendências de digitalização no setor, promovendo aprendizado contínuo e engajamento dos usuários por meio de trilhas modulares, gamificação e funcionalidades administrativas.
 
 ### 7.1. Resultados Alcançados
 
@@ -1828,7 +1828,7 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 - **Capacitação Eficiente:** As trilhas de aprendizado modulares, com conteúdos intuitivos e busca rápida, permitem que os PTDs adquiram conhecimentos técnicos de forma prática e ágil, reduzindo a dependência de suporte remoto.
 - **Engajamento dos Usuários**: O sistema de pontuação e certificados incentiva a participação ativa dos PTDs, promovendo uma competição saudável e o reconhecimento de suas conquistas.
 - **Gestão de Desempenho:** A interface administrativa oferece aos consultores visibilidade detalhada do progresso individual e coletivo, possibilitando a personalização de trilhas e o acompanhamento em tempo real.
-- **Usabilidade:** A interface responsiva e a identidade visual alinhada à Bayer garantem acessibilidade e consistência, mesmo em contextos com conectividade limitada.
+- **Usabilidade:** A interface responsiva e a identidade visual alinhada à empresa garantem acessibilidade e consistência, mesmo em contextos com conectividade limitada.
   
 &emsp; Os testes de integração (seção 5.1) confirmaram a robustez dos endpoints da API, enquanto as telas desenvolvidas (seção 4.2) demonstram avanços significativos na experiência do usuário. A pesquisa com PTDs (seção 6.4) revelou que 100% dos respondentes demonstraram interesse em uma plataforma que facilite o aprendizado, validando a relevância da solução.
 
@@ -1838,7 +1838,7 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 - **Foco na Capacitação Contextualizada:** A plataforma é tailor-made para o Climate FieldView, oferecendo conteúdos específicos que atendem diretamente às necessidades dos PTDs no campo.
 - **Sistema de Gamificação:** O ranking de desempenho e a emissão de certificados aumentam a motivação e o engajamento, alinhando-se às preferências psicográficas dos PTDs (seção 6.4).
 - **Flexibilidade Administrativa:** A funcionalidade de atribuição de trilhas e monitoramento de progresso permite aos consultores personalizar o aprendizado, garantindo maior eficácia na capacitação.
-- **Integração com a Marca Bayer:** A identidade visual consistente e a integração com o ecossistema Bayer reforçam a credibilidade e a adoção da plataforma.
+- **Integração com a Marca da empresa:** A identidade visual consistente e a integração com o ecossistema da empresa reforçam a credibilidade e a adoção da plataforma.
 
 ### 7.3. Limitações e Oportunidades de Melhoria
 
@@ -1853,20 +1853,20 @@ Segue o link da planilha feita para a pesquisa acima: [https://docs.google.com/s
 
 ### 7.4. Trabalhos Futuros
 
-&emsp; Para consolidar o FieldReview como uma ferramenta indispensável no ecossistema da Bayer Crop Science e atender às demandas de um mercado agrícola em constante evolução, os seguintes aprimoramentos são sugeridos para versões futuras:
+&emsp; Para consolidar o FieldReview como uma ferramenta indispensável no ecossistema da empresa e atender às demandas de um mercado agrícola em constante evolução, os seguintes aprimoramentos são sugeridos para versões futuras:
 
 - **Notificações Externas:** Integrar notificações via e-mail e WhatsApp para alertar os PTDs sobre novas trilhas, prazos e atualizações, aumentando a adesão e o engajamento.
 - **Pesquisa com Inteligência Artificial**: Implementar um sistema de busca baseado em IA que interprete a intenção do usuário, oferecendo resultados mais precisos e personalizados para dúvidas em tempo real.
 - **Atribuição de Trilhas em Lote:** Permitir que consultores atribuam trilhas a múltiplos PTDs simultaneamente, otimizando o gerenciamento de equipes numerosas.
 - **Validade de Certificados:** Introduzir um sistema de expiração para certificados, incentivando a recertificação periódica e garantindo a atualização contínua dos conhecimentos.
-- **Integração com Outras Plataformas:** Explorar integrações com outras ferramentas digitais da Bayer, para oferecer benefícios adicionais, como troca de pontos por recompensas.
+- **Integração com Outras Plataformas:** Explorar integrações com outras ferramentas digitais da empresa, para oferecer benefícios adicionais, como troca de pontos por recompensas.
 - **Análise Avançada de Dados:** Incorporar dashboards analíticos para consultores, com métricas detalhadas sobre o desempenho da equipe e insights baseados em dados para otimizar estratégias de capacitação.
 
 ### 7.5. Impacto e Relevância
 
-&emsp; O FieldReview representa um avanço significativo na capacitação de profissionais do agronegócio, alinhando-se às tendências de digitalização e formação contínua destacadas na seção 6.2. Ao melhorar o domínio técnico dos PTDs, a plataforma contribui para a eficiência operacional, a redução de erros e a satisfação dos agricultores, fortalecendo a posição da Bayer como líder em soluções digitais para o campo. Além disso, a escalabilidade da solução permite sua adaptação para outros contextos dentro do setor agrícola, como treinamento de distribuidores ou capacitação de agricultores, ampliando seu impacto potencial.
+&emsp; O FieldReview representa um avanço significativo na capacitação de profissionais do agronegócio, alinhando-se às tendências de digitalização e formação contínua destacadas na seção 6.2. Ao melhorar o domínio técnico dos PTDs, a plataforma contribui para a eficiência operacional, a redução de erros e a satisfação dos agricultores, fortalecendo a posição da empresa como líder em soluções digitais para o campo. Além disso, a escalabilidade da solução permite sua adaptação para outros contextos dentro do setor agrícola, como treinamento de distribuidores ou capacitação de agricultores, ampliando seu impacto potencial.
 
-&emsp; Os próximos passos incluem a realização de testes de usabilidade mais amplos (seção 5.2), a validação com um grupo maior de PTDs e consultores, e a implementação das melhorias sugeridas. Com isso, o FieldReview tem o potencial de se consolidar como uma ferramenta estratégica para a Bayer, promovendo inovação, eficiência e sustentabilidade no agronegócio brasileiro.
+&emsp; Os próximos passos incluem a realização de testes de usabilidade mais amplos (seção 5.2), a validação com um grupo maior de PTDs e consultores, e a implementação das melhorias sugeridas. Com isso, o FieldReview tem o potencial de se consolidar como uma ferramenta estratégica para a empresa, promovendo inovação, eficiência e sustentabilidade no agronegócio brasileiro.
 
 
 # <a name="c8"></a>8. Referências 
